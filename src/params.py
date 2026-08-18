@@ -1,183 +1,156 @@
-import os
-from typing import Optional
+"""Configuration for the Cutler-Vallisneri EMRI/IMRI bias analysis.
+
+Import the ready-to-use ``cfg`` object:
+
+    from params import cfg
+
+It exposes exactly what ``run_analysis.py`` consumes:
+``signal_row``, ``mlp_points``, ``n_channels``, ``use_gpu``, ``analysis``,
+and ``params_to_infer``.
+"""
+
 import numpy as np
-import warnings
-import traceback
-import json
-import time
 
 
 class Config:
+    """Analysis configuration.
 
-    def __init__(self, **kwargs):
+    A parameter *row* has 19 entries in the following fixed order::
+
+        m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK,
+        Phi_phi0, Phi_theta0, Phi_r0,   # 14 EMRI parameters
+        dt, T, chi2, dev_1, dev_2       # sampling, duration, spin, deviations
+    """
+
+    # Names of the 14 EMRI parameters, in waveform order.
+    PARAM_NAMES = [
+        "m1", "m2", "a", "p0", "e0", "xI0", "dist", "qS", "phiS",
+        "qK", "phiK", "Phi_phi0", "Phi_theta0", "Phi_r0",
+    ]
+
+    # Parameters inferred (Fisher / bias) for each analysis type.
+    INFERRED_PARAMS = {
+        "0PA":     ["m1", "m2", "a", "p0", "e0", "qS", "phiS", "Phi_phi0", "Phi_r0"],
+        "1PA":     ["m1", "m2", "a", "p0", "e0", "qS", "phiS", "Phi_phi0", "Phi_r0"],
+        "0PA_dev_simple": ["m1", "m2", "a", "p0", "e0", "qS", "phiS", "Phi_phi0", "Phi_r0",
+                    "dev_1", "dev_2"],
+        "0PA_dev_PN": ["m1", "m2", "a", "p0", "e0", "qS", "phiS", "Phi_phi0", "Phi_r0",
+                    "dev_1", "dev_2"],
+    }
+
+    # Injected "truth" row and the approximate-model maximum-likelihood point.
+    # DEFAULT_SIGNAL_ROW = [
+    #     1000000.0, 10.0, 0.9, 7.5, 0.5, 1.0, 0.5,
+    #     0.7853981633974483, 1.0, 1.0, 1.0471975511965976, 0.9, 0.5, 0.4,
+    #     5.0, 1.0, 0.0, 0.0, 0.0,
+    # ]
+
+    # DEFAULT_SIGNAL_ROW = [1000000.0, 10.0, 0.9, 9.07414088, 0.2, 1.0, 1,
+    #     1.04719755, 0.785398163, 0.628318531, 0.523598776, 0.1, 0.2, 0.3,
+    #     10.0, 2.5, 0.95, 0.0, 0.0]
+    DEFAULT_SIGNAL_ROW = [1000000.0, 10.0, 0.5, 9.97066819, 0.3, 1.0,1,
+        1.04719755, 0.785398163, 0.628318531, 0.523598776, 0.1, 0.2, 0.3,
+        10.0, 2.5, 0.95, 0.0, 0.0]
+
+    # DEFAULT_MLP_POINTS = [
+    #     1000381.6792690676, 10.002168560703451, 0.9002516899707742,
+    #     7.4984097121426085, 0.4999493588465228, 1.0, 0.5,
+    #     0.7753464299059312, 1.0095299530800796, 1.0, 1.0471975511965976,
+    #     0.9247984519297087, 0.5, 0.5286647646291917,
+    #     5.0, 1.0, 0.0, 0.0, 0.0,
+    # ]
+    # DEFAULT_MLP_POINTS =  [999996.7029121468, 10.000086186854665, 0.9000030960602112, 9.074165142663816, 0.19999631732547302, 1.0, 1,
+    #     1.04654519796294, 0.782682446069237, 0.628318531, 0.523598776, 0.15561239326223392, 0.2, 0.08978856112836722,
+    #     10.0, 2.5, 0.95, 0.0, 0.0]
+
+    DEFAULT_MLP_POINTS =  [1000036.1198187952, 10.000133526144388,  0.500052021086232, 9.970417145876961, 0.2999918756916836, 1.0, 1,
+       1.0453065910007755, 0.7838444158820905, 0.628318531, 0.523598776, 0.1142105583644897, 0.2, 0.25394659948792797,
+        10.0, 2.5, 0.95, 0.0, 0.0]
     
-        # Target SNR for Fisher scaling
-        self.params_name = ["m1","m2","a","p0","e0","xI0","dist","qS","phiS","qK","phiK",
-                         "Phi_phi0","Phi_theta0","Phi_r0"]
-        
-        self.injection_point_file = ""
-        self.injection_point = np.loadtxt(self.injection_point_file) if self.injection_point_file else None
-        if self.njection_point == None:
-             self.injection_point =[1000000.0, 10.0, 0.9, 7.5, 0.5, 1.0, 5.0, 0.7853981633974483, 1.0,1.0,
-                                 1.0471975511965976,0.9, 0.5, 0.4,5.0, 1.0, 0.0,0.0, 0.0]
-
-        self.injection_model = "1PA"
-
-        self.mlp_point_file = ""
-        self.mlp_points = np.loadtxt(self.mlp_point_file) if self.mlp_point_file else None
-        if self.mlp_points==None:
-             self.mlp_points=  [1000381.6792690676, 10.002168560703451, 0.9002516899707742, 7.4984097121426085, 0.4999493588465228,1.0, 5.0,
- 0.7753464299059312, 1.0095299530800796,1.0, 1.0471975511965976,0.9247984519297087, 0.5, 0.5286647646291917,5.0, 1.0, 0.0, 0.0, 0.0]
 
 
-        self.analysis_model = "0PA"
+    def __init__(
+        self,
+        analysis="0PA",
+        injection_model="1PA",
+        n_channels=3,
+        use_gpu=True,
+        signal_row_file="",
+        mlp_points_file="",
+    ):
+        if analysis not in self.INFERRED_PARAMS:
+            raise ValueError(
+                f"Unsupported analysis {analysis!r}; "
+                f"choose from {sorted(self.INFERRED_PARAMS)}."
+            )
+        if n_channels not in (2, 3):
+            raise ValueError(
+                f"n_channels must be 2 (A, E) or 3 (A, E, T); got {n_channels}."
+            )
 
-        if  self.analysis_model == "0PA":
-            self.param_names_to_infer = ['m1', 'm2', 'a', 'p0', 'e0',"qS","phiS","Phi_phi0","Phi_r0"]
-        elif self.analysis_model == "0PA_dev":
-            self.param_names_to_infer = ['m1', 'm2', 'a', 'p0', 'e0',"qS","phiS","Phi_phi0","Phi_r0",'dev_1','dev_2']
-        else:
-            self.param_names_to_infer = ['m1', 'm2', 'a', 'p0', 'e0',"qS","phiS","Phi_phi0","Phi_r0"]
+        self.analysis = analysis            # "0PA", "1PA", or "0PA_dev"
+        self.injection_model = injection_model
+        self.n_channels = n_channels
+        self.use_gpu = use_gpu
 
-        self.nchannels = 3  #Number of TDI channels to use (default 3 for A, E, T)
+        self.signal_row = self._load_row(signal_row_file, self.DEFAULT_SIGNAL_ROW)
+        self.mlp_points = self._load_row(mlp_points_file, self.DEFAULT_MLP_POINTS)
+        self.params_to_infer = list(self.INFERRED_PARAMS[analysis])
 
-        self.basedir = "/scratch/e1583490/emri_5_params/"  #Base directory for saving results; can be overridden by --basedir CLI arg
-        self.output_text_file = "paris_optimization_results.txt"  #File to save optimization results in text format
+        self._validate_row("signal_row", self.signal_row)
+        self._validate_row("mlp_points", self.mlp_points)
 
-        self.use_gpu = True  #Whether to use GPU acceleration (default False for testing)
-    
-    def get_default_config(**kwargs):
-        """
-        Get default configuration with optional overrides.
-        Parameters
-        ----------
-        **kwargs : dict
-            Configuration parameters to override
-        Returns
-        -------
-        Config
-            Configuration object
+    @staticmethod
+    def _load_row(path, default):
+        """Load a parameter row from ``path`` (whitespace-separated), else default."""
+        if path:
+            return np.loadtxt(path).tolist()
+        return list(default)
 
-        Examples
-        --------
-        >>> cfg = get_default_config()
-        >>> cfg = get_default_config(use_gpu=True, n_walkers=100)
-        """
-        return Config(**kwargs)
+    @staticmethod
+    def _validate_row(name, row):
+        if len(row) != 19:
+            raise ValueError(f"{name} must have 19 entries, got {len(row)}.")
 
-    def print_summary(self):
-        """Print a detailed summary of current configuration."""
+    # Convenience accessors -------------------------------------------------
+    @property
+    def dt(self):
+        return self.signal_row[14]
 
-        print("=" * 60)
-        print("CONFIGURATION SUMMARY")
-        print("=" * 60)
-
-        # ------------------ PARAMETERS ------------------
-        print("\n--- All Parameters ---")
-        if len(self.params_name) != len(self.params):
-            print("WARNING: params_name and params length mismatch!")
-
-        for i, (name, value) in enumerate(zip(self.params_name, self.params)):
-            tag = " (inferred)" if name in self.param_names_to_infer else ""
-            print(f"[{i:02d}] {name:12s} : {value:.6e}{tag}")
-
-        # ------------------ INFERENCE ------------------
-        print("\n--- Inference Parameters ---")
-        print(f"Parameters to infer ({len(self.param_names_to_infer)}):")
-        for p in self.param_names_to_infer:
-            print(f"  - {p}")
-
-        # ------------------ COMPUTATION ------------------
-        print("\n--- Computation Settings ---")
-        print(f"dt                : {self.dt}")
-        print(f"T                 : {self.T}")
-        print(f"TARGET_SNR        : {self._TARGET_SNR}")
-        print(f"include_noise     : {self.include_noise}")
-
-        # ------------------ OPTIMIZER ------------------
-        print("\n--- Optimizer Settings ---")
-        print(f"optimizer         : {self.optimizer}")
-        print(f"target_func       : {self.target_func}")
-        print(f"nm_xatol          : {self.nm_xatol}")
-        print(f"nm_fatol          : {self.nm_fatol}")
-
-        # ------------------ PARIS ------------------
-        print("\n--- PARIS Settings ---")
-        print(f"spread_scale      : {self.spread_scale}")
-        print(f"prior_sigma_range : {self.prior_sigma_range}")
-        print(f"using_evec        : {self.using_evec}")
-        print(f"seed_cloud        : {self.seed_cloud}")
-
-        # ------------------ RUN SETUP ------------------
-        print("\n--- Run Setup ---")
-        print(f"grid_index        : {self.grid_index}")
-        print(f"startingpoints    : {self.startingpoints}")
-        print(f"parameter_selected: {self.parameter_selected}")
-        print(f"run_type          : {self.run_type}")
-        print(f"basedir           : {self.basedir}")
-
-        # ------------------ DIAGNOSTICS ------------------
-        print("\n--- Diagnostics ---")
-        print(f"chi2              : {self.chi2}")
-        print(f"dev_1             : {self.dev_1}")
-        print(f"dev_2             : {self.dev_2}")
-
-        print("\n" + "=" * 60)
+    @property
+    def T(self):
+        return self.signal_row[15]
 
     def to_dict(self):
-        """Convert config to a serializable dictionary."""
-        return {
-            k: (v.tolist() if isinstance(v, np.ndarray) else v)
-            for k, v in self.__dict__.items()
-            if not k.startswith("_")  # optional: skip private vars
-        }
-    
-    def save_results_with_config(cfg, results: dict, save_dir: str, filename_prefix: str):
-        """
-        Save results + config to:
-        1. JSON (structured)
-        2. Text file (human readable)
-        """
+        """Return a JSON-serialisable view of the public configuration."""
+        return {k: v for k, v in self.__dict__.items() if not k.startswith("_")}
 
-        os.makedirs(save_dir, exist_ok=True)
+    def print_summary(self):
+        """Print the active configuration."""
+        print("=" * 60)
+        print("CUTLER-VALLISNERI BIAS CONFIGURATION")
+        print("=" * 60)
+        print(f"analysis         : {self.analysis}")
+        print(f"injection_model  : {self.injection_model}")
+        print(f"n_channels       : {self.n_channels}")
+        print(f"use_gpu          : {self.use_gpu}")
+        print(f"dt / T           : {self.dt} / {self.T}")
+        print(f"params_to_infer  : {self.params_to_infer}")
 
-        timestamp = time.strftime('%Y%m%d-%H%M%S')
-
-        # -------- JSON (structured) --------
-        full_output = {
-            "timestamp": timestamp,
-            "config": cfg.to_dict(),
-            "results": results,
-        }
-
-        json_path = os.path.join(save_dir, f"{filename_prefix}_{timestamp}.json")
-        with open(json_path, "w") as f:
-            json.dump(full_output, f, indent=2)
-
-        # -------- TEXT (human readable) --------
-        text_path = os.path.join(save_dir, cfg.output_text_file)
-
-        with open(text_path, "a") as f:
-            f.write("\n" + "=" * 80 + "\n")
-            f.write(f"RUN TIMESTAMP: {timestamp}\n")
-
-            # ---- CONFIG ----
-            f.write("\n--- CONFIG ---\n")
-            for k, v in cfg.to_dict().items():
-                f.write(f"{k}: {v}\n")
-
-            # ---- RESULTS ----
-            f.write("\n--- RESULTS ---\n")
-            for k, v in results.items():
-                f.write(f"{k}: {v}\n")
-
-            f.write("=" * 80 + "\n")
-
-        print(f"[SAVE] JSON: {json_path}")
-        print(f"[SAVE] TEXT: {text_path}")
-
-    if __name__ == "__main__":
-        cfg = get_default_config()
-        cfg.print_summary()
+        print("\n--- Injected parameters (truth) ---")
+        for name, value in zip(self.PARAM_NAMES, self.signal_row[:14]):
+            tag = "  <-- inferred" if name in self.params_to_infer else ""
+            print(f"  {name:12s} : {value:.6e}{tag}")
+        chi2, dev_1, dev_2 = self.signal_row[16:19]
+        print(f"  {'chi2':12s} : {chi2:.6e}")
+        print(f"  {'dev_1':12s} : {dev_1:.6e}")
+        print(f"  {'dev_2':12s} : {dev_2:.6e}")
+        print("=" * 60)
 
 
+# Default configuration imported by run_analysis.py.
+cfg = Config()
+
+
+if __name__ == "__main__":
+    cfg.print_summary()

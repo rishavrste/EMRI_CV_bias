@@ -1,0 +1,374 @@
+startup
+======================================================================
+
+[idx4] dev=PN  SNR=19.92  overlap(start) = 0.9994333  (0PA ref = 0.999433)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.3396361339), np.float64(10.000055320096262), np.float64(0.8999987866684177), np.float64(9.086848640310997), np.float64(0.0999981971941262), 1.0, 13.7253796777895, np.float64(1.0468355740845003), np.float64(0.7845611461709062), 0.6283185307179586, 0.5235987755982988, np.float64(0.11572449148755387), 0.2, np.float64(0.08574687812320049), 0.95, False, False, False, True, np.float64(0.0), np.float64(0.0), 0.0, 0.0)
+Waveform Generated. SNR: 19.938793819706685
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+minimum relative error is greater than 1% for dev_1. Fisher may be unstable!
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 44.249988317489624 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.133117437362671 seconds
+    CV#1 it   0 lam=9.5e+137 ov=0.9994333 chi2=4.499e-01 rel=0.0e+00
+    NM  nfev=1362 ov 0.9994333 -> 0.9994334 (accepted=True)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2950853895), np.float64(10.00005486716339), np.float64(0.8999987487472845), np.float64(9.086848885720668), np.float64(0.09999819944696513), 1.0, 13.7253796777895, np.float64(1.0469236884796027), np.float64(0.7846032705076194), 0.6283185307179586, 0.5235987755982988, np.float64(0.11492763985679162), 0.2, np.float64(0.08523443522118336), 0.95, False, False, False, True, np.float64(-0.010529061997774293), np.float64(0.0068878248910611475), 0.0, 0.0)
+Waveform Generated. SNR: 19.937963161395004
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 43.79479932785034 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.114634037017822 seconds
+    CV#2 it   0 lam=3.3e-03 ov=0.9994334 chi2=4.497e-01 rel=2.7e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2950468343), np.float64(10.000054866086874), np.float64(0.8999987495316707), np.float64(9.086848885607308), np.float64(0.09999820182786065), 1.0, 13.7253796777895, np.float64(1.0469230142589707), np.float64(0.7846099796836217), 0.6283185307179586, 0.5235987755982988, np.float64(0.11501682440565497), 0.2, np.float64(0.08526274032264794), 0.95, False, False, False, True, np.float64(-0.010715371022910506), np.float64(0.0061389198363319625), 0.0, 0.0)
+Waveform Generated. SNR: 19.937933939513094
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.719510793685913 seconds
+    CV#2 it   1 lam=2.7e-03 ov=0.9994334 chi2=4.497e-01 rel=5.1e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2948587727), np.float64(10.000054862794642), np.float64(0.8999987518234603), np.float64(9.08684888495202), np.float64(0.09999820467863772), 1.0, 13.7253796777895, np.float64(1.0469211167071848), np.float64(0.7846065843010039), 0.6283185307179586, 0.5235987755982988, np.float64(0.11511781665475487), 0.2, np.float64(0.0851632831827889), 0.95, False, False, False, True, np.float64(-0.01130350215171308), np.float64(0.006718717151982777), 0.0, 0.0)
+Waveform Generated. SNR: 19.93796257858558
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.732513189315796 seconds
+    CV#2 it   2 lam=9.0e-04 ov=0.9994335 chi2=4.497e-01 rel=1.4e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2948601707), np.float64(10.000054858336826), np.float64(0.8999987539374061), np.float64(9.08684888509857), np.float64(0.09999821378322488), 1.0, 13.7253796777895, np.float64(1.0468978456603824), np.float64(0.7846013159591184), 0.6283185307179586, 0.5235987755982988, np.float64(0.11533550334201403), 0.2, np.float64(0.08518630363520499), 0.95, False, False, False, True, np.float64(-0.01196851746274583), np.float64(-6.460315824790251e-05), 0.0, 0.0)
+Waveform Generated. SNR: 19.938140796761445
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.726333379745483 seconds
+    CV#2 it   3 lam=9.8e-04 ov=0.9994335 chi2=4.496e-01 rel=3.4e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2969834907), np.float64(10.000054841142274), np.float64(0.8999987530966552), np.float64(9.086848894410645), np.float64(0.09999826882341904), 1.0, 13.7253796777895, np.float64(1.0467485915673702), np.float64(0.7845942151116834), 0.6283185307179586, 0.5235987755982988, np.float64(0.11696075936834095), 0.2, np.float64(0.08650206727367686), 0.95, False, False, False, True, np.float64(-0.014519631376127473), np.float64(-0.056497384170712546), 0.0, 0.0)
+Waveform Generated. SNR: 19.939053373863338
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.711533784866333 seconds
+    CV#2 it   4 lam=2.0e-03 ov=0.9994338 chi2=4.495e-01 rel=8.5e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2976360441), np.float64(10.000054831298327), np.float64(0.899998752887024), np.float64(9.086848897395658), np.float64(0.09999827144853485), 1.0, 13.7253796777895, np.float64(1.046761345558927), np.float64(0.784581525658727), 0.6283185307179586, 0.5235987755982988, np.float64(0.11709452225490001), 0.2, np.float64(0.08638945203397674), 0.95, False, False, False, True, np.float64(-0.015305832085725928), np.float64(-0.06725351653560696), 0.0, 0.0)
+Waveform Generated. SNR: 19.939116442172853
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+minimum relative error is greater than 1% for dev_1. Fisher may be unstable!
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 43.28215718269348 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.108407974243164 seconds
+    CV#2 it   5 lam=6.8e-04 ov=0.9994338 chi2=4.495e-01 rel=1.6e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2978865076), np.float64(10.000054824478202), np.float64(0.8999987530808202), np.float64(9.0868488986111), np.float64(0.09999826408462341), 1.0, 13.7253796777895, np.float64(1.0467840149045247), np.float64(0.7845860416908624), 0.6283185307179586, 0.5235987755982988, np.float64(0.11695228336731517), 0.2, np.float64(0.0862395316464013), 0.95, False, False, False, True, np.float64(-0.01614469551189101), np.float64(-0.06370118942882523), 0.0, 0.0)
+Waveform Generated. SNR: 19.938923622183147
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.706596612930298 seconds
+    CV#2 it   6 lam=2.3e-04 ov=0.9994339 chi2=4.494e-01 rel=1.9e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.2990729123), np.float64(10.000054798847733), np.float64(0.8999987539375649), np.float64(9.08684890417448), np.float64(0.09999825734310107), 1.0, 13.7253796777895, np.float64(1.0467838769383842), np.float64(0.7845893684340122), 0.6283185307179586, 0.5235987755982988, np.float64(0.11696674407303054), 0.2, np.float64(0.08613695711120588), 0.95, False, False, False, True, np.float64(-0.018831267560465853), np.float64(-0.07055710893142987), 0.0, 0.0)
+Waveform Generated. SNR: 19.938900399257545
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.716682195663452 seconds
+    CV#2 it   7 lam=7.5e-05 ov=0.9994340 chi2=4.493e-01 rel=4.3e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.3017832875), np.float64(10.00005472351905), np.float64(0.8999987581518611), np.float64(9.086848916596526), np.float64(0.09999823647350768), 1.0, 13.7253796777895, np.float64(1.0468026785468298), np.float64(0.7845977214720957), 0.6283185307179586, 0.5235987755982988, np.float64(0.11694727781804568), 0.2, np.float64(0.08566191495920222), 0.95, False, False, False, True, np.float64(-0.026248091903313616), np.float64(-0.0813412093081261), 0.0, 0.0)
+Waveform Generated. SNR: 19.93872531980293
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.718689441680908 seconds
+    CV#2 it   8 lam=3.6e-05 ov=0.9994343 chi2=4.491e-01 rel=1.1e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.310231697), np.float64(10.000054470545116), np.float64(0.8999987663368739), np.float64(9.086848951284539), np.float64(0.09999819855139384), 1.0, 13.7253796777895, np.float64(1.04681097777516), np.float64(0.7846161626190546), 0.6283185307179586, 0.5235987755982988, np.float64(0.11731601623816452), 0.2, np.float64(0.08492921268044615), 0.95, False, False, False, True, np.float64(-0.04770051769356447), np.float64(-0.13098084794362824), 0.0, 0.0)
+Waveform Generated. SNR: 19.938584354453972
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.730128765106201 seconds
+    CV#2 it   9 lam=1.8e-05 ov=0.9994349 chi2=4.486e-01 rel=2.2e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.3289070422), np.float64(10.00005396105401), np.float64(0.8999987698272629), np.float64(9.08684901678145), np.float64(0.09999813611988716), 1.0, 13.7253796777895, np.float64(1.0467976507301), np.float64(0.7846642365523911), 0.6283185307179586, 0.5235987755982988, np.float64(0.11849409065737072), 0.2, np.float64(0.08467053178689221), 0.95, False, False, False, True, np.float64(-0.08747258542684708), np.float64(-0.2507876835722586), 0.0, 0.0)
+Waveform Generated. SNR: 19.938340956986156
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 43.57074308395386 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.155743837356567 seconds
+    CV#2 it  10 lam=5.8e-06 ov=0.9994361 chi2=4.476e-01 rel=3.5e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.3530546207), np.float64(10.000052730567205), np.float64(0.8999987933213296), np.float64(9.086849050394001), np.float64(0.09999805684840886), 1.0, 13.7253796777895, np.float64(1.0468497778470982), np.float64(0.7847184240415574), 0.6283185307179586, 0.5235987755982988, np.float64(0.11940452729423813), 0.2, np.float64(0.08301003626951471), 0.95, False, False, False, True, np.float64(-0.15770979907563656), np.float64(-0.36887465093509425), 0.0, 0.0)
+Waveform Generated. SNR: 19.937639576717405
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.726778268814087 seconds
+    CV#2 it  11 lam=3.7e-06 ov=0.9994381 chi2=4.460e-01 rel=6.7e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.403097556), np.float64(10.00004869690159), np.float64(0.8999988381610758), np.float64(9.086848895770729), np.float64(0.09999804866123051), 1.0, 13.7253796777895, np.float64(1.0468684043527399), np.float64(0.7848169051377585), 0.6283185307179586, 0.5235987755982988, np.float64(0.12131291536843349), 0.2, np.float64(0.08208187111725163), 0.95, False, False, False, True, np.float64(-0.3222415141229299), np.float64(-0.567320140307845), 0.0, 0.0)
+Waveform Generated. SNR: 19.93675718274859
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.723260164260864 seconds
+    CV#2 it  12 lam=1.2e-06 ov=0.9994418 chi2=4.430e-01 rel=1.0e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.4472180135), np.float64(10.000041992116579), np.float64(0.8999989046045925), np.float64(9.086848366897314), np.float64(0.0999982440452194), 1.0, 13.7253796777895, np.float64(1.0468602506788784), np.float64(0.7848599816632661), 0.6283185307179586, 0.5235987755982988, np.float64(0.1218179361609893), 0.2, np.float64(0.0821123733741548), 0.95, False, False, False, True, np.float64(-0.5294018017572069), np.float64(-0.6118339106265833), 0.0, 0.0)
+Waveform Generated. SNR: 19.936549451055548
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.748648405075073 seconds
+    CV#2 it  13 lam=8.8e-07 ov=0.9994475 chi2=4.385e-01 rel=2.5e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.5221569682), np.float64(10.000021354615264), np.float64(0.8999990904269887), np.float64(9.086846402828296), np.float64(0.09999918349555205), 1.0, 13.7253796777895, np.float64(1.0469095337108798), np.float64(0.7848958179546226), 0.6283185307179586, 0.5235987755982988, np.float64(0.12173263956525579), 0.2, np.float64(0.0858059243688998), 0.95, False, False, False, True, np.float64(-1.0746464049686284), np.float64(-0.3935292203329509), 0.0, 0.0)
+Waveform Generated. SNR: 19.93619201301755
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.717378854751587 seconds
+    CV#2 it  14 lam=4.9e-07 ov=0.9994611 chi2=4.277e-01 rel=3.8e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.6569089234), np.float64(9.999994281051857), np.float64(0.8999993256363582), np.float64(9.086843833921654), np.float64(0.10000032846333927), 1.0, 13.7253796777895, np.float64(1.0469799657992944), np.float64(0.7848968177080016), 0.6283185307179586, 0.5235987755982988, np.float64(0.12149903961186323), 0.2, np.float64(0.09139683894724858), 0.95, False, False, False, True, np.float64(-1.8136325375406768), np.float64(-0.2436009559795063), 0.0, 0.0)
+Waveform Generated. SNR: 19.93570180575494
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 43.63981294631958 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.1374852657318115 seconds
+    CV#2 it  15 lam=2.9e-07 ov=0.9994813 chi2=4.116e-01 rel=6.5e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.7078248073), np.float64(9.999945036213552), np.float64(0.8999997090263389), np.float64(9.08683939288858), np.float64(0.10000283813221225), 1.0, 13.7253796777895, np.float64(1.0469062268634395), np.float64(0.7848761850296049), 0.6283185307179586, 0.5235987755982988, np.float64(0.11931016621002082), 0.2, np.float64(0.10146470248761731), 0.95, False, False, False, True, np.float64(-3.0526118375405153), np.float64(0.5593261134548037), 0.0, 0.0)
+Waveform Generated. SNR: 19.93587541277762
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.749741554260254 seconds
+    CV#2 it  16 lam=2.0e-07 ov=0.9995149 chi2=3.850e-01 rel=9.6e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999991.9935806012), np.float64(9.999870892840994), np.float64(0.9000003130796415), np.float64(9.086832684517917), np.float64(0.10000608653274964), 1.0, 13.7253796777895, np.float64(1.0469801709435111), np.float64(0.7849646746789275), 0.6283185307179586, 0.5235987755982988, np.float64(0.118816044683817), 0.2, np.float64(0.11588876680043751), 0.95, False, False, False, True, np.float64(-5.0544572146934605), np.float64(1.0482281803914872), 0.0, 0.0)
+Waveform Generated. SNR: 19.93515308902894
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.721807241439819 seconds
+    CV#2 it  17 lam=2.4e-07 ov=0.9995614 chi2=3.481e-01 rel=3.5e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999992.4126372301), np.float64(9.999774024641974), np.float64(0.9000011687065023), np.float64(9.086823323061193), np.float64(0.10001032790473591), 1.0, 13.7253796777895, np.float64(1.0469735990154014), np.float64(0.7850659358950899), 0.6283185307179586, 0.5235987755982988, np.float64(0.11660490265809319), 0.2, np.float64(0.13441286511721434), 0.95, False, False, False, True, np.float64(-7.638785052006047), np.float64(1.931077275846159), 0.0, 0.0)
+Waveform Generated. SNR: 19.933559205621286
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.7333478927612305 seconds
+    CV#2 it  18 lam=8.0e-08 ov=0.9995769 chi2=3.358e-01 rel=2.3e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999992.7665476302), np.float64(9.999698600211959), np.float64(0.9000018434370901), np.float64(9.086816122504922), np.float64(0.10001357028478844), 1.0, 13.7253796777895, np.float64(1.0471161672604024), np.float64(0.7851208860606185), 0.6283185307179586, 0.5235987755982988, np.float64(0.11580915671758861), 0.2, np.float64(0.14953695836002714), 0.95, False, False, False, True, np.float64(-9.683683762387135), np.float64(2.505228595263541), 0.0, 0.0)
+Waveform Generated. SNR: 19.93257054862356
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.7234227657318115 seconds
+    CV#2 it  19 lam=6.8e-08 ov=0.9996756 chi2=2.574e-01 rel=2.4e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.2195590034), np.float64(9.999507477598407), np.float64(0.9000033324530404), np.float64(9.086799100058185), np.float64(0.1000225734859603), 1.0, 13.7253796777895, np.float64(1.0474151656506974), np.float64(0.7852352735204943), 0.6283185307179586, 0.5235987755982988, np.float64(0.11084681222045126), 0.2, np.float64(0.18774240985639873), 0.95, False, False, False, True, np.float64(-14.681642641864151), np.float64(4.591018769104769), 0.0, 0.0)
+Waveform Generated. SNR: 19.930381071774153
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 43.34079647064209 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.112185001373291 seconds
+    CV#2 it  20 lam=2.3e-08 ov=0.9997546 chi2=1.947e-01 rel=4.0e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.7004686949), np.float64(9.99933051792495), np.float64(0.900004734054216), np.float64(9.086783268332859), np.float64(0.10003076994782385), 1.0, 13.7253796777895, np.float64(1.047220386130218), np.float64(0.7852918732939546), 0.6283185307179586, 0.5235987755982988, np.float64(0.10654987749948186), 0.2, np.float64(0.22135967847938015), 0.95, False, False, False, True, np.float64(-19.346570010913677), np.float64(6.306792811892953), 0.0, 0.0)
+Waveform Generated. SNR: 19.93053916754748
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.708935260772705 seconds
+    CV#2 it  21 lam=7.6e-09 ov=0.9998526 chi2=1.170e-01 rel=5.6e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999994.1255516788), np.float64(9.999033258793656), np.float64(0.9000068629692187), np.float64(9.086758263423043), np.float64(0.10004505618189506), 1.0, 13.7253796777895, np.float64(1.0472895101964679), np.float64(0.7854758959514455), 0.6283185307179586, 0.5235987755982988, np.float64(0.09960943990602122), 0.2, np.float64(0.2784478560084408), 0.95, False, False, False, True, np.float64(-27.091738996179146), np.float64(9.490484722572575), 0.0, 0.0)
+Waveform Generated. SNR: 19.92857530350495
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.752383708953857 seconds
+    CV#2 it  22 lam=2.5e-09 ov=0.9999347 chi2=5.185e-02 rel=5.5e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.9583823932), np.float64(9.998766585659327), np.float64(0.9000084607693082), np.float64(9.086738128485607), np.float64(0.10005861982291822), 1.0, 13.7253796777895, np.float64(1.0472928139563749), np.float64(0.7856327878986524), 0.6283185307179586, 0.5235987755982988, np.float64(0.09279100714389057), 0.2, np.float64(0.327909176402137), 0.95, False, False, False, True, np.float64(-33.91489626032936), np.float64(12.679631183195895), 0.0, 0.0)
+Waveform Generated. SNR: 19.927043863378756
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.701092720031738 seconds
+    CV#2 it  23 lam=8.4e-10 ov=0.9999706 chi2=2.334e-02 rel=1.4e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.5525694945), np.float64(9.99866539467961), np.float64(0.9000088710550421), np.float64(9.086731939669905), np.float64(0.10006422641217637), 1.0, 13.7253796777895, np.float64(1.0472531667829348), np.float64(0.7856922502880047), 0.6283185307179586, 0.5235987755982988, np.float64(0.089878416807732), 0.2, np.float64(0.345575000586011), 0.95, False, False, False, True, np.float64(-36.427734891732904), np.float64(14.090260321970478), 0.0, 0.0)
+Waveform Generated. SNR: 19.926617072192354
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.712752103805542 seconds
+    CV#2 it  24 lam=2.8e-10 ov=0.9999748 chi2=1.998e-02 rel=3.0e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.3816494298), np.float64(9.998650332980981), np.float64(0.9000088675601585), np.float64(9.086731493948887), np.float64(0.10006520739348138), 1.0, 13.7253796777895, np.float64(1.0472329577567983), np.float64(0.7857019250184742), 0.6283185307179586, 0.5235987755982988, np.float64(0.08938374182979171), 0.2, np.float64(0.34788746924475217), 0.95, False, False, False, True, np.float64(-36.77759269772291), np.float64(14.360478099675412), 0.0, 0.0)
+Waveform Generated. SNR: 19.926627102582643
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 43.633479833602905 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.144302606582642 seconds
+    CV#2 it  25 lam=7.5e-10 ov=0.9999749 chi2=1.992e-02 rel=1.2e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.3710397524), np.float64(9.99864962304616), np.float64(0.9000088657787092), np.float64(9.086731485385949), np.float64(0.10006525642312265), 1.0, 13.7253796777895, np.float64(1.0472312695828911), np.float64(0.785702805268699), 0.6283185307179586, 0.5235987755982988, np.float64(0.08936301466115734), 0.2, np.float64(0.3479857993935361), 0.95, False, False, False, True, np.float64(-36.793695050140975), np.float64(14.373774173570196), 0.0, 0.0)
+Waveform Generated. SNR: 19.926628624561374
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.741280794143677 seconds
+    CV#2 it  26 lam=2.0e-09 ov=0.9999749 chi2=1.992e-02 rel=1.8e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.3820571218), np.float64(9.998649873449253), np.float64(0.9000088704546306), np.float64(9.086731459108565), np.float64(0.10006522877893055), 1.0, 13.7253796777895, np.float64(1.0472324993274782), np.float64(0.7857028424475109), 0.6283185307179586, 0.5235987755982988, np.float64(0.08938424815923729), 0.2, np.float64(0.3479720997732009), 0.95, False, False, False, True, np.float64(-36.789828019898735), np.float64(14.363886384860274), 0.0, 0.0)
+Waveform Generated. SNR: 19.92662192276515
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.717395544052124 seconds
+    CV#2 it  27 lam=2.2e-05 ov=0.9999749 chi2=1.992e-02 rel=2.8e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.3820474815), np.float64(9.998649873573441), np.float64(0.9000088704961194), np.float64(9.086731459047073), np.float64(0.10006522876296235), 1.0, 13.7253796777895, np.float64(1.0472326038029292), np.float64(0.7857028176832419), 0.6283185307179586, 0.5235987755982988, np.float64(0.08938395167040795), 0.2, np.float64(0.34796927666327954), 0.95, False, False, False, True, np.float64(-36.78982323608769), np.float64(14.364028903039776), 0.0, 0.0)
+Waveform Generated. SNR: 19.926620721984676
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.733167409896851 seconds
+    CV#2 it  28 lam=1.5e+01 ov=0.9999749 chi2=1.992e-02 rel=2.4e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999993.3820475186), np.float64(9.998649873572303), np.float64(0.9000088704962711), np.float64(9.086731459047266), np.float64(0.10006522876347856), 1.0, 13.7253796777895, np.float64(1.0472326183705314), np.float64(0.7857028076191247), 0.6283185307179586, 0.5235987755982988, np.float64(0.08938391648254851), 0.2, np.float64(0.3479692880001444), 0.95, False, False, False, True, np.float64(-36.78982319446682), np.float64(14.364029355891187), 0.0, 0.0)
+Waveform Generated. SNR: 19.926621015565935
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.729387998580933 seconds
+    CV#2 it  29 lam=1.4e+09 ov=0.9999749 chi2=1.992e-02 rel=5.7e-13
+======================================================================
+
+[idx14] dev=simple  SNR=277.57  overlap(start) = 0.9968929  (0PA ref = 0.996938)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999995.704140138), np.float64(10.000054480710764), np.float64(0.9000027497123492), np.float64(9.048467719462902), np.float64(0.2999983522649772), 1.0, 1.0, np.float64(1.0458850502841008), np.float64(0.7829952997012212), 0.6283185307179586, 0.5235987755982988, np.float64(0.2211570040827088), 0.2, np.float64(0.12326185770097065), 0.95, False, False, False, True, 0.0, 0.0, np.float64(0.26990636701460274), np.float64(-0.014551545224099302))
+Waveform Generated. SNR: 279.6451211071869
+calculating stable deltas...
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 44.94230604171753 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.395552158355713 seconds
+    CV#1 it   0 lam=1.3e+09 ov=0.9968929 chi2=4.794e+02 rel=1.1e-14
+    NM  nfev=3056 ov 0.9968929 -> 0.9968930 (accepted=True)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (np.float64(999995.7040772021), np.float64(10.00005451796523), np.float64(0.9000027519084941), np.float64(9.048467721440058), np.float64(0.2999983520939483), 1.0, 1.0, np.float64(1.0458686001291024), np.float64(0.7829808662088306), 0.6283185307179586, 0.5235987755982988, np.float64(0.22111814953913303), 0.2, np.float64(0.12320479323339534), 0.95, False, False, False, True, 0.0, 0.0, np.float64(0.26979370636397193), np.float64(-0.014463491698949614))
+Waveform Generated. SNR: 279.6423870109886
+calculating stable deltas...
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 45.12423491477966 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.39990496635437 seconds
+    CV#2 it   0 lam=9.5e+137 ov=0.9968930 chi2=4.794e+02 rel=0.0e+00
+
+======================================================================
+model = 0PA + deviation, seeded from 0PA best fit  (EMRI grid, 11 params)
+case       dev      SNR   ov@0PAfit       ov@CV        chi2     ov@0PA  >=0PA?
+idx4        PN    19.92    0.999433    0.999975   1.992e-02   0.999433     YES
+idx14   simple   277.57    0.996893    0.996893   4.794e+02   0.996938      no
+
+optimized 11-param points  [m1, m2, a, p0, e0, qS, phiS, Phi_phi0, Phi_r0, dev_1, dev_2]:
+[idx4 PN] ov=0.999975 = [9.99993382e+05, 9.99864987e+00, 9.00008870e-01, 9.08673146e+00, 1.00065229e-01, 1.04723262e+00, 7.85702808e-01, 8.93839165e-02, 3.47969288e-01, -3.67898232e+01, 1.43640294e+01]
+[idx14 simple] ov=0.996893 = [9.99995704e+05, 1.00000545e+01, 9.00002752e-01, 9.04846772e+00, 2.99998352e-01, 1.04586860e+00, 7.82980866e-01, 2.21118150e-01, 1.23204793e-01, 2.69793706e-01, -1.44634917e-02]
+
+[saved] all results -> /home/svu/e1583490/EMRI_CV_bias/src/EMRI/results_emri_grid_dev_from_0pa.json
