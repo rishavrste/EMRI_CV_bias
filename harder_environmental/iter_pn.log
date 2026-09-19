@@ -1,0 +1,967 @@
+startup
+[INFO] use_gpu = True
+[cfg] CV controls: overlap_target=0.9999999999, lambda0=0.01, rel_tol=1e-09, recompute_deltas_every=10
+[point] frozen hard_point_8.json
+[point] live/8: m1 = 3.780314e+06, p0 = 7.757812, T = 3.864473 yr, dt = 10, d = 2.194592 Gpc, SNR = 200.0000
+[point] injected A_PM = 7.258203e-05, n_PM = 8, A_GC = 1.0e-12, n_GC = 4.0
+[point] population run reached ov = 0.00035664 (0PA), 0.00050292 (0PA+PN)
+[cfg] model = 0PA+PN, parameters = m1, m2, a, p0, e0, qS, phiS, Phi_phi0, C_p
+[seed] results_cv_de_cv_0pa.json :: stage2_de
+[seed]   model 0PA, params ['m1', 'm2', 'a', 'p0', 'e0', 'qS', 'phiS', 'Phi_phi0']
+[seed]   ov = 0.7162396779  chi2 = 2.237798e+04
+[seed]   filled from defaults: C_p = 0.0
+[build] SNR check: 200.000000 (A = 145.4730, E = 137.2502)
+    [DELTA] 0PA+PN C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 6.45e-06 -> 4.87e-09, 4 of 45 ladder points in band)
+
+=== iterated exact CV steps from stage2_de ===
+    seed overlap in this model = 0.7162396779  (seed file recorded 0.7162396779)
+    start overlap = 0.7162396779
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7564358236), np.float64(49.9386584692009), np.float64(0.9000784184486413), np.float64(7.750140646994849), np.float64(0.018700715540486874), 1.0, 2.194591829653648, np.float64(1.5846512429013075), np.float64(0.7447343702778468), 0.8, 0.8, np.float64(6.276382964472352), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.0), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.0805686106224
+calculating stable deltas...
+minimum relative error is greater than 1% for C_p. Fisher may be unstable!
+Time taken to compute stable deltas is 35.85708260536194 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6920576095581055 seconds
+    [clip]it0@1 Phi_phi0: +6.447663e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit0 scale 1 gives ov 0.3827226836 <= start 0.7162396779; halving
+    [clip]it0@0.5 Phi_phi0: +6.362023e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit0 scale 0.5 gives ov 0.6104131333 <= start 0.7162396779; halving
+    [clip]it0@0.25 Phi_phi0: +6.319203e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit0 scale 0.25 gives ov 0.6889204212 <= start 0.7162396779; halving
+    [clip]it0@0.125 Phi_phi0: +6.297793e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit0 scale 0.125 gives ov 0.7094131385 <= start 0.7162396779; halving
+    [clip]it0@0.0625 Phi_phi0: +6.287088e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit0 scale 0.0625 gives ov 0.7145456705 <= start 0.7162396779; halving
+    CVit0 scale 0.03125 gives ov 0.7159105373 <= start 0.7162396779; halving
+    CVit0 backtracked to scale 0.015625 after 6 halving(s)
+    CVit0 exact step  scale 0.015625  ov 0.7162396779 -> 0.7162547860  chi2 2.238e+04 -> 2.238e+04
+  [it   0] ov 0.7162396779 -> 0.7162547860   chi2 2.237641e+04   |dtheta/sigma|max = 2.760e-01   43 s  <-- best
+    start overlap = 0.7162547860
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784943.3855702383), np.float64(49.93868433044839), np.float64(0.9000779912856769), np.float64(7.750143921299923), np.float64(0.018701803675715722), 1.0, 2.194591829653648, np.float64(1.5846316031686811), np.float64(0.7446118747779068), 0.8, 0.8, np.float64(6.279059212749354), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.14200667442136541), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.07708158320548
+calculating stable deltas...
+Time taken to compute stable deltas is 34.13588261604309 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0574588775634766 seconds
+    [clip]it1@1 Phi_phi0: +6.371740e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit1 scale 1 gives ov 0.3641132608 <= start 0.7162547860; halving
+    [clip]it1@0.5 Phi_phi0: +6.325399e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit1 scale 0.5 gives ov 0.6766159560 <= start 0.7162547860; halving
+    [clip]it1@0.25 Phi_phi0: +6.302229e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit1 scale 0.25 gives ov 0.7128545520 <= start 0.7162547860; halving
+    [clip]it1@0.125 Phi_phi0: +6.290644e+00 -> +6.283185e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit1 backtracked to scale 0.125 after 3 halving(s)
+    CVit1 exact step  scale 0.125  ov 0.7162547860 -> 0.7165529777  chi2 2.238e+04 -> 2.235e+04
+  [it   1] ov 0.7162547860 -> 0.7165529777   chi2 2.234542e+04   |dtheta/sigma|max = 1.038e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7165529777
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784911.058999474), np.float64(49.94204555856583), np.float64(0.9000703171204575), np.float64(7.750209913323946), np.float64(0.018620861744986464), 1.0, 2.194591829653648, np.float64(1.5844250726123656), np.float64(0.7425844594876505), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(14.64613002747593), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.00743720894738
+calculating stable deltas...
+Time taken to compute stable deltas is 34.18944072723389 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.058168888092041 seconds
+    [clip]it2@1 Phi_phi0: -7.345182e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit2 scale 1 gives ov -0.1087875742 <= start 0.7165529777; halving
+    [clip]it2@0.5 Phi_phi0: -3.672591e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit2 scale 0.5 gives ov 0.2487441106 <= start 0.7165529777; halving
+    [clip]it2@0.25 Phi_phi0: -1.836295e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit2 scale 0.25 gives ov 0.6820553592 <= start 0.7165529777; halving
+    [clip]it2@0.125 Phi_phi0: -9.181477e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit2 scale 0.125 gives ov 0.7151813653 <= start 0.7165529777; halving
+    [clip]it2@0.0625 Phi_phi0: -4.590739e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit2 backtracked to scale 0.0625 after 4 halving(s)
+    CVit2 exact step  scale 0.0625  ov 0.7165529777 -> 0.7170690966  chi2 2.235e+04 -> 2.229e+04
+  [it   2] ov 0.7165529777 -> 0.7170690966   chi2 2.229147e+04   |dtheta/sigma|max = 1.452e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7170690966
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784878.491085177), np.float64(49.946224714583416), np.float64(0.9000619256853581), np.float64(7.750284043966616), np.float64(0.018499483147044214), 1.0, 2.194591829653648, np.float64(1.5845845672766903), np.float64(0.7406541673852425), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(32.33154187998432), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.8833970756251
+calculating stable deltas...
+Time taken to compute stable deltas is 33.99298548698425 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.052218198776245 seconds
+    [clip]it3@1 Phi_phi0: -6.648013e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit3 scale 1 gives ov -0.1958362140 <= start 0.7170690966; halving
+    [clip]it3@0.5 Phi_phi0: -3.324006e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit3 scale 0.5 gives ov 0.2966620976 <= start 0.7170690966; halving
+    [clip]it3@0.25 Phi_phi0: -1.662003e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit3 scale 0.25 gives ov 0.6852331886 <= start 0.7170690966; halving
+    [clip]it3@0.125 Phi_phi0: -8.310016e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit3 scale 0.125 gives ov 0.7154827720 <= start 0.7170690966; halving
+    [clip]it3@0.0625 Phi_phi0: -4.155008e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit3 backtracked to scale 0.0625 after 4 halving(s)
+    CVit3 exact step  scale 0.0625  ov 0.7170690966 -> 0.7174795451  chi2 2.229e+04 -> 2.225e+04
+  [it   3] ov 0.7170690966 -> 0.7174795451   chi2 2.224690e+04   |dtheta/sigma|max = 1.378e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7174795451
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784847.3907943782), np.float64(49.95022683704063), np.float64(0.9000539017288577), np.float64(7.750354933666045), np.float64(0.018382333780903395), 1.0, 2.194591829653648, np.float64(1.5847127814144228), np.float64(0.7388040589354238), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(49.260055092547375), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.76858627768334
+calculating stable deltas...
+Time taken to compute stable deltas is 33.99454212188721 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0472800731658936 seconds
+    [clip]it4@1 Phi_phi0: -6.590609e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit4 scale 1 gives ov -0.2619898031 <= start 0.7174795451; halving
+    [clip]it4@0.5 Phi_phi0: -3.295304e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit4 scale 0.5 gives ov 0.3376507985 <= start 0.7174795451; halving
+    [clip]it4@0.25 Phi_phi0: -1.647652e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit4 scale 0.25 gives ov 0.6888715130 <= start 0.7174795451; halving
+    [clip]it4@0.125 Phi_phi0: -8.238261e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit4 scale 0.125 gives ov 0.7159862135 <= start 0.7174795451; halving
+    [clip]it4@0.0625 Phi_phi0: -4.119130e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit4 backtracked to scale 0.0625 after 4 halving(s)
+    CVit4 exact step  scale 0.0625  ov 0.7174795451 -> 0.7178915272  chi2 2.225e+04 -> 2.220e+04
+  [it   4] ov 0.7174795451 -> 0.7178915272   chi2 2.220310e+04   |dtheta/sigma|max = 1.328e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7178915272
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784817.5801479), np.float64(49.95409491766364), np.float64(0.9000461846343838), np.float64(7.750423164658499), np.float64(0.01826798087815314), 1.0, 2.194591829653648, np.float64(1.5848181411809097), np.float64(0.7370311910742923), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(65.60813108414976), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.6615472528201
+calculating stable deltas...
+Time taken to compute stable deltas is 34.003830671310425 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0439321994781494 seconds
+    [clip]it5@1 Phi_phi0: -5.887490e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit5 scale 1 gives ov -0.3342046659 <= start 0.7178915272; halving
+    [clip]it5@0.5 Phi_phi0: -2.943745e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit5 scale 0.5 gives ov 0.3828387925 <= start 0.7178915272; halving
+    [clip]it5@0.25 Phi_phi0: -1.471873e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit5 scale 0.25 gives ov 0.6922289061 <= start 0.7178915272; halving
+    [clip]it5@0.125 Phi_phi0: -7.359363e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit5 scale 0.125 gives ov 0.7163699178 <= start 0.7178915272; halving
+    [clip]it5@0.0625 Phi_phi0: -3.679682e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit5 backtracked to scale 0.0625 after 4 halving(s)
+    CVit5 exact step  scale 0.0625  ov 0.7178915272 -> 0.7182557379  chi2 2.220e+04 -> 2.216e+04
+  [it   5] ov 0.7178915272 -> 0.7182557379   chi2 2.216408e+04   |dtheta/sigma|max = 1.259e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7182557379
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784788.8693452072), np.float64(49.95780017404538), np.float64(0.900038768663673), np.float64(7.750488684244023), np.float64(0.01815818272970206), 1.0, 2.194591829653648, np.float64(1.584896300319632), np.float64(0.7353467154702606), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(81.27015233787073), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.5635984316351
+calculating stable deltas...
+Time taken to compute stable deltas is 34.018378496170044 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0540249347686768 seconds
+    [clip]it6@1 Phi_phi0: -6.014916e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit6 scale 1 gives ov -0.3764751243 <= start 0.7182557379; halving
+    [clip]it6@0.5 Phi_phi0: -3.007458e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit6 scale 0.5 gives ov 0.4143353961 <= start 0.7182557379; halving
+    [clip]it6@0.25 Phi_phi0: -1.503729e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit6 scale 0.25 gives ov 0.6948885888 <= start 0.7182557379; halving
+    [clip]it6@0.125 Phi_phi0: -7.518645e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit6 scale 0.125 gives ov 0.7168603981 <= start 0.7182557379; halving
+    [clip]it6@0.0625 Phi_phi0: -3.759322e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit6 backtracked to scale 0.0625 after 4 halving(s)
+    CVit6 exact step  scale 0.0625  ov 0.7182557379 -> 0.7185843199  chi2 2.216e+04 -> 2.213e+04
+  [it   6] ov 0.7182557379 -> 0.7185843199   chi2 2.213006e+04   |dtheta/sigma|max = 1.222e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7185843199
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784761.642786083), np.float64(49.96137378278951), np.float64(0.9000316865490479), np.float64(7.750551371013357), np.float64(0.01805065783720703), 1.0, 2.194591829653648, np.float64(1.584952697758307), np.float64(0.7336828701536956), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(96.35332150713708), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.4861249527808
+calculating stable deltas...
+Time taken to compute stable deltas is 33.96580791473389 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.038437604904175 seconds
+    [clip]it7@1 Phi_phi0: -6.282327e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit7 scale 1 gives ov -0.4033600538 <= start 0.7185843199; halving
+    [clip]it7@0.5 Phi_phi0: -3.141163e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit7 scale 0.5 gives ov 0.4438788927 <= start 0.7185843199; halving
+    [clip]it7@0.25 Phi_phi0: -1.570582e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit7 scale 0.25 gives ov 0.6983451159 <= start 0.7185843199; halving
+    [clip]it7@0.125 Phi_phi0: -7.852908e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit7 scale 0.125 gives ov 0.7176259614 <= start 0.7185843199; halving
+    [clip]it7@0.0625 Phi_phi0: -3.926454e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit7 backtracked to scale 0.0625 after 4 halving(s)
+    CVit7 exact step  scale 0.0625  ov 0.7185843199 -> 0.7191085540  chi2 2.213e+04 -> 2.208e+04
+  [it   7] ov 0.7185843199 -> 0.7191085540   chi2 2.207791e+04   |dtheta/sigma|max = 1.198e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7191085540
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784735.3779778415), np.float64(49.96485856985457), np.float64(0.9000248226392724), np.float64(7.750612182389376), np.float64(0.017944588831654396), 1.0, 2.194591829653648, np.float64(1.584989850228018), np.float64(0.7320767228977719), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(111.04716512726986), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.38212477658604
+calculating stable deltas...
+Time taken to compute stable deltas is 33.98392367362976 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.04345703125 seconds
+    [clip]it8@1 Phi_phi0: -6.257692e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit8 scale 1 gives ov -0.4173901624 <= start 0.7191085540; halving
+    [clip]it8@0.5 Phi_phi0: -3.128846e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit8 scale 0.5 gives ov 0.4589975712 <= start 0.7191085540; halving
+    [clip]it8@0.25 Phi_phi0: -1.564423e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit8 scale 0.25 gives ov 0.6993855712 <= start 0.7191085540; halving
+    [clip]it8@0.125 Phi_phi0: -7.822115e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit8 scale 0.125 gives ov 0.7180013180 <= start 0.7191085540; halving
+    [clip]it8@0.0625 Phi_phi0: -3.911058e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit8 backtracked to scale 0.0625 after 4 halving(s)
+    CVit8 exact step  scale 0.0625  ov 0.7191085540 -> 0.7195214659  chi2 2.208e+04 -> 2.204e+04
+  [it   8] ov 0.7191085540 -> 0.7195214659   chi2 2.203715e+04   |dtheta/sigma|max = 1.167e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7195214659
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784709.6369238067), np.float64(49.96825914350538), np.float64(0.9000181014650805), np.float64(7.750671672136083), np.float64(0.01784049566127043), 1.0, 2.194591829653648, np.float64(1.5849989676273655), np.float64(0.7305323367993741), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(125.38494659954748), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.30270885051482
+calculating stable deltas...
+Time taken to compute stable deltas is 33.910531520843506 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0482921600341797 seconds
+    [clip]it9@1 Phi_phi0: -5.849682e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit9 scale 1 gives ov -0.4329831047 <= start 0.7195214659; halving
+    [clip]it9@0.5 Phi_phi0: -2.924841e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit9 scale 0.5 gives ov 0.4922182516 <= start 0.7195214659; halving
+    [clip]it9@0.25 Phi_phi0: -1.462421e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit9 scale 0.25 gives ov 0.7022882115 <= start 0.7195214659; halving
+    [clip]it9@0.125 Phi_phi0: -7.312103e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit9 scale 0.125 gives ov 0.7185764165 <= start 0.7195214659; halving
+    [clip]it9@0.0625 Phi_phi0: -3.656051e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit9 backtracked to scale 0.0625 after 4 halving(s)
+    CVit9 exact step  scale 0.0625  ov 0.7195214659 -> 0.7199356294  chi2 2.204e+04 -> 2.200e+04
+  [it   9] ov 0.7195214659 -> 0.7199356294   chi2 2.199694e+04   |dtheta/sigma|max = 1.113e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7199356294
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784685.31778898), np.float64(49.97151324351593), np.float64(0.9000117232650426), np.float64(7.750728230404902), np.float64(0.01773987961825891), 1.0, 2.194591829653648, np.float64(1.5849807824089106), np.float64(0.7290195670151164), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(139.09113815139364), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.22917994024596
+calculating stable deltas...
+Time taken to compute stable deltas is 33.95374011993408 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0528361797332764 seconds
+    [clip]it10@1 Phi_phi0: -5.546788e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit10 scale 1 gives ov -0.4297792891 <= start 0.7199356294; halving
+    [clip]it10@0.5 Phi_phi0: -2.773394e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit10 scale 0.5 gives ov 0.5188737873 <= start 0.7199356294; halving
+    [clip]it10@0.25 Phi_phi0: -1.386697e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit10 scale 0.25 gives ov 0.7049962218 <= start 0.7199356294; halving
+    [clip]it10@0.125 Phi_phi0: -6.933485e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit10 scale 0.125 gives ov 0.7192346479 <= start 0.7199356294; halving
+    [clip]it10@0.0625 Phi_phi0: -3.466743e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit10 backtracked to scale 0.0625 after 4 halving(s)
+    CVit10 exact step  scale 0.0625  ov 0.7199356294 -> 0.7203970856  chi2 2.200e+04 -> 2.195e+04
+  [it  10] ov 0.7199356294 -> 0.7203970856   chi2 2.195387e+04   |dtheta/sigma|max = 1.067e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7203970856
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784662.020842849), np.float64(49.97465715268979), np.float64(0.9000055946681932), np.float64(7.750782634987035), np.float64(0.017641856262175338), 1.0, 2.194591829653648, np.float64(1.5849348307715256), np.float64(0.7275678447302604), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(152.3237664725261), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.16346320149364
+calculating stable deltas...
+Time taken to compute stable deltas is 33.968024253845215 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.043718099594116 seconds
+    [clip]it11@1 Phi_phi0: -5.424495e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit11 scale 1 gives ov -0.4182928143 <= start 0.7203970856; halving
+    [clip]it11@0.5 Phi_phi0: -2.712247e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit11 scale 0.5 gives ov 0.5338163821 <= start 0.7203970856; halving
+    [clip]it11@0.25 Phi_phi0: -1.356124e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit11 scale 0.25 gives ov 0.7060062987 <= start 0.7203970856; halving
+    [clip]it11@0.125 Phi_phi0: -6.780619e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit11 scale 0.125 gives ov 0.7195780773 <= start 0.7203970856; halving
+    [clip]it11@0.0625 Phi_phi0: -3.390309e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit11 backtracked to scale 0.0625 after 4 halving(s)
+    CVit11 exact step  scale 0.0625  ov 0.7203970856 -> 0.7207673544  chi2 2.195e+04 -> 2.192e+04
+  [it  11] ov 0.7203970856 -> 0.7207673544   chi2 2.191860e+04   |dtheta/sigma|max = 1.038e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7207673544
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784639.473208795), np.float64(49.97769924383546), np.float64(0.8999996610200011), np.float64(7.75083530040349), np.float64(0.01754638256833608), 1.0, 2.194591829653648, np.float64(1.5848623161957605), np.float64(0.7261486866350777), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(165.1238087016331), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.10368531391453
+calculating stable deltas...
+Time taken to compute stable deltas is 33.973735094070435 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0472500324249268 seconds
+    [clip]it12@1 Phi_phi0: -5.181298e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit12 scale 1 gives ov -0.3925837640 <= start 0.7207673544; halving
+    [clip]it12@0.5 Phi_phi0: -2.590649e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit12 scale 0.5 gives ov 0.5571994634 <= start 0.7207673544; halving
+    [clip]it12@0.25 Phi_phi0: -1.295324e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit12 scale 0.25 gives ov 0.7085480320 <= start 0.7207673544; halving
+    [clip]it12@0.125 Phi_phi0: -6.476622e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit12 scale 0.125 gives ov 0.7202339547 <= start 0.7207673544; halving
+    [clip]it12@0.0625 Phi_phi0: -3.238311e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit12 backtracked to scale 0.0625 after 4 halving(s)
+    CVit12 exact step  scale 0.0625  ov 0.7207673544 -> 0.7212103713  chi2 2.192e+04 -> 2.188e+04
+  [it  12] ov 0.7207673544 -> 0.7212103713   chi2 2.187831e+04   |dtheta/sigma|max = 9.986e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7212103713
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784617.8957376922), np.float64(49.98063970823251), np.float64(0.8999939611055915), np.float64(7.750885952823111), np.float64(0.017453248086204173), 1.0, 2.194591829653648, np.float64(1.5847669421764028), np.float64(0.7247783056882574), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(177.48610708169957), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.05021204660494
+calculating stable deltas...
+Time taken to compute stable deltas is 33.942503690719604 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0455660820007324 seconds
+    [clip]it13@1 Phi_phi0: -5.421432e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit13 scale 1 gives ov -0.3717068850 <= start 0.7212103713; halving
+    [clip]it13@0.5 Phi_phi0: -2.710716e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit13 scale 0.5 gives ov 0.5711553573 <= start 0.7212103713; halving
+    [clip]it13@0.25 Phi_phi0: -1.355358e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit13 scale 0.25 gives ov 0.7103313151 <= start 0.7212103713; halving
+    [clip]it13@0.125 Phi_phi0: -6.776791e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit13 scale 0.125 gives ov 0.7208602536 <= start 0.7212103713; halving
+    [clip]it13@0.0625 Phi_phi0: -3.388395e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit13 backtracked to scale 0.0625 after 4 halving(s)
+    CVit13 exact step  scale 0.0625  ov 0.7212103713 -> 0.7216947768  chi2 2.188e+04 -> 2.184e+04
+  [it  13] ov 0.7212103713 -> 0.7216947768   chi2 2.183535e+04   |dtheta/sigma|max = 9.801e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7216947768
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784596.972566886), np.float64(49.98351303464268), np.float64(0.8999884143164255), np.float64(7.750935282124248), np.float64(0.017361318778753364), 1.0, 2.194591829653648, np.float64(1.5846481067348597), np.float64(0.7234376367560217), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(189.55622844078744), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.00214197982092
+calculating stable deltas...
+Time taken to compute stable deltas is 33.95106077194214 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.038205623626709 seconds
+    [clip]it14@1 Phi_phi0: -4.917407e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit14 scale 1 gives ov -0.3170854832 <= start 0.7216947768; halving
+    [clip]it14@0.5 Phi_phi0: -2.458703e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit14 scale 0.5 gives ov 0.5945908957 <= start 0.7216947768; halving
+    [clip]it14@0.25 Phi_phi0: -1.229352e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit14 scale 0.25 gives ov 0.7128847221 <= start 0.7216947768; halving
+    [clip]it14@0.125 Phi_phi0: -6.146758e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit14 scale 0.125 gives ov 0.7215943672 <= start 0.7216947768; halving
+    [clip]it14@0.0625 Phi_phi0: -3.073379e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit14 backtracked to scale 0.0625 after 4 halving(s)
+    CVit14 exact step  scale 0.0625  ov 0.7216947768 -> 0.7222213079  chi2 2.184e+04 -> 2.179e+04
+  [it  14] ov 0.7216947768 -> 0.7222213079   chi2 2.178993e+04   |dtheta/sigma|max = 9.321e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7222213079
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784576.9729857324), np.float64(49.98627261521488), np.float64(0.89998310639156), np.float64(7.750982528693622), np.float64(0.01727255902251962), 1.0, 2.194591829653648, np.float64(1.5844976964663091), np.float64(0.7221489336975624), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(201.14394608177653), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.9619768360424
+calculating stable deltas...
+Time taken to compute stable deltas is 34.002259731292725 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.050112724304199 seconds
+    [clip]it15@1 Phi_phi0: -4.842037e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit15 scale 1 gives ov -0.2909848963 <= start 0.7222213079; halving
+    [clip]it15@0.5 Phi_phi0: -2.421018e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit15 scale 0.5 gives ov 0.5997219480 <= start 0.7222213079; halving
+    [clip]it15@0.25 Phi_phi0: -1.210509e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit15 scale 0.25 gives ov 0.7131850059 <= start 0.7222213079; halving
+    [clip]it15@0.125 Phi_phi0: -6.052546e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit15 scale 0.125 gives ov 0.7219061301 <= start 0.7222213079; halving
+    [clip]it15@0.0625 Phi_phi0: -3.026273e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit15 backtracked to scale 0.0625 after 4 halving(s)
+    CVit15 exact step  scale 0.0625  ov 0.7222213079 -> 0.7226181843  chi2 2.179e+04 -> 2.176e+04
+  [it  15] ov 0.7222213079 -> 0.7226181843   chi2 2.175537e+04   |dtheta/sigma|max = 9.087e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7226181843
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784557.6110054324), np.float64(49.98895585082421), np.float64(0.8999779591410645), np.float64(7.751028381717377), np.float64(0.01718560751886927), 1.0, 2.194591829653648, np.float64(1.584315868042627), np.float64(0.7208886164143627), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(212.4049596537346), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.92844318920092
+calculating stable deltas...
+Time taken to compute stable deltas is 33.95836520195007 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.044717311859131 seconds
+    [clip]it16@1 Phi_phi0: -5.052985e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit16 scale 1 gives ov -0.2565119557 <= start 0.7226181843; halving
+    [clip]it16@0.5 Phi_phi0: -2.526493e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit16 scale 0.5 gives ov 0.6117560811 <= start 0.7226181843; halving
+    [clip]it16@0.25 Phi_phi0: -1.263246e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit16 scale 0.25 gives ov 0.7148707277 <= start 0.7226181843; halving
+    [clip]it16@0.125 Phi_phi0: -6.316232e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit16 scale 0.125 gives ov 0.7225186360 <= start 0.7226181843; halving
+    [clip]it16@0.0625 Phi_phi0: -3.158116e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit16 backtracked to scale 0.0625 after 4 halving(s)
+    CVit16 exact step  scale 0.0625  ov 0.7226181843 -> 0.7230782553  chi2 2.176e+04 -> 2.172e+04
+  [it  16] ov 0.7226181843 -> 0.7230782553   chi2 2.171635e+04   |dtheta/sigma|max = 8.935e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7230782553
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784538.7511485764), np.float64(49.99158424523747), np.float64(0.8999729304156506), np.float64(7.751073188028668), np.float64(0.01709966336241818), 1.0, 2.194591829653648, np.float64(1.5841180515158835), np.float64(0.7196661298671793), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(223.42928568573575), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.89955259298083
+calculating stable deltas...
+Time taken to compute stable deltas is 34.07125735282898 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.050069808959961 seconds
+    [clip]it17@1 Phi_phi0: -4.826456e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit17 scale 1 gives ov -0.2022192068 <= start 0.7230782553; halving
+    [clip]it17@0.5 Phi_phi0: -2.413228e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit17 scale 0.5 gives ov 0.6243259767 <= start 0.7230782553; halving
+    [clip]it17@0.25 Phi_phi0: -1.206614e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit17 scale 0.25 gives ov 0.7161944988 <= start 0.7230782553; halving
+    [clip]it17@0.125 Phi_phi0: -6.033070e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit17 scale 0.125 gives ov 0.7230185046 <= start 0.7230782553; halving
+    [clip]it17@0.0625 Phi_phi0: -3.016535e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit17 backtracked to scale 0.0625 after 4 halving(s)
+    CVit17 exact step  scale 0.0625  ov 0.7230782553 -> 0.7235101765  chi2 2.172e+04 -> 2.168e+04
+  [it  17] ov 0.7230782553 -> 0.7235101765   chi2 2.168016e+04   |dtheta/sigma|max = 8.610e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7235101765
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784520.6452049003), np.float64(49.99411921945359), np.float64(0.8999680954208888), np.float64(7.751116309037632), np.float64(0.01701622684138221), 1.0, 2.194591829653648, np.float64(1.5838905523306244), np.float64(0.7184664839199654), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(234.05589126097956), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.87660880313703
+calculating stable deltas...
+Time taken to compute stable deltas is 33.99705696105957 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.055161237716675 seconds
+    [clip]it18@1 Phi_phi0: -4.373191e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit18 scale 1 gives ov -0.1354119044 <= start 0.7235101765; halving
+    [clip]it18@0.5 Phi_phi0: -2.186596e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit18 scale 0.5 gives ov 0.6377544571 <= start 0.7235101765; halving
+    [clip]it18@0.25 Phi_phi0: -1.093298e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit18 scale 0.25 gives ov 0.7176559348 <= start 0.7235101765; halving
+    [clip]it18@0.125 Phi_phi0: -5.466489e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit18 backtracked to scale 0.125 after 3 halving(s)
+    CVit18 exact step  scale 0.125  ov 0.7235101765 -> 0.7235398003  chi2 2.168e+04 -> 2.167e+04
+  [it  18] ov 0.7235101765 -> 0.7235398003   chi2 2.167446e+04   |dtheta/sigma|max = 1.646e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7235398003
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784485.8788575036), np.float64(49.99899840575656), np.float64(0.8999588058161675), np.float64(7.751199201218764), np.float64(0.01685480815381432), 1.0, 2.194591829653648, np.float64(1.5833830462063003), np.float64(0.7161538267643042), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(254.50272831959734), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.8436315346815
+calculating stable deltas...
+Time taken to compute stable deltas is 34.028114318847656 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.043560266494751 seconds
+    [clip]it19@1 Phi_phi0: -4.367010e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit19 scale 1 gives ov -0.0307606077 <= start 0.7235398003; halving
+    [clip]it19@0.5 Phi_phi0: -2.183505e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit19 scale 0.5 gives ov 0.6525357992 <= start 0.7235398003; halving
+    [clip]it19@0.25 Phi_phi0: -1.091753e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit19 scale 0.25 gives ov 0.7184076771 <= start 0.7235398003; halving
+    [clip]it19@0.125 Phi_phi0: -5.458763e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit19 backtracked to scale 0.125 after 3 halving(s)
+    CVit19 exact step  scale 0.125  ov 0.7235398003 -> 0.7236250638  chi2 2.167e+04 -> 2.166e+04
+  [it  19] ov 0.7235398003 -> 0.7236250638   chi2 2.166486e+04   |dtheta/sigma|max = 1.538e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7236250638
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784454.190256125), np.float64(50.00356134662223), np.float64(0.8999502422578438), np.float64(7.751275799265872), np.float64(0.01670070657115729), 1.0, 2.194591829653648, np.float64(1.582902755178253), np.float64(0.7140198221494735), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(273.58822436820117), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.81506631315338
+calculating stable deltas...
+Time taken to compute stable deltas is 34.050827741622925 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0405147075653076 seconds
+    [clip]it20@1 Phi_phi0: -4.197426e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit20 scale 1 gives ov 0.0775256055 <= start 0.7236250638; halving
+    [clip]it20@0.5 Phi_phi0: -2.098713e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit20 scale 0.5 gives ov 0.6669420272 <= start 0.7236250638; halving
+    [clip]it20@0.25 Phi_phi0: -1.049357e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit20 scale 0.25 gives ov 0.7196524311 <= start 0.7236250638; halving
+    [clip]it20@0.125 Phi_phi0: -5.246783e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit20 backtracked to scale 0.125 after 3 halving(s)
+    CVit20 exact step  scale 0.125  ov 0.7236250638 -> 0.7239235871  chi2 2.166e+04 -> 2.164e+04
+  [it  20] ov 0.7236250638 -> 0.7239235871   chi2 2.163939e+04   |dtheta/sigma|max = 1.437e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7239235871
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784425.17580933), np.float64(50.007839908969615), np.float64(0.899942323173372), np.float64(7.751346823447295), np.float64(0.01655362734605562), 1.0, 2.194591829653648, np.float64(1.5824335530694185), np.float64(0.7120771079488537), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(291.4534714223826), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.79457440491328
+calculating stable deltas...
+Time taken to compute stable deltas is 33.99049735069275 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0560312271118164 seconds
+    [clip]it21@1 Phi_phi0: -4.242489e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit21 scale 1 gives ov 0.1672615661 <= start 0.7239235871; halving
+    [clip]it21@0.5 Phi_phi0: -2.121244e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit21 scale 0.5 gives ov 0.6780882159 <= start 0.7239235871; halving
+    [clip]it21@0.25 Phi_phi0: -1.060622e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit21 scale 0.25 gives ov 0.7209800525 <= start 0.7239235871; halving
+    [clip]it21@0.125 Phi_phi0: -5.303111e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit21 backtracked to scale 0.125 after 3 halving(s)
+    CVit21 exact step  scale 0.125  ov 0.7239235871 -> 0.7244250983  chi2 2.164e+04 -> 2.160e+04
+  [it  21] ov 0.7239235871 -> 0.7244250983   chi2 2.159903e+04   |dtheta/sigma|max = 1.362e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7244250983
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784398.3266897793), np.float64(50.01188584713959), np.float64(0.8999349249795711), np.float64(7.751413324218979), np.float64(0.016412084679724343), 1.0, 2.194591829653648, np.float64(1.5819475566752623), np.float64(0.7102721584986327), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(308.3210277493468), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.78395982555193
+calculating stable deltas...
+Time taken to compute stable deltas is 33.97697997093201 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.051361083984375 seconds
+    [clip]it22@1 Phi_phi0: -3.093239e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit22 scale 1 gives ov 0.3013506548 <= start 0.7244250983; halving
+    [clip]it22@0.5 Phi_phi0: -1.546620e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit22 scale 0.5 gives ov 0.6911358531 <= start 0.7244250983; halving
+    [clip]it22@0.25 Phi_phi0: -7.733098e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit22 scale 0.25 gives ov 0.7223746463 <= start 0.7244250983; halving
+    [clip]it22@0.125 Phi_phi0: -3.866549e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit22 backtracked to scale 0.125 after 3 halving(s)
+    CVit22 exact step  scale 0.125  ov 0.7244250983 -> 0.7249639219  chi2 2.160e+04 -> 2.156e+04
+  [it  22] ov 0.7244250983 -> 0.7249639219   chi2 2.155811e+04   |dtheta/sigma|max = 1.187e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7249639219
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784373.581685117), np.float64(50.01558120544931), np.float64(0.8999281392136784), np.float64(7.751474266077803), np.float64(0.016282635032197998), 1.0, 2.194591829653648, np.float64(1.5813955711486143), np.float64(0.7086957896791766), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(323.73362156762596), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.79653199511554
+calculating stable deltas...
+Time taken to compute stable deltas is 34.0935959815979 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.045778274536133 seconds
+    [clip]it23@1 Phi_phi0: -3.875675e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit23 scale 1 gives ov 0.3200908416 <= start 0.7249639219; halving
+    [clip]it23@0.5 Phi_phi0: -1.937837e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit23 scale 0.5 gives ov 0.6941572132 <= start 0.7249639219; halving
+    [clip]it23@0.25 Phi_phi0: -9.689187e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit23 scale 0.25 gives ov 0.7232638135 <= start 0.7249639219; halving
+    [clip]it23@0.125 Phi_phi0: -4.844593e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit23 backtracked to scale 0.125 after 3 halving(s)
+    CVit23 exact step  scale 0.125  ov 0.7249639219 -> 0.7255855437  chi2 2.156e+04 -> 2.151e+04
+  [it  23] ov 0.7249639219 -> 0.7255855437   chi2 2.151100e+04   |dtheta/sigma|max = 1.211e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7255855437
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784350.392717651), np.float64(50.01918683237787), np.float64(0.8999216615780252), np.float64(7.751532717423335), np.float64(0.01615278368015285), 1.0, 2.194591829653648, np.float64(1.5808254831372766), np.float64(0.7071193198109049), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(338.7276508184425), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.81199290858098
+calculating stable deltas...
+Time taken to compute stable deltas is 34.16460847854614 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.044114351272583 seconds
+    [clip]it24@1 Phi_phi0: -2.973061e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit24 scale 1 gives ov 0.4391709174 <= start 0.7255855437; halving
+    [clip]it24@0.5 Phi_phi0: -1.486531e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit24 scale 0.5 gives ov 0.7048080753 <= start 0.7255855437; halving
+    [clip]it24@0.25 Phi_phi0: -7.432653e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit24 scale 0.25 gives ov 0.7246911172 <= start 0.7255855437; halving
+    [clip]it24@0.125 Phi_phi0: -3.716326e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit24 backtracked to scale 0.125 after 3 halving(s)
+    CVit24 exact step  scale 0.125  ov 0.7255855437 -> 0.7262462969  chi2 2.151e+04 -> 2.146e+04
+  [it  24] ov 0.7255855437 -> 0.7262462969   chi2 2.146262e+04   |dtheta/sigma|max = 1.067e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7262462969
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784330.097284488), np.float64(50.02242247635128), np.float64(0.8999159415627448), np.float64(7.751584530006171), np.float64(0.016034877273228006), 1.0, 2.194591829653648, np.float64(1.5801849220454494), np.float64(0.7056788287212817), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(352.16511055119105), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.84537836810895
+calculating stable deltas...
+Time taken to compute stable deltas is 34.01684021949768 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.058027505874634 seconds
+    [clip]it25@1 Phi_phi0: -3.372571e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit25 scale 1 gives ov 0.4455683868 <= start 0.7262462969; halving
+    [clip]it25@0.5 Phi_phi0: -1.686285e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit25 scale 0.5 gives ov 0.7062698463 <= start 0.7262462969; halving
+    [clip]it25@0.25 Phi_phi0: -8.431427e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit25 scale 0.25 gives ov 0.7254453113 <= start 0.7262462969; halving
+    [clip]it25@0.125 Phi_phi0: -4.215714e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit25 backtracked to scale 0.125 after 3 halving(s)
+    CVit25 exact step  scale 0.125  ov 0.7262462969 -> 0.7269045267  chi2 2.146e+04 -> 2.142e+04
+  [it  25] ov 0.7262462969 -> 0.7269045267   chi2 2.141535e+04   |dtheta/sigma|max = 1.068e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7269045267
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784310.288192951), np.float64(50.025618427247885), np.float64(0.89991032409184), np.float64(7.751635478781774), np.float64(0.015916689562940376), 1.0, 2.194591829653648, np.float64(1.5795006671732787), np.float64(0.7042955905345741), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(365.42268805208545), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.88796037733493
+calculating stable deltas...
+Time taken to compute stable deltas is 33.99356508255005 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0367825031280518 seconds
+    [clip]it26@1 Phi_phi0: -3.095207e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit26 scale 1 gives ov 0.5070130699 <= start 0.7269045267; halving
+    [clip]it26@0.5 Phi_phi0: -1.547604e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit26 scale 0.5 gives ov 0.7122073574 <= start 0.7269045267; halving
+    [clip]it26@0.25 Phi_phi0: -7.738019e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit26 scale 0.25 gives ov 0.7266222542 <= start 0.7269045267; halving
+    [clip]it26@0.125 Phi_phi0: -3.869009e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit26 backtracked to scale 0.125 after 3 halving(s)
+    CVit26 exact step  scale 0.125  ov 0.7269045267 -> 0.7276136745  chi2 2.142e+04 -> 2.137e+04
+  [it  26] ov 0.7269045267 -> 0.7276136745   chi2 2.136554e+04   |dtheta/sigma|max = 9.944e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7276136745
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784291.9196093213), np.float64(50.02860658600263), np.float64(0.8999050964324646), np.float64(7.7516829377587735), np.float64(0.015805056094829236), 1.0, 2.194591829653648, np.float64(1.5787636838074781), np.float64(0.7030047599606368), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(377.8102337709353), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 195.94504968080244
+calculating stable deltas...
+Time taken to compute stable deltas is 33.93825364112854 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.040560483932495 seconds
+    [clip]it27@1 Phi_phi0: -3.065004e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit27 scale 1 gives ov 0.5287964620 <= start 0.7276136745; halving
+    [clip]it27@0.5 Phi_phi0: -1.532502e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit27 scale 0.5 gives ov 0.7146888796 <= start 0.7276136745; halving
+    [clip]it27@0.25 Phi_phi0: -7.662511e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit27 scale 0.25 gives ov 0.7274671891 <= start 0.7276136745; halving
+    [clip]it27@0.125 Phi_phi0: -3.831255e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit27 backtracked to scale 0.125 after 3 halving(s)
+    CVit27 exact step  scale 0.125  ov 0.7276136745 -> 0.7282948698  chi2 2.137e+04 -> 2.132e+04
+  [it  27] ov 0.7276136745 -> 0.7282948698   chi2 2.131913e+04   |dtheta/sigma|max = 9.602e-01   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7282948698
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784274.8033316475), np.float64(50.03148516524121), np.float64(0.8999001592981997), np.float64(7.751728001832601), np.float64(0.015695630036832012), 1.0, 2.194591829653648, np.float64(1.5779697262359003), np.float64(0.7017702682258471), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(389.718359393721), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.0143618234304
+calculating stable deltas...
+Time taken to compute stable deltas is 33.94858384132385 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.037961483001709 seconds
+    [clip]it28@1 Phi_phi0: -1.233772e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit28 scale 1 gives ov 0.6267706797 <= start 0.7282948698; halving
+    [clip]it28@0.5 Phi_phi0: -6.168860e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit28 scale 0.5 gives ov 0.7224245599 <= start 0.7282948698; halving
+    [clip]it28@0.25 Phi_phi0: -3.084430e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit28 backtracked to scale 0.25 after 2 halving(s)
+    CVit28 exact step  scale 0.25  ov 0.7282948698 -> 0.7287322605  chi2 2.132e+04 -> 2.130e+04
+  [it  28] ov 0.7282948698 -> 0.7287322605   chi2 2.130335e+04   |dtheta/sigma|max = 1.561e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7287322605
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784246.5560450177), np.float64(50.036316469084014), np.float64(0.8998919911067254), np.float64(7.7518029011828355), np.float64(0.015511899680301824), 1.0, 2.194591829653648, np.float64(1.5762302887314084), np.float64(0.6997028843543783), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(409.6928941200836), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.19820205754039
+calculating stable deltas...
+Time taken to compute stable deltas is 34.071131229400635 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0418689250946045 seconds
+    [clip]it29@1 Phi_phi0: -2.945708e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit29 scale 1 gives ov 0.6017729037 <= start 0.7287322605; halving
+    [clip]it29@0.5 Phi_phi0: -1.472854e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit29 scale 0.5 gives ov 0.7213098158 <= start 0.7287322605; halving
+    [clip]it29@0.25 Phi_phi0: -7.364269e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit29 backtracked to scale 0.25 after 2 halving(s)
+    CVit29 exact step  scale 0.25  ov 0.7287322605 -> 0.7291665190  chi2 2.130e+04 -> 2.129e+04
+  [it  29] ov 0.7287322605 -> 0.7291665190   chi2 2.128564e+04   |dtheta/sigma|max = 1.704e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7291665190
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784218.0371632716), np.float64(50.04137746554814), np.float64(0.8998835522971157), np.float64(7.751880378545985), np.float64(0.015312337224579827), 1.0, 2.194591829653648, np.float64(1.5746763181249452), np.float64(0.6977962768165172), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(430.55853394679696), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.36040298079982
+calculating stable deltas...
+Time taken to compute stable deltas is 34.09565234184265 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0547056198120117 seconds
+    [clip]it30@1 Phi_phi0: -2.696609e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit30 scale 1 gives ov 0.6454305215 <= start 0.7291665190; halving
+    [clip]it30@0.5 Phi_phi0: -1.348304e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit30 scale 0.5 gives ov 0.7246934328 <= start 0.7291665190; halving
+    [clip]it30@0.25 Phi_phi0: -6.741522e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit30 backtracked to scale 0.25 after 2 halving(s)
+    CVit30 exact step  scale 0.25  ov 0.7291665190 -> 0.7299222495  chi2 2.129e+04 -> 2.124e+04
+  [it  30] ov 0.7291665190 -> 0.7299222495   chi2 2.124310e+04   |dtheta/sigma|max = 1.539e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7299222495
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784194.225218503), np.float64(50.0458645338504), np.float64(0.8998763034777678), np.float64(7.751947379518055), np.float64(0.01513034966790633), 1.0, 2.194591829653648, np.float64(1.5732108438638266), np.float64(0.6962557935240936), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(449.00040254404973), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.52707289236264
+calculating stable deltas...
+Time taken to compute stable deltas is 34.005351305007935 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0439858436584473 seconds
+    [clip]it31@1 Phi_phi0: -2.366139e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit31 scale 1 gives ov 0.6775023390 <= start 0.7299222495; halving
+    [clip]it31@0.5 Phi_phi0: -1.183069e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit31 scale 0.5 gives ov 0.7281156167 <= start 0.7299222495; halving
+    [clip]it31@0.25 Phi_phi0: -5.915347e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit31 backtracked to scale 0.25 after 2 halving(s)
+    CVit31 exact step  scale 0.25  ov 0.7299222495 -> 0.7310838640  chi2 2.124e+04 -> 2.117e+04
+  [it  31] ov 0.7299222495 -> 0.7310838640   chi2 2.117015e+04   |dtheta/sigma|max = 1.402e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7310838640
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784174.50014431), np.float64(50.049873551532365), np.float64(0.899870076096665), np.float64(7.752005482872262), np.float64(0.014962613929584366), 1.0, 2.194591829653648, np.float64(1.571725403904738), np.float64(0.6949571297979711), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(465.415318698409), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.70927673262173
+calculating stable deltas...
+Time taken to compute stable deltas is 34.073341608047485 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.060321569442749 seconds
+    [clip]it32@1 Phi_phi0: -2.883482e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit32 scale 1 gives ov 0.6799181473 <= start 0.7310838640; halving
+    [clip]it32@0.5 Phi_phi0: -1.441741e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit32 scale 0.5 gives ov 0.7296870391 <= start 0.7310838640; halving
+    [clip]it32@0.25 Phi_phi0: -7.208704e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit32 backtracked to scale 0.25 after 2 halving(s)
+    CVit32 exact step  scale 0.25  ov 0.7310838640 -> 0.7322845790  chi2 2.117e+04 -> 2.110e+04
+  [it  32] ov 0.7310838640 -> 0.7322845790   chi2 2.109673e+04   |dtheta/sigma|max = 1.400e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7322845790
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784156.1028708047), np.float64(50.05385329120492), np.float64(0.8998640907074441), np.float64(7.752061824200824), np.float64(0.014791511540527739), 1.0, 2.194591829653648, np.float64(1.5701176051697752), np.float64(0.6937810924893099), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(481.66139120908576), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 196.91835666815393
+calculating stable deltas...
+Time taken to compute stable deltas is 34.01392602920532 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.045982837677002 seconds
+    [clip]it33@1 Phi_phi0: -3.001252e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit33 scale 1 gives ov 0.6912983774 <= start 0.7322845790; halving
+    [clip]it33@0.5 Phi_phi0: -1.500626e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit33 scale 0.5 gives ov 0.7322189893 <= start 0.7322845790; halving
+    [clip]it33@0.25 Phi_phi0: -7.503130e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit33 backtracked to scale 0.25 after 2 halving(s)
+    CVit33 exact step  scale 0.25  ov 0.7322845790 -> 0.7336986268  chi2 2.110e+04 -> 2.101e+04
+  [it  33] ov 0.7322845790 -> 0.7336986268   chi2 2.100863e+04   |dtheta/sigma|max = 1.399e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7336986268
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784140.0093803736), np.float64(50.05771654742001), np.float64(0.8998585617079607), np.float64(7.752114562456603), np.float64(0.01461864059763462), 1.0, 2.194591829653648, np.float64(1.5683905055831773), np.float64(0.6927056740177386), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(497.36044999176977), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.149769050884
+calculating stable deltas...
+Time taken to compute stable deltas is 34.12651610374451 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0551583766937256 seconds
+    [clip]it34@1 Phi_phi0: -2.268013e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit34 scale 1 gives ov 0.7047382294 <= start 0.7336986268; halving
+    [clip]it34@0.5 Phi_phi0: -1.134007e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit34 scale 0.5 gives ov 0.7334105553 <= start 0.7336986268; halving
+    [clip]it34@0.25 Phi_phi0: -5.670033e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit34 backtracked to scale 0.25 after 2 halving(s)
+    CVit34 exact step  scale 0.25  ov 0.7336986268 -> 0.7345865349  chi2 2.101e+04 -> 2.097e+04
+  [it  34] ov 0.7336986268 -> 0.7345865349   chi2 2.096668e+04   |dtheta/sigma|max = 1.197e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7345865349
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784123.4895933713), np.float64(50.061148826371735), np.float64(0.8998533085552932), np.float64(7.752163904435709), np.float64(0.0144690228190727), 1.0, 2.194591829653648, np.float64(1.5664483030997638), np.float64(0.6918254248982201), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(511.3823144334779), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.42839733904043
+calculating stable deltas...
+Time taken to compute stable deltas is 34.07861280441284 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.055954933166504 seconds
+    [clip]it35@1 Phi_phi0: -2.583857e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit35 scale 1 gives ov 0.7091328372 <= start 0.7345865349; halving
+    [clip]it35@0.5 Phi_phi0: -1.291928e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit35 scale 0.5 gives ov 0.7345396471 <= start 0.7345865349; halving
+    [clip]it35@0.25 Phi_phi0: -6.459641e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit35 backtracked to scale 0.25 after 2 halving(s)
+    CVit35 exact step  scale 0.25  ov 0.7345865349 -> 0.7354473591  chi2 2.097e+04 -> 2.093e+04
+  [it  35] ov 0.7345865349 -> 0.7354473591   chi2 2.092707e+04   |dtheta/sigma|max = 1.189e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7354473591
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784107.6739864005), np.float64(50.06447315328008), np.float64(0.8998482466684778), np.float64(7.752211527941225), np.float64(0.014321776668264088), 1.0, 2.194591829653648, np.float64(1.5645376848510701), np.float64(0.6910922097705768), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(524.948701021319), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.70948976001353
+calculating stable deltas...
+Time taken to compute stable deltas is 34.002705097198486 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0572879314422607 seconds
+    [clip]it36@1 Phi_phi0: -1.729676e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit36 scale 1 gives ov 0.7220512417 <= start 0.7354473591; halving
+    [clip]it36@0.5 Phi_phi0: -8.648381e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit36 backtracked to scale 0.5 after 1 halving(s)
+    CVit36 exact step  scale 0.5  ov 0.7354473591 -> 0.7358691390  chi2 2.093e+04 -> 2.095e+04
+  [it  36] ov 0.7354473591 -> 0.7358691390   chi2 2.095296e+04   |dtheta/sigma|max = 1.969e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7358691390
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784082.594927768), np.float64(50.07004639068251), np.float64(0.8998400200408293), np.float64(7.7522896923185725), np.float64(0.014070292672786016), 1.0, 2.194591829653648, np.float64(1.5606695232023255), np.float64(0.6899448663956583), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(547.6332507261488), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.29230485423417
+calculating stable deltas...
+Time taken to compute stable deltas is 33.975399017333984 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.052708387374878 seconds
+    [clip]it37@1 Phi_phi0: -2.141862e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit37 scale 1 gives ov 0.7304644561 <= start 0.7358691390; halving
+    [clip]it37@0.5 Phi_phi0: -1.070931e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit37 backtracked to scale 0.5 after 1 halving(s)
+    CVit37 exact step  scale 0.5  ov 0.7358691390 -> 0.7373574408  chi2 2.095e+04 -> 2.088e+04
+  [it  37] ov 0.7358691390 -> 0.7373574408   chi2 2.087810e+04   |dtheta/sigma|max = 1.863e+00   40 s  <-- best
+           clipped: Phi_phi0
+    start overlap = 0.7373574408
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784065.0115110767), np.float64(50.075029142229724), np.float64(0.8998333821216326), np.float64(7.752354156290265), np.float64(0.013829587175199718), 1.0, 2.194591829653648, np.float64(1.5581022274811929), np.float64(0.6897206916257044), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, True, np.float64(567.7349296355289), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.71538599333178
+calculating stable deltas...
+Time taken to compute stable deltas is 33.98230171203613 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.06461763381958 seconds
+    CVit38 exact step  scale 1  ov 0.7373574408 -> 0.7402745646  chi2 2.088e+04 -> 2.076e+04
+  [it  38] ov 0.7373574408 -> 0.7402745646   chi2 2.075519e+04   |dtheta/sigma|max = 1.639e+00   40 s  <-- best
+    start overlap = 0.7402745646
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784068.002649397), np.float64(50.078738396658196), np.float64(0.8998311941923179), np.float64(7.752383238042369), np.float64(0.013622764177618311), 1.0, 2.194591829653648, np.float64(1.5522580170301143), np.float64(0.6913516076486255), 0.8, 0.8, np.float64(0.009956723800383933), 0.5, 0.5, 0.0, False, False, False, True, np.float64(582.13765390674), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.77968029559457
+calculating stable deltas...
+Time taken to compute stable deltas is 34.01715540885925 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0504283905029297 seconds
+    [clip]it39@1 Phi_phi0: -2.533037e-02 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit39 scale 1 gives ov 0.7068303024 <= start 0.7402745646; halving
+    [clip]it39@0.5 Phi_phi0: -7.686824e-03 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CVit39 scale 0.5 gives ov 0.7377103349 <= start 0.7402745646; halving
+    CVit39 scale 0.25 gives ov 0.7399986979 <= start 0.7402745646; halving
+    CVit39 backtracked to scale 0.125 after 3 halving(s)
+    CVit39 exact step  scale 0.125  ov 0.7402745646 -> 0.7403640652  chi2 2.076e+04 -> 2.076e+04
+  [it  39] ov 0.7402745646 -> 0.7403640652   chi2 2.075838e+04   |dtheta/sigma|max = 5.714e-01   40 s  <-- best
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784060.1368874763), np.float64(50.08030897132697), np.float64(0.8998287207618199), np.float64(7.752406240255548), np.float64(0.013549164623820033), 1.0, 2.194591829653648, np.float64(1.5516664898260877), np.float64(0.6913274718246937), 0.8, 0.8, np.float64(0.0055458368739718334), 0.5, 0.5, 0.0, False, False, False, True, np.float64(588.5508255541414), 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.87956675926588
+calculating stable deltas...
+Time taken to compute stable deltas is 34.05373454093933 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0470006465911865 seconds
+[FISH] 0PA+PN best iterate: cond = 3.940e+19, 39.1 s
+
+=== overlap trajectory ===
+  seed  0.7162396779
+  it   0  0.7162547860   chi2 2.237641e+04
+  it   1  0.7165529777   chi2 2.234542e+04
+  it   2  0.7170690966   chi2 2.229147e+04
+  it   3  0.7174795451   chi2 2.224690e+04
+  it   4  0.7178915272   chi2 2.220310e+04
+  it   5  0.7182557379   chi2 2.216408e+04
+  it   6  0.7185843199   chi2 2.213006e+04
+  it   7  0.7191085540   chi2 2.207791e+04
+  it   8  0.7195214659   chi2 2.203715e+04
+  it   9  0.7199356294   chi2 2.199694e+04
+  it  10  0.7203970856   chi2 2.195387e+04
+  it  11  0.7207673544   chi2 2.191860e+04
+  it  12  0.7212103713   chi2 2.187831e+04
+  it  13  0.7216947768   chi2 2.183535e+04
+  it  14  0.7222213079   chi2 2.178993e+04
+  it  15  0.7226181843   chi2 2.175537e+04
+  it  16  0.7230782553   chi2 2.171635e+04
+  it  17  0.7235101765   chi2 2.168016e+04
+  it  18  0.7235398003   chi2 2.167446e+04
+  it  19  0.7236250638   chi2 2.166486e+04
+  it  20  0.7239235871   chi2 2.163939e+04
+  it  21  0.7244250983   chi2 2.159903e+04
+  it  22  0.7249639219   chi2 2.155811e+04
+  it  23  0.7255855437   chi2 2.151100e+04
+  it  24  0.7262462969   chi2 2.146262e+04
+  it  25  0.7269045267   chi2 2.141535e+04
+  it  26  0.7276136745   chi2 2.136554e+04
+  it  27  0.7282948698   chi2 2.131913e+04
+  it  28  0.7287322605   chi2 2.130335e+04
+  it  29  0.7291665190   chi2 2.128564e+04
+  it  30  0.7299222495   chi2 2.124310e+04
+  it  31  0.7310838640   chi2 2.117015e+04
+  it  32  0.7322845790   chi2 2.109673e+04
+  it  33  0.7336986268   chi2 2.100863e+04
+  it  34  0.7345865349   chi2 2.096668e+04
+  it  35  0.7354473591   chi2 2.092707e+04
+  it  36  0.7358691390   chi2 2.095296e+04
+  it  37  0.7373574408   chi2 2.087810e+04
+  it  38  0.7402745646   chi2 2.075519e+04
+  it  39  0.7403640652   chi2 2.075838e+04
+
+     param           injected          seed (DE)       best iterate        sigma     b/sigma
+        m1         3780313.91        3784945.756        3784060.137   2.7169e+01   +137.8872
+        m2                 50        49.93865847        50.08030897   3.0598e-03    +26.2464
+         a                0.9       0.9000784184       0.8998287208   6.1020e-06    -28.0692
+        p0        7.757812286        7.750140647         7.75240624   5.5771e-05    -96.9332
+        e0                  0      0.01870071554      0.01354916462   1.3649e-04    +99.2692
+        qS                0.2        1.584651243         1.55166649   3.5623e-03   +379.4349
+      phiS                0.2       0.7447343703       0.6913274718   2.4156e-03   +203.3949
+  Phi_phi0                0.3        6.276382964     0.005545836874   2.8078e-02    -10.4870
+       C_p                  0                  0        588.5508256   1.2722e+01    +46.2638
+
+[done] seed 0.7162396779 -> best 0.7403640652 at iteration 39 (max_iters)
+[done] population run reached 0.0003566355 (0PA), 0.0005029179 (0PA+PN)
+[done] total 0.49 h
+[saved] /home/svu/e1583490/EMRI_CV_bias/harder_environmental/results_cv_iter_pn.json

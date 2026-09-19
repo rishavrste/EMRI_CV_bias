@@ -40,6 +40,49 @@ Because it is a *local* climb, each run is `CV → (if it stalls below the overl
 
 ## Scripts
 
+### Remaining grid cells — **hybrid branch**
+| file | points (a, e0) | models | starts | output |
+|------|----------------|--------|--------|--------|
+| `gauss_cv_emri_grid_rest.py` | idx1 (−0.5,0.1), idx2 (0.0,0.1), idx7 (0.0,0.2), idx8 (0.5,0.2), idx10 (−0.9,0.3), idx15 (−0.9,0.4), idx16 (−0.5,0.4), idx19 (0.9,0.4), idx21 (−0.5,0.5), idx22 (0.0,0.5), idx23 (0.5,0.5) | 0PA, PN, simple | 0PA: from_MAP. PN/simple: from_MAP **and** from_0PA (this run's 0PA best fit) | `results_emri_grid_rest_{a,b}.json` |
+
+The 11 cells that had no CV run at all — this completes the 5×5 grid except idx9/idx13, which
+have deviation results but whose 0PA came from an external NM fit rather than our CV-from-MAP.
+11 points × (1 + 2 + 2) = **55 climbs**, split across two jobs:
+`../batch_emri_a.sh` (idx1, 7, 10, 16, 19, 22) and `../batch_emri_b.sh` (idx2, 8, 15, 21, 23);
+each spans a range of spins and eccentricities so a single job's output is still representative.
+Both deviation starts are climbed and reported; the JSON's `best` block names the winner per model.
+
+Signal and MAP are read **directly from the SK_files arrays** (nothing hardcoded):
+`data/signal/signal_parameter_array_EMRI.npy` and
+`data/recovered/mle/recovered_parameter_array_EMRI_0pa.npy`, columns `[0,1,2,3,4,7,8,11,13]`.
+Verified to reproduce the hand-copied `map9` values in `gauss_cv_emri_grid_diverse2.py` exactly.
+
+This script also prints **per-channel (A, E, T) SNR** for every injection and warns if T carries
+more than 5% of the power. The IMRI grid was found to alias badly into the null T channel at
+dt=10 (see `../IMRI/README.md`); the EMRI grid has never been checked, and these runs are also
+the diagnostic. If T% turns out to be large, the EMRI grid needs re-running at dt=5.
+
+### Remaining grid cells (the 11 with no CV run) — **hybrid branch**
+| file | points (a, e0) | models | starts | output |
+|------|----------------|--------|--------|--------|
+| `gauss_cv_emri_grid_rest.py` | idx1 (−0.5,0.1), idx2 (0.0,0.1), idx7 (0.0,0.2), idx8 (0.5,0.2), idx10 (−0.9,0.3), idx15 (−0.9,0.4), idx16 (−0.5,0.4), idx19 (0.9,0.4), idx21 (−0.5,0.5), idx22 (0.0,0.5), idx23 (0.5,0.5) | 0PA, PN, simple | 0PA: from_MAP. PN/simple: from_MAP **and** from_0PA (this run's 0PA best fit) | `results_emri_grid_rest_{a,b}.json` |
+
+11 points × (1 + 2 + 2) = **55 climbs**. Both deviation seeds are climbed and both reported; the
+JSON carries a `best` block naming the winner per model. Split across two jobs via
+`EMRI_POINTS` / `EMRI_TAG`: `../batch_emri_a.sh` (idx1, 7, 10, 16, 19, 22 → `..._a.json`) and
+`../batch_emri_b.sh` (idx2, 8, 15, 21, 23 → `..._b.json`), each with a spin/eccentricity spread
+so a lost job still leaves a usable sweep. Signal params **and** the MAP are read live from
+SK_files (`signal_parameter_array_EMRI.npy`, `recovered/mle/recovered_parameter_array_EMRI_0pa.npy`,
+columns [0,1,2,3,4,7,8,11,13]) — nothing hardcoded. `from_injection` is not run (it stalled at
+every point in every previous grid run).
+
+This script also prints the **per-channel (A,E,T) SNR** of each injection and warns if T% > 5.
+The IMRI grid was found to alias badly into the null T channel at dt=10; the EMRI grid has
+never been checked, so this is the outstanding diagnostic — see `../IMRI/README.md`.
+
+After these land, the EMRI grid is complete except idx9/idx13, which have PN/simple results
+from the earlier ad-hoc scripts but no CV 0PA-from-MAP of their own.
+
 ### Diverse grid points (spin & eccentricity spread) — **hybrid branch**
 | file | points (a, e0) | models | starts | output |
 |------|----------------|--------|--------|--------|

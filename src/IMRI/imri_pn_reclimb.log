@@ -1,0 +1,20 @@
+startup
+[selection] row means of C_p (cells with PN gain > 2x):
+    a=-0.9  mean C_p =   +9.570  from 4 cell(s) [10, 0, 20, 15]
+    a=-0.5  mean C_p =  +10.364  from 5 cell(s) [6, 16, 1, 11, 21]
+    a=+0.0  mean C_p =  +13.083  from 1 cell(s) [12]   <-- SINGLE CELL, speculative
+    a=+0.5  mean C_p =  -14.383  from 2 cell(s) [8, 13]
+    a=+0.9  mean C_p =   -7.013  from 3 cell(s) [14, 24, 19]
+[selection] re-climbing 8 cells: [2, 3, 4, 5, 7, 9, 17, 22]
+    idx2   a=+0.0 e0=0.1  C_p now    -0.000 -> seed  +13.083   incumbent PN ov 0.9996591 (1.0x)
+    idx3   a=+0.5 e0=0.1  C_p now   +28.844 -> seed  -14.383   incumbent PN ov 0.9860655 (1.0x)
+    idx4   a=+0.9 e0=0.1  C_p now    +8.379 -> seed   -7.013   incumbent PN ov 0.9916155 (1.1x)
+    idx5   a=-0.9 e0=0.2  C_p now    +0.160 -> seed   +9.570   incumbent PN ov 0.9989930 (1.2x)
+    idx7   a=+0.0 e0=0.2  C_p now    -0.197 -> seed  +13.083   incumbent PN ov 0.9991401 (1.1x)
+    idx9   a=+0.9 e0=0.2  C_p now   -22.215 -> seed   -7.013   incumbent PN ov 0.9818259 (1.1x)
+    idx17  a=+0.0 e0=0.4  C_p now    -0.063 -> seed  +13.083   incumbent PN ov 0.9983924 (1.1x)
+    idx22  a=+0.0 e0=0.5  C_p now    +2.783 -> seed  +13.083   incumbent PN ov 0.9984445 (1.2x)
+
+[info] IMRI PN re-climb, dt=5.0, T=1.0; 8 cells x 1 climb; out -> results_imri_pn_reclimb.json
+
+==============================================================================

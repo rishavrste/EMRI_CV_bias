@@ -1,0 +1,1477 @@
+[compute_fishers] branch=hybrid system=all: 165 cases total, 72 to (re)compute
+  IMRI  grid_idx1       0PA        fisher=yes snr=yes
+  IMRI  grid_idx1       PN         fisher=yes snr=yes
+  IMRI  grid_idx1       simple     fisher=yes snr=yes
+  IMRI  grid_idx2       0PA        fisher=yes snr=yes
+  IMRI  grid_idx2       PN         fisher=yes snr=yes
+  IMRI  grid_idx2       simple     fisher=yes snr=yes
+  IMRI  grid_idx3       0PA        fisher=yes snr=yes
+  IMRI  grid_idx3       PN         fisher=yes snr=yes
+  IMRI  grid_idx3       simple     fisher=yes snr=yes
+  IMRI  grid_idx5       0PA        fisher=yes snr=yes
+  IMRI  grid_idx5       PN         fisher=yes snr=yes
+  IMRI  grid_idx5       simple     fisher=yes snr=yes
+  IMRI  grid_idx7       0PA        fisher=yes snr=yes
+  IMRI  grid_idx7       PN         fisher=yes snr=yes
+  IMRI  grid_idx7       simple     fisher=yes snr=yes
+  IMRI  grid_idx9       0PA        fisher=yes snr=yes
+  IMRI  grid_idx9       PN         fisher=yes snr=yes
+  IMRI  grid_idx9       simple     fisher=yes snr=yes
+  IMRI  grid_idx11      0PA        fisher=yes snr=yes
+  IMRI  grid_idx11      PN         fisher=yes snr=yes
+  IMRI  grid_idx11      simple     fisher=yes snr=yes
+  IMRI  grid_idx13      0PA        fisher=yes snr=yes
+  IMRI  grid_idx13      PN         fisher=yes snr=yes
+  IMRI  grid_idx13      simple     fisher=yes snr=yes
+  IMRI  grid_idx15      0PA        fisher=yes snr=yes
+  IMRI  grid_idx15      PN         fisher=yes snr=yes
+  IMRI  grid_idx15      simple     fisher=yes snr=yes
+  IMRI  grid_idx17      0PA        fisher=yes snr=yes
+  IMRI  grid_idx17      PN         fisher=yes snr=yes
+  IMRI  grid_idx17      simple     fisher=yes snr=yes
+  IMRI  grid_idx19      0PA        fisher=yes snr=yes
+  IMRI  grid_idx19      PN         fisher=yes snr=yes
+  IMRI  grid_idx19      simple     fisher=yes snr=yes
+  IMRI  grid_idx21      0PA        fisher=yes snr=yes
+  IMRI  grid_idx21      PN         fisher=yes snr=yes
+  IMRI  grid_idx21      simple     fisher=yes snr=yes
+  IMRI  grid_idx23      0PA        fisher=yes snr=yes
+  IMRI  grid_idx23      PN         fisher=yes snr=yes
+  IMRI  grid_idx23      simple     fisher=yes snr=yes
+  EMRI  grid_idx1       0PA        fisher=yes snr=yes
+  EMRI  grid_idx1       PN         fisher=yes snr=yes
+  EMRI  grid_idx1       simple     fisher=yes snr=yes
+  EMRI  grid_idx2       0PA        fisher=yes snr=yes
+  EMRI  grid_idx2       PN         fisher=yes snr=yes
+  EMRI  grid_idx2       simple     fisher=yes snr=yes
+  EMRI  grid_idx7       0PA        fisher=yes snr=yes
+  EMRI  grid_idx7       PN         fisher=yes snr=yes
+  EMRI  grid_idx7       simple     fisher=yes snr=yes
+  EMRI  grid_idx8       0PA        fisher=yes snr=yes
+  EMRI  grid_idx8       PN         fisher=yes snr=yes
+  EMRI  grid_idx8       simple     fisher=yes snr=yes
+  EMRI  grid_idx10      0PA        fisher=yes snr=yes
+  EMRI  grid_idx10      PN         fisher=yes snr=yes
+  EMRI  grid_idx10      simple     fisher=yes snr=yes
+  EMRI  grid_idx15      0PA        fisher=yes snr=yes
+  EMRI  grid_idx15      PN         fisher=yes snr=yes
+  EMRI  grid_idx15      simple     fisher=yes snr=yes
+  EMRI  grid_idx16      0PA        fisher=yes snr=yes
+  EMRI  grid_idx16      PN         fisher=yes snr=yes
+  EMRI  grid_idx16      simple     fisher=yes snr=yes
+  EMRI  grid_idx19      0PA        fisher=yes snr=yes
+  EMRI  grid_idx19      PN         fisher=yes snr=yes
+  EMRI  grid_idx19      simple     fisher=yes snr=yes
+  EMRI  grid_idx21      0PA        fisher=yes snr=yes
+  EMRI  grid_idx21      PN         fisher=yes snr=yes
+  EMRI  grid_idx21      simple     fisher=yes snr=yes
+  EMRI  grid_idx22      0PA        fisher=yes snr=yes
+  EMRI  grid_idx22      PN         fisher=yes snr=yes
+  EMRI  grid_idx22      simple     fisher=yes snr=yes
+  EMRI  grid_idx23      0PA        fisher=yes snr=yes
+  EMRI  grid_idx23      PN         fisher=yes snr=yes
+  EMRI  grid_idx23      simple     fisher=yes snr=yes
+startup
+[IMRI/grid_idx1/0PA] computing injection SNR ...
+[IMRI/grid_idx1/0PA] SNR = 20.8216 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx1.npy
+[IMRI/grid_idx1/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000916.97, 999.707775, -0.495255647, 24.9462154, 0.0997878091, 1.0, 33.99230595134627, 1.04789289, 0.784402765, 0.6283185307179586, 0.5235987755982988, 0.0926350399, 0.2, 0.00586830405, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.872126629209603
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31531043.67830225
+plunging! t_interp:  31558144.999999996 t_traj:  31544910.221396033
+plunging! t_interp:  31558144.999999996 t_traj:  31546976.355921965
+plunging! t_interp:  31558144.999999996 t_traj:  31556863.000174105
+Time taken to compute stable deltas is 145.43217778205872 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.7664947509765625 seconds
+[IMRI/grid_idx1/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx1_0PA.npy
+[IMRI/grid_idx1/PN] computing injection SNR ...
+[IMRI/grid_idx1/PN] SNR = 20.8216 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx1.npy
+[IMRI/grid_idx1/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002082.16, 1000.80002, -0.492692477, 24.9294087, 0.0991818386, 1.0, 33.99230595134627, 1.04690314, 0.785757152, 0.6283185307179586, 0.5235987755982988, 0.0889868913, 0.2, 0.366325617, 0.95, False, False, False, True, 10.0579782, -2.99155143, 0.0, 0.0)
+Waveform Generated. SNR: 20.868381377670236
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31531129.045785524
+plunging! t_interp:  31558144.999999996 t_traj:  31544993.4018045
+plunging! t_interp:  31558144.999999996 t_traj:  31547059.21068212
+plunging! t_interp:  31558144.999999996 t_traj:  31556944.294741824
+Time taken to compute stable deltas is 190.34333777427673 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.963430404663086 seconds
+[IMRI/grid_idx1/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx1_PN.npy
+[IMRI/grid_idx1/simple] computing injection SNR ...
+[IMRI/grid_idx1/simple] SNR = 20.8216 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx1.npy
+[IMRI/grid_idx1/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001508.94, 999.250685, -0.494034623, 24.9383271, 0.0993756744, 1.0, 33.99230595134627, 1.04715598, 0.786303301, 0.6283185307179586, 0.5235987755982988, 0.158642409, 0.2, 0.195128787, 0.95, False, False, False, True, 0.0, 0.0, 0.487537179, 11.9026062)
+Waveform Generated. SNR: 20.83262292682209
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31531108.68176202
+plunging! t_interp:  31558144.99999999 t_traj:  31544974.393978693
+plunging! t_interp:  31558144.99999999 t_traj:  31547040.404725187
+plunging! t_interp:  31558144.99999999 t_traj:  31556926.457018733
+Time taken to compute stable deltas is 191.11372113227844 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.91526985168457 seconds
+[IMRI/grid_idx1/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx1_simple.npy
+[IMRI/grid_idx2/0PA] computing injection SNR ...
+[IMRI/grid_idx2/0PA] SNR = 21.3497 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx2.npy
+[IMRI/grid_idx2/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000616.18, 999.758997, 0.00290649129, 24.3376997, 0.0998522111, 1.0, 46.810136367393184, 1.04812126, 0.784640253, 0.6283185307179586, 0.5235987755982988, 6.37777524, 0.2, 6.23287618, 0.95, False, False, False, False)
+Waveform Generated. SNR: 21.37363300907101
+calculating stable deltas...
+plunging! t_interp:  31558145.0 t_traj:  31553603.91916996
+plunging! t_interp:  31558145.0 t_traj:  31525661.169019576
+plunging! t_interp:  31558145.0 t_traj:  31538945.737259217
+plunging! t_interp:  31558145.0 t_traj:  31552234.417392615
+plunging! t_interp:  31558145.0 t_traj:  31540925.145073794
+plunging! t_interp:  31558145.0 t_traj:  31550396.753458593
+plunging! t_interp:  31558145.0 t_traj:  31551807.95655674
+Time taken to compute stable deltas is 149.8020203113556 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.372691869735718 seconds
+[IMRI/grid_idx2/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx2_0PA.npy
+[IMRI/grid_idx2/PN] computing injection SNR ...
+[IMRI/grid_idx2/PN] SNR = 21.3497 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx2.npy
+[IMRI/grid_idx2/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000616.39, 999.758798, 0.00290234802, 24.3377011, 0.0998557721, 1.0, 46.810136367393184, 1.0479255, 0.785143282, 0.6283185307179586, 0.5235987755982988, 6.3914032, 0.2, 6.25722738, 0.95, False, False, False, True, -0.000109089239, -0.070880269, 0.0, 0.0)
+Waveform Generated. SNR: 21.367536988110167
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31553602.702328548
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  31558144.999999993 t_traj:  31525659.93718573
+plunging! t_interp:  31558144.999999993 t_traj:  31538944.51147896
+plunging! t_interp:  31558144.999999993 t_traj:  31552233.195143245
+plunging! t_interp:  31558144.999999993 t_traj:  31540923.917799726
+plunging! t_interp:  31558144.999999993 t_traj:  31550395.529603105
+plunging! t_interp:  31558144.999999993 t_traj:  31551806.73292565
+minimum relative error is greater than 1% for dev_1. Fisher may be unstable!
+Time taken to compute stable deltas is 196.106116771698 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.836906909942627 seconds
+[IMRI/grid_idx2/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx2_PN.npy
+[IMRI/grid_idx2/simple] computing injection SNR ...
+[IMRI/grid_idx2/simple] SNR = 21.3497 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx2.npy
+[IMRI/grid_idx2/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000626.44, 999.775285, 0.00291683217, 24.3376006, 0.0998471403, 1.0, 46.810136367393184, 1.04771358, 0.785427475, 0.6283185307179586, 0.5235987755982988, 6.40552886, 0.2, 6.26979112, 0.95, False, False, False, True, 0.0, 0.0, -0.0119035078, 0.805663269)
+Waveform Generated. SNR: 21.364023636259777
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31553602.391551673
+plunging! t_interp:  31558144.999999996 t_traj:  31525659.5377999
+plunging! t_interp:  31558144.999999996 t_traj:  31538944.096346207
+plunging! t_interp:  31558144.999999996 t_traj:  31552232.767380297
+plunging! t_interp:  31558144.999999996 t_traj:  31540923.504980106
+plunging! t_interp:  31558144.999999996 t_traj:  31550395.10493559
+plunging! t_interp:  31558144.999999996 t_traj:  31551806.307027973
+Time taken to compute stable deltas is 210.92009925842285 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.431328535079956 seconds
+[IMRI/grid_idx2/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx2_simple.npy
+[IMRI/grid_idx3/0PA] computing injection SNR ...
+[IMRI/grid_idx3/0PA] SNR = 22.3915 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx3.npy
+[IMRI/grid_idx3/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (996950.622, 1001.78585, 0.499321802, 23.823296, 0.10011318, 1.0, 66.40558200919263, 1.0487056, 0.786098385, 0.6283185307179586, 0.5235987755982988, 0.219778387, 0.2, 5.04737408, 0.95, False, False, False, False)
+Waveform Generated. SNR: 22.38687741280665
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31546987.04006466
+plunging! t_interp:  31558144.999999993 t_traj:  31553289.768961996
+plunging! t_interp:  31558144.999999993 t_traj:  31554228.765992854
+plunging! t_interp:  31558144.999999993 t_traj:  31521163.990755208
+plunging! t_interp:  31558144.999999993 t_traj:  31533917.677277226
+plunging! t_interp:  31558144.999999993 t_traj:  31546675.19687184
+plunging! t_interp:  31558144.999999993 t_traj:  31535817.9739959
+plunging! t_interp:  31558144.999999993 t_traj:  31544910.993207473
+plunging! t_interp:  31558144.999999993 t_traj:  31554005.959528096
+plunging! t_interp:  31558144.999999993 t_traj:  31546265.784123305
+plunging! t_interp:  31558144.999999993 t_traj:  31552748.28770672
+plunging! t_interp:  31558144.999999993 t_traj:  31553714.097275995
+Time taken to compute stable deltas is 155.70344471931458 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.881220102310181 seconds
+[IMRI/grid_idx3/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx3_0PA.npy
+[IMRI/grid_idx3/PN] computing injection SNR ...
+[IMRI/grid_idx3/PN] SNR = 22.3915 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx3.npy
+[IMRI/grid_idx3/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (997902.589, 1007.67789, 0.500188746, 23.8214262, 0.097124754, 1.0, 66.40558200919263, 1.04871236, 0.788620562, 0.6283185307179586, 0.5235987755982988, 0.418049662, 0.2, 4.87201811, 0.95, False, False, False, True, 28.844478, -15.64732, 0.0, 0.0)
+Waveform Generated. SNR: 22.49770176617441
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31546985.69282908
+plunging! t_interp:  31558144.999999993 t_traj:  31553274.904143684
+plunging! t_interp:  31558144.999999993 t_traj:  31554211.887179267
+plunging! t_interp:  31558144.999999993 t_traj:  31521137.19178099
+plunging! t_interp:  31558144.999999993 t_traj:  31533883.72847365
+plunging! t_interp:  31558144.999999993 t_traj:  31546634.091198433
+plunging! t_interp:  31558144.999999993 t_traj:  31535782.960460156
+plunging! t_interp:  31558144.999999993 t_traj:  31544870.87761006
+plunging! t_interp:  31558144.999999993 t_traj:  31553960.740134943
+plunging! t_interp:  31558144.999999993 t_traj:  31546224.908074383
+plunging! t_interp:  31558144.999999993 t_traj:  31552703.774017993
+plunging! t_interp:  31558144.999999993 t_traj:  31553669.041457817
+plunging! t_interp:  31558144.999999993 t_traj:  31517550.485248923
+plunging! t_interp:  31558144.999999993 t_traj:  31531181.52215768
+plunging! t_interp:  31558144.999999993 t_traj:  31544824.492560253
+plunging! t_interp:  31558144.999999993 t_traj:  31533213.21379547
+plunging! t_interp:  31558144.999999993 t_traj:  31542937.37514063
+plunging! t_interp:  31558144.999999993 t_traj:  31552667.605830267
+plunging! t_interp:  31558144.999999993 t_traj:  31544386.542265214
+plunging! t_interp:  31558144.999999993 t_traj:  31551321.850273103
+plunging! t_interp:  31558144.999999993 t_traj:  31552355.29555337
+plunging! t_interp:  31558144.999999993 t_traj:  31557300.692747466
+plunging! t_interp:  31558144.999999993 t_traj:  31558037.562907893
+Time taken to compute stable deltas is 201.35914134979248 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.803762197494507 seconds
+[IMRI/grid_idx3/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx3_PN.npy
+[IMRI/grid_idx3/simple] computing injection SNR ...
+[IMRI/grid_idx3/simple] SNR = 22.3915 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx3.npy
+[IMRI/grid_idx3/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (996894.681, 1001.58991, 0.499249411, 23.8239573, 0.100153223, 1.0, 66.40558200919263, 1.04909319, 0.785757158, 0.6283185307179586, 0.5235987755982988, 0.18305887, 0.2, 5.00151178, 0.95, False, False, False, True, 0.0, 0.0, 0.185906462, -1.69877998)
+Waveform Generated. SNR: 22.39315850159273
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31546979.68167717
+plunging! t_interp:  31558144.99999999 t_traj:  31553282.990539104
+plunging! t_interp:  31558144.99999999 t_traj:  31554222.07370776
+plunging! t_interp:  31558144.99999999 t_traj:  31521158.69645997
+plunging! t_interp:  31558144.99999999 t_traj:  31533912.44865791
+plunging! t_interp:  31558144.99999999 t_traj:  31546670.031620223
+plunging! t_interp:  31558144.99999999 t_traj:  31535812.75458811
+plunging! t_interp:  31558144.99999999 t_traj:  31544905.81991044
+plunging! t_interp:  31558144.99999999 t_traj:  31554000.834088523
+plunging! t_interp:  31558144.99999999 t_traj:  31546260.617200796
+plunging! t_interp:  31558144.99999999 t_traj:  31552743.154997896
+plunging! t_interp:  31558144.99999999 t_traj:  31553708.967553996
+Time taken to compute stable deltas is 197.56395888328552 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.594086647033691 seconds
+[IMRI/grid_idx3/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx3_simple.npy
+[IMRI/grid_idx5/0PA] computing injection SNR ...
+[IMRI/grid_idx5/0PA] SNR = 20.5028 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx5.npy
+[IMRI/grid_idx5/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001267.07, 999.680951, -0.893304894, 25.4146791, 0.19984956, 1.0, 28.17021250636398, 1.05050331, 0.783548657, 0.6283185307179586, 0.5235987755982988, 0.162889344, 0.2, 0.0741625053, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.56090568379504
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31539480.045072034
+plunging! t_interp:  31558144.99999999 t_traj:  31553873.802213892
+plunging! t_interp:  31558144.99999999 t_traj:  31556018.502914574
+Time taken to compute stable deltas is 149.8281283378601 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.01299262046814 seconds
+[IMRI/grid_idx5/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx5_0PA.npy
+[IMRI/grid_idx5/PN] computing injection SNR ...
+[IMRI/grid_idx5/PN] SNR = 20.5028 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx5.npy
+[IMRI/grid_idx5/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001383.12, 999.719442, -0.893049234, 25.4132109, 0.199802866, 1.0, 28.17021250636398, 1.04905715, 0.785773544, 0.6283185307179586, 0.5235987755982988, 0.187815414, 0.2, 0.108169754, 0.95, False, False, False, True, 0.15964907, -0.288095585, 0.0, 0.0)
+Waveform Generated. SNR: 20.543333314862775
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31539481.230566207
+plunging! t_interp:  31558144.999999993 t_traj:  31553874.804522958
+plunging! t_interp:  31558144.999999993 t_traj:  31556019.478777375
+Time taken to compute stable deltas is 183.79936575889587 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.723241567611694 seconds
+[IMRI/grid_idx5/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx5_PN.npy
+[IMRI/grid_idx5/simple] computing injection SNR ...
+[IMRI/grid_idx5/simple] SNR = 20.5028 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx5.npy
+[IMRI/grid_idx5/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001267.07, 999.680951, -0.893304894, 25.4146791, 0.19984956, 1.0, 28.17021250636398, 1.05053753, 0.783572337, 0.6283185307179586, 0.5235987755982988, 0.162889237, 0.2, 0.0741626999, 0.95, False, False, False, True, 0.0, 0.0, 4.05551223e-11, 2.31973227e-11)
+Waveform Generated. SNR: 20.560715127294632
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31539480.04447888
+plunging! t_interp:  31558144.99999999 t_traj:  31553873.801997837
+plunging! t_interp:  31558144.99999999 t_traj:  31556018.50356905
+minimum relative error is greater than 1% for dev_1. Fisher may be unstable!
+minimum relative error is greater than 1% for dev_2. Fisher may be unstable!
+Time taken to compute stable deltas is 186.63036155700684 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 6.395488262176514 seconds
+[IMRI/grid_idx5/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx5_simple.npy
+[IMRI/grid_idx7/0PA] computing injection SNR ...
+[IMRI/grid_idx7/0PA] SNR = 21.1072 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx7.npy
+[IMRI/grid_idx7/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000737.34, 999.740388, 0.00313151007, 24.2860552, 0.199899795, 1.0, 47.801018678750204, 1.04858256, 0.782907902, 0.6283185307179586, 0.5235987755982988, 0.139561445, 0.2, 0.0675375275, 0.95, False, False, False, False)
+Waveform Generated. SNR: 21.15398302801702
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31554719.26421084
+plunging! t_interp:  31558144.99999999 t_traj:  31526716.661785793
+plunging! t_interp:  31558144.99999999 t_traj:  31540016.40441971
+plunging! t_interp:  31558144.99999999 t_traj:  31553320.26748223
+plunging! t_interp:  31558144.99999999 t_traj:  31541998.073972028
+plunging! t_interp:  31558144.99999999 t_traj:  31551480.50431015
+plunging! t_interp:  31558144.99999999 t_traj:  31552893.31963254
+Time taken to compute stable deltas is 153.25416135787964 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.6427552700042725 seconds
+[IMRI/grid_idx7/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx7_0PA.npy
+[IMRI/grid_idx7/PN] computing injection SNR ...
+[IMRI/grid_idx7/PN] SNR = 21.1072 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx7.npy
+[IMRI/grid_idx7/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000758.62, 999.738497, 0.00315795048, 24.2859429, 0.199885205, 1.0, 47.801018678750204, 1.04738282, 0.784765936, 0.6283185307179586, 0.5235987755982988, 0.199517533, 0.2, 0.0926644239, 0.95, False, False, False, True, -0.196937709, -0.199524321, 0.0, 0.0)
+Waveform Generated. SNR: 21.130582450442127
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31554714.10778533
+plunging! t_interp:  31558144.999999996 t_traj:  31526711.899759285
+plunging! t_interp:  31558144.999999996 t_traj:  31540011.631739546
+plunging! t_interp:  31558144.999999996 t_traj:  31553315.486764845
+plunging! t_interp:  31558144.999999996 t_traj:  31541993.300098624
+plunging! t_interp:  31558144.999999996 t_traj:  31551475.724415705
+plunging! t_interp:  31558144.999999996 t_traj:  31552888.539169986
+Time taken to compute stable deltas is 193.20378756523132 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.017486333847046 seconds
+[IMRI/grid_idx7/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx7_PN.npy
+[IMRI/grid_idx7/simple] computing injection SNR ...
+[IMRI/grid_idx7/simple] SNR = 21.1072 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx7.npy
+[IMRI/grid_idx7/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000742.48, 999.748303, 0.00313060404, 24.2861024, 0.199894477, 1.0, 47.801018678750204, 1.04753499, 0.784561218, 0.6283185307179586, 0.5235987755982988, 0.185590771, 0.2, 0.0966073322, 0.95, False, False, False, True, 0.0, 0.0, 0.00821920694, 0.390648763)
+Waveform Generated. SNR: 21.133398570100915
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31554713.053375833
+plunging! t_interp:  31558144.999999996 t_traj:  31526710.608092826
+plunging! t_interp:  31558144.999999996 t_traj:  31540010.34158258
+plunging! t_interp:  31558144.999999996 t_traj:  31553314.195282537
+plunging! t_interp:  31558144.999999996 t_traj:  31541992.00954591
+plunging! t_interp:  31558144.999999996 t_traj:  31551474.433209307
+plunging! t_interp:  31558144.999999996 t_traj:  31552887.24778649
+Time taken to compute stable deltas is 195.98163866996765 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.220476388931274 seconds
+[IMRI/grid_idx7/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx7_simple.npy
+[IMRI/grid_idx9/0PA] computing injection SNR ...
+[IMRI/grid_idx9/0PA] SNR = 25.7195 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx9.npy
+[IMRI/grid_idx9/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (998246.224, 1000.79219, 0.899593223, 23.3189941, 0.200282864, 1.0, 87.91033738552491, 1.05019587, 0.786404019, 0.6283185307179586, 0.5235987755982988, 2.15074078, 0.2, -2.453936, 0.95, False, False, False, False)
+Waveform Generated. SNR: 27.704358522113168
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31542452.093248982
+plunging! t_interp:  31558144.999999993 t_traj:  31548753.93785178
+plunging! t_interp:  31558144.999999993 t_traj:  31555056.41191276
+plunging! t_interp:  31558144.999999993 t_traj:  31549692.803138312
+plunging! t_interp:  31558144.999999993 t_traj:  31554184.934788328
+plunging! t_interp:  31558144.999999993 t_traj:  31554854.173274063
+plunging! t_interp:  31558144.999999993 t_traj:  31558056.198376197
+plunging! t_interp:  31558144.999999993 t_traj:  31555079.156534873
+plunging! t_interp:  31558144.999999993 t_traj:  31518157.248432405
+plunging! t_interp:  31558144.999999993 t_traj:  31530528.29337186
+plunging! t_interp:  31558144.999999993 t_traj:  31542902.97454949
+plunging! t_interp:  31558144.999999993 t_traj:  31555281.292608473
+plunging! t_interp:  31558144.999999993 t_traj:  31532371.57038709
+plunging! t_interp:  31558144.999999993 t_traj:  31541191.717488654
+plunging! t_interp:  31558144.999999993 t_traj:  31550013.713192504
+plunging! t_interp:  31558144.999999993 t_traj:  31542505.848945122
+plunging! t_interp:  31558144.999999993 t_traj:  31548793.790476263
+plunging! t_interp:  31558144.999999993 t_traj:  31555082.671055578
+plunging! t_interp:  31558144.999999993 t_traj:  31549730.611180596
+plunging! t_interp:  31558144.999999993 t_traj:  31554213.055046406
+plunging! t_interp:  31558144.999999993 t_traj:  31554880.86360446
+plunging! t_interp:  31558144.999999993 t_traj:  31558076.096422326
+Time taken to compute stable deltas is 165.96991658210754 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.27338981628418 seconds
+[IMRI/grid_idx9/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx9_0PA.npy
+[IMRI/grid_idx9/PN] computing injection SNR ...
+[IMRI/grid_idx9/PN] SNR = 25.7195 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx9.npy
+[IMRI/grid_idx9/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (999601.03, 994.686142, 0.901713761, 23.284333, 0.20152842, 1.0, 87.91033738552491, 1.05230608, 0.782189403, 0.6283185307179586, 0.5235987755982988, 0.414786425, 0.2, -1.40951766, 0.95, False, False, False, True, -22.2152762, 3.84551436, 0.0, 0.0)
+Waveform Generated. SNR: 27.196674663076006
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31542626.558209375
+plunging! t_interp:  31558144.999999993 t_traj:  31548939.523669835
+plunging! t_interp:  31558144.999999993 t_traj:  31555253.12101666
+plunging! t_interp:  31558144.999999993 t_traj:  31549880.047196515
+plunging! t_interp:  31558144.999999993 t_traj:  31554380.105796266
+plunging! t_interp:  31558144.999999993 t_traj:  31555050.525428202
+plunging! t_interp:  31558144.999999993 t_traj:  31555253.710353103
+plunging! t_interp:  31558144.999999993 t_traj:  31518358.393031407
+plunging! t_interp:  31558144.999999993 t_traj:  31530733.88806998
+plunging! t_interp:  31558144.999999993 t_traj:  31543113.021954324
+plunging! t_interp:  31558144.999999993 t_traj:  31555495.79596879
+plunging! t_interp:  31558144.999999993 t_traj:  31532577.827144384
+plunging! t_interp:  31558144.999999993 t_traj:  31541401.149039503
+plunging! t_interp:  31558144.999999993 t_traj:  31550226.320217457
+plunging! t_interp:  31558144.999999993 t_traj:  31542715.75506549
+plunging! t_interp:  31558144.999999993 t_traj:  31549005.958585802
+plunging! t_interp:  31558144.999999993 t_traj:  31555297.102748215
+plunging! t_interp:  31558144.999999993 t_traj:  31549943.116135642
+plunging! t_interp:  31558144.999999993 t_traj:  31554427.1753768
+plunging! t_interp:  31558144.999999993 t_traj:  31555095.223048653
+plunging! t_interp:  31558144.999999993 t_traj:  31556611.340050943
+plunging! t_interp:  31558144.999999993 t_traj:  31545348.81753261
+plunging! t_interp:  31558144.999999993 t_traj:  31534094.632962003
+plunging! t_interp:  31558144.999999993 t_traj:  31522848.777220026
+plunging! t_interp:  31558144.999999993 t_traj:  31551817.97095611
+plunging! t_interp:  31558144.999999993 t_traj:  31543792.21251754
+plunging! t_interp:  31558144.999999993 t_traj:  31535770.686386377
+plunging! t_interp:  31558144.999999993 t_traj:  31556430.58274001
+plunging! t_interp:  31558144.999999993 t_traj:  31550708.001045093
+plunging! t_interp:  31558144.999999993 t_traj:  31544987.572500728
+plunging! t_interp:  31558144.999999993 t_traj:  31555639.196180996
+plunging! t_interp:  31558144.999999993 t_traj:  31551560.382338695
+plunging! t_interp:  31558144.999999993 t_traj:  31556246.927592177
+Time taken to compute stable deltas is 212.73979902267456 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.55789589881897 seconds
+[IMRI/grid_idx9/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx9_PN.npy
+[IMRI/grid_idx9/simple] computing injection SNR ...
+[IMRI/grid_idx9/simple] SNR = 25.7195 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx9.npy
+[IMRI/grid_idx9/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (998311.141, 999.463032, 0.899657452, 23.3184138, 0.200280207, 1.0, 87.91033738552491, 1.05006393, 0.78570472, 0.6283185307179586, 0.5235987755982988, 2.53852788, 0.2, -2.10264076, 0.95, False, False, False, True, 0.0, 0.0, 1.36314154, 2.63292013)
+Waveform Generated. SNR: 27.68219561588484
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31542444.04691922
+plunging! t_interp:  31558144.999999993 t_traj:  31548750.209921908
+plunging! t_interp:  31558144.999999993 t_traj:  31555057.003295284
+plunging! t_interp:  31558144.999999993 t_traj:  31549689.718509547
+plunging! t_interp:  31558144.999999993 t_traj:  31554184.928850867
+plunging! t_interp:  31558144.999999993 t_traj:  31554854.62607023
+plunging! t_interp:  31558144.999999993 t_traj:  31558058.84560315
+plunging! t_interp:  31558144.999999993 t_traj:  31555071.113824934
+plunging! t_interp:  31558144.999999993 t_traj:  31518166.75236334
+plunging! t_interp:  31558144.999999993 t_traj:  31530537.729410667
+plunging! t_interp:  31558144.999999993 t_traj:  31542912.342642214
+plunging! t_interp:  31558144.999999993 t_traj:  31555290.592844933
+plunging! t_interp:  31558144.999999993 t_traj:  31532380.99540923
+plunging! t_interp:  31558144.999999993 t_traj:  31541201.09515072
+plunging! t_interp:  31558144.999999993 t_traj:  31550023.042310145
+plunging! t_interp:  31558144.999999993 t_traj:  31542515.219237547
+plunging! t_interp:  31558144.999999993 t_traj:  31548803.12751728
+plunging! t_interp:  31558144.999999993 t_traj:  31555091.97234691
+plunging! t_interp:  31558144.999999993 t_traj:  31549739.943103705
+plunging! t_interp:  31558144.999999993 t_traj:  31554222.36112483
+plunging! t_interp:  31558144.999999993 t_traj:  31554890.16629497
+plunging! t_interp:  31558144.999999993 t_traj:  31558085.38147645
+plunging! t_interp:  31558144.999999993 t_traj:  31554865.850390688
+plunging! t_interp:  31558144.999999993 t_traj:  31550599.28766838
+plunging! t_interp:  31558144.999999993 t_traj:  31555501.556424882
+Time taken to compute stable deltas is 210.21962571144104 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.100150108337402 seconds
+[IMRI/grid_idx9/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx9_simple.npy
+[IMRI/grid_idx11/0PA] computing injection SNR ...
+[IMRI/grid_idx11/0PA] SNR = 20.6760 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx11.npy
+[IMRI/grid_idx11/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001133.2, 999.697492, -0.494759737, 24.8075575, 0.299901123, 1.0, 36.84648160262098, 1.05044213, 0.7822957, 0.6283185307179586, 0.5235987755982988, 0.1872164, 0.2, 0.150694743, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.714905188336257
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31535369.18656226
+plunging! t_interp:  31558144.999999993 t_traj:  31549293.408053532
+plunging! t_interp:  31558144.999999993 t_traj:  31551368.137932703
+Time taken to compute stable deltas is 147.95046091079712 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.682724952697754 seconds
+[IMRI/grid_idx11/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx11_0PA.npy
+[IMRI/grid_idx11/PN] computing injection SNR ...
+[IMRI/grid_idx11/PN] SNR = 20.6760 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx11.npy
+[IMRI/grid_idx11/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002139.96, 1000.83161, -0.492567409, 24.793267, 0.299730914, 1.0, 36.84648160262098, 1.04700206, 0.785565468, 0.6283185307179586, 0.5235987755982988, 0.0516898386, 0.2, 0.34674638, 0.95, False, False, False, True, 10.2466253, 0.145365249, 0.0, 0.0)
+Waveform Generated. SNR: 20.719129409017118
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31535410.947708607
+plunging! t_interp:  31558144.999999996 t_traj:  31549333.25313858
+plunging! t_interp:  31558144.999999996 t_traj:  31551407.697675657
+Time taken to compute stable deltas is 190.41558957099915 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 6.97670841217041 seconds
+[IMRI/grid_idx11/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx11_PN.npy
+[IMRI/grid_idx11/simple] computing injection SNR ...
+[IMRI/grid_idx11/simple] SNR = 20.6760 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx11.npy
+[IMRI/grid_idx11/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002007.44, 999.676254, -0.49296456, 24.7960493, 0.299705176, 1.0, 36.84648160262098, 1.0492632, 0.7884039, 0.6283185307179586, 0.5235987755982988, 0.157182485, 0.2, 0.31343183, 0.95, False, False, False, True, 0.0, 0.0, 0.067407319, 1.67972601)
+Waveform Generated. SNR: 20.67233018416356
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31535457.666573558
+plunging! t_interp:  31558144.999999996 t_traj:  31549380.653835095
+plunging! t_interp:  31558144.999999996 t_traj:  31551455.199684888
+Time taken to compute stable deltas is 190.0233781337738 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.3320958614349365 seconds
+[IMRI/grid_idx11/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx11_simple.npy
+[IMRI/grid_idx13/0PA] computing injection SNR ...
+[IMRI/grid_idx13/0PA] SNR = 23.2969 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx13.npy
+[IMRI/grid_idx13/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000406.14, 999.840168, 0.501431206, 23.6160384, 0.299949504, 1.0, 70.13467231616428, 1.050897, 0.78585671, 0.6283185307179586, 0.5235987755982988, 0.252853525, 0.2, 0.0835058485, 0.95, False, False, False, False)
+Waveform Generated. SNR: 23.670064446859335
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31547654.105672743
+plunging! t_interp:  31558144.999999996 t_traj:  31553957.019041985
+plunging! t_interp:  31558144.999999996 t_traj:  31554896.043556385
+plunging! t_interp:  31558144.999999996 t_traj:  31521723.049177356
+plunging! t_interp:  31558144.999999996 t_traj:  31534503.900445644
+plunging! t_interp:  31558144.999999996 t_traj:  31547288.598241765
+plunging! t_interp:  31558144.999999996 t_traj:  31536408.245006584
+plunging! t_interp:  31558144.999999996 t_traj:  31545520.63566096
+plunging! t_interp:  31558144.999999996 t_traj:  31554634.981330846
+plunging! t_interp:  31558144.999999996 t_traj:  31546878.31311037
+plunging! t_interp:  31558144.999999996 t_traj:  31553374.629387874
+plunging! t_interp:  31558144.999999996 t_traj:  31554342.49871579
+Time taken to compute stable deltas is 160.2439022064209 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.956860065460205 seconds
+[IMRI/grid_idx13/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx13_0PA.npy
+[IMRI/grid_idx13/PN] computing injection SNR ...
+[IMRI/grid_idx13/PN] SNR = 23.2969 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx13.npy
+[IMRI/grid_idx13/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000221.74, 996.820838, 0.501371022, 23.6132295, 0.30033968, 1.0, 70.13467231616428, 1.04769541, 0.784622478, 0.6283185307179586, 0.5235987755982988, -0.011946224, 0.2, 0.366179863, 0.95, False, False, False, True, -15.3627189, -0.143748367, 0.0, 0.0)
+Waveform Generated. SNR: 23.728002226913123
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31547680.69573875
+plunging! t_interp:  31558144.999999996 t_traj:  31553990.686458476
+plunging! t_interp:  31558144.999999996 t_traj:  31554930.765324347
+plunging! t_interp:  31558144.999999996 t_traj:  31521764.59726087
+plunging! t_interp:  31558144.999999996 t_traj:  31534548.78491861
+plunging! t_interp:  31558144.999999996 t_traj:  31547336.821334172
+plunging! t_interp:  31558144.999999996 t_traj:  31536453.626710925
+plunging! t_interp:  31558144.999999996 t_traj:  31545568.397244655
+plunging! t_interp:  31558144.999999996 t_traj:  31554685.12324508
+plunging! t_interp:  31558144.999999996 t_traj:  31546926.428828023
+plunging! t_interp:  31558144.999999996 t_traj:  31553424.441948142
+plunging! t_interp:  31558144.999999996 t_traj:  31554392.562549185
+plunging! t_interp:  31558144.999999996 t_traj:  31551820.32614522
+plunging! t_interp:  31558144.999999996 t_traj:  31544792.017181486
+plunging! t_interp:  31558144.999999996 t_traj:  31557879.398725174
+plunging! t_interp:  31558144.999999996 t_traj:  31552867.63533286
+Time taken to compute stable deltas is 203.58723378181458 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.2668843269348145 seconds
+[IMRI/grid_idx13/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx13_PN.npy
+[IMRI/grid_idx13/simple] computing injection SNR ...
+[IMRI/grid_idx13/simple] SNR = 23.2969 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx13.npy
+[IMRI/grid_idx13/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000675.19, 1000.61555, 0.501781447, 23.6128966, 0.299883045, 1.0, 70.13467231616428, 1.04919187, 0.788378833, 0.6283185307179586, 0.5235987755982988, 0.293094085, 0.2, 0.219037914, 0.95, False, False, False, True, 0.0, 0.0, -0.734972089, 0.103266127)
+Waveform Generated. SNR: 23.715541887701477
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31547688.352072652
+plunging! t_interp:  31558144.99999999 t_traj:  31553988.987211265
+plunging! t_interp:  31558144.99999999 t_traj:  31554927.67227909
+plunging! t_interp:  31558144.99999999 t_traj:  31521749.426865954
+plunging! t_interp:  31558144.99999999 t_traj:  31534529.968899302
+plunging! t_interp:  31558144.99999999 t_traj:  31547314.352767363
+plunging! t_interp:  31558144.99999999 t_traj:  31536434.264824115
+plunging! t_interp:  31558144.99999999 t_traj:  31545546.43351425
+plunging! t_interp:  31558144.99999999 t_traj:  31554660.55672748
+plunging! t_interp:  31558144.99999999 t_traj:  31546904.07752566
+plunging! t_interp:  31558144.99999999 t_traj:  31553400.235412087
+plunging! t_interp:  31558144.99999999 t_traj:  31554368.07938323
+Time taken to compute stable deltas is 200.4495029449463 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.02093768119812 seconds
+[IMRI/grid_idx13/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx13_simple.npy
+[IMRI/grid_idx15/0PA] computing injection SNR ...
+[IMRI/grid_idx15/0PA] SNR = 20.4616 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx15.npy
+[IMRI/grid_idx15/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001579.32, 999.681482, -0.892524137, 25.1824365, 0.399897313, 1.0, 32.87796914488368, 1.05048709, 0.779823732, 0.6283185307179586, 0.5235987755982988, 0.188806953, 0.2, 0.213831102, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.504044795394453
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31545995.37571562
+Time taken to compute stable deltas is 153.5652937889099 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.589932203292847 seconds
+[IMRI/grid_idx15/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx15_0PA.npy
+[IMRI/grid_idx15/PN] computing injection SNR ...
+[IMRI/grid_idx15/PN] SNR = 20.4616 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx15.npy
+[IMRI/grid_idx15/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002197.76, 1000.53518, -0.890942377, 25.1728065, 0.399858227, 1.0, 32.87796914488368, 1.04690385, 0.785306986, 0.6283185307179586, 0.5235987755982988, 0.0490965823, 0.2, 0.326385061, 0.95, False, False, False, True, 9.32924653, 0.350063504, 0.0, 0.0)
+Waveform Generated. SNR: 20.50289508736286
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31545990.3141191
+Time taken to compute stable deltas is 195.38614296913147 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.575868129730225 seconds
+[IMRI/grid_idx15/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx15_PN.npy
+[IMRI/grid_idx15/simple] computing injection SNR ...
+[IMRI/grid_idx15/simple] SNR = 20.4616 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx15.npy
+[IMRI/grid_idx15/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002591.9, 999.649569, -0.890176861, 25.1689015, 0.399738246, 1.0, 32.87796914488368, 1.05054449, 0.788393605, 0.6283185307179586, 0.5235987755982988, 0.129108253, 0.2, 0.314788854, 0.95, False, False, False, True, 0.0, 0.0, 0.0886439186, 0.948826356)
+Waveform Generated. SNR: 20.462579137042354
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31546097.49257324
+Time taken to compute stable deltas is 194.46075701713562 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.536499261856079 seconds
+[IMRI/grid_idx15/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx15_simple.npy
+[IMRI/grid_idx17/0PA] computing injection SNR ...
+[IMRI/grid_idx17/0PA] SNR = 21.5176 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx17.npy
+[IMRI/grid_idx17/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000878.08, 999.757885, 0.00339118034, 24.0316258, 0.399930837, 1.0, 51.9585970479374, 1.05018648, 0.779522554, 0.6283185307179586, 0.5235987755982988, 0.223219116, 0.2, 0.189377661, 0.95, False, False, False, False)
+Waveform Generated. SNR: 21.633892299259074
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31556954.612600543
+plunging! t_interp:  31558144.999999993 t_traj:  31528694.68543728
+plunging! t_interp:  31558144.999999993 t_traj:  31542059.152425844
+plunging! t_interp:  31558144.999999993 t_traj:  31555427.776892576
+plunging! t_interp:  31558144.999999993 t_traj:  31544050.467701152
+plunging! t_interp:  31558144.999999993 t_traj:  31553579.056348283
+plunging! t_interp:  31558144.999999993 t_traj:  31554998.750232194
+Time taken to compute stable deltas is 161.9713580608368 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.855508089065552 seconds
+[IMRI/grid_idx17/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx17_0PA.npy
+[IMRI/grid_idx17/PN] computing injection SNR ...
+[IMRI/grid_idx17/PN] SNR = 21.5176 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx17.npy
+[IMRI/grid_idx17/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000889.43, 999.770726, 0.00339934321, 24.0316297, 0.399925301, 1.0, 51.9585970479374, 1.04922388, 0.783676033, 0.6283185307179586, 0.5235987755982988, 0.257422416, 0.2, 0.203922025, 0.95, False, False, False, True, -0.0626049523, -0.0367089255, 0.0, 0.0)
+Waveform Generated. SNR: 21.583333524344354
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31556946.14106228
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  31558144.99999999 t_traj:  31528686.383602783
+plunging! t_interp:  31558144.99999999 t_traj:  31542050.840342764
+plunging! t_interp:  31558144.99999999 t_traj:  31555419.45352787
+plunging! t_interp:  31558144.99999999 t_traj:  31544042.15319268
+plunging! t_interp:  31558144.99999999 t_traj:  31553570.734911565
+plunging! t_interp:  31558144.99999999 t_traj:  31554990.42726136
+Time taken to compute stable deltas is 201.05815076828003 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.881646156311035 seconds
+[IMRI/grid_idx17/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx17_PN.npy
+[IMRI/grid_idx17/simple] computing injection SNR ...
+[IMRI/grid_idx17/simple] SNR = 21.5176 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx17.npy
+[IMRI/grid_idx17/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000980.07, 999.772349, 0.00355360638, 24.0304811, 0.399911216, 1.0, 51.9585970479374, 1.04919339, 0.784383264, 0.6283185307179586, 0.5235987755982988, 0.24490637, 0.2, 0.222762662, 0.95, False, False, False, True, 0.0, 0.0, 0.010798974, 0.203232755)
+Waveform Generated. SNR: 21.584975500776338
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31556955.36402927
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  31558144.999999993 t_traj:  31528696.176929448
+plunging! t_interp:  31558144.999999993 t_traj:  31542060.507878017
+plunging! t_interp:  31558144.999999993 t_traj:  31555428.996822238
+plunging! t_interp:  31558144.999999993 t_traj:  31544051.80376791
+plunging! t_interp:  31558144.999999993 t_traj:  31553580.29493129
+plunging! t_interp:  31558144.999999993 t_traj:  31554999.97398485
+Time taken to compute stable deltas is 200.93588757514954 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.918871164321899 seconds
+[IMRI/grid_idx17/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx17_simple.npy
+[IMRI/grid_idx19/0PA] computing injection SNR ...
+[IMRI/grid_idx19/0PA] SNR = 31.8162 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx19.npy
+[IMRI/grid_idx19/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (999845.791, 999.949231, 0.899809392, 23.0200339, 0.40000777, 1.0, 95.94416194060466, 1.04355289, 0.779435226, 0.6283185307179586, 0.5235987755982988, 0.51064337, 0.2, 0.188896812, 0.95, False, False, False, False)
+Waveform Generated. SNR: 65.47386523314238
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31542569.74986351
+plunging! t_interp:  31558144.99999999 t_traj:  31548871.64110258
+plunging! t_interp:  31558144.99999999 t_traj:  31555174.16180678
+plunging! t_interp:  31558144.99999999 t_traj:  31549810.513337303
+plunging! t_interp:  31558144.99999999 t_traj:  31554302.678232603
+plunging! t_interp:  31558144.99999999 t_traj:  31554971.921671335
+plunging! t_interp:  31558144.99999999 t_traj:  31555196.860286675
+plunging! t_interp:  31558144.99999999 t_traj:  31518158.486316573
+plunging! t_interp:  31558144.99999999 t_traj:  31530558.657262567
+plunging! t_interp:  31558144.99999999 t_traj:  31542962.48191112
+plunging! t_interp:  31558144.99999999 t_traj:  31555369.95919695
+plunging! t_interp:  31558144.99999999 t_traj:  31532406.273697164
+plunging! t_interp:  31558144.99999999 t_traj:  31541247.193748023
+plunging! t_interp:  31558144.99999999 t_traj:  31550089.96981007
+plunging! t_interp:  31558144.99999999 t_traj:  31542564.420390274
+plunging! t_interp:  31558144.99999999 t_traj:  31548867.173376102
+plunging! t_interp:  31558144.99999999 t_traj:  31555170.86965059
+plunging! t_interp:  31558144.99999999 t_traj:  31549806.200887185
+plunging! t_interp:  31558144.99999999 t_traj:  31554299.205465868
+plunging! t_interp:  31558144.99999999 t_traj:  31554968.58682501
+Time taken to compute stable deltas is 170.06908106803894 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.038287878036499 seconds
+[IMRI/grid_idx19/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx19_0PA.npy
+[IMRI/grid_idx19/PN] computing injection SNR ...
+[IMRI/grid_idx19/PN] SNR = 31.8162 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx19.npy
+[IMRI/grid_idx19/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000255.12, 997.992239, 0.900509287, 23.0094496, 0.400184421, 1.0, 95.94416194060466, 1.04125215, 0.782098917, 0.6283185307179586, 0.5235987755982988, -0.108987358, 0.2, 0.309916501, 0.95, False, False, False, True, -7.29414673, -0.001000353, 0.0, 0.0)
+Waveform Generated. SNR: 67.00886411868446
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31542626.574276824
+plunging! t_interp:  31558144.999999996 t_traj:  31548932.126070764
+plunging! t_interp:  31558144.999999996 t_traj:  31555238.308049783
+plunging! t_interp:  31558144.999999996 t_traj:  31549871.54369806
+plunging! t_interp:  31558144.999999996 t_traj:  31554366.318188906
+plunging! t_interp:  31558144.999999996 t_traj:  31555035.950398993
+plunging! t_interp:  31558144.999999996 t_traj:  31555253.713271666
+plunging! t_interp:  31558144.999999996 t_traj:  31518224.276240747
+plunging! t_interp:  31558144.999999996 t_traj:  31530625.866088096
+plunging! t_interp:  31558144.999999996 t_traj:  31543031.10990732
+plunging! t_interp:  31558144.999999996 t_traj:  31555440.00852556
+plunging! t_interp:  31558144.999999996 t_traj:  31532473.694124725
+plunging! t_interp:  31558144.999999996 t_traj:  31541315.626616552
+plunging! t_interp:  31558144.999999996 t_traj:  31550159.41452413
+plunging! t_interp:  31558144.999999996 t_traj:  31542633.003382362
+plunging! t_interp:  31558144.999999996 t_traj:  31548936.478212085
+plunging! t_interp:  31558144.999999996 t_traj:  31555240.896180976
+plunging! t_interp:  31558144.999999996 t_traj:  31549875.613129478
+plunging! t_interp:  31558144.999999996 t_traj:  31554369.13153429
+plunging! t_interp:  31558144.999999996 t_traj:  31555038.590368614
+plunging! t_interp:  31558144.999999996 t_traj:  31556956.20033362
+plunging! t_interp:  31558144.999999996 t_traj:  31553325.84217018
+plunging! t_interp:  31558144.999999996 t_traj:  31557497.104972087
+Time taken to compute stable deltas is 213.5034739971161 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.032144069671631 seconds
+[IMRI/grid_idx19/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx19_PN.npy
+[IMRI/grid_idx19/simple] computing injection SNR ...
+[IMRI/grid_idx19/simple] SNR = 31.8162 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx19.npy
+[IMRI/grid_idx19/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (999703.319, 998.573705, 0.899673624, 23.0214831, 0.400034884, 1.0, 95.94416194060466, 1.04652265, 0.777322458, 0.6283185307179586, 0.5235987755982988, 0.443319848, 0.2, 0.0748660389, 0.95, False, False, False, True, 0.0, 0.0, 1.33611195, 0.959203061)
+Waveform Generated. SNR: 65.43564890445893
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31542534.54409953
+plunging! t_interp:  31558144.999999993 t_traj:  31548840.59974215
+plunging! t_interp:  31558144.999999993 t_traj:  31555147.285736028
+plunging! t_interp:  31558144.999999993 t_traj:  31549780.093040302
+plunging! t_interp:  31558144.999999993 t_traj:  31554275.22619569
+plunging! t_interp:  31558144.999999993 t_traj:  31554944.91239618
+plunging! t_interp:  31558144.999999993 t_traj:  31555161.64710561
+plunging! t_interp:  31558144.999999993 t_traj:  31518139.348071128
+plunging! t_interp:  31558144.999999993 t_traj:  31530539.667719204
+plunging! t_interp:  31558144.999999993 t_traj:  31542943.640502673
+plunging! t_interp:  31558144.999999993 t_traj:  31555351.267296627
+plunging! t_interp:  31558144.999999993 t_traj:  31532387.306343954
+plunging! t_interp:  31558144.999999993 t_traj:  31541228.332392182
+plunging! t_interp:  31558144.999999993 t_traj:  31550071.214438867
+plunging! t_interp:  31558144.999999993 t_traj:  31542545.574810673
+plunging! t_interp:  31558144.999999993 t_traj:  31548848.403421447
+plunging! t_interp:  31558144.999999993 t_traj:  31555152.175243255
+plunging! t_interp:  31558144.999999993 t_traj:  31549787.442171637
+plunging! t_interp:  31558144.999999993 t_traj:  31554280.5000247
+plunging! t_interp:  31558144.999999993 t_traj:  31554949.890130207
+plunging! t_interp:  31558144.999999993 t_traj:  31555503.70414144
+plunging! t_interp:  31558144.999999993 t_traj:  31551419.563765626
+plunging! t_interp:  31558144.999999993 t_traj:  31556112.22657496
+Time taken to compute stable deltas is 214.51013445854187 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.607819318771362 seconds
+[IMRI/grid_idx19/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx19_simple.npy
+[IMRI/grid_idx21/0PA] computing injection SNR ...
+[IMRI/grid_idx21/0PA] SNR = 20.6875 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx21.npy
+[IMRI/grid_idx21/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1001394.45, 999.739466, -0.494205532, 24.4122765, 0.499919528, 1.0, 43.25876461744529, 1.04996897, 0.780018683, 0.6283185307179586, 0.5235987755982988, 0.194071839, 0.2, 0.24700539, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.73908572180785
+calculating stable deltas...
+plunging! t_interp:  31558144.999999996 t_traj:  31539579.59803489
+plunging! t_interp:  31558144.999999996 t_traj:  31553633.188940816
+plunging! t_interp:  31558144.999999996 t_traj:  31555727.197744742
+Time taken to compute stable deltas is 160.93336081504822 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.340989112854004 seconds
+[IMRI/grid_idx21/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx21_0PA.npy
+[IMRI/grid_idx21/PN] computing injection SNR ...
+[IMRI/grid_idx21/PN] SNR = 20.6875 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx21.npy
+[IMRI/grid_idx21/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002113.82, 1000.89305, -0.492615099, 24.4020728, 0.499865406, 1.0, 43.25876461744529, 1.04700278, 0.785389777, 0.6283185307179586, 0.5235987755982988, 0.0436266635, 0.2, 0.321492514, 0.95, False, False, False, True, 10.590769, 0.432673516, 0.0, 0.0)
+Waveform Generated. SNR: 20.73351588566837
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31539586.997884203
+plunging! t_interp:  31558144.99999999 t_traj:  31553639.194956664
+plunging! t_interp:  31558144.99999999 t_traj:  31555732.995935302
+Time taken to compute stable deltas is 201.5721046924591 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.271543264389038 seconds
+[IMRI/grid_idx21/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx21_PN.npy
+[IMRI/grid_idx21/simple] computing injection SNR ...
+[IMRI/grid_idx21/simple] SNR = 20.6875 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx21.npy
+[IMRI/grid_idx21/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1002105.06, 999.682302, -0.492760827, 24.403212, 0.499836746, 1.0, 43.25876461744529, 1.05110825, 0.789042501, 0.6283185307179586, 0.5235987755982988, 0.126696608, 0.2, 0.312208789, 0.95, False, False, False, True, 0.0, 0.0, 0.105850223, 0.468805069)
+Waveform Generated. SNR: 20.69260692174823
+calculating stable deltas...
+plunging! t_interp:  31558144.999999993 t_traj:  31539650.020960093
+plunging! t_interp:  31558144.999999993 t_traj:  31553702.58933532
+plunging! t_interp:  31558144.999999993 t_traj:  31555796.44558997
+Time taken to compute stable deltas is 204.16133785247803 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 7.346905708312988 seconds
+[IMRI/grid_idx21/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx21_simple.npy
+[IMRI/grid_idx23/0PA] computing injection SNR ...
+[IMRI/grid_idx23/0PA] SNR = 22.0618 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx23.npy
+[IMRI/grid_idx23/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000475.91, 999.873857, 0.50153044, 23.189494, 0.499955423, 1.0, 73.49313093214431, 1.04863951, 0.785812625, 0.6283185307179586, 0.5235987755982988, 0.34700509, 0.2, 0.20409083, 0.95, False, False, False, False)
+Waveform Generated. SNR: 22.188807166328164
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31548459.951467115
+plunging! t_interp:  31558144.99999999 t_traj:  31554763.026177067
+plunging! t_interp:  31558144.99999999 t_traj:  31555702.074728437
+plunging! t_interp:  31558144.99999999 t_traj:  31522277.356078364
+plunging! t_interp:  31558144.99999999 t_traj:  31535121.199683245
+plunging! t_interp:  31558144.99999999 t_traj:  31547968.925549652
+plunging! t_interp:  31558144.99999999 t_traj:  31537034.931241307
+plunging! t_interp:  31558144.99999999 t_traj:  31546192.24628497
+plunging! t_interp:  31558144.99999999 t_traj:  31555351.533663094
+plunging! t_interp:  31558144.99999999 t_traj:  31547556.617426433
+plunging! t_interp:  31558144.99999999 t_traj:  31554084.96642048
+plunging! t_interp:  31558144.99999999 t_traj:  31555057.6071802
+Time taken to compute stable deltas is 167.33011174201965 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.624230861663818 seconds
+[IMRI/grid_idx23/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx23_0PA.npy
+[IMRI/grid_idx23/PN] computing injection SNR ...
+[IMRI/grid_idx23/PN] SNR = 22.0618 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx23.npy
+[IMRI/grid_idx23/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000284.21, 996.651632, 0.501467534, 23.186389, 0.500158921, 1.0, 73.49313093214431, 1.04386818, 0.785281679, 0.6283185307179586, 0.5235987755982988, -0.0511179123, 0.2, 0.337228772, 0.95, False, False, False, True, -16.5291228, -0.588266012, 0.0, 0.0)
+Waveform Generated. SNR: 22.118117817130234
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31548488.81457155
+plunging! t_interp:  31558144.99999999 t_traj:  31554799.449193213
+plunging! t_interp:  31558144.99999999 t_traj:  31555739.62410169
+plunging! t_interp:  31558144.99999999 t_traj:  31522322.780797586
+plunging! t_interp:  31558144.99999999 t_traj:  31535170.042509746
+plunging! t_interp:  31558144.99999999 t_traj:  31548021.188968573
+plunging! t_interp:  31558144.99999999 t_traj:  31537084.283766434
+plunging! t_interp:  31558144.99999999 t_traj:  31546244.03659243
+plunging! t_interp:  31558144.99999999 t_traj:  31555405.76342285
+plunging! t_interp:  31558144.99999999 t_traj:  31547608.771153245
+plunging! t_interp:  31558144.99999999 t_traj:  31554138.858977333
+plunging! t_interp:  31558144.99999999 t_traj:  31555111.758686654
+plunging! t_interp:  31558144.99999999 t_traj:  31551969.38937959
+plunging! t_interp:  31558144.99999999 t_traj:  31544721.118134327
+plunging! t_interp:  31558144.99999999 t_traj:  31553049.492117003
+Time taken to compute stable deltas is 215.5220115184784 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 7.656020164489746 seconds
+[IMRI/grid_idx23/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx23_PN.npy
+[IMRI/grid_idx23/simple] computing injection SNR ...
+[IMRI/grid_idx23/simple] SNR = 22.0618 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/SNR_grid_idx23.npy
+[IMRI/grid_idx23/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 6311629)
+Computing SNR for parameters: (1000686.76, 999.864521, 0.50180814, 23.1870892, 0.499928069, 1.0, 73.49313093214431, 1.04781765, 0.790433524, 0.6283185307179586, 0.5235987755982988, 0.330886894, 0.2, 0.250386708, 0.95, False, False, False, True, 0.0, 0.0, 0.0398399065, 0.213297983)
+Waveform Generated. SNR: 22.13804035586282
+calculating stable deltas...
+plunging! t_interp:  31558144.99999999 t_traj:  31548481.68048065
+plunging! t_interp:  31558144.99999999 t_traj:  31554784.911852676
+plunging! t_interp:  31558144.99999999 t_traj:  31555723.98369411
+plunging! t_interp:  31558144.99999999 t_traj:  31522300.717187934
+plunging! t_interp:  31558144.99999999 t_traj:  31535144.309343968
+plunging! t_interp:  31558144.99999999 t_traj:  31547991.784117684
+plunging! t_interp:  31558144.99999999 t_traj:  31537058.003578693
+plunging! t_interp:  31558144.99999999 t_traj:  31546215.13955958
+plunging! t_interp:  31558144.99999999 t_traj:  31555374.247673634
+plunging! t_interp:  31558144.99999999 t_traj:  31547579.484039575
+plunging! t_interp:  31558144.99999999 t_traj:  31554107.70529596
+plunging! t_interp:  31558144.99999999 t_traj:  31555080.32679759
+Time taken to compute stable deltas is 210.6497368812561 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 8.104414701461792 seconds
+[IMRI/grid_idx23/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/IMRI/Fisher_grid_idx23_simple.npy
+[EMRI/grid_idx1/0PA] computing injection SNR ...
+[EMRI/grid_idx1/0PA] SNR = 19.9951 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx1.npy
+[EMRI/grid_idx1/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000045.3, 10.0000539, -0.499881089, 12.184084, 0.0999808855, 1, 3.8788539967713698, 1.04616141, 0.785054496, 0.6283185307179586, 0.5235987755982988, 0.0984377539, 0.2, 0.278479954, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.00142121822379
+calculating stable deltas...
+Time taken to compute stable deltas is 109.07299661636353 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.785069704055786 seconds
+[EMRI/grid_idx1/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx1_0PA.npy
+[EMRI/grid_idx1/PN] computing injection SNR ...
+[EMRI/grid_idx1/PN] SNR = 19.9951 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx1.npy
+[EMRI/grid_idx1/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000006.62, 10.0000792, -0.499948989, 12.1843509, 0.100014257, 1, 3.8788539967713698, 1.0472055, 0.78539928, 0.6283185307179586, 0.5235987755982988, 0.0998840466, 0.2, 0.300592684, 0.95, False, False, False, True, 17.1745278, 7.30205373, 0.0, 0.0)
+Waveform Generated. SNR: 19.996317565725956
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 134.79034852981567 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.373875856399536 seconds
+[EMRI/grid_idx1/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx1_PN.npy
+[EMRI/grid_idx1/simple] computing injection SNR ...
+[EMRI/grid_idx1/simple] SNR = 19.9951 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx1.npy
+[EMRI/grid_idx1/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999974.48, 9.99979827, -0.500003609, 12.1845714, 0.100042091, 1, 3.8788539967713698, 1.04714342, 0.785501254, 0.6283185307179586, 0.5235987755982988, 0.0992941065, 0.2, 0.294853668, 0.95, False, False, False, True, 0.0, 0.0, -0.0101171426, -69.5050691)
+Waveform Generated. SNR: 19.995840620717107
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 134.60469365119934 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.942348480224609 seconds
+[EMRI/grid_idx1/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx1_simple.npy
+[EMRI/grid_idx2/0PA] computing injection SNR ...
+[EMRI/grid_idx2/0PA] SNR = 19.9936 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx2.npy
+[EMRI/grid_idx2/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000037.45, 10.0000606, 7.9437804e-05, 11.0850675, 0.0999820265, 1, 5.9622412557645434, 1.04608446, 0.784628803, 0.6283185307179586, 0.5235987755982988, 0.0951543753, 0.2, 0.266958451, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.004316865828354
+calculating stable deltas...
+Time taken to compute stable deltas is 115.00218653678894 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.246799945831299 seconds
+[EMRI/grid_idx2/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx2_0PA.npy
+[EMRI/grid_idx2/PN] computing injection SNR ...
+[EMRI/grid_idx2/PN] SNR = 19.9936 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx2.npy
+[EMRI/grid_idx2/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000037.81, 10.0000648, 7.97960226e-05, 11.085066, 0.0999812361, 1, 5.9622412557645434, 1.0461874, 0.78465092, 0.6283185307179586, 0.5235987755982988, 0.0946295242, 0.2, 0.265783268, 0.95, False, False, False, True, 0.0167783601, -0.353765421, 0.0, 0.0)
+Waveform Generated. SNR: 20.003766830993424
+calculating stable deltas...
+Time taken to compute stable deltas is 138.70047998428345 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.1071717739105225 seconds
+[EMRI/grid_idx2/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx2_PN.npy
+[EMRI/grid_idx2/simple] computing injection SNR ...
+[EMRI/grid_idx2/simple] SNR = 19.9936 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx2.npy
+[EMRI/grid_idx2/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000037.35, 10.0000637, 7.93149874e-05, 11.0850681, 0.099982034, 1, 5.9622412557645434, 1.0461936, 0.784640123, 0.6283185307179586, 0.5235987755982988, 0.0941706134, 0.2, 0.266049471, 0.95, False, False, False, True, 0.0, 0.0, -0.032141874, -0.650307986)
+Waveform Generated. SNR: 20.003813837886106
+calculating stable deltas...
+Time taken to compute stable deltas is 139.23129272460938 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.038790702819824 seconds
+[EMRI/grid_idx2/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx2_simple.npy
+[EMRI/grid_idx7/0PA] computing injection SNR ...
+[EMRI/grid_idx7/0PA] SNR = 19.9911 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx7.npy
+[EMRI/grid_idx7/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000047.18, 10.0000828, 9.350763e-05, 11.0970406, 0.199988435, 1, 6.165893030556978, 1.0460553, 0.784713667, 0.6283185307179586, 0.5235987755982988, 0.0966540659, 0.2, 0.280429405, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.00134797660432
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 114.29419445991516 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.104322910308838 seconds
+[EMRI/grid_idx7/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx7_0PA.npy
+[EMRI/grid_idx7/PN] computing injection SNR ...
+[EMRI/grid_idx7/PN] SNR = 19.9911 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx7.npy
+[EMRI/grid_idx7/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000047.06, 10.0000856, 9.3134921e-05, 11.0970423, 0.199988265, 1, 6.165893030556978, 1.04595145, 0.784753179, 0.6283185307179586, 0.5235987755982988, 0.0982047946, 0.2, 0.280918254, 0.95, False, False, False, True, 0.0082660141, -0.156260512, 0.0, 0.0)
+Waveform Generated. SNR: 20.001646085322097
+calculating stable deltas...
+Time taken to compute stable deltas is 137.70358991622925 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.4940690994262695 seconds
+[EMRI/grid_idx7/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx7_PN.npy
+[EMRI/grid_idx7/simple] computing injection SNR ...
+[EMRI/grid_idx7/simple] SNR = 19.9911 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx7.npy
+[EMRI/grid_idx7/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000046.95, 10.0000885, 9.29979854e-05, 11.097043, 0.199988278, 1, 6.165893030556978, 1.04603411, 0.78474647, 0.6283185307179586, 0.5235987755982988, 0.0977265631, 0.2, 0.279868511, 0.95, False, False, False, True, 0.0, 0.0, -0.0315446438, 0.373710436)
+Waveform Generated. SNR: 20.001317120008395
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 137.95821285247803 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.275944709777832 seconds
+[EMRI/grid_idx7/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx7_simple.npy
+[EMRI/grid_idx8/0PA] computing injection SNR ...
+[EMRI/grid_idx8/0PA] SNR = 19.9780 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx8.npy
+[EMRI/grid_idx8/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000029.65, 10.0001053, 0.500045614, 9.98360713, 0.199989823, 1, 9.562565344089377, 1.04554779, 0.783678705, 0.6283185307179586, 0.5235987755982988, 0.103303798, 0.2, 0.235728744, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.010560306643647
+calculating stable deltas...
+Time taken to compute stable deltas is 117.84038972854614 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.788569688796997 seconds
+[EMRI/grid_idx8/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx8_0PA.npy
+[EMRI/grid_idx8/PN] computing injection SNR ...
+[EMRI/grid_idx8/PN] SNR = 19.9780 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx8.npy
+[EMRI/grid_idx8/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000064.83, 10.0014099, 0.500080315, 9.98341455, 0.19997447, 1, 9.562565344089377, 1.04716106, 0.785434341, 0.6283185307179586, 0.5235987755982988, 0.103466458, 0.2, 0.291929405, 0.95, False, False, False, True, 60.144771, 0.257323545, 0.0, 0.0)
+Waveform Generated. SNR: 19.99392210524034
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 142.41313076019287 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.532371282577515 seconds
+[EMRI/grid_idx8/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx8_PN.npy
+[EMRI/grid_idx8/simple] computing injection SNR ...
+[EMRI/grid_idx8/simple] SNR = 19.9780 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx8.npy
+[EMRI/grid_idx8/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000122.81, 10.0002635, 0.500129389, 9.98315137, 0.199932911, 1, 9.562565344089377, 1.04794949, 0.7837665, 0.6283185307179586, 0.5235987755982988, 0.124205455, 0.2, 0.279133273, 0.95, False, False, False, True, 0.0, 0.0, 3.88282361, 54.825216)
+Waveform Generated. SNR: 19.995982866949248
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 142.60510969161987 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.372948408126831 seconds
+[EMRI/grid_idx8/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx8_simple.npy
+[EMRI/grid_idx10/0PA] computing injection SNR ...
+[EMRI/grid_idx10/0PA] SNR = 19.9998 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx10.npy
+[EMRI/grid_idx10/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000069.28, 10.0001348, -0.899809625, 13.1857641, 0.299989395, 1, 3.3568155678276197, 1.04609938, 0.785550775, 0.6283185307179586, 0.5235987755982988, 0.108578021, 0.2, 0.291700029, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.00358620144799
+calculating stable deltas...
+Time taken to compute stable deltas is 111.77785587310791 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.121008396148682 seconds
+[EMRI/grid_idx10/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx10_0PA.npy
+[EMRI/grid_idx10/PN] computing injection SNR ...
+[EMRI/grid_idx10/PN] SNR = 19.9998 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx10.npy
+[EMRI/grid_idx10/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000068.9, 10.0000974, -0.89980761, 13.1857559, 0.299991044, 1, 3.3568155678276197, 1.04653447, 0.785346894, 0.6283185307179586, 0.5235987755982988, 0.101227136, 0.2, 0.29295365, 0.95, False, False, False, True, -0.0649873162, 0.85083044, 0.0, 0.0)
+Waveform Generated. SNR: 20.00287525006299
+calculating stable deltas...
+Time taken to compute stable deltas is 132.5000913143158 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.581298351287842 seconds
+[EMRI/grid_idx10/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx10_PN.npy
+[EMRI/grid_idx10/simple] computing injection SNR ...
+[EMRI/grid_idx10/simple] SNR = 19.9998 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx10.npy
+[EMRI/grid_idx10/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000068.51, 10.0001078, -0.899808296, 13.1857585, 0.2999912, 1, 3.3568155678276197, 1.04656707, 0.785340828, 0.6283185307179586, 0.5235987755982988, 0.10119515, 0.2, 0.293031853, 0.95, False, False, False, True, 0.0, 0.0, -0.123062312, -2.17371101)
+Waveform Generated. SNR: 20.002803027894206
+calculating stable deltas...
+Time taken to compute stable deltas is 130.30291318893433 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.801107406616211 seconds
+[EMRI/grid_idx10/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx10_simple.npy
+[EMRI/grid_idx15/0PA] computing injection SNR ...
+[EMRI/grid_idx15/0PA] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx15.npy
+[EMRI/grid_idx15/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999991.814, 9.99998492, -0.899975596, 13.2503979, 0.40000222, 1, 3.7425890067593537, 1.04635385, 0.785759029, 0.6283185307179586, 0.5235987755982988, 0.116037911, 0.2, 0.296088991, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.001835695740706
+calculating stable deltas...
+Time taken to compute stable deltas is 117.12962222099304 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.374346733093262 seconds
+[EMRI/grid_idx15/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx15_0PA.npy
+[EMRI/grid_idx15/PN] computing injection SNR ...
+[EMRI/grid_idx15/PN] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx15.npy
+[EMRI/grid_idx15/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999986.357, 10.0000591, -0.899983082, 13.2504223, 0.400004665, 1, 3.7425890067593537, 1.04719548, 0.785388928, 0.6283185307179586, 0.5235987755982988, 0.099826442, 0.2, 0.300198389, 0.95, False, False, False, True, 20.1208743, 1.05290909, 0.0, 0.0)
+Waveform Generated. SNR: 20.000431006942357
+calculating stable deltas...
+Time taken to compute stable deltas is 138.51541328430176 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.048504114151001 seconds
+[EMRI/grid_idx15/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx15_PN.npy
+[EMRI/grid_idx15/simple] computing injection SNR ...
+[EMRI/grid_idx15/simple] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx15.npy
+[EMRI/grid_idx15/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999990.225, 9.99996199, -0.899972583, 13.2503853, 0.400004858, 1, 3.7425890067593537, 1.04706829, 0.785405384, 0.6283185307179586, 0.5235987755982988, 0.101790235, 0.2, 0.297995596, 0.95, False, False, False, True, 0.0, 0.0, -0.569148519, -2.68984629)
+Waveform Generated. SNR: 20.00070484481932
+calculating stable deltas...
+Time taken to compute stable deltas is 139.1713263988495 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.3177759647369385 seconds
+[EMRI/grid_idx15/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx15_simple.npy
+[EMRI/grid_idx16/0PA] computing injection SNR ...
+[EMRI/grid_idx16/0PA] SNR = 19.9994 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx16.npy
+[EMRI/grid_idx16/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000076.21, 10.0002076, -0.499829696, 12.2875955, 0.399989862, 1, 4.889997184029404, 1.04613861, 0.785429845, 0.6283185307179586, 0.5235987755982988, 0.10989043, 0.2, 0.291804337, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.004076963133155
+calculating stable deltas...
+Time taken to compute stable deltas is 116.87228751182556 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.374838590621948 seconds
+[EMRI/grid_idx16/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx16_0PA.npy
+[EMRI/grid_idx16/PN] computing injection SNR ...
+[EMRI/grid_idx16/PN] SNR = 19.9994 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx16.npy
+[EMRI/grid_idx16/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999981.746, 10.0000028, -0.49999288, 12.288242, 0.400006724, 1, 4.889997184029404, 1.04720353, 0.785403236, 0.6283185307179586, 0.5235987755982988, 0.0994676219, 0.2, 0.300228065, 0.95, False, False, False, True, 15.9286486, 1.28952235, 0.0, 0.0)
+Waveform Generated. SNR: 19.999421602414422
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 139.97205996513367 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.793619394302368 seconds
+[EMRI/grid_idx16/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx16_PN.npy
+[EMRI/grid_idx16/simple] computing injection SNR ...
+[EMRI/grid_idx16/simple] SNR = 19.9994 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx16.npy
+[EMRI/grid_idx16/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000075.27, 10.0001871, -0.4998294, 12.2875935, 0.399990881, 1, 4.889997184029404, 1.04637466, 0.785308028, 0.6283185307179586, 0.5235987755982988, 0.103142649, 0.2, 0.293149845, 0.95, False, False, False, True, 0.0, 0.0, -0.0917729481, -0.831194623)
+Waveform Generated. SNR: 20.003395420114646
+calculating stable deltas...
+Time taken to compute stable deltas is 141.45950531959534 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.186632394790649 seconds
+[EMRI/grid_idx16/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx16_simple.npy
+[EMRI/grid_idx19/0PA] computing injection SNR ...
+[EMRI/grid_idx19/0PA] SNR = 19.9301 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx19.npy
+[EMRI/grid_idx19/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000004.73, 10.0001399, 0.900008832, 9.00299346, 0.399996279, 1, 14.064330275907732, 1.04599261, 0.781803739, 0.6283185307179586, 0.5235987755982988, 0.251522616, 0.2, 0.151366848, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.042314321744907
+calculating stable deltas...
+Time taken to compute stable deltas is 137.04596519470215 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.6299474239349365 seconds
+[EMRI/grid_idx19/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx19_0PA.npy
+[EMRI/grid_idx19/PN] computing injection SNR ...
+[EMRI/grid_idx19/PN] SNR = 19.9301 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx19.npy
+[EMRI/grid_idx19/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000006.46, 9.99878887, 0.90001585, 9.00288808, 0.400008674, 1, 14.064330275907732, 1.04797294, 0.785342924, 0.6283185307179586, 0.5235987755982988, 0.056011919, 0.2, 0.334729492, 0.95, False, False, False, True, -36.4827941, -1.18044241, 0.0, 0.0)
+Waveform Generated. SNR: 19.98656264725435
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 167.5965859889984 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.6342713832855225 seconds
+[EMRI/grid_idx19/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx19_PN.npy
+[EMRI/grid_idx19/simple] computing injection SNR ...
+[EMRI/grid_idx19/simple] SNR = 19.9301 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx19.npy
+[EMRI/grid_idx19/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000034.58, 10.0001782, 0.900024792, 9.00288749, 0.399985572, 1, 14.064330275907732, 1.04911642, 0.781745642, 0.6283185307179586, 0.5235987755982988, 0.276885938, 0.2, 0.179435722, 0.95, False, False, False, True, 0.0, 0.0, 2.16440168, 7.92272579)
+Waveform Generated. SNR: 20.017546689257298
+calculating stable deltas...
+Time taken to compute stable deltas is 166.89178466796875 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.66863226890564 seconds
+[EMRI/grid_idx19/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx19_simple.npy
+[EMRI/grid_idx21/0PA] computing injection SNR ...
+[EMRI/grid_idx21/0PA] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx21.npy
+[EMRI/grid_idx21/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000036.01, 10.0001563, -0.499905618, 12.3055331, 0.499995866, 1, 5.312393543904282, 1.04614555, 0.78570468, 0.6283185307179586, 0.5235987755982988, 0.124566741, 0.2, 0.293145258, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.00356681531796
+calculating stable deltas...
+Time taken to compute stable deltas is 126.88289213180542 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.064013957977295 seconds
+[EMRI/grid_idx21/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx21_0PA.npy
+[EMRI/grid_idx21/PN] computing injection SNR ...
+[EMRI/grid_idx21/PN] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx21.npy
+[EMRI/grid_idx21/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999973.644, 9.99996412, -0.500007016, 12.3059307, 0.500005609, 1, 5.312393543904282, 1.04720354, 0.785400775, 0.6283185307179586, 0.5235987755982988, 0.0996080378, 0.2, 0.30011929, 0.95, False, False, False, True, 14.2240595, 0.917083476, 0.0, 0.0)
+Waveform Generated. SNR: 20.000081681131103
+calculating stable deltas...
+Time taken to compute stable deltas is 149.83652901649475 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.401061534881592 seconds
+[EMRI/grid_idx21/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx21_PN.npy
+[EMRI/grid_idx21/simple] computing injection SNR ...
+[EMRI/grid_idx21/simple] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx21.npy
+[EMRI/grid_idx21/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (999943.09, 10.0000951, -0.500057704, 12.306133, 0.500009881, 1, 5.312393543904282, 1.04722888, 0.785426938, 0.6283185307179586, 0.5235987755982988, 0.100293018, 0.2, 0.299659288, 0.95, False, False, False, True, 0.0, 0.0, -3.80854163, -5.49833734)
+Waveform Generated. SNR: 20.000151734382637
+calculating stable deltas...
+Time taken to compute stable deltas is 148.54214143753052 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.64147686958313 seconds
+[EMRI/grid_idx21/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx21_simple.npy
+[EMRI/grid_idx22/0PA] computing injection SNR ...
+[EMRI/grid_idx22/0PA] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx22.npy
+[EMRI/grid_idx22/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000086.81, 10.0003303, 0.000142199942, 11.0810531, 0.499989509, 1, 7.340330367777554, 1.04608588, 0.785167955, 0.6283185307179586, 0.5235987755982988, 0.111541733, 0.2, 0.290996582, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.00705144059694
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 133.05077600479126 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.569748878479004 seconds
+[EMRI/grid_idx22/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx22_0PA.npy
+[EMRI/grid_idx22/PN] computing injection SNR ...
+[EMRI/grid_idx22/PN] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx22.npy
+[EMRI/grid_idx22/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000086.81, 10.0003306, 0.000142245721, 11.081053, 0.499989518, 1, 7.340330367777554, 1.04611015, 0.785149134, 0.6283185307179586, 0.5235987755982988, 0.112026534, 0.2, 0.290598428, 0.95, False, False, False, True, 0.0399952919, 0.00668413945, 0.0, 0.0)
+Waveform Generated. SNR: 20.00701623749821
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 158.30705904960632 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 6.149841070175171 seconds
+[EMRI/grid_idx22/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx22_PN.npy
+[EMRI/grid_idx22/simple] computing injection SNR ...
+[EMRI/grid_idx22/simple] SNR = 20.0000 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx22.npy
+[EMRI/grid_idx22/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000086.69, 10.0003234, 0.000142243727, 11.0810528, 0.499989611, 1, 7.340330367777554, 1.04608708, 0.785152624, 0.6283185307179586, 0.5235987755982988, 0.110218654, 0.2, 0.291278847, 0.95, False, False, False, True, 0.0, 0.0, 0.0290154538, -0.0281719291)
+Waveform Generated. SNR: 20.007094120992893
+calculating stable deltas...
+Time taken to compute stable deltas is 156.57030773162842 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.951707124710083 seconds
+[EMRI/grid_idx22/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx22_simple.npy
+[EMRI/grid_idx23/0PA] computing injection SNR ...
+[EMRI/grid_idx23/0PA] SNR = 19.9950 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx23.npy
+[EMRI/grid_idx23/0PA] computing Fisher matrix (9 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000056.23, 10.0002698, 0.500069538, 9.88533683, 0.499992225, 1, 10.329524932896542, 1.04560634, 0.784454719, 0.6283185307179586, 0.5235987755982988, 0.127586896, 0.2, 0.277702828, 0.95, False, False, False, False)
+Waveform Generated. SNR: 20.009092110771892
+calculating stable deltas...
+Time taken to compute stable deltas is 142.00278902053833 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.468095541000366 seconds
+[EMRI/grid_idx23/0PA] saved Fisher (9, 9) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx23_0PA.npy
+[EMRI/grid_idx23/PN] computing injection SNR ...
+[EMRI/grid_idx23/PN] SNR = 19.9950 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx23.npy
+[EMRI/grid_idx23/PN] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000059.81, 10.0003018, 0.500072424, 9.8853219, 0.499991394, 1, 10.329524932896542, 1.04564458, 0.784526211, 0.6283185307179586, 0.5235987755982988, 0.13157774, 0.2, 0.278138998, 0.95, False, False, False, True, 0.227979322, -0.0614971274, 0.0, 0.0)
+Waveform Generated. SNR: 20.00859992271594
+calculating stable deltas...
+Time taken to compute stable deltas is 169.03543758392334 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 6.154113531112671 seconds
+[EMRI/grid_idx23/PN] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx23_PN.npy
+[EMRI/grid_idx23/simple] computing injection SNR ...
+[EMRI/grid_idx23/simple] SNR = 19.9950 -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/SNR_grid_idx23.npy
+[EMRI/grid_idx23/simple] computing Fisher matrix (11 params) ...
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 7889537)
+Computing SNR for parameters: (1000142.16, 10.0005478, 0.500145531, 9.88493333, 0.49997577, 1, 10.329524932896542, 1.04689774, 0.784273057, 0.6283185307179586, 0.5235987755982988, 0.133683657, 0.2, 0.289010203, 0.95, False, False, False, True, 0.0, 0.0, 2.50301069, 6.66843425)
+Waveform Generated. SNR: 20.003896093861012
+calculating stable deltas...
+Time taken to compute stable deltas is 170.4106113910675 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 6.069502353668213 seconds
+[EMRI/grid_idx23/simple] saved Fisher (11, 11) -> /home/svu/e1583490/EMRI_CV_bias/Fisher_results/EMRI/Fisher_grid_idx23_simple.npy
+
+[compute_fishers] done. 0 failures: []

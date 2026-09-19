@@ -1,0 +1,964 @@
+startup
+[INFO] use_gpu = True
+[cfg] CV controls: overlap_target=0.9999999999, lambda0=0.01, rel_tol=1e-09, recompute_deltas_every=10
+[point] frozen hard_point.json
+[point] live/8: m1 = 3.780314e+06, p0 = 7.757812, T = 3.864473 yr, dt = 10, d = 2.194592 Gpc, SNR = 200.0000
+[point] injected A_PM = 7.258203e-05, n_PM = 8, A_GC = 1.0e-12, n_GC = 4.0
+[point] population run reached ov = 0.00035664 (0PA), 0.00050292 (0PA+PN)
+[cfg] model = 0PA, parameters = m1, m2, a, p0, e0, qS, phiS, Phi_phi0
+[build] SNR check: 200.000000 (A = 145.4730, E = 137.2502)
+
+=== stage 1: CV step from the injected point ===
+    start overlap = -0.3007146087
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3780313.9097061357), np.float64(50.0), np.float64(0.9), np.float64(7.757812286220264), np.float64(0.0), 1.0, 2.194591829653648, np.float64(0.2), np.float64(0.2), 0.8, 0.8, np.float64(0.3), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.98865132850892
+calculating stable deltas...
+minimum relative error is greater than 1% for e0. Fisher may be unstable!
+Time taken to compute stable deltas is 44.52794814109802 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.521413564682007 seconds
+    [clip]1 e0: -2.819675e-01 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    [clip]1 phiS: -8.790697e-01 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    [clip]1 Phi_phi0: -3.006759e-01 -> +0.000000e+00 (outside the physical box; this component is no longer the full CV step)
+    CV1 exact step  ov -0.3007146087 -> 0.1513460478  chi2 1.041e+05 -> 6.437e+04
+[stage] CV step    ov = 0.1513460478  chi2 = 6.437484e+04  0.8 min
+
+=== stage 2: differential evolution in the Fisher box ===
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3785743.584997153), np.float64(49.95723429956758), np.float64(0.9001060599618749), np.float64(7.750015014576984), np.float64(0.0), 1.0, 2.194591829653648, np.float64(0.1080926448236275), np.float64(0.0), 0.8, 0.8, np.float64(0.0), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 189.30085868952037
+calculating stable deltas...
+minimum relative error is greater than 1% for e0. Fisher may be unstable!
+Time taken to compute stable deltas is 37.37963390350342 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.612032890319824 seconds
+[DE] Fisher-based bounds:
+         m1: [+3.78296595e+06, +3.78852122e+06]  centre +3.78574358e+06  injected +3.78031391e+06 OUT
+         m2: [+4.99385032e+01, +4.99759654e+01]  centre +4.99572343e+01  injected +5.00000000e+01 OUT
+          a: [+9.00015634e-01, +9.00196486e-01]  centre +9.00106060e-01  injected +9.00000000e-01 OUT
+         p0: [+7.74607829e+00, +7.75395174e+00]  centre +7.75001501e+00  injected +7.75781229e+00 OUT
+         e0: [+0.00000000e+00, +2.41846865e-02]  centre +0.00000000e+00  injected +0.00000000e+00 in 
+         qS: [+0.00000000e+00, +3.14159265e+00]  centre +1.08092645e-01  injected +2.00000000e-01 in 
+       phiS: [+0.00000000e+00, +6.28318531e+00]  centre +0.00000000e+00  injected +2.00000000e-01 in 
+   Phi_phi0: [+0.00000000e+00, +6.28318531e+00]  centre +0.00000000e+00  injected +3.00000000e-01 in 
+[DE] ndim = 8, maxiter = 1100, popsize = 15, objective = chi2, init = sobol
+    [DE]     200 evals    0.01 h    0.14 s/eval  best = 4.535213e+04
+    [DE]     400 evals    0.02 h    0.14 s/eval  best = 4.535213e+04
+    [DE]     600 evals    0.02 h    0.12 s/eval  best = 4.063193e+04
+    [DE]     800 evals    0.03 h    0.12 s/eval  best = 4.063193e+04
+    [DE]    1000 evals    0.03 h    0.12 s/eval  best = 4.063193e+04
+    [DE]    1200 evals    0.04 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    1400 evals    0.04 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    1600 evals    0.05 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    1800 evals    0.05 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    2000 evals    0.06 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    2200 evals    0.06 h    0.11 s/eval  best = 4.063193e+04
+    [DE]    2400 evals    0.07 h    0.10 s/eval  best = 4.063193e+04
+    [DE]    2600 evals    0.07 h    0.10 s/eval  best = 3.967728e+04
+    [DE]    2800 evals    0.08 h    0.10 s/eval  best = 3.967728e+04
+    [DE]    3000 evals    0.09 h    0.10 s/eval  best = 3.967728e+04
+    [DE]    3200 evals    0.09 h    0.10 s/eval  best = 3.967728e+04
+    [DE]    3400 evals    0.10 h    0.10 s/eval  best = 3.967728e+04
+    [DE]    3600 evals    0.10 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    3800 evals    0.11 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    4000 evals    0.11 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    4200 evals    0.12 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    4400 evals    0.12 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    4600 evals    0.13 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    4800 evals    0.13 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    5000 evals    0.14 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    5200 evals    0.14 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    5400 evals    0.15 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    5600 evals    0.15 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    5800 evals    0.16 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    6000 evals    0.17 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    6200 evals    0.17 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    6400 evals    0.18 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    6600 evals    0.19 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    6800 evals    0.20 h    0.10 s/eval  best = 3.964236e+04
+    [DE]    7000 evals    0.20 h    0.10 s/eval  best = 3.960433e+04
+    [DE]    7200 evals    0.21 h    0.10 s/eval  best = 3.960433e+04
+    [DE]    7400 evals    0.22 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    7600 evals    0.22 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    7800 evals    0.23 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    8000 evals    0.24 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    8200 evals    0.24 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    8400 evals    0.25 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    8600 evals    0.26 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    8800 evals    0.27 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    9000 evals    0.28 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    9200 evals    0.28 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    9400 evals    0.29 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    9600 evals    0.30 h    0.11 s/eval  best = 3.960433e+04
+    [DE]    9800 evals    0.30 h    0.11 s/eval  best = 3.960433e+04
+    [DE]   10000 evals    0.31 h    0.11 s/eval  best = 3.960433e+04
+    [DE]   10200 evals    0.32 h    0.11 s/eval  best = 3.960433e+04
+    [DE]   10400 evals    0.32 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   10600 evals    0.33 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   10800 evals    0.33 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   11000 evals    0.34 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   11200 evals    0.34 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   11400 evals    0.35 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   11600 evals    0.35 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   11800 evals    0.36 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   12000 evals    0.36 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   12200 evals    0.37 h    0.11 s/eval  best = 3.920407e+04
+    [DE]   12400 evals    0.37 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   12600 evals    0.38 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   12800 evals    0.38 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   13000 evals    0.39 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   13200 evals    0.39 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   13400 evals    0.40 h    0.11 s/eval  best = 3.837610e+04
+    [DE]   13600 evals    0.41 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   13800 evals    0.41 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   14000 evals    0.42 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   14200 evals    0.42 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   14400 evals    0.43 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   14600 evals    0.43 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   14800 evals    0.44 h    0.11 s/eval  best = 3.660818e+04
+    [DE]   15000 evals    0.44 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   15200 evals    0.45 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   15400 evals    0.45 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   15600 evals    0.46 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   15800 evals    0.46 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   16000 evals    0.47 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   16200 evals    0.47 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   16400 evals    0.48 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   16600 evals    0.48 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   16800 evals    0.49 h    0.11 s/eval  best = 3.648316e+04
+    [DE]   17000 evals    0.50 h    0.10 s/eval  best = 3.648316e+04
+    [DE]   17200 evals    0.50 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   17400 evals    0.51 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   17600 evals    0.51 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   17800 evals    0.52 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   18000 evals    0.52 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   18200 evals    0.53 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   18400 evals    0.53 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   18600 evals    0.54 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   18800 evals    0.54 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   19000 evals    0.55 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   19200 evals    0.55 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   19400 evals    0.56 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   19600 evals    0.56 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   19800 evals    0.57 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   20000 evals    0.58 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   20200 evals    0.58 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   20400 evals    0.59 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   20600 evals    0.60 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   20800 evals    0.60 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   21000 evals    0.61 h    0.10 s/eval  best = 3.362176e+04
+    [DE]   21200 evals    0.62 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   21400 evals    0.63 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   21600 evals    0.64 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   21800 evals    0.64 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   22000 evals    0.65 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   22200 evals    0.66 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   22400 evals    0.66 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   22600 evals    0.67 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   22800 evals    0.68 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   23000 evals    0.68 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   23200 evals    0.69 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   23400 evals    0.70 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   23600 evals    0.71 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   23800 evals    0.71 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   24000 evals    0.72 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   24200 evals    0.73 h    0.11 s/eval  best = 3.362176e+04
+    [DE]   24400 evals    0.73 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   24600 evals    0.74 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   24800 evals    0.75 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   25000 evals    0.75 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   25200 evals    0.76 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   25400 evals    0.76 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   25600 evals    0.77 h    0.11 s/eval  best = 3.277863e+04
+    [DE]   25800 evals    0.77 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   26000 evals    0.78 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   26200 evals    0.78 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   26400 evals    0.79 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   26600 evals    0.79 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   26800 evals    0.80 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   27000 evals    0.81 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   27200 evals    0.81 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   27400 evals    0.82 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   27600 evals    0.82 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   27800 evals    0.83 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   28000 evals    0.83 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   28200 evals    0.84 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   28400 evals    0.84 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   28600 evals    0.85 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   28800 evals    0.86 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   29000 evals    0.86 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   29200 evals    0.87 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   29400 evals    0.88 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   29600 evals    0.89 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   29800 evals    0.89 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   30000 evals    0.90 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   30200 evals    0.91 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   30400 evals    0.92 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   30600 evals    0.92 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   30800 evals    0.93 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   31000 evals    0.94 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   31200 evals    0.94 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   31400 evals    0.95 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   31600 evals    0.96 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   31800 evals    0.97 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   32000 evals    0.97 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   32200 evals    0.98 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   32400 evals    0.99 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   32600 evals    0.99 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   32800 evals    1.00 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   33000 evals    1.01 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   33200 evals    1.01 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   33400 evals    1.02 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   33600 evals    1.02 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   33800 evals    1.03 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   34000 evals    1.03 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   34200 evals    1.04 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   34400 evals    1.04 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   34600 evals    1.05 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   34800 evals    1.05 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   35000 evals    1.06 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   35200 evals    1.06 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   35400 evals    1.07 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   35600 evals    1.08 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   35800 evals    1.08 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   36000 evals    1.09 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   36200 evals    1.10 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   36400 evals    1.11 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   36600 evals    1.11 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   36800 evals    1.12 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   37000 evals    1.13 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   37200 evals    1.13 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   37400 evals    1.14 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   37600 evals    1.15 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   37800 evals    1.15 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   38000 evals    1.16 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   38200 evals    1.17 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   38400 evals    1.18 h    0.11 s/eval  best = 3.154234e+04
+    [DE]   38600 evals    1.18 h    0.11 s/eval  best = 3.118166e+04
+    [DE]   38800 evals    1.19 h    0.11 s/eval  best = 3.118166e+04
+    [DE]   39000 evals    1.20 h    0.11 s/eval  best = 3.118166e+04
+    [DE]   39200 evals    1.20 h    0.11 s/eval  best = 3.118166e+04
+    [DE]   39400 evals    1.21 h    0.11 s/eval  best = 3.118166e+04
+    [DE]   39600 evals    1.22 h    0.11 s/eval  best = 3.089465e+04
+    [DE]   39800 evals    1.22 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   40000 evals    1.23 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   40200 evals    1.23 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   40400 evals    1.24 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   40600 evals    1.24 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   40800 evals    1.25 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   41000 evals    1.25 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   41200 evals    1.26 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   41400 evals    1.27 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   41600 evals    1.27 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   41800 evals    1.28 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   42000 evals    1.28 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   42200 evals    1.29 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   42400 evals    1.29 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   42600 evals    1.30 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   42800 evals    1.30 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   43000 evals    1.31 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   43200 evals    1.31 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   43400 evals    1.32 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   43600 evals    1.33 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   43800 evals    1.34 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   44000 evals    1.34 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   44200 evals    1.35 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   44400 evals    1.36 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   44600 evals    1.36 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   44800 evals    1.37 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   45000 evals    1.38 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   45200 evals    1.38 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   45400 evals    1.39 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   45600 evals    1.40 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   45800 evals    1.41 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   46000 evals    1.41 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   46200 evals    1.42 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   46400 evals    1.43 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   46600 evals    1.43 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   46800 evals    1.44 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   47000 evals    1.45 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   47200 evals    1.45 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   47400 evals    1.46 h    0.11 s/eval  best = 2.965455e+04
+    [DE]   47600 evals    1.47 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   47800 evals    1.47 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   48000 evals    1.48 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   48200 evals    1.48 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   48400 evals    1.49 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   48600 evals    1.49 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   48800 evals    1.50 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   49000 evals    1.50 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   49200 evals    1.51 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   49400 evals    1.51 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   49600 evals    1.52 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   49800 evals    1.52 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   50000 evals    1.53 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   50200 evals    1.54 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   50400 evals    1.55 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   50600 evals    1.55 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   50800 evals    1.56 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   51000 evals    1.57 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   51200 evals    1.57 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   51400 evals    1.58 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   51600 evals    1.59 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   51800 evals    1.59 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   52000 evals    1.60 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   52200 evals    1.61 h    0.11 s/eval  best = 2.871157e+04
+    [DE]   52400 evals    1.62 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   52600 evals    1.62 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   52800 evals    1.63 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   53000 evals    1.64 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   53200 evals    1.64 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   53400 evals    1.65 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   53600 evals    1.66 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   53800 evals    1.66 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   54000 evals    1.67 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   54200 evals    1.67 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   54400 evals    1.68 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   54600 evals    1.69 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   54800 evals    1.69 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   55000 evals    1.70 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   55200 evals    1.70 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   55400 evals    1.71 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   55600 evals    1.71 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   55800 evals    1.72 h    0.11 s/eval  best = 2.734099e+04
+    [DE]   56000 evals    1.72 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   56200 evals    1.73 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   56400 evals    1.73 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   56600 evals    1.74 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   56800 evals    1.74 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   57000 evals    1.75 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   57200 evals    1.75 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   57400 evals    1.76 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   57600 evals    1.76 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   57800 evals    1.77 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   58000 evals    1.77 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   58200 evals    1.78 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   58400 evals    1.78 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   58600 evals    1.79 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   58800 evals    1.79 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   59000 evals    1.80 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   59200 evals    1.81 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   59400 evals    1.81 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   59600 evals    1.82 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   59800 evals    1.82 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   60000 evals    1.83 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   60200 evals    1.83 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   60400 evals    1.84 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   60600 evals    1.84 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   60800 evals    1.85 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   61000 evals    1.85 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   61200 evals    1.86 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   61400 evals    1.87 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   61600 evals    1.87 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   61800 evals    1.88 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   62000 evals    1.89 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   62200 evals    1.89 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   62400 evals    1.90 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   62600 evals    1.91 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   62800 evals    1.91 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   63000 evals    1.92 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   63200 evals    1.93 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   63400 evals    1.94 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   63600 evals    1.94 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   63800 evals    1.95 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   64000 evals    1.96 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   64200 evals    1.96 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   64400 evals    1.97 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   64600 evals    1.98 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   64800 evals    1.98 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   65000 evals    1.99 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   65200 evals    2.00 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   65400 evals    2.01 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   65600 evals    2.01 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   65800 evals    2.02 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   66000 evals    2.03 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   66200 evals    2.03 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   66400 evals    2.04 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   66600 evals    2.05 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   66800 evals    2.05 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   67000 evals    2.06 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   67200 evals    2.06 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   67400 evals    2.07 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   67600 evals    2.07 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   67800 evals    2.08 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   68000 evals    2.08 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   68200 evals    2.09 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   68400 evals    2.09 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   68600 evals    2.10 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   68800 evals    2.11 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   69000 evals    2.11 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   69200 evals    2.12 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   69400 evals    2.13 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   69600 evals    2.13 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   69800 evals    2.14 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   70000 evals    2.15 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   70200 evals    2.15 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   70400 evals    2.16 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   70600 evals    2.17 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   70800 evals    2.17 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   71000 evals    2.18 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   71200 evals    2.19 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   71400 evals    2.20 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   71600 evals    2.20 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   71800 evals    2.21 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   72000 evals    2.22 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   72200 evals    2.22 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   72400 evals    2.23 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   72600 evals    2.24 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   72800 evals    2.24 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   73000 evals    2.25 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   73200 evals    2.26 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   73400 evals    2.26 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   73600 evals    2.27 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   73800 evals    2.28 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   74000 evals    2.28 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   74200 evals    2.29 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   74400 evals    2.30 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   74600 evals    2.30 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   74800 evals    2.31 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   75000 evals    2.32 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   75200 evals    2.32 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   75400 evals    2.33 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   75600 evals    2.34 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   75800 evals    2.35 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   76000 evals    2.35 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   76200 evals    2.36 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   76400 evals    2.37 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   76600 evals    2.37 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   76800 evals    2.38 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   77000 evals    2.39 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   77200 evals    2.39 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   77400 evals    2.40 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   77600 evals    2.41 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   77800 evals    2.41 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   78000 evals    2.42 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   78200 evals    2.43 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   78400 evals    2.43 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   78600 evals    2.44 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   78800 evals    2.44 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   79000 evals    2.45 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   79200 evals    2.45 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   79400 evals    2.46 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   79600 evals    2.46 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   79800 evals    2.47 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   80000 evals    2.47 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   80200 evals    2.48 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   80400 evals    2.48 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   80600 evals    2.49 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   80800 evals    2.50 h    0.11 s/eval  best = 2.603194e+04
+    [DE]   81000 evals    2.50 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   81200 evals    2.51 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   81400 evals    2.52 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   81600 evals    2.52 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   81800 evals    2.53 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   82000 evals    2.54 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   82200 evals    2.54 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   82400 evals    2.55 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   82600 evals    2.56 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   82800 evals    2.57 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   83000 evals    2.57 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   83200 evals    2.58 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   83400 evals    2.59 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   83600 evals    2.59 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   83800 evals    2.60 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   84000 evals    2.61 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   84200 evals    2.61 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   84400 evals    2.62 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   84600 evals    2.63 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   84800 evals    2.63 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   85000 evals    2.64 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   85200 evals    2.65 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   85400 evals    2.65 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   85600 evals    2.66 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   85800 evals    2.67 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   86000 evals    2.68 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   86200 evals    2.68 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   86400 evals    2.69 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   86600 evals    2.70 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   86800 evals    2.70 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   87000 evals    2.71 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   87200 evals    2.72 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   87400 evals    2.72 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   87600 evals    2.73 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   87800 evals    2.74 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   88000 evals    2.74 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   88200 evals    2.75 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   88400 evals    2.76 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   88600 evals    2.76 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   88800 evals    2.77 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   89000 evals    2.78 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   89200 evals    2.78 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   89400 evals    2.79 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   89600 evals    2.80 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   89800 evals    2.80 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   90000 evals    2.81 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   90200 evals    2.82 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   90400 evals    2.82 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   90600 evals    2.83 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   90800 evals    2.84 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   91000 evals    2.84 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   91200 evals    2.85 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   91400 evals    2.86 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   91600 evals    2.86 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   91800 evals    2.87 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   92000 evals    2.88 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   92200 evals    2.89 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   92400 evals    2.89 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   92600 evals    2.90 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   92800 evals    2.91 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   93000 evals    2.91 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   93200 evals    2.92 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   93400 evals    2.92 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   93600 evals    2.93 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   93800 evals    2.94 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   94000 evals    2.95 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   94200 evals    2.95 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   94400 evals    2.96 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   94600 evals    2.97 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   94800 evals    2.97 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   95000 evals    2.98 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   95200 evals    2.99 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   95400 evals    2.99 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   95600 evals    3.00 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   95800 evals    3.00 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   96000 evals    3.01 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   96200 evals    3.02 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   96400 evals    3.03 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   96600 evals    3.03 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   96800 evals    3.04 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   97000 evals    3.05 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   97200 evals    3.05 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   97400 evals    3.06 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   97600 evals    3.07 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   97800 evals    3.07 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   98000 evals    3.08 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   98200 evals    3.09 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   98400 evals    3.09 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   98600 evals    3.10 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   98800 evals    3.10 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   99000 evals    3.11 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   99200 evals    3.11 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   99400 evals    3.12 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   99600 evals    3.12 h    0.11 s/eval  best = 2.585893e+04
+    [DE]   99800 evals    3.13 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  100000 evals    3.13 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  100200 evals    3.14 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  100400 evals    3.14 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  100600 evals    3.15 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  100800 evals    3.15 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  101000 evals    3.16 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  101200 evals    3.16 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  101400 evals    3.17 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  101600 evals    3.17 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  101800 evals    3.18 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  102000 evals    3.18 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  102200 evals    3.19 h    0.11 s/eval  best = 2.585893e+04
+    [DE]  102400 evals    3.19 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  102600 evals    3.20 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  102800 evals    3.20 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  103000 evals    3.21 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  103200 evals    3.22 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  103400 evals    3.22 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  103600 evals    3.23 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  103800 evals    3.24 h    0.11 s/eval  best = 2.567905e+04
+    [DE]  104000 evals    3.24 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  104200 evals    3.25 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  104400 evals    3.26 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  104600 evals    3.27 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  104800 evals    3.27 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  105000 evals    3.28 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  105200 evals    3.29 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  105400 evals    3.29 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  105600 evals    3.30 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  105800 evals    3.31 h    0.11 s/eval  best = 2.423947e+04
+    [DE]  106000 evals    3.31 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  106200 evals    3.32 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  106400 evals    3.33 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  106600 evals    3.33 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  106800 evals    3.34 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  107000 evals    3.35 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  107200 evals    3.35 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  107400 evals    3.36 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  107600 evals    3.37 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  107800 evals    3.37 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  108000 evals    3.38 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  108200 evals    3.39 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  108400 evals    3.40 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  108600 evals    3.40 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  108800 evals    3.41 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  109000 evals    3.42 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  109200 evals    3.42 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  109400 evals    3.43 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  109600 evals    3.44 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  109800 evals    3.44 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  110000 evals    3.45 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  110200 evals    3.46 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  110400 evals    3.47 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  110600 evals    3.47 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  110800 evals    3.48 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  111000 evals    3.49 h    0.11 s/eval  best = 2.390094e+04
+    [DE]  111200 evals    3.49 h    0.11 s/eval  best = 2.381198e+04
+    [DE]  111400 evals    3.50 h    0.11 s/eval  best = 2.381198e+04
+    [DE]  111600 evals    3.51 h    0.11 s/eval  best = 2.381198e+04
+    [DE]  111800 evals    3.51 h    0.11 s/eval  best = 2.381198e+04
+    [DE]  112000 evals    3.52 h    0.11 s/eval  best = 2.381198e+04
+    [DE]  112200 evals    3.53 h    0.11 s/eval  best = 2.365233e+04
+    [DE]  112400 evals    3.53 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  112600 evals    3.54 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  112800 evals    3.55 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  113000 evals    3.55 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  113200 evals    3.56 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  113400 evals    3.57 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  113600 evals    3.57 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  113800 evals    3.58 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  114000 evals    3.59 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  114200 evals    3.59 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  114400 evals    3.60 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  114600 evals    3.61 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  114800 evals    3.61 h    0.11 s/eval  best = 2.360251e+04
+    [DE]  115000 evals    3.62 h    0.11 s/eval  best = 2.358931e+04
+    [DE]  115200 evals    3.63 h    0.11 s/eval  best = 2.358931e+04
+    [DE]  115400 evals    3.64 h    0.11 s/eval  best = 2.341982e+04
+    [DE]  115600 evals    3.64 h    0.11 s/eval  best = 2.341982e+04
+    [DE]  115800 evals    3.65 h    0.11 s/eval  best = 2.341982e+04
+    [DE]  116000 evals    3.66 h    0.11 s/eval  best = 2.341982e+04
+    [DE]  116200 evals    3.66 h    0.11 s/eval  best = 2.341982e+04
+    [DE]  116400 evals    3.67 h    0.11 s/eval  best = 2.328554e+04
+    [DE]  116600 evals    3.67 h    0.11 s/eval  best = 2.328554e+04
+    [DE]  116800 evals    3.68 h    0.11 s/eval  best = 2.328554e+04
+    [DE]  117000 evals    3.69 h    0.11 s/eval  best = 2.328554e+04
+    [DE]  117200 evals    3.69 h    0.11 s/eval  best = 2.319792e+04
+    [DE]  117400 evals    3.70 h    0.11 s/eval  best = 2.319792e+04
+    [DE]  117600 evals    3.71 h    0.11 s/eval  best = 2.318749e+04
+    [DE]  117800 evals    3.71 h    0.11 s/eval  best = 2.315368e+04
+    [DE]  118000 evals    3.72 h    0.11 s/eval  best = 2.315035e+04
+    [DE]  118200 evals    3.73 h    0.11 s/eval  best = 2.315035e+04
+    [DE]  118400 evals    3.73 h    0.11 s/eval  best = 2.315035e+04
+    [DE]  118600 evals    3.74 h    0.11 s/eval  best = 2.315035e+04
+    [DE]  118800 evals    3.75 h    0.11 s/eval  best = 2.315035e+04
+    [DE]  119000 evals    3.76 h    0.11 s/eval  best = 2.313827e+04
+    [DE]  119200 evals    3.76 h    0.11 s/eval  best = 2.311509e+04
+    [DE]  119400 evals    3.77 h    0.11 s/eval  best = 2.311509e+04
+    [DE]  119600 evals    3.78 h    0.11 s/eval  best = 2.311509e+04
+    [DE]  119800 evals    3.78 h    0.11 s/eval  best = 2.311509e+04
+    [DE]  120000 evals    3.79 h    0.11 s/eval  best = 2.310531e+04
+    [DE]  120200 evals    3.80 h    0.11 s/eval  best = 2.309479e+04
+    [DE]  120400 evals    3.80 h    0.11 s/eval  best = 2.309479e+04
+    [DE]  120600 evals    3.81 h    0.11 s/eval  best = 2.309479e+04
+    [DE]  120800 evals    3.81 h    0.11 s/eval  best = 2.309008e+04
+    [DE]  121000 evals    3.82 h    0.11 s/eval  best = 2.307290e+04
+    [DE]  121200 evals    3.82 h    0.11 s/eval  best = 2.307290e+04
+    [DE]  121400 evals    3.83 h    0.11 s/eval  best = 2.307290e+04
+    [DE]  121600 evals    3.83 h    0.11 s/eval  best = 2.306398e+04
+    [DE]  121800 evals    3.84 h    0.11 s/eval  best = 2.299267e+04
+    [DE]  122000 evals    3.84 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  122200 evals    3.85 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  122400 evals    3.85 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  122600 evals    3.86 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  122800 evals    3.86 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  123000 evals    3.87 h    0.11 s/eval  best = 2.294645e+04
+    [DE]  123200 evals    3.88 h    0.11 s/eval  best = 2.284236e+04
+    [DE]  123400 evals    3.89 h    0.11 s/eval  best = 2.284236e+04
+    [DE]  123600 evals    3.89 h    0.11 s/eval  best = 2.284236e+04
+    [DE]  123800 evals    3.90 h    0.11 s/eval  best = 2.280064e+04
+    [DE]  124000 evals    3.91 h    0.11 s/eval  best = 2.280064e+04
+    [DE]  124200 evals    3.91 h    0.11 s/eval  best = 2.280064e+04
+    [DE]  124400 evals    3.92 h    0.11 s/eval  best = 2.269978e+04
+    [DE]  124600 evals    3.93 h    0.11 s/eval  best = 2.269978e+04
+    [DE]  124800 evals    3.93 h    0.11 s/eval  best = 2.262956e+04
+    [DE]  125000 evals    3.94 h    0.11 s/eval  best = 2.262956e+04
+    [DE]  125200 evals    3.95 h    0.11 s/eval  best = 2.262956e+04
+    [DE]  125400 evals    3.96 h    0.11 s/eval  best = 2.262956e+04
+    [DE]  125600 evals    3.96 h    0.11 s/eval  best = 2.262956e+04
+    [DE]  125800 evals    3.97 h    0.11 s/eval  best = 2.258377e+04
+    [DE]  126000 evals    3.98 h    0.11 s/eval  best = 2.254680e+04
+    [DE]  126200 evals    3.98 h    0.11 s/eval  best = 2.250367e+04
+    [DE]  126400 evals    3.99 h    0.11 s/eval  best = 2.250367e+04
+    [DE]  126600 evals    4.00 h    0.11 s/eval  best = 2.246856e+04
+    [DE]  126800 evals    4.00 h    0.11 s/eval  best = 2.246856e+04
+    [DE]  127000 evals    4.01 h    0.11 s/eval  best = 2.246856e+04
+    [DE]  127200 evals    4.02 h    0.11 s/eval  best = 2.246856e+04
+    [DE]  127400 evals    4.02 h    0.11 s/eval  best = 2.246856e+04
+    [DE]  127600 evals    4.03 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  127800 evals    4.04 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  128000 evals    4.04 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  128200 evals    4.05 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  128400 evals    4.06 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  128600 evals    4.06 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  128800 evals    4.07 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  129000 evals    4.08 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  129200 evals    4.08 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  129400 evals    4.09 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  129600 evals    4.10 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  129800 evals    4.10 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  130000 evals    4.11 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  130200 evals    4.12 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  130400 evals    4.12 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  130600 evals    4.13 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  130800 evals    4.14 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  131000 evals    4.14 h    0.11 s/eval  best = 2.245732e+04
+    [DE]  131200 evals    4.15 h    0.11 s/eval  best = 2.243316e+04
+    [DE]  131400 evals    4.16 h    0.11 s/eval  best = 2.243316e+04
+    [DE]  131600 evals    4.16 h    0.11 s/eval  best = 2.243316e+04
+    [DE]  131800 evals    4.17 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  132000 evals    4.18 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  132200 evals    4.19 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  132400 evals    4.19 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  132600 evals    4.20 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  132800 evals    4.20 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  133000 evals    4.21 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  133200 evals    4.22 h    0.11 s/eval  best = 2.242488e+04
+    [DE]  133400 evals    4.22 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  133600 evals    4.23 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  133800 evals    4.24 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  134000 evals    4.25 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  134200 evals    4.25 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  134400 evals    4.26 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  134600 evals    4.27 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  134800 evals    4.27 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  135000 evals    4.28 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  135200 evals    4.29 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  135400 evals    4.29 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  135600 evals    4.30 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  135800 evals    4.31 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  136000 evals    4.31 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  136200 evals    4.32 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  136400 evals    4.33 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  136600 evals    4.34 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  136800 evals    4.34 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  137000 evals    4.35 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  137200 evals    4.35 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  137400 evals    4.36 h    0.11 s/eval  best = 2.240059e+04
+    [DE]  137600 evals    4.37 h    0.11 s/eval  best = 2.239744e+04
+    [DE]  137800 evals    4.37 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  138000 evals    4.38 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  138200 evals    4.39 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  138400 evals    4.39 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  138600 evals    4.40 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  138800 evals    4.41 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  139000 evals    4.41 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  139200 evals    4.42 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  139400 evals    4.43 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  139600 evals    4.43 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  139800 evals    4.44 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  140000 evals    4.45 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  140200 evals    4.45 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  140400 evals    4.46 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  140600 evals    4.47 h    0.11 s/eval  best = 2.237798e+04
+    [DE]  140800 evals    4.47 h    0.11 s/eval  best = 2.237798e+04
+[DE] 1100 iters, 140928 evals, 4.48 h: ov = 0.7162396779, chi2 = 2.237798e+04 (Maximum number of iterations has been exceeded.)
+
+=== stage 3: CV climb from the DE point ===
+    start overlap = 0.7162396779
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7564358236), np.float64(49.9386584692009), np.float64(0.9000784184486413), np.float64(7.750140646994849), np.float64(0.018700715540486874), 1.0, 2.194591829653648, np.float64(1.5846512429013075), np.float64(0.7447343702778468), 0.8, 0.8, np.float64(6.276382964472352), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.0805686106224
+calculating stable deltas...
+Time taken to compute stable deltas is 36.33250188827515 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.5439510345458984 seconds
+    CV CV2#1 it   0 lam=3.3e-02 ov=0.7162396779 chi2=2.238e+04 rel=2.6e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7561189346), np.float64(49.93865857649262), np.float64(0.9000784164183037), np.float64(7.750140646088631), np.float64(0.018700905924456935), 1.0, 2.194591829653648, np.float64(1.5828441785894778), np.float64(0.7438038087482705), 0.8, 0.8, np.float64(6.279977847806024), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.3375226475298
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.128026247024536 seconds
+    CV CV2#1 it   1 lam=1.1e-01 ov=0.7166661077 chi2=2.237e+04 rel=4.3e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756530419), np.float64(49.938658566082246), np.float64(0.9000784167388447), np.float64(7.750140646532146), np.float64(0.01870094461583642), 1.0, 2.194591829653648, np.float64(1.581532506488609), np.float64(0.7435814684569733), 0.8, 0.8, np.float64(6.281460413421318), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.54963673662849
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1308951377868652 seconds
+    CV CV2#1 it   2 lam=1.2e-01 ov=0.7169687721 chi2=2.237e+04 rel=1.6e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7583251093), np.float64(49.938658530971814), np.float64(0.9000784177844456), np.float64(7.750140648425461), np.float64(0.01870110938183456), 1.0, 2.194591829653648, np.float64(1.5801801484835276), np.float64(0.7431471530592463), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.75601127664174
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1260313987731934 seconds
+    CV CV2#1 it   3 lam=1.2e+00 ov=0.7172564254 chi2=2.237e+04 rel=1.9e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7577979695), np.float64(49.938658553647095), np.float64(0.900078417367477), np.float64(7.750140647795065), np.float64(0.018701102775673346), 1.0, 2.194591829653648, np.float64(1.5798132193323815), np.float64(0.7430673898826597), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.8141516398375
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 10.999000787734985 seconds
+    CV CV2#1 it   4 lam=1.3e+00 ov=0.7173415611 chi2=2.237e+04 rel=5.7e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7575567607), np.float64(49.93865856318202), np.float64(0.9000784172193018), np.float64(7.750140647509995), np.float64(0.01870110161732247), 1.0, 2.194591829653648, np.float64(1.579436876985273), np.float64(0.7430322201838253), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.8764392081927
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1242878437042236 seconds
+    CV CV2#1 it   5 lam=1.1e+00 ov=0.7174287478 chi2=2.237e+04 rel=1.4e-05
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7573910523), np.float64(49.938658569212606), np.float64(0.9000784171410152), np.float64(7.750140647316395), np.float64(0.018701101183916415), 1.0, 2.194591829653648, np.float64(1.5789023427428905), np.float64(0.7430046752805266), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 197.96567970043426
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1214241981506348 seconds
+    CV CV2#1 it   6 lam=1.7e+00 ov=0.7175552587 chi2=2.237e+04 rel=1.3e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.757298962), np.float64(49.93865857212353), np.float64(0.9000784171297052), np.float64(7.750140647210046), np.float64(0.018701103296789118), 1.0, 2.194591829653648, np.float64(1.5786114315248156), np.float64(0.7429807602822432), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.01397461194327
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.122636079788208 seconds
+    CV CV2#1 it   7 lam=2.0e+00 ov=0.7176220665 chi2=2.237e+04 rel=2.2e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7571616936), np.float64(49.93865857667298), np.float64(0.9000784170719637), np.float64(7.750140647052252), np.float64(0.018701101763722746), 1.0, 2.194591829653648, np.float64(1.5784198253615378), np.float64(0.7429694415240681), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.0460310816557
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1234042644500732 seconds
+    CV CV2#1 it   8 lam=2.5e+00 ov=0.7176668106 chi2=2.237e+04 rel=1.6e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7570558125), np.float64(49.93865857985239), np.float64(0.9000784170374668), np.float64(7.750140646932197), np.float64(0.018701100400177813), 1.0, 2.194591829653648, np.float64(1.578261537092549), np.float64(0.7429644534160638), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.07276176920874
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1185050010681152 seconds
+    CV CV2#1 it   9 lam=4.6e+00 ov=0.7177040534 chi2=2.237e+04 rel=2.0e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7569653457), np.float64(49.938658582444084), np.float64(0.9000784170099314), np.float64(7.75014064683034), np.float64(0.01870109889341919), 1.0, 2.194591829653648, np.float64(1.5781361121661968), np.float64(0.7429628301039761), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.09406053264442
+calculating stable deltas...
+Time taken to compute stable deltas is 44.44449210166931 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.548434019088745 seconds
+    CV CV2#1 it  10 lam=4.8e+00 ov=0.7177334324 chi2=2.237e+04 rel=1.3e-06
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756883679), np.float64(49.93865858498156), np.float64(0.900078416973356), np.float64(7.750140646737691), np.float64(0.01870109702049026), 1.0, 2.194591829653648, np.float64(1.578066299287194), np.float64(0.742963877026698), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.10603641557097
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1224889755249023 seconds
+    CV CV2#1 it  11 lam=6.6e+00 ov=0.7177502790 chi2=2.237e+04 rel=4.9e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756824884), np.float64(49.93865858659813), np.float64(0.9000784169544551), np.float64(7.750140646671991), np.float64(0.01870109568975648), 1.0, 2.194591829653648, np.float64(1.5779998479617328), np.float64(0.7429662727563212), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.11751436157684
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1221234798431396 seconds
+    CV CV2#1 it  12 lam=7.1e+00 ov=0.7177662215 chi2=2.237e+04 rel=7.4e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756777888), np.float64(49.938658587898956), np.float64(0.900078416938398), np.float64(7.750140646619465), np.float64(0.018701094524012772), 1.0, 2.194591829653648, np.float64(1.5779517005164945), np.float64(0.7429685869748828), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.12587017692408
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1473052501678467 seconds
+    CV CV2#1 it  13 lam=1.7e+02 ov=0.7177779381 chi2=2.237e+04 rel=1.3e-08
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756771196), np.float64(49.93865858812021), np.float64(0.9000784169346953), np.float64(7.750140646611822), np.float64(0.018701094339628816), 1.0, 2.194591829653648, np.float64(1.5779486193440333), np.float64(0.7429687567988963), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.12640623732372
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1293976306915283 seconds
+    CV CV2#1 it  14 lam=1.8e+01 ov=0.7177786800 chi2=2.237e+04 rel=5.2e-08
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756737768), np.float64(49.93865858904259), np.float64(0.9000784169229809), np.float64(7.750140646574494), np.float64(0.018701093458891507), 1.0, 2.194591829653648, np.float64(1.5779165215925737), np.float64(0.7429707724093823), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.13200192460118
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.121438980102539 seconds
+    CV CV2#1 it  15 lam=1.8e+01 ov=0.7177864010 chi2=2.237e+04 rel=3.8e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.7567162835), np.float64(49.93865858966004), np.float64(0.9000784169143995), np.float64(7.7501406465503955), np.float64(0.01870109287851735), 1.0, 2.194591829653648, np.float64(1.57789895275577), np.float64(0.7429720424035856), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.13507838204794
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 10.781224727630615 seconds
+    CV CV2#1 it  16 lam=6.2e+03 ov=0.7177907449 chi2=2.237e+04 rel=2.1e-08
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784945.756716253), np.float64(49.93865858966101), np.float64(0.900078416914384), np.float64(7.750140646550361), np.float64(0.018701092877657977), 1.0, 2.194591829653648, np.float64(1.5778989358139597), np.float64(0.7429720436318964), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.1350812949984
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.118943691253662 seconds
+    CV CV2#1 it  17 lam=1.0e+08 ov=0.7177907549 chi2=2.237e+04 rel=0.0e+00
+    NM CV2 nfev=2448 ov 0.7177907549 -> 0.7182562932 (accepted=True)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784944.5288600875), np.float64(49.93867307821881), np.float64(0.9000787717810976), np.float64(7.750141744490109), np.float64(0.01870716667439278), 1.0, 2.194591829653648, np.float64(1.5757903463543952), np.float64(0.7423900758689336), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.46029307026143
+calculating stable deltas...
+Time taken to compute stable deltas is 36.33456873893738 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.54923152923584 seconds
+    CV CV2#2 it   0 lam=1.0e+08 ov=0.7182562932 chi2=2.237e+04 rel=0.0e+00
+[stage] CV climb   ov = 0.7182562932  chi2 = 2.236835e+04  9.0 min
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12195561)
+Computing SNR for parameters: (np.float64(3784944.5288600875), np.float64(49.93867307821881), np.float64(0.9000787717810976), np.float64(7.750141744490109), np.float64(0.01870716667439278), 1.0, 2.194591829653648, np.float64(1.5757903463543952), np.float64(0.7423900758689336), 0.8, 0.8, np.float64(6.283185307179586), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 7.25820270663578e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 198.46029307026143
+calculating stable deltas...
+Time taken to compute stable deltas is 27.94427466392517 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.5344672203063965 seconds
+[FISH] 0PA final: cond = 8.971e+18, 32.2 s
+
+    param           injected            CV step                 DE           CV climb        sigma    b/sigma
+       m1         3780313.91        3785743.585        3784945.756        3784944.529   1.3821e+01  +335.0392
+       m2                 50         49.9572343        49.93865847        49.93867308   1.1895e-04  -515.5541
+        a                0.9         0.90010606       0.9000784184       0.9000787718   1.6585e-06   +47.4951
+       p0        7.757812286        7.750015015        7.750140647        7.750141744   1.5879e-05  -483.0692
+       e0                  0                  0      0.01870071554      0.01870716667   3.0742e-05  +608.5147
+       qS                0.2       0.1080926448        1.584651243        1.575790346   3.5532e-03  +387.1970
+     phiS                0.2                  0       0.7447343703       0.7423900759   2.1265e-03  +255.0602
+ Phi_phi0                0.3                  0        6.276382964        6.283185307   2.5914e-02   -11.5767
+
+[done] ov: injected -0.3007146087 -> CV step 0.1513460478 -> DE 0.7162396779 -> CV climb 0.7182562932
+[done] population run reached 0.0003566355 (0PA), 0.0005029179 (0PA+PN)
+[done] total 4.68 h
+[saved] /home/svu/e1583490/EMRI_CV_bias/harder_environmental/results_cv_de_cv_0pa.json

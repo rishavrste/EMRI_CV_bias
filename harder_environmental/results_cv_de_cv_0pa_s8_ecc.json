@@ -1,0 +1,249 @@
+{
+ "study": "harder environmental points: seeded LM climb",
+ "generated_utc": "2026-09-18T10:55:05+00:00",
+ "config": {
+  "point_run": "",
+  "point_idx": 8,
+  "model": "0PA",
+  "fixed_params": [],
+  "cv1_exact": true,
+  "cv1_backtrack": true,
+  "cv1_max_halvings": 12,
+  "cv1_steps": 8,
+  "cv1_step_cap_sigma": 2.0,
+  "cv1_total_cap_sigma": 5.0,
+  "cv1_iters": 1,
+  "cv1_nm": false,
+  "box_at_injection": false,
+  "seed_fit": "results_cv_de_cv_0pa_s8.json",
+  "de_maxiter": 1100,
+  "prior_sigma_range": 15.0,
+  "per_param_sigma": {},
+  "dev_prior_sigma_range": 15.0,
+  "dev_hard_bounds": null,
+  "dev_bounds_from_decoherence": true,
+  "dev_decoh_margin": 10.0,
+  "full_phase_bounds": true,
+  "de_objective": "chi2",
+  "de_tol": 1e-08,
+  "de_atol": 1e-05,
+  "de_popsize": 15,
+  "de_init": "sobol",
+  "de_mutation": [
+   0.5,
+   1.0
+  ],
+  "de_recombination": 0.7,
+  "de_polish": false,
+  "de_seed": 42,
+  "de_report_every": 200,
+  "de_x0_from_cv": true,
+  "cv2_iters": 150,
+  "cv2_nm": true,
+  "overlap_target": 0.9999999999,
+  "lambda0": 0.01,
+  "lambda_min": 1e-12,
+  "lambda_max": 100000000.0,
+  "lambda_up": 10.0,
+  "max_inner": 30,
+  "rel_tol": 1e-09,
+  "nm_maxiter": 1000,
+  "nm_step": 2.0,
+  "recompute_deltas_every": 10,
+  "tag": "0pa_s8_ecc",
+  "out_dir": "/home/svu/e1583490/EMRI_CV_bias/harder_environmental",
+  "model_params": [
+   "m1",
+   "m2",
+   "a",
+   "p0",
+   "e0",
+   "qS",
+   "phiS",
+   "Phi_phi0"
+  ],
+  "point_json": "/home/svu/e1583490/EMRI_CV_bias/harder_environmental/hard_point_8.json"
+ },
+ "point": {
+  "run": "live",
+  "idx": 8,
+  "m1": 3780313.9097061357,
+  "T": 3.864472952597954,
+  "dt": 10.0,
+  "dist": 2.194591829653648,
+  "snr": 200.00000000000003,
+  "A_PM": 7.25820270663578e-05,
+  "n_PM": 8.0
+ },
+ "params": [
+  "m1",
+  "m2",
+  "a",
+  "p0",
+  "e0",
+  "qS",
+  "phiS",
+  "Phi_phi0"
+ ],
+ "truth": [
+  3780313.9097061357,
+  50.0,
+  0.9,
+  7.757812286220264,
+  0.0,
+  0.2,
+  0.2,
+  0.3
+ ],
+ "population_run": {
+  "ov_0pa": 0.0003566354721991255,
+  "ov_pn": 0.0005029178847859076,
+  "chi2_0pa": 70536.39232186464,
+  "chi2_pn": 70494.81587998396
+ },
+ "dev_delta_range": null,
+ "stage1_cv": {
+  "ov_start": 0.9273428662446112,
+  "ov_final": 0.9278151521681485,
+  "chi2": 5589.205401057388,
+  "params": [
+   3778900.234157154,
+   50.00851104597411,
+   0.8999402514340759,
+   7.759803354153552,
+   0.001763781653910352,
+   3.030588830376295,
+   5.958976242502666,
+   0.2256201083362056
+  ],
+  "start": [
+   3778964.020611016,
+   50.008470856970185,
+   0.8999441730917932,
+   7.759724419411243,
+   0.0,
+   3.0345795377373808,
+   5.957046186125082,
+   0.15486396165101057
+  ],
+  "stages": [
+   {
+    "stage": "LM1",
+    "ov": 0.9273428967188531,
+    "n_iter": 2,
+    "n_accept": 2,
+    "lam_final": 2438.574164333472,
+    "stop_reason": "rel_tol"
+   },
+   {
+    "stage": "NM",
+    "ov": 0.9278346054617066,
+    "nfev": 1783,
+    "accepted": true
+   },
+   {
+    "stage": "LM2",
+    "ov": 0.9278151521681485,
+    "n_iter": 9,
+    "n_accept": 8,
+    "lam_final": 100000000.0,
+    "stop_reason": "lambda_exhausted"
+   }
+  ],
+  "stop_reason": "lambda_exhausted",
+  "n_iter": 11,
+  "n_accept": 10,
+  "lam_final": 100000000.0,
+  "nm_accepted": true,
+  "seconds": 289.1975429058075
+ },
+ "stage1_sigma": null,
+ "de_bounds": null,
+ "stage2_de": null,
+ "stage3_cv": {
+  "ov_start": 0.9273428662446112,
+  "ov_final": 0.9278151521681485,
+  "chi2": 5589.205401057388,
+  "params": [
+   3778900.234157154,
+   50.00851104597411,
+   0.8999402514340759,
+   7.759803354153552,
+   0.001763781653910352,
+   3.030588830376295,
+   5.958976242502666,
+   0.2256201083362056
+  ],
+  "start": [
+   3778964.020611016,
+   50.008470856970185,
+   0.8999441730917932,
+   7.759724419411243,
+   0.0,
+   3.0345795377373808,
+   5.957046186125082,
+   0.15486396165101057
+  ],
+  "stages": [
+   {
+    "stage": "LM1",
+    "ov": 0.9273428967188531,
+    "n_iter": 2,
+    "n_accept": 2,
+    "lam_final": 2438.574164333472,
+    "stop_reason": "rel_tol"
+   },
+   {
+    "stage": "NM",
+    "ov": 0.9278346054617066,
+    "nfev": 1783,
+    "accepted": true
+   },
+   {
+    "stage": "LM2",
+    "ov": 0.9278151521681485,
+    "n_iter": 9,
+    "n_accept": 8,
+    "lam_final": 100000000.0,
+    "stop_reason": "lambda_exhausted"
+   }
+  ],
+  "stop_reason": "lambda_exhausted",
+  "n_iter": 11,
+  "n_accept": 10,
+  "lam_final": 100000000.0,
+  "nm_accepted": true,
+  "seconds": 289.1975429058075
+ },
+ "sigma": [
+  88.65868715211316,
+  0.000645337981254031,
+  2.64889425185964e-06,
+  0.00012659896750050493,
+  3.8212147609356715e-08,
+  0.0022531242086799553,
+  0.01817238700463287,
+  0.02946263870895763
+ ],
+ "bias": [
+  -1413.6755489818752,
+  0.008511045974110232,
+  -5.9748565924166996e-05,
+  0.001991067933287738,
+  0.001763781653910352,
+  2.830588830376295,
+  -0.5242090646769206,
+  -0.07437989166379433
+ ],
+ "bias_over_sigma": [
+  -15.945144174720395,
+  13.188509310379397,
+  -22.5560404618723,
+  15.7273631262419,
+  46157.6164716392,
+  1256.295067742697,
+  -28.84646164223108,
+  -2.5245495625339336
+ ],
+ "seconds": 435.065776348114
+}
