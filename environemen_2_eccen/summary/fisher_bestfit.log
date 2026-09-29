@@ -1,0 +1,221 @@
+startup
+
+==========================================================================================
+[SET ] set 1  (result_shub (+ top-level de_env_vs_*.py))
+[CONF] T = 0.503796 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[CTX ] SNR = 85.366075 at dist = 16.344
+[CHAN] A: SNR 63.4188 (55.1906% of SNR^2)  E: SNR 56.8451 (44.3420% of SNR^2)  T: SNR 5.8361 (0.4674% of SNR^2)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.6792359485), np.float64(2000.0477801264128), 0.0, np.float64(24.44397013526695), np.float64(0.03889085173988836), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0219668795394292), 0.0, np.float64(0.8735800975145231))
+Waveform Generated. SNR: 85.36682625358536
+calculating stable deltas...
+Time taken to compute stable deltas is 17.89839196205139 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 1.5467932224273682 seconds
+[FIT ] vacuum GR              ov = 0.999990616390  (stored 0.999990616390)  chi2 = 1.367654e-01  [20 s]
+                m1  bias = -2.320764e+00  sigma = 1.307889e+02  b/s = -0.018
+                m2  bias = +4.778013e-02  sigma = 2.801786e-01  b/s = +0.171
+                p0  bias = +1.970135e-03  sigma = 2.346252e-03  b/s = +0.840
+                e0  bias = -1.109148e-03  sigma = 2.602608e-04  b/s = -4.262
+          Phi_phi0  bias = +2.196688e-02  sigma = 1.210051e-01  b/s = +0.182
+            Phi_r0  bias = -1.264199e-01  sigma = 6.192186e-01  b/s = -0.204
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.066174775), np.float64(2000.1968189078407), 0.0, np.float64(24.443760663031448), np.float64(0.038943565649047225), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9834792227561273), 0.0, np.float64(0.8970993934645648), 0.0, False, False, False, True, np.float64(0.40584166228600016), np.float64(3.0596094676794974), 0.0, 0.0)
+Waveform Generated. SNR: 85.28817417221856
+calculating stable deltas...
+Time taken to compute stable deltas is 27.52060103416443 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4555585384368896 seconds
+[FIT ] 0PA + 2.5PN deviation  ov = 0.999998011689  (stored 0.999998011689)  chi2 = 3.502123e-02  [31 s]
+                m1  bias = -2.933825e+00  sigma = 1.297315e+02  b/s = -0.023
+                m2  bias = +1.968189e-01  sigma = 7.289351e+00  b/s = +0.027
+                p0  bias = +1.760663e-03  sigma = 3.067129e-03  b/s = +0.574
+                e0  bias = -1.056434e-03  sigma = 1.430243e-03  b/s = -0.739
+          Phi_phi0  bias = -1.652078e-02  sigma = 1.740546e-01  b/s = -0.095
+            Phi_r0  bias = -1.029006e-01  sigma = 6.545909e-01  b/s = -0.157
+             dev_1  bias = +4.058417e-01  sigma = 1.245974e+01  b/s = +0.033
+             dev_2  bias = +3.059609e+00  sigma = 1.050405e+01  b/s = +0.291
+[SET ] set 1: mismatch 0PA 9.384e-06, PN 1.988e-06, ratio 4.72x
+
+==========================================================================================
+[SET ] set 2  (new_runs)
+[CONF] T = 0.495744 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[CTX ] SNR = 82.314829 at dist = 16.344
+[CHAN] A: SNR 60.9809 (54.8821% of SNR^2)  E: SNR 54.9067 (44.4932% of SNR^2)  T: SNR 6.5057 (0.6246% of SNR^2)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.8539501418), np.float64(2000.0083079113067), 0.0, np.float64(24.350358266304994), np.float64(0.03979654934915379), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0035636081856651), 0.0, np.float64(0.9775429069911139))
+Waveform Generated. SNR: 82.3150373080583
+calculating stable deltas...
+Time taken to compute stable deltas is 17.336004495620728 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 1.5196752548217773 seconds
+[FIT ] vacuum GR              ov = 0.999999692468  (stored 0.999999692468)  chi2 = 4.167559e-03  [20 s]
+                m1  bias = -1.460499e-01  sigma = 1.299309e+02  b/s = -0.001
+                m2  bias = +8.307911e-03  sigma = 2.787463e-01  b/s = +0.030
+                p0  bias = +3.582663e-04  sigma = 2.321203e-03  b/s = +0.154
+                e0  bias = -2.034507e-04  sigma = 2.568755e-04  b/s = -0.792
+          Phi_phi0  bias = +3.563608e-03  sigma = 1.206519e-01  b/s = +0.030
+            Phi_r0  bias = -2.245709e-02  sigma = 6.070439e-01  b/s = -0.037
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6398838711), np.float64(1999.9855436292019), 0.0, np.float64(24.350310703058746), np.float64(0.03981440240490063), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973276263177446), 0.0, np.float64(0.9826871542405637), 0.0, False, False, False, True, np.float64(-0.012939903600362944), np.float64(0.4745448412703503), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481549848289
+calculating stable deltas...
+Time taken to compute stable deltas is 27.49901294708252 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.445831537246704 seconds
+[FIT ] 0PA + 2.5PN deviation  ov = 0.999999943751  (stored 0.999999943751)  chi2 = 7.622519e-04  [31 s]
+                m1  bias = -3.601161e-01  sigma = 1.301017e+02  b/s = -0.003
+                m2  bias = -1.445637e-02  sigma = 7.544958e+00  b/s = -0.002
+                p0  bias = +3.107031e-04  sigma = 3.068374e-03  b/s = +0.101
+                e0  bias = -1.855976e-04  sigma = 1.426723e-03  b/s = -0.130
+          Phi_phi0  bias = -2.672374e-03  sigma = 1.742813e-01  b/s = -0.015
+            Phi_r0  bias = -1.731285e-02  sigma = 6.445204e-01  b/s = -0.027
+             dev_1  bias = -1.293990e-02  sigma = 1.290650e+01  b/s = -0.001
+             dev_2  bias = +4.745448e-01  sigma = 1.025389e+01  b/s = +0.046
+[SET ] set 2: mismatch 0PA 3.075e-07, PN 5.625e-08, ratio 5.47x
+
+==========================================================================================
+[SET ] set 3  (new_run_3)
+[CONF] T = 0.496160 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[CTX ] SNR = 82.197780 at dist = 16.344
+[CHAN] A: SNR 60.7760 (54.6694% of SNR^2)  E: SNR 54.9520 (44.6938% of SNR^2)  T: SNR 6.5597 (0.6369% of SNR^2)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3131578)
+Computing SNR for parameters: (np.float64(1000000.1199986716), np.float64(2000.0009425966446), 0.0, np.float64(24.350044994927973), np.float64(0.069985741355325), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0013032575463576), 0.0, np.float64(0.9984849525881683))
+Waveform Generated. SNR: 82.19778506068687
+calculating stable deltas...
+Time taken to compute stable deltas is 17.267478466033936 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 1.5186691284179688 seconds
+[FIT ] vacuum GR              ov = 0.999999988325  (stored 0.999999988325)  chi2 = 1.577599e-04  [20 s]
+                m1  bias = +1.199987e-01  sigma = 7.730000e+01  b/s = +0.002
+                m2  bias = +9.425966e-04  sigma = 1.688440e-01  b/s = +0.006
+                p0  bias = +4.499493e-05  sigma = 1.377232e-03  b/s = +0.033
+                e0  bias = -1.425864e-05  sigma = 1.193272e-04  b/s = -0.119
+          Phi_phi0  bias = +1.303258e-03  sigma = 1.148802e-01  b/s = +0.011
+            Phi_r0  bias = -1.515047e-03  sigma = 3.509267e-01  b/s = -0.004
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3131578)
+Computing SNR for parameters: (np.float64(999999.8124725425), np.float64(2000.006454019884), 0.0, np.float64(24.35004214911249), np.float64(0.06998674852149257), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9999116276028444), 0.0, np.float64(0.9981344263364851), 0.0, False, False, False, True, np.float64(0.01400521719069027), np.float64(0.035077790257751956), 0.0, 0.0)
+Waveform Generated. SNR: 82.19815690159419
+calculating stable deltas...
+Time taken to compute stable deltas is 27.097781896591187 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.409548759460449 seconds
+[FIT ] 0PA + 2.5PN deviation  ov = 0.999999999118  (stored 0.999999999118)  chi2 = 1.205591e-05  [30 s]
+                m1  bias = -1.875275e-01  sigma = 8.338314e+01  b/s = -0.002
+                m2  bias = +6.454020e-03  sigma = 7.417743e+00  b/s = +0.001
+                p0  bias = +4.214911e-05  sigma = 2.267454e-03  b/s = +0.019
+                e0  bias = -1.325148e-05  sigma = 7.918671e-04  b/s = -0.017
+          Phi_phi0  bias = -8.837240e-05  sigma = 1.672610e-01  b/s = -0.001
+            Phi_r0  bias = -1.865574e-03  sigma = 3.917835e-01  b/s = -0.005
+             dev_1  bias = +1.400522e-02  sigma = 1.270244e+01  b/s = +0.001
+             dev_2  bias = +3.507779e-02  sigma = 3.478241e+00  b/s = +0.010
+[SET ] set 3: mismatch 0PA 1.167e-08, PN 8.816e-10, ratio 13.24x
+
+==========================================================================================
+[SET ] set 4  (run_4_fmax005)
+[CONF] T = 0.495521 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 5.0e-02] Hz
+[CTX ] SNR = 81.719349 at dist = 16.344
+[CHAN] A: SNR 60.4645 (54.7459% of SNR^2)  E: SNR 54.9735 (45.2540% of SNR^2)  T: SNR 0.0811 (0.0001% of SNR^2)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3127547)
+Computing SNR for parameters: (np.float64(1000032.9925214587), np.float64(1999.9012282892725), 0.0, np.float64(24.34924504385487), np.float64(0.012831534411490365), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9821140261626047), 0.0, np.float64(1.1652826760616941))
+Waveform Generated. SNR: 81.71860588238744
+calculating stable deltas...
+Time taken to compute stable deltas is 16.912362575531006 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 1.5123724937438965 seconds
+[FIT ] vacuum GR              ov = 0.999997123647  (stored 0.999997123647)  chi2 = 3.841708e-02  [19 s]
+                m1  bias = +3.299252e+01  sigma = 2.962821e+02  b/s = +0.111
+                m2  bias = -9.877171e-02  sigma = 6.315474e-01  b/s = -0.156
+                p0  bias = -7.549561e-04  sigma = 5.303521e-03  b/s = -0.142
+                e0  bias = +3.315344e-04  sigma = 1.383423e-03  b/s = +0.240
+          Phi_phi0  bias = -1.788597e-02  sigma = 1.387272e-01  b/s = -0.129
+            Phi_r0  bias = +1.652827e-01  sigma = 1.460578e+00  b/s = +0.113
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3127547)
+Computing SNR for parameters: (np.float64(1000019.8967145031), np.float64(1999.7639188459727), 0.0, np.float64(24.349530301104036), np.float64(0.012796369932597574), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9970527576156094), 0.0, np.float64(1.1013037782013084), 0.0, False, False, False, True, np.float64(-0.3384896814094791), np.float64(-12.1356587988984), 0.0, 0.0)
+Waveform Generated. SNR: 81.71055400529949
+calculating stable deltas...
+Time taken to compute stable deltas is 26.778067350387573 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.382664680480957 seconds
+[FIT ] 0PA + 2.5PN deviation  ov = 0.999999456676  (stored 0.999999456676)  chi2 = 7.333264e-03  [30 s]
+                m1  bias = +1.989671e+01  sigma = 3.137269e+02  b/s = +0.063
+                m2  bias = -2.360812e-01  sigma = 7.685926e+00  b/s = -0.031
+                p0  bias = -4.696989e-04  sigma = 6.230467e-03  b/s = -0.075
+                e0  bias = +2.963699e-04  sigma = 4.841631e-03  b/s = +0.061
+          Phi_phi0  bias = -2.947242e-03  sigma = 1.755501e-01  b/s = -0.017
+            Phi_r0  bias = +1.013038e-01  sigma = 1.571283e+00  b/s = +0.064
+             dev_1  bias = -3.384897e-01  sigma = 1.299951e+01  b/s = -0.026
+             dev_2  bias = -1.213566e+01  sigma = 7.785296e+01  b/s = -0.156
+[SET ] set 4: mismatch 0PA 2.876e-06, PN 5.433e-07, ratio 5.29x
+
+==========================================================================================
+[SET ] set 5  (run_5)
+[CONF] T = 0.501229 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[CTX ] SNR = 85.701743 at dist = 16.344
+[CHAN] A: SNR 63.0300 (54.0897% of SNR^2)  E: SNR 57.6652 (45.2740% of SNR^2)  T: SNR 6.8361 (0.6363% of SNR^2)
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3163574)
+Computing SNR for parameters: (np.float64(999999.1620265986), np.float64(1999.9539787661406), 0.0, np.float64(24.350490185589546), np.float64(0.1999343230652374), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9743205001307089), 0.0, np.float64(0.9556697872736013))
+Waveform Generated. SNR: 85.70079020285797
+calculating stable deltas...
+Time taken to compute stable deltas is 17.026450157165527 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 1.5118522644042969 seconds
+[FIT ] vacuum GR              ov = 0.999985414336  (stored 0.999985414336)  chi2 = 2.142558e-01  [19 s]
+                m1  bias = -8.379734e-01  sigma = 3.167386e+01  b/s = -0.026
+                m2  bias = -4.602123e-02  sigma = 7.886625e-02  b/s = -0.584
+                p0  bias = +4.901856e-04  sigma = 5.720661e-04  b/s = +0.857
+                e0  bias = -6.567693e-05  sigma = 2.791556e-05  b/s = -2.353
+          Phi_phi0  bias = -2.567950e-02  sigma = 9.028934e-02  b/s = -0.284
+            Phi_r0  bias = -4.433021e-02  sigma = 1.184624e-01  b/s = -0.374
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3163574)
+Computing SNR for parameters: (np.float64(1000011.0139718425), np.float64(1999.2778311792024), 0.0, np.float64(24.3503774307415), np.float64(0.19994067204449015), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0056289230284428), 0.0, np.float64(0.9849322423175013), 0.0, False, False, False, True, np.float64(-1.27809722782425), np.float64(-0.18264355468078838), 0.0, 0.0)
+Waveform Generated. SNR: 85.66780523061566
+calculating stable deltas...
+Time taken to compute stable deltas is 26.981363773345947 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.407839775085449 seconds
+[FIT ] 0PA + 2.5PN deviation  ov = 0.999999568338  (stored 0.999999568338)  chi2 = 7.490216e-03  [30 s]
+                m1  bias = +1.101397e+01  sigma = 4.661063e+01  b/s = +0.236
+                m2  bias = -7.221688e-01  sigma = 6.271926e+00  b/s = -0.115
+                p0  bias = +3.774307e-04  sigma = 1.643003e-03  b/s = +0.230
+                e0  bias = -5.932796e-05  sigma = 2.224736e-04  b/s = -0.267
+          Phi_phi0  bias = +5.628923e-03  sigma = 1.167383e-01  b/s = +0.048
+            Phi_r0  bias = -1.506776e-02  sigma = 1.624166e-01  b/s = -0.093
+             dev_1  bias = -1.278097e+00  sigma = 1.075624e+01  b/s = -0.119
+             dev_2  bias = -1.826436e-01  sigma = 6.551758e-01  b/s = -0.279
+[SET ] set 5: mismatch 0PA 1.459e-05, PN 4.317e-07, ratio 33.79x
+[saved] /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/summary/fisher_bestfit.json
+wrote /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/summary/plots/
+wrote /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/summary/RESULTS_native.md
+startup
+wrote /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/summary/fishers/native/: 10 Fisher files + all_fishers.npz

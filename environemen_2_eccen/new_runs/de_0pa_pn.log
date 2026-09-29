@@ -1,0 +1,828 @@
+startup
+[CONF] config_de_0pa_pn.json
+[CONF] T = 0.495744 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[MODEL] 0PA + 2.5PN deviation: fitting ['m1', 'm2', 'p0', 'e0', 'Phi_phi0', 'Phi_r0', 'dev_1', 'dev_2']
+[MODEL] ASSUMED secondary spin chi2 = 0.0, evolve_1PA = False
+[BASE] 0PA + 2.5PN deviation at the injected parameters (deviation = 0): overlap = 0.197137231848
+[CTX ] SNR = 82.314829, overlap = 0.197137231848, chi2 = 1.085227e+04
+[BOX ] Fisher at the injection, box = +-5 sigma
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(1000000.0), np.float64(2000.0), 0.0, np.float64(24.35), np.float64(0.04), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0), 0.0, np.float64(1.0), 0.0, False, False, False, True, np.float64(0.0), np.float64(0.0), 0.0, 0.0)
+Waveform Generated. SNR: 82.10499478870885
+calculating stable deltas...
+Time taken to compute stable deltas is 29.366764783859253 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7155966758728027 seconds
+[BOX ]        m1  sigma = 1.336957e+02  ->  [999331.5214, 1000668.479]
+[BOX ]        m2  sigma = 3.141588e+00  ->  [1984.292061, 2015.707939]
+[BOX ]        p0  sigma = 2.603585e-03  ->  [24.33698207, 24.36301793]
+[BOX ]        e0  sigma = 7.545533e-04  ->  [0.03622723369, 0.04377276631]
+[BOX ]  Phi_phi0  sigma = 1.358764e-01  ->  [0.3206180701, 1.67938193]
+[BOX ]    Phi_r0  sigma = 6.237436e-01  ->  [-2.118717834, 4.118717834]
+[BOX ]     dev_1  sigma = 5.240384e+00  ->  [-26.20192218, 26.20192218]
+[BOX ]     dev_2  sigma = 5.896966e-01  ->  [-2.948483217, 2.948483217]
+[BOX ]  Phi_phi0  full period  ->  [-2.141592654, 4.141592654]
+[BOX ]    Phi_r0  full period  ->  [-2.141592654, 4.141592654]
+[DE  ] ndim = 8, maxiter = 1100, popsize = 15, tol = 1e-08, atol = 1e-05, init = sobol, mutation = (0.5, 1.0), recombination = 0.7, polish = True, seed = 42
+    [DE]     200 evals    0.01 h   0.10 s/eval  best chi2 = 1.057531e+04
+    [DE]     400 evals    0.01 h   0.08 s/eval  best chi2 = 1.035521e+04
+    [DE]     600 evals    0.01 h   0.08 s/eval  best chi2 = 1.024357e+04
+    [DE]     800 evals    0.02 h   0.07 s/eval  best chi2 = 1.019276e+04
+    [DE]    1000 evals    0.02 h   0.07 s/eval  best chi2 = 1.012197e+04
+    [DE]    1200 evals    0.02 h   0.07 s/eval  best chi2 = 1.009151e+04
+    [DE]    1400 evals    0.03 h   0.07 s/eval  best chi2 = 1.009151e+04
+    [DE]    1600 evals    0.03 h   0.07 s/eval  best chi2 = 1.006222e+04
+    [DE]    1800 evals    0.03 h   0.07 s/eval  best chi2 = 1.006222e+04
+    [DE]    2000 evals    0.04 h   0.07 s/eval  best chi2 = 1.006222e+04
+    [DE]    2200 evals    0.04 h   0.07 s/eval  best chi2 = 1.006222e+04
+    [DE]    2400 evals    0.04 h   0.07 s/eval  best chi2 = 1.003687e+04
+    [DE]    2600 evals    0.05 h   0.07 s/eval  best chi2 = 1.003687e+04
+    [DE]    2800 evals    0.05 h   0.07 s/eval  best chi2 = 1.003687e+04
+    [DE]    3000 evals    0.06 h   0.07 s/eval  best chi2 = 1.003687e+04
+    [DE]    3200 evals    0.06 h   0.07 s/eval  best chi2 = 1.002867e+04
+    [DE]    3400 evals    0.06 h   0.07 s/eval  best chi2 = 1.002867e+04
+    [DE]    3600 evals    0.07 h   0.07 s/eval  best chi2 = 1.002491e+04
+    [DE]    3800 evals    0.07 h   0.07 s/eval  best chi2 = 1.002491e+04
+    [DE]    4000 evals    0.07 h   0.07 s/eval  best chi2 = 1.002491e+04
+    [DE]    4200 evals    0.08 h   0.07 s/eval  best chi2 = 1.002491e+04
+    [DE]    4400 evals    0.08 h   0.07 s/eval  best chi2 = 1.002491e+04
+    [DE]    4600 evals    0.08 h   0.07 s/eval  best chi2 = 1.001285e+04
+    [DE]    4800 evals    0.09 h   0.07 s/eval  best chi2 = 1.001285e+04
+    [DE]    5000 evals    0.09 h   0.07 s/eval  best chi2 = 1.001285e+04
+    [DE]    5200 evals    0.10 h   0.07 s/eval  best chi2 = 1.001285e+04
+    [DE]    5400 evals    0.10 h   0.07 s/eval  best chi2 = 1.001285e+04
+    [DE]    5600 evals    0.10 h   0.07 s/eval  best chi2 = 1.001043e+04
+    [DE]    5800 evals    0.11 h   0.07 s/eval  best chi2 = 1.001043e+04
+    [DE]    6000 evals    0.11 h   0.07 s/eval  best chi2 = 1.001043e+04
+    [DE]    6200 evals    0.11 h   0.07 s/eval  best chi2 = 1.001043e+04
+    [DE]    6400 evals    0.12 h   0.07 s/eval  best chi2 = 7.118108e+03
+    [DE]    6600 evals    0.12 h   0.07 s/eval  best chi2 = 6.352560e+03
+    [DE]    6800 evals    0.13 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    7000 evals    0.13 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    7200 evals    0.13 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    7400 evals    0.14 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    7600 evals    0.14 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    7800 evals    0.14 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    8000 evals    0.15 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    8200 evals    0.15 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    8400 evals    0.16 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    8600 evals    0.16 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    8800 evals    0.16 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    9000 evals    0.17 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    9200 evals    0.17 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    9400 evals    0.17 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    9600 evals    0.18 h   0.07 s/eval  best chi2 = 4.957755e+03
+    [DE]    9800 evals    0.18 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   10000 evals    0.19 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   10200 evals    0.19 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   10400 evals    0.19 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   10600 evals    0.20 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   10800 evals    0.20 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   11000 evals    0.20 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   11200 evals    0.21 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   11400 evals    0.21 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   11600 evals    0.22 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   11800 evals    0.22 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   12000 evals    0.22 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   12200 evals    0.23 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   12400 evals    0.23 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   12600 evals    0.23 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   12800 evals    0.24 h   0.07 s/eval  best chi2 = 4.908467e+03
+    [DE]   13000 evals    0.24 h   0.07 s/eval  best chi2 = 4.871651e+03
+    [DE]   13200 evals    0.25 h   0.07 s/eval  best chi2 = 4.871651e+03
+    [DE]   13400 evals    0.25 h   0.07 s/eval  best chi2 = 4.822779e+03
+    [DE]   13600 evals    0.25 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   13800 evals    0.26 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   14000 evals    0.26 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   14200 evals    0.27 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   14400 evals    0.27 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   14600 evals    0.27 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   14800 evals    0.28 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   15000 evals    0.28 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   15200 evals    0.28 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   15400 evals    0.29 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   15600 evals    0.29 h   0.07 s/eval  best chi2 = 4.783552e+03
+    [DE]   15800 evals    0.30 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   16000 evals    0.30 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   16200 evals    0.30 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   16400 evals    0.31 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   16600 evals    0.31 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   16800 evals    0.32 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   17000 evals    0.32 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   17200 evals    0.32 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   17400 evals    0.33 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   17600 evals    0.33 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   17800 evals    0.33 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   18000 evals    0.34 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   18200 evals    0.34 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   18400 evals    0.35 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   18600 evals    0.35 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   18800 evals    0.35 h   0.07 s/eval  best chi2 = 4.479540e+03
+    [DE]   19000 evals    0.36 h   0.07 s/eval  best chi2 = 4.451315e+03
+    [DE]   19200 evals    0.36 h   0.07 s/eval  best chi2 = 3.934274e+03
+    [DE]   19400 evals    0.36 h   0.07 s/eval  best chi2 = 3.934274e+03
+    [DE]   19600 evals    0.37 h   0.07 s/eval  best chi2 = 3.934274e+03
+    [DE]   19800 evals    0.37 h   0.07 s/eval  best chi2 = 3.934274e+03
+    [DE]   20000 evals    0.38 h   0.07 s/eval  best chi2 = 3.934274e+03
+    [DE]   20200 evals    0.38 h   0.07 s/eval  best chi2 = 3.485104e+03
+    [DE]   20400 evals    0.38 h   0.07 s/eval  best chi2 = 3.485104e+03
+    [DE]   20600 evals    0.39 h   0.07 s/eval  best chi2 = 3.480591e+03
+    [DE]   20800 evals    0.39 h   0.07 s/eval  best chi2 = 3.445974e+03
+    [DE]   21000 evals    0.39 h   0.07 s/eval  best chi2 = 2.764442e+03
+    [DE]   21200 evals    0.40 h   0.07 s/eval  best chi2 = 2.570959e+03
+    [DE]   21400 evals    0.40 h   0.07 s/eval  best chi2 = 1.480612e+03
+    [DE]   21600 evals    0.41 h   0.07 s/eval  best chi2 = 1.480612e+03
+    [DE]   21800 evals    0.41 h   0.07 s/eval  best chi2 = 1.187801e+03
+    [DE]   22000 evals    0.41 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   22200 evals    0.42 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   22400 evals    0.42 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   22600 evals    0.42 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   22800 evals    0.43 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   23000 evals    0.43 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   23200 evals    0.44 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   23400 evals    0.44 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   23600 evals    0.44 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   23800 evals    0.45 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   24000 evals    0.45 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   24200 evals    0.46 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   24400 evals    0.46 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   24600 evals    0.46 h   0.07 s/eval  best chi2 = 6.367082e+02
+    [DE]   24800 evals    0.47 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   25000 evals    0.47 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   25200 evals    0.47 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   25400 evals    0.48 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   25600 evals    0.48 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   25800 evals    0.49 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   26000 evals    0.49 h   0.07 s/eval  best chi2 = 5.319492e+02
+    [DE]   26200 evals    0.49 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   26400 evals    0.50 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   26600 evals    0.50 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   26800 evals    0.50 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   27000 evals    0.51 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   27200 evals    0.51 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   27400 evals    0.52 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   27600 evals    0.52 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   27800 evals    0.52 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   28000 evals    0.53 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   28200 evals    0.53 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   28400 evals    0.53 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   28600 evals    0.54 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   28800 evals    0.54 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   29000 evals    0.55 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   29200 evals    0.55 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   29400 evals    0.55 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   29600 evals    0.56 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   29800 evals    0.56 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   30000 evals    0.56 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   30200 evals    0.57 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   30400 evals    0.57 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   30600 evals    0.58 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   30800 evals    0.58 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   31000 evals    0.58 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   31200 evals    0.59 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   31400 evals    0.59 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   31600 evals    0.59 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   31800 evals    0.60 h   0.07 s/eval  best chi2 = 1.540762e+02
+    [DE]   32000 evals    0.60 h   0.07 s/eval  best chi2 = 8.400687e+01
+    [DE]   32200 evals    0.61 h   0.07 s/eval  best chi2 = 8.400687e+01
+    [DE]   32400 evals    0.61 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   32600 evals    0.61 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   32800 evals    0.62 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   33000 evals    0.62 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   33200 evals    0.62 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   33400 evals    0.63 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   33600 evals    0.63 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   33800 evals    0.64 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   34000 evals    0.64 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   34200 evals    0.64 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   34400 evals    0.65 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   34600 evals    0.65 h   0.07 s/eval  best chi2 = 6.440186e+01
+    [DE]   34800 evals    0.65 h   0.07 s/eval  best chi2 = 6.375877e+01
+    [DE]   35000 evals    0.66 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   35200 evals    0.66 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   35400 evals    0.67 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   35600 evals    0.67 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   35800 evals    0.67 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   36000 evals    0.68 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   36200 evals    0.68 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   36400 evals    0.69 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   36600 evals    0.69 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   36800 evals    0.69 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   37000 evals    0.70 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   37200 evals    0.70 h   0.07 s/eval  best chi2 = 4.345416e+01
+    [DE]   37400 evals    0.70 h   0.07 s/eval  best chi2 = 3.047444e+01
+    [DE]   37600 evals    0.71 h   0.07 s/eval  best chi2 = 3.047444e+01
+    [DE]   37800 evals    0.71 h   0.07 s/eval  best chi2 = 1.202168e+01
+    [DE]   38000 evals    0.72 h   0.07 s/eval  best chi2 = 1.202168e+01
+    [DE]   38200 evals    0.72 h   0.07 s/eval  best chi2 = 1.202168e+01
+    [DE]   38400 evals    0.72 h   0.07 s/eval  best chi2 = 1.202168e+01
+    [DE]   38600 evals    0.73 h   0.07 s/eval  best chi2 = 1.202168e+01
+    [DE]   38800 evals    0.73 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   39000 evals    0.73 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   39200 evals    0.74 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   39400 evals    0.74 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   39600 evals    0.75 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   39800 evals    0.75 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   40000 evals    0.75 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   40200 evals    0.76 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   40400 evals    0.76 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   40600 evals    0.76 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   40800 evals    0.77 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   41000 evals    0.77 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   41200 evals    0.78 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   41400 evals    0.78 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   41600 evals    0.78 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   41800 evals    0.79 h   0.07 s/eval  best chi2 = 1.147047e+01
+    [DE]   42000 evals    0.79 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   42200 evals    0.79 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   42400 evals    0.80 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   42600 evals    0.80 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   42800 evals    0.81 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   43000 evals    0.81 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   43200 evals    0.81 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   43400 evals    0.82 h   0.07 s/eval  best chi2 = 8.928181e+00
+    [DE]   43600 evals    0.82 h   0.07 s/eval  best chi2 = 4.736075e+00
+    [DE]   43800 evals    0.83 h   0.07 s/eval  best chi2 = 4.736075e+00
+    [DE]   44000 evals    0.83 h   0.07 s/eval  best chi2 = 4.736075e+00
+    [DE]   44200 evals    0.83 h   0.07 s/eval  best chi2 = 4.736075e+00
+    [DE]   44400 evals    0.84 h   0.07 s/eval  best chi2 = 4.736075e+00
+    [DE]   44600 evals    0.84 h   0.07 s/eval  best chi2 = 4.434360e+00
+    [DE]   44800 evals    0.84 h   0.07 s/eval  best chi2 = 4.434360e+00
+    [DE]   45000 evals    0.85 h   0.07 s/eval  best chi2 = 4.434360e+00
+    [DE]   45200 evals    0.85 h   0.07 s/eval  best chi2 = 4.434360e+00
+    [DE]   45400 evals    0.86 h   0.07 s/eval  best chi2 = 4.434360e+00
+    [DE]   45600 evals    0.86 h   0.07 s/eval  best chi2 = 3.755452e+00
+    [DE]   45800 evals    0.86 h   0.07 s/eval  best chi2 = 3.755452e+00
+    [DE]   46000 evals    0.87 h   0.07 s/eval  best chi2 = 3.755452e+00
+    [DE]   46200 evals    0.87 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   46400 evals    0.87 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   46600 evals    0.88 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   46800 evals    0.88 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   47000 evals    0.89 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   47200 evals    0.89 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   47400 evals    0.89 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   47600 evals    0.90 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   47800 evals    0.90 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   48000 evals    0.91 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   48200 evals    0.91 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   48400 evals    0.91 h   0.07 s/eval  best chi2 = 1.681303e+00
+    [DE]   48600 evals    0.92 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   48800 evals    0.92 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   49000 evals    0.92 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   49200 evals    0.93 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   49400 evals    0.93 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   49600 evals    0.94 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   49800 evals    0.94 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   50000 evals    0.94 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   50200 evals    0.95 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   50400 evals    0.95 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   50600 evals    0.95 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   50800 evals    0.96 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   51000 evals    0.96 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   51200 evals    0.97 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   51400 evals    0.97 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   51600 evals    0.97 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   51800 evals    0.98 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   52000 evals    0.98 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   52200 evals    0.98 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   52400 evals    0.99 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   52600 evals    0.99 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   52800 evals    1.00 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   53000 evals    1.00 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   53200 evals    1.00 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   53400 evals    1.01 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   53600 evals    1.01 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   53800 evals    1.01 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   54000 evals    1.02 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   54200 evals    1.02 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   54400 evals    1.03 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   54600 evals    1.03 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   54800 evals    1.03 h   0.07 s/eval  best chi2 = 8.057526e-01
+    [DE]   55000 evals    1.04 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   55200 evals    1.04 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   55400 evals    1.05 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   55600 evals    1.05 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   55800 evals    1.05 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   56000 evals    1.06 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   56200 evals    1.06 h   0.07 s/eval  best chi2 = 5.778575e-01
+    [DE]   56400 evals    1.06 h   0.07 s/eval  best chi2 = 4.556243e-01
+    [DE]   56600 evals    1.07 h   0.07 s/eval  best chi2 = 4.556243e-01
+    [DE]   56800 evals    1.07 h   0.07 s/eval  best chi2 = 4.556243e-01
+    [DE]   57000 evals    1.08 h   0.07 s/eval  best chi2 = 3.663122e-01
+    [DE]   57200 evals    1.08 h   0.07 s/eval  best chi2 = 3.663122e-01
+    [DE]   57400 evals    1.08 h   0.07 s/eval  best chi2 = 3.663122e-01
+    [DE]   57600 evals    1.09 h   0.07 s/eval  best chi2 = 3.663122e-01
+    [DE]   57800 evals    1.09 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   58000 evals    1.09 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   58200 evals    1.10 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   58400 evals    1.10 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   58600 evals    1.11 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   58800 evals    1.11 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   59000 evals    1.11 h   0.07 s/eval  best chi2 = 3.464584e-01
+    [DE]   59200 evals    1.12 h   0.07 s/eval  best chi2 = 3.257252e-01
+    [DE]   59400 evals    1.12 h   0.07 s/eval  best chi2 = 3.257252e-01
+    [DE]   59600 evals    1.12 h   0.07 s/eval  best chi2 = 3.257252e-01
+    [DE]   59800 evals    1.13 h   0.07 s/eval  best chi2 = 3.257252e-01
+    [DE]   60000 evals    1.13 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   60200 evals    1.14 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   60400 evals    1.14 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   60600 evals    1.14 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   60800 evals    1.15 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   61000 evals    1.15 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   61200 evals    1.15 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   61400 evals    1.16 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   61600 evals    1.16 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   61800 evals    1.17 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   62000 evals    1.17 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   62200 evals    1.17 h   0.07 s/eval  best chi2 = 2.936821e-01
+    [DE]   62400 evals    1.18 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   62600 evals    1.18 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   62800 evals    1.19 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   63000 evals    1.19 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   63200 evals    1.19 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   63400 evals    1.20 h   0.07 s/eval  best chi2 = 2.624078e-01
+    [DE]   63600 evals    1.20 h   0.07 s/eval  best chi2 = 2.532486e-01
+    [DE]   63800 evals    1.20 h   0.07 s/eval  best chi2 = 2.532486e-01
+    [DE]   64000 evals    1.21 h   0.07 s/eval  best chi2 = 2.532486e-01
+    [DE]   64200 evals    1.21 h   0.07 s/eval  best chi2 = 2.532486e-01
+    [DE]   64400 evals    1.22 h   0.07 s/eval  best chi2 = 2.532486e-01
+    [DE]   64600 evals    1.22 h   0.07 s/eval  best chi2 = 2.401497e-01
+    [DE]   64800 evals    1.22 h   0.07 s/eval  best chi2 = 2.401497e-01
+    [DE]   65000 evals    1.23 h   0.07 s/eval  best chi2 = 2.401497e-01
+    [DE]   65200 evals    1.23 h   0.07 s/eval  best chi2 = 2.401497e-01
+    [DE]   65400 evals    1.23 h   0.07 s/eval  best chi2 = 2.393769e-01
+    [DE]   65600 evals    1.24 h   0.07 s/eval  best chi2 = 2.359435e-01
+    [DE]   65800 evals    1.24 h   0.07 s/eval  best chi2 = 2.171827e-01
+    [DE]   66000 evals    1.25 h   0.07 s/eval  best chi2 = 2.133837e-01
+    [DE]   66200 evals    1.25 h   0.07 s/eval  best chi2 = 2.087302e-01
+    [DE]   66400 evals    1.25 h   0.07 s/eval  best chi2 = 2.087302e-01
+    [DE]   66600 evals    1.26 h   0.07 s/eval  best chi2 = 2.087302e-01
+    [DE]   66800 evals    1.26 h   0.07 s/eval  best chi2 = 2.087302e-01
+    [DE]   67000 evals    1.26 h   0.07 s/eval  best chi2 = 2.050823e-01
+    [DE]   67200 evals    1.27 h   0.07 s/eval  best chi2 = 2.050823e-01
+    [DE]   67400 evals    1.27 h   0.07 s/eval  best chi2 = 1.935139e-01
+    [DE]   67600 evals    1.28 h   0.07 s/eval  best chi2 = 1.935139e-01
+    [DE]   67800 evals    1.28 h   0.07 s/eval  best chi2 = 1.935139e-01
+    [DE]   68000 evals    1.28 h   0.07 s/eval  best chi2 = 1.928259e-01
+    [DE]   68200 evals    1.29 h   0.07 s/eval  best chi2 = 1.717862e-01
+    [DE]   68400 evals    1.29 h   0.07 s/eval  best chi2 = 1.717862e-01
+    [DE]   68600 evals    1.30 h   0.07 s/eval  best chi2 = 1.717862e-01
+    [DE]   68800 evals    1.30 h   0.07 s/eval  best chi2 = 1.717862e-01
+    [DE]   69000 evals    1.30 h   0.07 s/eval  best chi2 = 1.717862e-01
+    [DE]   69200 evals    1.31 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   69400 evals    1.31 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   69600 evals    1.31 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   69800 evals    1.32 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   70000 evals    1.32 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   70200 evals    1.33 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   70400 evals    1.33 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   70600 evals    1.33 h   0.07 s/eval  best chi2 = 1.648304e-01
+    [DE]   70800 evals    1.34 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   71000 evals    1.34 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   71200 evals    1.34 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   71400 evals    1.35 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   71600 evals    1.35 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   71800 evals    1.36 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   72000 evals    1.36 h   0.07 s/eval  best chi2 = 1.573439e-01
+    [DE]   72200 evals    1.36 h   0.07 s/eval  best chi2 = 1.333619e-01
+    [DE]   72400 evals    1.37 h   0.07 s/eval  best chi2 = 9.470526e-02
+    [DE]   72600 evals    1.37 h   0.07 s/eval  best chi2 = 9.286341e-02
+    [DE]   72800 evals    1.37 h   0.07 s/eval  best chi2 = 9.286341e-02
+    [DE]   73000 evals    1.38 h   0.07 s/eval  best chi2 = 9.286341e-02
+    [DE]   73200 evals    1.38 h   0.07 s/eval  best chi2 = 9.286341e-02
+    [DE]   73400 evals    1.39 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   73600 evals    1.39 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   73800 evals    1.39 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   74000 evals    1.40 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   74200 evals    1.40 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   74400 evals    1.41 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   74600 evals    1.41 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   74800 evals    1.41 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   75000 evals    1.42 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   75200 evals    1.42 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   75400 evals    1.42 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   75600 evals    1.43 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   75800 evals    1.43 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   76000 evals    1.44 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   76200 evals    1.44 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   76400 evals    1.44 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   76600 evals    1.45 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   76800 evals    1.45 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   77000 evals    1.45 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   77200 evals    1.46 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   77400 evals    1.46 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   77600 evals    1.47 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   77800 evals    1.47 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   78000 evals    1.47 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   78200 evals    1.48 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   78400 evals    1.48 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   78600 evals    1.48 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   78800 evals    1.49 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   79000 evals    1.49 h   0.07 s/eval  best chi2 = 5.980597e-02
+    [DE]   79200 evals    1.50 h   0.07 s/eval  best chi2 = 5.820256e-02
+    [DE]   79400 evals    1.50 h   0.07 s/eval  best chi2 = 5.773455e-02
+    [DE]   79600 evals    1.50 h   0.07 s/eval  best chi2 = 5.384714e-02
+    [DE]   79800 evals    1.51 h   0.07 s/eval  best chi2 = 5.384714e-02
+    [DE]   80000 evals    1.51 h   0.07 s/eval  best chi2 = 5.384714e-02
+    [DE]   80200 evals    1.51 h   0.07 s/eval  best chi2 = 5.238104e-02
+    [DE]   80400 evals    1.52 h   0.07 s/eval  best chi2 = 4.914906e-02
+    [DE]   80600 evals    1.52 h   0.07 s/eval  best chi2 = 4.914906e-02
+    [DE]   80800 evals    1.53 h   0.07 s/eval  best chi2 = 4.914906e-02
+    [DE]   81000 evals    1.53 h   0.07 s/eval  best chi2 = 4.914906e-02
+    [DE]   81200 evals    1.53 h   0.07 s/eval  best chi2 = 4.914906e-02
+    [DE]   81400 evals    1.54 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   81600 evals    1.54 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   81800 evals    1.55 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   82000 evals    1.55 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   82200 evals    1.55 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   82400 evals    1.56 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   82600 evals    1.56 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   82800 evals    1.56 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   83000 evals    1.57 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   83200 evals    1.57 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   83400 evals    1.58 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   83600 evals    1.58 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   83800 evals    1.58 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   84000 evals    1.59 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   84200 evals    1.61 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   84400 evals    1.61 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   84600 evals    1.61 h   0.07 s/eval  best chi2 = 4.015385e-02
+    [DE]   84800 evals    1.62 h   0.07 s/eval  best chi2 = 3.998620e-02
+    [DE]   85000 evals    1.62 h   0.07 s/eval  best chi2 = 3.998620e-02
+    [DE]   85200 evals    1.63 h   0.07 s/eval  best chi2 = 3.998620e-02
+    [DE]   85400 evals    1.63 h   0.07 s/eval  best chi2 = 3.545891e-02
+    [DE]   85600 evals    1.64 h   0.07 s/eval  best chi2 = 3.545891e-02
+    [DE]   85800 evals    1.64 h   0.07 s/eval  best chi2 = 3.545891e-02
+    [DE]   86000 evals    1.64 h   0.07 s/eval  best chi2 = 3.545891e-02
+    [DE]   86200 evals    1.65 h   0.07 s/eval  best chi2 = 3.525074e-02
+    [DE]   86400 evals    1.65 h   0.07 s/eval  best chi2 = 3.214409e-02
+    [DE]   86600 evals    1.66 h   0.07 s/eval  best chi2 = 3.214409e-02
+    [DE]   86800 evals    1.66 h   0.07 s/eval  best chi2 = 3.214409e-02
+    [DE]   87000 evals    1.66 h   0.07 s/eval  best chi2 = 3.214409e-02
+    [DE]   87200 evals    1.67 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   87400 evals    1.67 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   87600 evals    1.68 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   87800 evals    1.68 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   88000 evals    1.68 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   88200 evals    1.69 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   88400 evals    1.69 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   88600 evals    1.69 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   88800 evals    1.70 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   89000 evals    1.70 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   89200 evals    1.71 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   89400 evals    1.71 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   89600 evals    1.71 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   89800 evals    1.72 h   0.07 s/eval  best chi2 = 3.127443e-02
+    [DE]   90000 evals    1.72 h   0.07 s/eval  best chi2 = 2.977433e-02
+    [DE]   90200 evals    1.72 h   0.07 s/eval  best chi2 = 2.977433e-02
+    [DE]   90400 evals    1.73 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   90600 evals    1.73 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   90800 evals    1.74 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   91000 evals    1.74 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   91200 evals    1.74 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   91400 evals    1.75 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   91600 evals    1.75 h   0.07 s/eval  best chi2 = 2.918593e-02
+    [DE]   91800 evals    1.75 h   0.07 s/eval  best chi2 = 2.702853e-02
+    [DE]   92000 evals    1.76 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   92200 evals    1.76 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   92400 evals    1.77 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   92600 evals    1.77 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   92800 evals    1.77 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   93000 evals    1.78 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   93200 evals    1.78 h   0.07 s/eval  best chi2 = 2.596826e-02
+    [DE]   93400 evals    1.79 h   0.07 s/eval  best chi2 = 2.596020e-02
+    [DE]   93600 evals    1.79 h   0.07 s/eval  best chi2 = 2.591947e-02
+    [DE]   93800 evals    1.79 h   0.07 s/eval  best chi2 = 2.560899e-02
+    [DE]   94000 evals    1.80 h   0.07 s/eval  best chi2 = 2.560899e-02
+    [DE]   94200 evals    1.80 h   0.07 s/eval  best chi2 = 2.560899e-02
+    [DE]   94400 evals    1.80 h   0.07 s/eval  best chi2 = 2.560899e-02
+    [DE]   94600 evals    1.81 h   0.07 s/eval  best chi2 = 2.409606e-02
+    [DE]   94800 evals    1.81 h   0.07 s/eval  best chi2 = 2.409606e-02
+    [DE]   95000 evals    1.82 h   0.07 s/eval  best chi2 = 2.409606e-02
+    [DE]   95200 evals    1.82 h   0.07 s/eval  best chi2 = 2.409606e-02
+    [DE]   95400 evals    1.82 h   0.07 s/eval  best chi2 = 2.409606e-02
+    [DE]   95600 evals    1.83 h   0.07 s/eval  best chi2 = 2.407094e-02
+    [DE]   95800 evals    1.83 h   0.07 s/eval  best chi2 = 2.335731e-02
+    [DE]   96000 evals    1.84 h   0.07 s/eval  best chi2 = 2.335731e-02
+    [DE]   96200 evals    1.84 h   0.07 s/eval  best chi2 = 2.335731e-02
+    [DE]   96400 evals    1.84 h   0.07 s/eval  best chi2 = 2.335731e-02
+    [DE]   96600 evals    1.85 h   0.07 s/eval  best chi2 = 2.219976e-02
+    [DE]   96800 evals    1.85 h   0.07 s/eval  best chi2 = 2.219976e-02
+    [DE]   97000 evals    1.86 h   0.07 s/eval  best chi2 = 2.219976e-02
+    [DE]   97200 evals    1.86 h   0.07 s/eval  best chi2 = 2.219976e-02
+    [DE]   97400 evals    1.86 h   0.07 s/eval  best chi2 = 2.219976e-02
+    [DE]   97600 evals    1.87 h   0.07 s/eval  best chi2 = 2.125326e-02
+    [DE]   97800 evals    1.87 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   98000 evals    1.87 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   98200 evals    1.88 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   98400 evals    1.88 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   98600 evals    1.89 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   98800 evals    1.89 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   99000 evals    1.89 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   99200 evals    1.90 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   99400 evals    1.90 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   99600 evals    1.90 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]   99800 evals    1.91 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]  100000 evals    1.91 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]  100200 evals    1.92 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]  100400 evals    1.92 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]  100600 evals    1.92 h   0.07 s/eval  best chi2 = 2.075393e-02
+    [DE]  100800 evals    1.93 h   0.07 s/eval  best chi2 = 2.050569e-02
+    [DE]  101000 evals    1.93 h   0.07 s/eval  best chi2 = 1.922332e-02
+    [DE]  101200 evals    1.93 h   0.07 s/eval  best chi2 = 1.922332e-02
+    [DE]  101400 evals    1.94 h   0.07 s/eval  best chi2 = 1.922332e-02
+    [DE]  101600 evals    1.94 h   0.07 s/eval  best chi2 = 1.690377e-02
+    [DE]  101800 evals    1.95 h   0.07 s/eval  best chi2 = 1.690377e-02
+    [DE]  102000 evals    1.95 h   0.07 s/eval  best chi2 = 1.690377e-02
+    [DE]  102200 evals    1.95 h   0.07 s/eval  best chi2 = 1.690377e-02
+    [DE]  102400 evals    1.96 h   0.07 s/eval  best chi2 = 1.690377e-02
+    [DE]  102600 evals    1.96 h   0.07 s/eval  best chi2 = 1.655509e-02
+    [DE]  102800 evals    1.97 h   0.07 s/eval  best chi2 = 1.655509e-02
+    [DE]  103000 evals    1.97 h   0.07 s/eval  best chi2 = 1.655509e-02
+    [DE]  103200 evals    1.97 h   0.07 s/eval  best chi2 = 1.655509e-02
+    [DE]  103400 evals    1.98 h   0.07 s/eval  best chi2 = 1.655509e-02
+    [DE]  103600 evals    1.98 h   0.07 s/eval  best chi2 = 1.589228e-02
+    [DE]  103800 evals    1.98 h   0.07 s/eval  best chi2 = 1.589228e-02
+    [DE]  104000 evals    1.99 h   0.07 s/eval  best chi2 = 1.589228e-02
+    [DE]  104200 evals    1.99 h   0.07 s/eval  best chi2 = 1.345913e-02
+    [DE]  104400 evals    2.00 h   0.07 s/eval  best chi2 = 1.345913e-02
+    [DE]  104600 evals    2.00 h   0.07 s/eval  best chi2 = 1.345913e-02
+    [DE]  104800 evals    2.00 h   0.07 s/eval  best chi2 = 1.345913e-02
+    [DE]  105000 evals    2.01 h   0.07 s/eval  best chi2 = 1.332731e-02
+    [DE]  105200 evals    2.01 h   0.07 s/eval  best chi2 = 1.332731e-02
+    [DE]  105400 evals    2.02 h   0.07 s/eval  best chi2 = 1.322893e-02
+    [DE]  105600 evals    2.02 h   0.07 s/eval  best chi2 = 1.322893e-02
+    [DE]  105800 evals    2.02 h   0.07 s/eval  best chi2 = 1.309790e-02
+    [DE]  106000 evals    2.03 h   0.07 s/eval  best chi2 = 1.309790e-02
+    [DE]  106200 evals    2.03 h   0.07 s/eval  best chi2 = 1.282039e-02
+    [DE]  106400 evals    2.03 h   0.07 s/eval  best chi2 = 1.282039e-02
+    [DE]  106600 evals    2.04 h   0.07 s/eval  best chi2 = 1.282039e-02
+    [DE]  106800 evals    2.04 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  107000 evals    2.05 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  107200 evals    2.05 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  107400 evals    2.05 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  107600 evals    2.06 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  107800 evals    2.06 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  108000 evals    2.07 h   0.07 s/eval  best chi2 = 1.159319e-02
+    [DE]  108200 evals    2.07 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  108400 evals    2.07 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  108600 evals    2.08 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  108800 evals    2.08 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  109000 evals    2.09 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  109200 evals    2.09 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  109400 evals    2.09 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  109600 evals    2.10 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  109800 evals    2.10 h   0.07 s/eval  best chi2 = 1.082981e-02
+    [DE]  110000 evals    2.10 h   0.07 s/eval  best chi2 = 1.059861e-02
+    [DE]  110200 evals    2.11 h   0.07 s/eval  best chi2 = 1.059861e-02
+    [DE]  110400 evals    2.11 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  110600 evals    2.12 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  110800 evals    2.12 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  111000 evals    2.12 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  111200 evals    2.13 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  111400 evals    2.13 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  111600 evals    2.14 h   0.07 s/eval  best chi2 = 9.268868e-03
+    [DE]  111800 evals    2.14 h   0.07 s/eval  best chi2 = 9.242659e-03
+    [DE]  112000 evals    2.14 h   0.07 s/eval  best chi2 = 9.242659e-03
+    [DE]  112200 evals    2.15 h   0.07 s/eval  best chi2 = 9.153803e-03
+    [DE]  112400 evals    2.15 h   0.07 s/eval  best chi2 = 9.153803e-03
+    [DE]  112600 evals    2.16 h   0.07 s/eval  best chi2 = 9.153803e-03
+    [DE]  112800 evals    2.17 h   0.07 s/eval  best chi2 = 8.773902e-03
+    [DE]  113000 evals    2.17 h   0.07 s/eval  best chi2 = 8.683895e-03
+    [DE]  113200 evals    2.18 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  113400 evals    2.18 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  113600 evals    2.19 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  113800 evals    2.19 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  114000 evals    2.20 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  114200 evals    2.21 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  114400 evals    2.21 h   0.07 s/eval  best chi2 = 8.423413e-03
+    [DE]  114600 evals    2.22 h   0.07 s/eval  best chi2 = 8.349577e-03
+    [DE]  114800 evals    2.22 h   0.07 s/eval  best chi2 = 8.349577e-03
+    [DE]  115000 evals    2.23 h   0.07 s/eval  best chi2 = 8.349577e-03
+    [DE]  115200 evals    2.24 h   0.07 s/eval  best chi2 = 8.349577e-03
+    [DE]  115400 evals    2.25 h   0.07 s/eval  best chi2 = 8.349577e-03
+    [DE]  115600 evals    2.25 h   0.07 s/eval  best chi2 = 7.433531e-03
+    [DE]  115800 evals    2.26 h   0.07 s/eval  best chi2 = 7.433531e-03
+    [DE]  116000 evals    2.27 h   0.07 s/eval  best chi2 = 7.201467e-03
+    [DE]  116200 evals    2.27 h   0.07 s/eval  best chi2 = 7.201467e-03
+    [DE]  116400 evals    2.28 h   0.07 s/eval  best chi2 = 6.481909e-03
+    [DE]  116600 evals    2.29 h   0.07 s/eval  best chi2 = 6.366653e-03
+    [DE]  116800 evals    2.29 h   0.07 s/eval  best chi2 = 6.189759e-03
+    [DE]  117000 evals    2.30 h   0.07 s/eval  best chi2 = 6.189759e-03
+    [DE]  117200 evals    2.31 h   0.07 s/eval  best chi2 = 6.189759e-03
+    [DE]  117400 evals    2.31 h   0.07 s/eval  best chi2 = 6.189759e-03
+    [DE]  117600 evals    2.32 h   0.07 s/eval  best chi2 = 5.578174e-03
+    [DE]  117800 evals    2.33 h   0.07 s/eval  best chi2 = 5.578174e-03
+    [DE]  118000 evals    2.34 h   0.07 s/eval  best chi2 = 5.454048e-03
+    [DE]  118200 evals    2.34 h   0.07 s/eval  best chi2 = 5.454048e-03
+    [DE]  118400 evals    2.35 h   0.07 s/eval  best chi2 = 5.366464e-03
+    [DE]  118600 evals    2.35 h   0.07 s/eval  best chi2 = 5.317069e-03
+    [DE]  118800 evals    2.36 h   0.07 s/eval  best chi2 = 4.766257e-03
+    [DE]  119000 evals    2.37 h   0.07 s/eval  best chi2 = 4.766257e-03
+    [DE]  119200 evals    2.38 h   0.07 s/eval  best chi2 = 4.491791e-03
+    [DE]  119400 evals    2.38 h   0.07 s/eval  best chi2 = 4.491791e-03
+    [DE]  119600 evals    2.39 h   0.07 s/eval  best chi2 = 4.169424e-03
+    [DE]  119800 evals    2.39 h   0.07 s/eval  best chi2 = 4.105403e-03
+    [DE]  120000 evals    2.40 h   0.07 s/eval  best chi2 = 3.828447e-03
+    [DE]  120200 evals    2.41 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  120400 evals    2.42 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  120600 evals    2.42 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  120800 evals    2.43 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  121000 evals    2.43 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  121200 evals    2.44 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  121400 evals    2.44 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  121600 evals    2.45 h   0.07 s/eval  best chi2 = 3.707174e-03
+    [DE]  121800 evals    2.46 h   0.07 s/eval  best chi2 = 3.607555e-03
+    [DE]  122000 evals    2.47 h   0.07 s/eval  best chi2 = 3.227175e-03
+    [DE]  122200 evals    2.47 h   0.07 s/eval  best chi2 = 3.227175e-03
+    [DE]  122400 evals    2.48 h   0.07 s/eval  best chi2 = 3.227175e-03
+    [DE]  122600 evals    2.48 h   0.07 s/eval  best chi2 = 3.227175e-03
+    [DE]  122800 evals    2.49 h   0.07 s/eval  best chi2 = 2.797711e-03
+    [DE]  123000 evals    2.49 h   0.07 s/eval  best chi2 = 2.797711e-03
+    [DE]  123200 evals    2.49 h   0.07 s/eval  best chi2 = 2.510057e-03
+    [DE]  123400 evals    2.50 h   0.07 s/eval  best chi2 = 2.336797e-03
+    [DE]  123600 evals    2.50 h   0.07 s/eval  best chi2 = 2.336797e-03
+    [DE]  123800 evals    2.51 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  124000 evals    2.51 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  124200 evals    2.51 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  124400 evals    2.52 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  124600 evals    2.52 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  124800 evals    2.52 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  125000 evals    2.53 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  125200 evals    2.53 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  125400 evals    2.54 h   0.07 s/eval  best chi2 = 2.238502e-03
+    [DE]  125600 evals    2.54 h   0.07 s/eval  best chi2 = 2.057074e-03
+    [DE]  125800 evals    2.54 h   0.07 s/eval  best chi2 = 2.057074e-03
+    [DE]  126000 evals    2.55 h   0.07 s/eval  best chi2 = 2.057074e-03
+    [DE]  126200 evals    2.55 h   0.07 s/eval  best chi2 = 2.057074e-03
+    [DE]  126400 evals    2.55 h   0.07 s/eval  best chi2 = 1.904809e-03
+    [DE]  126600 evals    2.56 h   0.07 s/eval  best chi2 = 1.904809e-03
+    [DE]  126800 evals    2.56 h   0.07 s/eval  best chi2 = 1.904809e-03
+    [DE]  127000 evals    2.57 h   0.07 s/eval  best chi2 = 1.904809e-03
+    [DE]  127200 evals    2.57 h   0.07 s/eval  best chi2 = 1.610628e-03
+    [DE]  127400 evals    2.57 h   0.07 s/eval  best chi2 = 1.600969e-03
+    [DE]  127600 evals    2.58 h   0.07 s/eval  best chi2 = 1.600969e-03
+    [DE]  127800 evals    2.58 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  128000 evals    2.58 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  128200 evals    2.59 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  128400 evals    2.59 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  128600 evals    2.60 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  128800 evals    2.60 h   0.07 s/eval  best chi2 = 1.471238e-03
+    [DE]  129000 evals    2.60 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  129200 evals    2.61 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  129400 evals    2.61 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  129600 evals    2.61 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  129800 evals    2.62 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  130000 evals    2.62 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  130200 evals    2.63 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  130400 evals    2.63 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  130600 evals    2.63 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  130800 evals    2.64 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  131000 evals    2.64 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  131200 evals    2.64 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  131400 evals    2.65 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  131600 evals    2.65 h   0.07 s/eval  best chi2 = 1.224391e-03
+    [DE]  131800 evals    2.66 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  132000 evals    2.66 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  132200 evals    2.66 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  132400 evals    2.67 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  132600 evals    2.67 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  132800 evals    2.67 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  133000 evals    2.68 h   0.07 s/eval  best chi2 = 1.178785e-03
+    [DE]  133200 evals    2.68 h   0.07 s/eval  best chi2 = 1.168352e-03
+    [DE]  133400 evals    2.69 h   0.07 s/eval  best chi2 = 1.168352e-03
+    [DE]  133600 evals    2.69 h   0.07 s/eval  best chi2 = 9.660431e-04
+    [DE]  133800 evals    2.69 h   0.07 s/eval  best chi2 = 9.660431e-04
+    [DE]  134000 evals    2.70 h   0.07 s/eval  best chi2 = 9.660431e-04
+    [DE]  134200 evals    2.70 h   0.07 s/eval  best chi2 = 9.660431e-04
+    [DE]  134400 evals    2.70 h   0.07 s/eval  best chi2 = 9.265310e-04
+    [DE]  134600 evals    2.71 h   0.07 s/eval  best chi2 = 9.265310e-04
+    [DE]  134800 evals    2.71 h   0.07 s/eval  best chi2 = 9.265310e-04
+    [DE]  135000 evals    2.72 h   0.07 s/eval  best chi2 = 9.265310e-04
+    [DE]  135200 evals    2.72 h   0.07 s/eval  best chi2 = 8.695048e-04
+    [DE]  135400 evals    2.72 h   0.07 s/eval  best chi2 = 8.695048e-04
+    [DE]  135600 evals    2.73 h   0.07 s/eval  best chi2 = 8.695048e-04
+    [DE]  135800 evals    2.73 h   0.07 s/eval  best chi2 = 8.695048e-04
+    [DE]  136000 evals    2.73 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  136200 evals    2.74 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  136400 evals    2.74 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  136600 evals    2.74 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  136800 evals    2.75 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  137000 evals    2.75 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  137200 evals    2.76 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  137400 evals    2.76 h   0.07 s/eval  best chi2 = 8.119961e-04
+    [DE]  137600 evals    2.76 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  137800 evals    2.77 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  138000 evals    2.77 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  138200 evals    2.77 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  138400 evals    2.78 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  138600 evals    2.78 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  138800 evals    2.79 h   0.07 s/eval  best chi2 = 7.958210e-04
+    [DE]  139000 evals    2.79 h   0.07 s/eval  best chi2 = 7.925037e-04
+    [DE]  139200 evals    2.79 h   0.07 s/eval  best chi2 = 7.925037e-04
+    [DE]  139400 evals    2.80 h   0.07 s/eval  best chi2 = 7.925037e-04
+    [DE]  139600 evals    2.80 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  139800 evals    2.81 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  140000 evals    2.81 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  140200 evals    2.81 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  140400 evals    2.82 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  140600 evals    2.82 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  140800 evals    2.82 h   0.07 s/eval  best chi2 = 7.665016e-04
+    [DE]  141000 evals    2.83 h   0.07 s/eval  best chi2 = 7.652373e-04
+[DE  ] 1100 iters, 141171 evals, 2.83 h (Maximum number of iterations has been exceeded.)
+[LM  ] 0PA + 2.5PN deviation, 8 parameters, lam0 = 0.01, up to 150 iterations
+[LM  ] seed: m1=999999.64, m2=1999.985545, p0=24.3503107, e0=0.03981441183, Phi_phi0=0.9974050353, Phi_r0=0.9826900698, dev_1=-0.01294334817, dev_2=0.475239861
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6399631163), np.float64(1999.9855453425648), 0.0, np.float64(24.350310702724155), np.float64(0.03981441183095499), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9974050352798837), 0.0, np.float64(0.9826900697837255), 0.0, False, False, False, True, np.float64(-0.012943348171320848), np.float64(0.475239861015968), 0.0, 0.0)
+Waveform Generated. SNR: 82.31483725734155
+calculating stable deltas...
+Time taken to compute stable deltas is 27.02036166191101 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4115371704101562 seconds
+    [LM1] it   0  lam = 3.3e-03  ov = 0.999999943467  chi2 = 7.661110e-04  rel = 2.74e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6399599069), np.float64(1999.985544829597), 0.0, np.float64(24.350310703000073), np.float64(0.03981440841541426), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.997386779679613), 0.0, np.float64(0.982725529831317), 0.0, False, False, False, True, np.float64(-0.012942318126280182), np.float64(0.47506496755548244), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481711095081
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.003422737121582 seconds
+    [LM1] it   1  lam = 3.3e-03  ov = 0.999999943622  chi2 = 7.640095e-04  rel = 9.82e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6399285385), np.float64(1999.9855441777047), 0.0, np.float64(24.35031070310994), np.float64(0.03981440402873372), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973534016356246), 0.0, np.float64(0.982704047005819), 0.0, False, False, False, True, np.float64(-0.012941001966442002), np.float64(0.47478342708997945), 0.0, 0.0)
+Waveform Generated. SNR: 82.31480579296705
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9858596324920654 seconds
+    [LM1] it   2  lam = 2.2e-03  ov = 0.999999943677  chi2 = 7.632592e-04  rel = 9.74e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6399148217), np.float64(1999.9855439499647), 0.0, np.float64(24.35031070312625), np.float64(0.03981440275755315), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973416423829847), 0.0, np.float64(0.9826966290112469), 0.0, False, False, False, True, np.float64(-0.012940540122412057), np.float64(0.47468301690136255), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481403458815
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9945733547210693 seconds
+    [LM1] it   3  lam = 7.3e-04  ov = 0.999999943732  chi2 = 7.625156e-04  rel = 3.44e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6398838711), np.float64(1999.9855436292019), 0.0, np.float64(24.350310703058746), np.float64(0.03981440240490063), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973276263177449), 0.0, np.float64(0.982687154240564), 0.0, False, False, False, True, np.float64(-0.012939903600362943), np.float64(0.47454484127035046), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481550210535
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.989630699157715 seconds
+    [LM1] it   4  lam = 8.6e+09  ov = 0.999999943751  chi2 = 7.622533e-04  rel = 9.30e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6398838711), np.float64(1999.9855436292019), 0.0, np.float64(24.350310703058746), np.float64(0.03981440240490063), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973276263177449), 0.0, np.float64(0.982687154240564), 0.0, False, False, False, True, np.float64(-0.012939903600362943), np.float64(0.4745448412703504), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481549888038
+calculating stable deltas...
+Time taken to compute stable deltas is 26.929337739944458 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4087157249450684 seconds
+    [LM1] it   5  lam = 2.9e+09  ov = 0.999999943751  chi2 = 7.622525e-04  rel = 7.87e-07
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3128954)
+Computing SNR for parameters: (np.float64(999999.6398838711), np.float64(1999.9855436292019), 0.0, np.float64(24.350310703058746), np.float64(0.03981440240490063), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.9973276263177449), 0.0, np.float64(0.982687154240564), 0.0, False, False, False, True, np.float64(-0.012939903600362944), np.float64(0.4745448412703503), 0.0, 0.0)
+Waveform Generated. SNR: 82.31481549848289
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9965028762817383 seconds
+    [LM1] it   6  lam = 2.7e+149  ov = 0.999999943751  chi2 = 7.622519e-04  rel = 0.00e+00
+    [LM1] no damped step lowers chi2; stopping at iteration 6
+[DEPH] injection      dPhi_phi = +4.105603e+00 rad (orbital +4.105603e+00),  dPhi_r = +2.042478e+00 rad (orbital +2.042478e+00)  over 0.495744 yr
+[DEPH] DE             dPhi_phi = +4.892511e-05 rad (orbital +2.643890e-03),  dPhi_r = -5.007138e-04 rad (orbital +1.680922e-02)  over 0.495744 yr
+[DEPH] DE+LM          dPhi_phi = +3.201376e-05 rad (orbital +2.704387e-03),  dPhi_r = -4.375456e-04 rad (orbital +1.687530e-02)  over 0.495744 yr
+
+------------------------------------------------------------------------------------------
+[RES ] model = 0PA + 2.5PN deviation,  SNR = 82.314829
+[RES ] seed (inj)   ov = 0.197137231848  chi2 = 1.085227e+04
+[RES ] DE           ov = 0.999999943467  chi2 = 7.661110e-04
+[RES ] DE+LM        ov = 0.999999943751  chi2 = 7.622519e-04
+[RES ] mismatch 8.028628e-01 -> 5.624868e-08  (14273450.25x reduction)
+
+     param         seed (inj)                 DE              DE+LM            bias         sigma  bias/sigma
+        m1            1000000          999999.64        999999.6399   -3.601161e-01   1.30103e+02      -0.003
+        m2               2000        1999.985545        1999.985544   -1.445637e-02   7.54884e+00      -0.002
+        p0              24.35         24.3503107         24.3503107   +3.107031e-04   3.06870e-03      +0.101
+        e0               0.04      0.03981441183       0.0398144024   -1.855976e-04   1.42581e-03      -0.130
+  Phi_phi0                  1       0.9974050353       0.9973276263   -2.672374e-03   1.74361e-01      -0.015
+    Phi_r0                  1       0.9826900698       0.9826871542   -1.731285e-02   6.44556e-01      -0.027
+     dev_1                  0     -0.01294334817      -0.0129399036   -1.293990e-02   1.29152e+01      -0.001
+     dev_2                  0        0.475239861       0.4745448413   +4.745448e-01   1.03625e+01      +0.046
+
+best-fit vector [9.9999963988e+05, 1.9999855436e+03, 2.4350310703e+01, 3.9814402405e-02, 9.9732762632e-01, 9.8268715424e-01, -1.2939903600e-02, 4.7454484127e-01]
+[saved] /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/new_runs/results_de_0pa_pn.json

@@ -1,0 +1,77 @@
+================================================================================
+ENVIRONMENTAL EMRI vs VACUUM GR TEMPLATE  --  Cutler-Vallisneri systematic bias
+================================================================================
+point      : a = 0.0, e0 = 0.04, m1 = 1e6, m2 = 2e3   (eccentric, runs to plunge)
+run        : job 628190, finished 2026-09-23, 0.73 h wall (DE 0.69 h, LM 26 s)
+script     : de_env_vs_vacuum.py
+config     : config_de_env_vs_vacuum.json
+raw        : env_vs_vacuum_a0.0_e0.04.json  (full record, incl. LM history)
+log        : ../de_env_vs_vacuum.log
+
+INJECTION (signal)
+  m1 = 1e6, m2 = 2e3, a = 0.0, p0 = 24.442, e0 = 0.04, xI0 = 1.0, dist = 16.344
+  qS = pi/4, phiS = pi/3, qK = pi/6, phiK = pi/8
+  Phi_phi0 = 1.0, Phi_theta0 = 0.0, Phi_r0 = 1.0
+  disk (Duque et al. accretion torque):
+      Sigma0 = 5.25e5 g/cm^2 = 5.755491870327511e-12 geometric
+      h0     = 0.025
+      Sigma_p= -1.5
+
+TEMPLATE (model)
+  the SAME waveform class with the disk arguments dropped -- pure vacuum GR.
+
+CONFIGURATION
+  T = 0.503796 yr (0.99 x plunge)   dt = 5 s   channels = AET (3)
+  band = [1.0e-05, 1.0e-01] Hz      SNR = 85.366075
+  inferred: m1, m2, p0, e0, Phi_phi0, Phi_r0      (a held fixed at 0.0)
+  search  : differential evolution in +-5 Fisher sigma about the injection
+            (sobol init, popsize 15, mutation (0.5,1.0), recomb 0.7, seed 42,
+             polish = L-BFGS-B), then an LM Cutler-Vallisneri climb from the winner.
+
+--------------------------------------------------------------------------------
+RESULTS
+--------------------------------------------------------------------------------
+                    overlap              chi2
+injection      0.023358563489      1.421658e+04
+DE             0.999990616299      1.367667e-01
+DE+LM          0.999990616390      1.367654e-01
+
+mismatch  9.766414e-01 -> 9.383610e-06   (104079.50x reduction)
+
+     param          injection                 DE              DE+LM            bias         sigma  bias/sigma
+        m1            1000000        999997.6792        999997.6792   -2.320764e+00   1.30872e+02      -0.018
+        m2               2000         2000.04778         2000.04778   +4.778013e-02   2.80587e-01      +0.170
+        p0             24.442        24.44397014        24.44397014   +1.970135e-03   2.34820e-03      +0.839
+        e0               0.04      0.03889085189      0.03889085174   -1.109148e-03   2.60343e-04      -4.260
+  Phi_phi0                  1        1.021970817         1.02196688   +2.196688e-02   1.20703e-01      +0.182
+    Phi_r0                  1        0.873701701       0.8735800975   -1.264199e-01   6.19424e-01      -0.204
+
+best-fit vector [9.9999767924e+05, 2.0000477801e+03, 2.4443970135e+01, 3.8890851740e-02, 1.0219668795e+00, 8.7358009751e-01]
+
+(sigma above is the Fisher error at the BEST-FIT point.  Fisher sigma at the
+ injection, which set the search box, was:
+   m1 1.270309e+02  m2 2.728266e-01  p0 2.280235e-03  e0 2.505709e-04
+   Phi_phi0 1.207715e-01  Phi_r0 6.023867e-01)
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+* The disk torque is absorbed almost entirely into ECCENTRICITY: e0 is biased by
+  -4.26 sigma.  Everything else is sub-sigma except p0 at +0.84 sigma.  The vacuum
+  template fits the perturbed signal to a mismatch of 9.4e-6, but pays for it with
+  a four-sigma shift in e0.  That is the systematic bias for this source.
+
+* CAVEAT -- the recovered e0 sits 0.57 sigma inside the lower wall of the +-5 sigma
+  box (0.0388909 vs the floor 0.0387471).  It is NOT truncated: DE found an
+  interior minimum and LM's lambda ran away to 2.5e138, confirming no step
+  improves it.  But a wider box (sigma_range 8) is a cheap check on whether the
+  minimum wants to travel further.
+
+* The LM stage moved the overlap by 9e-11 -- expected, since DE ran with
+  polish=True and L-BFGS-B had already converged on the winner.  The lambda
+  explosion is the confirmation, not a failure.
+
+* Seeding from the injection is hopeless here on its own: overlap at the injected
+  parameters is 0.0234 (chi2 1.42e4) from ~22 rad of accumulated dephasing.  A
+  local climber started there has nothing to follow; the population search is
+  what crosses the ridge.

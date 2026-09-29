@@ -1,0 +1,2026 @@
+startup
+[CONF] config_de_env_vs_pn.json
+[CONF] T = 0.503796 yr (0.99 x plunge), dt = 5 s, 3 channels, band [1.0e-05, 1.0e-01] Hz
+[MODEL] 0PA + 2.5PN deviation: fitting ['m1', 'm2', 'p0', 'e0', 'Phi_phi0', 'Phi_r0', 'dev_1', 'dev_2']
+[MODEL] ASSUMED secondary spin chi2 = 0.0, evolve_1PA = False
+[BASE] 0PA + 2.5PN deviation at the injected parameters (deviation = 0): overlap = 0.023358739909
+[CTX ] SNR = 85.366075, overlap = 0.023358739909, chi2 = 1.421658e+04
+[BOX ] Fisher at the seed, box = +-5 sigma
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.0), np.float64(2000.0), 0.0, np.float64(24.442), np.float64(0.04), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(1.0), 0.0, np.float64(1.0), 0.0, False, False, False, True, np.float64(0.0), np.float64(0.0), 0.0, 0.0)
+Waveform Generated. SNR: 85.25984715839091
+calculating stable deltas...
+Time taken to compute stable deltas is 28.656763076782227 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.501293182373047 seconds
+[BOX ]        m1  sigma = 1.302148e+02  ->  [999348.9259, 1000651.074]
+[BOX ]        m2  sigma = 6.690994e+00  ->  [1966.545028, 2033.454972]
+[BOX ]        p0  sigma = 3.039387e-03  ->  [24.42680306, 24.45719694]
+[BOX ]        e0  sigma = 1.320149e-03  ->  [0.03339925427, 0.04660074573]
+[BOX ]  Phi_phi0  sigma = 1.249402e-01  ->  [0.3752991373, 1.624700863]
+[BOX ]    Phi_r0  sigma = 6.405687e-01  ->  [-2.202843284, 4.202843284]
+[BOX ]     dev_1  sigma = 1.125565e+01  ->  [-56.27826338, 56.27826338]
+[BOX ]     dev_2  sigma = 6.625185e-03  ->  [-0.03312592667, 0.03312592667]
+[DE  ] ndim = 8, maxiter = 1100, popsize = 15, tol = 1e-08, atol = 1e-05, init = sobol, mutation = (0.5, 1.0), recombination = 0.7, polish = True, seed = 42
+    [DE]     200 evals    0.00 h   0.08 s/eval  best chi2 = 9.951051e+03
+    [DE]     400 evals    0.01 h   0.07 s/eval  best chi2 = 9.730214e+03
+    [DE]     600 evals    0.01 h   0.07 s/eval  best chi2 = 9.688396e+03
+    [DE]     800 evals    0.02 h   0.07 s/eval  best chi2 = 9.614918e+03
+    [DE]    1000 evals    0.02 h   0.07 s/eval  best chi2 = 9.537963e+03
+    [DE]    1200 evals    0.02 h   0.07 s/eval  best chi2 = 9.537963e+03
+    [DE]    1400 evals    0.03 h   0.07 s/eval  best chi2 = 9.537963e+03
+    [DE]    1600 evals    0.03 h   0.07 s/eval  best chi2 = 9.537963e+03
+    [DE]    1800 evals    0.03 h   0.07 s/eval  best chi2 = 9.537963e+03
+    [DE]    2000 evals    0.04 h   0.07 s/eval  best chi2 = 9.511833e+03
+    [DE]    2200 evals    0.04 h   0.07 s/eval  best chi2 = 9.511833e+03
+    [DE]    2400 evals    0.04 h   0.07 s/eval  best chi2 = 9.511833e+03
+    [DE]    2600 evals    0.05 h   0.07 s/eval  best chi2 = 9.511833e+03
+    [DE]    2800 evals    0.05 h   0.07 s/eval  best chi2 = 5.776819e+03
+    [DE]    3000 evals    0.05 h   0.07 s/eval  best chi2 = 5.776819e+03
+    [DE]    3200 evals    0.06 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    3400 evals    0.06 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    3600 evals    0.07 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    3800 evals    0.07 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    4000 evals    0.07 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    4200 evals    0.08 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    4400 evals    0.08 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    4600 evals    0.08 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    4800 evals    0.09 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    5000 evals    0.09 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    5200 evals    0.10 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    5400 evals    0.10 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    5600 evals    0.10 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    5800 evals    0.11 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    6000 evals    0.11 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    6200 evals    0.11 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    6400 evals    0.12 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    6600 evals    0.12 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    6800 evals    0.13 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    7000 evals    0.13 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    7200 evals    0.13 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    7400 evals    0.14 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    7600 evals    0.14 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    7800 evals    0.14 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    8000 evals    0.15 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    8200 evals    0.15 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    8400 evals    0.16 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    8600 evals    0.16 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    8800 evals    0.16 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    9000 evals    0.17 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    9200 evals    0.17 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    9400 evals    0.17 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    9600 evals    0.18 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]    9800 evals    0.18 h   0.07 s/eval  best chi2 = 3.870833e+03
+    [DE]   10000 evals    0.19 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   10200 evals    0.19 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   10400 evals    0.19 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   10600 evals    0.20 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   10800 evals    0.20 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   11000 evals    0.20 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   11200 evals    0.21 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   11400 evals    0.21 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   11600 evals    0.22 h   0.07 s/eval  best chi2 = 3.604292e+03
+    [DE]   11800 evals    0.22 h   0.07 s/eval  best chi2 = 2.720107e+03
+    [DE]   12000 evals    0.22 h   0.07 s/eval  best chi2 = 2.720107e+03
+    [DE]   12200 evals    0.23 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   12400 evals    0.23 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   12600 evals    0.24 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   12800 evals    0.24 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   13000 evals    0.24 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   13200 evals    0.25 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   13400 evals    0.25 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   13600 evals    0.25 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   13800 evals    0.26 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   14000 evals    0.26 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   14200 evals    0.27 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   14400 evals    0.27 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   14600 evals    0.27 h   0.07 s/eval  best chi2 = 2.415053e+03
+    [DE]   14800 evals    0.28 h   0.07 s/eval  best chi2 = 1.563849e+03
+    [DE]   15000 evals    0.28 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   15200 evals    0.28 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   15400 evals    0.29 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   15600 evals    0.29 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   15800 evals    0.30 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   16000 evals    0.30 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   16200 evals    0.30 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   16400 evals    0.31 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   16600 evals    0.31 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   16800 evals    0.32 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   17000 evals    0.32 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   17200 evals    0.32 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   17400 evals    0.33 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   17600 evals    0.33 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   17800 evals    0.33 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   18000 evals    0.34 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   18200 evals    0.34 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   18400 evals    0.35 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   18600 evals    0.35 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   18800 evals    0.35 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   19000 evals    0.36 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   19200 evals    0.36 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   19400 evals    0.37 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   19600 evals    0.37 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   19800 evals    0.37 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   20000 evals    0.38 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   20200 evals    0.38 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   20400 evals    0.39 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   20600 evals    0.39 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   20800 evals    0.39 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   21000 evals    0.40 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   21200 evals    0.40 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   21400 evals    0.40 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   21600 evals    0.41 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   21800 evals    0.41 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   22000 evals    0.42 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   22200 evals    0.42 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   22400 evals    0.42 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   22600 evals    0.43 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   22800 evals    0.43 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   23000 evals    0.44 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   23200 evals    0.44 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   23400 evals    0.44 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   23600 evals    0.45 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   23800 evals    0.45 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   24000 evals    0.45 h   0.07 s/eval  best chi2 = 1.008981e+03
+    [DE]   24200 evals    0.46 h   0.07 s/eval  best chi2 = 8.209501e+02
+    [DE]   24400 evals    0.46 h   0.07 s/eval  best chi2 = 8.209501e+02
+    [DE]   24600 evals    0.47 h   0.07 s/eval  best chi2 = 7.835088e+02
+    [DE]   24800 evals    0.47 h   0.07 s/eval  best chi2 = 5.675265e+02
+    [DE]   25000 evals    0.47 h   0.07 s/eval  best chi2 = 5.675265e+02
+    [DE]   25200 evals    0.48 h   0.07 s/eval  best chi2 = 5.675265e+02
+    [DE]   25400 evals    0.48 h   0.07 s/eval  best chi2 = 5.240939e+02
+    [DE]   25600 evals    0.49 h   0.07 s/eval  best chi2 = 5.240939e+02
+    [DE]   25800 evals    0.49 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   26000 evals    0.49 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   26200 evals    0.50 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   26400 evals    0.50 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   26600 evals    0.51 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   26800 evals    0.51 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   27000 evals    0.51 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   27200 evals    0.52 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   27400 evals    0.52 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   27600 evals    0.52 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   27800 evals    0.53 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   28000 evals    0.53 h   0.07 s/eval  best chi2 = 4.918427e+02
+    [DE]   28200 evals    0.54 h   0.07 s/eval  best chi2 = 4.249818e+02
+    [DE]   28400 evals    0.54 h   0.07 s/eval  best chi2 = 4.249818e+02
+    [DE]   28600 evals    0.54 h   0.07 s/eval  best chi2 = 4.249818e+02
+    [DE]   28800 evals    0.55 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   29000 evals    0.55 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   29200 evals    0.56 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   29400 evals    0.56 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   29600 evals    0.56 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   29800 evals    0.57 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   30000 evals    0.57 h   0.07 s/eval  best chi2 = 3.743072e+02
+    [DE]   30200 evals    0.58 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   30400 evals    0.58 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   30600 evals    0.58 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   30800 evals    0.59 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   31000 evals    0.59 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   31200 evals    0.59 h   0.07 s/eval  best chi2 = 3.701527e+02
+    [DE]   31400 evals    0.60 h   0.07 s/eval  best chi2 = 3.651388e+02
+    [DE]   31600 evals    0.60 h   0.07 s/eval  best chi2 = 2.966467e+02
+    [DE]   31800 evals    0.61 h   0.07 s/eval  best chi2 = 2.966467e+02
+    [DE]   32000 evals    0.61 h   0.07 s/eval  best chi2 = 2.966467e+02
+    [DE]   32200 evals    0.61 h   0.07 s/eval  best chi2 = 2.966467e+02
+    [DE]   32400 evals    0.62 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   32600 evals    0.62 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   32800 evals    0.63 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   33000 evals    0.63 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   33200 evals    0.63 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   33400 evals    0.64 h   0.07 s/eval  best chi2 = 2.949726e+02
+    [DE]   33600 evals    0.64 h   0.07 s/eval  best chi2 = 2.949488e+02
+    [DE]   33800 evals    0.65 h   0.07 s/eval  best chi2 = 2.949488e+02
+    [DE]   34000 evals    0.65 h   0.07 s/eval  best chi2 = 2.931371e+02
+    [DE]   34200 evals    0.65 h   0.07 s/eval  best chi2 = 2.931371e+02
+    [DE]   34400 evals    0.66 h   0.07 s/eval  best chi2 = 2.855734e+02
+    [DE]   34600 evals    0.66 h   0.07 s/eval  best chi2 = 2.855734e+02
+    [DE]   34800 evals    0.67 h   0.07 s/eval  best chi2 = 2.810556e+02
+    [DE]   35000 evals    0.67 h   0.07 s/eval  best chi2 = 2.810556e+02
+    [DE]   35200 evals    0.67 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   35400 evals    0.68 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   35600 evals    0.68 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   35800 evals    0.69 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   36000 evals    0.69 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   36200 evals    0.69 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   36400 evals    0.70 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   36600 evals    0.70 h   0.07 s/eval  best chi2 = 2.810209e+02
+    [DE]   36800 evals    0.70 h   0.07 s/eval  best chi2 = 2.769682e+02
+    [DE]   37000 evals    0.71 h   0.07 s/eval  best chi2 = 2.769682e+02
+    [DE]   37200 evals    0.71 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   37400 evals    0.72 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   37600 evals    0.72 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   37800 evals    0.72 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   38000 evals    0.73 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   38200 evals    0.73 h   0.07 s/eval  best chi2 = 2.701819e+02
+    [DE]   38400 evals    0.74 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   38600 evals    0.74 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   38800 evals    0.74 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   39000 evals    0.75 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   39200 evals    0.75 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   39400 evals    0.76 h   0.07 s/eval  best chi2 = 2.701468e+02
+    [DE]   39600 evals    0.76 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   39800 evals    0.76 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   40000 evals    0.77 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   40200 evals    0.77 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   40400 evals    0.77 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   40600 evals    0.78 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   40800 evals    0.78 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   41000 evals    0.79 h   0.07 s/eval  best chi2 = 2.648284e+02
+    [DE]   41200 evals    0.79 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   41400 evals    0.79 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   41600 evals    0.80 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   41800 evals    0.80 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   42000 evals    0.81 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   42200 evals    0.81 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   42400 evals    0.81 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   42600 evals    0.82 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   42800 evals    0.82 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   43000 evals    0.82 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   43200 evals    0.83 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   43400 evals    0.83 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   43600 evals    0.84 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   43800 evals    0.84 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   44000 evals    0.84 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   44200 evals    0.85 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   44400 evals    0.85 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   44600 evals    0.86 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   44800 evals    0.86 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   45000 evals    0.86 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   45200 evals    0.87 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   45400 evals    0.87 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   45600 evals    0.88 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   45800 evals    0.88 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   46000 evals    0.88 h   0.07 s/eval  best chi2 = 2.644420e+02
+    [DE]   46200 evals    0.89 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   46400 evals    0.89 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   46600 evals    0.90 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   46800 evals    0.90 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   47000 evals    0.90 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   47200 evals    0.91 h   0.07 s/eval  best chi2 = 2.628105e+02
+    [DE]   47400 evals    0.91 h   0.07 s/eval  best chi2 = 2.624727e+02
+    [DE]   47600 evals    0.92 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   47800 evals    0.92 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   48000 evals    0.92 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   48200 evals    0.93 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   48400 evals    0.93 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   48600 evals    0.94 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   48800 evals    0.94 h   0.07 s/eval  best chi2 = 2.607410e+02
+    [DE]   49000 evals    0.94 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   49200 evals    0.95 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   49400 evals    0.95 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   49600 evals    0.95 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   49800 evals    0.96 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   50000 evals    0.96 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   50200 evals    0.97 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   50400 evals    0.97 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   50600 evals    0.97 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   50800 evals    0.98 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   51000 evals    0.98 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   51200 evals    0.99 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   51400 evals    0.99 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   51600 evals    0.99 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   51800 evals    1.00 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   52000 evals    1.00 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   52200 evals    1.01 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   52400 evals    1.01 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   52600 evals    1.01 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   52800 evals    1.02 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   53000 evals    1.02 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   53200 evals    1.03 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   53400 evals    1.03 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   53600 evals    1.03 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   53800 evals    1.04 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   54000 evals    1.04 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   54200 evals    1.04 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   54400 evals    1.05 h   0.07 s/eval  best chi2 = 2.597721e+02
+    [DE]   54600 evals    1.05 h   0.07 s/eval  best chi2 = 2.593817e+02
+    [DE]   54800 evals    1.06 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   55000 evals    1.06 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   55200 evals    1.06 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   55400 evals    1.07 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   55600 evals    1.07 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   55800 evals    1.08 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   56000 evals    1.08 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   56200 evals    1.08 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   56400 evals    1.09 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   56600 evals    1.09 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   56800 evals    1.10 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   57000 evals    1.10 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   57200 evals    1.10 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   57400 evals    1.11 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   57600 evals    1.11 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   57800 evals    1.11 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   58000 evals    1.12 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   58200 evals    1.12 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   58400 evals    1.13 h   0.07 s/eval  best chi2 = 2.590777e+02
+    [DE]   58600 evals    1.13 h   0.07 s/eval  best chi2 = 2.588689e+02
+    [DE]   58800 evals    1.13 h   0.07 s/eval  best chi2 = 2.580411e+02
+    [DE]   59000 evals    1.14 h   0.07 s/eval  best chi2 = 2.580411e+02
+    [DE]   59200 evals    1.14 h   0.07 s/eval  best chi2 = 2.580411e+02
+    [DE]   59400 evals    1.15 h   0.07 s/eval  best chi2 = 2.580411e+02
+    [DE]   59600 evals    1.15 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   59800 evals    1.15 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   60000 evals    1.16 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   60200 evals    1.16 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   60400 evals    1.17 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   60600 evals    1.17 h   0.07 s/eval  best chi2 = 2.580218e+02
+    [DE]   60800 evals    1.17 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   61000 evals    1.18 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   61200 evals    1.18 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   61400 evals    1.18 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   61600 evals    1.19 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   61800 evals    1.19 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   62000 evals    1.20 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   62200 evals    1.20 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   62400 evals    1.20 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   62600 evals    1.21 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   62800 evals    1.21 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   63000 evals    1.22 h   0.07 s/eval  best chi2 = 2.579971e+02
+    [DE]   63200 evals    1.22 h   0.07 s/eval  best chi2 = 2.578606e+02
+    [DE]   63400 evals    1.22 h   0.07 s/eval  best chi2 = 2.578606e+02
+    [DE]   63600 evals    1.23 h   0.07 s/eval  best chi2 = 2.577832e+02
+    [DE]   63800 evals    1.23 h   0.07 s/eval  best chi2 = 2.577832e+02
+    [DE]   64000 evals    1.24 h   0.07 s/eval  best chi2 = 2.577832e+02
+    [DE]   64200 evals    1.24 h   0.07 s/eval  best chi2 = 2.577832e+02
+    [DE]   64400 evals    1.24 h   0.07 s/eval  best chi2 = 2.576354e+02
+    [DE]   64600 evals    1.25 h   0.07 s/eval  best chi2 = 2.576354e+02
+    [DE]   64800 evals    1.25 h   0.07 s/eval  best chi2 = 2.576354e+02
+    [DE]   65000 evals    1.26 h   0.07 s/eval  best chi2 = 2.576354e+02
+    [DE]   65200 evals    1.26 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   65400 evals    1.26 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   65600 evals    1.27 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   65800 evals    1.27 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   66000 evals    1.27 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   66200 evals    1.28 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   66400 evals    1.28 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   66600 evals    1.29 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   66800 evals    1.29 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   67000 evals    1.29 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   67200 evals    1.30 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   67400 evals    1.30 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   67600 evals    1.31 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   67800 evals    1.31 h   0.07 s/eval  best chi2 = 2.574568e+02
+    [DE]   68000 evals    1.31 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   68200 evals    1.32 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   68400 evals    1.32 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   68600 evals    1.33 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   68800 evals    1.33 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   69000 evals    1.33 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   69200 evals    1.34 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   69400 evals    1.34 h   0.07 s/eval  best chi2 = 2.574047e+02
+    [DE]   69600 evals    1.35 h   0.07 s/eval  best chi2 = 2.573807e+02
+    [DE]   69800 evals    1.35 h   0.07 s/eval  best chi2 = 2.573621e+02
+    [DE]   70000 evals    1.35 h   0.07 s/eval  best chi2 = 2.573621e+02
+    [DE]   70200 evals    1.36 h   0.07 s/eval  best chi2 = 2.573621e+02
+    [DE]   70400 evals    1.36 h   0.07 s/eval  best chi2 = 2.573495e+02
+    [DE]   70600 evals    1.36 h   0.07 s/eval  best chi2 = 2.573495e+02
+    [DE]   70800 evals    1.37 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   71000 evals    1.37 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   71200 evals    1.38 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   71400 evals    1.38 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   71600 evals    1.38 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   71800 evals    1.39 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   72000 evals    1.39 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   72200 evals    1.40 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   72400 evals    1.40 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   72600 evals    1.40 h   0.07 s/eval  best chi2 = 2.572407e+02
+    [DE]   72800 evals    1.41 h   0.07 s/eval  best chi2 = 2.572330e+02
+    [DE]   73000 evals    1.41 h   0.07 s/eval  best chi2 = 2.572330e+02
+    [DE]   73200 evals    1.42 h   0.07 s/eval  best chi2 = 2.572190e+02
+    [DE]   73400 evals    1.42 h   0.07 s/eval  best chi2 = 2.572190e+02
+    [DE]   73600 evals    1.42 h   0.07 s/eval  best chi2 = 2.571683e+02
+    [DE]   73800 evals    1.43 h   0.07 s/eval  best chi2 = 2.570059e+02
+    [DE]   74000 evals    1.43 h   0.07 s/eval  best chi2 = 2.570059e+02
+    [DE]   74200 evals    1.44 h   0.07 s/eval  best chi2 = 2.569710e+02
+    [DE]   74400 evals    1.44 h   0.07 s/eval  best chi2 = 2.569710e+02
+    [DE]   74600 evals    1.44 h   0.07 s/eval  best chi2 = 2.569710e+02
+    [DE]   74800 evals    1.45 h   0.07 s/eval  best chi2 = 2.569710e+02
+    [DE]   75000 evals    1.45 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   75200 evals    1.46 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   75400 evals    1.46 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   75600 evals    1.46 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   75800 evals    1.47 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   76000 evals    1.47 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   76200 evals    1.47 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   76400 evals    1.48 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   76600 evals    1.48 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   76800 evals    1.49 h   0.07 s/eval  best chi2 = 2.569001e+02
+    [DE]   77000 evals    1.49 h   0.07 s/eval  best chi2 = 2.567968e+02
+    [DE]   77200 evals    1.49 h   0.07 s/eval  best chi2 = 2.567968e+02
+    [DE]   77400 evals    1.50 h   0.07 s/eval  best chi2 = 2.567968e+02
+    [DE]   77600 evals    1.50 h   0.07 s/eval  best chi2 = 2.567818e+02
+    [DE]   77800 evals    1.51 h   0.07 s/eval  best chi2 = 2.567813e+02
+    [DE]   78000 evals    1.51 h   0.07 s/eval  best chi2 = 2.567813e+02
+    [DE]   78200 evals    1.51 h   0.07 s/eval  best chi2 = 2.567794e+02
+    [DE]   78400 evals    1.52 h   0.07 s/eval  best chi2 = 2.567147e+02
+    [DE]   78600 evals    1.52 h   0.07 s/eval  best chi2 = 2.567147e+02
+    [DE]   78800 evals    1.53 h   0.07 s/eval  best chi2 = 2.567147e+02
+    [DE]   79000 evals    1.53 h   0.07 s/eval  best chi2 = 2.567055e+02
+    [DE]   79200 evals    1.53 h   0.07 s/eval  best chi2 = 2.566243e+02
+    [DE]   79400 evals    1.54 h   0.07 s/eval  best chi2 = 2.565870e+02
+    [DE]   79600 evals    1.54 h   0.07 s/eval  best chi2 = 2.565870e+02
+    [DE]   79800 evals    1.55 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   80000 evals    1.55 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   80200 evals    1.55 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   80400 evals    1.56 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   80600 evals    1.56 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   80800 evals    1.56 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   81000 evals    1.57 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   81200 evals    1.57 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   81400 evals    1.58 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   81600 evals    1.58 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   81800 evals    1.58 h   0.07 s/eval  best chi2 = 2.565770e+02
+    [DE]   82000 evals    1.59 h   0.07 s/eval  best chi2 = 2.564845e+02
+    [DE]   82200 evals    1.59 h   0.07 s/eval  best chi2 = 2.564512e+02
+    [DE]   82400 evals    1.60 h   0.07 s/eval  best chi2 = 2.564512e+02
+    [DE]   82600 evals    1.60 h   0.07 s/eval  best chi2 = 2.564339e+02
+    [DE]   82800 evals    1.60 h   0.07 s/eval  best chi2 = 2.564339e+02
+    [DE]   83000 evals    1.61 h   0.07 s/eval  best chi2 = 2.564339e+02
+    [DE]   83200 evals    1.61 h   0.07 s/eval  best chi2 = 2.563673e+02
+    [DE]   83400 evals    1.61 h   0.07 s/eval  best chi2 = 2.563673e+02
+    [DE]   83600 evals    1.62 h   0.07 s/eval  best chi2 = 2.563316e+02
+    [DE]   83800 evals    1.62 h   0.07 s/eval  best chi2 = 2.562875e+02
+    [DE]   84000 evals    1.63 h   0.07 s/eval  best chi2 = 2.562515e+02
+    [DE]   84200 evals    1.63 h   0.07 s/eval  best chi2 = 2.562515e+02
+    [DE]   84400 evals    1.63 h   0.07 s/eval  best chi2 = 2.562515e+02
+    [DE]   84600 evals    1.64 h   0.07 s/eval  best chi2 = 2.562515e+02
+    [DE]   84800 evals    1.64 h   0.07 s/eval  best chi2 = 2.562277e+02
+    [DE]   85000 evals    1.65 h   0.07 s/eval  best chi2 = 2.562277e+02
+    [DE]   85200 evals    1.65 h   0.07 s/eval  best chi2 = 2.562277e+02
+    [DE]   85400 evals    1.65 h   0.07 s/eval  best chi2 = 2.562243e+02
+    [DE]   85600 evals    1.66 h   0.07 s/eval  best chi2 = 2.562243e+02
+    [DE]   85800 evals    1.66 h   0.07 s/eval  best chi2 = 2.562243e+02
+    [DE]   86000 evals    1.67 h   0.07 s/eval  best chi2 = 2.562243e+02
+    [DE]   86200 evals    1.67 h   0.07 s/eval  best chi2 = 2.562243e+02
+    [DE]   86400 evals    1.67 h   0.07 s/eval  best chi2 = 2.561710e+02
+    [DE]   86600 evals    1.68 h   0.07 s/eval  best chi2 = 2.561250e+02
+    [DE]   86800 evals    1.68 h   0.07 s/eval  best chi2 = 2.561250e+02
+    [DE]   87000 evals    1.69 h   0.07 s/eval  best chi2 = 2.561230e+02
+    [DE]   87200 evals    1.69 h   0.07 s/eval  best chi2 = 2.561230e+02
+    [DE]   87400 evals    1.69 h   0.07 s/eval  best chi2 = 2.561156e+02
+    [DE]   87600 evals    1.70 h   0.07 s/eval  best chi2 = 2.561156e+02
+    [DE]   87800 evals    1.70 h   0.07 s/eval  best chi2 = 2.561156e+02
+    [DE]   88000 evals    1.70 h   0.07 s/eval  best chi2 = 2.561143e+02
+    [DE]   88200 evals    1.71 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   88400 evals    1.71 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   88600 evals    1.72 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   88800 evals    1.72 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   89000 evals    1.72 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   89200 evals    1.73 h   0.07 s/eval  best chi2 = 2.560832e+02
+    [DE]   89400 evals    1.73 h   0.07 s/eval  best chi2 = 2.560676e+02
+    [DE]   89600 evals    1.74 h   0.07 s/eval  best chi2 = 2.560038e+02
+    [DE]   89800 evals    1.74 h   0.07 s/eval  best chi2 = 2.559997e+02
+    [DE]   90000 evals    1.74 h   0.07 s/eval  best chi2 = 2.559813e+02
+    [DE]   90200 evals    1.75 h   0.07 s/eval  best chi2 = 2.559506e+02
+    [DE]   90400 evals    1.75 h   0.07 s/eval  best chi2 = 2.559506e+02
+    [DE]   90600 evals    1.76 h   0.07 s/eval  best chi2 = 2.558888e+02
+    [DE]   90800 evals    1.76 h   0.07 s/eval  best chi2 = 2.558888e+02
+    [DE]   91000 evals    1.76 h   0.07 s/eval  best chi2 = 2.558888e+02
+    [DE]   91200 evals    1.77 h   0.07 s/eval  best chi2 = 2.558323e+02
+    [DE]   91400 evals    1.77 h   0.07 s/eval  best chi2 = 2.558323e+02
+    [DE]   91600 evals    1.77 h   0.07 s/eval  best chi2 = 2.558323e+02
+    [DE]   91800 evals    1.78 h   0.07 s/eval  best chi2 = 2.558323e+02
+    [DE]   92000 evals    1.78 h   0.07 s/eval  best chi2 = 2.558216e+02
+    [DE]   92200 evals    1.79 h   0.07 s/eval  best chi2 = 2.558216e+02
+    [DE]   92400 evals    1.79 h   0.07 s/eval  best chi2 = 2.558216e+02
+    [DE]   92600 evals    1.79 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   92800 evals    1.80 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   93000 evals    1.80 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   93200 evals    1.81 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   93400 evals    1.81 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   93600 evals    1.81 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   93800 evals    1.82 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   94000 evals    1.82 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   94200 evals    1.83 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   94400 evals    1.83 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   94600 evals    1.83 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   94800 evals    1.84 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   95000 evals    1.84 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   95200 evals    1.85 h   0.07 s/eval  best chi2 = 2.557762e+02
+    [DE]   95400 evals    1.85 h   0.07 s/eval  best chi2 = 2.557632e+02
+    [DE]   95600 evals    1.85 h   0.07 s/eval  best chi2 = 2.557308e+02
+    [DE]   95800 evals    1.86 h   0.07 s/eval  best chi2 = 2.557308e+02
+    [DE]   96000 evals    1.86 h   0.07 s/eval  best chi2 = 2.557223e+02
+    [DE]   96200 evals    1.86 h   0.07 s/eval  best chi2 = 2.556952e+02
+    [DE]   96400 evals    1.87 h   0.07 s/eval  best chi2 = 2.556952e+02
+    [DE]   96600 evals    1.87 h   0.07 s/eval  best chi2 = 2.556556e+02
+    [DE]   96800 evals    1.88 h   0.07 s/eval  best chi2 = 2.556556e+02
+    [DE]   97000 evals    1.88 h   0.07 s/eval  best chi2 = 2.556556e+02
+    [DE]   97200 evals    1.88 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   97400 evals    1.89 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   97600 evals    1.89 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   97800 evals    1.90 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   98000 evals    1.90 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   98200 evals    1.90 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   98400 evals    1.91 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   98600 evals    1.91 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   98800 evals    1.92 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   99000 evals    1.92 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   99200 evals    1.92 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   99400 evals    1.93 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   99600 evals    1.93 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]   99800 evals    1.93 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]  100000 evals    1.94 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]  100200 evals    1.94 h   0.07 s/eval  best chi2 = 2.555408e+02
+    [DE]  100400 evals    1.95 h   0.07 s/eval  best chi2 = 2.555368e+02
+    [DE]  100600 evals    1.95 h   0.07 s/eval  best chi2 = 2.555368e+02
+    [DE]  100800 evals    1.95 h   0.07 s/eval  best chi2 = 2.554739e+02
+    [DE]  101000 evals    1.96 h   0.07 s/eval  best chi2 = 2.554739e+02
+    [DE]  101200 evals    1.96 h   0.07 s/eval  best chi2 = 2.554739e+02
+    [DE]  101400 evals    1.97 h   0.07 s/eval  best chi2 = 2.554739e+02
+    [DE]  101600 evals    1.97 h   0.07 s/eval  best chi2 = 2.554739e+02
+    [DE]  101800 evals    1.97 h   0.07 s/eval  best chi2 = 2.554659e+02
+    [DE]  102000 evals    1.98 h   0.07 s/eval  best chi2 = 2.554659e+02
+    [DE]  102200 evals    1.98 h   0.07 s/eval  best chi2 = 2.554629e+02
+    [DE]  102400 evals    1.98 h   0.07 s/eval  best chi2 = 2.554507e+02
+    [DE]  102600 evals    1.99 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  102800 evals    1.99 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  103000 evals    2.00 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  103200 evals    2.00 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  103400 evals    2.00 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  103600 evals    2.01 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  103800 evals    2.01 h   0.07 s/eval  best chi2 = 2.553920e+02
+    [DE]  104000 evals    2.02 h   0.07 s/eval  best chi2 = 2.553686e+02
+    [DE]  104200 evals    2.02 h   0.07 s/eval  best chi2 = 2.553686e+02
+    [DE]  104400 evals    2.02 h   0.07 s/eval  best chi2 = 2.553560e+02
+    [DE]  104600 evals    2.03 h   0.07 s/eval  best chi2 = 2.553560e+02
+    [DE]  104800 evals    2.03 h   0.07 s/eval  best chi2 = 2.553560e+02
+    [DE]  105000 evals    2.04 h   0.07 s/eval  best chi2 = 2.553560e+02
+    [DE]  105200 evals    2.04 h   0.07 s/eval  best chi2 = 2.553374e+02
+    [DE]  105400 evals    2.04 h   0.07 s/eval  best chi2 = 2.553235e+02
+    [DE]  105600 evals    2.05 h   0.07 s/eval  best chi2 = 2.553235e+02
+    [DE]  105800 evals    2.05 h   0.07 s/eval  best chi2 = 2.552916e+02
+    [DE]  106000 evals    2.05 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  106200 evals    2.06 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  106400 evals    2.06 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  106600 evals    2.07 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  106800 evals    2.07 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  107000 evals    2.07 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  107200 evals    2.08 h   0.07 s/eval  best chi2 = 2.552829e+02
+    [DE]  107400 evals    2.08 h   0.07 s/eval  best chi2 = 2.552749e+02
+    [DE]  107600 evals    2.09 h   0.07 s/eval  best chi2 = 2.552688e+02
+    [DE]  107800 evals    2.09 h   0.07 s/eval  best chi2 = 2.552057e+02
+    [DE]  108000 evals    2.09 h   0.07 s/eval  best chi2 = 2.551772e+02
+    [DE]  108200 evals    2.10 h   0.07 s/eval  best chi2 = 2.551723e+02
+    [DE]  108400 evals    2.10 h   0.07 s/eval  best chi2 = 2.551356e+02
+    [DE]  108600 evals    2.11 h   0.07 s/eval  best chi2 = 2.551356e+02
+    [DE]  108800 evals    2.11 h   0.07 s/eval  best chi2 = 2.551088e+02
+    [DE]  109000 evals    2.11 h   0.07 s/eval  best chi2 = 2.551088e+02
+    [DE]  109200 evals    2.12 h   0.07 s/eval  best chi2 = 2.551088e+02
+    [DE]  109400 evals    2.12 h   0.07 s/eval  best chi2 = 2.551088e+02
+    [DE]  109600 evals    2.12 h   0.07 s/eval  best chi2 = 2.551088e+02
+    [DE]  109800 evals    2.13 h   0.07 s/eval  best chi2 = 2.550964e+02
+    [DE]  110000 evals    2.13 h   0.07 s/eval  best chi2 = 2.550964e+02
+    [DE]  110200 evals    2.14 h   0.07 s/eval  best chi2 = 2.550964e+02
+    [DE]  110400 evals    2.14 h   0.07 s/eval  best chi2 = 2.550723e+02
+    [DE]  110600 evals    2.14 h   0.07 s/eval  best chi2 = 2.550723e+02
+    [DE]  110800 evals    2.15 h   0.07 s/eval  best chi2 = 2.550723e+02
+    [DE]  111000 evals    2.15 h   0.07 s/eval  best chi2 = 2.550723e+02
+    [DE]  111200 evals    2.16 h   0.07 s/eval  best chi2 = 2.550285e+02
+    [DE]  111400 evals    2.16 h   0.07 s/eval  best chi2 = 2.550285e+02
+    [DE]  111600 evals    2.16 h   0.07 s/eval  best chi2 = 2.550278e+02
+    [DE]  111800 evals    2.17 h   0.07 s/eval  best chi2 = 2.550278e+02
+    [DE]  112000 evals    2.17 h   0.07 s/eval  best chi2 = 2.550235e+02
+    [DE]  112200 evals    2.17 h   0.07 s/eval  best chi2 = 2.550235e+02
+    [DE]  112400 evals    2.18 h   0.07 s/eval  best chi2 = 2.550213e+02
+    [DE]  112600 evals    2.18 h   0.07 s/eval  best chi2 = 2.550213e+02
+    [DE]  112800 evals    2.19 h   0.07 s/eval  best chi2 = 2.550213e+02
+    [DE]  113000 evals    2.19 h   0.07 s/eval  best chi2 = 2.550213e+02
+    [DE]  113200 evals    2.19 h   0.07 s/eval  best chi2 = 2.550153e+02
+    [DE]  113400 evals    2.20 h   0.07 s/eval  best chi2 = 2.549752e+02
+    [DE]  113600 evals    2.20 h   0.07 s/eval  best chi2 = 2.549533e+02
+    [DE]  113800 evals    2.21 h   0.07 s/eval  best chi2 = 2.549478e+02
+    [DE]  114000 evals    2.21 h   0.07 s/eval  best chi2 = 2.549478e+02
+    [DE]  114200 evals    2.21 h   0.07 s/eval  best chi2 = 2.549478e+02
+    [DE]  114400 evals    2.22 h   0.07 s/eval  best chi2 = 2.549312e+02
+    [DE]  114600 evals    2.22 h   0.07 s/eval  best chi2 = 2.549296e+02
+    [DE]  114800 evals    2.23 h   0.07 s/eval  best chi2 = 2.549296e+02
+    [DE]  115000 evals    2.23 h   0.07 s/eval  best chi2 = 2.549296e+02
+    [DE]  115200 evals    2.23 h   0.07 s/eval  best chi2 = 2.549296e+02
+    [DE]  115400 evals    2.24 h   0.07 s/eval  best chi2 = 2.549255e+02
+    [DE]  115600 evals    2.24 h   0.07 s/eval  best chi2 = 2.549249e+02
+    [DE]  115800 evals    2.24 h   0.07 s/eval  best chi2 = 2.549249e+02
+    [DE]  116000 evals    2.25 h   0.07 s/eval  best chi2 = 2.549249e+02
+    [DE]  116200 evals    2.25 h   0.07 s/eval  best chi2 = 2.549196e+02
+    [DE]  116400 evals    2.26 h   0.07 s/eval  best chi2 = 2.549196e+02
+    [DE]  116600 evals    2.26 h   0.07 s/eval  best chi2 = 2.549156e+02
+    [DE]  116800 evals    2.26 h   0.07 s/eval  best chi2 = 2.549156e+02
+    [DE]  117000 evals    2.27 h   0.07 s/eval  best chi2 = 2.548663e+02
+    [DE]  117200 evals    2.27 h   0.07 s/eval  best chi2 = 2.548353e+02
+    [DE]  117400 evals    2.28 h   0.07 s/eval  best chi2 = 2.548298e+02
+    [DE]  117600 evals    2.28 h   0.07 s/eval  best chi2 = 2.548257e+02
+    [DE]  117800 evals    2.28 h   0.07 s/eval  best chi2 = 2.548257e+02
+    [DE]  118000 evals    2.29 h   0.07 s/eval  best chi2 = 2.548257e+02
+    [DE]  118200 evals    2.29 h   0.07 s/eval  best chi2 = 2.548257e+02
+    [DE]  118400 evals    2.30 h   0.07 s/eval  best chi2 = 2.548170e+02
+    [DE]  118600 evals    2.30 h   0.07 s/eval  best chi2 = 2.548170e+02
+    [DE]  118800 evals    2.30 h   0.07 s/eval  best chi2 = 2.548170e+02
+    [DE]  119000 evals    2.31 h   0.07 s/eval  best chi2 = 2.548138e+02
+    [DE]  119200 evals    2.31 h   0.07 s/eval  best chi2 = 2.548074e+02
+    [DE]  119400 evals    2.31 h   0.07 s/eval  best chi2 = 2.548074e+02
+    [DE]  119600 evals    2.32 h   0.07 s/eval  best chi2 = 2.548020e+02
+    [DE]  119800 evals    2.32 h   0.07 s/eval  best chi2 = 2.547753e+02
+    [DE]  120000 evals    2.33 h   0.07 s/eval  best chi2 = 2.547753e+02
+    [DE]  120200 evals    2.33 h   0.07 s/eval  best chi2 = 2.547753e+02
+    [DE]  120400 evals    2.33 h   0.07 s/eval  best chi2 = 2.547753e+02
+    [DE]  120600 evals    2.34 h   0.07 s/eval  best chi2 = 2.547538e+02
+    [DE]  120800 evals    2.34 h   0.07 s/eval  best chi2 = 2.547349e+02
+    [DE]  121000 evals    2.35 h   0.07 s/eval  best chi2 = 2.547084e+02
+    [DE]  121200 evals    2.35 h   0.07 s/eval  best chi2 = 2.546899e+02
+    [DE]  121400 evals    2.35 h   0.07 s/eval  best chi2 = 2.546899e+02
+    [DE]  121600 evals    2.36 h   0.07 s/eval  best chi2 = 2.546899e+02
+    [DE]  121800 evals    2.36 h   0.07 s/eval  best chi2 = 2.546899e+02
+    [DE]  122000 evals    2.37 h   0.07 s/eval  best chi2 = 2.546899e+02
+    [DE]  122200 evals    2.37 h   0.07 s/eval  best chi2 = 2.546700e+02
+    [DE]  122400 evals    2.37 h   0.07 s/eval  best chi2 = 2.546700e+02
+    [DE]  122600 evals    2.38 h   0.07 s/eval  best chi2 = 2.546589e+02
+    [DE]  122800 evals    2.38 h   0.07 s/eval  best chi2 = 2.546589e+02
+    [DE]  123000 evals    2.39 h   0.07 s/eval  best chi2 = 2.546025e+02
+    [DE]  123200 evals    2.39 h   0.07 s/eval  best chi2 = 2.546025e+02
+    [DE]  123400 evals    2.39 h   0.07 s/eval  best chi2 = 2.545893e+02
+    [DE]  123600 evals    2.40 h   0.07 s/eval  best chi2 = 2.545893e+02
+    [DE]  123800 evals    2.40 h   0.07 s/eval  best chi2 = 2.545893e+02
+    [DE]  124000 evals    2.40 h   0.07 s/eval  best chi2 = 2.545893e+02
+    [DE]  124200 evals    2.41 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  124400 evals    2.41 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  124600 evals    2.42 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  124800 evals    2.42 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  125000 evals    2.42 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  125200 evals    2.43 h   0.07 s/eval  best chi2 = 2.545755e+02
+    [DE]  125400 evals    2.43 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  125600 evals    2.44 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  125800 evals    2.44 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  126000 evals    2.44 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  126200 evals    2.45 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  126400 evals    2.45 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  126600 evals    2.46 h   0.07 s/eval  best chi2 = 2.545621e+02
+    [DE]  126800 evals    2.46 h   0.07 s/eval  best chi2 = 2.545611e+02
+    [DE]  127000 evals    2.46 h   0.07 s/eval  best chi2 = 2.545611e+02
+    [DE]  127200 evals    2.47 h   0.07 s/eval  best chi2 = 2.545411e+02
+    [DE]  127400 evals    2.47 h   0.07 s/eval  best chi2 = 2.545411e+02
+    [DE]  127600 evals    2.48 h   0.07 s/eval  best chi2 = 2.545411e+02
+    [DE]  127800 evals    2.48 h   0.07 s/eval  best chi2 = 2.545373e+02
+    [DE]  128000 evals    2.48 h   0.07 s/eval  best chi2 = 2.545314e+02
+    [DE]  128200 evals    2.49 h   0.07 s/eval  best chi2 = 2.545314e+02
+    [DE]  128400 evals    2.49 h   0.07 s/eval  best chi2 = 2.545314e+02
+    [DE]  128600 evals    2.49 h   0.07 s/eval  best chi2 = 2.545243e+02
+    [DE]  128800 evals    2.50 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  129000 evals    2.50 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  129200 evals    2.51 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  129400 evals    2.51 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  129600 evals    2.51 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  129800 evals    2.52 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  130000 evals    2.52 h   0.07 s/eval  best chi2 = 2.544777e+02
+    [DE]  130200 evals    2.53 h   0.07 s/eval  best chi2 = 2.544606e+02
+    [DE]  130400 evals    2.53 h   0.07 s/eval  best chi2 = 2.544415e+02
+    [DE]  130600 evals    2.53 h   0.07 s/eval  best chi2 = 2.544415e+02
+    [DE]  130800 evals    2.54 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  131000 evals    2.54 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  131200 evals    2.54 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  131400 evals    2.55 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  131600 evals    2.55 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  131800 evals    2.56 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  132000 evals    2.56 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  132200 evals    2.56 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  132400 evals    2.57 h   0.07 s/eval  best chi2 = 2.544313e+02
+    [DE]  132600 evals    2.57 h   0.07 s/eval  best chi2 = 2.544173e+02
+    [DE]  132800 evals    2.58 h   0.07 s/eval  best chi2 = 2.544104e+02
+    [DE]  133000 evals    2.58 h   0.07 s/eval  best chi2 = 2.544104e+02
+    [DE]  133200 evals    2.58 h   0.07 s/eval  best chi2 = 2.544104e+02
+    [DE]  133400 evals    2.59 h   0.07 s/eval  best chi2 = 2.543952e+02
+    [DE]  133600 evals    2.59 h   0.07 s/eval  best chi2 = 2.543846e+02
+    [DE]  133800 evals    2.59 h   0.07 s/eval  best chi2 = 2.543837e+02
+    [DE]  134000 evals    2.60 h   0.07 s/eval  best chi2 = 2.543837e+02
+    [DE]  134200 evals    2.60 h   0.07 s/eval  best chi2 = 2.543694e+02
+    [DE]  134400 evals    2.61 h   0.07 s/eval  best chi2 = 2.543694e+02
+    [DE]  134600 evals    2.61 h   0.07 s/eval  best chi2 = 2.543694e+02
+    [DE]  134800 evals    2.61 h   0.07 s/eval  best chi2 = 2.543694e+02
+    [DE]  135000 evals    2.62 h   0.07 s/eval  best chi2 = 2.543589e+02
+    [DE]  135200 evals    2.62 h   0.07 s/eval  best chi2 = 2.543589e+02
+    [DE]  135400 evals    2.63 h   0.07 s/eval  best chi2 = 2.543589e+02
+    [DE]  135600 evals    2.63 h   0.07 s/eval  best chi2 = 2.543589e+02
+    [DE]  135800 evals    2.63 h   0.07 s/eval  best chi2 = 2.543325e+02
+    [DE]  136000 evals    2.64 h   0.07 s/eval  best chi2 = 2.543325e+02
+    [DE]  136200 evals    2.64 h   0.07 s/eval  best chi2 = 2.543277e+02
+    [DE]  136400 evals    2.64 h   0.07 s/eval  best chi2 = 2.543081e+02
+    [DE]  136600 evals    2.65 h   0.07 s/eval  best chi2 = 2.543081e+02
+    [DE]  136800 evals    2.65 h   0.07 s/eval  best chi2 = 2.543081e+02
+    [DE]  137000 evals    2.66 h   0.07 s/eval  best chi2 = 2.543012e+02
+    [DE]  137200 evals    2.66 h   0.07 s/eval  best chi2 = 2.543012e+02
+    [DE]  137400 evals    2.66 h   0.07 s/eval  best chi2 = 2.543012e+02
+    [DE]  137600 evals    2.67 h   0.07 s/eval  best chi2 = 2.542925e+02
+    [DE]  137800 evals    2.67 h   0.07 s/eval  best chi2 = 2.542871e+02
+    [DE]  138000 evals    2.68 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  138200 evals    2.68 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  138400 evals    2.68 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  138600 evals    2.69 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  138800 evals    2.69 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  139000 evals    2.70 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  139200 evals    2.70 h   0.07 s/eval  best chi2 = 2.542702e+02
+    [DE]  139400 evals    2.70 h   0.07 s/eval  best chi2 = 2.542637e+02
+    [DE]  139600 evals    2.71 h   0.07 s/eval  best chi2 = 2.542637e+02
+    [DE]  139800 evals    2.71 h   0.07 s/eval  best chi2 = 2.542637e+02
+    [DE]  140000 evals    2.71 h   0.07 s/eval  best chi2 = 2.542637e+02
+    [DE]  140200 evals    2.72 h   0.07 s/eval  best chi2 = 2.542571e+02
+    [DE]  140400 evals    2.72 h   0.07 s/eval  best chi2 = 2.542571e+02
+    [DE]  140600 evals    2.73 h   0.07 s/eval  best chi2 = 2.542571e+02
+    [DE]  140800 evals    2.73 h   0.07 s/eval  best chi2 = 2.542571e+02
+    [DE]  141000 evals    2.73 h   0.07 s/eval  best chi2 = 2.542523e+02
+    [DE]  141200 evals    2.74 h   0.07 s/eval  best chi2 = 2.542523e+02
+[DE  ] 1100 iters, 141279 evals, 2.74 h (Maximum number of iterations has been exceeded.)
+[LM  ] 0PA + 2.5PN deviation, 8 parameters, lam0 = 0.01, up to 150 iterations
+[LM  ] seed: m1=1000650.845, m2=2020.118035, p0=24.4364343, e0=0.04088163276, Phi_phi0=0.3754358823, Phi_r0=2.321232875, dev_1=36.67334904, dev_2=-0.03161192814
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000650.8453039343), np.float64(2020.1180347084514), 0.0, np.float64(24.436434297066313), np.float64(0.04088163275778659), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.37543588226849767), 0.0, np.float64(2.321232875003745), 0.0, False, False, False, True, np.float64(36.673349038873155), np.float64(-0.031611928144676504), 0.0, 0.0)
+Waveform Generated. SNR: 86.19491905306931
+calculating stable deltas...
+Time taken to compute stable deltas is 27.607540130615234 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4795689582824707 seconds
+    [LM1] it   0  lam = 3.3e-03  ov = 0.982769371229  chi2 = 2.542571e+02  rel = 1.03e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000650.8470983572), np.float64(2020.117920604902), 0.0, np.float64(24.43643437127351), np.float64(0.0408798424680109), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.3652416208197003), 0.0, np.float64(2.310575087068896), 0.0, False, False, False, True, np.float64(36.673562234206145), np.float64(-0.0914851513233016), 0.0, 0.0)
+Waveform Generated. SNR: 86.19474819249999
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0523741245269775 seconds
+    [LM1] it   1  lam = 1.1e-03  ov = 0.982787099158  chi2 = 2.539954e+02  rel = 1.19e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000650.8314802005), np.float64(2020.1176666970946), 0.0, np.float64(24.43643434052416), np.float64(0.040872665737992545), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.3482067669442735), 0.0, np.float64(2.296171076547033), 0.0, False, False, False, True, np.float64(36.6740388657667), np.float64(-0.10721159819079085), 0.0, 0.0)
+Waveform Generated. SNR: 86.19387423765801
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.056473970413208 seconds
+    [LM1] it   2  lam = 3.7e-04  ov = 0.982807370565  chi2 = 2.536931e+02  rel = 3.15e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000650.9265410908), np.float64(2020.1174680681784), 0.0, np.float64(24.43643525362374), np.float64(0.0408667067513605), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.3151780986042751), 0.0, np.float64(2.27193837120283), 0.0, False, False, False, True, np.float64(36.67427849319763), np.float64(-0.35316483030130713), 0.0, 0.0)
+Waveform Generated. SNR: 86.1933095515839
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0644288063049316 seconds
+    [LM1] it   3  lam = 4.0e-04  ov = 0.982861515160  chi2 = 2.528937e+02  rel = 8.36e-04
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000651.3227328237), np.float64(2020.1180224959985), 0.0, np.float64(24.436438310001826), np.float64(0.04085776829195284), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.27797215593958935), 0.0, np.float64(2.2422095630332293), 0.0, False, False, False, True, np.float64(36.67262866327354), np.float64(-0.6893367239345329), 0.0, 0.0)
+Waveform Generated. SNR: 86.19463657295104
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.13403582572937 seconds
+    [LM1] it   4  lam = 1.3e-04  ov = 0.982876292673  chi2 = 2.526823e+02  rel = 5.86e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000651.6592675), np.float64(2020.118221039459), 0.0, np.float64(24.436440988463414), np.float64(0.04083779751441061), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.23743676613067627), 0.0, np.float64(2.2060329979352753), 0.0, False, False, False, True, np.float64(36.6716871119986), np.float64(-0.8372151924933834), 0.0, 0.0)
+Waveform Generated. SNR: 86.18904397232599
+calculating stable deltas...
+Time taken to compute stable deltas is 27.48407554626465 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.456963300704956 seconds
+    [LM1] it   5  lam = 4.4e-05  ov = 0.982975214115  chi2 = 2.512011e+02  rel = 4.95e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000652.561570496), np.float64(2020.119692509807), 0.0, np.float64(24.436447546546347), np.float64(0.04078280801096881), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.172689430651513), 0.0, np.float64(2.1485057687958955), 0.0, False, False, False, True, np.float64(36.66727888450453), np.float64(-0.7430715389836287), 0.0, 0.0)
+Waveform Generated. SNR: 86.18905868769511
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0563085079193115 seconds
+    [LM1] it   6  lam = 1.5e-05  ov = 0.983059794662  chi2 = 2.499565e+02  rel = 8.87e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000655.1641031699), np.float64(2020.1250112532575), 0.0, np.float64(24.436466191083806), np.float64(0.040682638379049646), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(0.08106039394187103), 0.0, np.float64(2.0674511419208783), 0.0, False, False, False, True, np.float64(36.65278630098134), np.float64(-0.7123568212116579), 0.0, 0.0)
+Waveform Generated. SNR: 86.18976698878463
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0606884956359863 seconds
+    [LM1] it   7  lam = 4.9e-06  ov = 0.983210610928  chi2 = 2.477404e+02  rel = 1.36e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000662.2809727091), np.float64(2020.1411319999777), 0.0, np.float64(24.436517333670412), np.float64(0.04053101380510488), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.020261535751932153), 0.0, np.float64(1.9721249695919156), 0.0, False, False, False, True, np.float64(36.61060590661671), np.float64(-1.619329662162953), 0.0, 0.0)
+Waveform Generated. SNR: 86.28026403008587
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0751662254333496 seconds
+    [LM1] it   8  lam = 3.3e-06  ov = 0.983467251218  chi2 = 2.443766e+02  rel = 1.71e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000672.0009033305), np.float64(2020.1635100712165), 0.0, np.float64(24.436587981500125), np.float64(0.04036378413787476), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.11954571658923549), 0.0, np.float64(1.8729462375313888), 0.0, False, False, False, True, np.float64(36.55199651460245), np.float64(-3.329909398501842), 0.0, 0.0)
+Waveform Generated. SNR: 86.27768245297862
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.049640417098999 seconds
+    [LM1] it   9  lam = 5.8e-06  ov = 0.983750192320  chi2 = 2.401968e+02  rel = 1.60e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000685.1726660338), np.float64(2020.1942596938302), 0.0, np.float64(24.43668527938263), np.float64(0.040173895719020046), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.21360754597147144), 0.0, np.float64(1.7704951604100336), 0.0, False, False, False, True, np.float64(36.47098235207588), np.float64(-6.088712166935247), 0.0, 0.0)
+Waveform Generated. SNR: 86.27272669794552
+calculating stable deltas...
+Time taken to compute stable deltas is 27.433027744293213 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.459506034851074 seconds
+    [LM1] it  10  lam = 5.2e-06  ov = 0.984008805205  chi2 = 2.363648e+02  rel = 2.32e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000698.7707763017), np.float64(2020.2260032670606), 0.0, np.float64(24.43678763232899), np.float64(0.039987231411110824), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.30787427691168934), 0.0, np.float64(1.6643520581088063), 0.0, False, False, False, True, np.float64(36.3862059293916), np.float64(-9.260593202515189), 0.0, 0.0)
+Waveform Generated. SNR: 86.17774658498936
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.061924457550049 seconds
+    [LM1] it  11  lam = 5.0e-06  ov = 0.984352894276  chi2 = 2.308796e+02  rel = 2.57e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000712.7514170074), np.float64(2020.2587080223213), 0.0, np.float64(24.436895265236767), np.float64(0.039799267362209415), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.404444682001753), 0.0, np.float64(1.5541943806280747), 0.0, False, False, False, True, np.float64(36.2976394694146), np.float64(-12.769590997736806), 0.0, 0.0)
+Waveform Generated. SNR: 86.17510953922056
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0631356239318848 seconds
+    [LM1] it  12  lam = 4.7e-06  ov = 0.984755373088  chi2 = 2.249466e+02  rel = 3.01e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000726.2393870212), np.float64(2020.2901548563655), 0.0, np.float64(24.43700175704802), np.float64(0.039615895587229416), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.5053653559174534), 0.0, np.float64(1.439814892353426), 0.0, False, False, False, True, np.float64(36.210745868150255), np.float64(-16.38862661543272), 0.0, 0.0)
+Waveform Generated. SNR: 86.17349241489497
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.060702323913574 seconds
+    [LM1] it  13  lam = 4.3e-06  ov = 0.985214949097  chi2 = 2.181783e+02  rel = 3.16e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000739.4975953428), np.float64(2020.3210160765839), 0.0, np.float64(24.43710964234311), np.float64(0.039433434342344434), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.6097838153818973), 0.0, np.float64(1.3216458377387184), 0.0, False, False, False, True, np.float64(36.123445570373406), np.float64(-20.15783718061102), 0.0, 0.0)
+Waveform Generated. SNR: 86.17244897400488
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0709142684936523 seconds
+    [LM1] it  14  lam = 4.1e-06  ov = 0.985683659138  chi2 = 2.112781e+02  rel = 3.17e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000752.4527767403), np.float64(2020.3510959432338), 0.0, np.float64(24.437219021290375), np.float64(0.039253617186951854), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.7159615848189855), 0.0, np.float64(1.201050412145321), 0.0, False, False, False, True, np.float64(36.035809840811), np.float64(-24.085114642511563), 0.0, 0.0)
+Waveform Generated. SNR: 86.17133640446156
+calculating stable deltas...
+Time taken to compute stable deltas is 27.56877636909485 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.47529673576355 seconds
+    [LM1] it  15  lam = 3.6e-06  ov = 0.986139176943  chi2 = 2.045719e+02  rel = 3.46e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000764.7399582152), np.float64(2020.3795224314104), 0.0, np.float64(24.437327422610753), np.float64(0.03908001008421449), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.8230917267746602), 0.0, np.float64(1.079305171950147), 0.0, False, False, False, True, np.float64(35.949942520846015), np.float64(-28.066345442456274), 0.0, 0.0)
+Waveform Generated. SNR: 86.17097703617335
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0594024658203125 seconds
+    [LM1] it  16  lam = 3.4e-06  ov = 0.986620459272  chi2 = 1.974898e+02  rel = 3.16e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000776.5630012135), np.float64(2020.406770804639), 0.0, np.float64(24.437437932503332), np.float64(0.03891155909055302), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-0.9286484276238378), 0.0, np.float64(0.9578311319961109), 0.0, False, False, False, True, np.float64(35.863571722050786), np.float64(-32.17982997603981), 0.0, 0.0)
+Waveform Generated. SNR: 86.17002077214796
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0591232776641846 seconds
+    [LM1] it  17  lam = 2.5e-06  ov = 0.987044288501  chi2 = 1.912507e+02  rel = 3.80e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000787.20962476), np.float64(2020.4311045278446), 0.0, np.float64(24.437544697470532), np.float64(0.038753617168498504), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.033361827578299), 0.0, np.float64(0.8373907616152005), 0.0, False, False, False, True, np.float64(35.781429611983896), np.float64(-36.1700083379588), 0.0, 0.0)
+Waveform Generated. SNR: 86.17071719745448
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0582339763641357 seconds
+    [LM1] it  18  lam = 2.5e-06  ov = 0.987538719454  chi2 = 1.839792e+02  rel = 2.29e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000797.9240891265), np.float64(2020.4554157747734), 0.0, np.float64(24.437667975652598), np.float64(0.038596677831199126), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.1302944152673682), 0.0, np.float64(0.7189572004634888), 0.0, False, False, False, True, np.float64(35.68893569367452), np.float64(-40.62600893964407), 0.0, 0.0)
+Waveform Generated. SNR: 86.16823974380114
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0393993854522705 seconds
+    [LM1] it  19  lam = 1.2e-06  ov = 0.987824660247  chi2 = 1.797633e+02  rel = 3.98e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000806.1258188855), np.float64(2020.4735413175342), 0.0, np.float64(24.43777810393852), np.float64(0.038457505952865643), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.229778931215079), 0.0, np.float64(0.6007877270452195), 0.0, False, False, False, True, np.float64(35.60905242976676), np.float64(-44.45248770842745), 0.0, 0.0)
+Waveform Generated. SNR: 86.16935077425522
+calculating stable deltas...
+Time taken to compute stable deltas is 27.468223810195923 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4585719108581543 seconds
+    [LM1] it  20  lam = 1.2e-06  ov = 0.988311635422  chi2 = 1.726031e+02  rel = 1.74e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000812.8556117078), np.float64(2020.4869323276935), 0.0, np.float64(24.437941558489683), np.float64(0.03831597148643206), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.318624239717168), 0.0, np.float64(0.4775386296491421), 0.0, False, False, False, True, np.float64(35.498782154919255), np.float64(-48.89780434636527), 0.0, 0.0)
+Waveform Generated. SNR: 86.16598169893747
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0651657581329346 seconds
+    [LM1] it  21  lam = 4.0e-07  ov = 0.988514708227  chi2 = 1.696035e+02  rel = 3.81e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000815.4345846438), np.float64(2020.48999746133), 0.0, np.float64(24.43808371292113), np.float64(0.038194176235901454), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.4173391863997098), 0.0, np.float64(0.34963192964684897), 0.0, False, False, False, True, np.float64(35.409372742736565), np.float64(-51.965686064576104), 0.0, 0.0)
+Waveform Generated. SNR: 86.16733619703523
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0558013916015625 seconds
+    [LM1] it  22  lam = 1.3e-07  ov = 0.988954615375  chi2 = 1.631366e+02  rel = 2.22e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000806.6020144338), np.float64(2020.45867121523), 0.0, np.float64(24.438398369601543), np.float64(0.03807092356786965), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.5147942515670416), 0.0, np.float64(0.1796620216395015), 0.0, False, False, False, True, np.float64(35.23194050119178), np.float64(-54.780596746537775), 0.0, 0.0)
+Waveform Generated. SNR: 86.16343724099615
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.060663938522339 seconds
+    [LM1] it  23  lam = 4.5e-08  ov = 0.989199646078  chi2 = 1.595184e+02  rel = 2.51e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000766.9684181848), np.float64(2020.3224442276342), 0.0, np.float64(24.439176558425434), np.float64(0.037953487748776105), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.6137456640294257), 0.0, np.float64(-0.10502880298080003), 0.0, False, False, False, True, np.float64(34.796840350056456), np.float64(-57.11512757057818), 0.0, 0.0)
+Waveform Generated. SNR: 86.15216403498849
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0513839721679688 seconds
+    [LM1] it  24  lam = 4.0e-08  ov = 0.989468895336  chi2 = 1.555194e+02  rel = 2.23e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000667.0952698991), np.float64(2019.8684621030843), 0.0, np.float64(24.440908140394463), np.float64(0.03786219667199955), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.7023912624505817), 0.0, np.float64(-0.627544514021962), 0.0, False, False, False, True, np.float64(33.62744062968799), np.float64(-60.068920896040495), 0.0, 0.0)
+Waveform Generated. SNR: 86.11766541711431
+calculating stable deltas...
+Time taken to compute stable deltas is 27.431758642196655 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4741947650909424 seconds
+    [LM1] it  25  lam = 3.4e-08  ov = 0.989696425384  chi2 = 1.520589e+02  rel = 3.23e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000567.3636360187), np.float64(2019.3552504397433), 0.0, np.float64(24.44260620038793), np.float64(0.037784313121566014), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.7924396710276862), 0.0, np.float64(-1.1854670481748386), 0.0, False, False, False, True, np.float64(32.36888997044618), np.float64(-62.789661701910255), 0.0, 0.0)
+Waveform Generated. SNR: 86.0823025553857
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0496973991394043 seconds
+    [LM1] it  26  lam = 3.4e-08  ov = 0.990022742878  chi2 = 1.471489e+02  rel = 2.90e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000463.6425361154), np.float64(2018.7603773796639), 0.0, np.float64(24.44434073233479), np.float64(0.03771875412273393), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.8855289667383786), 0.0, np.float64(-1.7483313625360046), 0.0, False, False, False, True, np.float64(30.966903453972083), np.float64(-65.37447628456407), 0.0, 0.0)
+Waveform Generated. SNR: 86.03979833223784
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.06359601020813 seconds
+    [LM1] it  27  lam = 3.2e-08  ov = 0.990304270010  chi2 = 1.428818e+02  rel = 3.78e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000369.045006966), np.float64(2018.1617767237974), 0.0, np.float64(24.44590011429367), np.float64(0.037655743775576594), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-1.9861855294233557), 0.0, np.float64(-2.274138366039217), 0.0, False, False, False, True, np.float64(29.599395007316858), np.float64(-67.48638640280926), 0.0, 0.0)
+Waveform Generated. SNR: 85.99829791923234
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0594658851623535 seconds
+    [LM1] it  28  lam = 3.1e-08  ov = 0.990663542868  chi2 = 1.374839e+02  rel = 3.14e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000281.8832223549), np.float64(2017.5247410603797), 0.0, np.float64(24.44730198677696), np.float64(0.03759957340356813), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.0954436964476537), 0.0, np.float64(-2.7594095883113883), 0.0, False, False, False, True, np.float64(28.204606476697794), np.float64(-69.06362764432937), 0.0, 0.0)
+Waveform Generated. SNR: 85.95505391760778
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.060612678527832 seconds
+    [LM1] it  29  lam = 3.0e-08  ov = 0.990949366237  chi2 = 1.331676e+02  rel = 3.45e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000208.107017702), np.float64(2016.8937168287223), 0.0, np.float64(24.448451308913135), np.float64(0.03754111757033585), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.217747565005078), 0.0, np.float64(-3.1883895858109303), 0.0, False, False, False, True, np.float64(26.879336407084505), np.float64(-69.86090759725532), 0.0, 0.0)
+Waveform Generated. SNR: 85.9158466516687
+calculating stable deltas...
+Time taken to compute stable deltas is 27.41170883178711 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4580392837524414 seconds
+    [LM1] it  30  lam = 2.9e-08  ov = 0.991255700975  chi2 = 1.285688e+02  rel = 2.98e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000148.1477869588), np.float64(2016.2228370689095), 0.0, np.float64(24.449319777540747), np.float64(0.03749187742695133), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.354042265548917), 0.0, np.float64(-3.5566647069543613), 0.0, False, False, False, True, np.float64(25.554285145455896), np.float64(-69.71194130209913), 0.0, 0.0)
+Waveform Generated. SNR: 85.8778958422251
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0572407245635986 seconds
+    [LM1] it  31  lam = 2.8e-08  ov = 0.991510543507  chi2 = 1.247354e+02  rel = 3.38e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000102.703366382), np.float64(2015.546873310028), 0.0, np.float64(24.449902107580275), np.float64(0.03743381419626362), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.514165961193381), 0.0, np.float64(-3.8704861167618048), 0.0, False, False, False, True, np.float64(24.29120011022716), np.float64(-68.38593853079435), 0.0, 0.0)
+Waveform Generated. SNR: 85.84377140384453
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.054189682006836 seconds
+    [LM1] it  32  lam = 2.7e-08  ov = 0.991792528406  chi2 = 1.205193e+02  rel = 3.48e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000069.9906442701), np.float64(2014.850455221494), 0.0, np.float64(24.450212308734436), np.float64(0.037358764276020515), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.711091298849186), 0.0, np.float64(-4.147575667984593), 0.0, False, False, False, True, np.float64(23.066229632320688), np.float64(-65.51705405463339), 0.0, 0.0)
+Waveform Generated. SNR: 85.81157606149758
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0598304271698 seconds
+    [LM1] it  33  lam = 2.6e-08  ov = 0.992073936792  chi2 = 1.163216e+02  rel = 4.71e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000048.9758059909), np.float64(2014.1516633676692), 0.0, np.float64(24.450250792526845), np.float64(0.037245219860498766), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-2.9679405121539637), 0.0, np.float64(-4.406578760823566), 0.0, False, False, False, True, np.float64(21.91952945138504), np.float64(-60.451401108474), 0.0, 0.0)
+Waveform Generated. SNR: 85.78339882570182
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0480599403381348 seconds
+    [LM1] it  34  lam = 2.6e-08  ov = 0.992443649558  chi2 = 1.108443e+02  rel = 4.55e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000037.121145812), np.float64(2013.4516603001641), 0.0, np.float64(24.450011570662106), np.float64(0.03706472392035427), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-3.3265811058100354), 0.0, np.float64(-4.68353382459839), 0.0, False, False, False, True, np.float64(20.87493951451466), np.float64(-51.909452502091675), 0.0, 0.0)
+Waveform Generated. SNR: 85.75861140746355
+calculating stable deltas...
+Time taken to compute stable deltas is 27.45551347732544 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4632246494293213 seconds
+    [LM1] it  35  lam = 5.8e-08  ov = 0.992784774750  chi2 = 1.057976e+02  rel = 5.82e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000024.7679657559), np.float64(2013.098217573431), 0.0, np.float64(24.44966064358093), np.float64(0.03671060421711063), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-3.8567971229437203), 0.0, np.float64(-5.0608623857415465), 0.0, False, False, False, True, np.float64(20.535226713458233), np.float64(-37.71388081829241), 0.0, 0.0)
+Waveform Generated. SNR: 85.75450403233643
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0577399730682373 seconds
+    [LM1] it  36  lam = 1.2e-06  ov = 0.993204556673  chi2 = 9.964331e+01  rel = 6.64e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000012.5432870426), np.float64(2013.057859064524), 0.0, np.float64(24.449573931795552), np.float64(0.03616708553132059), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-4.478969120449607), 0.0, np.float64(-5.5642414026860845), 0.0, False, False, False, True, np.float64(20.614225252950693), np.float64(-26.63514242857265), 0.0, 0.0)
+Waveform Generated. SNR: 85.783253992108
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.047858238220215 seconds
+    [LM1] it  37  lam = 3.3e-06  ov = 0.997722537786  chi2 = 3.352966e+01  rel = 5.93e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000004.3498621474), np.float64(2013.031533060481), 0.0, np.float64(24.449516773846792), np.float64(0.035735435776754886), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-4.96657976318215), 0.0, np.float64(-5.979946325514039), 0.0, False, False, False, True, np.float64(20.67001137068409), np.float64(-18.550337763958225), 0.0, 0.0)
+Waveform Generated. SNR: 85.79303364386831
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.062781572341919 seconds
+    [LM1] it  38  lam = 7.3e-06  ov = 0.999080904045  chi2 = 1.364487e+01  rel = 8.32e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999992.3194473288), np.float64(2012.9984485263442), 0.0, np.float64(24.449429808879234), np.float64(0.035659790777570644), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.151535141382813), 0.0, np.float64(-6.112913752512939), 0.0, False, False, False, True, np.float64(20.744330427958566), np.float64(-12.374597426936177), 0.0, 0.0)
+Waveform Generated. SNR: 85.79223669960709
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.051973342895508 seconds
+    [LM1] it  39  lam = 5.7e-06  ov = 0.999158360905  chi2 = 1.250952e+01  rel = 3.01e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999983.087835789), np.float64(2012.9738857401987), 0.0, np.float64(24.44936171072632), np.float64(0.03571964551131081), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.191925804464447), 0.0, np.float64(-6.134764591045722), 0.0, False, False, False, True, np.float64(20.79997345789854), np.float64(-9.111921130277086), 0.0, 0.0)
+Waveform Generated. SNR: 85.7965089889235
+calculating stable deltas...
+Time taken to compute stable deltas is 27.424691677093506 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4635231494903564 seconds
+    [LM1] it  40  lam = 5.7e-06  ov = 0.999415559819  chi2 = 8.746283e+00  rel = 1.38e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999973.4940346087), np.float64(2012.9480520688362), 0.0, np.float64(24.44928894306669), np.float64(0.035796064279076556), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.221752985580801), 0.0, np.float64(-6.148716191109943), 0.0, False, False, False, True, np.float64(20.85800973253251), np.float64(-5.892049659099795), 0.0, 0.0)
+Waveform Generated. SNR: 85.79797839424954
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0584046840667725 seconds
+    [LM1] it  41  lam = 5.0e-06  ov = 0.999498334273  chi2 = 7.535177e+00  rel = 2.08e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999965.5809414891), np.float64(2012.9263763122576), 0.0, np.float64(24.449227016896888), np.float64(0.03586319844673113), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.244927350456309), 0.0, np.float64(-6.156930234940434), 0.0, False, False, False, True, np.float64(20.906174025348943), np.float64(-3.336933623084849), 0.0, 0.0)
+Waveform Generated. SNR: 85.80050171650966
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0612478256225586 seconds
+    [LM1] it  42  lam = 4.7e-06  ov = 0.999605324663  chi2 = 5.970288e+00  rel = 1.47e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999958.1817904066), np.float64(2012.9056375978216), 0.0, np.float64(24.44916675515698), np.float64(0.03592797475332163), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.266456521314287), 0.0, np.float64(-6.164492426161375), 0.0, False, False, False, True, np.float64(20.95165438950284), np.float64(-0.9739589205870898), 0.0, 0.0)
+Waveform Generated. SNR: 85.80240553595466
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.068622350692749 seconds
+    [LM1] it  43  lam = 4.0e-06  ov = 0.999665401919  chi2 = 5.091988e+00  rel = 1.42e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999951.7944683583), np.float64(2012.8872351088457), 0.0, np.float64(24.44911223109735), np.float64(0.03598606886180311), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.284880632309422), 0.0, np.float64(-6.169902768607719), 0.0, False, False, False, True, np.float64(20.991399960250497), np.float64(1.0373503628204754), 0.0, 0.0)
+Waveform Generated. SNR: 85.80433455709007
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.059729814529419 seconds
+    [LM1] it  44  lam = 4.0e-06  ov = 0.999714714760  chi2 = 4.371374e+00  rel = 8.73e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999945.7944388023), np.float64(2012.8692939803382), 0.0, np.float64(24.449057782046886), np.float64(0.0360428848746724), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.30212628764169), 0.0, np.float64(-6.174106652146517), 0.0, False, False, False, True, np.float64(21.029380079516613), np.float64(2.9221483802969392), 0.0, 0.0)
+Waveform Generated. SNR: 85.89710630071403
+calculating stable deltas...
+Time taken to compute stable deltas is 27.523828506469727 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4670305252075195 seconds
+    [LM1] it  45  lam = 3.0e-06  ov = 0.999747168558  chi2 = 3.989868e+00  rel = 9.76e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999940.9358904809), np.float64(2012.854089826523), 0.0, np.float64(24.449010584852285), np.float64(0.03609103897407266), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.316097346388732), 0.0, np.float64(-6.176502731765871), 0.0, False, False, False, True, np.float64(21.06066304197689), np.float64(4.44388636443003), 0.0, 0.0)
+Waveform Generated. SNR: 85.89869898331754
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0749433040618896 seconds
+    [LM1] it  46  lam = 2.9e-06  ov = 0.999773834946  chi2 = 3.600550e+00  rel = 6.70e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999936.0226877272), np.float64(2012.837672458249), 0.0, np.float64(24.448957782985225), np.float64(0.03614205485671292), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.33062713682286), 0.0, np.float64(-6.178178949108366), 0.0, False, False, False, True, np.float64(21.093319101454277), np.float64(6.020255786271822), 0.0, 0.0)
+Waveform Generated. SNR: 85.89985742378336
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.065593719482422 seconds
+    [LM1] it  47  lam = 2.0e-06  ov = 0.999790377993  chi2 = 3.359212e+00  rel = 6.91e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999932.097332759), np.float64(2012.8234160701747), 0.0, np.float64(24.448909980722455), np.float64(0.03618566854456212), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.34262935473549), 0.0, np.float64(-6.178559837059989), 0.0, False, False, False, True, np.float64(21.120548931717632), np.float64(7.313011290148304), 0.0, 0.0)
+Waveform Generated. SNR: 85.90143806881476
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0618600845336914 seconds
+    [LM1] it  48  lam = 1.9e-06  ov = 0.999806320638  chi2 = 3.127141e+00  rel = 4.23e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999928.3184416066), np.float64(2012.8075584854364), 0.0, np.float64(24.448853646893987), np.float64(0.03623249108278672), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.354901896170195), 0.0, np.float64(-6.17703303921355), 0.0, False, False, False, True, np.float64(21.14884934662174), np.float64(8.649128710043296), 0.0, 0.0)
+Waveform Generated. SNR: 85.9025723551759
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0599725246429443 seconds
+    [LM1] it  49  lam = 1.3e-06  ov = 0.999815418458  chi2 = 2.994963e+00  rel = 4.18e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999925.7297029585), np.float64(2012.794258044672), 0.0, np.float64(24.448803256100152), np.float64(0.036269910317754325), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.364295518138837), 0.0, np.float64(-6.174166467247699), 0.0, False, False, False, True, np.float64(21.170614855977067), np.float64(9.669532980828595), 0.0, 0.0)
+Waveform Generated. SNR: 85.90389072318527
+calculating stable deltas...
+Time taken to compute stable deltas is 27.53490138053894 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.466074228286743 seconds
+    [LM1] it  50  lam = 4.3e-07  ov = 0.999824048204  chi2 = 2.869852e+00  rel = 5.64e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999923.83671883), np.float64(2012.779446085287), 0.0, np.float64(24.448741935314693), np.float64(0.03630779883457744), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.373433085674885), 0.0, np.float64(-6.168214505904691), 0.0, False, False, False, True, np.float64(21.191438657526742), np.float64(10.662920144324112), 0.0, 0.0)
+Waveform Generated. SNR: 85.81368751141783
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.044858694076538 seconds
+    [LM1] it  51  lam = 4.3e-07  ov = 0.999828848359  chi2 = 2.707926e+00  rel = 2.28e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999924.7144240445), np.float64(2012.7524726970944), 0.0, np.float64(24.448607387754652), np.float64(0.03635972329611155), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.384480597442593), 0.0, np.float64(-6.1461921242466975), 0.0, False, False, False, True, np.float64(21.214563251596), np.float64(11.88082096264771), 0.0, 0.0)
+Waveform Generated. SNR: 85.81499710166321
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.065396547317505 seconds
+    [LM1] it  52  lam = 1.4e-07  ov = 0.999833141240  chi2 = 2.646242e+00  rel = 4.03e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999927.8569217914), np.float64(2012.731932793107), 0.0, np.float64(24.448494691754394), np.float64(0.036388632336128914), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.38922512906157), 0.0, np.float64(-6.123417100490659), 0.0, False, False, False, True, np.float64(21.222063006483843), np.float64(12.429809392220571), 0.0, 0.0)
+Waveform Generated. SNR: 85.81638923200414
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0811614990234375 seconds
+    [LM1] it  53  lam = 4.8e-08  ov = 0.999840499509  chi2 = 2.539723e+00  rel = 4.54e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999939.3293674584), np.float64(2012.6834614542486), 0.0, np.float64(24.4482354904478), np.float64(0.03642839505924963), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.392811524788427), 0.0, np.float64(-6.063182631220438), 0.0, False, False, False, True, np.float64(21.209598830707616), np.float64(12.90491594114435), 0.0, 0.0)
+Waveform Generated. SNR: 85.81733963461731
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0556883811950684 seconds
+    [LM1] it  54  lam = 2.0e-08  ov = 0.999848435757  chi2 = 2.424325e+00  rel = 6.95e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999962.3320715253), np.float64(2012.5563960254558), 0.0, np.float64(24.447756023410072), np.float64(0.036494106489266986), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.394982195687662), 0.0, np.float64(-5.949138645614357), 0.0, False, False, False, True, np.float64(21.106816711861544), np.float64(13.30312324689311), 0.0, 0.0)
+Waveform Generated. SNR: 85.81655728451672
+calculating stable deltas...
+Time taken to compute stable deltas is 27.460602283477783 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.468529224395752 seconds
+    [LM1] it  55  lam = 2.0e-08  ov = 0.999859881156  chi2 = 2.255906e+00  rel = 3.72e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999984.6601187402), np.float64(2012.2835904371775), 0.0, np.float64(24.447255498347428), np.float64(0.03658547627921911), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.395343528531898), 0.0, np.float64(-5.834756560037235), 0.0, False, False, False, True, np.float64(20.754814064840026), np.float64(13.48881742571458), 0.0, 0.0)
+Waveform Generated. SNR: 85.80858011111198
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.060957908630371 seconds
+    [LM1] it  56  lam = 2.0e-08  ov = 0.999865117466  chi2 = 2.171878e+00  rel = 4.98e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999993.8393230181), np.float64(2012.0240811869335), 0.0, np.float64(24.447010385605783), np.float64(0.03665200418517522), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.394301930613496), 0.0, np.float64(-5.783693746416594), 0.0, False, False, False, True, np.float64(20.363935725429577), np.float64(13.420925275210193), 0.0, 0.0)
+Waveform Generated. SNR: 85.7992702651188
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0423333644866943 seconds
+    [LM1] it  57  lam = 2.0e-08  ov = 0.999871924553  chi2 = 2.063796e+00  rel = 4.27e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.5788497314), np.float64(2011.7737679391903), 0.0, np.float64(24.446873860173824), np.float64(0.03670661651511305), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3926897102384155), 0.0, np.float64(-5.7587679857116845), 0.0, False, False, False, True, np.float64(19.961910970667475), np.float64(13.235945275222964), 0.0, 0.0)
+Waveform Generated. SNR: 85.78918050431126
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.051668882369995 seconds
+    [LM1] it  58  lam = 2.0e-08  ov = 0.999877335215  chi2 = 1.975686e+00  rel = 4.76e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.0779458961), np.float64(2011.5305753908265), 0.0, np.float64(24.446781818248795), np.float64(0.036756137750296514), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.390906143131294), 0.0, np.float64(-5.744446549982908), 0.0, False, False, False, True, np.float64(19.561400244196985), np.float64(13.017848552007873), 0.0, 0.0)
+Waveform Generated. SNR: 85.77897842081097
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0466370582580566 seconds
+    [LM1] it  59  lam = 2.0e-08  ov = 0.999883155413  chi2 = 1.881705e+00  rel = 3.46e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.7116860264), np.float64(2011.288617456799), 0.0, np.float64(24.44670525038086), np.float64(0.036804640938109416), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.389043335924369), 0.0, np.float64(-5.733840046899021), 0.0, False, False, False, True, np.float64(19.15960960162817), np.float64(12.797516908728559), 0.0, 0.0)
+Waveform Generated. SNR: 85.76854588294765
+calculating stable deltas...
+Time taken to compute stable deltas is 27.53587794303894 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4741406440734863 seconds
+    [LM1] it  60  lam = 2.0e-08  ov = 0.999887003316  chi2 = 1.816644e+00  rel = 4.24e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.9858327453), np.float64(2011.0526365182027), 0.0, np.float64(24.446638101853168), np.float64(0.03685088009855242), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.387180580061847), 0.0, np.float64(-5.725345467268065), 0.0, False, False, False, True, np.float64(18.765400218823952), np.float64(12.567395287480347), 0.0, 0.0)
+Waveform Generated. SNR: 85.75835199574635
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.066725730895996 seconds
+    [LM1] it  61  lam = 2.0e-08  ov = 0.999891703087  chi2 = 1.739533e+00  rel = 4.20e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.1126316106), np.float64(2010.8213533380358), 0.0, np.float64(24.446574585935046), np.float64(0.03689611959133655), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.385334971386461), 0.0, np.float64(-5.71755914410456), 0.0, False, False, False, True, np.float64(18.378447334186035), np.float64(12.34368079699037), 0.0, 0.0)
+Waveform Generated. SNR: 85.74837824387103
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.052720785140991 seconds
+    [LM1] it  62  lam = 2.0e-08  ov = 0.999896154501  chi2 = 1.666454e+00  rel = 4.06e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.1736635108), np.float64(2010.5940324099302), 0.0, np.float64(24.446513005991946), np.float64(0.0369406098097864), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3835277558040096), 0.0, np.float64(-5.710122934882536), 0.0, False, False, False, True, np.float64(17.997871916844726), np.float64(12.126644282267407), 0.0, 0.0)
+Waveform Generated. SNR: 85.73850904821317
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0688910484313965 seconds
+    [LM1] it  63  lam = 1.9e-08  ov = 0.999900261169  chi2 = 1.598716e+00  rel = 4.20e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2148980773), np.float64(2010.3711715183513), 0.0, np.float64(24.446453258643288), np.float64(0.03698402951226559), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.381740846192355), 0.0, np.float64(-5.702978454286456), 0.0, False, False, False, True, np.float64(17.624350586895098), np.float64(11.911428400075476), 0.0, 0.0)
+Waveform Generated. SNR: 85.72884282350851
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.064850330352783 seconds
+    [LM1] it  64  lam = 1.9e-08  ov = 0.999904350833  chi2 = 1.531586e+00  rel = 4.34e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2344262), np.float64(2010.1525405199502), 0.0, np.float64(24.44639534822345), np.float64(0.037026405692764025), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.379968560574802), 0.0, np.float64(-5.696125644668395), 0.0, False, False, False, True, np.float64(17.257480305634484), np.float64(11.697650689045629), 0.0, 0.0)
+Waveform Generated. SNR: 85.71939144112731
+calculating stable deltas...
+Time taken to compute stable deltas is 27.45422053337097 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.464057683944702 seconds
+    [LM1] it  65  lam = 1.9e-08  ov = 0.999908417174  chi2 = 1.465152e+00  rel = 3.82e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2686273525), np.float64(2009.9346540595366), 0.0, np.float64(24.446336263422026), np.float64(0.037069163779639924), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.378236238150933), 0.0, np.float64(-5.688986707935294), 0.0, False, False, False, True, np.float64(16.892414306681356), np.float64(11.495147327132454), 0.0, 0.0)
+Waveform Generated. SNR: 85.70984224728872
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0637547969818115 seconds
+    [LM1] it  66  lam = 1.9e-08  ov = 0.999911772747  chi2 = 1.409243e+00  rel = 4.24e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2900563448), np.float64(2009.7213453895986), 0.0, np.float64(24.44627918948172), np.float64(0.03711067949137908), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.376530601974336), 0.0, np.float64(-5.682189147621061), 0.0, False, False, False, True, np.float64(16.534487616268716), np.float64(11.292470270385872), 0.0, 0.0)
+Waveform Generated. SNR: 85.70065393337028
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.066171407699585 seconds
+    [LM1] it  67  lam = 1.9e-08  ov = 0.999915418252  chi2 = 1.349531e+00  rel = 4.10e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.3021427044), np.float64(2009.5109297973688), 0.0, np.float64(24.44622286060445), np.float64(0.037151694599151366), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.374844544084635), 0.0, np.float64(-5.675467523999717), 0.0, False, False, False, True, np.float64(16.181343587944614), np.float64(11.094498555639872), 0.0, 0.0)
+Waveform Generated. SNR: 85.69150102058367
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0583152770996094 seconds
+    [LM1] it  68  lam = 1.9e-08  ov = 0.999918778524  chi2 = 1.294196e+00  rel = 4.29e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.3563075466), np.float64(2009.3040886624842), 0.0, np.float64(24.44616679184511), np.float64(0.037191985880918196), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.373182593676156), 0.0, np.float64(-5.668683346021966), 0.0, False, False, False, True, np.float64(15.8341811975314), np.float64(10.900214987041249), 0.0, 0.0)
+Waveform Generated. SNR: 85.68254464383992
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0611484050750732 seconds
+    [LM1] it  69  lam = 1.9e-08  ov = 0.999922170022  chi2 = 1.238709e+00  rel = 3.84e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2705491075), np.float64(2009.09920754157), 0.0, np.float64(24.446112986792983), np.float64(0.037232059335579874), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.371578763055288), 0.0, np.float64(-5.662448164142841), 0.0, False, False, False, True, np.float64(15.49007627199335), np.float64(10.71432793903674), 0.0, 0.0)
+Waveform Generated. SNR: 85.67353867979106
+calculating stable deltas...
+Time taken to compute stable deltas is 27.520551919937134 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4661011695861816 seconds
+    [LM1] it  70  lam = 1.8e-08  ov = 0.999925030035  chi2 = 1.191137e+00  rel = 4.72e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.3032664288), np.float64(2008.8995419337505), 0.0, np.float64(24.446059862031834), np.float64(0.037270565164683855), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.369937124407494), 0.0, np.float64(-5.656111232843454), 0.0, False, False, False, True, np.float64(15.154220462260234), np.float64(10.521406461180039), 0.0, 0.0)
+Waveform Generated. SNR: 85.66501024051819
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.073707342147827 seconds
+    [LM1] it  71  lam = 1.8e-08  ov = 0.999928512636  chi2 = 1.134920e+00  rel = 3.88e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.3096716432), np.float64(2008.6989280068346), 0.0, np.float64(24.44600596164509), np.float64(0.03730966962385062), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.368330622441368), 0.0, np.float64(-5.649657902898336), 0.0, False, False, False, True, np.float64(14.817130896160839), np.float64(10.336673760564235), 0.0, 0.0)
+Waveform Generated. SNR: 85.65618593455217
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.05232310295105 seconds
+    [LM1] it  72  lam = 1.8e-08  ov = 0.999931162188  chi2 = 1.090867e+00  rel = 4.26e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.3229958791), np.float64(2008.5023570245876), 0.0, np.float64(24.445953016575206), np.float64(0.03734796443698837), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.366752593610159), 0.0, np.float64(-5.643305803767154), 0.0, False, False, False, True, np.float64(14.486726098356865), np.float64(10.156305652927633), 0.0, 0.0)
+Waveform Generated. SNR: 85.64765587206543
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.068903923034668 seconds
+    [LM1] it  73  lam = 1.7e-08  ov = 0.999933998591  chi2 = 1.044414e+00  rel = 5.01e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2814219291), np.float64(2008.310778544457), 0.0, np.float64(24.44590337440639), np.float64(0.03738470547855407), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.365188826811317), 0.0, np.float64(-5.637569332580969), 0.0, False, False, False, True, np.float64(14.163786809703971), np.float64(9.971983005236732), 0.0, 0.0)
+Waveform Generated. SNR: 85.63945797196595
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0673422813415527 seconds
+    [LM1] it  74  lam = 1.7e-08  ov = 0.999937262024  chi2 = 9.920557e-01  rel = 3.89e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2558767569), np.float64(2008.112884009586), 0.0, np.float64(24.44585060166755), np.float64(0.037423238588057225), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.363598525377395), 0.0, np.float64(-5.631296991808806), 0.0, False, False, False, True, np.float64(13.830854005532807), np.float64(9.792255526648763), 0.0, 0.0)
+Waveform Generated. SNR: 85.63076530587549
+calculating stable deltas...
+Time taken to compute stable deltas is 27.516034603118896 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4699881076812744 seconds
+    [LM1] it  75  lam = 1.7e-08  ov = 0.999939573134  chi2 = 9.534971e-01  rel = 4.55e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2418501294), np.float64(2007.9191659466858), 0.0, np.float64(24.445798721147934), np.float64(0.0374609225478297), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.362055402949779), 0.0, np.float64(-5.62512645162528), 0.0, False, False, False, True, np.float64(13.504867260986705), np.float64(9.617508692333056), 0.0, 0.0)
+Waveform Generated. SNR: 85.62237486034859
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0622646808624268 seconds
+    [LM1] it  76  lam = 1.7e-08  ov = 0.999942233890  chi2 = 9.101429e-01  rel = 4.52e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2255432794), np.float64(2007.728049195943), 0.0, np.float64(24.445747784040236), np.float64(0.03749798022135315), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.360521371485351), 0.0, np.float64(-5.619084537339761), 0.0, False, False, False, True, np.float64(13.183007626770994), np.float64(9.443351391294534), 0.0, 0.0)
+Waveform Generated. SNR: 85.61407066215355
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0574631690979004 seconds
+    [LM1] it  77  lam = 1.6e-08  ov = 0.999944754787  chi2 = 8.690251e-01  rel = 4.63e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.2032684608), np.float64(2007.5400819470728), 0.0, np.float64(24.445697764974298), np.float64(0.03753442038386567), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.359004990040892), 0.0, np.float64(-5.613154073434521), 0.0, False, False, False, True, np.float64(12.86632372947827), np.float64(9.272619417272095), 0.0, 0.0)
+Waveform Generated. SNR: 85.60595148468987
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.058844804763794 seconds
+    [LM1] it  78  lam = 1.6e-08  ov = 0.999947230787  chi2 = 8.287990e-01  rel = 4.54e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.1802340815), np.float64(2007.3543885537092), 0.0, np.float64(24.445648266593345), np.float64(0.03757042747715177), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.357512453852354), 0.0, np.float64(-5.607282071911591), 0.0, False, False, False, True, np.float64(12.553413306129533), np.float64(9.10527411696629), 0.0, 0.0)
+Waveform Generated. SNR: 85.59789587439883
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0621283054351807 seconds
+    [LM1] it  79  lam = 1.6e-08  ov = 0.999949541721  chi2 = 7.911539e-01  rel = 4.95e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.1405953292), np.float64(2007.1721718413305), 0.0, np.float64(24.44560032777206), np.float64(0.037605567014090846), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.356029767315869), 0.0, np.float64(-5.6016593634690715), 0.0, False, False, False, True, np.float64(12.245982928949594), np.float64(8.938277686092931), 0.0, 0.0)
+Waveform Generated. SNR: 85.59008911555712
+calculating stable deltas...
+Time taken to compute stable deltas is 27.514939546585083 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4747400283813477 seconds
+    [LM1] it  80  lam = 1.6e-08  ov = 0.999951971857  chi2 = 7.520165e-01  rel = 4.42e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.1012758964), np.float64(2006.9893136496614), 0.0, np.float64(24.445551613851645), np.float64(0.03764107815720519), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.354570962699624), 0.0, np.float64(-5.595890361513752), 0.0, False, False, False, True, np.float64(11.937719216941984), np.float64(8.776500648435329), 0.0, 0.0)
+Waveform Generated. SNR: 85.58203542046185
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.072439432144165 seconds
+    [LM1] it  81  lam = 1.5e-08  ov = 0.999953999438  chi2 = 7.187808e-01  rel = 5.05e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.0673240069), np.float64(2006.8106181975982), 0.0, np.float64(24.445504392302542), np.float64(0.037675528633935564), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3531328184086), 0.0, np.float64(-5.590342046857632), 0.0, False, False, False, True, np.float64(11.636102202067901), np.float64(8.61468586922366), 0.0, 0.0)
+Waveform Generated. SNR: 85.57439770816316
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0614209175109863 seconds
+    [LM1] it  82  lam = 1.5e-08  ov = 0.999956259210  chi2 = 6.824644e-01  rel = 4.66e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(1000000.0251160994), np.float64(2006.6316298552285), 0.0, np.float64(24.445456995091586), np.float64(0.037710148106568545), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.35167818829127), 0.0, np.float64(-5.584745176283111), 0.0, False, False, False, True, np.float64(11.334000453746556), np.float64(8.454611294759047), 0.0, 0.0)
+Waveform Generated. SNR: 85.56653027109364
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.061236619949341 seconds
+    [LM1] it  83  lam = 1.5e-08  ov = 0.999958212731  chi2 = 6.506507e-01  rel = 5.10e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.9835384223), np.float64(2006.4558242764108), 0.0, np.float64(24.445410495527465), np.float64(0.037744075926920084), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.350263801865794), 0.0, np.float64(-5.579276224194709), 0.0, False, False, False, True, np.float64(11.037127928044562), np.float64(8.297668919613471), 0.0, 0.0)
+Waveform Generated. SNR: 85.55894795650113
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.057929039001465 seconds
+    [LM1] it  84  lam = 1.5e-08  ov = 0.999960278362  chi2 = 6.174402e-01  rel = 4.78e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.9461303445), np.float64(2006.2799816674988), 0.0, np.float64(24.4453636770011), np.float64(0.0377781090529401), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.348849853833889), 0.0, np.float64(-5.573731191435724), 0.0, False, False, False, True, np.float64(10.740247829147801), np.float64(8.142949357319493), 0.0, 0.0)
+Waveform Generated. SNR: 85.55134406607422
+calculating stable deltas...
+Time taken to compute stable deltas is 27.48850965499878 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.464271306991577 seconds
+    [LM1] it  85  lam = 1.4e-08  ov = 0.999962097021  chi2 = 5.879493e-01  rel = 5.10e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.9018591307), np.float64(2006.1071588213147), 0.0, np.float64(24.44531792167233), np.float64(0.037811463574289245), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.347455513172525), 0.0, np.float64(-5.56834357950637), 0.0, False, False, False, True, np.float64(10.448259311955052), np.float64(7.989986081476997), 0.0, 0.0)
+Waveform Generated. SNR: 85.54388403289066
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0640645027160645 seconds
+    [LM1] it  86  lam = 1.4e-08  ov = 0.999963961838  chi2 = 5.579566e-01  rel = 5.26e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.8502391432), np.float64(2005.9361713019898), 0.0, np.float64(24.445272648327272), np.float64(0.03784449873897601), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.346082319591086), 0.0, np.float64(-5.563014348893862), 0.0, False, False, False, True, np.float64(10.159323665996109), np.float64(7.840279558612655), 0.0, 0.0)
+Waveform Generated. SNR: 85.53642805965944
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0417933464050293 seconds
+    [LM1] it  87  lam = 1.4e-08  ov = 0.999965790652  chi2 = 5.286072e-01  rel = 5.02e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.8043742189), np.float64(2005.765627943353), 0.0, np.float64(24.44522758323598), np.float64(0.03787734591134202), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.344696919806052), 0.0, np.float64(-5.557710301955926), 0.0, False, False, False, True, np.float64(9.870953783531299), np.float64(7.689398434232382), 0.0, 0.0)
+Waveform Generated. SNR: 85.52905037609406
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.056762456893921 seconds
+    [LM1] it  88  lam = 1.3e-08  ov = 0.999967436022  chi2 = 5.020783e-01  rel = 5.40e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.7538458543), np.float64(2005.59777843412), 0.0, np.float64(24.445183034851006), np.float64(0.03790977794242564), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.343349497760157), 0.0, np.float64(-5.552457402006776), 0.0, False, False, False, True, np.float64(9.587189208558442), np.float64(7.543899869599297), 0.0, 0.0)
+Waveform Generated. SNR: 85.52176637539438
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.057025194168091 seconds
+    [LM1] it  89  lam = 1.3e-08  ov = 0.999969130167  chi2 = 4.749799e-01  rel = 5.50e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.6951069188), np.float64(2005.431202151487), 0.0, np.float64(24.445139375036376), np.float64(0.03794174192163755), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.341995939381205), 0.0, np.float64(-5.547363514070843), 0.0, False, False, False, True, np.float64(9.305217059960121), np.float64(7.396060904872518), 0.0, 0.0)
+Waveform Generated. SNR: 85.51453596693928
+calculating stable deltas...
+Time taken to compute stable deltas is 27.47967505455017 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.460947275161743 seconds
+    [LM1] it  90  lam = 1.3e-08  ov = 0.999970766657  chi2 = 4.488498e-01  rel = 4.88e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.6555697689), np.float64(2005.2633004765241), 0.0, np.float64(24.445094458306446), np.float64(0.037974225407383724), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.340650678744896), 0.0, np.float64(-5.542025326334189), 0.0, False, False, False, True, np.float64(9.021321370005065), np.float64(7.252117263964908), 0.0, 0.0)
+Waveform Generated. SNR: 85.50724982414313
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.074221134185791 seconds
+    [LM1] it  91  lam = 1.2e-08  ov = 0.999972120312  chi2 = 4.269413e-01  rel = 6.22e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.5943838827), np.float64(2005.100766272584), 0.0, np.float64(24.445051534350128), np.float64(0.038005577448005395), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.339331841245974), 0.0, np.float64(-5.53698170610135), 0.0, False, False, False, True, np.float64(8.746209380096715), np.float64(7.1122263242865325), 0.0, 0.0)
+Waveform Generated. SNR: 85.50029254122005
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0583269596099854 seconds
+    [LM1] it  92  lam = 1.2e-08  ov = 0.999973807186  chi2 = 4.003678e-01  rel = 4.97e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.5404471286), np.float64(2004.934597973474), 0.0, np.float64(24.445007691504298), np.float64(0.038037462910270305), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.337999096373234), 0.0, np.float64(-5.531843875907582), 0.0, False, False, False, True, np.float64(8.464803263420986), np.float64(6.967350836820091), 0.0, 0.0)
+Waveform Generated. SNR: 85.4930014318669
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0522093772888184 seconds
+    [LM1] it  93  lam = 1.2e-08  ov = 0.999975036904  chi2 = 3.804817e-01  rel = 5.57e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.4903351084), np.float64(2004.7724470858127), 0.0, np.float64(24.444964715287096), np.float64(0.0380686924814713), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.336675632432866), 0.0, np.float64(-5.526771087898124), 0.0, False, False, False, True, np.float64(8.190195131628391), np.float64(6.827155472261494), 0.0, 0.0)
+Waveform Generated. SNR: 85.48596853275941
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.054887294769287 seconds
+    [LM1] it  94  lam = 1.2e-08  ov = 0.999976368484  chi2 = 3.592812e-01  rel = 5.87e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.4356392783), np.float64(2004.6149277763138), 0.0, np.float64(24.4449230202695), np.float64(0.0380989882703609), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.335411479560297), 0.0, np.float64(-5.521871619247159), 0.0, False, False, False, True, np.float64(7.923352372318544), np.float64(6.692166125888956), 0.0, 0.0)
+Waveform Generated. SNR: 85.47909626836363
+calculating stable deltas...
+Time taken to compute stable deltas is 27.4857816696167 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4705326557159424 seconds
+    [LM1] it  95  lam = 1.1e-08  ov = 0.999977701117  chi2 = 3.382043e-01  rel = 6.41e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.3762751056), np.float64(2004.461699693687), 0.0, np.float64(24.444882494759078), np.float64(0.03812847930400182), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.334180273824493), 0.0, np.float64(-5.517108586848393), 0.0, False, False, False, True, np.float64(7.6637114398795205), np.float64(6.561842266785723), 0.0, 0.0)
+Waveform Generated. SNR: 85.47257136809787
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0474424362182617 seconds
+    [LM1] it  96  lam = 1.1e-08  ov = 0.999979087272  chi2 = 3.165191e-01  rel = 4.99e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.3290478443), np.float64(2004.3063799124536), 0.0, np.float64(24.44484061720003), np.float64(0.038158622428897525), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.332947148064975), 0.0, np.float64(-5.512101919656608), 0.0, False, False, False, True, np.float64(7.400841830510144), np.float64(6.435303344392794), 0.0, 0.0)
+Waveform Generated. SNR: 85.46572133719606
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.054260730743408 seconds
+    [LM1] it  97  lam = 1.1e-08  ov = 0.999980071541  chi2 = 3.007204e-01  rel = 6.11e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.2677130321), np.float64(2004.1576164458804), 0.0, np.float64(24.444802156119184), np.float64(0.03818685304749965), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.331709601021459), 0.0, np.float64(-5.507662095624585), 0.0, False, False, False, True, np.float64(7.148123517707314), np.float64(6.30107347415773), 0.0, 0.0)
+Waveform Generated. SNR: 85.4593446623703
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0656797885894775 seconds
+    [LM1] it  98  lam = 1.3e-08  ov = 0.999981245653  chi2 = 2.823374e-01  rel = 2.25e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.289031121), np.float64(2004.009435789504), 0.0, np.float64(24.44476016266358), np.float64(0.038216069725283006), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.33056394672374), 0.0, np.float64(-5.502422495918372), 0.0, False, False, False, True, np.float64(6.897968529659747), np.float64(6.18768733104304), 0.0, 0.0)
+Waveform Generated. SNR: 85.45274612707637
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.037073850631714 seconds
+    [LM1] it  99  lam = 4.7e-09  ov = 0.999981598946  chi2 = 2.759746e-01  rel = 1.15e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.1441368219), np.float64(2003.890828723405), 0.0, np.float64(24.4447323652434), np.float64(0.03823786760671755), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3295562615983805), 0.0, np.float64(-5.499561259601376), 0.0, False, False, False, True, np.float64(6.695255491017246), np.float64(6.071902685756474), 0.0, 0.0)
+Waveform Generated. SNR: 85.44805262953703
+calculating stable deltas...
+Time taken to compute stable deltas is 27.530874967575073 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4728140830993652 seconds
+    [LM1] it 100  lam = 9.6e-09  ov = 0.999983714692  chi2 = 2.443023e-01  rel = 2.80e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999999.0553170294), np.float64(2003.7302384554214), 0.0, np.float64(24.44468975989156), np.float64(0.038268944371821635), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.328273003721751), 0.0, np.float64(-5.494532302988481), 0.0, False, False, False, True, np.float64(6.4230356689307175), np.float64(5.941232216948179), 0.0, 0.0)
+Waveform Generated. SNR: 85.44080598558804
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0665628910064697 seconds
+    [LM1] it 101  lam = 9.1e-09  ov = 0.999984103706  chi2 = 2.374718e-01  rel = 7.89e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.9831546871), np.float64(2003.5806583505987), 0.0, np.float64(24.444650556540466), np.float64(0.038297561012452006), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.32705997373898), 0.0, np.float64(-5.489979756523434), 0.0, False, False, False, True, np.float64(6.16900986604546), np.float64(5.814099626395102), 0.0, 0.0)
+Waveform Generated. SNR: 85.43439738106782
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0831542015075684 seconds
+    [LM1] it 102  lam = 9.0e-09  ov = 0.999985324662  chi2 = 2.187282e-01  rel = 6.01e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.9230998453), np.float64(2003.4291903412334), 0.0, np.float64(24.444610363007914), np.float64(0.03832666553667759), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.325835647517802), 0.0, np.float64(-5.485237696755232), 0.0, False, False, False, True, np.float64(5.911918948973867), np.float64(5.687775114126338), 0.0, 0.0)
+Waveform Generated. SNR: 85.42779601675491
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0579254627227783 seconds
+    [LM1] it 103  lam = 8.8e-09  ov = 0.999986165809  chi2 = 2.055849e-01  rel = 7.18e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.8568640272), np.float64(2003.2840789441934), 0.0, np.float64(24.444572125662418), np.float64(0.038354463982142976), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.32465931177451), 0.0, np.float64(-5.4807595583327195), 0.0, False, False, False, True, np.float64(5.665436057571737), np.float64(5.5659812600555485), 0.0, 0.0)
+Waveform Generated. SNR: 85.42149015589797
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0659139156341553 seconds
+    [LM1] it 104  lam = 8.7e-09  ov = 0.999987126321  chi2 = 1.908230e-01  rel = 6.56e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.7944297066), np.float64(2003.1420292677017), 0.0, np.float64(24.444534443062153), np.float64(0.0383817438459015), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3235276893495795), 0.0, np.float64(-5.476328828556762), 0.0, False, False, False, True, np.float64(5.424220537389969), np.float64(5.44901115864956), 0.0, 0.0)
+Waveform Generated. SNR: 85.41538648510922
+calculating stable deltas...
+Time taken to compute stable deltas is 27.44048571586609 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4619576930999756 seconds
+    [LM1] it 105  lam = 8.4e-09  ov = 0.999987940370  chi2 = 1.782990e-01  rel = 7.17e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.7251049441), np.float64(2003.0051586575833), 0.0, np.float64(24.444498493578617), np.float64(0.038407933124205595), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.322414306831363), 0.0, np.float64(-5.472130492959778), 0.0, False, False, False, True, np.float64(5.191579519528386), np.float64(5.33444844834788), 0.0, 0.0)
+Waveform Generated. SNR: 85.40949990323199
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0625622272491455 seconds
+    [LM1] it 106  lam = 8.1e-09  ov = 0.999988778489  chi2 = 1.655194e-01  rel = 6.88e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.6501258849), np.float64(2002.870618393401), 0.0, np.float64(24.444463162424245), np.float64(0.03843368730283575), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.321338583034324), 0.0, np.float64(-5.468018233900932), 0.0, False, False, False, True, np.float64(4.962880924685955), np.float64(5.223266210090805), 0.0, 0.0)
+Waveform Generated. SNR: 85.40362592263932
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.059227705001831 seconds
+    [LM1] it 107  lam = 7.9e-09  ov = 0.999989526092  chi2 = 1.541316e-01  rel = 6.78e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.5861245581), np.float64(2002.7385406238795), 0.0, np.float64(24.44442842752186), np.float64(0.03845893847085866), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.320256706069312), 0.0, np.float64(-5.463949964550239), 0.0, False, False, False, True, np.float64(4.738274714359702), np.float64(5.112855200706981), 0.0, 0.0)
+Waveform Generated. SNR: 85.3979659695181
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0541622638702393 seconds
+    [LM1] it 108  lam = 7.6e-09  ov = 0.999990215272  chi2 = 1.436801e-01  rel = 6.91e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.5158697137), np.float64(2002.6093020293426), 0.0, np.float64(24.44439448855114), np.float64(0.03848365155602867), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.319210516513969), 0.0, np.float64(-5.459991069173838), 0.0, False, False, False, True, np.float64(4.518460832128283), np.float64(5.005846288828943), 0.0, 0.0)
+Waveform Generated. SNR: 85.39238281894089
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0533084869384766 seconds
+    [LM1] it 109  lam = 7.3e-09  ov = 0.999990873174  chi2 = 1.337541e-01  rel = 6.82e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.452308626), np.float64(2002.4821223790666), 0.0, np.float64(24.444360890906708), np.float64(0.038508004210924665), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3181872233561105), 0.0, np.float64(-5.456051671165461), 0.0, False, False, False, True, np.float64(4.302174240636199), np.float64(4.901728164271418), 0.0, 0.0)
+Waveform Generated. SNR: 85.38686568683305
+calculating stable deltas...
+Time taken to compute stable deltas is 27.522688388824463 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4732666015625 seconds
+    [LM1] it 110  lam = 7.0e-09  ov = 0.999991480758  chi2 = 1.246282e-01  rel = 6.97e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.3841835652), np.float64(2002.3577728562502), 0.0, np.float64(24.444328270757943), np.float64(0.03853174019287062), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.317180998956021), 0.0, np.float64(-5.452255025281932), 0.0, False, False, False, True, np.float64(4.090551500057606), np.float64(4.798850348508181), 0.0, 0.0)
+Waveform Generated. SNR: 85.38145542462482
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.072596311569214 seconds
+    [LM1] it 111  lam = 6.7e-09  ov = 0.999992062459  chi2 = 1.159449e-01  rel = 6.88e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.3183777091), np.float64(2002.2349839454675), 0.0, np.float64(24.444295902117695), np.float64(0.038555231459735544), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.316189489415959), 0.0, np.float64(-5.448465943737944), 0.0, False, False, False, True, np.float64(3.8816158274670176), np.float64(4.69863699407027), 0.0, 0.0)
+Waveform Generated. SNR: 85.3761382869881
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.064295768737793 seconds
+    [LM1] it 112  lam = 6.3e-09  ov = 0.999992599573  chi2 = 1.079732e-01  rel = 7.09e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.2504555037), np.float64(2002.1145940499584), 0.0, np.float64(24.444264348256674), np.float64(0.038578194079486094), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.315211435921934), 0.0, np.float64(-5.444791145848497), 0.0, False, False, False, True, np.float64(3.676627118407515), np.float64(4.599310633722533), 0.0, 0.0)
+Waveform Generated. SNR: 85.37093845206822
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0758092403411865 seconds
+    [LM1] it 113  lam = 5.9e-09  ov = 0.999993119285  chi2 = 1.003139e-01  rel = 7.06e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.1778927111), np.float64(2001.994573617721), 0.0, np.float64(24.44423289301959), np.float64(0.03860110266387491), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.31424368128787), 0.0, np.float64(-5.441134671275869), 0.0, False, False, False, True, np.float64(3.47224928700207), np.float64(4.501276172354946), 0.0, 0.0)
+Waveform Generated. SNR: 85.36580554000221
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.069268226623535 seconds
+    [LM1] it 114  lam = 5.7e-09  ov = 0.999993602879  chi2 = 9.323612e-02  rel = 6.38e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.1125792686), np.float64(2001.873990048927), 0.0, np.float64(24.444201016301403), np.float64(0.038624180022520875), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.313276318294525), 0.0, np.float64(-5.437397903777123), 0.0, False, False, False, True, np.float64(3.2669782904580664), np.float64(4.404081276284536), 0.0, 0.0)
+Waveform Generated. SNR: 85.3605383192832
+calculating stable deltas...
+Time taken to compute stable deltas is 27.569547414779663 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4668526649475098 seconds
+    [LM1] it 115  lam = 5.6e-09  ov = 0.999994012967  chi2 = 8.728441e-02  rel = 6.84e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999998.0585958139), np.float64(2001.758953773107), 0.0, np.float64(24.444170542699812), np.float64(0.038646164422200605), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.312338451636156), 0.0, np.float64(-5.433808756386461), 0.0, False, False, False, True, np.float64(3.0710844694545556), np.float64(4.3106144335462835), 0.0, 0.0)
+Waveform Generated. SNR: 85.35559091167
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0660717487335205 seconds
+    [LM1] it 116  lam = 4.3e-09  ov = 0.999994427862  chi2 = 8.131237e-02  rel = 8.13e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.9705449982), np.float64(2001.6500951474432), 0.0, np.float64(24.444142630007445), np.float64(0.03866678621682844), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.311451637183111), 0.0, np.float64(-5.430632470877411), 0.0, False, False, False, True, np.float64(2.885359766279565), np.float64(4.220047305473694), 0.0, 0.0)
+Waveform Generated. SNR: 85.35091086443992
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0625808238983154 seconds
+    [LM1] it 117  lam = 4.8e-09  ov = 0.999994889550  chi2 = 7.470017e-02  rel = 2.49e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.921347834), np.float64(2001.5194911170481), 0.0, np.float64(24.444107530927514), np.float64(0.03869186512335772), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.310402462496113), 0.0, np.float64(-5.426448081865175), 0.0, False, False, False, True, np.float64(2.6630846413597435), np.float64(4.116702152193438), 0.0, 0.0)
+Waveform Generated. SNR: 85.3450741572887
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.054018497467041 seconds
+    [LM1] it 118  lam = 3.7e-09  ov = 0.999995031107  chi2 = 7.284353e-02  rel = 1.08e-01
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.8501077697), np.float64(2001.4126866829656), 0.0, np.float64(24.444079608835587), np.float64(0.03871219421739565), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.309554296528665), 0.0, np.float64(-5.4232282780142), 0.0, False, False, False, True, np.float64(2.480988702652918), np.float64(4.030781005473514), 0.0, 0.0)
+Waveform Generated. SNR: 85.3406239518613
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0671074390411377 seconds
+    [LM1] it 119  lam = 3.7e-09  ov = 0.999995583996  chi2 = 6.499066e-02  rel = 4.66e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.7700405872), np.float64(2001.288904209144), 0.0, np.float64(24.444047281688192), np.float64(0.03873575358728581), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3085403861101135), 0.0, np.float64(-5.419468032379431), 0.0, False, False, False, True, np.float64(2.269882459590771), np.float64(3.9299189539070865), 0.0, 0.0)
+Waveform Generated. SNR: 85.3351788711905
+calculating stable deltas...
+Time taken to compute stable deltas is 27.565030574798584 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4741039276123047 seconds
+    [LM1] it 120  lam = 3.4e-09  ov = 0.999995812530  chi2 = 6.196376e-02  rel = 8.27e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.7042597238), np.float64(2001.177715641553), 0.0, np.float64(24.44401802352507), np.float64(0.03875694631383013), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.307641590045611), 0.0, np.float64(-5.416055029591071), 0.0, False, False, False, True, np.float64(2.080289209177895), np.float64(3.8406679098644974), 0.0, 0.0)
+Waveform Generated. SNR: 85.33037042533503
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.083085775375366 seconds
+    [LM1] it 121  lam = 3.3e-09  ov = 0.999996186180  chi2 = 5.683700e-02  rel = 6.27e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.6425527538), np.float64(2001.0708824328), 0.0, np.float64(24.44398987266229), np.float64(0.03877731082672363), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.306777832077862), 0.0, np.float64(-5.412760128933065), 0.0, False, False, False, True, np.float64(1.8980996632475398), np.float64(3.7550391127354916), 0.0, 0.0)
+Waveform Generated. SNR: 85.32580155383565
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0707902908325195 seconds
+    [LM1] it 122  lam = 2.7e-09  ov = 0.999996454404  chi2 = 5.327370e-02  rel = 6.80e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.573801354), np.float64(2000.9734421099154), 0.0, np.float64(24.4439644738628), np.float64(0.0387958394782974), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.305987063370175), 0.0, np.float64(-5.409823770011556), 0.0, False, False, False, True, np.float64(1.7318098043998367), np.float64(3.676487885879461), 0.0, 0.0)
+Waveform Generated. SNR: 85.32162410470335
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0701470375061035 seconds
+    [LM1] it 123  lam = 2.7e-09  ov = 0.999996727336  chi2 = 4.964927e-02  rel = 4.03e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.5221503422), np.float64(2000.8714955712976), 0.0, np.float64(24.443937386898067), np.float64(0.03881530649750798), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.305165164905594), 0.0, np.float64(-5.406628098041269), 0.0, False, False, False, True, np.float64(1.5579724820051073), np.float64(3.595796383807536), 0.0, 0.0)
+Waveform Generated. SNR: 85.31717217726268
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.067188262939453 seconds
+    [LM1] it 124  lam = 2.3e-09  ov = 0.999996893210  chi2 = 4.764620e-02  rel = 6.17e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.4648707854), np.float64(2000.7829537835191), 0.0, np.float64(24.443914185438235), np.float64(0.03883214817086471), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.304446087594439), 0.0, np.float64(-5.40393010071107), 0.0, False, False, False, True, np.float64(1.4068461606035338), np.float64(3.5248988887095436), 0.0, 0.0)
+Waveform Generated. SNR: 85.31334312590901
+calculating stable deltas...
+Time taken to compute stable deltas is 27.580936193466187 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.472299575805664 seconds
+    [LM1] it 125  lam = 2.0e-09  ov = 0.999997121484  chi2 = 4.470836e-02  rel = 4.48e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.402781593), np.float64(2000.693349662716), 0.0, np.float64(24.44389081460622), np.float64(0.038849158650030864), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.303721325908503), 0.0, np.float64(-5.401225652198456), 0.0, False, False, False, True, np.float64(1.253847365064414), np.float64(3.452871105217448), 0.0, 0.0)
+Waveform Generated. SNR: 85.30951013058322
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0734338760375977 seconds
+    [LM1] it 126  lam = 7.9e-10  ov = 0.999997287605  chi2 = 4.270585e-02  rel = 4.81e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.3410408127), np.float64(2000.610722088632), 0.0, np.float64(24.443869231780184), np.float64(0.03886488348645956), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.303057726041689), 0.0, np.float64(-5.398729713929356), 0.0, False, False, False, True, np.float64(1.1127793087269595), np.float64(3.3877302090814347), 0.0, 0.0)
+Waveform Generated. SNR: 85.30597568618542
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0543456077575684 seconds
+    [LM1] it 127  lam = 1.2e-09  ov = 0.999997456804  chi2 = 4.065226e-02  rel = 4.07e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.2453790037), np.float64(2000.482490964603), 0.0, np.float64(24.44383580104625), np.float64(0.03888924243495318), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.302025555641407), 0.0, np.float64(-5.394868499517563), 0.0, False, False, False, True, np.float64(0.8937853784495535), np.float64(3.286181217284843), 0.0, 0.0)
+Waveform Generated. SNR: 85.30031315458828
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0682687759399414 seconds
+    [LM1] it 128  lam = 5.1e-10  ov = 0.999997516939  chi2 = 4.048672e-02  rel = 6.87e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.2248744695), np.float64(2000.4119991886414), 0.0, np.float64(24.443816785556262), np.float64(0.038902718327849965), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.301447729449211), 0.0, np.float64(-5.392588809376483), 0.0, False, False, False, True, np.float64(0.7735287217052935), np.float64(3.2302671161096965), 0.0, 0.0)
+Waveform Generated. SNR: 85.29732968088761
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0657403469085693 seconds
+    [LM1] it 129  lam = 4.3e-10  ov = 0.999997735493  chi2 = 3.770396e-02  rel = 2.21e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.1586227537), np.float64(2000.3253890044261), 0.0, np.float64(24.44379427486491), np.float64(0.03891913522695593), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.3007511460945596), 0.0, np.float64(-5.389994870927512), 0.0, False, False, False, True, np.float64(0.625527950359178), np.float64(3.161368334186472), 0.0, 0.0)
+Waveform Generated. SNR: 85.29361611767891
+calculating stable deltas...
+Time taken to compute stable deltas is 27.627606630325317 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.4659230709075928 seconds
+    [LM1] it 130  lam = 1.4e-10  ov = 0.999997828510  chi2 = 3.687235e-02  rel = 2.98e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.1175113282), np.float64(2000.2685597651935), 0.0, np.float64(24.4437794473014), np.float64(0.03892993152351073), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.300284159019284), 0.0, np.float64(-5.388271650894654), 0.0, False, False, False, True, np.float64(0.5284152571125734), np.float64(3.116036408497108), 0.0, 0.0)
+Waveform Generated. SNR: 85.29114594605494
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0738542079925537 seconds
+    [LM1] it 131  lam = 4.7e-11  ov = 0.999997928888  chi2 = 3.577382e-02  rel = 1.41e-02
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.086557686), np.float64(2000.2251952899262), 0.0, np.float64(24.443768110117666), np.float64(0.0389381651275314), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.299934494193806), 0.0, np.float64(-5.386955788629785), 0.0, False, False, False, True, np.float64(0.4543157644822289), np.float64(3.081789528996237), 0.0, 0.0)
+Waveform Generated. SNR: 85.28934965955635
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.068906545639038 seconds
+    [LM1] it 132  lam = 1.6e-11  ov = 0.999997982171  chi2 = 3.526970e-02  rel = 4.23e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.091569086), np.float64(2000.1903026787563), 0.0, np.float64(24.443758175887055), np.float64(0.03894495844898584), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.299653617446051), 0.0, np.float64(-5.385700046341056), 0.0, False, False, False, True, np.float64(0.3949751053037608), np.float64(3.056669134491219), 0.0, 0.0)
+Waveform Generated. SNR: 85.28776519775374
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.070512294769287 seconds
+    [LM1] it 133  lam = 1.4e-11  ov = 0.999998009260  chi2 = 3.512036e-02  rel = 2.82e-03
+Body is not plunging, Fisher should be stable.
+waveform shape: (3, 3179776)
+Computing SNR for parameters: (np.float64(999997.066174775), np.float64(2000.1968189078407), 0.0, np.float64(24.443760663031448), np.float64(0.038943565649047225), 1.0, 16.344, 0.7853981633974483, 1.0471975511965976, 0.5235987755982988, 0.39269908169872414, np.float64(-5.29970608442346), 0.0, np.float64(-5.386085913715021), 0.0, False, False, False, True, np.float64(0.40584166228600016), np.float64(3.0596094676794974), 0.0, 0.0)
+Waveform Generated. SNR: 85.2881741719784
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.063417911529541 seconds
+    [LM1] it 134  lam = 1.4e+129  ov = 0.999998011689  chi2 = 3.502123e-02  rel = 0.00e+00
+    [LM1] no damped step lowers chi2; stopping at iteration 134
+
+------------------------------------------------------------------------------------------
+[RES ] model = 0PA + 2.5PN deviation,  SNR = 85.366075
+[RES ] seed (GR)    ov = 0.023358739909  chi2 = 1.421658e+04
+[RES ] DE           ov = 0.982769371229  chi2 = 2.542571e+02
+[RES ] DE+LM        ov = 0.999998011689  chi2 = 3.502123e-02
+[RES ] mismatch 9.766413e-01 -> 1.988311e-06  (491191.48x reduction)
+
+     param          seed (GR)                 DE              DE+LM            bias         sigma  bias/sigma
+        m1            1000000        1000650.845        999997.0662   -2.933825e+00   1.29723e+02      -0.023
+        m2               2000        2020.118035        2000.196819   +1.968189e-01   7.27574e+00      +0.027
+        p0             24.442         24.4364343        24.44376066   +1.760663e-03   3.06516e-03      +0.574
+        e0               0.04      0.04088163276      0.03894356565   -1.056434e-03   1.42784e-03      -0.740
+  Phi_phi0                  1       0.3754358823       -5.299706084   -6.299706e+00   1.73839e-01     -36.239
+    Phi_r0                  1        2.321232875       -5.386085914   -6.386086e+00   6.54351e-01      -9.759
+     dev_1                  0        36.67334904       0.4058416623   +4.058417e-01   1.24362e+01      +0.033
+     dev_2                  0     -0.03161192814        3.059609468   +3.059609e+00   1.04795e+01      +0.292
+
+best-fit vector [9.9999706617e+05, 2.0001968189e+03, 2.4443760663e+01, 3.8943565649e-02, -5.2997060844e+00, -5.3860859137e+00, 4.0584166229e-01, 3.0596094677e+00]
+[saved] /home/svu/e1583490/EMRI_CV_bias/environemen_2_eccen/results_de_env_vs_pn.json

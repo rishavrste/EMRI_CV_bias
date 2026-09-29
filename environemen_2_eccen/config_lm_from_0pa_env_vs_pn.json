@@ -1,0 +1,86 @@
+{
+  "case": "env-vs-pn-deviation-from-0PA",
+
+  "template": "pn",
+
+  "_comment_seed": "Where the climb starts. 'file' is a results JSON written by de_env_vs_vacuum.py; 'stage' picks which of its entries to take (lm = the vacuum best fit after its LM polish, de = before it). The deviations are appended at 0.0, i.e. at GR, so the climb starts exactly at the 0PA answer and has to earn any deviation. Set 'params' instead to give the full seed vector explicitly.",
+  "seed": {
+    "file": "results_de_env_vs_vacuum.json",
+    "stage": "lm",
+    "deviation": [0.0, 0.0],
+    "params": null
+  },
+
+  "_comment_injection": "Identical to config_de_env_vs_pn.json, so the two PN runs differ only in where the climb starts.",
+  "injection": {
+    "m1": 1e6,
+    "m2": 2e3,
+    "a": 0.0,
+    "p0": 24.442,
+    "e0": 0.04,
+    "xI0": 1.0,
+    "dist": 16.344,
+    "qS": 0.7853981633974483,
+    "phiS": 1.0471975511965976,
+    "qK": 0.5235987755982988,
+    "phiK": 0.39269908169872414,
+    "Phi_phi0": 1.0,
+    "Phi_theta0": 0.0,
+    "Phi_r0": 1.0
+  },
+
+  "disk": {
+    "Sigma0_cgs": 5.25e5,
+    "h0": 0.025,
+    "Sigma_p": -1.5
+  },
+
+  "infer": ["m1", "m2", "p0", "e0", "Phi_phi0", "Phi_r0"],
+
+  "_comment_pn": "chi2_secondary is an ASSUMPTION: the secondary spin was never supplied for this source. evolve_1PA is False because the injection is adiabatic + disk, so the template baseline must be 0PA too.",
+  "pn": {
+    "chi2_secondary": 0.0,
+    "evolve_1PA": false
+  },
+
+  "waveform": {
+    "T": null,
+    "T_safety": 0.99,
+    "dt": 5,
+    "nchannels": 3,
+    "fmin": 1e-5,
+    "fmax": 1e-1
+  },
+
+  "fisher": {
+    "Ndelta": 12,
+    "der_order": 8
+  },
+
+  "_comment_bounds": "No DE here, so only the reported Fisher sigma uses these. Kept identical to the DE run for comparability.",
+  "bounds": {
+    "sigma_range": 5.0,
+    "floors": {"m1": 1e4, "m2": 1.0, "e0": 1e-4, "dev_1": -100.0, "dev_2": -100.0},
+    "ceilings": {"e0": 0.7, "dev_1": 100.0, "dev_2": 100.0},
+    "p0_separatrix_pad": 0.5
+  },
+
+  "_comment_lm": "House CV controls, identical to every script under src/{EMRI,IMRI}.",
+  "lm": {
+    "lambda0": 1e-2,
+    "max_iters": 150,
+    "max_inner": 30,
+    "rel_tol": 1e-9,
+    "recompute_deltas_every": 5,
+    "overlap_target": 0.9999999999
+  },
+
+  "_comment_nm": "ON here, and load-bearing. Seeding at the 0PA best fit puts the climb on the flat deviation ridge where <dh/d(dev)|r> ~ 0: the LM step vanishes for ANY damping, so a stall there is a basin problem that only the Nelder-Mead escape can fix. The escape is accepted only if it improves the overlap.",
+  "nm": {
+    "enabled": true,
+    "maxiter": 1000,
+    "step": 2.0
+  },
+
+  "output": "results_lm_from_0pa_env_vs_pn.json"
+}

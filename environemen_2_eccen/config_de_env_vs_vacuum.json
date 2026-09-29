@@ -1,0 +1,81 @@
+{
+  "case": "env-vs-vacuum",
+
+  "_comment_injection": "The environmentally perturbed source. All 14 waveform parameters; anything not listed in 'infer' stays pinned here for the template too.",
+  "injection": {
+    "m1": 1e6,
+    "m2": 2e3,
+    "a": 0.0,
+    "p0": 24.442,
+    "e0": 0.04,
+    "xI0": 1.0,
+    "dist": 16.344,
+    "qS": 0.7853981633974483,
+    "phiS": 1.0471975511965976,
+    "qK": 0.5235987755982988,
+    "phiK": 0.39269908169872414,
+    "Phi_phi0": 1.0,
+    "Phi_theta0": 0.0,
+    "Phi_r0": 1.0
+  },
+
+  "_comment_disk": "Accretion disk the injection is evolved through. Sigma0 is given in g/cm^2 and converted to geometric units from m1 at load time. The template never sees these.",
+  "disk": {
+    "Sigma0_cgs": 5.25e5,
+    "h0": 0.025,
+    "Sigma_p": -1.5
+  },
+
+  "_comment_infer": "The fit vector. 'a' is deliberately absent: it is held at its injected 0.0.",
+  "infer": ["m1", "m2", "p0", "e0", "Phi_phi0", "Phi_r0"],
+
+  "_comment_waveform": "T in years, or null to run to plunge times T_safety.",
+  "waveform": {
+    "T": null,
+    "T_safety": 0.99,
+    "dt": 5,
+    "nchannels": 3,
+    "fmin": 1e-5,
+    "fmax": 1e-1
+  },
+
+  "fisher": {
+    "Ndelta": 12,
+    "der_order": 8
+  },
+
+  "_comment_bounds": "Clips the +-sigma_range Fisher box to what the waveform can take. p0's floor is the separatrix plus the pad; the phases are periodic and need none.",
+  "bounds": {
+    "sigma_range": 5.0,
+    "floors": {"m1": 1e4, "m2": 1.0, "e0": 1e-4},
+    "ceilings": {"e0": 0.7},
+    "p0_separatrix_pad": 0.5
+  },
+
+  "_comment_de": "Passed straight to scipy.optimize.differential_evolution, bar report_every.",
+  "de": {
+    "maxiter": 1100,
+    "popsize": 15,
+    "tol": 1e-8,
+    "atol": 1e-5,
+    "init": "sobol",
+    "mutation": [0.5, 1.0],
+    "recombination": 0.7,
+    "polish": true,
+    "seed": 42,
+    "report_every": 200
+  },
+
+  "_comment_lm": "House CV controls, identical to every script under src/{EMRI,IMRI}.",
+  "lm": {
+    "lambda0": 1e-2,
+    "max_iters": 150,
+    "max_inner": 30,
+    "rel_tol": 1e-9,
+    "recompute_deltas_every": 5,
+    "overlap_target": 0.9999999999
+  },
+
+  "_comment_output": "Relative paths resolve next to this config file.",
+  "output": "results_de_env_vs_vacuum.json"
+}

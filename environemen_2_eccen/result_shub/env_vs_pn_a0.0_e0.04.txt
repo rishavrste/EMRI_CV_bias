@@ -1,0 +1,129 @@
+================================================================================
+ENVIRONMENTAL EMRI vs 0PA + 2.5PN FLUX DEVIATION  --  Cutler-Vallisneri bias
+================================================================================
+point      : a = 0.0, e0 = 0.04, m1 = 1e6, m2 = 2e3   (eccentric, runs to plunge)
+             SAME source as env_vs_vacuum_a0.0_e0.04 -- the two are directly comparable
+run        : job 628604, finished 2026-09-23, 3.13 h wall (DE 2.74 h, LM 21 min)
+script     : de_env_vs_pn.py   (shared module: env_cv.py)
+config     : env_vs_pn_a0.0_e0.04.config.json
+raw        : env_vs_pn_a0.0_e0.04.json   (full record, incl. LM history)
+log        : ../de_env_vs_pn.log
+
+INJECTION (signal) -- identical to the vacuum run
+  m1 = 1e6, m2 = 2e3, a = 0.0, p0 = 24.442, e0 = 0.04, xI0 = 1.0, dist = 16.344
+  qS = pi/4, phiS = pi/3, qK = pi/6, phiK = pi/8
+  Phi_phi0 = 1.0, Phi_theta0 = 0.0, Phi_r0 = 1.0
+  disk (Duque et al. accretion torque):
+      Sigma0 = 5.25e5 g/cm^2 = 5.755491870327511e-12 geometric
+      h0     = 0.025
+      Sigma_p= -1.5
+
+TEMPLATE (model)
+  0PA adiabatic + additive 2.5PN flux deviation (C_p, C_e), no disk.
+  ASSUMED (not supplied by the user, printed at runtime):
+      secondary spin chi2 = 0.0,  evolve_1PA = False
+
+  WAVEFORM-CLASS CHECK -- CLEARED.  The disk lives in KerrEccEqAccFlux and the
+  deviation in SuperKludgeFlux, so this run uses a different flux class from the
+  vacuum run.  Measured at the injection with deviation = 0:
+      SuperKludge 0PA  overlap = 0.023358739909
+      vacuum template  overlap = 0.023358563489
+  They agree to 1.8e-7, so the class swap contributes nothing and every bit of
+  the improvement below is attributable to the deviation parameters.
+
+CONFIGURATION
+  T = 0.503796 yr (0.99 x plunge)   dt = 5 s   channels = AET (3)
+  band = [1.0e-05, 1.0e-01] Hz      SNR = 85.366075
+  inferred: m1, m2, p0, e0, Phi_phi0, Phi_r0, dev_1 (C_p), dev_2 (C_e)
+            (a held fixed at 0.0)
+  search  : differential evolution in +-5 Fisher sigma about the injection
+            (sobol init, popsize 15, mutation (0.5,1.0), recomb 0.7, seed 42,
+             polish = L-BFGS-B, maxiter 1100), then an LM CV climb from the winner.
+
+--------------------------------------------------------------------------------
+RESULTS
+--------------------------------------------------------------------------------
+                    overlap              chi2
+injection      0.023358739909      1.421658e+04
+DE             0.982769371229      2.542571e+02
+DE+LM          0.999998011689      3.502123e-02       (NM escape not needed)
+
+mismatch  9.766413e-01 -> 1.988311e-06   (491191.48x reduction)
+
+     param          injection                 DE              DE+LM            bias         sigma  bias/sigma
+        m1            1000000        1000650.845        999997.0662   -2.933825e+00   1.29723e+02      -0.023
+        m2               2000        2020.118035        2000.196819   +1.968189e-01   7.27574e+00      +0.027
+        p0             24.442         24.4364343        24.44376066   +1.760663e-03   3.06516e-03      +0.574
+        e0               0.04      0.04088163276      0.03894356565   -1.056434e-03   1.42784e-03      -0.740
+  Phi_phi0                  1       0.3754358823       0.9834792228   -1.652077e-02   1.73839e-01      -0.095
+    Phi_r0                  1        2.321232875       0.8970993934   -1.029006e-01   6.54351e-01      -0.157
+     dev_1                  0        36.67334904       0.4058416623   +4.058417e-01   1.24362e+01      +0.033
+     dev_2                  0     -0.03161192814        3.059609468   +3.059609e+00   1.04795e+01      +0.292
+
+  PHASE WRAP: the raw LM output has Phi_phi0 = -5.299706084 and Phi_r0 =
+  -5.386085914.  Those are the +2*pi equivalents of 0.983479223 and 0.897099393,
+  which is what the table above reports.  The log's raw -36.239 / -9.759 sigma
+  entries for these two rows are wrap artefacts, NOT physics.
+
+best-fit vector, as LM returned it (unwrapped phases):
+  [9.9999706617e+05, 2.0001968189e+03, 2.4443760663e+01, 3.8943565649e-02,
+   -5.2997060844e+00, -5.3860859137e+00, 4.0584166229e-01, 3.0596094677e+00]
+
+Fisher sigma at the BEST-FIT point:
+  [1.2972279632e+02, 7.2757407227e+00, 3.0651553457e-03, 1.4278439461e-03,
+   1.7383856931e-01, 6.5435127048e-01, 1.2436197177e+01, 1.0479492745e+01]
+
+Fisher sigma at the INJECTION, which set the +-5 sigma search box:
+  m1 1.302148e+02  m2 6.690994e+00  p0 3.039387e-03  e0 1.320149e-03
+  Phi_phi0 1.249402e-01  Phi_r0 6.405687e-01  dev_1 1.125565e+01  dev_2 6.625185e-03
+
+--------------------------------------------------------------------------------
+COMPARISON WITH THE VACUUM TEMPLATE (same source, job 628190)
+--------------------------------------------------------------------------------
+                       vacuum GR      0PA + 2.5PN
+  overlap           0.999990616390   0.999998011689
+  mismatch            9.383610e-06     1.988311e-06      4.72x reduction
+  chi2                1.367654e-01     3.502123e-02
+
+     param     |bias| vacuum      |bias| PN    ratio    bias/sig vac   bias/sig PN
+        m1           2.320764       2.933825    1.264         -0.018        -0.023
+        m2          0.0477801       0.196819    4.119         +0.170        +0.027
+        p0         0.00197014     0.00176066    0.894         +0.839        +0.574
+        e0         0.00110915     0.00105643    0.952         -4.260        -0.740
+  Phi_phi0          0.0219669      0.0165208    0.752         +0.182        -0.095
+    Phi_r0            0.12642       0.102901    0.814         -0.204        -0.157
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+* HEADLINE -- THE ECCENTRICITY BIAS DID NOT GO AWAY.  In ABSOLUTE terms e0 moves
+  from 1.1091e-3 to 1.0564e-3, i.e. it shrinks by 4.8%.  The best fit is still
+  e0 = 0.038944 against an injected 0.040.  What changes is the error bar:
+  sigma(e0) inflates from 2.603e-4 to 1.428e-3 (5.5x) once the two deviation
+  parameters are marginalised, so the SAME bias reads as 0.74 sigma instead of
+  4.26 sigma.  Granting the PN deviation DILUTES the statement; it does not
+  de-bias the eccentricity.
+
+* The same pattern holds across the board.  Every bias/sigma improves, but four
+  of the six absolute biases move by less than 25%, and m2's absolute bias gets
+  4.1x WORSE while its bias/sigma "improves" from +0.170 to +0.027 -- purely
+  because sigma(m2) inflates 26x (0.281 -> 7.276).  Read the absolute column,
+  not the scaled one, when asking whether the deviation recovers the truth.
+
+* The deviation DOES buy a genuinely better fit: mismatch 4.72x lower, and the
+  class-swap control above says that is all disk physics.  The disk is absorbed
+  mainly through the ECCENTRICITY channel of the deviation: C_e = 3.060 while
+  C_p = 0.406.  C_p is nowhere near the -36.9 / +64 values that recur in the
+  vacuum-vs-1PA EMRI grid, so this is a different absorption direction.
+
+* CONTROL DEFECT in the +-5 sigma box -- worth fixing before the next run.  The
+  Fisher sigma for dev_2 evaluated at deviation = 0 is 6.63e-3, giving a box of
+  +-0.0331, while the converged answer is C_e = 3.06 -- about 460 sigma outside
+  its own search box.  (sigma(dev_1) = 11.3 vs sigma(dev_2) = 6.6e-3 is a factor
+  1700 anisotropy.)  DE consequently exhausted all 1100 iterations still at
+  0.9828 and the UNCONSTRAINED LM did the entire climb to 0.999998.  A fixed
+  deviation box (the +-100 guard already in the config) is the right prescription
+  here, not a Fisher-scaled one.
+
+* NM escape was not used; LM stopped at iteration 134 with "no damped step lowers
+  chi2".  LM alone moved the mismatch from 1.72e-2 to 1.99e-6.

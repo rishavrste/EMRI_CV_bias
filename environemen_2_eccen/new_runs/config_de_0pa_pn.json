@@ -1,0 +1,109 @@
+{
+  "case": "env-vs-0pa-pn",
+  "_comment_template": "The template family fitted to the environmental injection. 'pn' = SuperKludge 0PA with the 2.5PN flux deviation switched on; 'vacuum' = the same waveform class as the signal, disk dropped.",
+  "template": "pn",
+  "_comment_injection": "The environmentally perturbed source, matching test.ipynb cells 2-4 (p0 = 24.35, Sigma0 = 1e5 g/cm^2). All 14 waveform parameters; anything not listed in 'infer' stays pinned here for the template too.",
+  "injection": {
+    "m1": 1000000.0,
+    "m2": 2000.0,
+    "a": 0.0,
+    "p0": 24.35,
+    "e0": 0.04,
+    "xI0": 1.0,
+    "dist": 16.344,
+    "qS": 0.7853981633974483,
+    "phiS": 1.0471975511965976,
+    "qK": 0.5235987755982988,
+    "phiK": 0.39269908169872414,
+    "Phi_phi0": 1.0,
+    "Phi_theta0": 0.0,
+    "Phi_r0": 1.0
+  },
+  "_comment_disk": "Accretion disk the injection is evolved through. Sigma0 is given in g/cm^2 and converted to geometric units from m1 at load time. The template never sees these.",
+  "disk": {
+    "Sigma0_cgs": 100000.0,
+    "h0": 0.025,
+    "Sigma_p": -1.5
+  },
+  "_comment_infer": "The intrinsic fit vector. The template's own extra parameters (dev_1, dev_2 for 'pn') are appended automatically. 'a' is deliberately absent: it is held at its injected 0.0.",
+  "infer": [
+    "m1",
+    "m2",
+    "p0",
+    "e0",
+    "Phi_phi0",
+    "Phi_r0"
+  ],
+  "_comment_pn": "chi2_secondary is an ASSUMPTION: the secondary spin was never supplied for this source. evolve_1PA is False because the injection is adiabatic + disk, so the template baseline must be 0PA too.",
+  "pn": {
+    "chi2_secondary": 0.0,
+    "evolve_1PA": false
+  },
+  "_comment_waveform": "T in years, or null to run to plunge times T_safety. The plunge time always comes from the environmental trajectory, so signal and template share one T.",
+  "waveform": {
+    "T": null,
+    "T_safety": 0.99,
+    "dt": 5,
+    "nchannels": 3,
+    "fmin": 1e-05,
+    "fmax": 0.1
+  },
+  "fisher": {
+    "Ndelta": 12,
+    "der_order": 8
+  },
+  "_comment_bounds": "+-sigma_range Fisher sigma about the injection, clipped to what the waveform can take. The parameters in 'full_period' instead span one whole period [inj - pi, inj + pi]: they are periodic, so this adds reach, not physics. It is needed because the notebook's vacuum LM fit put Phi_phi0 at +26 sigma, outside any 5-sigma box. dev_1/dev_2 are capped at +-100 as a guard against a flat-direction sigma.",
+  "bounds": {
+    "sigma_range": 5.0,
+    "floors": {
+      "m1": 10000.0,
+      "m2": 1.0,
+      "e0": 0.0001,
+      "dev_1": -100.0,
+      "dev_2": -100.0
+    },
+    "ceilings": {
+      "e0": 0.7,
+      "dev_1": 100.0,
+      "dev_2": 100.0
+    },
+    "p0_separatrix_pad": 0.5,
+    "full_period": [
+      "Phi_phi0",
+      "Phi_r0"
+    ]
+  },
+  "_comment_de": "Passed straight to scipy.optimize.differential_evolution, bar report_every.",
+  "de": {
+    "maxiter": 1100,
+    "popsize": 15,
+    "tol": 1e-08,
+    "atol": 1e-05,
+    "init": "sobol",
+    "mutation": [
+      0.5,
+      1.0
+    ],
+    "recombination": 0.7,
+    "polish": true,
+    "seed": 42,
+    "report_every": 200
+  },
+  "_comment_lm": "House CV controls, identical to every script under src/{EMRI,IMRI}.",
+  "lm": {
+    "lambda0": 0.01,
+    "max_iters": 150,
+    "max_inner": 30,
+    "rel_tol": 1e-09,
+    "recompute_deltas_every": 5,
+    "overlap_target": 0.9999999999
+  },
+  "_comment_nm": "DE has already done the global search, so the Nelder-Mead escape is off here. It is on in the from-0PA run, where the seed sits on the flat deviation ridge.",
+  "nm": {
+    "enabled": false,
+    "maxiter": 1000,
+    "step": 2.0
+  },
+  "_comment_output": "Relative paths resolve next to this config file.",
+  "output": "results_de_0pa_pn.json"
+}
