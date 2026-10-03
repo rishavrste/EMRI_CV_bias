@@ -1,0 +1,1253 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000280.5634454393, 9998.791524565264, -0.8987907367639235, 31.214603677044366, 0.09999046279375491, 1.0, 78.59116363471949, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09775025827521967, 0.2, 0.3120661746569321, 0.9500080089440673, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002685814842792
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888330.517806468
+plunging! t_interp:  7889529.999999998 t_traj:  7882706.85902317
+plunging! t_interp:  7889529.999999998 t_traj:  7886146.323767253
+plunging! t_interp:  7889529.999999998 t_traj:  7889403.27773848
+plunging! t_interp:  7889529.999999998 t_traj:  7889295.710466099
+plunging! t_interp:  7889529.999999998 t_traj:  7885566.413122415
+plunging! t_interp:  7889529.999999998 t_traj:  7881840.646841826
+plunging! t_interp:  7889529.999999998 t_traj:  7889096.635125407
+Time taken to compute stable deltas is 34.883378982543945 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.73148775100708 seconds
+[1pa idx=0] overlap=0.9999997709466673 (stored 0.9999997709460842) rho_s=20.000000 cond=2.628e+18
+  bias/sigma = m1=+0.0413, m2=-0.0571, a=+0.0249, p0=-0.0229, e0=-0.0042, Phi_phi0=-0.0047, Phi_r0=+0.0125, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000179.8144449949, 9999.407423067847, -0.4992335788396199, 30.750743658864522, 0.09997819049896374, 1.0, 98.79805813899465, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09739774984754518, 0.2, 0.3042899990128048, 0.9500479103839488, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002382654436886
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887672.04380085
+plunging! t_interp:  7889529.999999998 t_traj:  7889235.745129594
+plunging! t_interp:  7889529.999999998 t_traj:  7882292.490386816
+plunging! t_interp:  7889529.999999998 t_traj:  7885648.480917531
+plunging! t_interp:  7889529.999999998 t_traj:  7889005.521690198
+plunging! t_interp:  7889529.999999998 t_traj:  7888826.371801468
+plunging! t_interp:  7889529.999999998 t_traj:  7888370.178519492
+plunging! t_interp:  7889529.999999998 t_traj:  7884380.794041155
+plunging! t_interp:  7889529.999999998 t_traj:  7880395.453298676
+plunging! t_interp:  7889529.999999998 t_traj:  7888157.212630704
+Time taken to compute stable deltas is 32.60569190979004 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.74397611618042 seconds
+[1pa idx=1] overlap=0.9999999516093203 (stored 0.9999999516092806) rho_s=20.000000 cond=1.819e+18
+  bias/sigma = m1=+0.0376, m2=-0.0360, a=+0.0190, p0=-0.0162, e0=-0.0109, Phi_phi0=-0.0048, Phi_r0=+0.0039, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999913.3389055876, 10000.72666946579, 0.00011089474308482865, 30.198641543005706, 0.09999953201980778, 1.0, 135.93327591114996, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10717711678287636, 0.2, 0.235645380861128, 0.9501277250320731, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001686286629027
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886933.442662611
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.904673969
+plunging! t_interp:  7889529.999999998 t_traj:  7889300.927050464
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999998 t_traj:  7881837.093320555
+plunging! t_interp:  7889529.999999998 t_traj:  7885095.495820938
+plunging! t_interp:  7889529.999999998 t_traj:  7888354.895083305
+plunging! t_interp:  7889529.999999998 t_traj:  7888180.956576212
+plunging! t_interp:  7889529.999999998 t_traj:  7889325.61191214
+plunging! t_interp:  7889529.999999998 t_traj:  7887241.382012511
+plunging! t_interp:  7889529.999999998 t_traj:  7882872.337138506
+plunging! t_interp:  7889529.999999998 t_traj:  7878508.148993385
+plunging! t_interp:  7889529.999999998 t_traj:  7888543.255525418
+plunging! t_interp:  7889529.999999998 t_traj:  7887008.137677082
+Time taken to compute stable deltas is 34.115724325180054 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8494269847869873 seconds
+[1pa idx=2] overlap=0.9999949600883207 (stored 0.9999949600920405) rho_s=20.000000 cond=9.066e+17
+  bias/sigma = m1=-0.0287, m2=+0.0655, a=+0.1529, p0=+0.0461, e0=-0.0002, Phi_phi0=+0.0115, Phi_r0=-0.0583, chi2=+0.0001
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999993.3109977246, 10000.072650040913, 0.5000555330895782, 29.66704915910256, 0.09999739350886523, 1.0, 194.74427454873847, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10016519004005181, 0.2, 0.2962501299803451, 0.95, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000584524007493
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886290.222134749
+plunging! t_interp:  7889529.999999998 t_traj:  7887846.548978918
+plunging! t_interp:  7889529.999999998 t_traj:  7889403.029359762
+plunging! t_interp:  7889529.999999998 t_traj:  7889319.975591347
+plunging! t_interp:  7889529.999999998 t_traj:  7889424.740858729
+plunging! t_interp:  7889529.999999998 t_traj:  7888657.509833361
+plunging! t_interp:  7889529.999999998 t_traj:  7881451.664267924
+plunging! t_interp:  7889529.999999998 t_traj:  7884620.048106196
+plunging! t_interp:  7889529.999999998 t_traj:  7887789.38117961
+plunging! t_interp:  7889529.999999998 t_traj:  7887620.24943561
+plunging! t_interp:  7889529.999999998 t_traj:  7888733.270330022
+plunging! t_interp:  7889529.999999998 t_traj:  7886117.817412052
+plunging! t_interp:  7889529.999999998 t_traj:  7881281.945287676
+plunging! t_interp:  7889529.999999998 t_traj:  7876452.035944687
+plunging! t_interp:  7889529.999999998 t_traj:  7889258.917191346
+plunging! t_interp:  7889529.999999998 t_traj:  7887558.908388937
+plunging! t_interp:  7889529.999999998 t_traj:  7885859.636483634
+plunging! t_interp:  7889529.999999998 t_traj:  7889168.190332042
+Time taken to compute stable deltas is 34.16811275482178 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8488426208496094 seconds
+[1pa idx=3] overlap=0.9999999868941247 (stored 0.9999999868941276) rho_s=20.000000 cond=1.579e+18
+  bias/sigma = m1=-0.0024, m2=+0.0043, a=+0.0026, p0=-0.0009, e0=-0.0013, Phi_phi0=+0.0002, Phi_r0=-0.0020, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000000.6055258057, 10000.053676258362, 0.9000415600982232, 29.25977619115591, 0.09999736036658761, 1.0, 272.11851990587843, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09962497089290354, 0.2, 0.2999668474225273, 0.9434801849407866, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000812432331838
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885834.442809863
+plunging! t_interp:  7889529.999999998 t_traj:  7887386.383140293
+plunging! t_interp:  7889529.999999998 t_traj:  7888938.476180689
+plunging! t_interp:  7889529.999999998 t_traj:  7888855.656487379
+plunging! t_interp:  7889529.999999998 t_traj:  7889400.659476324
+plunging! t_interp:  7889529.999999998 t_traj:  7888964.481216371
+plunging! t_interp:  7889529.999999998 t_traj:  7888201.589897907
+plunging! t_interp:  7889529.999999998 t_traj:  7881183.9839703655
+plunging! t_interp:  7889529.999999998 t_traj:  7884285.315766515
+plunging! t_interp:  7889529.999999998 t_traj:  7887387.561692997
+plunging! t_interp:  7889529.999999998 t_traj:  7887222.010457899
+plunging! t_interp:  7889529.999999998 t_traj:  7888311.468210937
+plunging! t_interp:  7889529.999999998 t_traj:  7889401.038706387
+plunging! t_interp:  7889529.999999998 t_traj:  7889342.899081885
+plunging! t_interp:  7889529.999999998 t_traj:  7885217.51895987
+plunging! t_interp:  7889529.999999998 t_traj:  7879951.418039245
+plunging! t_interp:  7889529.999999998 t_traj:  7874692.404710494
+plunging! t_interp:  7889529.999999998 t_traj:  7888638.38930627
+plunging! t_interp:  7889529.999999998 t_traj:  7886786.933424412
+plunging! t_interp:  7889529.999999998 t_traj:  7884936.353633752
+plunging! t_interp:  7889529.999999998 t_traj:  7889189.85123746
+plunging! t_interp:  7889529.999999998 t_traj:  7888539.578066835
+Time taken to compute stable deltas is 35.58958077430725 seconds
+calculating Fisher matrix...
+plunging! t_interp:  7889529.999999998 t_traj:  7889342.899081885
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.999450206756592 seconds
+[1pa idx=4] overlap=0.9999999996760146 (stored 0.9999999996760152) rho_s=20.000000 cond=4.385e+18
+  bias/sigma = m1=+0.0002, m2=+0.0020, a=+0.0021, p0=-0.0017, e0=-0.0014, Phi_phi0=-0.0004, Phi_r0=-0.0000, chi2=-0.0017
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000212.8445805834, 9999.01534695199, -0.8992830619371645, 31.155103363993057, 0.20000195777327495, 1.0, 80.24069771753325, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09928179211953923, 0.2, 0.3038497923024234, 0.9989942714205288, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000838577942357
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888603.97114384
+plunging! t_interp:  7889529.999999998 t_traj:  7882967.656454002
+plunging! t_interp:  7889529.999999998 t_traj:  7886411.608355867
+plunging! t_interp:  7889529.999999998 t_traj:  7889372.502770894
+plunging! t_interp:  7889529.999999998 t_traj:  7885446.115392117
+plunging! t_interp:  7889529.999999998 t_traj:  7881523.642354124
+plunging! t_interp:  7889529.999999998 t_traj:  7889162.903177229
+Time taken to compute stable deltas is 31.713234901428223 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.674006938934326 seconds
+[1pa idx=5] overlap=0.9999998934543305 (stored 0.9999998934540637) rho_s=20.000000 cond=1.933e+18
+  bias/sigma = m1=+0.0522, m2=-0.0788, a=+0.0249, p0=-0.0214, e0=+0.0026, Phi_phi0=-0.0017, Phi_r0=+0.0081, chi2=+0.0153
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000164.3836128031, 9999.457495256172, -0.4992704405774152, 30.68573058894012, 0.1999921738327857, 1.0, 100.20459024093518, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, -6.185063611387229, 0.2, -5.9800442582993725, 0.95, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002293171662384
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887843.703777711
+plunging! t_interp:  7889529.999999998 t_traj:  7889407.463536056
+plunging! t_interp:  7889529.999999998 t_traj:  7882453.572395158
+plunging! t_interp:  7889529.999999998 t_traj:  7885813.145305812
+plunging! t_interp:  7889529.999999998 t_traj:  7889173.770406569
+plunging! t_interp:  7889529.999999998 t_traj:  7888994.429344836
+plunging! t_interp:  7889529.999999998 t_traj:  7888535.718153675
+plunging! t_interp:  7889529.999999998 t_traj:  7884540.051326062
+plunging! t_interp:  7889529.999999998 t_traj:  7880548.441116222
+plunging! t_interp:  7889529.999999998 t_traj:  7888322.416796019
+Time taken to compute stable deltas is 32.443687915802 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.69820237159729 seconds
+[1pa idx=6] overlap=0.9999999483359192 (stored 0.9999999483359465) rho_s=20.000000 cond=1.405e+18
+  bias/sigma = m1=+0.0539, m2=-0.0548, a=+0.0322, p0=-0.0269, e0=-0.0111, Phi_phi0=-0.0040, Phi_r0=+0.0059, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.3779199527, 10000.010625032326, 0.0002972129641557095, 30.127864596749987, 0.19999132981375567, 1.0, 138.30258247339805, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10061075059541931, 0.2, 0.2962573820400779, 0.9499999990550462, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001437417567267
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887015.408709152
+plunging! t_interp:  7889529.999999998 t_traj:  7888575.905842675
+plunging! t_interp:  7889529.999999998 t_traj:  7889382.91771737
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999998 t_traj:  7881911.1012628
+plunging! t_interp:  7889529.999999998 t_traj:  7885172.189933797
+plunging! t_interp:  7889529.999999998 t_traj:  7888434.2772111045
+plunging! t_interp:  7889529.999999998 t_traj:  7888260.195055855
+plunging! t_interp:  7889529.999999998 t_traj:  7889405.794660523
+plunging! t_interp:  7889529.999999998 t_traj:  7887317.419974729
+plunging! t_interp:  7889529.999999998 t_traj:  7882942.354957473
+plunging! t_interp:  7889529.999999998 t_traj:  7878572.161106349
+plunging! t_interp:  7889529.999999998 t_traj:  7888621.088418263
+plunging! t_interp:  7889529.999999998 t_traj:  7887083.853921063
+Time taken to compute stable deltas is 33.66712307929993 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8035335540771484 seconds
+[1pa idx=7] overlap=0.9999999094051099 (stored 0.9999999094049828) rho_s=20.000000 cond=1.549e+18
+  bias/sigma = m1=+0.0197, m2=+0.0015, a=+0.1597, p0=-0.1077, e0=-0.0092, Phi_phi0=+0.0012, Phi_r0=-0.0065, chi2=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999992.6646865391, 10000.077983740382, 0.5000558351512676, 29.596256993676953, 0.19999914722765574, 1.0, 197.95413958343255, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10146843414589812, 0.2, 0.2968723449752647, 0.9499999998888458, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00072543158876
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886315.894850759
+plunging! t_interp:  7889529.999999998 t_traj:  7887872.233899843
+plunging! t_interp:  7889529.999999998 t_traj:  7889428.72648372
+plunging! t_interp:  7889529.999999998 t_traj:  7889345.672038967
+plunging! t_interp:  7889529.999999998 t_traj:  7889450.43090782
+plunging! t_interp:  7889529.999999998 t_traj:  7888683.190255571
+plunging! t_interp:  7889529.999999998 t_traj:  7881471.586392606
+plunging! t_interp:  7889529.999999998 t_traj:  7884641.89824602
+plunging! t_interp:  7889529.999999998 t_traj:  7887813.160255791
+plunging! t_interp:  7889529.999999998 t_traj:  7887643.925579707
+plunging! t_interp:  7889529.999999998 t_traj:  7888757.624109994
+plunging! t_interp:  7889529.999999998 t_traj:  7886135.323044214
+plunging! t_interp:  7889529.999999998 t_traj:  7881291.26815136
+plunging! t_interp:  7889529.999999998 t_traj:  7876453.19686798
+plunging! t_interp:  7889529.999999998 t_traj:  7889281.7436738955
+plunging! t_interp:  7889529.999999998 t_traj:  7887578.854582722
+plunging! t_interp:  7889529.999999998 t_traj:  7885876.70495216
+plunging! t_interp:  7889529.999999998 t_traj:  7889190.863041504
+Time taken to compute stable deltas is 34.074496269226074 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8425495624542236 seconds
+[1pa idx=8] overlap=0.9999999565762474 (stored 0.9999999565762817) rho_s=20.000000 cond=1.433e+18
+  bias/sigma = m1=-0.0038, m2=+0.0078, a=+0.0047, p0=-0.0016, e0=-0.0012, Phi_phi0=+0.0021, Phi_r0=-0.0036, chi2=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999995.3431371113, 10000.097477704066, 0.9000074126070214, 29.18729051475088, 0.19999891710393142, 1.0, 334.8150492170106, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10079500998697595, 0.2, 0.2979280703221461, 0.95, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00034444556092
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885838.062066853
+plunging! t_interp:  7889529.999999998 t_traj:  7887390.035824928
+plunging! t_interp:  7889529.999999998 t_traj:  7888942.162328117
+plunging! t_interp:  7889529.999999998 t_traj:  7888859.340857526
+plunging! t_interp:  7889529.999999998 t_traj:  7889404.355766499
+plunging! t_interp:  7889529.999999998 t_traj:  7888968.134681982
+plunging! t_interp:  7889529.999999998 t_traj:  7888205.21018492
+plunging! t_interp:  7889529.999999998 t_traj:  7881183.593819429
+plunging! t_interp:  7889529.999999998 t_traj:  7884286.294741235
+plunging! t_interp:  7889529.999999998 t_traj:  7887389.91060925
+plunging! t_interp:  7889529.999999998 t_traj:  7887224.286248934
+plunging! t_interp:  7889529.999999998 t_traj:  7888314.225194919
+plunging! t_interp:  7889529.999999998 t_traj:  7889404.276949303
+plunging! t_interp:  7889529.999999998 t_traj:  7889346.11162846
+plunging! t_interp:  7889529.999999998 t_traj:  7885175.753223882
+plunging! t_interp:  7889529.999999998 t_traj:  7879864.290957819
+plunging! t_interp:  7889529.999999998 t_traj:  7874560.03983635
+plunging! t_interp:  7889529.999999998 t_traj:  7888626.123989163
+plunging! t_interp:  7889529.999999998 t_traj:  7886758.698494481
+plunging! t_interp:  7889529.999999998 t_traj:  7884892.164579509
+plunging! t_interp:  7889529.999999998 t_traj:  7889182.344185949
+plunging! t_interp:  7889529.999999998 t_traj:  7888526.460282628
+Time taken to compute stable deltas is 36.210803747177124 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.021364450454712 seconds
+[1pa idx=9] overlap=0.9999999912964779 (stored 0.9999999912965041) rho_s=20.000000 cond=5.561e+18
+  bias/sigma = m1=-0.0017, m2=+0.0051, a=+0.0006, p0=+0.0001, e0=-0.0014, Phi_phi0=+0.0007, Phi_r0=-0.0015, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000249.1823529698, 9998.913802438517, -0.89885870111793, 31.03264492770198, 0.299998147106474, 1.0, 83.36831111465841, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0946114935073692, 0.2, 0.3062173029380901, 0.9466470273966572, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00237699918347
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888868.8229123205
+plunging! t_interp:  7889529.999999998 t_traj:  7883209.92949516
+plunging! t_interp:  7889529.999999998 t_traj:  7886661.308099732
+plunging! t_interp:  7889529.999999998 t_traj:  7886099.881578394
+plunging! t_interp:  7889529.999999998 t_traj:  7882371.442038376
+Time taken to compute stable deltas is 31.279521942138672 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.618399143218994 seconds
+[1pa idx=10] overlap=0.9999991858993162 (stored 0.999999185899403) rho_s=20.000000 cond=2.349e+18
+  bias/sigma = m1=+0.0821, m2=-0.1166, a=+0.0539, p0=-0.0490, e0=-0.0049, Phi_phi0=-0.0149, Phi_r0=+0.0220, chi2=-0.0013
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000180.5935656069, 9999.427855537182, -0.499232843493459, 30.562086564796594, 0.2999917532974743, 1.0, 104.2540170258565, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0958171646673414, 0.2, 0.3023929339818008, 0.9499999165190998, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002413353631145
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888013.171069735
+plunging! t_interp:  7889529.999999998 t_traj:  7882604.829198318
+plunging! t_interp:  7889529.999999998 t_traj:  7885970.546616768
+plunging! t_interp:  7889529.999999998 t_traj:  7889337.319846107
+plunging! t_interp:  7889529.999999998 t_traj:  7889157.650517668
+plunging! t_interp:  7889529.999999998 t_traj:  7888694.246198354
+plunging! t_interp:  7889529.999999998 t_traj:  7884687.429584516
+plunging! t_interp:  7889529.999999998 t_traj:  7880684.692768846
+plunging! t_interp:  7889529.999999998 t_traj:  7888480.349269219
+Time taken to compute stable deltas is 31.938599109649658 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6715545654296875 seconds
+[1pa idx=11] overlap=0.9999998469564448 (stored 0.9999998469565995) rho_s=20.000000 cond=1.892e+18
+  bias/sigma = m1=+0.0762, m2=-0.0758, a=+0.0479, p0=-0.0401, e0=-0.0226, Phi_phi0=-0.0103, Phi_r0=+0.0075, chi2=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000051.9168478078, 10000.01152357161, 0.0003031406098716842, 29.999904032542165, 0.29999408896522406, 1.0, 139.58395190405122, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10165109260897888, 0.2, 0.2972783706936735, 0.9499960354561849, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001534586595703
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887096.13824225
+plunging! t_interp:  7889529.999999998 t_traj:  7888656.682375457
+plunging! t_interp:  7889529.999999998 t_traj:  7889463.671481744
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999998 t_traj:  7881977.9939240925
+plunging! t_interp:  7889529.999999998 t_traj:  7885243.739384914
+plunging! t_interp:  7889529.999999998 t_traj:  7888510.486036022
+plunging! t_interp:  7889529.999999998 t_traj:  7888336.155245979
+plunging! t_interp:  7889529.999999998 t_traj:  7889483.39138934
+plunging! t_interp:  7889529.999999998 t_traj:  7887385.536746828
+plunging! t_interp:  7889529.999999998 t_traj:  7882997.747435317
+plunging! t_interp:  7889529.999999998 t_traj:  7878614.857920997
+plunging! t_interp:  7889529.999999998 t_traj:  7888693.000062672
+plunging! t_interp:  7889529.999999998 t_traj:  7887151.29131494
+Time taken to compute stable deltas is 33.6329288482666 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8282485008239746 seconds
+[1pa idx=12] overlap=0.9999998463775619 (stored 0.9999998463775488) rho_s=20.000000 cond=2.163e+18
+  bias/sigma = m1=+0.0240, m2=+0.0020, a=+0.1371, p0=-0.0763, e0=-0.0140, Phi_phi0=+0.0044, Phi_r0=-0.0081, chi2=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999995.3976805952, 10000.075765033613, 0.5000616998942446, 29.463853517286672, 0.29999907129924497, 1.0, 207.30588237890476, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10223336753808239, 0.2, 0.29753657361129604, 0.9500000016851871, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001713514033028
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7886342.415472053
+plunging! t_interp:  7889529.999999997 t_traj:  7887898.774096409
+plunging! t_interp:  7889529.999999997 t_traj:  7889455.28630104
+plunging! t_interp:  7889529.999999997 t_traj:  7889372.230781443
+plunging! t_interp:  7889529.999999997 t_traj:  7889476.97643746
+plunging! t_interp:  7889529.999999997 t_traj:  7888709.718832689
+plunging! t_interp:  7889529.999999997 t_traj:  7881488.172859654
+plunging! t_interp:  7889529.999999997 t_traj:  7884661.813776209
+plunging! t_interp:  7889529.999999997 t_traj:  7887836.406777299
+plunging! t_interp:  7889529.999999997 t_traj:  7887666.994317141
+plunging! t_interp:  7889529.999999997 t_traj:  7888781.862816995
+plunging! t_interp:  7889529.999999997 t_traj:  7886147.226618598
+plunging! t_interp:  7889529.999999997 t_traj:  7881288.533405437
+plunging! t_interp:  7889529.999999997 t_traj:  7876435.861116691
+plunging! t_interp:  7889529.999999997 t_traj:  7889303.165812403
+plunging! t_interp:  7889529.999999997 t_traj:  7887595.1241446175
+plunging! t_interp:  7889529.999999997 t_traj:  7885887.826562719
+plunging! t_interp:  7889529.999999997 t_traj:  7889212.010144404
+Time taken to compute stable deltas is 33.998180627822876 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.814814805984497 seconds
+[1pa idx=13] overlap=0.9999999173429521 (stored 0.9999999173429313) rho_s=20.000000 cond=2.233e+18
+  bias/sigma = m1=-0.0027, m2=+0.0101, a=+0.0076, p0=-0.0027, e0=-0.0023, Phi_phi0=+0.0037, Phi_r0=-0.0047, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999994.6386058814, 10000.103315151186, 0.9000080355981248, 29.051379581972473, 0.29999967031185787, 1.0, 307.2203130936177, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10173496754375096, 0.2, 0.29817042346568884, 0.95, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 19.9993267321292
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885842.4502054965
+plunging! t_interp:  7889529.999999998 t_traj:  7887394.420513031
+plunging! t_interp:  7889529.999999998 t_traj:  7888946.543582953
+plunging! t_interp:  7889529.999999998 t_traj:  7888863.722263697
+plunging! t_interp:  7889529.999999998 t_traj:  7889408.735784532
+plunging! t_interp:  7889529.999999998 t_traj:  7888972.520228775
+plunging! t_interp:  7889529.999999998 t_traj:  7888209.599653057
+plunging! t_interp:  7889529.999999998 t_traj:  7881180.969865522
+plunging! t_interp:  7889529.999999998 t_traj:  7884286.003389162
+plunging! t_interp:  7889529.999999998 t_traj:  7887391.953154936
+plunging! t_interp:  7889529.999999998 t_traj:  7887226.204244616
+plunging! t_interp:  7889529.999999998 t_traj:  7888316.962936605
+plunging! t_interp:  7889529.999999998 t_traj:  7889407.834823983
+plunging! t_interp:  7889529.999999998 t_traj:  7889349.62557644
+plunging! t_interp:  7889529.999999998 t_traj:  7885163.226386282
+plunging! t_interp:  7889529.999999998 t_traj:  7879834.907090516
+plunging! t_interp:  7889529.999999998 t_traj:  7874513.84645021
+plunging! t_interp:  7889529.999999998 t_traj:  7888624.560807859
+plunging! t_interp:  7889529.999999998 t_traj:  7886751.200203211
+plunging! t_interp:  7889529.999999998 t_traj:  7884878.737100996
+plunging! t_interp:  7889529.999999998 t_traj:  7889182.549202816
+plunging! t_interp:  7889529.999999998 t_traj:  7888524.5802424
+Time taken to compute stable deltas is 36.06863331794739 seconds
+calculating Fisher matrix...
+plunging! t_interp:  7889529.999999998 t_traj:  7889349.62557644
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.046104669570923 seconds
+[1pa idx=14] overlap=0.9999999716803001 (stored 0.999999971680498) rho_s=20.000000 cond=5.425e+18
+  bias/sigma = m1=-0.0030, m2=+0.0086, a=+0.0011, p0=+0.0003, e0=-0.0009, Phi_phi0=+0.0021, Phi_r0=-0.0027, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000257.432440293, 9998.921292518706, -0.8988602625900701, 30.8329867476303, 0.3999965072471095, 1.0, 87.97843410459403, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09284250034374711, 0.2, 0.3041841935052526, 0.9500000124544842, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002504749666024
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7889137.154100442
+plunging! t_interp:  7889529.999999998 t_traj:  7883445.127292504
+plunging! t_interp:  7889529.999999998 t_traj:  7886907.6893446585
+plunging! t_interp:  7889529.999999998 t_traj:  7886312.728697216
+plunging! t_interp:  7889529.999999998 t_traj:  7882556.409396163
+Time taken to compute stable deltas is 31.20264720916748 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6199517250061035 seconds
+[1pa idx=15] overlap=0.9999989949217588 (stored 0.9999989949219243) rho_s=20.000000 cond=3.483e+18
+  bias/sigma = m1=+0.1034, m2=-0.1410, a=+0.0640, p0=-0.0581, e0=-0.0142, Phi_phi0=-0.0220, Phi_r0=+0.0237, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000164.3999991813, 9999.490150574187, -0.4992732397461801, 30.357409137521284, 0.3999951829340112, 1.0, 107.91251229769398, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09702718335377221, 0.2, 0.3017271560892663, 0.9500000002494801, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.002136010066284
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888184.96312979
+plunging! t_interp:  7889529.999999998 t_traj:  7882749.467272665
+plunging! t_interp:  7889529.999999998 t_traj:  7886124.333517365
+plunging! t_interp:  7889529.999999998 t_traj:  7889500.2605276145
+plunging! t_interp:  7889529.999999998 t_traj:  7889320.102666539
+plunging! t_interp:  7889529.999999998 t_traj:  7888849.29770656
+plunging! t_interp:  7889529.999999998 t_traj:  7884825.468235787
+plunging! t_interp:  7889529.999999998 t_traj:  7880805.754126236
+plunging! t_interp:  7889529.999999998 t_traj:  7888634.492282798
+Time taken to compute stable deltas is 31.925846576690674 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6901910305023193 seconds
+[1pa idx=16] overlap=0.9999998748693237 (stored 0.9999998748694376) rho_s=20.000000 cond=2.891e+18
+  bias/sigma = m1=+0.0816, m2=-0.0823, a=+0.0552, p0=-0.0455, e0=-0.0198, Phi_phi0=-0.0083, Phi_r0=+0.0088, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000058.7335367627, 10000.006080434221, 0.0003172615524673901, 29.788488739123945, 0.39999495201719987, 1.0, 144.10122301068532, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10188985747391917, 0.2, 0.2981737450562788, 0.949999999988166, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001471755045657
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7887180.063769146
+plunging! t_interp:  7889529.999999999 t_traj:  7888740.674887315
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999999 t_traj:  7882041.348662888
+plunging! t_interp:  7889529.999999999 t_traj:  7885314.014059689
+plunging! t_interp:  7889529.999999999 t_traj:  7888587.684604723
+plunging! t_interp:  7889529.999999999 t_traj:  7888412.984277595
+plunging! t_interp:  7889529.999999999 t_traj:  7887449.934719268
+plunging! t_interp:  7889529.999999999 t_traj:  7883042.462168731
+plunging! t_interp:  7889529.999999999 t_traj:  7878639.934550321
+plunging! t_interp:  7889529.999999999 t_traj:  7888763.267623965
+plunging! t_interp:  7889529.999999999 t_traj:  7887214.637851162
+Time taken to compute stable deltas is 33.48081660270691 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.881080150604248 seconds
+[1pa idx=17] overlap=0.999999790980918 (stored 0.9999997909806153) rho_s=20.000000 cond=4.072e+18
+  bias/sigma = m1=+0.0289, m2=+0.0009, a=+0.1306, p0=-0.0817, e0=-0.0201, Phi_phi0=+0.0057, Phi_r0=-0.0088, chi2=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999981.6142649659, 9999.919061101553, 0.4999978897416757, 29.246558253118373, 0.40000608391158277, 1.0, 201.10715108960596, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09069771749243548, 0.2, 0.31126675671686366, 0.9500269203658457, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000391355680108
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7886368.489891634
+plunging! t_interp:  7889529.999999999 t_traj:  7887924.879545928
+plunging! t_interp:  7889529.999999999 t_traj:  7889481.422766536
+plunging! t_interp:  7889529.999999999 t_traj:  7889398.3655817285
+plunging! t_interp:  7889529.999999999 t_traj:  7889503.087222432
+plunging! t_interp:  7889529.999999999 t_traj:  7888735.801119511
+plunging! t_interp:  7889529.999999999 t_traj:  7881499.471843562
+plunging! t_interp:  7889529.999999999 t_traj:  7884678.0661134105
+plunging! t_interp:  7889529.999999999 t_traj:  7887857.615277039
+plunging! t_interp:  7889529.999999999 t_traj:  7887687.9383024005
+plunging! t_interp:  7889529.999999999 t_traj:  7888804.547649076
+plunging! t_interp:  7889529.999999999 t_traj:  7886150.284200487
+plunging! t_interp:  7889529.999999999 t_traj:  7881268.540080653
+plunging! t_interp:  7889529.999999999 t_traj:  7876392.875767545
+plunging! t_interp:  7889529.999999999 t_traj:  7889321.212236473
+plunging! t_interp:  7889529.999999999 t_traj:  7887605.05678313
+plunging! t_interp:  7889529.999999999 t_traj:  7885889.652718177
+plunging! t_interp:  7889529.999999999 t_traj:  7889229.62345906
+Time taken to compute stable deltas is 33.725438594818115 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8249456882476807 seconds
+[1pa idx=18] overlap=0.9999945865608791 (stored 0.9999945865526115) rho_s=20.000000 cond=3.956e+18
+  bias/sigma = m1=-0.0113, m2=-0.0138, a=-0.0003, p0=-0.0017, e0=+0.0222, Phi_phi0=-0.0184, Phi_r0=+0.0373, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999998.0884098976, 10000.092296533088, 0.9000104723674156, 28.828975556886, 0.3999996215783415, 1.0, 278.6125272140459, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10128753045139238, 0.2, 0.29881063038695715, 0.9502320799698194, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00073973106444
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885847.265019838
+plunging! t_interp:  7889529.999999998 t_traj:  7887399.2338787075
+plunging! t_interp:  7889529.999999998 t_traj:  7888951.355431538
+plunging! t_interp:  7889529.999999998 t_traj:  7888868.534207728
+plunging! t_interp:  7889529.999999998 t_traj:  7889413.547221205
+plunging! t_interp:  7889529.999999998 t_traj:  7888977.334517966
+plunging! t_interp:  7889529.999999998 t_traj:  7888214.415902562
+plunging! t_interp:  7889529.999999998 t_traj:  7881175.399216035
+plunging! t_interp:  7889529.999999998 t_traj:  7884283.89110081
+plunging! t_interp:  7889529.999999998 t_traj:  7887393.301202055
+plunging! t_interp:  7889529.999999998 t_traj:  7887227.36759595
+plunging! t_interp:  7889529.999999998 t_traj:  7888319.341720384
+plunging! t_interp:  7889529.999999998 t_traj:  7889411.429086397
+plunging! t_interp:  7889529.999999998 t_traj:  7889353.155153008
+plunging! t_interp:  7889529.999999998 t_traj:  7885139.899691706
+plunging! t_interp:  7889529.999999998 t_traj:  7879783.5227259025
+plunging! t_interp:  7889529.999999998 t_traj:  7874434.483116858
+plunging! t_interp:  7889529.999999998 t_traj:  7888619.482678793
+plunging! t_interp:  7889529.999999998 t_traj:  7886736.2433730215
+plunging! t_interp:  7889529.999999998 t_traj:  7884853.911130516
+plunging! t_interp:  7889529.999999998 t_traj:  7889180.414482754
+plunging! t_interp:  7889529.999999998 t_traj:  7888518.974768956
+Time taken to compute stable deltas is 36.01057028770447 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.984745740890503 seconds
+[1pa idx=19] overlap=0.9999999551372373 (stored 0.9999999551369946) rho_s=20.000000 cond=4.201e+18
+  bias/sigma = m1=-0.0014, m2=+0.0101, a=+0.0018, p0=-0.0003, e0=-0.0017, Phi_phi0=+0.0020, Phi_r0=-0.0031, chi2=+0.0002
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000249.4637198276, 9998.980405336004, -0.8988852052201122, 30.51517952694436, 0.4999970107213061, 1.0, 94.59267114863715, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09316884113512705, 0.2, 0.3027199752806534, 0.9500008368664944, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001899136549223
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7889419.461046329
+plunging! t_interp:  7889529.999999998 t_traj:  7883680.600901649
+plunging! t_interp:  7889529.999999998 t_traj:  7887158.93651079
+plunging! t_interp:  7889529.999999998 t_traj:  7886552.939390352
+plunging! t_interp:  7889529.999999998 t_traj:  7882775.376955332
+Time taken to compute stable deltas is 31.992868900299072 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.688328981399536 seconds
+[1pa idx=20] overlap=0.9999988857208039 (stored 0.9999988857205947) rho_s=20.000000 cond=6.593e+18
+  bias/sigma = m1=+0.1101, m2=-0.1498, a=+0.0710, p0=-0.0639, e0=-0.0145, Phi_phi0=-0.0229, Phi_r0=+0.0244, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000173.5456929764, 9999.520110388003, -0.4993733822790122, 30.03343040885284, 0.4999939709226296, 1.0, 113.90445727828921, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09869198650102705, 0.2, 0.3005663717945651, 0.9704878678592704, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00130824541304
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888368.823594497
+plunging! t_interp:  7889529.999999998 t_traj:  7882895.236927446
+plunging! t_interp:  7889529.999999998 t_traj:  7886283.01608117
+plunging! t_interp:  7889529.999999998 t_traj:  7889491.016090828
+plunging! t_interp:  7889529.999999998 t_traj:  7888922.258272032
+plunging! t_interp:  7889529.999999998 t_traj:  7884787.091125637
+plunging! t_interp:  7889529.999999998 t_traj:  7880656.271009492
+plunging! t_interp:  7889529.999999998 t_traj:  7888701.506058307
+Time taken to compute stable deltas is 31.962613582611084 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.717373847961426 seconds
+[1pa idx=21] overlap=0.999999964251886 (stored 0.9999999642518855) rho_s=20.000000 cond=6.261e+18
+  bias/sigma = m1=+0.0874, m2=-0.0864, a=+0.0552, p0=-0.0435, e0=-0.0292, Phi_phi0=-0.0041, Phi_r0=+0.0047, chi2=+0.0105
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999963.1434366964, 10000.247820198942, 0.00012517806425055565, 29.457384176793564, 0.5000036640160503, 1.0, 149.85804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.11173784345158154, 0.2, 0.2996557099160012, 0.9500044378150119, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001842950359308
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7887266.01471144
+plunging! t_interp:  7889529.999999999 t_traj:  7888826.719055167
+plunging! t_interp:  7889529.999999999 t_traj:  7882098.333687477
+plunging! t_interp:  7889529.999999999 t_traj:  7885380.741896905
+plunging! t_interp:  7889529.999999999 t_traj:  7888664.1607952
+plunging! t_interp:  7889529.999999999 t_traj:  7888488.940159821
+plunging! t_interp:  7889529.999999999 t_traj:  7887506.516706288
+plunging! t_interp:  7889529.999999999 t_traj:  7883069.464237748
+plunging! t_interp:  7889529.999999999 t_traj:  7878637.424726735
+plunging! t_interp:  7889529.999999999 t_traj:  7888828.67057343
+plunging! t_interp:  7889529.999999999 t_traj:  7887269.639839237
+Time taken to compute stable deltas is 33.60950565338135 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8554129600524902 seconds
+[1pa idx=22] overlap=0.9999945251600144 (stored 0.9999945251456772) rho_s=20.000000 cond=8.117e+18
+  bias/sigma = m1=-0.0188, m2=+0.0541, a=+0.0293, p0=-0.0063, e0=+0.0190, Phi_phi0=+0.0393, Phi_r0=-0.0026, chi2=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000003.6122198605, 10000.077584311894, 0.5000565601719063, 28.90595440273564, 0.49999855198482807, 1.0, 206.97673946235204, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10328782563523792, 0.2, 0.29867472434706466, 0.9542221148505676, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000167872721214
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7886400.776758548
+plunging! t_interp:  7889529.999999999 t_traj:  7887957.23477458
+plunging! t_interp:  7889529.999999999 t_traj:  7889513.846333246
+plunging! t_interp:  7889529.999999999 t_traj:  7889430.785725688
+plunging! t_interp:  7889529.999999999 t_traj:  7888768.097763282
+plunging! t_interp:  7889529.999999999 t_traj:  7881511.218230996
+plunging! t_interp:  7889529.999999999 t_traj:  7884696.723723275
+plunging! t_interp:  7889529.999999999 t_traj:  7887883.188293045
+plunging! t_interp:  7889529.999999999 t_traj:  7887713.142052619
+plunging! t_interp:  7889529.999999999 t_traj:  7888832.18028937
+plunging! t_interp:  7889529.999999999 t_traj:  7886126.229689078
+plunging! t_interp:  7889529.999999999 t_traj:  7881188.082901892
+plunging! t_interp:  7889529.999999999 t_traj:  7876256.159357607
+plunging! t_interp:  7889529.999999999 t_traj:  7889333.833220512
+plunging! t_interp:  7889529.999999999 t_traj:  7887597.824587534
+plunging! t_interp:  7889529.999999999 t_traj:  7885862.585042983
+plunging! t_interp:  7889529.999999999 t_traj:  7889241.184647744
+Time taken to compute stable deltas is 34.12538123130798 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.87433123588562 seconds
+[1pa idx=23] overlap=0.9999997641065018 (stored 0.9999997641064045) rho_s=20.000000 cond=8.682e+18
+  bias/sigma = m1=+0.0022, m2=+0.0157, a=+0.0110, p0=-0.0028, e0=-0.0067, Phi_phi0=+0.0074, Phi_r0=-0.0073, chi2=+0.0030
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999999.1301242604, 10000.054110482979, 0.9000412912687866, 28.48173485392821, 0.500000701970028, 1.0, 289.47265494550675, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09964072559704697, 0.2, 0.29992183050418, 0.9431726389975904, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.00066744681669
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7885852.849841708
+plunging! t_interp:  7889529.999999999 t_traj:  7887404.7780812755
+plunging! t_interp:  7889529.999999999 t_traj:  7888956.859047271
+plunging! t_interp:  7889529.999999999 t_traj:  7888874.0399979185
+plunging! t_interp:  7889529.999999999 t_traj:  7889419.038739383
+plunging! t_interp:  7889529.999999999 t_traj:  7888982.879847036
+plunging! t_interp:  7889529.999999999 t_traj:  7888220.002369465
+plunging! t_interp:  7889529.999999999 t_traj:  7881166.461337864
+plunging! t_interp:  7889529.999999999 t_traj:  7884279.75076061
+plunging! t_interp:  7889529.999999999 t_traj:  7887393.961146585
+plunging! t_interp:  7889529.999999999 t_traj:  7887227.771323878
+plunging! t_interp:  7889529.999999999 t_traj:  7888321.431536618
+plunging! t_interp:  7889529.999999999 t_traj:  7889415.205498417
+plunging! t_interp:  7889529.999999999 t_traj:  7889356.841408692
+plunging! t_interp:  7889529.999999999 t_traj:  7885143.956590117
+plunging! t_interp:  7889529.999999999 t_traj:  7879786.1803982295
+plunging! t_interp:  7889529.999999999 t_traj:  7874435.748847833
+plunging! t_interp:  7889529.999999999 t_traj:  7888624.451163153
+plunging! t_interp:  7889529.999999999 t_traj:  7886740.718219648
+plunging! t_interp:  7889529.999999999 t_traj:  7884857.893198273
+plunging! t_interp:  7889529.999999999 t_traj:  7889185.530106748
+plunging! t_interp:  7889529.999999999 t_traj:  7888523.9169029705
+Time taken to compute stable deltas is 36.20157766342163 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0554556846618652 seconds
+[1pa idx=24] overlap=0.999999996684694 (stored 0.9999999966846999) rho_s=20.000000 cond=6.310e+18
+  bias/sigma = m1=-0.0008, m2=+0.0073, a=+0.0092, p0=-0.0071, e0=+0.0043, Phi_phi0=-0.0006, Phi_r0=-0.0003, chi2=-0.0067
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000133.5809170116, 9997.540789312383, -0.8991871641221201, 31.217348703896967, 0.10005468305755282, 1.0, 78.59116363471949, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09982712797980077, 0.2, 0.3045358098024314, 0.95, True, False, False, True, -15.147690930254742, 2.088349077469779)
+Waveform Generated. SNR: 19.998964211897523
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888327.861701353
+plunging! t_interp:  7889529.999999998 t_traj:  7882704.725238076
+plunging! t_interp:  7889529.999999998 t_traj:  7886144.252063693
+plunging! t_interp:  7889529.999999998 t_traj:  7889401.264891014
+plunging! t_interp:  7889529.999999998 t_traj:  7889294.593353809
+plunging! t_interp:  7889529.999999998 t_traj:  7885566.1245866595
+plunging! t_interp:  7889529.999999998 t_traj:  7881841.185494123
+plunging! t_interp:  7889529.999999998 t_traj:  7889095.5621614
+Time taken to compute stable deltas is 42.3913516998291 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.570894241333008 seconds
+[1pa_dev idx=0] overlap=0.9999999417195914 (stored 0.9999999417195913) rho_s=20.000000 cond=8.932e+18
+  bias/sigma = m1=+0.0109, m2=-0.0086, a=+0.0138, p0=-0.0122, e0=+0.0087, Phi_phi0=-0.0003, Phi_r0=+0.0043, chi2=+0.0000, C_p=-0.0052, C_e=+0.0035
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000120.2113376107, 9998.724092477918, -0.499373890224499, 30.751786734953537, 0.10001567386400255, 1.0, 98.79805813899465, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09956529680525325, 0.2, 0.3024292954060242, 0.95, True, False, False, True, -6.8186698039742915, 0.93858215006343)
+Waveform Generated. SNR: 20.00053550931826
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887670.977452321
+plunging! t_interp:  7889529.999999998 t_traj:  7889234.792541522
+plunging! t_interp:  7889529.999999998 t_traj:  7882291.6719099255
+plunging! t_interp:  7889529.999999998 t_traj:  7885647.693511422
+plunging! t_interp:  7889529.999999998 t_traj:  7889004.765401016
+plunging! t_interp:  7889529.999999998 t_traj:  7888825.614007726
+plunging! t_interp:  7889529.999999998 t_traj:  7888370.109143429
+plunging! t_interp:  7889529.999999998 t_traj:  7884381.379203095
+plunging! t_interp:  7889529.999999998 t_traj:  7880396.691302522
+plunging! t_interp:  7889529.999999998 t_traj:  7888157.178229421
+Time taken to compute stable deltas is 42.82284879684448 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.605689287185669 seconds
+[1pa_dev idx=1] overlap=0.9999999896566113 (stored 0.9999999896566112) rho_s=20.000000 cond=9.708e+18
+  bias/sigma = m1=+0.0107, m2=-0.0053, a=+0.0145, p0=-0.0119, e0=+0.0020, Phi_phi0=-0.0007, Phi_r0=+0.0020, chi2=+0.0000, C_p=-0.0032, C_e=+0.0017
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999913.1938365792, 10000.720444289314, 0.00010498755196044007, 30.198638793051526, 0.10001265521896534, 1.0, 135.93327591114996, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.11595274487919831, 0.2, 0.2463944313770596, 0.9501890496118096, True, False, False, True, 0.07162656373735546, -1.040601182722717)
+Waveform Generated. SNR: 20.001594369966973
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7886933.409037469
+plunging! t_interp:  7889529.999999997 t_traj:  7888493.870558102
+plunging! t_interp:  7889529.999999997 t_traj:  7889300.893465576
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999997 t_traj:  7881837.054779673
+plunging! t_interp:  7889529.999999997 t_traj:  7885095.45829614
+plunging! t_interp:  7889529.999999997 t_traj:  7888354.858941544
+plunging! t_interp:  7889529.999999997 t_traj:  7888180.920195216
+plunging! t_interp:  7889529.999999997 t_traj:  7889325.5761143835
+plunging! t_interp:  7889529.999999997 t_traj:  7887241.070673686
+plunging! t_interp:  7889529.999999997 t_traj:  7882871.750186645
+plunging! t_interp:  7889529.999999997 t_traj:  7878507.287215647
+plunging! t_interp:  7889529.999999997 t_traj:  7888543.026521564
+plunging! t_interp:  7889529.999999997 t_traj:  7887007.811764697
+Time taken to compute stable deltas is 44.78258156776428 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7544870376586914 seconds
+[1pa_dev idx=2] overlap=0.9999957268441177 (stored 0.9999957268441172) rho_s=20.000000 cond=8.135e+18
+  bias/sigma = m1=-0.0107, m2=+0.0036, a=+0.0292, p0=+0.0171, e0=+0.0015, Phi_phi0=+0.0218, Phi_r0=-0.0441, chi2=+0.0001, C_p=+0.0001, C_e=-0.0018
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000005.8703187632, 9999.721729198905, 0.5000779320204553, 29.66676698055885, 0.10000538835400057, 1.0, 194.74427454873847, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1007500588642777, 0.2, 0.2989002515147464, 0.9500000000000423, True, False, False, True, -1.8842819660930525, -0.18533020799848898)
+Waveform Generated. SNR: 20.0000345280674
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7886290.53229578
+plunging! t_interp:  7889529.999999999 t_traj:  7887846.897529101
+plunging! t_interp:  7889529.999999999 t_traj:  7889403.416313963
+plunging! t_interp:  7889529.999999999 t_traj:  7889320.360500308
+plunging! t_interp:  7889529.999999999 t_traj:  7889425.0894691525
+plunging! t_interp:  7889529.999999999 t_traj:  7888657.820105636
+plunging! t_interp:  7889529.999999999 t_traj:  7881452.071617161
+plunging! t_interp:  7889529.999999999 t_traj:  7884620.461383316
+plunging! t_interp:  7889529.999999999 t_traj:  7887789.800389188
+plunging! t_interp:  7889529.999999999 t_traj:  7887620.66835718
+plunging! t_interp:  7889529.999999999 t_traj:  7888733.691427779
+plunging! t_interp:  7889529.999999999 t_traj:  7886118.548870091
+plunging! t_interp:  7889529.999999999 t_traj:  7881282.982174315
+plunging! t_interp:  7889529.999999999 t_traj:  7876453.377619345
+plunging! t_interp:  7889529.999999999 t_traj:  7889259.450086753
+plunging! t_interp:  7889529.999999999 t_traj:  7887559.5487761
+plunging! t_interp:  7889529.999999999 t_traj:  7885860.384264877
+plunging! t_interp:  7889529.999999999 t_traj:  7889168.7289540805
+Time taken to compute stable deltas is 44.87876868247986 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7787837982177734 seconds
+[1pa_dev idx=3] overlap=0.9999999932323804 (stored 0.9999999932323803) rho_s=20.000000 cond=9.482e+18
+  bias/sigma = m1=+0.0009, m2=-0.0014, a=+0.0036, p0=-0.0020, e0=+0.0007, Phi_phi0=+0.0008, Phi_r0=-0.0006, chi2=+0.0000, C_p=-0.0018, C_e=-0.0003
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000000.6055258057, 10000.053676258362, 0.9000415600982232, 29.25977619115591, 0.09999736036658761, 1.0, 272.11851990587843, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09962497089290323, 0.2, 0.29996684742252827, 0.9434801849407866, True, False, False, True, 4.0979682968012267e-16, 4.074270906871033e-15)
+Waveform Generated. SNR: 20.000812432331845
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885834.442809863
+plunging! t_interp:  7889529.999999998 t_traj:  7887386.383140293
+plunging! t_interp:  7889529.999999998 t_traj:  7888938.476180689
+plunging! t_interp:  7889529.999999998 t_traj:  7888855.656487379
+plunging! t_interp:  7889529.999999998 t_traj:  7889400.659476324
+plunging! t_interp:  7889529.999999998 t_traj:  7888964.481216371
+plunging! t_interp:  7889529.999999998 t_traj:  7888201.589897907
+plunging! t_interp:  7889529.999999998 t_traj:  7881183.9839703655
+plunging! t_interp:  7889529.999999998 t_traj:  7884285.315766515
+plunging! t_interp:  7889529.999999998 t_traj:  7887387.561692998
+plunging! t_interp:  7889529.999999998 t_traj:  7887222.010457899
+plunging! t_interp:  7889529.999999998 t_traj:  7888311.4682109365
+plunging! t_interp:  7889529.999999998 t_traj:  7889401.038706387
+plunging! t_interp:  7889529.999999998 t_traj:  7889342.899081885
+plunging! t_interp:  7889529.999999998 t_traj:  7885217.51895987
+plunging! t_interp:  7889529.999999998 t_traj:  7879951.418039245
+plunging! t_interp:  7889529.999999998 t_traj:  7874692.404710494
+plunging! t_interp:  7889529.999999998 t_traj:  7888638.38930627
+plunging! t_interp:  7889529.999999998 t_traj:  7886786.933424412
+plunging! t_interp:  7889529.999999998 t_traj:  7884936.353633752
+plunging! t_interp:  7889529.999999998 t_traj:  7889189.85123746
+plunging! t_interp:  7889529.999999998 t_traj:  7888539.578066835
+minimum relative error is greater than 1% for C_p. Fisher may be unstable!
+minimum relative error is greater than 1% for C_e. Fisher may be unstable!
+Time taken to compute stable deltas is 47.10955572128296 seconds
+calculating Fisher matrix...
+plunging! t_interp:  7889529.999999998 t_traj:  7889342.899081885
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.9825949668884277 seconds
+[1pa_dev idx=4] overlap=0.9999999996760146 (stored 0.9999999996760147) rho_s=20.000000 cond=3.250e+19
+  bias/sigma = m1=+0.0002, m2=+0.0020, a=+0.0021, p0=-0.0017, e0=-0.0014, Phi_phi0=-0.0004, Phi_r0=-0.0000, chi2=-0.0017, C_p=+0.0000, C_e=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000098.6860495639, 9997.490236536614, -0.8992774816159027, 31.155014155182126, 0.20003521410320604, 1.0, 80.24069771753325, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0984300803807013, 0.2, 0.30194845883887117, 0.95, True, False, False, True, -15.988425681566302, 0.4805927949071067)
+Waveform Generated. SNR: 19.998666072928014
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888602.015028947
+plunging! t_interp:  7889529.999999998 t_traj:  7882965.950767867
+plunging! t_interp:  7889529.999999998 t_traj:  7886409.880138095
+plunging! t_interp:  7889529.999999998 t_traj:  7885828.930432707
+plunging! t_interp:  7889529.999999998 t_traj:  7882098.190726581
+plunging! t_interp:  7889529.999999998 t_traj:  7889363.869294229
+Time taken to compute stable deltas is 41.57322311401367 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.498718500137329 seconds
+[1pa_dev idx=5] overlap=0.9999999576664481 (stored 0.999999957666448) rho_s=20.000000 cond=2.413e+19
+  bias/sigma = m1=+0.0078, m2=-0.0088, a=+0.0187, p0=-0.0163, e0=+0.0098, Phi_phi0=-0.0036, Phi_r0=+0.0036, chi2=+0.0000, C_p=-0.0054, C_e=+0.0025
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000104.6264785154, 9998.576588805552, -0.49941009529694175, 30.686742931368325, 0.20001186163399934, 1.0, 100.20459024093518, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09888539234089905, 0.2, 0.3011865192739495, 0.95, True, False, False, True, -8.26358359125589, 0.13787403403844106)
+Waveform Generated. SNR: 20.00011204964232
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887842.985874055
+plunging! t_interp:  7889529.999999998 t_traj:  7889406.883336146
+plunging! t_interp:  7889529.999999998 t_traj:  7882453.164367246
+plunging! t_interp:  7889529.999999998 t_traj:  7885812.771735374
+plunging! t_interp:  7889529.999999998 t_traj:  7889173.431276711
+plunging! t_interp:  7889529.999999998 t_traj:  7888994.088281002
+plunging! t_interp:  7889529.999999998 t_traj:  7888536.005247375
+plunging! t_interp:  7889529.999999998 t_traj:  7884540.928780649
+plunging! t_interp:  7889529.999999998 t_traj:  7880549.907837935
+plunging! t_interp:  7889529.999999998 t_traj:  7888322.735344667
+Time taken to compute stable deltas is 42.453110456466675 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5906214714050293 seconds
+[1pa_dev idx=6] overlap=0.9999999880514379 (stored 0.9999999880514381) rho_s=20.000000 cond=2.865e+19
+  bias/sigma = m1=+0.0077, m2=-0.0056, a=+0.0240, p0=-0.0197, e0=+0.0024, Phi_phi0=-0.0022, Phi_r0=+0.0019, chi2=+0.0000, C_p=-0.0036, C_e=+0.0010
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.3779199527, 10000.010625032326, 0.0002972129641557095, 30.127864596749987, 0.19999132981375567, 1.0, 138.30258247339805, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10061075059541931, 0.2, 0.2962573820400779, 0.9499999990550462, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.001437417567267
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887015.408709152
+plunging! t_interp:  7889529.999999998 t_traj:  7888575.905842675
+plunging! t_interp:  7889529.999999998 t_traj:  7889382.91771737
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999998 t_traj:  7881911.1012628
+plunging! t_interp:  7889529.999999998 t_traj:  7885172.189933797
+plunging! t_interp:  7889529.999999998 t_traj:  7888434.2772111045
+plunging! t_interp:  7889529.999999998 t_traj:  7888260.195055855
+plunging! t_interp:  7889529.999999998 t_traj:  7889405.794660523
+plunging! t_interp:  7889529.999999998 t_traj:  7887317.419974729
+plunging! t_interp:  7889529.999999998 t_traj:  7882942.354957473
+plunging! t_interp:  7889529.999999998 t_traj:  7878572.161106349
+plunging! t_interp:  7889529.999999998 t_traj:  7888621.088418263
+plunging! t_interp:  7889529.999999998 t_traj:  7887083.853921063
+minimum relative error is greater than 1% for C_e. Fisher may be unstable!
+Time taken to compute stable deltas is 44.18745970726013 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7463104724884033 seconds
+[1pa_dev idx=7] overlap=0.9999999094051099 (stored 0.9999999094051102) rho_s=20.000000 cond=2.026e+18
+  bias/sigma = m1=+0.0173, m2=+0.0015, a=+0.1082, p0=-0.0668, e0=-0.0083, Phi_phi0=+0.0011, Phi_r0=-0.0061, chi2=-0.0000, C_p=+0.0000, C_e=+0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000005.0420548603, 9999.138854101173, 0.5000839321089608, 29.595830458258845, 0.20001549261694324, 1.0, 197.95413958343255, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10016515285132926, 0.2, 0.29969080971292567, 0.95, True, False, False, True, -5.025173083976875, 0.18853175374844874)
+Waveform Generated. SNR: 19.999121724325725
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886316.250550127
+plunging! t_interp:  7889529.999999998 t_traj:  7887872.690349838
+plunging! t_interp:  7889529.999999998 t_traj:  7889429.283820252
+plunging! t_interp:  7889529.999999998 t_traj:  7889346.223989324
+plunging! t_interp:  7889529.999999998 t_traj:  7889450.887493978
+plunging! t_interp:  7889529.999999998 t_traj:  7888683.5460326
+plunging! t_interp:  7889529.999999998 t_traj:  7881472.183146226
+plunging! t_interp:  7889529.999999998 t_traj:  7884642.515444606
+plunging! t_interp:  7889529.999999998 t_traj:  7887813.79795417
+plunging! t_interp:  7889529.999999998 t_traj:  7887644.562172468
+plunging! t_interp:  7889529.999999998 t_traj:  7888758.267898106
+plunging! t_interp:  7889529.999999998 t_traj:  7886136.745510224
+plunging! t_interp:  7889529.999999998 t_traj:  7881293.453003826
+plunging! t_interp:  7889529.999999998 t_traj:  7876456.142228078
+plunging! t_interp:  7889529.999999998 t_traj:  7889282.670409196
+plunging! t_interp:  7889529.999999998 t_traj:  7887580.049648048
+plunging! t_interp:  7889529.999999998 t_traj:  7885878.168177923
+plunging! t_interp:  7889529.999999998 t_traj:  7889191.804129703
+Time taken to compute stable deltas is 45.144208908081055 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8001255989074707 seconds
+[1pa_dev idx=8] overlap=0.9999999862161498 (stored 0.9999999862161496) rho_s=20.000000 cond=1.271e+19
+  bias/sigma = m1=+0.0009, m2=-0.0040, a=+0.0066, p0=-0.0045, e0=+0.0034, Phi_phi0=+0.0002, Phi_r0=-0.0003, chi2=+0.0000, C_p=-0.0043, C_e=+0.0014
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000017.3282888335, 9999.651218878938, 0.9000410686442764, 29.186798315155848, 0.20000440370195224, 1.0, 334.8150492170106, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09948289576656316, 0.2, 0.3003570684895802, 0.95, True, False, False, True, -1.8511662243529792, 0.06853512255772645)
+Waveform Generated. SNR: 20.00001233937679
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885838.494554476
+plunging! t_interp:  7889529.999999998 t_traj:  7887390.509121208
+plunging! t_interp:  7889529.999999998 t_traj:  7888942.676011175
+plunging! t_interp:  7889529.999999998 t_traj:  7888859.852376484
+plunging! t_interp:  7889529.999999998 t_traj:  7889404.88138132
+plunging! t_interp:  7889529.999999998 t_traj:  7888968.60787416
+plunging! t_interp:  7889529.999999998 t_traj:  7888205.642862695
+plunging! t_interp:  7889529.999999998 t_traj:  7881184.131318635
+plunging! t_interp:  7889529.999999998 t_traj:  7884286.837858796
+plunging! t_interp:  7889529.999999998 t_traj:  7887390.459306238
+plunging! t_interp:  7889529.999999998 t_traj:  7887224.834655264
+plunging! t_interp:  7889529.999999998 t_traj:  7888314.77556023
+plunging! t_interp:  7889529.999999998 t_traj:  7889404.8292855015
+plunging! t_interp:  7889529.999999998 t_traj:  7889346.663866797
+plunging! t_interp:  7889529.999999998 t_traj:  7885176.717323741
+plunging! t_interp:  7889529.999999998 t_traj:  7879865.663748352
+plunging! t_interp:  7889529.999999998 t_traj:  7874561.820384952
+plunging! t_interp:  7889529.999999998 t_traj:  7888626.822297709
+plunging! t_interp:  7889529.999999998 t_traj:  7886759.540704222
+plunging! t_interp:  7889529.999999998 t_traj:  7884893.150359893
+plunging! t_interp:  7889529.999999998 t_traj:  7889182.9994687475
+plunging! t_interp:  7889529.999999998 t_traj:  7888527.166470223
+Time taken to compute stable deltas is 47.86888647079468 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.024576425552368 seconds
+[1pa_dev idx=9] overlap=0.9999999985462558 (stored 0.9999999985462554) rho_s=20.000000 cond=8.143e+19
+  bias/sigma = m1=+0.0017, m2=-0.0015, a=+0.0029, p0=-0.0024, e0=+0.0012, Phi_phi0=-0.0004, Phi_r0=+0.0002, chi2=+0.0000, C_p=-0.0018, C_e=+0.0005
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000094.9268099421, 9997.481067887722, -0.8992883605682287, 31.035570312418304, 0.3000219524240635, 1.0, 83.36831111465841, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09792636891331336, 0.2, 0.3012238516246011, 0.95, True, False, False, True, -16.311701809967428, -0.21249585705074472)
+Waveform Generated. SNR: 19.99857460330552
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7888866.953985943
+plunging! t_interp:  7889529.999999997 t_traj:  7883208.646644786
+plunging! t_interp:  7889529.999999997 t_traj:  7886660.093990246
+plunging! t_interp:  7889529.999999997 t_traj:  7886074.318471923
+plunging! t_interp:  7889529.999999997 t_traj:  7882333.669149026
+Time taken to compute stable deltas is 41.39330744743347 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.49137282371521 seconds
+[1pa_dev idx=10] overlap=0.9999999505460105 (stored 0.9999999505460103) rho_s=20.000000 cond=6.371e+20
+  bias/sigma = m1=+0.0075, m2=-0.0089, a=+0.0229, p0=-0.0199, e0=+0.0093, Phi_phi0=-0.0056, Phi_r0=+0.0037, chi2=+0.0000, C_p=-0.0055, C_e=-0.0015
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000107.7458656001, 9998.623678976197, -0.4994032104269183, 30.56333671770409, 0.30000619886793983, 1.0, 104.2540170258565, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09849453281117236, 0.2, 0.3008858506333037, 0.95, True, False, False, True, -7.9283536227524865, -0.14704643017739294)
+Waveform Generated. SNR: 20.000108510933853
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888011.8817065945
+plunging! t_interp:  7889529.999999998 t_traj:  7882603.824595192
+plunging! t_interp:  7889529.999999998 t_traj:  7885969.578578288
+plunging! t_interp:  7889529.999999998 t_traj:  7889336.3883053195
+plunging! t_interp:  7889529.999999998 t_traj:  7889156.71699066
+plunging! t_interp:  7889529.999999998 t_traj:  7888693.877082948
+plunging! t_interp:  7889529.999999998 t_traj:  7884687.585219018
+plunging! t_interp:  7889529.999999998 t_traj:  7880685.372140715
+plunging! t_interp:  7889529.999999998 t_traj:  7888480.008158919
+Time taken to compute stable deltas is 42.357542991638184 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.588860273361206 seconds
+[1pa_dev idx=11] overlap=0.9999999806989546 (stored 0.9999999806989546) rho_s=20.000000 cond=7.550e+19
+  bias/sigma = m1=+0.0077, m2=-0.0053, a=+0.0330, p0=-0.0273, e0=+0.0019, Phi_phi0=-0.0036, Phi_r0=+0.0023, chi2=+0.0000, C_p=-0.0033, C_e=-0.0017
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000051.9490928408, 10000.011220951086, 0.00030262308982603335, 29.999903573698806, 0.29999415630517473, 1.0, 139.58395190405122, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10169209602795579, 0.2, 0.2975985526124201, 0.9499810490554558, True, False, False, True, -0.0023016092799284286, -0.009404493278413193)
+Waveform Generated. SNR: 20.001528910356686
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7887096.105000989
+plunging! t_interp:  7889529.999999997 t_traj:  7888656.64933963
+plunging! t_interp:  7889529.999999997 t_traj:  7889463.638136933
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999997 t_traj:  7881977.96045607
+plunging! t_interp:  7889529.999999997 t_traj:  7885243.70601384
+plunging! t_interp:  7889529.999999997 t_traj:  7888510.452752303
+plunging! t_interp:  7889529.999999997 t_traj:  7888336.1219484415
+plunging! t_interp:  7889529.999999997 t_traj:  7889483.3581203995
+plunging! t_interp:  7889529.999999997 t_traj:  7887385.573396213
+plunging! t_interp:  7889529.999999997 t_traj:  7882997.853753705
+plunging! t_interp:  7889529.999999997 t_traj:  7878615.033797
+plunging! t_interp:  7889529.999999997 t_traj:  7888693.015913353
+plunging! t_interp:  7889529.999999997 t_traj:  7887151.3316825945
+Time taken to compute stable deltas is 44.20524334907532 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6922543048858643 seconds
+[1pa_dev idx=12] overlap=0.9999998484297261 (stored 0.9999998484297261) rho_s=20.000000 cond=6.770e+19
+  bias/sigma = m1=+0.0043, m2=+0.0012, a=+0.0217, p0=-0.0159, e0=-0.0020, Phi_phi0=+0.0034, Phi_r0=-0.0059, chi2=-0.0000, C_p=-0.0001, C_e=-0.0001
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000009.376712113, 9998.872942854734, 0.5000935536170622, 29.463338456992965, 0.3000124935356082, 1.0, 207.30588237890476, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0994324077750348, 0.2, 0.30020048518563475, 0.95, True, False, False, True, -6.446348321405729, -0.05823150065732988)
+Waveform Generated. SNR: 19.99904734447581
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886342.754586999
+plunging! t_interp:  7889529.999999998 t_traj:  7887899.242309355
+plunging! t_interp:  7889529.999999998 t_traj:  7889455.883636913
+plunging! t_interp:  7889529.999999998 t_traj:  7889372.821234705
+plunging! t_interp:  7889529.999999998 t_traj:  7889477.444777564
+plunging! t_interp:  7889529.999999998 t_traj:  7888710.058176259
+plunging! t_interp:  7889529.999999998 t_traj:  7881488.819690051
+plunging! t_interp:  7889529.999999998 t_traj:  7884662.487127878
+plunging! t_interp:  7889529.999999998 t_traj:  7887837.10671146
+plunging! t_interp:  7889529.999999998 t_traj:  7887667.692798955
+plunging! t_interp:  7889529.999999998 t_traj:  7888782.570615972
+plunging! t_interp:  7889529.999999998 t_traj:  7886148.931291474
+plunging! t_interp:  7889529.999999998 t_traj:  7881291.213836747
+plunging! t_interp:  7889529.999999998 t_traj:  7876439.51486276
+plunging! t_interp:  7889529.999999998 t_traj:  7889304.236011516
+plunging! t_interp:  7889529.999999998 t_traj:  7887596.537786558
+plunging! t_interp:  7889529.999999998 t_traj:  7885889.583376993
+plunging! t_interp:  7889529.999999998 t_traj:  7889213.098673977
+Time taken to compute stable deltas is 44.94154667854309 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8059680461883545 seconds
+[1pa_dev idx=13] overlap=0.999999984968219 (stored 0.9999999849682187) rho_s=20.000000 cond=2.186e+19
+  bias/sigma = m1=+0.0017, m2=-0.0051, a=+0.0098, p0=-0.0075, e0=+0.0045, Phi_phi0=-0.0008, Phi_r0=+0.0003, chi2=+0.0000, C_p=-0.0053, C_e=-0.0013
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000001.5304529531, 9999.926092095517, 0.9000190618099518, 29.051212616031957, 0.30000142133314284, 1.0, 307.2203130936177, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10103084669403083, 0.2, 0.2987078654080114, 0.95, True, False, False, True, -0.7351468125692893, 0.007617752804772077)
+Waveform Generated. SNR: 19.99939782930181
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7885842.558243461
+plunging! t_interp:  7889529.999999997 t_traj:  7887394.544560151
+plunging! t_interp:  7889529.999999997 t_traj:  7888946.683569409
+plunging! t_interp:  7889529.999999997 t_traj:  7888863.861437841
+plunging! t_interp:  7889529.999999997 t_traj:  7889408.880571285
+plunging! t_interp:  7889529.999999997 t_traj:  7888972.644271705
+plunging! t_interp:  7889529.999999997 t_traj:  7888209.707920879
+plunging! t_interp:  7889529.999999997 t_traj:  7881181.118134923
+plunging! t_interp:  7889529.999999997 t_traj:  7884286.154238854
+plunging! t_interp:  7889529.999999997 t_traj:  7887392.106546683
+plunging! t_interp:  7889529.999999997 t_traj:  7887226.357492902
+plunging! t_interp:  7889529.999999997 t_traj:  7888317.117129966
+plunging! t_interp:  7889529.999999997 t_traj:  7889407.989723634
+plunging! t_interp:  7889529.999999997 t_traj:  7889349.780585703
+plunging! t_interp:  7889529.999999997 t_traj:  7885163.540187986
+plunging! t_interp:  7889529.999999997 t_traj:  7879835.378282796
+plunging! t_interp:  7889529.999999997 t_traj:  7874514.474566303
+plunging! t_interp:  7889529.999999997 t_traj:  7888624.772249458
+plunging! t_interp:  7889529.999999997 t_traj:  7886751.467058312
+plunging! t_interp:  7889529.999999997 t_traj:  7884879.059131039
+plunging! t_interp:  7889529.999999997 t_traj:  7889182.744145622
+plunging! t_interp:  7889529.999999997 t_traj:  7888524.794649433
+Time taken to compute stable deltas is 47.91407918930054 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.107404708862305 seconds
+[1pa_dev idx=14] overlap=0.9999999843908186 (stored 0.9999999843908185) rho_s=20.000000 cond=4.173e+20
+  bias/sigma = m1=+0.0002, m2=-0.0004, a=+0.0021, p0=-0.0011, e0=+0.0007, Phi_phi0=+0.0011, Phi_r0=-0.0016, chi2=+0.0000, C_p=-0.0008, C_e=+0.0002
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000099.3001287595, 9997.461459614535, -0.8992795112814976, 30.83582262729965, 0.4000135927729285, 1.0, 87.97843410459403, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09767114808303207, 0.2, 0.3009050883207518, 0.95, True, False, False, True, -16.82431940099143, -0.5127852177280938)
+Waveform Generated. SNR: 19.998245530137023
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7889134.904755703
+plunging! t_interp:  7889529.999999999 t_traj:  7883443.4607747225
+plunging! t_interp:  7889529.999999999 t_traj:  7886906.087427955
+plunging! t_interp:  7889529.999999999 t_traj:  7886313.08349814
+plunging! t_interp:  7889529.999999999 t_traj:  7882557.675264578
+Time taken to compute stable deltas is 41.06638431549072 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.4821221828460693 seconds
+[1pa_dev idx=15] overlap=0.9999999358361539 (stored 0.9999999358361541) rho_s=20.000000 cond=6.151e+19
+  bias/sigma = m1=+0.0078, m2=-0.0090, a=+0.0266, p0=-0.0229, e0=+0.0076, Phi_phi0=-0.0070, Phi_r0=+0.0043, chi2=+0.0000, C_p=-0.0057, C_e=-0.0039
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000108.6607097927, 9998.558502059019, -0.49940209939335967, 30.35832865322193, 0.400003649497278, 1.0, 107.91251229769398, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09830751898185659, 0.2, 0.3006628614851184, 0.9499999998600259, True, False, False, True, -8.662484961676508, -0.28467454262347336)
+Waveform Generated. SNR: 19.999935573730173
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888184.492674651
+plunging! t_interp:  7889529.999999998 t_traj:  7882749.328962221
+plunging! t_interp:  7889529.999999998 t_traj:  7886124.22787084
+plunging! t_interp:  7889529.999999998 t_traj:  7889500.187692158
+plunging! t_interp:  7889529.999999998 t_traj:  7889320.028052032
+plunging! t_interp:  7889529.999999998 t_traj:  7888849.894256358
+plunging! t_interp:  7889529.999999998 t_traj:  7884826.700106411
+plunging! t_interp:  7889529.999999998 t_traj:  7880807.620023904
+plunging! t_interp:  7889529.999999998 t_traj:  7888635.122586207
+Time taken to compute stable deltas is 42.013131618499756 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.549262523651123 seconds
+[1pa_dev idx=16] overlap=0.9999999731601821 (stored 0.9999999731601821) rho_s=20.000000 cond=1.673e+20
+  bias/sigma = m1=+0.0079, m2=-0.0055, a=+0.0401, p0=-0.0336, e0=+0.0016, Phi_phi0=-0.0046, Phi_r0=+0.0029, chi2=-0.0000, C_p=-0.0036, C_e=-0.0031
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000059.3320874865, 10000.007275863345, 0.0003179563532652764, 29.788490552356887, 0.3999946894299365, 1.0, 144.10122301068532, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10259739258694874, 0.2, 0.29839266782502444, 0.949999999988166, True, False, False, True, -0.09966045180394394, -0.0295324484739118)
+Waveform Generated. SNR: 20.001451949839904
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7887179.977493988
+plunging! t_interp:  7889529.999999997 t_traj:  7888740.590714925
+plunging! t_interp:  7889529.999999997 t_traj:  7882041.268226785
+plunging! t_interp:  7889529.999999997 t_traj:  7885313.933766535
+plunging! t_interp:  7889529.999999997 t_traj:  7888587.604690467
+plunging! t_interp:  7889529.999999997 t_traj:  7888412.9040846685
+plunging! t_interp:  7889529.999999997 t_traj:  7887449.862401054
+plunging! t_interp:  7889529.999999997 t_traj:  7883042.397651256
+plunging! t_interp:  7889529.999999997 t_traj:  7878639.877760979
+plunging! t_interp:  7889529.999999997 t_traj:  7888763.192991513
+plunging! t_interp:  7889529.999999997 t_traj:  7887214.565985423
+Time taken to compute stable deltas is 44.08317852020264 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7123849391937256 seconds
+[1pa_dev idx=17] overlap=0.9999998091803671 (stored 0.999999809180367) rho_s=20.000000 cond=6.166e+19
+  bias/sigma = m1=+0.0078, m2=+0.0000, a=+0.0281, p0=-0.0213, e0=-0.0027, Phi_phi0=+0.0061, Phi_r0=-0.0056, chi2=-0.0000, C_p=-0.0001, C_e=-0.0005
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000005.4557171058, 9999.749970867437, 0.500077647350793, 29.246177116793046, 0.40000117158875, 1.0, 201.10715108960596, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10027060035520578, 0.2, 0.2995599161555364, 0.9499991569458144, True, False, False, True, -1.628948154227116, -0.047693973428619835)
+Waveform Generated. SNR: 20.000129424766744
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886370.500367443
+plunging! t_interp:  7889529.999999998 t_traj:  7887926.922363815
+plunging! t_interp:  7889529.999999998 t_traj:  7889483.497957594
+plunging! t_interp:  7889529.999999998 t_traj:  7889400.439057209
+plunging! t_interp:  7889529.999999998 t_traj:  7889505.130359156
+plunging! t_interp:  7889529.999999998 t_traj:  7888737.812242035
+plunging! t_interp:  7889529.999999998 t_traj:  7881501.595685629
+plunging! t_interp:  7889529.999999998 t_traj:  7884680.184530956
+plunging! t_interp:  7889529.999999998 t_traj:  7887859.728254647
+plunging! t_interp:  7889529.999999998 t_traj:  7887690.051572219
+plunging! t_interp:  7889529.999999998 t_traj:  7888806.658982667
+plunging! t_interp:  7889529.999999998 t_traj:  7886152.7267349055
+plunging! t_interp:  7889529.999999998 t_traj:  7881271.316770097
+plunging! t_interp:  7889529.999999998 t_traj:  7876395.985750554
+plunging! t_interp:  7889529.999999998 t_traj:  7889323.437508142
+plunging! t_interp:  7889529.999999998 t_traj:  7887607.399659669
+plunging! t_interp:  7889529.999999998 t_traj:  7885892.113076086
+plunging! t_interp:  7889529.999999998 t_traj:  7889231.854972508
+Time taken to compute stable deltas is 44.813289403915405 seconds
+calculating Fisher matrix...
+plunging! t_interp:  7889529.999999998 t_traj:  7889400.439057209
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.805513381958008 seconds
+[1pa_dev idx=18] overlap=0.9999999097443858 (stored 0.9999999097443857) rho_s=20.000000 cond=4.521e+19
+  bias/sigma = m1=+0.0010, m2=-0.0012, a=+0.0100, p0=-0.0062, e0=+0.0007, Phi_phi0=+0.0005, Phi_r0=-0.0013, chi2=-0.0000, C_p=-0.0014, C_e=-0.0014
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000000.1976129765, 9999.919850361972, 0.900017064988432, 28.828871501829543, 0.40000155035401014, 1.0, 278.6125272140459, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10105880367401315, 0.2, 0.29898692091029566, 0.9499999999999974, True, False, False, True, -0.7387042848334027, -0.00010474583669354922)
+Waveform Generated. SNR: 20.000464753662282
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885847.210602953
+plunging! t_interp:  7889529.999999998 t_traj:  7887399.193952027
+plunging! t_interp:  7889529.999999998 t_traj:  7888951.330156413
+plunging! t_interp:  7889529.999999998 t_traj:  7888868.508000321
+plunging! t_interp:  7889529.999999998 t_traj:  7889413.526097548
+plunging! t_interp:  7889529.999999998 t_traj:  7888977.2946242625
+plunging! t_interp:  7889529.999999998 t_traj:  7888214.361498882
+plunging! t_interp:  7889529.999999998 t_traj:  7881175.379928705
+plunging! t_interp:  7889529.999999998 t_traj:  7884283.874609188
+plunging! t_interp:  7889529.999999998 t_traj:  7887393.287480595
+plunging! t_interp:  7889529.999999998 t_traj:  7887227.353712076
+plunging! t_interp:  7889529.999999998 t_traj:  7888319.328839394
+plunging! t_interp:  7889529.999999998 t_traj:  7889411.417174237
+plunging! t_interp:  7889529.999999998 t_traj:  7889353.143204527
+plunging! t_interp:  7889529.999999998 t_traj:  7885141.329007578
+plunging! t_interp:  7889529.999999998 t_traj:  7879786.388220875
+plunging! t_interp:  7889529.999999998 t_traj:  7874438.781122515
+plunging! t_interp:  7889529.999999998 t_traj:  7888619.977882506
+plunging! t_interp:  7889529.999999998 t_traj:  7886737.2442441555
+plunging! t_interp:  7889529.999999998 t_traj:  7884855.417179381
+plunging! t_interp:  7889529.999999998 t_traj:  7889180.759010709
+plunging! t_interp:  7889529.999999998 t_traj:  7888519.497140901
+minimum relative error is greater than 1% for C_e. Fisher may be unstable!
+Time taken to compute stable deltas is 47.83899521827698 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.063985586166382 seconds
+[1pa_dev idx=19] overlap=0.9999999729313968 (stored 0.9999999729313966) rho_s=20.000000 cond=4.063e+19
+  bias/sigma = m1=+0.0001, m2=-0.0006, a=+0.0028, p0=-0.0014, e0=+0.0015, Phi_phi0=+0.0014, Phi_r0=-0.0024, chi2=-0.0000, C_p=-0.0013, C_e=-0.0000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000029.3263584503, 9997.940984669523, -0.8994551407831489, 30.518964293911807, 0.5000164308760321, 1.0, 94.59267114863715, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09870820370473343, 0.2, 0.29962916831481945, 0.9500008368664944, True, False, False, True, -12.580280330766989, -0.28512830036941317)
+Waveform Generated. SNR: 19.999096511010105
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7889415.476608182
+plunging! t_interp:  7889529.999999997 t_traj:  7883676.950812785
+plunging! t_interp:  7889529.999999997 t_traj:  7887155.363179913
+plunging! t_interp:  7889529.999999997 t_traj:  7886550.497866643
+plunging! t_interp:  7889529.999999997 t_traj:  7882773.42276955
+Time taken to compute stable deltas is 41.805750370025635 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.557753562927246 seconds
+[1pa_dev idx=20] overlap=0.9999997078153311 (stored 0.9999997078153312) rho_s=20.000000 cond=7.861e+20
+  bias/sigma = m1=+0.0023, m2=-0.0074, a=+0.0229, p0=-0.0189, e0=+0.0120, Phi_phi0=-0.0042, Phi_r0=-0.0028, chi2=+0.0000, C_p=-0.0042, C_e=-0.0021
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000164.9452263155, 9999.667916434619, -0.4993917944163306, 30.033567315723904, 0.49999483858965976, 1.0, 113.90445727828921, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09877368199207084, 0.2, 0.30034346696974584, 0.9704878678592704, True, False, False, True, 1.3361396503185585, 0.08577793043191215)
+Waveform Generated. SNR: 20.00159432440022
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7888368.559230538
+plunging! t_interp:  7889529.999999997 t_traj:  7882894.904847827
+plunging! t_interp:  7889529.999999997 t_traj:  7886282.683973932
+plunging! t_interp:  7889529.999999997 t_traj:  7889490.683648931
+plunging! t_interp:  7889529.999999997 t_traj:  7888921.789268061
+plunging! t_interp:  7889529.999999997 t_traj:  7884786.485904368
+plunging! t_interp:  7889529.999999997 t_traj:  7880655.529904406
+plunging! t_interp:  7889529.999999997 t_traj:  7888701.029826796
+Time taken to compute stable deltas is 41.93242692947388 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5733304023742676 seconds
+[1pa_dev idx=21] overlap=0.9999999749326994 (stored 0.9999999749326995) rho_s=20.000000 cond=1.429e+20
+  bias/sigma = m1=+0.0122, m2=-0.0013, a=+0.0453, p0=-0.0377, e0=-0.0031, Phi_phi0=-0.0037, Phi_r0=+0.0024, chi2=+0.0042, C_p=+0.0006, C_e=+0.0008
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999950.0877859191, 9997.174571364232, 0.00012153629091529521, 29.457098744018552, 0.5000172924337831, 1.0, 149.85804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1036431841284901, 0.2, 0.29821834427538, 0.9500000409054246, True, False, False, True, -20.887367654441466, -0.736636098146487)
+Waveform Generated. SNR: 19.99575635630148
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887268.670216416
+plunging! t_interp:  7889529.999999998 t_traj:  7888829.752132898
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999998 t_traj:  7882101.91733858
+plunging! t_interp:  7889529.999999998 t_traj:  7885384.3937682165
+plunging! t_interp:  7889529.999999998 t_traj:  7888667.881091881
+plunging! t_interp:  7889529.999999998 t_traj:  7888492.656858333
+plunging! t_interp:  7889529.999999998 t_traj:  7887512.658652482
+plunging! t_interp:  7889529.999999998 t_traj:  7883077.953535087
+plunging! t_interp:  7889529.999999998 t_traj:  7878648.256256819
+plunging! t_interp:  7889529.999999998 t_traj:  7888834.112231669
+plunging! t_interp:  7889529.999999998 t_traj:  7887275.906963387
+Time taken to compute stable deltas is 44.26966309547424 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7743306159973145 seconds
+[1pa_dev idx=22] overlap=0.9999992889839499 (stored 0.99999928898395) rho_s=20.000000 cond=6.509e+19
+  bias/sigma = m1=-0.0080, m2=-0.0166, a=+0.0454, p0=-0.0188, e0=+0.0152, Phi_phi0=+0.0092, Phi_r0=-0.0112, chi2=+0.0000, C_p=-0.0170, C_e=-0.0146
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000016.2090352689, 9998.916788934901, 0.5001040188730441, 28.905260395147383, 0.5000050643693716, 1.0, 206.97673946235204, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09915199875362848, 0.2, 0.3001936658129676, 0.9500000000010476, True, False, False, True, -6.2645516668635075, -0.22982821871501197)
+Waveform Generated. SNR: 19.998553014282525
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886401.162249169
+plunging! t_interp:  7889529.999999998 t_traj:  7887957.7239135355
+plunging! t_interp:  7889529.999999998 t_traj:  7889514.439204609
+plunging! t_interp:  7889529.999999998 t_traj:  7889431.373056353
+plunging! t_interp:  7889529.999999998 t_traj:  7888768.483419108
+plunging! t_interp:  7889529.999999998 t_traj:  7881511.872089015
+plunging! t_interp:  7889529.999999998 t_traj:  7884697.391844074
+plunging! t_interp:  7889529.999999998 t_traj:  7887883.8704615105
+plunging! t_interp:  7889529.999999998 t_traj:  7887713.823625762
+plunging! t_interp:  7889529.999999998 t_traj:  7888832.866890048
+plunging! t_interp:  7889529.999999998 t_traj:  7886149.573551833
+plunging! t_interp:  7889529.999999998 t_traj:  7881234.016635425
+plunging! t_interp:  7889529.999999998 t_traj:  7876324.626350844
+plunging! t_interp:  7889529.999999998 t_traj:  7889342.4881254975
+plunging! t_interp:  7889529.999999998 t_traj:  7887614.43074624
+plunging! t_interp:  7889529.999999998 t_traj:  7885887.135444822
+plunging! t_interp:  7889529.999999998 t_traj:  7889250.264006246
+Time taken to compute stable deltas is 45.51495289802551 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.866999864578247 seconds
+[1pa_dev idx=23] overlap=0.9999999776051908 (stored 0.9999999776051907) rho_s=20.000000 cond=1.281e+20
+  bias/sigma = m1=+0.0030, m2=-0.0055, a=+0.0164, p0=-0.0127, e0=+0.0047, Phi_phi0=-0.0017, Phi_r0=+0.0009, chi2=+0.0000, C_p=-0.0058, C_e=-0.0060
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000002.637914288, 10000.058474558671, 0.9000428655904892, 28.481724229724616, 0.5000002124006723, 1.0, 289.47265494550675, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09983897821967698, 0.2, 0.3000685768339207, 0.9438140940178485, True, False, False, True, -0.010040291946441912, -0.011499677827232407)
+Waveform Generated. SNR: 20.000681617001113
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7885852.922738947
+plunging! t_interp:  7889529.999999998 t_traj:  7887404.855133886
+plunging! t_interp:  7889529.999999998 t_traj:  7888956.940200229
+plunging! t_interp:  7889529.999999998 t_traj:  7888874.120944919
+plunging! t_interp:  7889529.999999998 t_traj:  7889419.121154315
+plunging! t_interp:  7889529.999999998 t_traj:  7888982.956909571
+plunging! t_interp:  7889529.999999998 t_traj:  7888220.075303163
+plunging! t_interp:  7889529.999999998 t_traj:  7881166.542731866
+plunging! t_interp:  7889529.999999998 t_traj:  7884279.833441796
+plunging! t_interp:  7889529.999999998 t_traj:  7887394.045151756
+plunging! t_interp:  7889529.999999998 t_traj:  7887227.855264332
+plunging! t_interp:  7889529.999999998 t_traj:  7888321.5159292305
+plunging! t_interp:  7889529.999999998 t_traj:  7889415.290187287
+plunging! t_interp:  7889529.999999998 t_traj:  7889356.926216833
+plunging! t_interp:  7889529.999999998 t_traj:  7885140.436221844
+plunging! t_interp:  7889529.999999998 t_traj:  7879779.064234902
+plunging! t_interp:  7889529.999999998 t_traj:  7874425.046728907
+plunging! t_interp:  7889529.999999998 t_traj:  7888623.269325984
+plunging! t_interp:  7889529.999999998 t_traj:  7886738.270444898
+plunging! t_interp:  7889529.999999998 t_traj:  7884854.180712066
+plunging! t_interp:  7889529.999999998 t_traj:  7889184.725448005
+plunging! t_interp:  7889529.999999998 t_traj:  7888522.667482526
+Time taken to compute stable deltas is 47.99905347824097 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.001420736312866 seconds
+[1pa_dev idx=24] overlap=0.9999999991715016 (stored 0.9999999991715015) rho_s=20.000000 cond=1.179e+20
+  bias/sigma = m1=+0.0006, m2=+0.0005, a=+0.0088, p0=-0.0067, e0=+0.0003, Phi_phi0=-0.0003, Phi_r0=+0.0003, chi2=-0.0037, C_p=-0.0000, C_e=-0.0008

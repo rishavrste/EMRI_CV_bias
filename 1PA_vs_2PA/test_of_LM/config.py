@@ -7,13 +7,14 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SK_FILES = Path("/scratch/e1583490/SK_files")      # holds overlap.py and data/
+LM_ITERATIONS = SK_FILES / "LM_iterations"        # best_fit_{GRID}_{pa}.json
 OUT_ROOT = HERE / "results"
 
 sys.path.insert(0, str(SK_FILES))
 import overlap as ovl                                          # noqa: E402  (SK_files/overlap.py)
 
 # --- case ------------------------------------------------------------------
-GRID = "IMRI_TAIL"
+GRID = "IMRI_TAIL"                       # --grid in run_lm_T_ladder.py: any SK_files grid
 IDX_DEFAULT = (6, 9)
 
 # Waveform flags (evolve_1PA, evolve_primary, evolve_2PA); the secondary spin chi2 comes first.
@@ -48,7 +49,7 @@ def case_name(fix_chi2=False, dist_div=1.0, fix_phases=False):
 
 # --- evaluation stack: the SK_files `doc` setup ------------------------------
 GEN = ovl.FIT_GEN                        # err 1e-11, mode threshold 1e-5, pad_output, AE
-DROP_DC = False                          # every rfft bin
+DROP_DC = True                           # f > 0 only: never fit on the DC bin (2026-09-30)
 
 # --- LM controls -----------------------------------------------------------
 DER_ORDER, NDELTA = 6, 12                # SEF stencil

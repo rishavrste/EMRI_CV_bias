@@ -67,7 +67,21 @@ Same analysis as `bias_inference_emri/new_results_EMRI/combined_plot.py` +
    (at least some of) the cases; it skips and warns about any case still
    missing its Fisher matrix rather than failing.
 
+4. **`make_bias_table.py`** (CPU) -- writes `bias_0PA_vs_1PA.md`: per-parameter
+   bias/sigma of the 0PA fit at each point's own SNR, next to its overlap. Reuses
+   `plot_bias.load_dataset`, so the numbers match `plot_bias.log`.
+   `make_results_table.py` writes `results_table.md` (overlaps and deviation values).
+   Both mark IMRI fits with overlap < 0.99 (idx3, idx9, idx1_dt5) as probable secondary
+   maxima. Edit the generators, not the `.md` files.
+
 ## Notes
+
+- **1st-generation TDI, A+E+T channels** throughout (fits and Fishers); the move to 2nd
+  generation, A+E only, is planned -- see `TDI_generation.md`.
+- **No 0PA-vs-2PA bias here.** Every Fisher uses a 1PA signal (`fisher_common2.py`).
+- **Do not use the Mahalanobis D or the critical-SNR plots.** D exceeds the direct bound
+  2 x SNR at every point; the stored best fits carry 9 significant figures and the Fisher
+  condition numbers reach ~1e18, so rounding dominates D. Per-parameter bias/sigma is fine.
 
 - IMRI and EMRI are plotted as two separate systems (different `m2`, distances,
   and in general different injected points) -- there's no cross-system plot.

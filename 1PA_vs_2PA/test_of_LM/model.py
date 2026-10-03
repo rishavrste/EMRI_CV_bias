@@ -7,13 +7,13 @@
 import numpy as np
 
 import config as C
-from config import (ARGS14, COL, DER_ORDER, DROP_DC, GEN, GRID, NDELTA, PARAMS, SIGNAL_FLAGS,
+from config import (ARGS14, COL, DER_ORDER, DROP_DC, GEN, NDELTA, PARAMS, SIGNAL_FLAGS,
                     ovl)
 
 
 # --- grid ------------------------------------------------------------------
 def grid_T_dt():
-    sig = ovl.signal_array(GRID)
+    sig = ovl.signal_array(C.GRID)
     T, dt = float(sig[0, COL["T"]]), float(sig[0, COL["dt"]])
     assert np.all(sig[:, COL["T"]] == T) and np.all(sig[:, COL["dt"]] == dt)
     return T, dt
@@ -53,7 +53,7 @@ def build_grid(xp, use_gpu, T=None):
     T = T_grid if T is None else T
     Gd = dict(T=T, dt=dt, xp=xp, resp=ovl.build_response(T, dt, use_gpu, GEN),
               inner=ovl.make_inner(xp, dt, DROP_DC), sef=build_sef(T, dt, use_gpu))
-    print(f"[{GRID}] T={T} yr dt={dt} s use_gpu={use_gpu} gen={GEN}", flush=True)
+    print(f"[{C.GRID}] T={T} yr dt={dt} s use_gpu={use_gpu} gen={GEN}", flush=True)
     return Gd
 
 

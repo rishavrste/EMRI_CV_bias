@@ -1,0 +1,127 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+[INFO] no usable GPU (CUDARuntimeError); running on CPU
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=5] O=0.999999957666 chi2=3.564394e-03 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000098.6860495639, 9997.490236536614, -0.8992774816159027, 31.155014155182126, 0.20003521410320604, 1.0, 8.024069771753325, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0984300803807013, 0.2, 0.30194845883887117, 0.95, True, False, False, True, -15.988425681566302, 0.4805927949071067)
+Waveform Generated. SNR: 199.9866607292735
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7888602.015028947
+plunging! t_interp:  7889529.999999998 t_traj:  7882965.950767867
+plunging! t_interp:  7889529.999999998 t_traj:  7886409.880138095
+plunging! t_interp:  7889529.999999998 t_traj:  7885828.930432707
+plunging! t_interp:  7889529.999999998 t_traj:  7882098.190726581
+plunging! t_interp:  7889529.999999998 t_traj:  7889363.869294229
+Time taken to compute stable deltas is 893.7055113315582 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 101.62022137641907 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=5 it   0 lam=1.0e+08 ov=0.999999957666 chi2=3.564394e-03 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=5] O 0.999999957666 -> 0.999999957666  chi2 3.564394e-03 -> 3.564394e-03  iters=1 accepted=0 stop=lambda_exhausted  1395.8 s
+theta_final = m1=1000098.6860495639, m2=9997.490236536614, a=-0.8992774816159027, p0=31.155014155182126, e0=0.20003521410320604, Phi_phi0=0.0984300803807013, Phi_r0=0.30194845883887117, chi2=0.95, C_p=-15.988425681566302, C_e=0.4805927949071067
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=6] O=0.999999988051 chi2=9.571458e-04 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000104.6264785154, 9998.576588805552, -0.49941009529694175, 30.686742931368325, 0.20001186163399934, 1.0, 10.020459024093517, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09888539234089905, 0.2, 0.3011865192739495, 0.95, True, False, False, True, -8.26358359125589, 0.13787403403844106)
+Waveform Generated. SNR: 200.00112049641078
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887842.985874055
+plunging! t_interp:  7889529.999999998 t_traj:  7889406.883336146
+plunging! t_interp:  7889529.999999998 t_traj:  7882453.164367246
+plunging! t_interp:  7889529.999999998 t_traj:  7885812.771735374
+plunging! t_interp:  7889529.999999998 t_traj:  7889173.431276711
+plunging! t_interp:  7889529.999999998 t_traj:  7888994.088281002
+plunging! t_interp:  7889529.999999998 t_traj:  7888536.005247375
+plunging! t_interp:  7889529.999999998 t_traj:  7884540.928780649
+plunging! t_interp:  7889529.999999998 t_traj:  7880549.907837935
+plunging! t_interp:  7889529.999999998 t_traj:  7888322.735344667
+Time taken to compute stable deltas is 900.1444976329803 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 102.46035480499268 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=6 it   0 lam=1.0e+08 ov=0.999999988051 chi2=9.571458e-04 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=6] O 0.999999988051 -> 0.999999988051  chi2 9.571458e-04 -> 9.571458e-04  iters=1 accepted=0 stop=lambda_exhausted  1405.3 s
+theta_final = m1=1000104.6264785154, m2=9998.576588805552, a=-0.49941009529694175, p0=30.686742931368325, e0=0.20001186163399934, Phi_phi0=0.09888539234089905, Phi_r0=0.3011865192739495, chi2=0.95, C_p=-8.26358359125589, C_e=0.13787403403844106
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=7] O=0.999934172962 chi2=5.268514e+00 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999991.05155647, 10000.314564665656, 0.00012429930614940013, 30.12955156726915, 0.19996680263510963, 1.0, 13.830258247339804, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10468911119697669, 0.2, 0.2832043953355874, 0.95, True, False, False, True, -4.398376303996914, -5.077651404623708)
+Waveform Generated. SNR: 200.0370756979086
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7887005.629183814
+plunging! t_interp:  7889529.999999997 t_traj:  7888566.214142934
+plunging! t_interp:  7889529.999999997 t_traj:  7889373.135309882
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+plunging! t_interp:  7889529.999999997 t_traj:  7881901.494037599
+plunging! t_interp:  7889529.999999997 t_traj:  7885162.612912515
+plunging! t_interp:  7889529.999999997 t_traj:  7888424.730672204
+plunging! t_interp:  7889529.999999997 t_traj:  7888250.646925259
+plunging! t_interp:  7889529.999999997 t_traj:  7889396.257218838
+plunging! t_interp:  7889529.999999997 t_traj:  7887308.010187349
+plunging! t_interp:  7889529.999999997 t_traj:  7882933.051806939
+plunging! t_interp:  7889529.999999997 t_traj:  7878562.963787475
+plunging! t_interp:  7889529.999999997 t_traj:  7888611.647283574
+plunging! t_interp:  7889529.999999997 t_traj:  7887074.450146837
+Time taken to compute stable deltas is 912.0171372890472 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 102.85258769989014 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=7 it   0 lam=1.0e+08 ov=0.999934172962 chi2=5.268514e+00 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=7] O 0.999934172962 -> 0.999934172962  chi2 5.268514e+00 -> 5.268514e+00  iters=1 accepted=0 stop=lambda_exhausted  1417.1 s
+theta_final = m1=999991.05155647, m2=10000.314564665656, a=0.00012429930614940013, p0=30.12955156726915, e0=0.19996680263510963, Phi_phi0=0.10468911119697669, Phi_r0=0.2832043953355874, chi2=0.95, C_p=-4.398376303996914, C_e=-5.077651404623708
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=8] O=0.999999986216 chi2=1.179796e-03 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000005.0420548603, 9999.138854101173, 0.5000839321089608, 29.595830458258845, 0.20001549261694324, 1.0, 19.795413958343254, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10016515285132926, 0.2, 0.29969080971292567, 0.95, True, False, False, True, -5.025173083976875, 0.18853175374844874)
+Waveform Generated. SNR: 199.9912172432673
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886316.250550127
+plunging! t_interp:  7889529.999999998 t_traj:  7887872.690349838
+plunging! t_interp:  7889529.999999998 t_traj:  7889429.283820252
+plunging! t_interp:  7889529.999999998 t_traj:  7889346.223989324
+plunging! t_interp:  7889529.999999998 t_traj:  7889450.887493978
+plunging! t_interp:  7889529.999999998 t_traj:  7888683.5460326
+plunging! t_interp:  7889529.999999998 t_traj:  7881472.183146226
+plunging! t_interp:  7889529.999999998 t_traj:  7884642.515444606
+plunging! t_interp:  7889529.999999998 t_traj:  7887813.79795417
+plunging! t_interp:  7889529.999999998 t_traj:  7887644.562172468
+plunging! t_interp:  7889529.999999998 t_traj:  7888758.267898106
+plunging! t_interp:  7889529.999999998 t_traj:  7886136.745510224
+plunging! t_interp:  7889529.999999998 t_traj:  7881293.453003826
+plunging! t_interp:  7889529.999999998 t_traj:  7876456.142228078
+plunging! t_interp:  7889529.999999998 t_traj:  7889282.670409196
+plunging! t_interp:  7889529.999999998 t_traj:  7887580.049648048
+plunging! t_interp:  7889529.999999998 t_traj:  7885878.168177923
+plunging! t_interp:  7889529.999999998 t_traj:  7889191.804129703
+Time taken to compute stable deltas is 916.1809134483337 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 103.2988486289978 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=8 it   0 lam=1.0e+08 ov=0.999999986216 chi2=1.179796e-03 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=8] O 0.999999986216 -> 0.999999986216  chi2 1.179796e-03 -> 1.179796e-03  iters=1 accepted=0 stop=lambda_exhausted  1423.8 s
+theta_final = m1=1000005.0420548603, m2=9999.138854101173, a=0.5000839321089608, p0=29.595830458258845, e0=0.20001549261694324, Phi_phi0=0.10016515285132926, Phi_r0=0.29969080971292567, chi2=0.95, C_p=-5.025173083976875, C_e=0.18853175374844874
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=10] O=0.999999950546 chi2=4.159213e-03 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000094.9268099421, 9997.481067887722, -0.8992883605682287, 31.035570312418304, 0.3000219524240635, 1.0, 8.336831111465841, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09792636891331336, 0.2, 0.3012238516246011, 0.95, True, False, False, True, -16.311701809967428, -0.21249585705074472)
+Waveform Generated. SNR: 199.98574603301967
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7888866.953985943
+plunging! t_interp:  7889529.999999997 t_traj:  7883208.646644786
+plunging! t_interp:  7889529.999999997 t_traj:  7886660.093990246
+plunging! t_interp:  7889529.999999997 t_traj:  7886074.318471923
+plunging! t_interp:  7889529.999999997 t_traj:  7882333.669149026
+Time taken to compute stable deltas is 1004.6877698898315 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 112.12196087837219 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=10 it   0 lam=1.0e+08 ov=0.999999950546 chi2=4.159213e-03 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_devinj_0.25 lm T=0.25 devinj idx=10] O 0.999999950546 -> 0.999999950546  chi2 4.159213e-03 -> 4.159213e-03  iters=1 accepted=0 stop=lambda_exhausted  1552.7 s
+theta_final = m1=1000094.9268099421, m2=9997.481067887722, a=-0.8992883605682287, p0=31.035570312418304, e0=0.3000219524240635, Phi_phi0=0.09792636891331336, Phi_r0=0.3012238516246011, chi2=0.95, C_p=-16.311701809967428, C_e=-0.21249585705074472

@@ -3,6 +3,8 @@ overlap and (dev_1, dev_2) values per point/model. Reads only from
 results_combined.txt / results_compiled.txt via parse_results.py (falls back
 to a computed SNR_<point>.npy for the couple of EMRI grid points that don't
 quote an SNR in the text file). Writes results_table.md.
+
+IMRI overlaps below SECONDARY_OVERLAP are marked with SECONDARY_MARK as probable secondary maxima.
 """
 import os
 import sys
@@ -12,6 +14,9 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from parse_results import parse_all  # noqa: E402
+
+SECONDARY_OVERLAP = 0.99
+SECONDARY_MARK = " †"
 
 
 def snr_of(system, point, fallback):
@@ -30,7 +35,10 @@ def fmt_dev(c):
 
 
 def fmt_ov(c):
-    return f"{c['overlap']:.7f}" if c else "--"
+    if c is None:
+        return "--"
+    secondary = c["system"] == "IMRI" and c["overlap"] < SECONDARY_OVERLAP
+    return f"{c['overlap']:.7f}" + (SECONDARY_MARK if secondary else "")
 
 
 def fmt(x, spec):
@@ -64,6 +72,9 @@ def main():
     with open(out, "w") as f:
         f.write("# EMRI / IMRI optimization results (best overlap + deviation values)\n\n")
         f.write("\n".join(lines) + "\n")
+        f.write(f"\n{SECONDARY_MARK.strip()} IMRI overlap < {SECONDARY_OVERLAP}: probable secondary maximum "
+                "(user's assessment, 2026-10-02; not yet verified by a re-climb). Every other IMRI grid "
+                "fit reaches >= 0.991. idx1_dt5 is superseded by grid_idx1.\n")
     print("\n".join(lines))
     print(f"\n[saved] {out}")
 

@@ -167,6 +167,10 @@ likewise zero. That is a basin/global problem — which is what the 1000-step NM
    Suggests a config difference between `gauss_cv_imri_0pa.py` and the deviation scripts.
 5. **IMRI tails secondary spin was never supplied** — `chi2 = 0.95` is an *assumption* (it does
    reproduce the SNR and overlap). Flagged in `results_combined.txt` Section 4.
+6. **The 0PA-vs-1PA pipeline uses 1st-generation TDI with A, E and T** (`src/` fits and
+   `Fisher_results/` Fishers). It is to be moved to 2nd-generation TDI with A and E only, as in
+   the 1PA-vs-2PA work, then re-optimised where needed. See `Fisher_results/TDI_generation.md`
+   (2026-10-02).
 
 ## 8. Working style the user expects
 
@@ -227,6 +231,13 @@ Established, do not re-derive:
   0PA ov 0.97961, PN 1.1x), idx3 (a=+0.5, e0=0.1, 0.98541, 1.0x), idx4 (a=+0.9, e0=0.1,
   0.99101, 1.1x). Whether that is a genuine limit of the 2.5PN deviation or a convergence
   failure is NOT settled — see the next item.
+  **Update (2026-10-02): idx3 and idx9 are probable secondary maxima.** They are the only IMRI
+  grid fits below overlap 0.99 (0PA, PN and simple all; every other cell reaches >= 0.991), so the
+  user judges they sit on secondary maxima, not the true best fit. Not yet verified by a re-climb.
+  Their 10-15 sigma 0PA biases (`Fisher_results/bias_0PA_vs_1PA.md`) should not be quoted as the
+  0PA-vs-1PA bias until they are re-optimised. idx4 (0.99101) is just above the threshold and is
+  not flagged. Both tables mark these fits with † / "probable secondary maximum"; the threshold is
+  `SECONDARY_OVERLAP` in `make_results_table.py` and `make_bias_table.py`.
 - **Cells that STALLED on the dev=0 ridge, worth a targeted re-climb seeded at the row-mean
   C_p:** a cell that bought no overlap AND ended at C_p ~ 0 never left the flat ridge, where
   <dh/dC_p | r> vanishes and LM has nothing to push it off. Those are idx5 (a=-0.9: C_p=0.16 at
