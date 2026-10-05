@@ -1,6 +1,7 @@
 """Chosen 1PA + deviation best fit per grid point -> config.BEST_DEV.
 
-The highest T = 0.25 overlap over every finished results/*/lm_idx{i}.json, except where CHOSEN
+The highest T = 0.25 overlap over every finished 1PA + deviation results/*/lm_idx{i}.json
+(cases {GRID}_1pa_dev_*, never the final chi2-free climbs of best_fit_free.py), except where CHOSEN
 names the run (user's choice, 2026-10-03). A run that held chi2 fixed gets that value filled in, so
 every theta_final carries all of config.PARAMS.
 
@@ -22,7 +23,9 @@ CHOSEN = {
 def finished_runs():
     """{idx: [(case, record), ...]} over every finished T = 0.25 result."""
     runs = {}
-    for f in sorted(C.OUT_ROOT.glob("*/lm_idx*.json")):
+    for f in sorted(C.OUT_ROOT.glob(f"{C.GRID}_1pa_dev_*/lm_idx*.json")):
+        if f.parent.name == C.free_case("1pa_dev"):
+            continue
         out = json.loads(f.read_text())
         if "final_eval" in out:
             runs.setdefault(out["idx"], []).append((f.parent.name, out))
@@ -36,20 +39,20 @@ def pick(idx, cands):
     return max(cands, key=lambda c: c[1]["final_eval"]["overlap"]), "max overlap"
 
 
-def full_theta(out):
-    """theta_final over all of config.PARAMS, chi2 filled in where it was held fixed."""
+def full_theta(out, params=C.PARAMS):
+    """theta_final over params, chi2 filled in where it was held fixed."""
     th = dict(out["theta_final"])
     th.setdefault("chi2", out["chi2_fixed"] if out.get("chi2_fixed") is not None
                   else out["chi2_spin_inj"] if "chi2_spin_inj" in out else 0.95)
-    return {n: th[n] for n in C.PARAMS}
+    return {n: th[n] for n in params}
 
 
-def record(idx, case, out, reason, n_runs):
+def record(idx, case, out, reason, n_runs, params=C.PARAMS):
     sig_row = C.ovl.signal_array(C.GRID)[idx]
     return dict(idx=idx, a_inj=out["a_inj"], e0_inj=out["e0_inj"], best_from=case, why=reason,
-                n_runs=n_runs, chi2_fitted="chi2" in out["theta_final"], params=C.PARAMS,
-                theta_final=full_theta(out), final_eval=out["final_eval"],
-                theta_inj={n: C.injected_value(sig_row, n) for n in C.PARAMS})
+                n_runs=n_runs, chi2_fitted="chi2" in out["theta_final"], params=params,
+                theta_final=full_theta(out, params), final_eval=out["final_eval"],
+                theta_inj={n: C.injected_value(sig_row, n) for n in params})
 
 
 def main():

@@ -1,0 +1,31 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=7] O=0.999999909405 chi2=7.454729e-03 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.3779199527, 10000.010625032326, 0.0002972129641557095, 30.127864596749987, 0.19999132981375567, 1.0, 13.830258247339804, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10061075059541931, 0.2, 0.2962573820400779, 0.9499999990550462, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 200.01437417567303
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887015.408709152
+plunging! t_interp:  7889529.999999998 t_traj:  7888575.905842675
+plunging! t_interp:  7889529.999999998 t_traj:  7889382.91771737
+plunging! t_interp:  7889529.999999998 t_traj:  7881911.1012628
+plunging! t_interp:  7889529.999999998 t_traj:  7885172.189933797
+plunging! t_interp:  7889529.999999998 t_traj:  7888434.2772111045
+plunging! t_interp:  7889529.999999998 t_traj:  7888260.195055855
+plunging! t_interp:  7889529.999999998 t_traj:  7889405.794660523
+plunging! t_interp:  7889529.999999998 t_traj:  7887317.419974729
+plunging! t_interp:  7889529.999999998 t_traj:  7882942.354957473
+plunging! t_interp:  7889529.999999998 t_traj:  7878572.161106349
+plunging! t_interp:  7889529.999999998 t_traj:  7888621.088418263
+plunging! t_interp:  7889529.999999998 t_traj:  7887083.853921063
+minimum relative error is greater than 1% for C_e. Fisher may be unstable!
+Time taken to compute stable deltas is 70.07024717330933 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5698156356811523 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=7 it   0 lam=1.0e+08 ov=0.999999909405 chi2=7.454729e-03 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=7] O 0.999999909405 -> 0.999999909405  chi2 7.454729e-03 -> 7.454729e-03  iters=1 accepted=0 stop=lambda_exhausted  79.6 s
+theta_final = m1=1000049.3779199527, m2=10000.010625032326, a=0.0002972129641557095, p0=30.127864596749987, e0=0.19999132981375567, Phi_phi0=0.10061075059541931, Phi_r0=0.2962573820400779, chi2=0.9499999990550462, C_p=0.0, C_e=0.0

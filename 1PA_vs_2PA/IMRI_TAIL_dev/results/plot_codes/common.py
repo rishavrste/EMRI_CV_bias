@@ -2,8 +2,8 @@
 
     load_points()  -> one dict per grid point: overlaps, gain, C_p, C_e, offsets, r-factors, flags
     grid(points, key) -> 5 x 5 array, rows e0 = 0.1 .. 0.5, columns a = -0.9 .. 0.9
-Best fits: SK_files best_fit_IMRI_TAIL_1pa.json and results/best_fit_IMRI_TAIL_1pa_dev.json
-(best_fit_dev.py).
+Best fits: the final chi2-free fits, results/best_fit_IMRI_TAIL_{1pa,1pa_dev}_free.json
+(best_fit_free.py).
 """
 import json
 import sys
@@ -33,8 +33,7 @@ def out_file(*parts):
     return path
 A_VALUES = [-0.9, -0.5, 0.0, 0.5, 0.9]
 E_VALUES = [0.1, 0.2, 0.3, 0.4, 0.5]
-# Offsets compared in the r-factor. chi2 is left out: it is held fixed in several fits, where its
-# offset is exactly 0 or the 1PA value.
+# Offsets compared in the r-factor. chi2 is left out (it was held fixed in several earlier fits).
 R_PARAMS = ["m1", "m2", "a", "p0", "e0", "Phi_phi0", "Phi_r0"]
 LABEL = {"m1": "m1", "m2": "m2", "a": "a", "p0": "p0", "e0": "e0", "Phi_phi0": "Φφ0", "Phi_r0": "Φr0"}
 
@@ -82,8 +81,8 @@ def add_flags(points):
 
 
 def load_points():
-    b1 = json.loads(C.BEST_1PA.read_text())
-    b2 = json.loads(C.BEST_DEV.read_text())
+    b1 = json.loads(C.BEST_FREE["1pa"].read_text())
+    b2 = json.loads(C.BEST_FREE["1pa_dev"].read_text())
     return add_flags([point_record(i, b1[str(i)], b2[str(i)]) for i in range(25)])
 
 

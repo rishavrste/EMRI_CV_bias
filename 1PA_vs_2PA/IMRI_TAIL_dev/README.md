@@ -100,6 +100,76 @@ T 0.242 (their 1PA fits have chi2 0.943, 0.970, 0.943), so chi2 has to be free a
 | 644540 | all | Fisher at both best fits (1PA-only from SK_files, 1PA + dev from `best_fit_dev.py` -> `results/best_fit_IMRI_TAIL_1pa_dev.json`), SNR 20, T 0.25 (`fisher_at_best.py`, `results/fisher_at_best/{1pa,1pa_dev}/`) |
 | 644820 | idx4 | 1PA + dev Fisher redone with SEF's at-zero step grid for C (its C ~ 4e-16 had given steps ~ 1e-17 and a noise C block); failed (list in place of array for `delta_range`) |
 | 644822 | idx4 | the same, fixed; replaces the 644540 idx4 1pa_dev Fisher (C block 1.4e3 / 3.6, corr 0.991; D^2 2115 -> 0.0023) |
+| 647841-647844 | idx2, 7, 12, 22 (a = 0) | re-climb with the near-zero spin steps (`config.NEAR_ZERO`: \|a\| < 1e-2 gets the absolute grid 1e-4 .. 1e-9; the a = 0 fits had spin steps 5e-10 .. 1e-8), chi2 free, from the chosen best fit (`--seed best`), T 0.25, dist_div 10 (`..._best_0.25`) |
+| 647845 | idx17 (a = 0) | the same, chi2 held at the best fit's value (`--fix-chi2 --chi2-at seed`), as in its best fit |
+| 647849-647853 | idx2, 7, 12, 22; idx17 | the same five, as a ladder T 0.242 -> 0.25 from the best fit (`..._best_0.242-0.25`); the higher of the two climbs is taken per point |
+
+Result of 647841-647853 (T = 0.25 overlaps; gain = (1 - O_1PA) / (1 - O)): with the near-zero spin steps
+every a = 0 point climbed off its old best fit. idx2 0.999995726844 -> 0.999999998770 (single rung; gain
+1.18 -> 4096), idx7 0.999999909405 -> 0.999999916410 (ladder; 1.00 -> 1.08), idx12 0.999999848430 ->
+0.999999995522 (ladder; 1.01 -> 34.3), idx17 0.999999809180 -> 0.999999906678 (ladder, chi2 held at 0.95;
+1.10 -> 2.24), idx22 0.999999288984 -> 0.999999990934 (ladder, 3e-12 above the single rung; 7.7 -> 604).
+idx2, 12, 22 land on one basin: C_p -6.9 / -6.7 / -5.8, chi2 0.929 / 0.929 / 0.930. idx7 and idx17 stay
+near C_p = 0 (idx17 with chi2 held). The old a = 0 fits were stalls on noisy spin derivatives. The redone
+1PA a = 0 Fishers (647846) give sigma_a 2.9e-2 .. 7.3e-3 along e0, between the a = -0.5 and +0.5 rows,
+in place of 7e-4 .. 4e-3; every a != 0 Fisher reproduces the 644540 values.
+
+| 648251-648255 | all 25, 1PA template | final fits: chi2-free LM at T 0.25, dist_div 10, near-zero steps, from the SK_files 1PA best fit (`--template 1pa --seed 1pabest --tag final`, `IMRI_TAIL_1pa_..._1pabest_0.25_final`) |
+| 648256-648260 | all 25, 1PA + dev | the same, from the chosen 1PA + dev fit (`best_fit_dev.py`, now with the a = 0 re-climbs; `--seed best --tag final`, `..._best_0.25_final`) |
+
+Final fits (2026-10-05): every point and both templates take the chi2-free climb above, collected by
+`best_fit_free.py` into `results/best_fit_IMRI_TAIL_{1pa,1pa_dev}_free.json` (`config.BEST_FREE`). The
+Fishers (`fisher_at_best.py`) and the plots (`results/plot_codes/common.py`) read those files. The
+SK_files 1PA file and `best_fit_IMRI_TAIL_1pa_dev.json` remain as the seeds.
+
+Result of 648251-648260: the 1PA template moved at the a = 0 points idx2 (0.999994960092 -> 0.999999982497)
+and idx22 (0.999994525146 -> 0.999999970688), both stalls from the noisy spin derivative, and by 9e-11 at
+idx18; elsewhere by < 4e-12. The 1PA + dev fits moved by < 3e-12 everywhere: the five chi2-held fits
+(idx9, 15, 17, 20, 21) took no step with chi2 free, so they are local maxima in chi2 too.
+
+| 648398 / 648399 | all 25, 1PA / 1PA + dev | Fishers at the final fits (old Fishers in `results/fisher_at_best_chosen/`) |
+| 648403 / 648404 | idx4 / idx7, 1PA + dev | T-ladder 0.242 -> 0.25, chi2 free, from the chosen fit (`--seed best --tag ladder`, `..._best_0.242-0.25_ladder`): do the two points where the deviation gains nothing (1.00, 1.08) improve? Cancelled before starting (no further optimisation). |
+
+Result of 648398 / 648399 (2026-10-05; bias comparison and every plot in `results/plot/` and
+`../results/plots/` regenerated from them): the a = 0 spin steps are 1.5e-6 .. 3.5e-5 and sigma_a falls
+smoothly along e0 in every spin row for both templates; re-evaluated overlaps match the stored ones to 6e-16.
+1D bias at SNR 20 is below 0.15 sigma everywhere (1PA) and below 0.06 (1PA + dev). The 1PA nD D (with
+phases, 8 parameters) is 46-58 at a = +0.9, 102-106 at a = +0.5, 191-198 at a = 0 and 233-252 at a < 0;
+nD 1PA critical SNR 0.66-3.9 (90% CL, no phases). It is unchanged at idx2 and idx22 although their 1PA fits
+moved a lot: D^2 = b^T Gamma b is about <h(fit) - h(inj)|h(fit) - h(inj)>, set by the template at the
+injection, not by where the fit sits along the degenerate valley. 1PA + dev, physical block with C
+marginalised: D 0.05-4.0; at a = 0 the corrected Fishers change idx7 6.73 -> 0.63 and idx12 1.32 -> 0.86.
+Flags: idx4, 7, 21 marginal (gain < 1.5), idx18 suspect (1PA mismatch 5.4e-6, ~100x its row).
+
+| 648452 / 648453 | idx7 / idx17, 1PA + dev | basin test: chi2 free, T 0.25, dist_div 10, from the injection plus the mean offset of the e0-neighbours (idx2/12, idx12/22; `--seed rowmean`: C_p -6.8 / -6.2, chi2 0.929), i.e. inside the C_p ~ -6, chi2 ~ 0.93 basin of idx2, 12, 22, where idx7 and idx17 sit at C_p ~ 0, chi2 0.95 |
+
+Result of 648452 / 648453: both were secondary maxima. idx7 0.999999916413 -> 0.999999997561 (gain 1.08 -> 37.1,
+C_p -6.77, chi2 0.9291), idx17 0.999999906678 -> 0.999999992991 (2.24 -> 29.8, C_p -6.22, chi2 0.9296): the
+whole a = 0 column is now one basin (C_p -5.8 .. -6.9, chi2 0.929 - 0.930). Taken as the final fits
+(`config.FREE_OVERRIDE`; previous files `*_free.json.bak_prerowmean`, previous Fishers in
+`results/fisher_at_best_prerowmean/`).
+
+| 648463 | idx7, 17, 1PA + dev | Fishers at the rowmean fits: done (spin step 3.5e-5, sigma_a 1.9e-2 / 1.4e-2); bias comparison and all 85 plot files regenerated. D dev phys 0.63 / 1.17, as before (0.63 / 1.16): the new basin changes the gain, not the bias |
+| 648465 | idx3, 4, 18, 20, 21, 1PA + dev | basin tests, `--seed rowmean` (e0-neighbours; one neighbour at e0 = 0.1, 0.5; idx4 from idx9): the C_p outliers of their spin columns (idx3, 18: -1.7 vs -5 .. -6.5; idx20: -12.6 vs -16; idx21: +1.3, chi2 0.97 vs -7 .. -9) and idx4 (C = 0, gain 1.00) |
+| 648466 | idx18, 1PA | basin test, `--template 1pa --seed rowmean` (the suspect 1PA fit, mismatch 5.4e-6) |
+| 648467 | idx7, 12, 17, 1PA | basin test, `--template 1pa --seed devfinal`: from the point's own 1PA + dev fit without C (chi2 ~ 0.93), as idx2 and 22 1PA moved to chi2 0.93 with a ~300x lower mismatch |
+
+Result of 648465 - 648467:
+- 1PA idx18 was a secondary maximum: 0.999994586553 -> 0.999999843581 (mismatch 35x lower, chi2 0.9521).
+- 1PA + dev idx18: 0.999999909744 -> 0.999999982344 (C_p -1.63 -> -6.35, in line with its column; gain 8.9
+  against the new 1PA fit). idx20: 0.999999707815 -> 0.999999917756 (C_p -12.58 -> -16.97; gain 3.81 -> 13.6).
+- idx3, 4, 21 (1PA + dev) ended *below* their current fits (C_p -5.03, -1.85, -2.51): their off-column C_p are
+  genuine local optima, kept.
+- 648467 was killed: with C dropped, the 1PA template is dephased (idx7 started at overlap 0.137 and crawled to
+  0.699 by iteration 707), so it could not beat the current fits.
+
+idx18 (1PA and 1PA + dev) and idx20 (1PA + dev) are now the final fits (`config.FREE_OVERRIDE`; previous files
+`*_free.json.bak_prebasin2`, previous Fishers in `results/fisher_at_best_prebasin2/`).
+
+| 648703 | idx18, 1PA | Fisher at the new rowmean fit: done |
+| 648704 | idx18, 20, 1PA + dev | Fishers at the new rowmean fits: done. Bias comparison (SNR 20, 200) and all 85 plot files regenerated. nD D unchanged (1PA 103.1 / 251.6; dev phys 0.39 / 4.02), as for idx7/17: the basin changes the gain, not the bias. idx18 loses its S flag; flagged now idx4, 21 (M) |
+| 647846 | all 25 | 1PA Fisher redone with the near-zero spin steps (old Fishers in `results/fisher_at_best_sefdefault_a0/`) |
+| 647847 | the 20 a != 0 points | 1PA + dev Fisher redone, same code; the a = 0 1PA + dev Fishers follow the re-climb |
 
 The fixed-chi2 climb of idx15 from the injection (642612) ran away (C_p ~ -1.9e5, overlap 0.64)
 and crashed at the spin bound. idx2, 4, 7, 12 and 17 ended below their 1PA-only overlaps, which
@@ -141,3 +211,6 @@ Plots (`results/plot_codes/`, regenerate any one by running it): `results/plot/`
 table, r-factor maps, trend check), bias_1D/snr{20,200}/ (split violins of x_best - x_inj, left 1PA, right
 1PA + dev, from the Fisher; 1D table; per_param/ one figure per parameter), bias_nD/{with,no}_phases/, critical_snr/{with,no}_phases/ (90 and 99% CL, convention of
 Fisher_results/plot_bias.py) and tables/ (copy-ready markdown).
+`bias_1D_param_tables/snr{20,200}/` (`plot_bias_param_tables.py`): one table per parameter over the 25
+points, bias/sigma on the (a, e0) grid for 1PA, 1PA + dev and 1PA + dev in 1PA sigma, plus a markdown
+table of bias, sigma and bias/sigma per point.

@@ -1,0 +1,33 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+waveform shape: (2, 788953)
+Computing SNR for parameters: (999999.4937830524, 10000.07678407438, 0.5000591307587905, 29.246469222758456, 0.3999987310428747, 1.0, 201.10715108960596, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1032657055916549, 0.2, 0.29813845285275836, 0.9521142178495846, True, False, False, True, 0.0, 0.0)
+Waveform Generated. SNR: 20.000585402162933
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7886370.310640407
+plunging! t_interp:  7889529.999999998 t_traj:  7887926.7106506275
+plunging! t_interp:  7889529.999999998 t_traj:  7889483.264338166
+plunging! t_interp:  7889529.999999998 t_traj:  7889400.20650349
+plunging! t_interp:  7889529.999999998 t_traj:  7889504.918580603
+plunging! t_interp:  7889529.999999998 t_traj:  7888737.622448071
+plunging! t_interp:  7889529.999999998 t_traj:  7881501.343802555
+plunging! t_interp:  7889529.999999998 t_traj:  7884679.9313406665
+plunging! t_interp:  7889529.999999998 t_traj:  7887859.473803002
+plunging! t_interp:  7889529.999999998 t_traj:  7887689.7972473465
+plunging! t_interp:  7889529.999999998 t_traj:  7888806.404293235
+plunging! t_interp:  7889529.999999998 t_traj:  7886141.41384604
+plunging! t_interp:  7889529.999999998 t_traj:  7881248.974320595
+plunging! t_interp:  7889529.999999998 t_traj:  7876362.641361612
+plunging! t_interp:  7889529.999999998 t_traj:  7889319.296227831
+plunging! t_interp:  7889529.999999998 t_traj:  7887599.376372292
+plunging! t_interp:  7889529.999999998 t_traj:  7885880.211001224
+plunging! t_interp:  7889529.999999998 t_traj:  7889227.506499462
+Time taken to compute stable deltas is 33.882906436920166 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8354122638702393 seconds
+[1pa idx=18] overlap=0.9999998435814755 (stored 0.999999843581476) rho_s=20.000000 cond=3.955e+18
+  bias/sigma = m1=-0.0003, m2=+0.0131, a=+0.0092, p0=-0.0029, e0=-0.0046, Phi_phi0=+0.0064, Phi_r0=-0.0062, chi2=+0.0013

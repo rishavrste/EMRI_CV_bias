@@ -1,0 +1,640 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.242 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22] O=0.999998640234 chi2=2.931730e-02 rho_s=103.082264
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.0877859191, 9997.174571364232, 0.00012153629091529521, 29.457098744018552, 0.5000172924337831, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1036431841284901, 0.2, 0.29821834427538, 0.9500000409054246, True, False, False, True, -20.887367654441466, -0.736636098146487)
+Waveform Generated. SNR: 103.06163685183537
+calculating stable deltas...
+Time taken to compute stable deltas is 24.502637147903442 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.077666759490967 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   0 lam=3.3e-03 ov=0.999998640234 chi2=2.931730e-02 rel=1.2e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.0934523254, 9997.17418874642, 0.00012088979462084222, 29.457098802711002, 0.5000172780262284, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10374659691824897, 0.2, 0.29817620614271, 0.9499976897659025, True, False, False, True, -20.882526067347616, -0.7368836134741092)
+Waveform Generated. SNR: 103.06162043690698
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7044150829315186 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   1 lam=1.1e-03 ov=0.999998802022 chi2=2.588037e-02 rel=1.9e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.1062048, 9997.17332661397, 0.0001191125400590308, 29.45709891595985, 0.5000172476972705, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10330596134468802, 0.2, 0.2982989528650122, 0.949992434109203, True, False, False, True, -20.87115772235101, -0.7379502841218378)
+Waveform Generated. SNR: 103.0615990957769
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.712573766708374 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   2 lam=3.7e-04 ov=0.999999027569 chi2=2.108889e-02 rel=4.1e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.1353868817, 9997.17146927801, 0.00011521442644858718, 29.457099174800682, 0.5000171998554098, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1023437432497078, 0.2, 0.29862988043596916, 0.949980673738475, True, False, False, True, -20.845823955513143, -0.7412366427939251)
+Waveform Generated. SNR: 103.06154357022224
+calculating stable deltas...
+Time taken to compute stable deltas is 24.34087562561035 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0822784900665283 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   3 lam=1.2e-04 ov=0.999999431812 chi2=1.250198e-02 rel=6.3e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.1814055028, 9997.168834659598, 0.0001095495418583661, 29.457099591747056, 0.5000171495574721, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10101141045951803, 0.2, 0.29916146345212974, 0.9499625341534415, True, False, False, True, -20.809102292399086, -0.7471923774300103)
+Waveform Generated. SNR: 103.06144703861794
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6994659900665283 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   4 lam=4.1e-05 ov=0.999999805432 chi2=4.567440e-03 rel=5.2e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.2262170827, 9997.167105674114, 0.00010544513284541672, 29.457100039111978, 0.5000171077342977, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10007366423017006, 0.2, 0.2995642810433558, 0.949945435115576, True, False, False, True, -20.785592133130894, -0.7524044295899834)
+Waveform Generated. SNR: 103.06136918376515
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7079551219940186 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   5 lam=1.4e-05 ov=0.999999917200 chi2=2.195880e-03 rel=9.0e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.276664013, 9997.167183302734, 0.00010425652200106459, 29.457100644533345, 0.5000170533423549, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09982294978154672, 0.2, 0.2996858807776653, 0.9499273298436153, True, False, False, True, -20.78993011385526, -0.7557645745126502)
+Waveform Generated. SNR: 103.06132087732435
+calculating stable deltas...
+Time taken to compute stable deltas is 24.353950262069702 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.0938222408294678 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   6 lam=4.6e-06 ov=0.999999926579 chi2=1.998619e-03 rel=5.6e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.3830901794, 9997.168742844104, 0.00010413206678139535, 29.457101954672343, 0.5000169325412969, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09984644684796198, 0.2, 0.2997080934186824, 0.9498899314605068, True, False, False, True, -20.82021326216364, -0.760991290273827)
+Waveform Generated. SNR: 103.0612552639204
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6938679218292236 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   7 lam=1.5e-06 ov=0.999999931976 chi2=1.886690e-03 rel=8.3e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.5884350584, 9997.171837195192, 0.00010414724386382459, 29.457104222865805, 0.5000167050568954, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09994234078158289, 0.2, 0.29972757210751866, 0.9498179992008028, True, False, False, True, -20.87858187478119, -0.770596189610633)
+Waveform Generated. SNR: 103.06113531695492
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.703422784805298 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   8 lam=5.1e-07 ov=0.999999939547 chi2=1.730883e-03 rel=5.2e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999950.842379046, 9997.175416478492, 0.0001042890636566062, 29.457105695996432, 0.5000164552423118, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10004638484626145, 0.2, 0.2997486019370571, 0.9497297944946049, True, False, False, True, -20.940027162099742, -0.7809612398217902)
+Waveform Generated. SNR: 103.06101115697
+calculating stable deltas...
+Time taken to compute stable deltas is 24.50433611869812 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0926942825317383 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it   9 lam=1.7e-07 ov=0.999999944044 chi2=1.640597e-03 rel=1.4e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999951.0874765161, 9997.178031254298, 0.00010483150769022589, 29.457102531026933, 0.500016322652303, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10009238136402417, 0.2, 0.2997601590497056, 0.9496472551498556, True, False, False, True, -20.962003779579064, -0.7857564006053982)
+Waveform Generated. SNR: 103.0609690594151
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7462611198425293 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  10 lam=6.4e-08 ov=0.999999945219 chi2=1.617415e-03 rel=1.6e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999951.5412014363, 9997.181764157243, 0.00010650081843972715, 29.45708917894476, 0.5000162541356042, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10008888955005431, 0.2, 0.29976714327090853, 0.9494984896055851, True, False, False, True, -20.939606323314194, -0.7860195752326459)
+Waveform Generated. SNR: 103.06102040263235
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7757301330566406 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  11 lam=2.2e-08 ov=0.999999946332 chi2=1.591580e-03 rel=4.1e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999952.673860124, 9997.192602498353, 0.00011081138965244408, 29.457054280651214, 0.500016119589259, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10005923665806112, 0.2, 0.2997806014252188, 0.9491287820780855, True, False, False, True, -20.855534320586337, -0.7840270072754129)
+Waveform Generated. SNR: 103.06120380707725
+calculating stable deltas...
+Time taken to compute stable deltas is 24.39656352996826 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0709831714630127 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  12 lam=9.9e-09 ov=0.999999949035 chi2=1.526395e-03 rel=1.1e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999955.7228324085, 9997.232206258806, 0.00012233062183830107, 29.45696182337858, 0.5000157217439789, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09998751075705496, 0.2, 0.2998131594150949, 0.9481391099473131, True, False, False, True, -20.553995048003618, -0.7753707574470885)
+Waveform Generated. SNR: 103.06179375557127
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.689905881881714 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  13 lam=6.2e-09 ov=0.999999955460 chi2=1.365388e-03 rel=1.9e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999961.451024916, 9997.337524786191, 0.00014360082227065832, 29.456793615506356, 0.5000148581026409, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09988140846042992, 0.2, 0.29986418242959306, 0.9463100206078707, True, False, False, True, -19.768455835876956, -0.7498359070726462)
+Waveform Generated. SNR: 103.06316812886446
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.691955804824829 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  14 lam=5.0e-09 ov=0.999999964976 chi2=1.108821e-03 rel=2.4e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999968.9204340792, 9997.516328484058, 0.00017062431166423272, 29.456583503033674, 0.500013572956809, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09978390867102462, 0.2, 0.2999164290929855, 0.9440024756237152, True, False, False, True, -18.45105648900337, -0.704166285414597)
+Waveform Generated. SNR: 103.06531941808726
+calculating stable deltas...
+Time taken to compute stable deltas is 24.278340816497803 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.0880210399627686 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  15 lam=4.5e-09 ov=0.999999973753 chi2=8.448079e-04 rel=2.5e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999976.468939787, 9997.732383807202, 0.0001971669989910121, 29.456380416661933, 0.500012138671693, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09972178048139069, 0.2, 0.29995641607748774, 0.9417663498575771, True, False, False, True, -16.869544019627842, -0.6473957232414961)
+Waveform Generated. SNR: 103.06779003684866
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.6941287517547607 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  16 lam=4.1e-09 ov=0.999999980094 chi2=6.324694e-04 rel=2.6e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999983.2765517434, 9997.94916761678, 0.00022043536944793278, 29.45620466107903, 0.5000107617723123, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0996898096000807, 0.2, 0.29998379478450565, 0.9398452269923665, True, False, False, True, -15.287427238229162, -0.5895112218374311)
+Waveform Generated. SNR: 103.0701983615093
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.866997718811035 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  17 lam=3.8e-09 ov=0.999999984848 chi2=4.675422e-04 rel=2.6e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999989.3502366057, 9998.153277578349, 0.00024064428287162457, 29.45605341308588, 0.5000094916317096, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967532989042686, 0.2, 0.3000030649124671, 0.9382187053422212, True, False, False, True, -13.79978627282643, -0.5345619335553425)
+Waveform Generated. SNR: 103.0724224759221
+calculating stable deltas...
+Time taken to compute stable deltas is 24.262194395065308 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.090691089630127 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  18 lam=3.5e-09 ov=0.999999988330 chi2=3.448271e-04 rel=2.6e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999994.7613416412, 9998.338660340365, 0.00025808292116033684, 29.45592380551609, 0.5000083444766437, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967065116712026, 0.2, 0.3000172943359108, 0.9368676298350566, True, False, False, True, -12.44903751955047, -0.48444608620198276)
+Waveform Generated. SNR: 103.07442281801208
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.699079751968384 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  19 lam=3.1e-09 ov=0.999999990892 chi2=2.550202e-04 rel=2.5e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (999999.6001409254, 9998.503087615734, 0.00027312020096989135, 29.455812612191924, 0.5000073231279115, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967038212473286, 0.2, 0.3000282802879223, 0.9357634244488152, True, False, False, True, -11.249539614376108, -0.4398346167214014)
+Waveform Generated. SNR: 103.07617909208837
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.696570634841919 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  20 lam=2.7e-09 ov=0.999999992795 chi2=1.901360e-04 rel=2.5e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000004.0223955391, 9998.650661495154, 0.00028638418439661927, 29.45571493197028, 0.5000063982996463, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967253362455525, 0.2, 0.300037302086463, 0.9348448727479008, True, False, False, True, -10.17176282270008, -0.39973528993504054)
+Waveform Generated. SNR: 103.0777428906864
+calculating stable deltas...
+Time taken to compute stable deltas is 24.321505784988403 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0724048614501953 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  21 lam=2.0e-09 ov=0.999999994266 chi2=1.423008e-04 rel=2.4e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000008.1625719185, 9998.780002688138, 0.00029798692096206293, 29.455629864290493, 0.500005563158405, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967488675291893, 0.2, 0.3000452865782899, 0.934144168101377, True, False, False, True, -9.223764496844533, -0.36457839146200793)
+Waveform Generated. SNR: 103.0790968732188
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.703813076019287 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  22 lam=1.1e-09 ov=0.999999995370 chi2=1.084179e-04 rel=2.4e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000012.3113448343, 9998.897818802609, 0.00030865404493372797, 29.455552041575874, 0.5000047674582635, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967672438044654, 0.2, 0.30005306331521797, 0.9336312963246293, True, False, False, True, -8.355655741707649, -0.3325788966810289)
+Waveform Generated. SNR: 103.08031210544371
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.680166244506836 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  23 lam=3.6e-10 ov=0.999999996278 chi2=8.290004e-05 rel=2.3e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000017.511803914, 9999.015994516374, 0.00031968348299821274, 29.455472523683376, 0.500003875546072, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967657876156463, 0.2, 0.30006252149190404, 0.9334526308549504, True, False, False, True, -7.471371314769758, -0.30045939623054296)
+Waveform Generated. SNR: 103.08149120697277
+calculating stable deltas...
+Time taken to compute stable deltas is 24.24730634689331 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0852770805358887 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  24 lam=1.2e-10 ov=0.999999997041 chi2=6.348787e-05 rel=2.2e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000025.5044686224, 9999.126603180948, 0.000330068786889833, 29.455401753519784, 0.5000027523030698, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09967965490015462, 0.2, 0.3000730668894492, 0.934461758898065, True, False, False, True, -6.602901656513971, -0.2702417325494005)
+Waveform Generated. SNR: 103.08242930298809
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6929399967193604 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  25 lam=4.0e-11 ov=0.999999997682 chi2=4.929609e-05 rel=1.4e-01
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000034.9991426003, 9999.203973331001, 0.0003369116868005587, 29.45536111433545, 0.5000016075872019, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0996898755021625, 0.2, 0.3000805553025357, 0.9367300699495308, True, False, False, True, -5.942551819727534, -0.24864718950801204)
+Waveform Generated. SNR: 103.08287017861409
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.689613103866577 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  26 lam=1.3e-11 ov=0.999999998013 chi2=4.260021e-05 rel=7.5e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000041.4453732225, 9999.250842013342, 0.00034089397427502154, 29.455338845398153, 0.5000008485851876, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09969875347613302, 0.2, 0.30008485747402647, 0.9383972153464566, True, False, False, True, -5.533544611915489, -0.23552242952607874)
+Waveform Generated. SNR: 103.08309246294395
+calculating stable deltas...
+Time taken to compute stable deltas is 24.226165771484375 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.090259313583374 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  27 lam=4.5e-12 ov=0.999999998178 chi2=3.940662e-05 rel=2.5e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.969446592, 9999.273906501085, 0.00034248231312624983, 29.455328875619056, 0.500000626916589, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0997043740260651, 0.2, 0.3000848064752845, 0.9386593778339332, True, False, False, True, -5.353023179335506, -0.22902238328973723)
+Waveform Generated. SNR: 103.0832747736657
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7000813484191895 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  28 lam=2.7e-12 ov=0.999999998240 chi2=3.843625e-05 rel=1.2e-03
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.8789253231, 9999.284265035561, 0.00034311021120708837, 29.455324099046745, 0.5000005981237732, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970688269369335, 0.2, 0.30008414636002634, 0.9384977304463941, True, False, False, True, -5.282196075335148, -0.22614907397000097)
+Waveform Generated. SNR: 103.08338185771758
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.6994895935058594 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  29 lam=9.1e-11 ov=0.999999998252 chi2=3.838918e-05 rel=1.1e-02
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.6481889257, 9999.288328294582, 0.00034327677823701194, 29.455322656030503, 0.5000006045278228, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970842837528764, 0.2, 0.3000834820771894, 0.9383746575380602, True, False, False, True, -5.256893511961695, -0.2250147586081213)
+Waveform Generated. SNR: 103.08345126369998
+calculating stable deltas...
+Time taken to compute stable deltas is 24.283432722091675 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0845561027526855 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  30 lam=3.0e-11 ov=0.999999998280 chi2=3.796852e-05 rel=1.6e-03
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.6352129681, 9999.290400662476, 0.0003434471450753681, 29.45532131910704, 0.5000005984968747, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970849458074384, 0.2, 0.30008351398505856, 0.9383361443727598, True, False, False, True, -5.242694270737241, -0.22444836296301723)
+Waveform Generated. SNR: 103.08347661976458
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.696852445602417 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  31 lam=3.3e+07 ov=0.999999998285 chi2=3.790815e-05 rel=6.1e-07
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.6352129681, 9999.290400662476, 0.0003434471450753677, 29.45532131910704, 0.5000005984968747, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970849458074432, 0.2, 0.3000835139850588, 0.9383361443727598, True, False, False, True, -5.242694270737245, -0.22444836296301834)
+Waveform Generated. SNR: 103.08347662109946
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6947739124298096 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  32 lam=3.3e+07 ov=0.999999998285 chi2=3.790812e-05 rel=6.9e-05
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.6352129681, 9999.290400662476, 0.0003434471450753674, 29.45532131910704, 0.5000005984968747, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970849458074481, 0.2, 0.300083513985059, 0.9383361443727598, True, False, False, True, -5.24269427073725, -0.22444836296301943)
+Waveform Generated. SNR: 103.0834766200935
+calculating stable deltas...
+Time taken to compute stable deltas is 24.275537252426147 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.0807089805603027 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  33 lam=3.3e-02 ov=0.999999998286 chi2=3.790552e-05 rel=5.2e-05
+waveform shape: (2, 763707)
+Computing SNR for parameters: (1000042.6352128831, 9999.290400671258, 0.00034344713497692393, 29.455321319104865, 0.5000005984971614, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970849467975462, 0.2, 0.30008350785796384, 0.9383361444129922, True, False, False, True, -5.242694383214089, -0.22444835269711383)
+Waveform Generated. SNR: 103.08347662170998
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6954095363616943 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22 it  34 lam=1.1e+07 ov=0.999999998286 chi2=3.790355e-05 rel=1.1e-11
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm_T0.242 T=0.242 best idx=22] O 0.999998640234 -> 0.999999998286  chi2 2.931730e-02 -> 3.790355e-05  iters=35 accepted=35 stop=rel_tol  400.4 s
+theta_final = m1=1000042.6352128831, m2=9999.290400671258, a=0.00034344713497692377, p0=29.455321319104865, e0=0.5000005984971614, Phi_phi0=0.09970849467975494, Phi_r0=0.30008350785796406, chi2=0.9383361444129922, C_p=-5.242694383214092, C_e=-0.22444835269711444
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22] O=0.999998839455 chi2=9.291980e-02 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.6352128831, 9999.290400671258, 0.00034344713497692377, 29.455321319104865, 0.5000005984971614, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09970849467975494, 0.2, 0.30008350785796406, 0.9383361444129922, True, False, False, True, -5.242694383214092, -0.22444835269711444)
+Waveform Generated. SNR: 200.00849927457284
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887269.490304653
+plunging! t_interp:  7889529.999999998 t_traj:  7888830.238024323
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.023339222
+plunging! t_interp:  7889529.999999998 t_traj:  7885384.403779029
+plunging! t_interp:  7889529.999999998 t_traj:  7888667.794851288
+plunging! t_interp:  7889529.999999998 t_traj:  7888492.575710506
+plunging! t_interp:  7889529.999999998 t_traj:  7887565.088858393
+plunging! t_interp:  7889529.999999998 t_traj:  7883182.878957545
+plunging! t_interp:  7889529.999999998 t_traj:  7878805.5587221
+plunging! t_interp:  7889529.999999998 t_traj:  7888870.888902938
+plunging! t_interp:  7889529.999999998 t_traj:  7887331.141669805
+Time taken to compute stable deltas is 42.07384467124939 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.560603618621826 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   0 lam=3.3e-03 ov=0.999998839455 chi2=9.291980e-02 rel=7.9e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.63441526, 9999.290328407134, 0.0003436027150461635, 29.455321328892786, 0.5000005907403839, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09935046402577298, 0.2, 0.3002128988360056, 0.9383362636617947, True, False, False, True, -5.241674300430908, -0.22558276882725598)
+Waveform Generated. SNR: 200.00749451177833
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.189967393875122 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   1 lam=1.1e-03 ov=0.999999759890 chi2=1.926571e-02 rel=1.7e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.6317333938, 9999.290345888145, 0.0003437646583406956, 29.455321308063, 0.5000005990403312, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09915367800255082, 0.2, 0.30016074229778505, 0.938337181486468, True, False, False, True, -5.241593304970877, -0.22648382867254296)
+Waveform Generated. SNR: 200.0072544389801
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.220856428146362 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   2 lam=3.7e-04 ov=0.999999800392 chi2=1.602181e-02 rel=1.3e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.6262960352, 9999.290472451168, 0.0003440507116567847, 29.455321253005565, 0.5000006330616497, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09928373394507845, 0.2, 0.30020143842234703, 0.9383392497960793, True, False, False, True, -5.242666866785979, -0.2269485857218486)
+Waveform Generated. SNR: 200.00711141373637
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887269.751240053
+plunging! t_interp:  7889529.999999998 t_traj:  7888830.499074148
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.284671321
+plunging! t_interp:  7889529.999999998 t_traj:  7885384.665059647
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.056144057
+plunging! t_interp:  7889529.999999998 t_traj:  7888492.836987291
+plunging! t_interp:  7889529.999999998 t_traj:  7887565.33517916
+plunging! t_interp:  7889529.999999998 t_traj:  7883183.110335882
+plunging! t_interp:  7889529.999999998 t_traj:  7878805.775198065
+plunging! t_interp:  7889529.999999998 t_traj:  7888871.139660181
+plunging! t_interp:  7889529.999999998 t_traj:  7887331.386918035
+Time taken to compute stable deltas is 41.898465633392334 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5536327362060547 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   3 lam=1.2e-04 ov=0.999999827245 chi2=1.387145e-02 rel=2.1e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.6141529343, 9999.290748534273, 0.00034468615440974733, 29.455321132926752, 0.5000006764219151, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09961042339908714, 0.2, 0.3002214101423166, 0.9383437221187062, True, False, False, True, -5.245419835908833, -0.2264807234195436)
+Waveform Generated. SNR: 200.00693877070216
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.203134536743164 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   4 lam=4.1e-05 ov=0.999999863448 chi2=1.097271e-02 rel=3.0e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5917309852, 9999.291199267696, 0.0003458636147831329, 29.45532091806789, 0.5000006951401363, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10002685202237312, 0.2, 0.300078117260745, 0.938351637420352, True, False, False, True, -5.250460831579963, -0.22374668599327988)
+Waveform Generated. SNR: 200.00672202740023
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.202779293060303 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   5 lam=1.4e-05 ov=0.999999904550 chi2=7.681458e-03 rel=2.7e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5647639295, 9999.291667021582, 0.0003472360932590474, 29.455320641445006, 0.5000006907069227, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1004221658276255, 0.2, 0.29983011861377595, 0.9383609462672882, True, False, False, True, -5.256019327371873, -0.21967922311636087)
+Waveform Generated. SNR: 200.00650717539864
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7887269.982334267
+plunging! t_interp:  7889529.999999997 t_traj:  7888830.730350513
+plunging! t_interp:  7889529.999999997 t_traj:  7882102.517866569
+plunging! t_interp:  7889529.999999997 t_traj:  7885384.897819053
+plunging! t_interp:  7889529.999999997 t_traj:  7888668.288522729
+plunging! t_interp:  7889529.999999997 t_traj:  7888493.0692574205
+plunging! t_interp:  7889529.999999997 t_traj:  7887565.462802869
+plunging! t_interp:  7889529.999999997 t_traj:  7883183.134103255
+plunging! t_interp:  7889529.999999997 t_traj:  7878805.695307929
+plunging! t_interp:  7889529.999999997 t_traj:  7888871.2982746465
+plunging! t_interp:  7889529.999999997 t_traj:  7887331.50894158
+Time taken to compute stable deltas is 41.87496542930603 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.537810802459717 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   6 lam=4.6e-06 ov=0.999999930743 chi2=5.583088e-03 rel=7.1e-02
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5474033416, 9999.291797663771, 0.0003479676986275044, 29.455320374757925, 0.5000006889734195, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10061428643419702, 0.2, 0.2996873727884449, 0.9383666824191204, True, False, False, True, -5.257985502918809, -0.21715689886636982)
+Waveform Generated. SNR: 200.00639455003576
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.199202299118042 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   7 lam=1.5e-06 ov=0.999999935647 chi2=5.189260e-03 rel=5.0e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5396543912, 9999.291530839788, 0.00034809871418023673, 29.455319993795044, 0.5000006964068213, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10062662117551989, 0.2, 0.2996594874381332, 0.938368391160836, True, False, False, True, -5.256426667631251, -0.21617163237610898)
+Waveform Generated. SNR: 200.0063729704389
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.1862030029296875 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   8 lam=5.1e-07 ov=0.999999935967 chi2=5.163418e-03 rel=3.3e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5433160535, 9999.290979692885, 0.0003481293674345066, 29.45531918898639, 0.5000007056823818, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10059612806342973, 0.2, 0.29966024287887827, 0.9383638761303932, True, False, False, True, -5.255541642112149, -0.21567347996168662)
+Waveform Generated. SNR: 200.00636154243207
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.04837892
+plunging! t_interp:  7889529.999999998 t_traj:  7888830.796337054
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.584162909
+plunging! t_interp:  7889529.999999998 t_traj:  7885384.963936289
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.354325463
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.135247082
+plunging! t_interp:  7889529.999999998 t_traj:  7887565.514116087
+plunging! t_interp:  7889529.999999998 t_traj:  7883183.170922779
+plunging! t_interp:  7889529.999999998 t_traj:  7878805.717685807
+plunging! t_interp:  7889529.999999998 t_traj:  7888871.354127351
+plunging! t_interp:  7889529.999999998 t_traj:  7887331.559521084
+Time taken to compute stable deltas is 41.83947825431824 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5509910583496094 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it   9 lam=1.7e-07 ov=0.999999936175 chi2=5.146608e-03 rel=6.6e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.5803369407, 9999.28990447051, 0.0003483132101584051, 29.455317155335493, 0.5000007098987931, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1005751437614619, 0.2, 0.2996640746627114, 0.9383408496999225, True, False, False, True, -5.260706532929324, -0.21579049126465066)
+Waveform Generated. SNR: 200.00636082575724
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.20326828956604 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  10 lam=5.6e-08 ov=0.999999936601 chi2=5.112544e-03 rel=2.0e-02
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000042.7029265554, 9999.28702741008, 0.0003489233728528877, 29.455311312316468, 0.5000007100533459, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10055413615399354, 0.2, 0.2996730645976417, 0.9382674568984087, True, False, False, True, -5.280118121589135, -0.2169227998517104)
+Waveform Generated. SNR: 200.00633622058132
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.200746536254883 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  11 lam=1.9e-08 ov=0.999999937879 chi2=5.010017e-03 rel=5.7e-02
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000043.04941344, 9999.278864830512, 0.00035068431139469934, 29.455294556411463, 0.5000007091377784, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10049944193985567, 0.2, 0.29969848938072596, 0.9380531513172142, True, False, False, True, -5.336160181897766, -0.22026553445346703)
+Waveform Generated. SNR: 200.00625682497386
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.068894371
+plunging! t_interp:  7889529.999999998 t_traj:  7888830.816990802
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.606524136
+plunging! t_interp:  7889529.999999998 t_traj:  7885384.985792444
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.375641934
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.156556879
+plunging! t_interp:  7889529.999999998 t_traj:  7887566.98702632
+plunging! t_interp:  7889529.999999998 t_traj:  7883186.09269123
+plunging! t_interp:  7889529.999999998 t_traj:  7878810.085181911
+plunging! t_interp:  7889529.999999998 t_traj:  7888872.394778379
+plunging! t_interp:  7889529.999999998 t_traj:  7887333.10981722
+Time taken to compute stable deltas is 41.89968991279602 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5616061687469482 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  12 lam=6.3e-09 ov=0.999999941424 chi2=4.725344e-03 rel=1.5e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000043.9428284834, 9999.257975806146, 0.0003554655404343515, 29.45524911603043, 0.5000007083796693, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10035371921279275, 0.2, 0.2997665803088086, 0.9374539179206725, True, False, False, True, -5.479216838685099, -0.22888682173478525)
+Waveform Generated. SNR: 200.00606818533635
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.216561317443848 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  13 lam=2.1e-09 ov=0.999999950452 chi2=4.000760e-03 rel=3.4e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000045.6828486347, 9999.216924590412, 0.0003662272085142978, 29.455146849215208, 0.5000007174346017, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10002437084702612, 0.2, 0.29991521277040945, 0.9360019685666014, True, False, False, True, -5.758991567265624, -0.2459897959100283)
+Waveform Generated. SNR: 200.00578646870073
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.19964861869812 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  14 lam=7.0e-10 ov=0.999999967245 chi2=2.653990e-03 rel=5.0e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000047.5656761961, 9999.17304684999, 0.00038267995081960916, 29.45499071927479, 0.5000007575605179, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0995224666141855, 0.2, 0.30012851979833394, 0.9334862819965969, True, False, False, True, -6.052624540494244, -0.264987621703104)
+Waveform Generated. SNR: 200.0058061470481
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.268359226
+plunging! t_interp:  7889529.999999998 t_traj:  7888831.008858057
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.809114401
+plunging! t_interp:  7889529.999999998 t_traj:  7885385.1797697665
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.561312927
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.34243624
+plunging! t_interp:  7889529.999999998 t_traj:  7887588.446605155
+plunging! t_interp:  7889529.999999998 t_traj:  7883228.787653445
+plunging! t_interp:  7889529.999999998 t_traj:  7878873.968238514
+plunging! t_interp:  7889529.999999998 t_traj:  7888887.522123504
+plunging! t_interp:  7889529.999999998 t_traj:  7887355.7036618255
+Time taken to compute stable deltas is 41.880836725234985 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5398166179656982 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  15 lam=2.3e-10 ov=0.999999983998 chi2=1.313901e-03 rel=3.6e-01
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000048.366582919, 9999.16309990286, 0.0003959775908058958, 29.454865477742576, 0.5000007863784751, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09912715202594888, 0.2, 0.3002829666121816, 0.9311744082323059, True, False, False, True, -6.108356837165859, -0.27117073114641793)
+Waveform Generated. SNR: 200.00639501825535
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.192772150039673 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  16 lam=7.7e-11 ov=0.999999990001 chi2=8.408194e-04 rel=5.5e-02
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000048.7205613365, 9999.177713336368, 0.00040092032039374965, 29.454820734826118, 0.5000007267311978, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.0990018297761365, 0.2, 0.3003291955593445, 0.9303261007924153, True, False, False, True, -5.998047953477253, -0.26774141427521675)
+Waveform Generated. SNR: 200.0069838691211
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.181585311889648 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  17 lam=2.6e-11 ov=0.999999990676 chi2=7.946978e-04 rel=7.8e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.1252527066, 9999.19237931154, 0.000402053345825461, 29.454812164714347, 0.5000006354394587, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09899367125391603, 0.2, 0.30033377236234315, 0.9302446225340254, True, False, False, True, -5.891425991589782, -0.2638463303838764)
+Waveform Generated. SNR: 200.00731743082702
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.32971233
+plunging! t_interp:  7889529.999999998 t_traj:  7888831.05260737
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.840962699
+plunging! t_interp:  7889529.999999998 t_traj:  7885385.203788082
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.5773048
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.35907357
+plunging! t_interp:  7889529.999999998 t_traj:  7887603.485523988
+plunging! t_interp:  7889529.999999998 t_traj:  7883258.823721278
+plunging! t_interp:  7889529.999999998 t_traj:  7878918.968444383
+plunging! t_interp:  7889529.999999998 t_traj:  7888898.089011911
+plunging! t_interp:  7889529.999999998 t_traj:  7887371.543604782
+Time taken to compute stable deltas is 41.85643792152405 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.545004367828369 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  18 lam=8.6e-12 ov=0.999999990813 chi2=7.884925e-04 rel=4.0e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.374981809, 9999.200708816174, 0.0004024208401750233, 29.454809950819207, 0.500000579405226, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09899796258509315, 0.2, 0.300333386717151, 0.9302598950717537, True, False, False, True, -5.831145054144976, -0.2616257148279445)
+Waveform Generated. SNR: 200.00748017003912
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.205881118774414 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  19 lam=2.9e-12 ov=0.999999990884 chi2=7.852994e-04 rel=5.7e-04
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.4847702624, 9999.204373518764, 0.0004025679435693895, 29.45480911379768, 0.5000005546305674, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.099000206143202, 0.2, 0.3003330455783871, 0.930269417962431, True, False, False, True, -5.804644779630052, -0.26064584396762497)
+Waveform Generated. SNR: 200.00755486483712
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.1792848110198975 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  20 lam=1.0e-12 ov=0.999999990903 chi2=7.848539e-04 rel=1.4e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.5369876311, 9999.206052619431, 0.00040263931301862403, 29.454808697648303, 0.5000005430635338, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09900121068838984, 0.2, 0.30033292217209484, 0.9302737164371816, True, False, False, True, -5.792504019641771, -0.26020100243197397)
+Waveform Generated. SNR: 200.00758851304255
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.332460126
+plunging! t_interp:  7889529.999999998 t_traj:  7888831.053694072
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.83979793
+plunging! t_interp:  7889529.999999998 t_traj:  7885385.202272681
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.575434466
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.3572616
+plunging! t_interp:  7889529.999999998 t_traj:  7887603.3384154
+plunging! t_interp:  7889529.999999998 t_traj:  7883258.53207653
+plunging! t_interp:  7889529.999999998 t_traj:  7878918.532389111
+plunging! t_interp:  7889529.999999998 t_traj:  7888897.985038212
+plunging! t_interp:  7889529.999999998 t_traj:  7887371.388795965
+Time taken to compute stable deltas is 41.92710471153259 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.553713083267212 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  21 lam=3.3e-12 ov=0.999999990924 chi2=7.837316e-04 rel=3.1e-04
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.5570532959, 9999.206884910856, 0.0004026701116612659, 29.454808521687, 0.5000005380406977, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09900167096541242, 0.2, 0.3003328267563699, 0.9302746097464651, True, False, False, True, -5.78647847445573, -0.2599701175005642)
+Waveform Generated. SNR: 200.00759825802925
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.2052552700042725 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  22 lam=1.1e-12 ov=0.999999990928 chi2=7.834902e-04 rel=7.2e-05
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.5617879914, 9999.207139648013, 0.0004026717386984432, 29.454808538056717, 0.5000005366068981, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09900195551197886, 0.2, 0.3003327142571872, 0.9302758765173006, True, False, False, True, -5.784645250026455, -0.2598962184877964)
+Waveform Generated. SNR: 200.0076112274429
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.202629089355469 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  23 lam=3.7e-12 ov=0.999999990932 chi2=7.834334e-04 rel=2.3e-04
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.5686969818, 9999.207307195808, 0.0004026856252872889, 29.454808436891877, 0.5000005353015677, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09900196272305317, 0.2, 0.30033277363666244, 0.9302756200113126, True, False, False, True, -5.7834272403725775, -0.25985584887150864)
+Waveform Generated. SNR: 200.00760970341224
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887270.332765305
+plunging! t_interp:  7889529.999999998 t_traj:  7888831.053841204
+plunging! t_interp:  7889529.999999998 t_traj:  7882102.839727092
+plunging! t_interp:  7889529.999999998 t_traj:  7885385.202205014
+plunging! t_interp:  7889529.999999998 t_traj:  7888668.575316458
+plunging! t_interp:  7889529.999999998 t_traj:  7888493.357137629
+plunging! t_interp:  7889529.999999998 t_traj:  7887603.328530663
+plunging! t_interp:  7889529.999999998 t_traj:  7883258.512450662
+plunging! t_interp:  7889529.999999998 t_traj:  7878918.503016405
+plunging! t_interp:  7889529.999999998 t_traj:  7888897.977993233
+plunging! t_interp:  7889529.999999998 t_traj:  7887371.378355019
+Time taken to compute stable deltas is 41.88116955757141 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.547215223312378 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  24 lam=1.2e-01 ov=0.999999990934 chi2=7.832519e-04 rel=1.4e-05
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000049.5686971468, 9999.207307191657, 0.00040268562808600634, 29.45480843689434, 0.5000005353019031, 1.0, 14.985804007840585, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09900195616537744, 0.2, 0.3003327836200775, 0.930275619954394, True, False, False, True, -5.783427201649335, -0.25985583312038096)
+Waveform Generated. SNR: 200.00761070710146
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.195167541503906 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22 it  25 lam=1.0e+08 ov=0.999999990934 chi2=7.832411e-04 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.242-0.25 lm T=0.25 T0.242_final idx=22] O 0.999998839455 -> 0.999999990934  chi2 9.291980e-02 -> 7.832411e-04  iters=26 accepted=25 stop=lambda_exhausted  499.5 s
+theta_final = m1=1000049.5686971468, m2=9999.207307191657, a=0.00040268562808600634, p0=29.45480843689434, e0=0.5000005353019031, Phi_phi0=0.09900195616537744, Phi_r0=0.3003327836200775, chi2=0.930275619954394, C_p=-5.783427201649335, C_e=-0.25985583312038096

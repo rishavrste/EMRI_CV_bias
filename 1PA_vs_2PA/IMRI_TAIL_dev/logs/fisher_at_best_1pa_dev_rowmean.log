@@ -1,0 +1,52 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[1pa_dev idx=7] at-zero step grid for ['a']
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000043.5399233125, 9999.042945354116, 0.00039599250876569403, 30.12683147040785, 0.20000481376444085, 1.0, 138.30258247339805, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09955031446815275, 0.2, 0.30085967167197103, 0.9291367138970356, True, False, False, True, -6.770510961239931, -0.2340621015493367)
+Waveform Generated. SNR: 20.000488085756263
+calculating stable deltas...
+plunging! t_interp:  7889529.999999999 t_traj:  7887015.907539702
+plunging! t_interp:  7889529.999999999 t_traj:  7888576.435036308
+plunging! t_interp:  7889529.999999999 t_traj:  7889383.416716973
+plunging! t_interp:  7889529.999999999 t_traj:  7881911.744563007
+plunging! t_interp:  7889529.999999999 t_traj:  7885172.81544076
+plunging! t_interp:  7889529.999999999 t_traj:  7888434.884934328
+plunging! t_interp:  7889529.999999999 t_traj:  7888260.80376592
+plunging! t_interp:  7889529.999999999 t_traj:  7889406.397052059
+plunging! t_interp:  7889529.999999999 t_traj:  7887414.220776165
+plunging! t_interp:  7889529.999999999 t_traj:  7883135.155351598
+plunging! t_interp:  7889529.999999999 t_traj:  7878860.749195516
+plunging! t_interp:  7889529.999999999 t_traj:  7888689.263714585
+plunging! t_interp:  7889529.999999999 t_traj:  7887185.782855926
+Time taken to compute stable deltas is 51.78852581977844 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6608259677886963 seconds
+[1pa_dev idx=7] overlap=0.9999999975607187 (stored 0.9999999975607189) rho_s=20.000000 cond=2.571e+19
+  bias/sigma = m1=+0.0044, m2=-0.0043, a=+0.0211, p0=-0.0173, e0=+0.0009, Phi_phi0=-0.0007, Phi_r0=+0.0011, chi2=-0.0062, C_p=-0.0043, C_e=-0.0017
+[1pa_dev idx=17] at-zero step grid for ['a']
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000046.6148057247, 9999.133807402459, 0.00040013188729636845, 29.78760066894181, 0.4000014227433299, 1.0, 144.10122301068532, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.09909699250492576, 0.2, 0.30045599910601, 0.9296113282887867, True, False, False, True, -6.219208388124293, -0.2709735609480094)
+Waveform Generated. SNR: 20.000614848056024
+calculating stable deltas...
+plunging! t_interp:  7889529.999999998 t_traj:  7887180.266654452
+plunging! t_interp:  7889529.999999998 t_traj:  7888740.898826013
+plunging! t_interp:  7889529.999999998 t_traj:  7882041.67214064
+plunging! t_interp:  7889529.999999998 t_traj:  7885314.318422399
+plunging! t_interp:  7889529.999999998 t_traj:  7888587.96977894
+plunging! t_interp:  7889529.999999998 t_traj:  7888413.270443472
+plunging! t_interp:  7889529.999999998 t_traj:  7887544.8505332
+plunging! t_interp:  7889529.999999998 t_traj:  7883231.818020879
+plunging! t_interp:  7889529.999999998 t_traj:  7878923.520197464
+plunging! t_interp:  7889529.999999998 t_traj:  7888830.022372875
+plunging! t_interp:  7889529.999999998 t_traj:  7887314.598085853
+Time taken to compute stable deltas is 59.66339468955994 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6884114742279053 seconds
+[1pa_dev idx=17] overlap=0.9999999929913859 (stored 0.9999999929913855) rho_s=20.000000 cond=1.262e+20
+  bias/sigma = m1=+0.0050, m2=-0.0038, a=+0.0296, p0=-0.0271, e0=+0.0006, Phi_phi0=-0.0020, Phi_r0=+0.0016, chi2=-0.0088, C_p=-0.0037, C_e=-0.0052

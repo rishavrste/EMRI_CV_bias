@@ -57,6 +57,11 @@ def build_grid(xp, use_gpu, T=None):
 
 
 # --- one point -------------------------------------------------------------
+def zero_step_range(names, vec):
+    """{name: config.ZERO_STEPS} for every parameter below its config.NEAR_ZERO magnitude."""
+    return {n: C.ZERO_STEPS for n, v in zip(names, vec) if n in C.NEAR_ZERO and abs(v) < C.NEAR_ZERO[n]}
+
+
 def add_args(chi2, flags, dev):
     """The trailing waveform arguments: [chi2, evolve_1PA, evolve_primary, evolve_2PA,
     deviation_included, C_p, C_e]. dev = None switches the deviation off."""
@@ -111,7 +116,10 @@ def build_point(Gd, sig_row, names, dist_div=1.0, chi2_fixed=None):
         """d_i h at vec from SEF, as a list of [A, E] arrays, and the steps SEF used. The
         deviation coefficients are add_param_args entries, which SEF differentiates by name.
         delta_range: optional {name: trial steps} for SEF's step search, in place of its default
-        grid (relative to the parameter value)."""
+        grid (relative to the parameter value). Parameters near zero get config.ZERO_STEPS unless
+        delta_range names them."""
+        if deltas is None:
+            delta_range = {**zero_step_range(names, vec), **(delta_range or {})} or None
         p, chi2, dev = split(vec)
         wp = {("xI0" if n == "x0" else n): x for n, x in p.items()}
         f1, fp, f2 = C.TEMPLATE_FLAGS

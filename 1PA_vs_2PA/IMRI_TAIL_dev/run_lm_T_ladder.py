@@ -21,6 +21,12 @@ Run (GPU):  python run_lm_T_ladder.py --idx 9 --fix-chi2 --dist-div 10 --t-steps
                    --t-steps 0.242 0.25 --seed 1pabest --dev-start -8 0   # start at C_p = -8
             python run_lm_T_ladder.py --idx 20 --dist-div 10 --t-steps 0.25 --seed devchi2seed
                    # chi2 free, from the end of the chi2-held-at-1PA ladder
+            python run_lm_T_ladder.py --idx 2 7 --dist-div 10 --t-steps 0.25 --seed best
+                   # re-climb from the chosen best fit (best_fit_dev.py)
+            python run_lm_T_ladder.py --template 1pa --idx 2 --dist-div 10 --t-steps 0.25 \
+                   --seed 1pabest     # plain 1PA template, from the SK_files 1PA best fit
+            python run_lm_T_ladder.py --template 1pa --idx 0 1 --dist-div 10 --t-steps 0.25 \
+                   --seed 1pabest --tag final      # the final fits (config.free_case)
 """
 import argparse
 import json
@@ -59,13 +65,19 @@ def check_branch():
 
 
 # --- seeds ----------------------------------------------------------------
-def seed_source(idx, seed):
-    """{name: value} at the seed for grid point idx; empty for the injection."""
+def seed_source(idx, seed, template=C.TEMPLATE):
+    """{name: value} at the seed for grid point idx and template; empty for the injection."""
     if seed == "inj":
         return {}
     if seed == "1pabest":
         with open(C.BEST_1PA) as f:
             return json.load(f)[str(idx)]["theta_final"]
+    if seed == C.SEED_BEST:
+        return json.loads(C.BEST_DEV.read_text())[str(idx)]["theta_final"]
+    if seed == C.SEED_ROWMEAN:
+        return rowmean_seed(idx, template)
+    if seed == C.SEED_DEVFINAL:
+        return json.loads(C.BEST_FREE["1pa_dev"].read_text())[str(idx)]["theta_final"]
     with open(C.OUT_ROOT / C.SEED_CASES[seed] / f"lm_idx{idx}.json") as f:
         out = json.load(f)
     if out.get("running"):
@@ -75,17 +87,29 @@ def seed_source(idx, seed):
     return {**out["theta_final"], "chi2": out["chi2_fixed"]}
 
 
-def seed_theta(sig_row, idx, names, seed, dev_start=None):
+def rowmean_seed(idx, template=C.TEMPLATE):
+    """Injection of idx plus the mean offset of its e0-neighbours idx -/+ 5 that are on the grid
+    (final fits of template)."""
+    best = json.loads(C.BEST_FREE[template].read_text())
+    nbrs = [best[str(j)] for j in (idx - 5, idx + 5) if str(j) in best]
+    names = C.fit_params(False, template)
+    inj = {n: C.injected_value(C.ovl.signal_array(C.GRID)[idx], n) for n in names}
+    return {n: inj[n] + sum(b["theta_final"][n] - b["theta_inj"][n] for b in nbrs) / len(nbrs)
+            for n in names}
+
+
+def seed_theta(sig_row, idx, names, seed, dev_start=None, template=C.TEMPLATE):
     """Seed vector: the source's values, the injected value for anything it lacks. dev_start
     (C_p, C_e) overrides the deviation coefficients."""
-    src = seed_source(idx, seed)
+    src = seed_source(idx, seed, template)
     if dev_start is not None:
         src = {**src, **dict(zip(C.DEV_PARAMS, dev_start))}
     return np.array([src.get(n, C.injected_value(sig_row, n)) for n in names])
 
 
 # --- one rung --------------------------------------------------------------
-def run_rung(Gd, idx, names, theta0, dist_div, case, stem, start, chi2_fixed=None):
+def run_rung(Gd, idx, names, theta0, dist_div, case, stem, start, chi2_fixed=None,
+             template=C.TEMPLATE):
     """LM climb at one grid point and one observation time, from theta0. Without chi2 in names
     the template chi2 is chi2_fixed (None: the injected value)."""
     sig_row = C.ovl.signal_array(C.GRID)[idx]
@@ -97,7 +121,8 @@ def run_rung(Gd, idx, names, theta0, dist_div, case, stem, start, chi2_fixed=Non
     first = evaluate(P, theta0)
     print(f"[START {tag}] O={first['overlap']:.12f} chi2={first['chi2']:.6e} "
           f"rho_s={first['rho_s']:.6f}", flush=True)
-    out = dict(grid=C.GRID, signal="2PA", template="1PA+dev", deviation=C.DEV_PARAMS,
+    out = dict(grid=C.GRID, signal="2PA", template=template,
+               deviation=[n for n in C.DEV_PARAMS if n in names],
                case=case, stem=stem, start=start, idx=idx,
                a_inj=float(sig_row[C.COL["a"]]), e0_inj=float(sig_row[C.COL["e0"]]),
                params=names, chi2_spin_inj=float(sig_row[C.COL["chi2"]]), chi2_fixed=chi2_fixed,
@@ -151,19 +176,21 @@ def seed_label(seed_key, dev_start):
 
 
 def climb_ladder(xp, use_gpu, idx, fix_chi2, dist_div, t_steps, seed_key, chi2_at="inj",
-                 dev_start=None):
-    names = C.fit_params(fix_chi2)
-    case = C.case_name(fix_chi2, dist_div, t_steps, seed_label(seed_key, dev_start), chi2_at)
+                 dev_start=None, template=C.TEMPLATE, tag=""):
+    names = C.fit_params(fix_chi2, template)
+    case = C.case_name(fix_chi2, dist_div, t_steps, seed_label(seed_key, dev_start), chi2_at,
+                       template, tag)
     chi2_fixed = fixed_chi2(idx, fix_chi2, seed_key, chi2_at)
     t_grid, _ = grid_T_dt()
     sig_row = C.ovl.signal_array(C.GRID)[idx]
-    seed = seed_theta(sig_row, idx, names, seed_key, dev_start)
+    seed = seed_theta(sig_row, idx, names, seed_key, dev_start, template)
     seed_from = seed_label(seed_key, dev_start)
 
     for k, t in enumerate(t_steps):
         Gd = build_grid(xp, use_gpu, T=t)
         out = run_rung(Gd, idx, names, seed, dist_div, case,
-                       rung_stem(t, t_grid, k == len(t_steps) - 1), seed_from, chi2_fixed)
+                       rung_stem(t, t_grid, k == len(t_steps) - 1), seed_from, chi2_fixed,
+                       template)
         del Gd
         free_gpu(xp)
         seed, seed_from = np.array([out["theta_final"][n] for n in names]), f"T{t:g}_final"
@@ -182,11 +209,16 @@ def main():
                     help="start the first rung at these deviation coefficients instead of the seed's")
     ap.add_argument("--dist-div", type=float, default=1.0, help="SNR x dist_div")
     ap.add_argument("--seed", choices=C.SEEDS, default="inj", help="start of the first rung")
+    ap.add_argument("--template", choices=C.TEMPLATES, default=C.TEMPLATE,
+                    help="1pa_dev (C_p, C_e free) or 1pa (plain 1PA, C_p = C_e = 0)")
+    ap.add_argument("--tag", default="", help="suffix of the case name (final: the final fits)")
     ap.add_argument("--then-free", action="store_true",
                     help="after the fixed-chi2 ladder, climb again with chi2 free at the last T")
     args = ap.parse_args()
     if args.chi2_at == "seed" and not (args.fix_chi2 and args.seed != "inj"):
         ap.error("--chi2-at seed needs --fix-chi2 and a --seed other than inj")
+    if args.template == "1pa" and (args.dev_start is not None or args.then_free):
+        ap.error("--dev-start and --then-free are for the 1pa_dev template")
     if args.then_free and not (args.fix_chi2 and f"dev{args.seed}" in C.SEED_CASES):
         ap.error(f"--then-free needs --fix-chi2 and config.SEED_CASES['dev{args.seed}']")
 
@@ -195,7 +227,7 @@ def main():
     for idx in args.idx:
         try:
             climb_ladder(xp, use_gpu, idx, args.fix_chi2, args.dist_div, args.t_steps, args.seed,
-                         args.chi2_at, args.dev_start)
+                         args.chi2_at, args.dev_start, args.template, args.tag)
             if args.then_free:
                 climb_ladder(xp, use_gpu, idx, False, args.dist_div, args.t_steps[-1:],
                              f"dev{args.seed}")

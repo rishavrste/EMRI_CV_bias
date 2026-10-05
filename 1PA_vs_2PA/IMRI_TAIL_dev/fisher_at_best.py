@@ -1,15 +1,16 @@
 """Fisher matrix at the best fits of both templates, for the 1D and nD bias.
 
-    1pa     : the SK_files 1PA-only best fit (config.BEST_1PA), fitted in its own 8 parameters,
-              C_p = C_e = 0
-    1pa_dev : the chosen 1PA + deviation best fit (config.BEST_DEV, best_fit_dev.py), all 10
+    1pa     : the final chi2-free 1PA-only fit (config.BEST_FREE, best_fit_free.py), in its own 8
+              parameters, C_p = C_e = 0
+    1pa_dev : the final chi2-free 1PA + deviation fit (config.BEST_FREE), all 10
 Gamma_ij = <d_i h|d_j h> at theta_final, SEF stable derivatives, the config.SETUP inner product, the
 stored T (0.25 yr) and the stored distance (dist_div 1, SNR 20); Gamma scales as SNR^2.
 bias = theta_final - theta_inj, the phases wrapped into (-pi, pi].
 Step search: SEF's default trial steps are relative to the parameter value, so a deviation
 coefficient left at round-off level (idx4: C_p ~ 4e-16) gets steps ~ 1e-17, below round-off, and a
-noise derivative. Coefficients with |C| < ZERO_C therefore get SEF's own at-zero grid
-(ZERO_STEPS, as idx7 at C = 0 exactly); theta itself is unchanged.
+noise derivative; likewise the spin at the a = 0 points (a ~ 1e-4, steps ~ 1e-9). Parameters below
+config.NEAR_ZERO (|C| < 1e-10, |a| < 1e-2) therefore get the absolute grid config.ZERO_STEPS
+(model.zero_step_range, as idx7 at C = 0 exactly); theta itself is unchanged.
     -> results/fisher_at_best/{template}/fisher_idx{i}.json
 
 Run (GPU):  python fisher_at_best.py --template 1pa 1pa_dev --idx 0 1 2
@@ -21,12 +22,10 @@ import numpy as np
 
 import config as C
 from lm import fisher_and_gradient, sigma_from_fisher
-from model import build_grid, build_point, evaluate
+from model import build_grid, build_point, evaluate, zero_step_range
 from run_lm_T_ladder import check_branch
 
-BEST = {"1pa": C.BEST_1PA, "1pa_dev": C.BEST_DEV}
-ZERO_C = 1e-10                                  # |C| below this counts as zero for the step search
-ZERO_STEPS = np.geomspace(1e-4, 1e-9, C.NDELTA)    # SEF's trial steps at a zero parameter
+BEST = C.BEST_FREE
 
 
 def load_best_fit(template, idx):
@@ -41,11 +40,6 @@ def wrap_phase(x):
 def bias_vector(names, theta, theta_inj):
     b = np.asarray(theta) - np.asarray(theta_inj)
     return np.array([wrap_phase(v) if n in C.PHASES else v for n, v in zip(names, b)])
-
-
-def zero_step_range(names, theta):
-    """ZERO_STEPS for every deviation coefficient with |C| < ZERO_C."""
-    return {n: ZERO_STEPS for n, v in zip(names, theta) if n in C.DEV_PARAMS and abs(v) < ZERO_C}
 
 
 def fisher_at(P, theta, delta_range):

@@ -1,0 +1,30 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: 2PA_PN_deviation
+startup
+[IMRI_TAIL] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=12] O=0.999999848430 chi2=1.236031e-02 rho_s=200.000000
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000051.9490928408, 10000.011220951086, 0.00030262308982603335, 29.999903573698806, 0.29999415630517473, 1.0, 13.958395190405122, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.10169209602795579, 0.2, 0.2975985526124201, 0.9499810490554558, True, False, False, True, -0.0023016092799284286, -0.009404493278413193)
+Waveform Generated. SNR: 200.0152891035671
+calculating stable deltas...
+plunging! t_interp:  7889529.999999997 t_traj:  7887096.105000989
+plunging! t_interp:  7889529.999999997 t_traj:  7888656.64933963
+plunging! t_interp:  7889529.999999997 t_traj:  7889463.638136933
+plunging! t_interp:  7889529.999999997 t_traj:  7881977.96045607
+plunging! t_interp:  7889529.999999997 t_traj:  7885243.70601384
+plunging! t_interp:  7889529.999999997 t_traj:  7888510.452752303
+plunging! t_interp:  7889529.999999997 t_traj:  7888336.1219484415
+plunging! t_interp:  7889529.999999997 t_traj:  7889483.3581203995
+plunging! t_interp:  7889529.999999997 t_traj:  7887385.573396213
+plunging! t_interp:  7889529.999999997 t_traj:  7882997.853753705
+plunging! t_interp:  7889529.999999997 t_traj:  7878615.033797
+plunging! t_interp:  7889529.999999997 t_traj:  7888693.015913353
+plunging! t_interp:  7889529.999999997 t_traj:  7887151.3316825945
+Time taken to compute stable deltas is 42.606730222702026 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5964272022247314 seconds
+    LM IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=12 it   0 lam=1.0e+08 ov=0.999999848430 chi2=1.236031e-02 rel=0.0e+00
+[DONE IMRI_TAIL_1pa_dev_distdiv10_dropdc_rishav_best_0.25 lm T=0.25 best idx=12] O 0.999999848430 -> 0.999999848430  chi2 1.236031e-02 -> 1.236031e-02  iters=1 accepted=0 stop=lambda_exhausted  52.3 s
+theta_final = m1=1000051.9490928408, m2=10000.011220951086, a=0.00030262308982603335, p0=29.999903573698806, e0=0.29999415630517473, Phi_phi0=0.10169209602795579, Phi_r0=0.2975985526124201, chi2=0.9499810490554558, C_p=-0.0023016092799284286, C_e=-0.009404493278413193
