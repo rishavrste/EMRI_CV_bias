@@ -1,0 +1,17 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=2.5 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START EMRI_pn_rishav_best_Tfrac1 lm T=2.5 best idx17] O=0.999999456036 chi2=4.387531e-04 rho_s=19.999999
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000060.408780102, 10.000523729286495, 0.00010899040442921651, 11.103759551935983, 0.39999189782553984, 1.0, 6.926568915250337, 1.0471920708472056, 0.785283147788875, 0.6283185307179586, 0.5235987755982988, 0.0997787562162592, 0.2, 0.3011529439201782, 0.95, False, False, False, True, 28.59707060247534, 0.7706251185037107, 0.0, 0.0)
+Waveform Generated. SNR: 20.001880556861238
+calculating stable deltas...
+Time taken to compute stable deltas is 38.69646334648132 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.709674119949341 seconds
+    LM EMRI_pn_rishav_best_Tfrac1 lm T=2.5 best idx17 it   0 lam=1.0e+08 ov=0.999999456036 chi2=4.387531e-04 rel=0.0e+00
+[DONE EMRI_pn_rishav_best_Tfrac1 lm T=2.5 best idx17] O 0.999999456036 -> 0.999999456036  chi2 4.387531e-04 -> 4.387531e-04  iters=1 accepted=0 stop=lambda_exhausted  53.0 s
+theta_final = m1=1000060.408780102, m2=10.000523729286495, a=0.00010899040442921651, p0=11.103759551935983, e0=0.39999189782553984, qS=1.0471920708472056, phiS=0.785283147788875, Phi_phi0=0.0997787562162592, Phi_r0=0.3011529439201782, C_p=28.59707060247534, C_e=0.7706251185037107

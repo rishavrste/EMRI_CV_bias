@@ -1,0 +1,569 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=2.5 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000043.9682601353, 10.000051797525026, -0.8998619073217999, 13.066906165024003, 0.0999828395874561, 1.0, 2.8282909665832117, 1.04601625170514, 0.7853367727337622, 0.6283185307179586, 0.5235987755982988, 0.10244980473181942, 0.2, 0.28104203154428387, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.00461063817895
+calculating stable deltas...
+Time taken to compute stable deltas is 30.30338191986084 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8681387901306152 seconds
+[0pa idx0] overlap=0.9999861464692886 (stored 0.9999861464692886) rho_s=20.000001 cond=4.937e+18
+  bias/sigma = m1=+0.0709, m2=+0.0527, a=+0.1024, p0=-0.0939, e0=-0.0520, qS=-0.0536, phiS=-0.0034, Phi_phi0=+0.0163, Phi_r0=-0.0633
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000007.9676526665, 10.000088424051617, -0.899937117903386, 13.067180331071729, 0.10000994029542369, 1.0, 2.8282909665832117, 1.0472067455106864, 0.7853807831522969, 0.6283185307179586, 0.5235987755982988, 0.10017166617142843, 0.2, 0.30044518127882647, 0.95, False, False, False, True, 19.454569921079354, 3.3735948416533903, 0.0, 0.0)
+Waveform Generated. SNR: 20.000671299355744
+calculating stable deltas...
+Time taken to compute stable deltas is 35.852139949798584 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4176673889160156 seconds
+[pn idx0] overlap=0.9999999828353885 (stored 0.9999999828353885) rho_s=20.000001 cond=8.937e+19
+  bias/sigma = m1=+0.0042, m2=+0.0052, a=+0.0163, p0=-0.0136, e0=+0.0072, qS=+0.0004, phiS=-0.0009, Phi_phi0=+0.0011, Phi_r0=+0.0010, C_p=+0.0129, C_e=+0.0033
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000045.3419074564, 10.000053976065225, -0.4998810099671492, 12.18408367006818, 0.09998085642402638, 1.0, 3.8788539967713698, 1.0461608728485172, 0.7850500550277828, 0.6283185307179586, 0.5235987755982988, 0.09844720979736862, 0.2, 0.2784428984692558, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.005774304284813
+calculating stable deltas...
+Time taken to compute stable deltas is 30.895306825637817 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.91865873336792 seconds
+[0pa idx1] overlap=0.9999853592738449 (stored 0.9999853592738449) rho_s=19.999999 cond=2.671e+18
+  bias/sigma = m1=+0.1347, m2=+0.1027, a=+0.1889, p0=-0.1731, e0=-0.1049, qS=-0.0491, phiS=-0.0210, Phi_phi0=-0.0099, Phi_r0=-0.0681
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000006.6200135346, 10.000079181635092, -0.4999489949730599, 12.18435089945114, 0.100014256014256, 1.0, 3.8788539967713698, 1.0472056635308056, 0.7853993482531584, 0.6283185307179586, 0.5235987755982988, 0.09988553495877192, 0.2, 0.3005871767449618, 0.95, False, False, False, True, 17.175551427293442, 7.3001736610258305, 0.0, 0.0)
+Waveform Generated. SNR: 20.000643801118763
+calculating stable deltas...
+Time taken to compute stable deltas is 37.12830090522766 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5864737033843994 seconds
+[pn idx1] overlap=0.9999999924015263 (stored 0.9999999924015263) rho_s=19.999999 cond=1.693e+20
+  bias/sigma = m1=+0.0030, m2=+0.0050, a=+0.0133, p0=-0.0111, e0=+0.0077, qS=+0.0003, phiS=+0.0001, Phi_phi0=-0.0007, Phi_r0=+0.0013, C_p=+0.0198, C_e=+0.0071
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000037.5663918724, 10.000062012848856, 7.956850081648382e-05, 11.085066972561773, 0.0999817301846115, 1.0, 5.9622412557645434, 1.0461799865102692, 0.7846389357650336, 0.6283185307179586, 0.5235987755982988, 0.09428466885466401, 0.2, 0.2658960893699682, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.008948786242218
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 32.5887348651886 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0405337810516357 seconds
+[0pa idx2] overlap=0.999970464353949 (stored 0.999970464353949) rho_s=19.999998 cond=6.395e+16
+  bias/sigma = m1=+1.1213, m2=+0.3847, a=+1.5245, p0=-1.3235, e0=-0.6354, qS=-0.0422, phiS=-0.0534, Phi_phi0=-0.0311, Phi_r0=-0.1067
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000037.1662857916, 10.000353456842781, 7.958607989284591e-05, 11.08506076617537, 0.0999880838416893, 1.0, 5.9622412557645434, 1.0472812362176953, 0.7853285284965327, 0.6283185307179586, 0.5235987755982988, 0.10045460675723564, 0.2, 0.30331272012596183, 0.95, False, False, False, True, 24.603048424257306, -2.7720893400222804, 0.0, 0.0)
+Waveform Generated. SNR: 20.001048176065144
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 38.92024517059326 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6669938564300537 seconds
+[pn idx2] overlap=0.9999997908343051 (stored 0.9999997908343051) rho_s=19.999998 cond=1.503e+18
+  bias/sigma = m1=+0.4328, m2=+0.1769, a=+0.7477, p0=-0.6978, e0=-0.0809, qS=+0.0039, phiS=-0.0044, Phi_phi0=+0.0024, Phi_r0=+0.0078, C_p=+0.1520, C_e=-0.0265
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000016.5889481787, 10.000071074236446, 0.5000317083099259, 9.987503730806703, 0.09998768324364411, 1.0, 9.414980595910297, 1.0462869071747143, 0.784277957151389, 0.6283185307179586, 0.5235987755982988, 0.0969391299945978, 0.2, 0.20724491125536873, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.011934619787063
+calculating stable deltas...
+Time taken to compute stable deltas is 33.19464325904846 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0916647911071777 seconds
+[0pa idx3] overlap=0.9998803193405701 (stored 0.9998803193405701) rho_s=20.000000 cond=1.122e+18
+  bias/sigma = m1=+0.2010, m2=+0.3114, a=+0.3628, p0=-0.2815, e0=-0.1936, qS=-0.0504, phiS=-0.0847, Phi_phi0=-0.0167, Phi_r0=-0.2505
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000065.111747573, 10.001378404090392, 0.5000805481868267, 9.987231127959932, 0.09994692120510387, 1.0, 9.414980595910297, 1.0471766246020398, 0.7854188066324462, 0.6283185307179586, 0.5235987755982988, 0.1010878882432292, 0.2, 0.2917037563468245, 0.95, False, False, False, True, 58.16970864963143, -8.766555425098945, 0.0, 0.0)
+Waveform Generated. SNR: 20.003146074614534
+calculating stable deltas...
+Time taken to compute stable deltas is 39.902872800827026 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.805748701095581 seconds
+[pn idx3] overlap=0.9999996641317686 (stored 0.9999996641317686) rho_s=20.000000 cond=4.841e+19
+  bias/sigma = m1=+0.1422, m2=+0.3254, a=+0.1962, p0=-0.1834, e0=-0.0888, qS=-0.0010, phiS=+0.0015, Phi_phi0=+0.0049, Phi_r0=-0.0177, C_p=+0.2498, C_e=-0.0353
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999991.2896263119, 10.000056426915364, 0.8999988131894561, 9.086849089525423, 0.09999807209886945, 1.0, 13.7253796777895, 1.046976611337038, 0.784580475887182, 0.6283185307179586, 0.5235987755982988, 0.11545363464559548, 0.2, 0.08062027571506605, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.01918866759141
+calculating stable deltas...
+Time taken to compute stable deltas is 34.89632177352905 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.2551357746124268 seconds
+[0pa idx4] overlap=0.9994147005722712 (stored 0.9994147005722712) rho_s=20.000001 cond=2.835e+17
+  bias/sigma = m1=-0.4083, m2=+0.4871, a=-0.0855, p0=+0.4878, e0=-0.0662, qS=-0.0140, phiS=-0.0715, Phi_phi0=+0.0854, Phi_r0=-0.5173
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999993.502977361, 9.998641890046633, 0.9000090035032048, 9.08673034893863, 0.10006544114618166, 1.0, 13.7253796777895, 1.0472737944193957, 0.7857120862621122, 0.6283185307179586, 0.5235987755982988, 0.08927401842056025, 0.2, 0.3488814830609143, 0.95, False, False, False, True, -37.02989179148136, 14.38289380441086, 0.0, 0.0)
+Waveform Generated. SNR: 19.997732797157596
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 42.116190910339355 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.9724409580230713 seconds
+[pn idx4] overlap=0.9999740871788823 (stored 0.9999740871788823) rho_s=20.000001 cond=7.751e+18
+  bias/sigma = m1=-0.0732, m2=-0.5748, a=+0.1926, p0=-0.1972, e0=+0.3257, qS=+0.0041, phiS=+0.0270, Phi_phi0=-0.0456, Phi_r0=+0.0832, C_p=-0.6674, C_e=+0.2056
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000059.0354040073, 10.000079811218376, -0.8998295149172135, 13.121967967248718, 0.19998785237004013, 1.0, 3.0324274273280873, 1.0460623351829612, 0.7854393695590023, 0.6283185307179586, 0.5235987755982988, 0.10484481929272037, 0.2, 0.2892348740337737, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.004139686195213
+calculating stable deltas...
+Time taken to compute stable deltas is 30.558023691177368 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.904014825820923 seconds
+[0pa idx5] overlap=0.9999852945265165 (stored 0.9999852945265165) rho_s=20.000000 cond=9.244e+18
+  bias/sigma = m1=+0.0963, m2=+0.0714, a=+0.1288, p0=-0.1204, e0=-0.0725, qS=-0.0573, phiS=+0.0025, Phi_phi0=+0.0336, Phi_r0=-0.0597
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000002.349655853, 10.000084111878335, -0.8999490195805466, 13.12240755541612, 0.2000064234873174, 1.0, 3.0324274273280873, 1.0472029258903814, 0.7853837083089114, 0.6283185307179586, 0.5235987755982988, 0.09997707304480884, 0.2, 0.30043862697732504, 0.95, False, False, False, True, 20.009578096171765, 1.751308229565309, 0.0, 0.0)
+Waveform Generated. SNR: 20.000614866017894
+calculating stable deltas...
+Time taken to compute stable deltas is 36.2927348613739 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.490565776824951 seconds
+[pn idx5] overlap=0.9999999822964222 (stored 0.9999999822964222) rho_s=20.000000 cond=2.487e+20
+  bias/sigma = m1=+0.0010, m2=+0.0047, a=+0.0104, p0=-0.0083, e0=+0.0076, qS=+0.0002, phiS=-0.0009, Phi_phi0=-0.0001, Phi_r0=+0.0016, C_p=+0.0139, C_e=+0.0082
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000053.545529655, 10.000072459051529, -0.49986604510941407, 12.217837380535608, 0.19998849360470677, 1.0, 4.09963816070808, 1.046162392628299, 0.785190534719186, 0.6283185307179586, 0.5235987755982988, 0.10148183587029114, 0.2, 0.28755011317696205, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.005182442787515
+calculating stable deltas...
+Time taken to compute stable deltas is 30.869263410568237 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9276657104492188 seconds
+[0pa idx6] overlap=0.9999843675344974 (stored 0.9999843675344974) rho_s=20.000000 cond=3.115e+18
+  bias/sigma = m1=+0.1855, m2=+0.1311, a=+0.2504, p0=-0.2326, e0=-0.1385, qS=-0.0545, phiS=-0.0139, Phi_phi0=+0.0097, Phi_r0=-0.0678
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999998.6245311162, 10.000052878157733, -0.49996306346652775, 12.218221541852914, 0.2000097756333717, 1.0, 4.09963816070808, 1.0472053674990807, 0.785405558461917, 0.6283185307179586, 0.5235987755982988, 0.09966574353985656, 0.2, 0.3003892306151517, 0.95, False, False, False, True, 16.673647865378005, 2.9357525234726314, 0.0, 0.0)
+Waveform Generated. SNR: 20.000534320713907
+calculating stable deltas...
+Time taken to compute stable deltas is 37.10547089576721 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5688958168029785 seconds
+[pn idx6] overlap=0.9999999923946831 (stored 0.9999999923946831) rho_s=20.000000 cond=3.238e+20
+  bias/sigma = m1=-0.0005, m2=+0.0030, a=+0.0077, p0=-0.0060, e0=+0.0088, qS=+0.0004, phiS=+0.0005, Phi_phi0=-0.0022, Phi_r0=+0.0014, C_p=+0.0193, C_e=+0.0119
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000047.1574327884, 10.000081627467793, 9.350526253989898e-05, 11.097040476023029, 0.1999885329112786, 1.0, 6.165893030556978, 1.0459703260030684, 0.7847179190339688, 0.6283185307179586, 0.5235987755982988, 0.09669865835422527, 0.2, 0.2816710885130854, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.009230686859357
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 32.48961639404297 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.028801202774048 seconds
+[0pa idx7] overlap=0.999964205013846 (stored 0.999964205013846) rho_s=20.000000 cond=2.721e+17
+  bias/sigma = m1=+0.7711, m2=+0.4813, a=+1.0259, p0=-0.9418, e0=-0.5980, qS=-0.0687, phiS=-0.0457, Phi_phi0=-0.0246, Phi_r0=-0.0974
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000047.5144555958, 10.00039926239394, 9.311137982617783e-05, 11.097037874373262, 0.1999888869522589, 1.0, 6.165893030556978, 1.0472281499662235, 0.7852723796630945, 0.6283185307179586, 0.5235987755982988, 0.09980915386117561, 0.2, 0.3021860387192606, 0.95, False, False, False, True, 24.421440847511906, -0.7189110967226678, 0.0, 0.0)
+Waveform Generated. SNR: 20.001590226899445
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 38.82809329032898 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.722846031188965 seconds
+[pn idx7] overlap=0.9999995585699434 (stored 0.9999995585699434) rho_s=20.000000 cond=2.042e+18
+  bias/sigma = m1=+2.1610, m2=+0.1845, a=+3.5592, p0=-3.4438, e0=-0.3045, qS=+0.0015, phiS=-0.0092, Phi_phi0=-0.0011, Phi_r0=+0.0092, C_p=+0.1475, C_e=-0.0450
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000029.5527022952, 10.000105100268001, 0.5000455090709769, 9.983607736147015, 0.19998985308653272, 1.0, 9.562565344089377, 1.0455466410502632, 0.7836755326412128, 0.6283185307179586, 0.5235987755982988, 0.1035266347929842, 0.2, 0.23549877463575475, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.01996781825975
+calculating stable deltas...
+Time taken to compute stable deltas is 33.74913763999939 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1421895027160645 seconds
+[0pa idx8] overlap=0.9997815023912852 (stored 0.9997815023912852) rho_s=20.000000 cond=8.424e+17
+  bias/sigma = m1=+0.4460, m2=+0.5344, a=+0.6544, p0=-0.5529, e0=-0.3897, qS=-0.0990, phiS=-0.1457, Phi_phi0=+0.0205, Phi_r0=-0.3162
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000064.6756945694, 10.0014098740973, 0.50008017215692, 9.983415320920123, 0.19997456489437188, 1.0, 9.562565344089377, 1.0471609558314021, 0.7854350167417455, 0.6283185307179586, 0.5235987755982988, 0.1034637051967301, 0.2, 0.2919109003532741, 0.95, False, False, False, True, 60.19105685985755, 0.27684307567716754, 0.0, 0.0)
+Waveform Generated. SNR: 20.00308785290527
+calculating stable deltas...
+Time taken to compute stable deltas is 40.18166780471802 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.856792688369751 seconds
+[pn idx8] overlap=0.9999988867611755 (stored 0.9999988867611755) rho_s=20.000000 cond=4.137e+19
+  bias/sigma = m1=+0.1502, m2=+0.4496, a=+0.2108, p0=-0.1977, e0=-0.0910, qS=-0.0020, phiS=+0.0028, Phi_phi0=+0.0175, Phi_r0=-0.0318, C_p=+0.2954, C_e=+0.0045
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999995.7577037315, 10.00008024017692, 0.9000023365726276, 9.074169623482769, 0.19999690767569395, 1.0, 13.80969249089441, 1.046577523076294, 0.7829960254248439, 0.6283185307179586, 0.5235987755982988, 0.1573110503107999, 0.2, 0.09518761527408107, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.02892352770289
+calculating stable deltas...
+Time taken to compute stable deltas is 35.36094784736633 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.2914810180664062 seconds
+[0pa idx9] overlap=0.9981431799852628 (stored 0.9981431799852628) rho_s=19.999997 cond=2.565e+17
+  bias/sigma = m1=-0.2176, m2=+0.7587, a=+0.1807, p0=+0.3066, e0=-0.2358, qS=-0.0415, phiS=-0.2240, Phi_phi0=+0.3391, Phi_r0=-0.9256
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.3322904997, 9.998677719081389, 0.9000111321250973, 9.074057618184316, 0.2000284437841637, 1.0, 13.80969249089441, 1.047633089159816, 0.785552222201529, 0.6283185307179586, 0.5235987755982988, 0.07848281013242041, 0.2, 0.34636565256249363, 0.95, False, False, False, True, -36.9709757857987, 1.7680550327857019, 0.0, 0.0)
+Waveform Generated. SNR: 19.994997174424586
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 42.450164794921875 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.9964373111724854 seconds
+[pn idx9] overlap=0.9999195301701106 (stored 0.9999195301701106) rho_s=19.999997 cond=4.830e+18
+  bias/sigma = m1=-0.0319, m2=-0.8660, a=+0.2597, p0=-0.2835, e0=+0.3437, qS=+0.0250, phiS=+0.0141, Phi_phi0=-0.0987, Phi_r0=+0.1493, C_p=-1.1735, C_e=+0.1208
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000066.1024873138, 10.00012797760189, -0.8998163968695068, 13.185789217865562, 0.29998998256545406, 1.0, 3.3568155678276197, 1.0461016261850171, 0.7855614852539785, 0.6283185307179586, 0.5235987755982988, 0.1088923403848301, 0.2, 0.2918257935581671, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.00369608815714
+calculating stable deltas...
+Time taken to compute stable deltas is 30.504759550094604 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.872786045074463 seconds
+[0pa idx10] overlap=0.9999822319810389 (stored 0.9999822319810389) rho_s=20.000005 cond=3.859e+19
+  bias/sigma = m1=+0.0865, m2=+0.0769, a=+0.1127, p0=-0.1060, e0=-0.0707, qS=-0.0605, phiS=+0.0113, Phi_phi0=+0.0603, Phi_r0=-0.0600
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000069.4409351842, 10.000520497742619, -0.8998117848833997, 13.185766079799857, 0.2999887149195526, 1.0, 3.3568155678276197, 1.0469540123186933, 0.7853138128682801, 0.6283185307179586, 0.5235987755982988, 0.09734158565880509, 0.2, 0.30147665587520345, 0.95, False, False, False, True, 50.410284626804795, -0.024223185013404803, 0.0, 0.0)
+Waveform Generated. SNR: 20.002326205817035
+calculating stable deltas...
+Time taken to compute stable deltas is 36.161415338516235 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.489932060241699 seconds
+[pn idx10] overlap=0.9999990231620489 (stored 0.9999990231620489) rho_s=20.000005 cond=5.694e+20
+  bias/sigma = m1=+0.0284, m2=+0.0358, a=+0.0370, p0=-0.0351, e0=-0.0219, qS=-0.0118, phiS=-0.0048, Phi_phi0=-0.0151, Phi_r0=+0.0081, C_p=+0.0445, C_e=-0.0013
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000059.5015814648, 10.000112202959174, -0.4998566002119295, 12.254817827216309, 0.29999072762110485, 1.0, 4.4616428166698565, 1.0462059648861963, 0.7853233015005947, 0.6283185307179586, 0.5235987755982988, 0.10520002755438213, 0.2, 0.290626380506558, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.004528385234106
+calculating stable deltas...
+Time taken to compute stable deltas is 30.85469913482666 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.923706293106079 seconds
+[0pa idx11] overlap=0.9999828473142796 (stored 0.9999828473142796) rho_s=19.999995 cond=8.864e+18
+  bias/sigma = m1=+0.1868, m2=+0.1567, a=+0.2459, p0=-0.2299, e0=-0.1497, qS=-0.0579, phiS=-0.0056, Phi_phi0=+0.0329, Phi_r0=-0.0696
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999988.8326984412, 10.000021722765183, -0.49998031933506726, 12.25530839839613, 0.3000083244883865, 1.0, 4.4616428166698565, 1.0472048429640604, 0.7854077778051283, 0.6283185307179586, 0.5235987755982988, 0.09953996746292568, 0.2, 0.300267903836917, 0.95, False, False, False, True, 16.11919632931348, 1.859112023358598, 0.0, 0.0)
+Waveform Generated. SNR: 20.00038243781905
+calculating stable deltas...
+Time taken to compute stable deltas is 36.93560433387756 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.5743491649627686 seconds
+[pn idx11] overlap=0.9999999922399115 (stored 0.9999999922399115) rho_s=19.999995 cond=5.709e+21
+  bias/sigma = m1=-0.0030, m2=+0.0009, a=+0.0031, p0=-0.0018, e0=+0.0087, qS=+0.0004, phiS=+0.0007, Phi_phi0=-0.0026, Phi_r0=+0.0013, C_p=+0.0138, C_e=+0.0185
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000051.5660461835, 10.000111052568077, 9.89484322184542e-05, 11.105511886302235, 0.2999912435711251, 1.0, 6.511129386938633, 1.046051976177374, 0.7849282057439427, 0.6283185307179586, 0.5235987755982988, 0.10089275596638594, 0.2, 0.2868564376226604, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.007815522841334
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 32.707820653915405 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.086513042449951 seconds
+[0pa idx12] overlap=0.9999643327451083 (stored 0.9999643327451083) rho_s=20.000000 cond=1.502e+17
+  bias/sigma = m1=+1.5488, m2=+0.6087, a=+2.1298, p0=-1.9962, e0=-0.7627, qS=-0.0710, phiS=-0.0391, Phi_phi0=+0.0066, Phi_r0=-0.0911
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000051.4728232156, 10.000267989184072, 9.842423482582817e-05, 11.105512231401692, 0.29999139634882405, 1.0, 6.511129386938633, 1.0465744247383177, 0.7851044157543513, 0.6283185307179586, 0.5235987755982988, 0.10007126098288409, 0.2, 0.2944726685191639, 0.95, False, False, False, True, 12.372075029472365, 0.1576358949766001, 0.0, 0.0)
+Waveform Generated. SNR: 20.004983047641044
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 39.25940799713135 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.728524923324585 seconds
+[pn idx12] overlap=0.9999896093868664 (stored 0.9999896093868664) rho_s=20.000000 cond=5.920e+18
+  bias/sigma = m1=+0.4659, m2=+0.0915, a=+0.7751, p0=-0.7039, e0=-0.1816, qS=-0.0231, phiS=-0.0227, Phi_phi0=+0.0004, Phi_r0=-0.0322, C_p=+0.0635, C_e=+0.0171
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000036.2710084405, 10.000133975872252, 0.5000521674305742, 9.970416294979739, 0.29999182975209443, 1.0, 9.7894927237302, 1.0453324978783307, 0.783863319028668, 0.6283185307179586, 0.5235987755982988, 0.11314460556201555, 0.2, 0.2541939308404226, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.019195789076274
+calculating stable deltas...
+Time taken to compute stable deltas is 33.97502660751343 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.269423484802246 seconds
+[0pa idx13] overlap=0.9997571108168113 (stored 0.9997571108168113) rho_s=20.000000 cond=9.747e+17
+  bias/sigma = m1=+0.6016, m2=+0.6937, a=+0.8350, p0=-0.7223, e0=-0.5275, qS=-0.1231, phiS=-0.1443, Phi_phi0=+0.0788, Phi_r0=-0.3187
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000063.4302086439, 10.001454907804717, 0.5000791482955833, 9.970267792046974, 0.2999845268249073, 1.0, 9.7894927237302, 1.0471472720689998, 0.7854527215275007, 0.6283185307179586, 0.5235987755982988, 0.1064517573931159, 0.2, 0.2919857360053045, 0.95, False, False, False, True, 63.468792140047746, 2.1358015940818245, 0.0, 0.0)
+Waveform Generated. SNR: 20.003297708254102
+calculating stable deltas...
+Time taken to compute stable deltas is 40.95065522193909 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.9084367752075195 seconds
+[pn idx13] overlap=0.9999977288116049 (stored 0.9999977288116049) rho_s=20.000000 cond=5.158e+19
+  bias/sigma = m1=+0.1528, m2=+0.4802, a=+0.2169, p0=-0.2033, e0=-0.0907, qS=-0.0030, phiS=+0.0046, Phi_phi0=+0.0350, Phi_r0=-0.0460, C_p=+0.3030, C_e=+0.0740
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999996.377866066, 10.000097719263206, 0.9000034720676224, 9.048467003796747, 0.299997644440127, 1.0, 14.134243467540808, 1.0461996612267372, 0.7820606835763744, 0.6283185307179586, 0.5235987755982988, 0.23757888463212382, 0.2, 0.10188255921284006, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.09558464953121
+calculating stable deltas...
+Time taken to compute stable deltas is 36.07149934768677 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.333939552307129 seconds
+[0pa idx14] overlap=0.9961255697509696 (stored 0.9961255697509696) rho_s=19.999959 cond=3.251e+17
+  bias/sigma = m1=-0.1998, m2=+0.9432, a=+0.2877, p0=+0.3195, e0=-0.3016, qS=-0.0709, phiS=-0.3316, Phi_phi0=+0.8784, Phi_r0=-1.3073
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999999.2070392717, 9.998646886988574, 0.9000124298691794, 9.048344480676233, 0.3000175441337898, 1.0, 14.134243467540808, 1.0477515839178595, 0.7856104231492692, 0.6283185307179586, 0.5235987755982988, 0.06281590553056199, 0.2, 0.34701721403913915, 0.95, False, False, False, True, -38.411191568188706, -0.34246951874478454, 0.0, 0.0)
+Waveform Generated. SNR: 20.01022820752409
+calculating stable deltas...
+Time taken to compute stable deltas is 43.24135398864746 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.107557773590088 seconds
+[pn idx14] overlap=0.9998266840083898 (stored 0.9998266840083898) rho_s=19.999959 cond=5.290e+18
+  bias/sigma = m1=-0.0107, m2=-1.1617, a=+0.3259, p0=-0.3693, e0=+0.3934, qS=+0.0346, phiS=+0.0207, Phi_phi0=-0.1766, Phi_r0=+0.2210, C_p=-1.6805, C_e=-0.0654
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999991.8079390706, 9.999984590170001, -0.8999755951366123, 13.250397853527625, 0.4000022286813818, 1.0, 3.7425890067593537, 1.0463517267461762, 0.7857625981512438, 0.6283185307179586, 0.5235987755982988, 0.1159346133939689, 0.2, 0.29616867986310896, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.001797815738012
+calculating stable deltas...
+Time taken to compute stable deltas is 30.959768772125244 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.91292667388916 seconds
+[0pa idx15] overlap=0.999974282965837 (stored 0.999974282965837) rho_s=19.999999 cond=2.419e+20
+  bias/sigma = m1=-0.0069, m2=-0.0047, a=+0.0098, p0=-0.0055, e0=+0.0129, qS=-0.0488, phiS=+0.0285, Phi_phi0=+0.1055, Phi_r0=-0.0339
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999986.3585273545, 10.000058879758221, -0.8999830746401671, 13.250422294793667, 0.4000046660689093, 1.0, 3.7425890067593537, 1.0471952856270943, 0.7853889510872379, 0.6283185307179586, 0.5235987755982988, 0.0998292107422799, 0.2, 0.300195215701407, 0.95, False, False, False, True, 20.090877910480966, 1.052739147165332, 0.0, 0.0)
+Waveform Generated. SNR: 20.00039082757075
+calculating stable deltas...
+Time taken to compute stable deltas is 36.55754470825195 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.544511079788208 seconds
+[pn idx15] overlap=0.9999999899935963 (stored 0.9999999899935963) rho_s=19.999999 cond=1.160e+22
+  bias/sigma = m1=-0.0034, m2=+0.0019, a=+0.0021, p0=-0.0009, e0=+0.0070, qS=-0.0001, phiS=-0.0007, Phi_phi0=-0.0007, Phi_r0=+0.0012, C_p=+0.0082, C_e=+0.0905
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000076.1542864498, 10.000207405992109, -0.49982980431353047, 12.287595952778492, 0.39998987072461273, 1.0, 4.889997184029404, 1.0461372488829206, 0.7854281380298501, 0.6283185307179586, 0.5235987755982988, 0.10990785094874363, 0.2, 0.29180019364145915, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.004695200654957
+calculating stable deltas...
+Time taken to compute stable deltas is 31.13939332962036 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9560744762420654 seconds
+[0pa idx16] overlap=0.9999764474971539 (stored 0.9999764474971539) rho_s=20.000000 cond=4.543e+19
+  bias/sigma = m1=+0.1675, m2=+0.1659, a=+0.2088, p0=-0.1975, e0=-0.1504, qS=-0.0682, phiS=+0.0025, Phi_phi0=+0.0593, Phi_r0=-0.0790
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999981.7439514104, 10.000002451795353, -0.4999928813978754, 12.28824203757715, 0.40000672511137886, 1.0, 4.889997184029404, 1.0472030106179333, 0.7854032260066194, 0.6283185307179586, 0.5235987755982988, 0.09947053529484876, 0.2, 0.3002219874118136, 0.95, False, False, False, True, 15.893804076187271, 1.2891343832789437, 0.0, 0.0)
+Waveform Generated. SNR: 20.000265466690482
+calculating stable deltas...
+Time taken to compute stable deltas is 37.44339990615845 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6294538974761963 seconds
+[pn idx16] overlap=0.9999999934672247 (stored 0.9999999934672247) rho_s=20.000000 cond=7.360e+22
+  bias/sigma = m1=-0.0037, m2=+0.0001, a=+0.0009, p0=+0.0001, e0=+0.0076, qS=+0.0003, phiS=+0.0004, Phi_phi0=-0.0026, Phi_r0=+0.0014, C_p=+0.0095, C_e=+0.0546
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000060.8200294774, 10.000173481901632, 0.00011017951652458945, 11.103758262381762, 0.399991592317769, 1.0, 6.926568915250337, 1.0461366941312098, 0.7850825340510911, 0.6283185307179586, 0.5235987755982988, 0.10497708829217028, 0.2, 0.2898526417483667, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.01271523042901
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 32.81185340881348 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0906689167022705 seconds
+[0pa idx17] overlap=0.9999624805776257 (stored 0.9999624805776257) rho_s=19.999999 cond=6.266e+15
+  bias/sigma = m1=+13.1463, m2=+1.1516, a=+16.6341, p0=-12.6448, e0=-1.6711, qS=-0.0721, phiS=-0.0298, Phi_phi0=+0.0326, Phi_r0=-0.0964
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000060.408780102, 10.000523729286495, 0.00010899040442921651, 11.103759551935983, 0.39999189782553984, 1.0, 6.926568915250337, 1.0471920708472056, 0.785283147788875, 0.6283185307179586, 0.5235987755982988, 0.0997787562162592, 0.2, 0.3011529439201782, 0.95, False, False, False, True, 28.59707060247534, 0.7706251185037107, 0.0, 0.0)
+Waveform Generated. SNR: 20.001880556861238
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 39.30456280708313 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7505106925964355 seconds
+[pn idx17] overlap=0.9999994560359212 (stored 0.9999994560359212) rho_s=19.999999 cond=8.949e+18
+  bias/sigma = m1=+1.2159, m2=+0.2335, a=+1.8248, p0=-1.6929, e0=-0.4620, qS=-0.0003, phiS=-0.0093, Phi_phi0=-0.0012, Phi_r0=+0.0089, C_p=+0.1653, C_e=+0.1421
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000043.1952787606, 10.000178753715225, 0.5000583429667711, 9.94125429925599, 0.3999926288813327, 1.0, 10.065969264365489, 1.045398995506089, 0.784192038701366, 0.6283185307179586, 0.5235987755982988, 0.12123685992478916, 0.2, 0.2675513511275472, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.016681928667552
+calculating stable deltas...
+Time taken to compute stable deltas is 34.503549098968506 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.239417791366577 seconds
+[0pa idx18] overlap=0.9997666058751887 (stored 0.9997666058751887) rho_s=19.999999 cond=1.788e+18
+  bias/sigma = m1=+0.6988, m2=+0.8194, a=+0.9280, p0=-0.8160, e0=-0.6459, qS=-0.1309, phiS=-0.1253, Phi_phi0=+0.1264, Phi_r0=-0.3018
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000060.3597337276, 10.001504896924, 0.5000766459629895, 9.941154484320371, 0.3999903365024542, 1.0, 10.065969264365489, 1.0471390494173793, 0.7854699310125015, 0.6283185307179586, 0.5235987755982988, 0.10987993157832107, 0.2, 0.2922543432610357, 0.95, False, False, False, True, 68.05057112066991, 2.9927991839562824, 0.0, 0.0)
+Waveform Generated. SNR: 20.003417961267985
+calculating stable deltas...
+Time taken to compute stable deltas is 41.37905478477478 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.012012720108032 seconds
+[pn idx18] overlap=0.9999961760371439 (stored 0.9999961760371439) rho_s=19.999999 cond=1.016e+20
+  bias/sigma = m1=+0.1390, m2=+0.4846, a=+0.2022, p0=-0.1893, e0=-0.0783, qS=-0.0039, phiS=+0.0067, Phi_phi0=+0.0541, Phi_r0=-0.0614, C_p=+0.3056, C_e=+0.1550
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000005.7989435507, 10.000146087809906, 0.9000096038456288, 9.002988478734997, 0.39999600268301366, 1.0, 14.064330275907732, 1.0459729166580525, 0.7816492470241172, 0.6283185307179586, 0.5235987755982988, 0.25018717763489823, 0.2, 0.14919667285300953, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.04881682589765
+calculating stable deltas...
+Time taken to compute stable deltas is 37.25489282608032 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.4759838581085205 seconds
+[0pa idx19] overlap=0.9959782766864141 (stored 0.9959782766864141) rho_s=19.998907 cond=3.564e+17
+  bias/sigma = m1=+0.3251, m2=+1.4300, a=+0.8327, p0=-0.2128, e0=-0.7699, qS=-0.0955, phiS=-0.4140, Phi_phi0=+0.9812, Phi_r0=-1.3661
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000007.6739655696, 9.998795860763305, 0.900016540086678, 9.002883396415445, 0.4000082703284164, 1.0, 14.064330275907732, 1.0480486891936258, 0.7853117150258764, 0.6283185307179586, 0.5235987755982988, 0.05593114846946859, 0.2, 0.3354505185357641, 0.95, False, False, False, True, -36.56343519663218, -1.2173783143268584, 0.0, 0.0)
+Waveform Generated. SNR: 19.996516508638653
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 44.748623847961426 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.22295618057251 seconds
+[pn idx19] overlap=0.9998050933136654 (stored 0.9998050933136654) rho_s=19.998907 cond=6.264e+18
+  bias/sigma = m1=+0.1023, m2=-1.0415, a=+0.4323, p0=-0.4856, e0=+0.2650, qS=+0.0590, phiS=-0.0093, Phi_phi0=-0.2112, Phi_r0=+0.2283, C_p=-1.6979, C_e=-0.4725
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999892.2555439383, 9.999637733142619, -0.9001765013659923, 13.303409500738809, 0.5000133596592288, 1.0, 4.121669070558761, 1.0473078303285583, 0.7854759543574239, 0.6283185307179586, 0.5235987755982988, 0.10410207060123314, 0.2, 0.30096760637518594, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 19.99861196776823
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 31.014140129089355 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.917945384979248 seconds
+[0pa idx20] overlap=0.9999946734811664 (stored 0.9999946734811664) rho_s=19.999997 cond=4.524e+20
+  bias/sigma = m1=-0.1152, m2=-0.1037, a=-0.0942, p0=+0.0998, e0=+0.1164, qS=+0.0065, phiS=+0.0066, Phi_phi0=+0.0203, Phi_r0=+0.0110
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999982.0782375745, 10.000063681539574, -0.8999927828748446, 13.302727199096763, 0.5000034758464674, 1.0, 4.121669070558761, 1.0471906695656068, 0.7853889822757486, 0.6283185307179586, 0.5235987755982988, 0.09987195555532279, 0.2, 0.30012014687872984, 0.95, False, False, False, True, 21.150421049930678, 0.8648632824403849, 0.0, 0.0)
+Waveform Generated. SNR: 20.00030708162587
+calculating stable deltas...
+Time taken to compute stable deltas is 37.11799383163452 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.5926053524017334 seconds
+[pn idx20] overlap=0.999999991483428 (stored 0.999999991483428) rho_s=19.999997 cond=7.281e+21
+  bias/sigma = m1=-0.0033, m2=+0.0014, a=+0.0007, p0=+0.0002, e0=+0.0050, qS=-0.0004, phiS=-0.0007, Phi_phi0=-0.0005, Phi_r0=+0.0010, C_p=+0.0056, C_e=+0.0108
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000036.7192703006, 10.000158785894731, -0.4999043973833153, 12.30552823532419, 0.4999957788792961, 1.0, 5.312393543904282, 1.046141381321232, 0.7857038486674799, 0.6283185307179586, 0.5235987755982988, 0.12453187956008915, 0.2, 0.2931262164883062, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.00359401085212
+calculating stable deltas...
+Time taken to compute stable deltas is 32.473039865493774 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.0529491901397705 seconds
+[0pa idx21] overlap=0.9999518785589531 (stored 0.9999518785589531) rho_s=20.000000 cond=5.704e+20
+  bias/sigma = m1=+0.0387, m2=+0.0464, a=+0.0583, p0=-0.0528, e0=-0.0362, qS=-0.0703, phiS=+0.0285, Phi_phi0=+0.1526, Phi_r0=-0.0819
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999973.6520435674, 9.999963574614792, -0.5000070230290654, 12.305930772559899, 0.5000056008234448, 1.0, 5.312393543904282, 1.0472012005198916, 0.7854019078137282, 0.6283185307179586, 0.5235987755982988, 0.09971686652845431, 0.2, 0.3000831939297038, 0.95, False, False, False, True, 14.118285363605079, 0.912690458411752, 0.0, 0.0)
+Waveform Generated. SNR: 20.000090843649076
+calculating stable deltas...
+Time taken to compute stable deltas is 38.135510206222534 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7015488147735596 seconds
+[pn idx21] overlap=0.9999999958939644 (stored 0.9999999958939644) rho_s=20.000000 cond=1.277e+21
+  bias/sigma = m1=-0.0045, m2=-0.0009, a=-0.0007, p0=+0.0015, e0=+0.0071, qS=+0.0002, phiS=+0.0003, Phi_phi0=-0.0013, Phi_r0=+0.0008, C_p=+0.0064, C_e=+0.0223
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000086.7877900562, 10.00032882885162, 0.00014221058242290906, 11.08105294448738, 0.49998954108112886, 1.0, 7.340330367777554, 1.0460292283404868, 0.7851816258601082, 0.6283185307179586, 0.5235987755982988, 0.11091481758779696, 0.2, 0.29153584064240334, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.007296568906344
+calculating stable deltas...
+Time taken to compute stable deltas is 33.83849215507507 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.182051420211792 seconds
+[0pa idx22] overlap=0.9999542183038954 (stored 0.9999542183038954) rho_s=20.000005 cond=1.136e+19
+  bias/sigma = m1=+0.6746, m2=+0.4808, a=+0.8599, p0=-0.8289, e0=-0.4662, qS=-0.0829, phiS=-0.0226, Phi_phi0=+0.0689, Phi_r0=-0.1064
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, 0.0001426201530716414, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 20.00262361583368
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 40.25117087364197 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.935734748840332 seconds
+[pn idx22] overlap=0.9999988912696995 (stored 0.9999988912696995) rho_s=20.000005 cond=2.636e+19
+  bias/sigma = m1=+1.1710, m2=+0.2978, a=+1.5031, p0=-1.4305, e0=-0.6573, qS=-0.0029, phiS=-0.0148, Phi_phi0=+0.0072, Phi_r0=+0.0042, C_p=+0.1758, C_e=+0.1714
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000056.2660892021, 10.000270024703122, 0.5000695789503966, 9.885336612185876, 0.49999221910306035, 1.0, 10.329524932896542, 1.0456048887391933, 0.7844535583208674, 0.6283185307179586, 0.5235987755982988, 0.1275714524887727, 0.2, 0.27769465701360563, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 20.01430696804629
+calculating stable deltas...
+Time taken to compute stable deltas is 35.5960738658905 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.357917547225952 seconds
+[0pa idx23] overlap=0.9997923057433054 (stored 0.9997923057433054) rho_s=19.999965 cond=5.163e+18
+  bias/sigma = m1=+0.7612, m2=+0.9046, a=+0.9524, p0=-0.8560, e0=-0.7532, qS=-0.1271, phiS=-0.1077, Phi_phi0=+0.1595, Phi_r0=-0.2776
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000053.2163192346, 10.001531061327395, 0.5000708155009885, 9.885329183782574, 0.4999948081873869, 1.0, 10.329524932896542, 1.0471310565915872, 0.7854885746007643, 0.6283185307179586, 0.5235987755982988, 0.11322071853688806, 0.2, 0.2930956531263146, 0.95, False, False, False, True, 73.42523169311933, 3.5856708650226343, 0.0, 0.0)
+Waveform Generated. SNR: 20.003353881938303
+calculating stable deltas...
+Time taken to compute stable deltas is 42.698219776153564 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.0679497718811035 seconds
+[pn idx23] overlap=0.9999945018596543 (stored 0.9999945018596543) rho_s=19.999965 cond=2.532e+20
+  bias/sigma = m1=+0.1079, m2=+0.4806, a=+0.1660, p0=-0.1547, e0=-0.0521, qS=-0.0049, phiS=+0.0094, Phi_phi0=+0.0703, Phi_r0=-0.0757, C_p=+0.3132, C_e=+0.2292
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000009.5672348661, 10.000190718118889, 0.9000120214122017, 8.926946550650248, 0.4999960161303699, 1.0, 14.334976856664628, 1.0456971700143585, 0.7813847817754277, 0.6283185307179586, 0.5235987755982988, 0.3070174190795294, 0.2, 0.17439517564367987, 0.95, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 19.963053787413983
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 38.30568981170654 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.58520245552063 seconds
+[0pa idx24] overlap=0.9945445405500176 (stored 0.9945445405500176) rho_s=19.999969 cond=6.924e+17
+  bias/sigma = m1=+0.4934, m2=+1.6283, a=+0.9808, p0=-0.3432, e0=-0.9948, qS=-0.1252, phiS=-0.4783, Phi_phi0=+1.3618, Phi_r0=-1.5335
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000010.0374761075, 9.99877199412839, 0.9000178623198862, 8.926841227380452, 0.5000054725845574, 1.0, 14.334976856664628, 1.047930629617486, 0.7852931215100498, 0.6283185307179586, 0.5235987755982988, 0.04060844876830731, 0.2, 0.33101495014795146, 0.95, False, False, False, True, -38.275182172615956, -1.5303380195291223, 0.0, 0.0)
+Waveform Generated. SNR: 19.978314939162118
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 45.92155146598816 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.3556435108184814 seconds
+[pn idx24] overlap=0.9997094635445354 (stored 0.9997094635445354) rho_s=19.999969 cond=1.123e+19
+  bias/sigma = m1=+0.1296, m2=-1.1441, a=+0.4503, p0=-0.5221, e0=+0.2463, qS=+0.0548, phiS=-0.0122, Phi_phi0=-0.2773, Phi_r0=+0.2711, C_p=-2.0151, C_e=-1.0043

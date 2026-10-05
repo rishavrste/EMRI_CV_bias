@@ -1,0 +1,1162 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=1.0 yr dt=5.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+adhoc_A 0pa O_old(1st gen AET)=0.9999938957  O_new(2nd gen AE)=0.9996862048  chi2=3.421827e+08  rho_s=490826.181275
+adhoc_A pn  O_old(1st gen AET)=0.9999998989  O_new(2nd gen AE)=0.9999408491  chi2=3.685097e+07  rho_s=490826.181275
+-> /nfs/home/svu/e1583490/EMRI_CV_bias/EMRI_1PA_PN_DEV/results/overlap_old_fits.json
+-> /nfs/home/svu/e1583490/EMRI_CV_bias/EMRI_1PA_PN_DEV/results/overlap_old_fits.md
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=0.9 yr dt=5.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A] O=0.999915737062 chi2=5.191975e+07 rho_s=521707.416603
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.67, 10.0010513, 0.90009637, 7.49942614, 0.499974688, 1.0, 5.0, 0.78338829, 0.999626083, 1.0, 1.0471975511965976, 0.909269038, 0.5, 0.396038198, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 519203.2626731091
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.49752187728882 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.1651031970977783 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   0 lam=8.8e-03 ov=0.999915737062 chi2=5.191975e+07 rel=7.4e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6700375312, 10.001051284811634, 0.9000963811551859, 7.49942614176872, 0.4999746877792706, 1.0, 5.0, 0.7810537668503694, 0.9997372417958251, 1.0, 1.0471975511965976, 0.9070201611621346, 0.5, 0.4008389225968979, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 522501.16406943876
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.719151496887207 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   1 lam=2.9e-02 ov=0.999976810744 chi2=1.327248e+07 rel=6.1e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6707308199, 10.001051269711901, 0.9000963707333959, 7.499426142985526, 0.4999746891103594, 1.0, 5.0, 0.7844476313561024, 0.9997963079795862, 1.0, 1.0471975511965976, 0.9067201725465792, 0.5, 0.40022334873293985, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 523896.8765981174
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.744637966156006 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   2 lam=9.8e-01 ov=0.999999215069 chi2=5.222820e+06 rel=3.7e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6708538764, 10.001051265646591, 0.900096370015235, 7.499426143365596, 0.4999746893184335, 1.0, 5.0, 0.7843375487050619, 0.9997955678945629, 1.0, 1.0471975511965976, 0.9067978847220857, 0.5, 0.3997612831818567, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 523310.58160167205
+calculating stable deltas...
+Time taken to compute stable deltas is 22.416251182556152 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.121758460998535 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   3 lam=3.3e-01 ov=0.999998712594 chi2=3.273107e+06 rel=5.6e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.670973004, 10.001051262905428, 0.9000963683454762, 7.49942614359206, 0.4999746895442184, 1.0, 5.0, 0.7844555000606304, 0.9997903691427182, 1.0, 1.0471975511965976, 0.9069692782552461, 0.5, 0.39903891382202894, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 522604.33398480987
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7307674884796143 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   4 lam=1.1e-01 ov=0.999998814214 chi2=1.451065e+06 rel=5.1e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710383985, 10.001051262906797, 0.90009636620121, 7.499426143538021, 0.4999746896988854, 1.0, 5.0, 0.7843283202637966, 0.9997832094870898, 1.0, 1.0471975511965976, 0.9071169583073129, 0.5, 0.3984204189844866, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 522034.79750688514
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.72869610786438 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   5 lam=6.7e-01 ov=0.999998902529 chi2=7.049705e+05 rel=7.1e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710473468, 10.001051263139745, 0.9000963657180362, 7.499426143503059, 0.49997468972479675, 1.0, 5.0, 0.784275468928659, 0.9997819139597943, 1.0, 1.0471975511965976, 0.9071407955677819, 0.5, 0.3983111152090323, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521940.61148816603
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.310785055160522 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.135498285293579 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   6 lam=7.2e-01 ov=0.999998897767 chi2=6.546574e+05 rel=2.4e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710725615, 10.001051262505513, 0.9000963654092385, 7.49942614355741, 0.4999746897714896, 1.0, 5.0, 0.7843659373907326, 0.9997832859141068, 1.0, 1.0471975511965976, 0.9071188708457185, 0.5, 0.39827100374767144, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521887.9392046205
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7544848918914795 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   7 lam=9.4e-01 ov=0.999998886455 chi2=6.389654e+05 rel=9.5e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710897601, 10.001051262147216, 0.9000963651380995, 7.499426143585687, 0.49997468980485477, 1.0, 5.0, 0.7844403930701601, 0.9997845072958563, 1.0, 1.0471975511965976, 0.9070963554103345, 0.5, 0.3982514336112309, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521863.73485972465
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.725266456604004 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   8 lam=1.4e+00 ov=0.999998882596 chi2=6.328850e+05 rel=3.9e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.671103563, 10.001051261835103, 0.9000963649405636, 7.4994261436112915, 0.49997468983113186, 1.0, 5.0, 0.784497758592705, 0.9997855188761331, 1.0, 1.0471975511965976, 0.9070771882773282, 0.5, 0.3982396085023642, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521846.3026025702
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 21.8032546043396 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0888774394989014 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   9 lam=2.3e+01 ov=0.999998877684 chi2=6.303935e+05 rel=3.0e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711026458, 10.001051261909293, 0.9000963649101172, 7.4994261436032605, 0.49997468983047605, 1.0, 5.0, 0.7844638773613206, 0.999785403188253, 1.0, 1.0471975511965976, 0.9070782229928059, 0.5, 0.3982365140937081, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521835.71186253073
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.6975338459014893 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  10 lam=7.8e+00 ov=0.999998875919 chi2=6.285125e+05 rel=2.4e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711017154, 10.001051261970876, 0.9000963648903827, 7.499426143596734, 0.4999746898295318, 1.0, 5.0, 0.7844636346050958, 0.9997853111306377, 1.0, 1.0471975511965976, 0.9070789695732903, 0.5, 0.39823505387136643, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521842.2357299517
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.6963911056518555 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  11 lam=7.7e+00 ov=0.999998881834 chi2=6.270160e+05 rel=1.5e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.671101535, 10.001051262035084, 0.9000963648439464, 7.499426143589279, 0.4999746898304147, 1.0, 5.0, 0.7844589383436874, 0.9997852132841505, 1.0, 1.0471975511965976, 0.907079535271598, 0.5, 0.398229799414523, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521837.39188046905
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.348378896713257 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.148888111114502 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  12 lam=1.5e+01 ov=0.999998881187 chi2=6.260797e+05 rel=2.6e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059128, 10.001051261888051, 0.9000963648204494, 7.4994261436030865, 0.4999746898377686, 1.0, 5.0, 0.7845108991234945, 0.9997854089486846, 1.0, 1.0471975511965976, 0.9070774509436067, 0.5, 0.39822260104075985, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521833.8025014012
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7633416652679443 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  13 lam=2.2e+03 ov=0.999998882494 chi2=6.244439e+05 rel=7.3e-05
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059324, 10.00105126188742, 0.9000963648203181, 7.499426143603145, 0.4999746898378023, 1.0, 5.0, 0.7845111988026733, 0.9997854100631756, 1.0, 1.0471975511965976, 0.907077438790635, 0.5, 0.39822257101311975, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521834.7334780338
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7187435626983643 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  14 lam=2.2e+03 ov=0.999998883014 chi2=6.243980e+05 rel=3.0e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059469, 10.001051261886941, 0.9000963648202378, 7.49942614360319, 0.49997468983782656, 1.0, 5.0, 0.7845113957709767, 0.9997854108888343, 1.0, 1.0471975511965976, 0.9070774299459577, 0.5, 0.3982225505442035, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521831.63233889296
+calculating stable deltas...
+Time taken to compute stable deltas is 22.28385353088379 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.1266427040100098 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  15 lam=7.3e+06 ov=0.999998881921 chi2=6.242096e+05 rel=1.7e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059469, 10.001051261886941, 0.9000963648202378, 7.49942614360319, 0.49997468983782656, 1.0, 5.0, 0.7845113957656386, 0.9997854108888852, 1.0, 1.0471975511965976, 0.9070774299453094, 0.5, 0.3982225505423548, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521831.63913547166
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7328639030456543 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  16 lam=2.4e+06 ov=0.999998881926 chi2=6.242085e+05 rel=7.7e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059469, 10.001051261886941, 0.9000963648202378, 7.49942614360319, 0.49997468983782656, 1.0, 5.0, 0.7845113957493601, 0.9997854108890377, 1.0, 1.0471975511965976, 0.9070774299433649, 0.5, 0.39822255053680783, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521831.63304864365
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7282369136810303 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  17 lam=8.1e+06 ov=0.999998881932 chi2=6.242037e+05 rel=6.6e-07
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059469, 10.001051261886941, 0.9000963648202378, 7.49942614360319, 0.49997468983782656, 1.0, 5.0, 0.7845113957444495, 0.9997854108890835, 1.0, 1.0471975511965976, 0.9070774299427815, 0.5, 0.39822255053514394, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521831.62742061506
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.173558950424194 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.122596263885498 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  18 lam=2.7e+06 ov=0.999998881930 chi2=6.242033e+05 rel=1.6e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711059469, 10.001051261886941, 0.9000963648202378, 7.49942614360319, 0.49997468983782656, 1.0, 5.0, 0.7845113957297141, 0.9997854108892208, 1.0, 1.0471975511965976, 0.9070774299410311, 0.5, 0.3982225505301529, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521831.633302272
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.725529670715332 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  19 lam=1.6e+00 ov=0.999998881934 chi2=6.242023e+05 rel=5.1e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710981816, 10.001051262405749, 0.9000963646516414, 7.499426143548154, 0.4999746898300471, 1.0, 5.0, 0.7844395085347147, 0.9997857321199075, 1.0, 1.0471975511965976, 0.9070586364491411, 0.5, 0.39825664120109294, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521860.1743147204
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7231407165527344 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  20 lam=1.8e+02 ov=0.999998902395 chi2=6.209997e+05 rel=1.2e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710982387, 10.001051262406127, 0.9000963646494652, 7.499426143548063, 0.4999746898301897, 1.0, 5.0, 0.7844408937717896, 0.9997857298736615, 1.0, 1.0471975511965976, 0.9070586622199812, 0.5, 0.3982562646209805, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521859.72690289415
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 21.912503957748413 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0954678058624268 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  21 lam=6.1e+01 ov=0.999998903479 chi2=6.202725e+05 rel=1.4e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710982845, 10.001051262406706, 0.9000963646474925, 7.499426143547956, 0.4999746898303099, 1.0, 5.0, 0.7844408654254138, 0.9997857277447487, 1.0, 1.0471975511965976, 0.9070586874215223, 0.5, 0.39825593228966605, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521862.6846568479
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.704045295715332 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  22 lam=2.0e+01 ov=0.999998905313 chi2=6.201869e+05 rel=8.2e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710985609, 10.001051262402083, 0.900096364642209, 7.499426143548276, 0.4999746898308693, 1.0, 5.0, 0.7844406855349186, 0.999785730581312, 1.0, 1.0471975511965976, 0.9070586795924496, 0.5, 0.398254873899959, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521864.3127736842
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.6955668926239014 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  23 lam=6.8e+00 ov=0.999998907178 chi2=6.196813e+05 rel=2.0e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710996109, 10.001051262377768, 0.9000963646276439, 7.499426143550291, 0.4999746898328564, 1.0, 5.0, 0.7844404418148601, 0.9997857558269834, 1.0, 1.0471975511965976, 0.9070584882370585, 0.5, 0.3982516931881858, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521856.84171264234
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.26557159423828 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.134431838989258 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  24 lam=2.3e+06 ov=0.999998905180 chi2=6.184726e+05 rel=7.3e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710996109, 10.001051262377768, 0.9000963646276439, 7.499426143550291, 0.4999746898328564, 1.0, 5.0, 0.7844404418054203, 0.9997857558269692, 1.0, 1.0471975511965976, 0.9070584882372728, 0.5, 0.39825169317940085, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521856.8355223046
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7650790214538574 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  25 lam=7.5e+06 ov=0.999998905184 chi2=6.184681e+05 rel=7.0e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710996109, 10.001051262377768, 0.9000963646276439, 7.499426143550291, 0.4999746898328564, 1.0, 5.0, 0.7844404418025953, 0.9997857558269648, 1.0, 1.0471975511965976, 0.907058488237337, 0.5, 0.3982516931767656, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521856.83891447796
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7584986686706543 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  26 lam=2.5e+06 ov=0.999998905194 chi2=6.184638e+05 rel=1.4e-05
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710996109, 10.001051262377768, 0.9000963646276439, 7.499426143550291, 0.4999746898328564, 1.0, 5.0, 0.7844404417941245, 0.9997857558269521, 1.0, 1.0471975511965976, 0.9070584882375295, 0.5, 0.3982516931688593, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521856.8230831083
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.247152090072632 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.1389105319976807 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  27 lam=1.1e+00 ov=0.999998905201 chi2=6.184554e+05 rel=6.4e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711000452, 10.001051262759018, 0.9000963643025905, 7.4994261435047855, 0.49997468984166055, 1.0, 5.0, 0.7843755585090022, 0.9997853157915321, 1.0, 1.0471975511965976, 0.9070590066168297, 0.5, 0.398217871306856, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521827.23425901943
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7427926063537598 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  28 lam=3.6e-01 ov=0.999998897736 chi2=6.145197e+05 rel=1.8e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6710994735, 10.001051263111645, 0.9000963640338141, 7.499426143463499, 0.49997468984750165, 1.0, 5.0, 0.7843223567576446, 0.9997850881993771, 1.0, 1.0471975511965976, 0.9070557781891821, 0.5, 0.39819895412614736, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521804.1496083882
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7339701652526855 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  29 lam=1.2e-01 ov=0.999998908762 chi2=6.034913e+05 rel=2.4e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711069199, 10.001051263543388, 0.9000963634379532, 7.499426143406251, 0.49997468987392024, 1.0, 5.0, 0.7842967464058767, 0.9997861247688774, 1.0, 1.0471975511965976, 0.9070197934197143, 0.5, 0.3981937469249674, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521792.45768117136
+calculating stable deltas...
+Time taken to compute stable deltas is 22.153276920318604 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.12028169631958 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  30 lam=1.7e+00 ov=0.999998931131 chi2=5.891736e+05 rel=1.9e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711029345, 10.001051263949442, 0.9000963632374093, 7.499426143361449, 0.4999746898727757, 1.0, 5.0, 0.7842357860226582, 0.999786000295234, 1.0, 1.0471975511965976, 0.9070122966952845, 0.5, 0.39819659898005333, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521792.76322220784
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7341508865356445 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  31 lam=1.3e+00 ov=0.999998933319 chi2=5.880350e+05 rel=2.8e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711045519, 10.001051264040527, 0.9000963631101643, 7.499426143349333, 0.49997468987845606, 1.0, 5.0, 0.7842268058077646, 0.9997862400134226, 1.0, 1.0471975511965976, 0.9070049078914084, 0.5, 0.39819515882150514, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521789.7699153022
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7164416313171387 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  32 lam=4.3e-01 ov=0.999998935419 chi2=5.863862e+05 rel=7.0e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711040343, 10.001051264286383, 0.9000963629266442, 7.499426143320646, 0.49997468988224675, 1.0, 5.0, 0.7841939290460768, 0.9997863234223828, 1.0, 1.0471975511965976, 0.9069967918207316, 0.5, 0.39819398573285725, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521792.4642401092
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 21.907235145568848 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.089691638946533 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  33 lam=1.4e+01 ov=0.999998943765 chi2=5.822966e+05 rel=1.9e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711041735, 10.001051264286719, 0.9000963629218114, 7.499426143320491, 0.49997468988258276, 1.0, 5.0, 0.7841931682206463, 0.9997863370501671, 1.0, 1.0471975511965976, 0.9069964598955822, 0.5, 0.3981938731164466, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521791.1625271726
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.692610740661621 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  34 lam=4.7e+00 ov=0.999998943563 chi2=5.821851e+05 rel=4.2e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711043204, 10.001051264300076, 0.900096362906109, 7.4994261433187885, 0.49997468988320265, 1.0, 5.0, 0.7841930289113797, 0.9997863587272158, 1.0, 1.0471975511965976, 0.9069956231313573, 0.5, 0.398193663585718, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521791.5850506922
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.6913816928863525 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  35 lam=1.6e+07 ov=0.999998944138 chi2=5.819434e+05 rel=1.4e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6711043204, 10.001051264300076, 0.900096362906109, 7.4994261433187885, 0.49997468988320265, 1.0, 5.0, 0.7841930289113515, 0.9997863587272284, 1.0, 1.0471975511965976, 0.9069956231310492, 0.5, 0.39819366358562447, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521791.58532260655
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.10935950279236 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.098241090774536 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  36 lam=3.3e-03 ov=0.999998944140 chi2=5.819425e+05 rel=3.8e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714280682, 10.001051270164572, 0.9000963475206457, 7.499426142358219, 0.49997469076849854, 1.0, 5.0, 0.7839499736388357, 0.9998265191746398, 1.0, 1.0471975511965976, 0.9057346963816144, 0.5, 0.39849225267399363, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521735.45274602075
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7443439960479736 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  37 lam=2.8e+00 ov=0.999999334871 chi2=3.628736e+05 rel=1.2e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714250493, 10.001051270330457, 0.9000963474842723, 7.499426142341062, 0.4999746907647434, 1.0, 5.0, 0.7839287232646807, 0.9998265441003971, 1.0, 1.0471975511965976, 0.9057298871981317, 0.5, 0.3985041767099925, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521747.4995898782
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7476701736450195 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  38 lam=2.8e+00 ov=0.999999344473 chi2=3.584750e+05 rel=8.0e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714251972, 10.001051270364771, 0.9000963474514488, 7.499426142336879, 0.49997469076579304, 1.0, 5.0, 0.783931593975036, 0.9998268389239483, 1.0, 1.0471975511965976, 0.9057229418486056, 0.5, 0.39851419637548796, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521757.1499810217
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.26109266281128 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.1371467113494873 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  39 lam=2.8e+02 ov=0.999999351324 chi2=3.556189e+05 rel=2.2e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714252023, 10.001051270365167, 0.9000963474509575, 7.499426142336827, 0.49997469076581325, 1.0, 5.0, 0.7839327926540427, 0.9998268399275835, 1.0, 1.0471975511965976, 0.9057228931283583, 0.5, 0.39851423530104807, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521761.0742597038
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7316696643829346 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  40 lam=3.1e+02 ov=0.999999353491 chi2=3.548474e+05 rel=1.1e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.671425232, 10.001051270364464, 0.90009634745056, 7.499426142336886, 0.499974690765869, 1.0, 5.0, 0.783933962376579, 0.9998268424154297, 1.0, 1.0471975511965976, 0.9057228321049512, 0.5, 0.398514257119732, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521761.3314867698
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.720505475997925 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  41 lam=3.3e+03 ov=0.999999354232 chi2=3.544718e+05 rel=1.7e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714252328, 10.001051270364442, 0.9000963474505489, 7.499426142336888, 0.4999746907658706, 1.0, 5.0, 0.7839339947910038, 0.9998268424869275, 1.0, 1.0471975511965976, 0.9057228303648169, 0.5, 0.3985142577474892, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521759.88857621734
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.26285195350647 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.1263346672058105 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  42 lam=1.1e+06 ov=0.999999354061 chi2=3.544104e+05 rel=1.3e-05
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714252328, 10.001051270364442, 0.9000963474505489, 7.499426142336888, 0.4999746907658706, 1.0, 5.0, 0.7839339948000827, 0.9998268424870912, 1.0, 1.0471975511965976, 0.9057228303600252, 0.5, 0.3985142577499369, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521759.8898497773
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7357089519500732 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  43 lam=3.3e+07 ov=0.999999354070 chi2=3.544057e+05 rel=7.6e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6714252328, 10.001051270364442, 0.9000963474505489, 7.499426142336888, 0.4999746907658706, 1.0, 5.0, 0.7839339948003796, 0.9998268424870966, 1.0, 1.0471975511965976, 0.9057228303598654, 0.5, 0.3985142577500184, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521759.8881229357
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.734165906906128 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  44 lam=8.7e-03 ov=0.999999354075 chi2=3.544031e+05 rel=2.7e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6718043041, 10.001051269780984, 0.9000963355045897, 7.4994261420939825, 0.4999746916503907, 1.0, 5.0, 0.7840588591524751, 0.999849185470711, 1.0, 1.0471975511965976, 0.9048012855021199, 0.5, 0.3987259305134085, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521644.4798961709
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.01180911064148 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.0983657836914062 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  45 lam=7.0e-03 ov=0.999999534708 chi2=2.572151e+05 rel=3.7e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6721522096, 10.001051267616496, 0.9000963258737243, 7.499426142064179, 0.499974692429022, 1.0, 5.0, 0.7847490845114425, 0.9998876927971871, 1.0, 1.0471975511965976, 0.9037808809220375, 0.5, 0.3991361866575655, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521714.9958625654
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7021358013153076 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  46 lam=7.5e-02 ov=0.999999701835 chi2=1.623682e+05 rel=1.5e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720576943, 10.001051273246166, 0.9000963243799012, 7.499426141475324, 0.49997469232034664, 1.0, 5.0, 0.783910715113767, 0.999883316384172, 1.0, 1.0471975511965976, 0.9037604163069637, 0.5, 0.399211578643252, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521792.74142518715
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.69435715675354 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  47 lam=6.3e-01 ov=0.999999759722 chi2=1.380993e+05 rel=4.2e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720550084, 10.001051273660416, 0.9000963241299919, 7.499426141428476, 0.49997469232244346, 1.0, 5.0, 0.7838848086006398, 0.9998822709805243, 1.0, 1.0471975511965976, 0.903767486509174, 0.5, 0.3991817201477899, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521774.28584810125
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.16764497756958 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.101750373840332 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  48 lam=1.1e+01 ov=0.999999765160 chi2=1.323248e+05 rel=9.4e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720572755, 10.001051273591946, 0.9000963241115446, 7.499426141434717, 0.49997469232640823, 1.0, 5.0, 0.7839134272208793, 0.9998823198851318, 1.0, 1.0471975511965976, 0.903767060699361, 0.5, 0.3991764649816774, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521770.08678460366
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.7436091899871826 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  49 lam=3.3e+07 ov=0.999999766456 chi2=1.310743e+05 rel=1.4e-06
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720572755, 10.001051273591946, 0.9000963241115446, 7.499426141434717, 0.49997469232640823, 1.0, 5.0, 0.7839134272228618, 0.9998823198851288, 1.0, 1.0471975511965976, 0.9037670606993704, 0.5, 0.3991764649814729, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521770.0853018735
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.741318464279175 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  50 lam=1.1e+07 ov=0.999999766456 chi2=1.310741e+05 rel=1.5e-05
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720572755, 10.001051273591946, 0.9000963241115446, 7.499426141434717, 0.49997469232640823, 1.0, 5.0, 0.7839134272288095, 0.9998823198851197, 1.0, 1.0471975511965976, 0.9037670606993988, 0.5, 0.39917646498085946, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521770.0846147708
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 22.23462677001953 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.132035970687866 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  51 lam=3.3e+03 ov=0.999999766460 chi2=1.310722e+05 rel=1.1e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000148.6720572758, 10.001051273591955, 0.9000963241115291, 7.499426141434716, 0.499974692326409, 1.0, 5.0, 0.7839134470519189, 0.9998823198548673, 1.0, 1.0471975511965976, 0.9037670607926861, 0.5, 0.39917646293458525, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 521772.59113651305
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.732978105545044 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  52 lam=1.0e+08 ov=0.999999767075 chi2=1.310582e+05 rel=0.0e+00
+[DONE EMRI_0pa_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A] O 0.999915737062 -> 0.999999767075  chi2 5.191975e+07 -> 1.310582e+05  iters=53 accepted=52 stop=lambda_exhausted  634.1 s
+theta_final = m1=1000148.6720572758, m2=10.001051273591955, a=0.9000963241115291, p0=7.499426141434716, e0=0.499974692326409, qS=0.7839134470519189, phiS=0.9998823198548673, Phi_phi0=0.9037670607926861, Phi_r0=0.39917646293458525
+[EMRI] T=1.0 yr dt=5.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A] O=0.999836338925 chi2=2.049042e+08 rho_s=490826.181275
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6720572758, 10.001051273591955, 0.9000963241115291, 7.499426141434716, 0.499974692326409, 1.0, 5.0, 0.7839134470519189, 0.9998823198548673, 1.0, 1.0471975511965976, 0.9037670607926861, 0.5, 0.39917646293458525, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 501973.28806113685
+calculating stable deltas...
+Time taken to compute stable deltas is 24.068629264831543 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.2983598709106445 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   0 lam=3.3e-03 ov=0.999836338925 chi2=2.049042e+08 rel=9.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6723338827, 10.001051267703582, 0.900096319798257, 7.499426142045007, 0.4999746929345378, 1.0, 5.0, 0.7845326204480576, 0.9995669843359849, 1.0, 1.0471975511965976, 0.9045801755100304, 0.5, 0.39647289572222366, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491766.4703573293
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8997983932495117 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   1 lam=1.1e+06 ov=0.999998686324 chi2=1.518312e+06 rel=2.9e-06
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6723338827, 10.001051267703582, 0.900096319798257, 7.499426142045007, 0.4999746929345378, 1.0, 5.0, 0.7845326204491716, 0.9995669843354679, 1.0, 1.0471975511965976, 0.9045801755081805, 0.5, 0.3964728957104958, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491766.4701133123
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.9485204219818115 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   2 lam=3.3e-02 ov=0.999998686333 chi2=1.518308e+06 rel=2.6e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6724019779, 10.001051265364072, 0.9000963196703043, 7.49942614230366, 0.49997469305843545, 1.0, 5.0, 0.7845765868176643, 0.9995453582414057, 1.0, 1.0471975511965976, 0.9046007328563648, 0.5, 0.39620573243600904, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491627.10512185446
+calculating stable deltas...
+Time taken to compute stable deltas is 24.400740385055542 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.3023579120635986 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   3 lam=1.1e-02 ov=0.999999002644 chi2=1.122810e+06 rel=5.4e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.672533441, 10.001051260900002, 0.900096319368281, 7.499426142796619, 0.49997469329915517, 1.0, 5.0, 0.7846630619914281, 0.9995025821780241, 1.0, 1.0471975511965976, 0.9046401682827688, 0.5, 0.39566292826436833, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491409.14247935044
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.970991611480713 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   4 lam=3.7e-02 ov=0.999999639513 chi2=5.137401e+05 rel=2.3e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725651466, 10.001051259844381, 0.9000963192734293, 7.4994261429129505, 0.49997469335782024, 1.0, 5.0, 0.7846854076834555, 0.9994912679383672, 1.0, 1.0471975511965976, 0.9046524132941358, 0.5, 0.3955221577641711, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491306.6643063293
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.969787120819092 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   5 lam=1.2e-02 ov=0.999999656622 chi2=3.964728e+05 rel=4.8e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726315835, 10.001051257644773, 0.9000963190617569, 7.499426143155209, 0.4999746934811086, 1.0, 5.0, 0.7847300052024202, 0.9994684454172906, 1.0, 1.0471975511965976, 0.904672337758268, 0.5, 0.39521885673343055, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 491172.2105106643
+calculating stable deltas...
+Time taken to compute stable deltas is 24.52596926689148 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.333353042602539 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   6 lam=4.1e-03 ov=0.999999823493 chi2=2.048408e+05 rel=6.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726990824, 10.00105125564739, 0.9000963185976676, 7.499426143372442, 0.4999746936132599, 1.0, 5.0, 0.7847799378510221, 0.9994403051977473, 1.0, 1.0471975511965976, 0.9046913125180029, 0.5, 0.3947875070736191, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490998.52613607136
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9435441493988037 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   7 lam=1.4e-03 ov=0.999999928007 chi2=6.440275e+04 rel=6.0e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726857559, 10.001051257007754, 0.9000963176758622, 7.499426143211954, 0.49997469361521524, 1.0, 5.0, 0.7847907368397767, 0.9994265119921734, 1.0, 1.0471975511965976, 0.9046753198158587, 0.5, 0.3943607629630457, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490875.74486858945
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.930795192718506 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   8 lam=4.6e-02 ov=0.999999951321 chi2=2.591362e+04 rel=2.4e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726856275, 10.001051257035874, 0.9000963176512369, 7.499426143208581, 0.4999746936156701, 1.0, 5.0, 0.7847908609948892, 0.99942621828668, 1.0, 1.0471975511965976, 0.9046742795065672, 0.5, 0.3943484361031834, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490873.37713306316
+calculating stable deltas...
+Time taken to compute stable deltas is 24.437732458114624 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.3204588890075684 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   9 lam=1.5e+04 ov=0.999999952150 chi2=2.528500e+04 rel=2.0e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726856276, 10.00105125703587, 0.9000963176512372, 7.499426143208581, 0.4999746936156702, 1.0, 5.0, 0.7847908609812596, 0.9994262182937108, 1.0, 1.0471975511965976, 0.9046742794191954, 0.5, 0.39434843598722746, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490876.0143743135
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.913933515548706 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  10 lam=6.2e-03 ov=0.999999952784 chi2=2.523550e+04 rel=1.3e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726675319, 10.00105125799572, 0.9000963173304674, 7.499426143098683, 0.49997469359256325, 1.0, 5.0, 0.7847872866446766, 0.9994256028190803, 1.0, 1.0471975511965976, 0.9046616393488428, 0.5, 0.3942373510578722, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490856.71490862
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.912764072418213 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  11 lam=2.4e-03 ov=0.999999956565 chi2=2.186133e+04 rel=1.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726322536, 10.001051259707658, 0.9000963168721776, 7.499426142903824, 0.4999746935428887, 1.0, 5.0, 0.7847752915629306, 0.9994266562843794, 1.0, 1.0471975511965976, 0.9046425467032946, 0.5, 0.39410225738844495, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490865.42286371934
+calculating stable deltas...
+Time taken to compute stable deltas is 24.280159950256348 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.3495311737060547 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  12 lam=3.3e+04 ov=0.999999966666 chi2=1.760243e+04 rel=9.9e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726322536, 10.00105125970766, 0.9000963168721773, 7.499426142903824, 0.4999746935428886, 1.0, 5.0, 0.7847752915714069, 0.9994266562794122, 1.0, 1.0471975511965976, 0.9046425467553125, 0.5, 0.39410225742953786, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490861.3892331705
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.916377544403076 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  13 lam=1.1e+04 ov=0.999999966402 chi2=1.742881e+04 rel=3.8e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726322535, 10.001051259707664, 0.9000963168721767, 7.499426142903823, 0.4999746935428884, 1.0, 5.0, 0.7847752915853138, 0.999426656270918, 1.0, 1.0471975511965976, 0.9046425468432095, 0.5, 0.39410225748892774, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490858.2552168081
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.9577574729919434 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  14 lam=3.3e-03 ov=0.999999966103 chi2=1.736219e+04 rel=1.2e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726115079, 10.00105126070162, 0.9000963166160978, 7.49942614279079, 0.4999746935133071, 1.0, 5.0, 0.7847694750939052, 0.9994277228700585, 1.0, 1.0471975511965976, 0.9046300835113598, 0.5, 0.3940279710265148, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490860.42215890496
+calculating stable deltas...
+Time taken to compute stable deltas is 24.580512046813965 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.3550877571105957 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  15 lam=2.3e+00 ov=0.999999970774 chi2=1.525531e+04 rel=1.5e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726109701, 10.001051260724086, 0.900096316612921, 7.499426142788261, 0.4999746935124441, 1.0, 5.0, 0.7847695360987661, 0.9994276822552376, 1.0, 1.0471975511965976, 0.9046305197146463, 0.5, 0.3940282042327299, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490854.11241251376
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9377665519714355 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  16 lam=3.3e+07 ov=0.999999970428 chi2=1.502942e+04 rel=2.0e-06
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6726109701, 10.001051260724086, 0.900096316612921, 7.499426142788261, 0.4999746935124441, 1.0, 5.0, 0.7847695360987693, 0.9994276822552356, 1.0, 1.0471975511965976, 0.9046305197146675, 0.5, 0.39402820423274393, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490854.11231264606
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.9447057247161865 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  17 lam=3.6e-03 ov=0.999999970428 chi2=1.502939e+04 rel=1.1e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725904687, 10.001051261685975, 0.9000963163812296, 7.499426142679038, 0.49997469348261947, 1.0, 5.0, 0.7847637532653499, 0.9994290895604531, 1.0, 1.0471975511965976, 0.9046182483336217, 0.5, 0.39396403386818174, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490852.56552313885
+calculating stable deltas...
+Time taken to compute stable deltas is 24.49752950668335 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.340402126312256 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  18 lam=1.2e+01 ov=0.999999973744 chi2=1.334767e+04 rel=5.3e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725904016, 10.00105126168876, 0.9000963163808514, 7.4994261426787245, 0.4999746934825113, 1.0, 5.0, 0.7847637619967778, 0.9994290841811749, 1.0, 1.0471975511965976, 0.9046183063494722, 0.5, 0.39396407364338765, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490848.7387139891
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.947664260864258 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  19 lam=4.0e+05 ov=0.999999973503 chi2=1.327642e+04 rel=1.2e-05
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725904016, 10.00105126168876, 0.9000963163808514, 7.4994261426787245, 0.4999746934825113, 1.0, 5.0, 0.7847637619968129, 0.9994290841811396, 1.0, 1.0471975511965976, 0.904618306349871, 0.5, 0.393964073643323, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490848.73894198943
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.9473886489868164 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  20 lam=7.1e-02 ov=0.999999973503 chi2=1.327626e+04 rel=1.1e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725883073, 10.001051261786591, 0.9000963163576337, 7.49942614266762, 0.49997469347945206, 1.0, 5.0, 0.7847631815726881, 0.9994292224209606, 1.0, 1.0471975511965976, 0.904617129551416, 0.5, 0.3939577733546143, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490844.84795034555
+calculating stable deltas...
+Time taken to compute stable deltas is 24.14205288887024 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.3026559352874756 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  21 lam=2.4e+05 ov=0.999999973464 chi2=1.313429e+04 rel=1.4e-05
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000148.6725883073, 10.001051261786591, 0.9000963163576337, 7.49942614266762, 0.49997469347945206, 1.0, 5.0, 0.7847631815722408, 0.9994292224211839, 1.0, 1.0471975511965976, 0.9046171295490774, 0.5, 0.39395777335168836, 0.0, False, False, False, True, 0.0, 0.0, 0.0, 0.0)
+Waveform Generated. SNR: 490844.8475991982
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.924551486968994 seconds
+    LM EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  22 lam=1.0e+08 ov=0.999999973465 chi2=1.313411e+04 rel=0.0e+00
+[DONE EMRI_0pa_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A] O 0.999836338925 -> 0.999999973465  chi2 2.049042e+08 -> 1.313411e+04  iters=23 accepted=22 stop=lambda_exhausted  328.3 s
+theta_final = m1=1000148.6725883073, m2=10.001051261786591, a=0.9000963163576337, p0=7.49942614266762, e0=0.49997469347945206, qS=0.7847631815722408, phiS=0.9994292224211839, Phi_phi0=0.9046171295490774, Phi_r0=0.39395777335168836
+[EMRI] T=0.9 yr dt=5.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A] O=0.999999821294 chi2=1.929348e+05 rho_s=521707.416603
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.85, 10.0000169, 0.900075603, 7.49954763, 0.499978555, 1.0, 5.0, 0.785469652, 0.999673814, 1.0, 1.0471975511965976, 0.897164047, 0.5, 0.400317493, 0.0, False, False, False, True, -28.5841091, -1.84267786, 0.0, 0.0)
+Waveform Generated. SNR: 521398.03998454823
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.373730182647705 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.55075740814209 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   0 lam=8.4e-03 ov=0.999999821294 chi2=1.929348e+05 rel=7.4e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.849852019, 10.000016903258036, 0.9000756051850202, 7.49954762973583, 0.49997855471644925, 1.0, 5.0, 0.7845128906499002, 0.9996628389799528, 1.0, 1.0471975511965976, 0.8973774534170939, 0.5, 0.40053904959343267, 0.0, False, False, False, True, -28.584182156819907, -1.8427413785250137, 0.0, 0.0)
+Waveform Generated. SNR: 521690.88518508023
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1636908054351807 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   1 lam=8.3e-01 ov=0.999999908719 chi2=4.996115e+04 rel=7.7e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498569588, 10.000016902942258, 0.900075605280724, 7.499547629769164, 0.49997855472168884, 1.0, 5.0, 0.7844944677010083, 0.9996630844602458, 1.0, 1.0471975511965976, 0.8973786056184524, 0.5, 0.4005374321084346, 0.0, False, False, False, True, -28.58416505495946, -1.8427402140939417, 0.0, 0.0)
+Waveform Generated. SNR: 521672.7609665017
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1795897483825684 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   2 lam=4.3e-01 ov=0.999999917531 chi2=4.609023e+04 rel=3.6e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498552847, 10.00001690292945, 0.9000756053459852, 7.499547629772057, 0.4999785547174677, 1.0, 5.0, 0.7844787117146174, 0.9996628980558595, 1.0, 1.0471975511965976, 0.8973840106169424, 0.5, 0.4005381725345612, 0.0, False, False, False, True, -28.584162362958924, -1.842741162109664, 0.0, 0.0)
+Waveform Generated. SNR: 521671.22722693434
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.252780437469482 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.532783031463623 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   3 lam=5.0e-01 ov=0.999999920743 chi2=4.445080e+04 rel=3.8e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498636226, 10.000016902350538, 0.9000756055449749, 7.499547629833761, 0.49997855472537495, 1.0, 5.0, 0.7845875515954778, 0.999663544016268, 1.0, 1.0471975511965976, 0.8973825447783705, 0.5, 0.40054496824706054, 0.0, False, False, False, True, -28.584130242035535, -1.8427394093237097, 0.0, 0.0)
+Waveform Generated. SNR: 521668.93606977694
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.1250741481781006 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   4 lam=9.7e-01 ov=0.999999924195 chi2=4.274250e+04 rel=2.6e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498636396, 10.000016902153776, 0.9000756057048273, 7.499547629857051, 0.49997855472139996, 1.0, 5.0, 0.7846139731221995, 0.999663698175072, 1.0, 1.0471975511965976, 0.897384045149111, 0.5, 0.4005594319187039, 0.0, False, False, False, True, -28.584116322315502, -1.842740308987584, 0.0, 0.0)
+Waveform Generated. SNR: 521682.73336071434
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1225838661193848 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   5 lam=3.2e-01 ov=0.999999922616 chi2=4.273145e+04 rel=4.4e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498651588, 10.000016901998581, 0.9000756057816075, 7.499547629874181, 0.4999785547218262, 1.0, 5.0, 0.7846323361763713, 0.9996637928955624, 1.0, 1.0471975511965976, 0.8973855236702684, 0.5, 0.40056185206503614, 0.0, False, False, False, True, -28.58410694836984, -1.8427402190624977, 0.0, 0.0)
+Waveform Generated. SNR: 521679.8216879727
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.469386339187622 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.579301357269287 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   6 lam=3.3e-01 ov=0.999999926384 chi2=4.083258e+04 rel=1.2e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498654725, 10.000016901756887, 0.9000756059683634, 7.499547629902548, 0.4999785547176359, 1.0, 5.0, 0.7846680328932275, 0.9996636726576573, 1.0, 1.0471975511965976, 0.8973946754055495, 0.5, 0.4005644867294534, 0.0, False, False, False, True, -28.58409016184022, -1.8427411685465376, 0.0, 0.0)
+Waveform Generated. SNR: 521688.62250787916
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1955180168151855 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   7 lam=1.1e-01 ov=0.999999926545 chi2=4.033773e+04 rel=4.1e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.849865459, 10.000016901555659, 0.9000756061328267, 7.499547629926389, 0.4999785547134969, 1.0, 5.0, 0.784689298312621, 0.9996633847646117, 1.0, 1.0471975511965976, 0.8974060379285778, 0.5, 0.40056153933951333, 0.0, False, False, False, True, -28.584075893124133, -1.8427421046130303, 0.0, 0.0)
+Waveform Generated. SNR: 521689.33123850764
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1871018409729004 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   8 lam=1.1e-01 ov=0.999999929552 chi2=3.867436e+04 rel=1.2e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498819888, 10.000016900243367, 0.9000756066613906, 7.499547630068206, 0.49997855472581193, 1.0, 5.0, 0.7848960058948423, 0.9996639700373577, 1.0, 1.0471975511965976, 0.8974227515034685, 0.5, 0.40055799582995494, 0.0, False, False, False, True, -28.58400055484781, -1.8427393890240764, 0.0, 0.0)
+Waveform Generated. SNR: 521672.0743206762
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.55683732032776 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.5653061866760254 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it   9 lam=3.7e-02 ov=0.999999939458 chi2=3.420332e+04 rel=9.6e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498822814, 10.000016899611483, 0.9000756071667515, 7.499547630142801, 0.49997855471360736, 1.0, 5.0, 0.7849932529955952, 0.9996637116181207, 1.0, 1.0471975511965976, 0.8974437018226809, 0.5, 0.4005725821479654, 0.0, False, False, False, True, -28.583956106544175, -1.8427421523057768, 0.0, 0.0)
+Waveform Generated. SNR: 521693.7625095429
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.167501211166382 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  10 lam=3.7e-01 ov=0.999999943558 chi2=3.091015e+04 rel=1.7e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498847907, 10.000016899336373, 0.9000756073088017, 7.499547630173317, 0.4999785547139275, 1.0, 5.0, 0.7850234325929829, 0.9996637060966471, 1.0, 1.0471975511965976, 0.8974508180599564, 0.5, 0.4005694614915615, 0.0, False, False, False, True, -28.58393929387119, -1.8427420904343037, 0.0, 0.0)
+Waveform Generated. SNR: 521686.6572927604
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1838808059692383 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  11 lam=1.2e-01 ov=0.999999944945 chi2=3.039927e+04 rel=5.2e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498840552, 10.000016899213096, 0.9000756074333133, 7.4995476301885216, 0.49997855470967134, 1.0, 5.0, 0.7850475065834298, 0.9996634677751473, 1.0, 1.0471975511965976, 0.897460161042852, 0.5, 0.40056724700872887, 0.0, False, False, False, True, -28.583929777325796, -1.8427430495224495, 0.0, 0.0)
+Waveform Generated. SNR: 521689.5923387782
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.438973665237427 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.588803291320801 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  12 lam=1.2e-01 ov=0.999999947614 chi2=2.883335e+04 rel=5.0e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.849888315, 10.000016898566212, 0.9000756078209738, 7.499547630261625, 0.4999785547065441, 1.0, 5.0, 0.785138861170728, 0.9996629345827822, 1.0, 1.0471975511965976, 0.8974816795074806, 0.5, 0.40055985907353364, 0.0, False, False, False, True, -28.583888498666784, -1.842743774089907, 0.0, 0.0)
+Waveform Generated. SNR: 521680.6557103868
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1668384075164795 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  13 lam=4.1e-02 ov=0.999999950994 chi2=2.739159e+04 rel=7.4e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498850614, 10.000016898223546, 0.9000756082064955, 7.499547630304872, 0.4999785546918533, 1.0, 5.0, 0.7851776834743506, 0.9996624577098573, 1.0, 1.0471975511965976, 0.8975031413989173, 0.5, 0.4005681563498075, 0.0, False, False, False, True, -28.583860761276235, -1.8427470839304119, 0.0, 0.0)
+Waveform Generated. SNR: 521693.58489340794
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1668765544891357 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  14 lam=3.4e-02 ov=0.999999953766 chi2=2.535832e+04 rel=1.6e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.849887939, 10.000016896809843, 0.9000756092641216, 7.499547630469944, 0.49997855466980257, 1.0, 5.0, 0.7853608224745486, 0.9996612184981937, 1.0, 1.0471975511965976, 0.8975531474801126, 0.5, 0.40057114675060834, 0.0, False, False, False, True, -28.583763683846758, -1.8427520888822162, 0.0, 0.0)
+Waveform Generated. SNR: 521703.9054900374
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 25.974624633789062 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.5164318084716797 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  15 lam=1.1e-01 ov=0.999999960962 chi2=2.126297e+04 rel=6.7e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498901208, 10.000016896589695, 0.9000756093720573, 7.49954763049422, 0.49997855467046937, 1.0, 5.0, 0.7853933171930789, 0.9996610458922277, 1.0, 1.0471975511965976, 0.8975620394088479, 0.5, 0.40056124307378815, 0.0, False, False, False, True, -28.583750415726993, -1.8427519473888676, 0.0, 0.0)
+Waveform Generated. SNR: 521691.80448010826
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.153390407562256 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  16 lam=8.1e-02 ov=0.999999964012 chi2=1.983332e+04 rel=7.0e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498914312, 10.000016896108198, 0.9000756097213228, 7.499547630550162, 0.49997855466374, 1.0, 5.0, 0.7854620461797074, 0.9996606835445009, 1.0, 1.0471975511965976, 0.8975818546352446, 0.5, 0.4005580330484884, 0.0, False, False, False, True, -28.583717707402926, -1.8427534750275731, 0.0, 0.0)
+Waveform Generated. SNR: 521690.3108143276
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1792614459991455 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  17 lam=2.7e-02 ov=0.999999966641 chi2=1.845091e+04 rel=1.6e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498929458, 10.000016895461261, 0.9000756101986205, 7.499547630625531, 0.49997855465411684, 1.0, 5.0, 0.7855590704913713, 0.9996603360942268, 1.0, 1.0471975511965976, 0.8976042659400074, 0.5, 0.4005600657494072, 0.0, False, False, False, True, -28.583673497358625, -1.842755659249467, 0.0, 0.0)
+Waveform Generated. SNR: 521701.97260707844
+calculating stable deltas...
+Time taken to compute stable deltas is 26.44468402862549 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.5214552879333496 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  18 lam=2.4e-02 ov=0.999999971490 chi2=1.554907e+04 rel=1.9e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498895526, 10.000016894233823, 0.900075611309096, 7.499547630773696, 0.4999785546210367, 1.0, 5.0, 0.785723692865521, 0.9996587079474187, 1.0, 1.0471975511965976, 0.8976640045726372, 0.5, 0.4005326483672181, 0.0, False, False, False, True, -28.58358293618596, -1.8427631320004532, 0.0, 0.0)
+Waveform Generated. SNR: 521691.2027153613
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.181840181350708 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  19 lam=2.4e-01 ov=0.999999977428 chi2=1.254974e+04 rel=1.0e-01
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8498977748, 10.000016893728478, 0.9000756114517361, 7.499547630826782, 0.4999785546301704, 1.0, 5.0, 0.7858250696935926, 0.9996590391010396, 1.0, 1.0471975511965976, 0.8976662605903675, 0.5, 0.40052387429217523, 0.0, False, False, False, True, -28.58355590498506, -1.8427611009887586, 0.0, 0.0)
+Waveform Generated. SNR: 521684.09799584094
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.171412706375122 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  20 lam=2.4e-01 ov=0.999999980305 chi2=1.126404e+04 rel=9.9e-02
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499011135, 10.000016893350397, 0.9000756116504053, 7.4995476308688165, 0.4999785546303508, 1.0, 5.0, 0.7858886616805746, 0.9996596210315932, 1.0, 1.0471975511965976, 0.8976609982580656, 0.5, 0.4005457085317351, 0.0, False, False, False, True, -28.583532683483412, -1.8427610753285208, 0.0, 0.0)
+Waveform Generated. SNR: 521694.2411120285
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.366158723831177 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.576697587966919 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  21 lam=8.1e+00 ov=0.999999981670 chi2=1.015131e+04 rel=2.0e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.84990115, 10.000016893346835, 0.900075611652115, 7.499547630869208, 0.49997855463036417, 1.0, 5.0, 0.7858880490602861, 0.9996596186719258, 1.0, 1.0471975511965976, 0.897660993792559, 0.5, 0.4005457982234753, 0.0, False, False, False, True, -28.583532470015133, -1.8427610724407189, 0.0, 0.0)
+Waveform Generated. SNR: 521697.00387637055
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1500580310821533 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  22 lam=2.7e+00 ov=0.999999981587 chi2=1.013130e+04 rel=8.4e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012968, 10.000016893335134, 0.9000756116568435, 7.499547630870473, 0.49997855463047247, 1.0, 5.0, 0.7858860845881335, 0.999659610451456, 1.0, 1.0471975511965976, 0.8976610295019951, 0.5, 0.4005458582666006, 0.0, False, False, False, True, -28.583531797655247, -1.842761048532838, 0.0, 0.0)
+Waveform Generated. SNR: 521693.1021055175
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.151338815689087 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  23 lam=9.0e+02 ov=0.999999981920 chi2=1.004638e+04 rel=1.8e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012938, 10.000016893335257, 0.9000756116568424, 7.4995476308704605, 0.4999785546304678, 1.0, 5.0, 0.7858860808056909, 0.999659610199663, 1.0, 1.0471975511965976, 0.8976610316180609, 0.5, 0.40054586017743704, 0.0, False, False, False, True, -28.583531803149743, -1.842761049575024, 0.0, 0.0)
+Waveform Generated. SNR: 521697.7254721807
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.320170164108276 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.5181236267089844 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  24 lam=3.0e+03 ov=0.999999981749 chi2=1.002856e+04 rel=1.1e-03
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012943, 10.000016893335227, 0.9000756116568485, 7.499547630870464, 0.49997855463046853, 1.0, 5.0, 0.7858860780956232, 0.9996596102317605, 1.0, 1.0471975511965976, 0.8976610314032132, 0.5, 0.40054585996538006, 0.0, False, False, False, True, -28.583531801580193, -1.8427610494081488, 0.0, 0.0)
+Waveform Generated. SNR: 521694.99243564135
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.122009515762329 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  25 lam=1.0e+03 ov=0.999999981880 chi2=1.001772e+04 rel=3.3e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012935, 10.00001689333525, 0.9000756116568559, 7.499547630870462, 0.49997855463046714, 1.0, 5.0, 0.7858860704281234, 0.9996596101653743, 1.0, 1.0471975511965976, 0.8976610321935594, 0.5, 0.40054586069649517, 0.0, False, False, False, True, -28.5835318023405, -1.8427610497243634, 0.0, 0.0)
+Waveform Generated. SNR: 521695.0556768471
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.111175537109375 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  26 lam=3.3e+04 ov=0.999999981883 chi2=1.001442e+04 rel=5.4e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012935, 10.00001689333525, 0.9000756116568561, 7.499547630870462, 0.4999785546304671, 1.0, 5.0, 0.7858860701977434, 0.9996596101635056, 1.0, 1.0471975511965976, 0.8976610322161778, 0.5, 0.40054586071747955, 0.0, False, False, False, True, -28.583531802359218, -1.8427610497332483, 0.0, 0.0)
+Waveform Generated. SNR: 521697.30909397773
+calculating stable deltas...
+minimum relative error is greater than 1% for qS. Fisher may be unstable!
+Time taken to compute stable deltas is 26.185192346572876 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.56986141204834 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  27 lam=1.1e+05 ov=0.999999981800 chi2=1.000901e+04 rel=7.9e-04
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012935, 10.00001689333525, 0.9000756116568562, 7.499547630870462, 0.4999785546304671, 1.0, 5.0, 0.7858860701257431, 0.9996596101639983, 1.0, 1.0471975511965976, 0.8976610322138171, 0.5, 0.40054586071415726, 0.0, False, False, False, True, -28.58353180232919, -1.842761049730551, 0.0, 0.0)
+Waveform Generated. SNR: 521695.3165651299
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.124218463897705 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  28 lam=3.3e+07 ov=0.999999981896 chi2=1.000106e+04 rel=6.8e-05
+waveform shape: (2, 5680466)
+Computing SNR for parameters: (1000119.8499012935, 10.00001689333525, 0.9000756116568562, 7.499547630870462, 0.4999785546304671, 1.0, 5.0, 0.7858860701255149, 0.9996596101639956, 1.0, 1.0471975511965976, 0.8976610322138477, 0.5, 0.4005458607141787, 0.0, False, False, False, True, -28.583531802329233, -1.8427610497305633, 0.0, 0.0)
+Waveform Generated. SNR: 521695.31385217083
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.1798012256622314 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A it  29 lam=1.0e+08 ov=0.999999981898 chi2=1.000038e+04 rel=0.0e+00
+[DONE EMRI_pn_rishav_old_Tfrac0.9-1 lm_T0.9 T=0.9 old adhoc_A] O 0.999999821294 -> 0.999999981898  chi2 1.929348e+05 -> 1.000038e+04  iters=30 accepted=29 stop=lambda_exhausted  405.2 s
+theta_final = m1=1000119.8499012935, m2=10.00001689333525, a=0.9000756116568562, p0=7.499547630870462, e0=0.4999785546304671, qS=0.7858860701255149, phiS=0.9996596101639956, Phi_phi0=0.8976610322138477, Phi_r0=0.4005458607141787, C_p=-28.583531802329233, C_e=-1.8427610497305633
+[EMRI] T=1.0 yr dt=5.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A] O=0.999966468067 chi2=1.904393e+07 rho_s=490826.181275
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8499012935, 10.00001689333525, 0.9000756116568562, 7.499547630870462, 0.4999785546304671, 1.0, 5.0, 0.7858860701255149, 0.9996596101639956, 1.0, 1.0471975511965976, 0.8976610322138477, 0.5, 0.4005458607141787, 0.0, False, False, False, True, -28.583531802329233, -1.8427610497305633, 0.0, 0.0)
+Waveform Generated. SNR: 492509.0826782114
+calculating stable deltas...
+Time taken to compute stable deltas is 28.564399242401123 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.790881872177124 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   0 lam=3.3e-03 ov=0.999966468067 chi2=1.904393e+07 rel=9.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494815852, 10.000016908957742, 0.9000756111771893, 7.499547629129414, 0.4999785539017412, 1.0, 5.0, 0.7856828031646025, 0.9997490075260587, 1.0, 1.0471975511965976, 0.8976105062513963, 0.5, 0.40158494693722485, 0.0, False, False, False, True, -28.584207685338882, -1.842905728934184, 0.0, 0.0)
+Waveform Generated. SNR: 490537.30321168556
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.448408603668213 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   1 lam=1.1e-02 ov=0.999999662540 chi2=2.459499e+05 rel=4.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494217101, 10.000016911127949, 0.9000756111704474, 7.4995476288881715, 0.49997855379608996, 1.0, 5.0, 0.7856370455633533, 0.999769067860243, 1.0, 1.0471975511965976, 0.8975731745711429, 0.5, 0.4017508240821043, 0.0, False, False, False, True, -28.584300222536218, -1.8429267175402397, 0.0, 0.0)
+Waveform Generated. SNR: 490642.22695753747
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.454392671585083 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   2 lam=9.7e+00 ov=0.999999810018 chi2=1.253421e+05 rel=2.1e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494216785, 10.000016911128396, 0.9000756111711816, 7.49954762888813, 0.49997855379601364, 1.0, 5.0, 0.7856368838226899, 0.9997691420586544, 1.0, 1.0471975511965976, 0.8975729147299785, 0.5, 0.40175118230071566, 0.0, False, False, False, True, -28.58430022494502, -1.8429267328387573, 0.0, 0.0)
+Waveform Generated. SNR: 490642.3860159688
+calculating stable deltas...
+Time taken to compute stable deltas is 28.98957896232605 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8433034420013428 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   3 lam=3.2e+07 ov=0.999999810446 chi2=1.250774e+05 rel=2.2e-07
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494216785, 10.000016911128396, 0.9000756111711816, 7.49954762888813, 0.49997855379601364, 1.0, 5.0, 0.7856368838226684, 0.9997691420586646, 1.0, 1.0471975511965976, 0.8975729147299308, 0.5, 0.4017511823007402, 0.0, False, False, False, True, -28.58430022494499, -1.8429267328387533, 0.0, 0.0)
+Waveform Generated. SNR: 490642.38590526115
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.443657398223877 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   4 lam=1.1e+07 ov=0.999999810446 chi2=1.250774e+05 rel=2.5e-04
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494216785, 10.000016911128396, 0.9000756111711816, 7.49954762888813, 0.49997855379601364, 1.0, 5.0, 0.7856368838226037, 0.9997691420586952, 1.0, 1.0471975511965976, 0.8975729147297878, 0.5, 0.4017511823008137, 0.0, False, False, False, True, -28.58430022494489, -1.8429267328387413, 0.0, 0.0)
+Waveform Generated. SNR: 490643.2346811363
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4480020999908447 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   5 lam=3.3e+07 ov=0.999999809864 chi2=1.250466e+05 rel=9.2e-05
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494216785, 10.000016911128396, 0.9000756111711816, 7.49954762888813, 0.49997855379601364, 1.0, 5.0, 0.7856368838225836, 0.9997691420587046, 1.0, 1.0471975511965976, 0.8975729147297464, 0.5, 0.4017511823008417, 0.0, False, False, False, True, -28.584300224944865, -1.8429267328387389, 0.0, 0.0)
+Waveform Generated. SNR: 490647.21990160603
+calculating stable deltas...
+Time taken to compute stable deltas is 28.96841263771057 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.8272976875305176 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   6 lam=3.3e-02 ov=0.999999806895 chi2=1.250351e+05 rel=2.0e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8494042974, 10.000016911764927, 0.900075611162363, 7.499547628817303, 0.49997855376553424, 1.0, 5.0, 0.7856233437695308, 0.9997748037328266, 1.0, 1.0471975511965976, 0.8975621446215588, 0.5, 0.40179575504499504, 0.0, False, False, False, True, -28.58432752176672, -1.842932786636373, 0.0, 0.0)
+Waveform Generated. SNR: 490684.9691120797
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.4335670471191406 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   7 lam=1.1e-02 ov=0.999999833858 chi2=9.996838e+04 rel=3.9e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493670995, 10.00001691316872, 0.9000756110999256, 7.499547628660667, 0.4999785537015098, 1.0, 5.0, 0.7855948400149719, 0.9997856994720651, 1.0, 1.0471975511965976, 0.8975399768499761, 0.5, 0.40186878587287794, 0.0, False, False, False, True, -28.584388695728773, -1.842945495899931, 0.0, 0.0)
+Waveform Generated. SNR: 490727.77846807166
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4252402782440186 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   8 lam=9.1e-01 ov=0.999999893006 chi2=6.122450e+04 rel=2.4e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.849366925, 10.000016913172267, 0.9000756111028265, 7.499547628660303, 0.4999785537011214, 1.0, 5.0, 0.7855939018429358, 0.9997861174053425, 1.0, 1.0471975511965976, 0.8975383808541565, 0.5, 0.4018700843640565, 0.0, False, False, False, True, -28.584388781090986, -1.8429455736608655, 0.0, 0.0)
+Waveform Generated. SNR: 490740.518564377
+calculating stable deltas...
+Time taken to compute stable deltas is 28.583483934402466 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7847838401794434 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it   9 lam=6.5e-02 ov=0.999999891145 chi2=5.977761e+04 rel=1.1e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493568266, 10.000016913555394, 0.9000756110837502, 7.499547628617534, 0.4999785536837996, 1.0, 5.0, 0.7855862300452585, 0.9997893142025919, 1.0, 1.0471975511965976, 0.8975309629563739, 0.5, 0.4018881425238805, 0.0, False, False, False, True, -28.584405522413903, -1.842949012049706, 0.0, 0.0)
+Waveform Generated. SNR: 490777.8066525775
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.443157911300659 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  10 lam=2.2e-02 ov=0.999999894605 chi2=5.311665e+04 rel=1.6e-01
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493424508, 10.000016914113282, 0.9000756110434969, 7.499547628555128, 0.49997855365950267, 1.0, 5.0, 0.7855766980711307, 0.9997931802009002, 1.0, 1.0471975511965976, 0.8975223261862411, 0.5, 0.40190792945823567, 0.0, False, False, False, True, -28.584430182918183, -1.8429538328064823, 0.0, 0.0)
+Waveform Generated. SNR: 490786.26918043965
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4601097106933594 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  11 lam=7.3e-02 ov=0.999999911055 chi2=4.444520e+04 rel=4.4e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493386136, 10.000016914262973, 0.900075611031936, 7.499547628538376, 0.4999785536530399, 1.0, 5.0, 0.7855740167700115, 0.9997942617371093, 1.0, 1.0471975511965976, 0.8975196615249574, 0.5, 0.40191261086244107, 0.0, False, False, False, True, -28.584436816823978, -1.842955114844467, 0.0, 0.0)
+Waveform Generated. SNR: 490779.57015256165
+calculating stable deltas...
+Time taken to compute stable deltas is 29.055715322494507 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.8484137058258057 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  12 lam=2.4e+00 ov=0.999999916347 chi2=4.247456e+04 rel=1.2e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.849338892, 10.000016914251328, 0.9000756110335977, 7.499547628539687, 0.49997855365348637, 1.0, 5.0, 0.7855738703627779, 0.9997943309063209, 1.0, 1.0471975511965976, 0.8975191892589274, 0.5, 0.40191238127281004, 0.0, False, False, False, True, -28.58443628342779, -1.842955026460737, 0.0, 0.0)
+Waveform Generated. SNR: 490789.4581171541
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.5516698360443115 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  13 lam=3.3e+07 ov=0.999999915673 chi2=4.197625e+04 rel=1.4e-07
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.849338892, 10.000016914251328, 0.9000756110335977, 7.499547628539687, 0.49997855365348637, 1.0, 5.0, 0.7855738703627693, 0.9997943309063247, 1.0, 1.0471975511965976, 0.8975191892589048, 0.5, 0.4019123812728043, 0.0, False, False, False, True, -28.584436283427774, -1.8429550264607344, 0.0, 0.0)
+Waveform Generated. SNR: 490789.45819553226
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.444742202758789 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  14 lam=3.3e+07 ov=0.999999915673 chi2=4.197624e+04 rel=1.3e-06
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.849338892, 10.000016914251328, 0.9000756110335977, 7.499547628539687, 0.49997855365348637, 1.0, 5.0, 0.7855738703627606, 0.9997943309063286, 1.0, 1.0471975511965976, 0.8975191892588823, 0.5, 0.4019123812727986, 0.0, False, False, False, True, -28.584436283427756, -1.8429550264607317, 0.0, 0.0)
+Waveform Generated. SNR: 490789.458261368
+calculating stable deltas...
+Time taken to compute stable deltas is 29.458251953125 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.8500351905822754 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  15 lam=3.3e+07 ov=0.999999915673 chi2=4.197619e+04 rel=1.9e-06
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.849338892, 10.000016914251328, 0.9000756110335977, 7.499547628539687, 0.49997855365348637, 1.0, 5.0, 0.785573870362752, 0.9997943309063324, 1.0, 1.0471975511965976, 0.8975191892588598, 0.5, 0.4019123812727929, 0.0, False, False, False, True, -28.58443628342774, -1.842955026460729, 0.0, 0.0)
+Waveform Generated. SNR: 490789.4583128116
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4281086921691895 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  16 lam=8.2e-02 ov=0.999999915673 chi2=4.197611e+04 rel=6.0e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493316616, 10.00001691453688, 0.9000756110081554, 7.499547628507696, 0.49997855364141003, 1.0, 5.0, 0.7855687076386405, 0.9997962895721872, 1.0, 1.0471975511965976, 0.8975137153078369, 0.5, 0.4019190269471913, 0.0, False, False, False, True, -28.584449015104806, -1.8429574215443472, 0.0, 0.0)
+Waveform Generated. SNR: 490813.1067266331
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.433978319168091 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  17 lam=8.8e-01 ov=0.999999918435 chi2=3.946982e+04 rel=6.0e-03
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493301463, 10.000016914597618, 0.9000756110018784, 7.499547628500882, 0.49997855363890514, 1.0, 5.0, 0.7855681899792802, 0.9997964867906912, 1.0, 1.0471975511965976, 0.8975136727318026, 0.5, 0.4019204598752548, 0.0, False, False, False, True, -28.584451742794435, -1.842957918072143, 0.0, 0.0)
+Waveform Generated. SNR: 490814.26686212834
+calculating stable deltas...
+Time taken to compute stable deltas is 28.691750526428223 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.7924118041992188 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  18 lam=2.9e+01 ov=0.999999918864 chi2=3.923416e+04 rel=1.2e-02
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493300691, 10.00001691460077, 0.9000756110014972, 7.499547628500528, 0.4999785536387792, 1.0, 5.0, 0.785568194598349, 0.9997964828228086, 1.0, 1.0471975511965976, 0.8975137354158422, 0.5, 0.4019205322009789, 0.0, False, False, False, True, -28.5844518856419, -1.842957943023612, 0.0, 0.0)
+Waveform Generated. SNR: 490801.6935572118
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.402353525161743 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  19 lam=9.7e+06 ov=0.999999920779 chi2=3.876802e+04 rel=2.6e-06
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493300691, 10.00001691460077, 0.9000756110014972, 7.499547628500528, 0.4999785536387792, 1.0, 5.0, 0.7855681945983255, 0.9997964828228174, 1.0, 1.0471975511965976, 0.8975137354158095, 0.5, 0.4019205322009889, 0.0, False, False, False, True, -28.58445188564192, -1.8429579430236158, 0.0, 0.0)
+Waveform Generated. SNR: 490801.69322056725
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.4565224647521973 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  20 lam=3.3e+07 ov=0.999999920779 chi2=3.876792e+04 rel=2.1e-07
+waveform shape: (2, 6311629)
+Computing SNR for parameters: (1000119.8493300691, 10.00001691460077, 0.9000756110014972, 7.499547628500528, 0.4999785536387792, 1.0, 5.0, 0.7855681945983186, 0.99979648282282, 1.0, 1.0471975511965976, 0.8975137354157999, 0.5, 0.4019205322009918, 0.0, False, False, False, True, -28.584451885641922, -1.842957943023617, 0.0, 0.0)
+Waveform Generated. SNR: 490801.6931945996
+calculating stable deltas...
+Time taken to compute stable deltas is 29.109497547149658 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 2.83945369720459 seconds
+    LM EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A it  21 lam=1.0e+08 ov=0.999999920779 chi2=3.876791e+04 rel=0.0e+00
+[DONE EMRI_pn_rishav_old_Tfrac0.9-1 lm T=1.0 T0.9_final adhoc_A] O 0.999966468067 -> 0.999999920779  chi2 1.904393e+07 -> 3.876791e+04  iters=22 accepted=21 stop=lambda_exhausted  367.8 s
+theta_final = m1=1000119.8493300691, m2=10.00001691460077, a=0.9000756110014972, p0=7.499547628500528, e0=0.4999785536387792, qS=0.7855681945983186, phiS=0.99979648282282, Phi_phi0=0.8975137354157999, Phi_r0=0.4019205322009918, C_p=-28.584451885641922, C_e=-1.842957943023617

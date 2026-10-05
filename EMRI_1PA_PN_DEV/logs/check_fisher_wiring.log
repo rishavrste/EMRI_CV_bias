@@ -1,0 +1,22 @@
+WARNING: Could not find any nv files on this host!
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=False gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cpu'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+1. AET[:2] vs AE response: rel diff 0.000e+00  (GEN tdi_chan AET)
+2. flags signal (True, False, False) template (False, False, False); overlap(1PA signal, 0PA template) at the injection 0.8334378238; signal rebuilt vs P['s'] rel diff 0.000e+00
+3. 0PA, deviation on with C = 0 vs off: rel diff 0.000e+00
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000047.5144555958, 10.00039926239394, 9.311137982617783e-05, 11.097037874373262, 0.1999888869522589, 1.0, 6.165893030556978, 1.0472281499662235, 0.7852723796630945, 0.6283185307179586, 0.5235987755982988, 0.09980915386117561, 0.2, 0.3021860387192606, 0.95, False, False, False, True, 24.421440847511906, -0.7189110967226678, 0.0, 0.0)
+Waveform Generated. SNR: 3.089142833797643
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+minimum relative error is greater than 1% for a. Fisher may be unstable!
+Time taken to compute stable deltas is 1710.6696906089783 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 180.520033121109 seconds
+   SEF steps: {'m1': 35.113585665788754, 'm2': 0.0003511331922896869, 'a': 1.1479206102365533e-09, 'p0': 0.00038963827658771637, 'e0': 7.021993268016556e-06, 'qS': 6.890061936594562e-05, 'phiS': 0.00041907625048355875, 'Phi_phi0': 0.0, 'Phi_r0': 0.0, 'C_p': 0.8574836124140759, 'C_e': -0.025242347004481667}
+4. d/dPhi_phi0: SEF vs central FD (step 1e-06): rel diff 9.075e-06
+4. d/dqS: SEF vs central FD (step 1e-07): rel diff 7.654e-02
+4. d/dC_p: SEF vs central FD (step 0.001): rel diff 1.384e-01
