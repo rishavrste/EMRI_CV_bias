@@ -1,0 +1,682 @@
+startup
+[INFO] use_gpu = True
+SuperKludge_r branch: environ_shubham
+[INFO] der_order = 8, Ndelta = 24, tdi = 2nd generation, nchannels = 2, band = [1e-05, 0.1]
+[INFO] 25 sources: ['run_2/idx00', 'run_2/idx01', 'run_2/idx02', 'run_2/idx03', 'run_2/idx04', 'run_2/idx05', 'run_2/idx06', 'run_2/idx07', 'run_2/idx08', 'run_2/idx09', 'run_2/idx10', 'run_2/idx11', 'run_2/idx12', 'run_2/idx13', 'run_2/idx14', 'run_2/idx15', 'run_2/idx16', 'run_2/idx17', 'run_2/idx18', 'run_2/idx19', 'run_2/idx20', 'run_2/idx21', 'run_2/idx22', 'run_2/idx23', 'run_2/idx24']
+
+=== run_2/idx00 (p0 = 10.014) ===
+[run_2/idx00] snr = 200.000, context in 96.9 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10179182)
+Computing SNR for parameters: (np.float64(2103771.7367455196), np.float64(49.991056916204656), np.float64(0.9000310038453858), np.float64(10.012102320983695), 0.0, 1.0, 2.4867579647442586, np.float64(0.1956354270815906), np.float64(0.2028380987512861), 0.8, 0.8, np.float64(0.21596648283523348), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 4.037932007164501e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.11668166610673
+calculating stable deltas...
+Time taken to compute stable deltas is 132.5300006866455 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 11.597249746322632 seconds
+[FISH] [run_2/idx00 0PA]: cond 1.454e+21 -> 3.378e+10 scaled, min eig(C_hat) = 1.626e-01, inv residual = 7.18e-07 (0.10 x float64 limit), rank 7/7, 146.1 s
+    [DELTA] [run_2/idx00 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 2.16e-06 -> 2.16e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10179182)
+Computing SNR for parameters: (np.float64(2100356.685535502), np.float64(50.05405560100598), np.float64(0.8997839460531165), np.float64(10.023317872241927), 0.0, 1.0, 2.4867579647442586, np.float64(0.1997095352269605), np.float64(0.2086440377098079), 0.8, 0.8, np.float64(0.26177716622278), 0.5, 0.5, 0.0, False, False, False, True, np.float64(58.74984476421244), 0.0, False, 4.037932007164501e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.04581574341665
+calculating stable deltas...
+Time taken to compute stable deltas is 156.444598197937 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.082213878631592 seconds
+[FISH] [run_2/idx00 0PA+PN]: cond 8.494e+20 -> 3.228e+12 scaled, min eig(C_hat) = 1.403e-01, inv residual = 3.88e-05 (0.05 x float64 limit), rank 8/8, 162.4 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx00.json (410.5 s)
+
+=== run_2/idx01 (p0 = 7.008) ===
+[run_2/idx01] snr = 200.000, context in 54.1 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12400750)
+Computing SNR for parameters: (np.float64(4652015.275821533), np.float64(49.99964937394148), np.float64(0.9000026857101834), np.float64(7.007993250321299), 0.0, 1.0, 1.8456565763912534, np.float64(0.20029706899547825), np.float64(0.2007968706689587), 0.8, 0.8, np.float64(0.2914715930895553), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 8.931718176749147e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.03085581777722
+calculating stable deltas...
+Time taken to compute stable deltas is 143.0362401008606 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.837329864501953 seconds
+[FISH] [run_2/idx01 0PA]: cond 1.282e+21 -> 3.550e+09 scaled, min eig(C_hat) = 1.652e-01, inv residual = 5.03e-08 (0.06 x float64 limit), rank 7/7, 149.2 s
+    [DELTA] [run_2/idx01 0PA+PN] C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 3.65e-06 -> 3.65e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12400750)
+Computing SNR for parameters: (np.float64(4651623.778127221), np.float64(50.00367017029806), np.float64(0.8999866017682951), np.float64(7.008410123814049), 0.0, 1.0, 1.8456565763912534, np.float64(0.20005895308391067), np.float64(0.1993629727660405), 0.8, 0.8, np.float64(0.29630109224626705), 0.5, 0.5, 0.0, False, False, False, True, np.float64(11.956193684135517), 0.0, False, 8.931718176749147e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99155892840835
+calculating stable deltas...
+Time taken to compute stable deltas is 161.9796552658081 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.299563646316528 seconds
+[FISH] [run_2/idx01 0PA+PN]: cond 5.516e+21 -> 3.652e+11 scaled, min eig(C_hat) = 1.420e-01, inv residual = 8.11e-06 (0.10 x float64 limit), rank 8/8, 168.6 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx01.json (385.6 s)
+
+=== run_2/idx02 (p0 = 9.646) ===
+[run_2/idx02] snr = 200.000, context in 48.5 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12051176)
+Computing SNR for parameters: (np.float64(2461422.2851915876), np.float64(49.99375828303036), np.float64(0.9000235415119432), np.float64(9.644200136972406), 0.0, 1.0, 2.5115159278082695, np.float64(0.20270396952006042), np.float64(0.20398413953119826), 0.8, 0.8, np.float64(0.21314352688366484), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 4.724839916294594e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.46073315872573
+calculating stable deltas...
+Time taken to compute stable deltas is 89.73616623878479 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.9275665283203125 seconds
+[FISH] [run_2/idx02 0PA]: cond 1.891e+21 -> 2.710e+10 scaled, min eig(C_hat) = 1.747e-01, inv residual = 4.86e-07 (0.08 x float64 limit), rank 7/7, 96.0 s
+    [DELTA] [run_2/idx02 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 2.23e-06 -> 2.23e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12051176)
+Computing SNR for parameters: (np.float64(2458361.4834441748), np.float64(50.04287045033963), np.float64(0.8998287084898293), np.float64(9.652490988320936), 0.0, 1.0, 2.5115159278082695, np.float64(0.20053011602102275), np.float64(0.19397580932328184), 0.8, 0.8, np.float64(0.2602731362403772), 0.5, 0.5, 0.0, False, False, False, True, np.float64(56.23016342511772), 0.0, False, 4.724839916294594e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.90965107724625
+calculating stable deltas...
+Time taken to compute stable deltas is 102.65310335159302 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.448202610015869 seconds
+[FISH] [run_2/idx02 0PA+PN]: cond 1.716e+22 -> 2.721e+12 scaled, min eig(C_hat) = 1.489e-01, inv residual = 4.61e-05 (0.08 x float64 limit), rank 8/8, 109.4 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx02.json (259.9 s)
+
+=== run_2/idx03 (p0 = 9.280) ===
+[run_2/idx03] snr = 200.000, context in 47.0 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10428650)
+Computing SNR for parameters: (np.float64(2467806.10566683), np.float64(49.99571402017001), np.float64(0.9000176087573291), np.float64(9.278909803117603), 0.0, 1.0, 2.219996839398543, np.float64(0.19765118393003328), np.float64(0.19622702614019621), 0.8, 0.8, np.float64(0.24593547176902797), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 4.737422284108011e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.04958371432505
+calculating stable deltas...
+Time taken to compute stable deltas is 83.05422520637512 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6806421279907227 seconds
+[FISH] [run_2/idx03 0PA]: cond 1.057e+21 -> 1.738e+10 scaled, min eig(C_hat) = 1.737e-01, inv residual = 2.51e-07 (0.06 x float64 limit), rank 7/7, 88.7 s
+    [DELTA] [run_2/idx03 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 1.86e-06 -> 1.86e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10428650)
+Computing SNR for parameters: (np.float64(2465762.700014729), np.float64(50.02902918431867), np.float64(0.8998834624494085), np.float64(9.284231629531144), 0.0, 1.0, 2.219996839398543, np.float64(0.19935834904043895), np.float64(0.2047618632952914), 0.8, 0.8, np.float64(0.2773962795421695), 0.5, 0.5, 0.0, False, False, False, True, np.float64(40.162468048073286), 0.0, False, 4.737422284108011e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99355490879068
+calculating stable deltas...
+Time taken to compute stable deltas is 93.894296169281 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.13636040687561 seconds
+[FISH] [run_2/idx03 0PA+PN]: cond 2.632e+22 -> 1.582e+12 scaled, min eig(C_hat) = 1.482e-01, inv residual = 3.46e-05 (0.10 x float64 limit), rank 8/8, 100.0 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx03.json (240.9 s)
+
+=== run_2/idx04 (p0 = 5.544) ===
+[run_2/idx04] snr = 200.000, context in 47.1 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11298981)
+Computing SNR for parameters: (np.float64(7099525.0276324265), np.float64(49.99996712959601), np.float64(0.9000005622059238), np.float64(5.544188779216409), 0.0, 1.0, 1.5309827888624903, np.float64(0.199975801903008), np.float64(0.19974282324199064), 0.8, 0.8, np.float64(0.2987975960865314), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00013631050284335672, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99985002792863
+calculating stable deltas...
+Time taken to compute stable deltas is 82.23056077957153 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.5730721950531006 seconds
+[FISH] [run_2/idx04 0PA]: cond 2.149e+21 -> 1.220e+09 scaled, min eig(C_hat) = 1.833e-01, inv residual = 2.16e-08 (0.08 x float64 limit), rank 7/7, 88.0 s
+    [DELTA] [run_2/idx04 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 9.73e-06 -> 9.73e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11298981)
+Computing SNR for parameters: (np.float64(7099450.636090824), np.float64(50.000604632005015), np.float64(0.8999983706153174), np.float64(5.5442308850649455), 0.0, 1.0, 1.5309827888624903, np.float64(0.19997643546384075), np.float64(0.20005293775853036), 0.8, 0.8, np.float64(0.29955114418722084), 0.5, 0.5, 0.0, False, False, False, True, np.float64(3.399733200956834), 0.0, False, 0.00013631050284335672, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99883775426693
+calculating stable deltas...
+Time taken to compute stable deltas is 92.01784873008728 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.027251482009888 seconds
+[FISH] [run_2/idx04 0PA+PN]: cond 4.814e+22 -> 9.391e+10 scaled, min eig(C_hat) = 1.552e-01, inv residual = 1.20e-06 (0.06 x float64 limit), rank 8/8, 98.2 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx04.json (239.0 s)
+
+=== run_2/idx05 (p0 = 4.740) ===
+[run_2/idx05] snr = 200.000, context in 47.3 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10658092)
+Computing SNR for parameters: (np.float64(9594435.06803014), np.float64(49.999996255216445), np.float64(0.9000002287118949), np.float64(4.740413756440196), 0.0, 1.0, 1.0236827143233989, np.float64(0.1999845149155291), np.float64(0.20004761664179835), 0.8, 0.8, np.float64(0.299766764829834), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.0001842129691510367, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99984107355857
+calculating stable deltas...
+Time taken to compute stable deltas is 79.35342860221863 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.429971933364868 seconds
+[FISH] [run_2/idx05 0PA]: cond 2.295e+21 -> 4.532e+08 scaled, min eig(C_hat) = 2.004e-01, inv residual = 1.02e-08 (0.10 x float64 limit), rank 7/7, 84.8 s
+    [DELTA] [run_2/idx05 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 2.11e-06 -> 2.11e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10658092)
+Computing SNR for parameters: (np.float64(9594429.36425962), np.float64(50.000043210607295), np.float64(0.900000100520758), np.float64(4.740415843859117), 0.0, 1.0, 1.0236827143233989, np.float64(0.19998867137381146), np.float64(0.20004744522677098), 0.8, 0.8, np.float64(0.2998072255565232), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.36336091057224146), 0.0, False, 0.0001842129691510367, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.9998604478275
+calculating stable deltas...
+Time taken to compute stable deltas is 88.72315073013306 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.881629705429077 seconds
+[FISH] [run_2/idx05 0PA+PN]: cond 9.656e+22 -> 3.142e+10 scaled, min eig(C_hat) = 1.675e-01, inv residual = 9.96e-07 (0.14 x float64 limit), rank 8/8, 94.6 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx05.json (232.0 s)
+
+=== run_2/idx06 (p0 = 4.930) ===
+[run_2/idx06] snr = 200.000, context in 46.6 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12268171)
+Computing SNR for parameters: (np.float64(9456789.10240765), np.float64(49.99999169543243), np.float64(0.9000002996640125), np.float64(4.930244120266661), 0.0, 1.0, 1.106751323733824, np.float64(0.200019507731141), np.float64(0.19993896470328343), 0.8, 0.8, np.float64(0.2995481051841851), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00018157010510986654, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99993785138008
+calculating stable deltas...
+Time taken to compute stable deltas is 86.03673362731934 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.780876874923706 seconds
+[FISH] [run_2/idx06 0PA]: cond 2.639e+21 -> 7.331e+08 scaled, min eig(C_hat) = 1.752e-01, inv residual = 2.67e-08 (0.16 x float64 limit), rank 7/7, 92.1 s
+    [DELTA] [run_2/idx06 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 2.91e-06 -> 2.91e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12268171)
+Computing SNR for parameters: (np.float64(9456776.262942195), np.float64(50.000091941085756), np.float64(0.9000000084967262), np.float64(4.930249050565619), 0.0, 1.0, 1.106751323733824, np.float64(0.20001111553504272), np.float64(0.199933862206169), 0.8, 0.8, np.float64(0.2996650029834912), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.7544258493584917), 0.0, False, 0.00018157010510986654, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99989036556906
+calculating stable deltas...
+Time taken to compute stable deltas is 96.30933499336243 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.2022130489349365 seconds
+[FISH] [run_2/idx06 0PA+PN]: cond 1.613e+22 -> 4.640e+10 scaled, min eig(C_hat) = 1.495e-01, inv residual = 1.24e-06 (0.12 x float64 limit), rank 8/8, 102.9 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx06.json (247.6 s)
+
+=== run_2/idx07 (p0 = 5.189) ===
+[run_2/idx07] snr = 200.000, context in 46.4 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9433575)
+Computing SNR for parameters: (np.float64(7440158.140288811), np.float64(49.99998514757412), np.float64(0.900000357410604), np.float64(5.189428395944709), 0.0, 1.0, 1.3262278861564767, np.float64(0.20001953411345638), np.float64(0.2001214603035518), 0.8, 0.8, np.float64(0.2994883480331261), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00014285079700772718, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00213608109976
+calculating stable deltas...
+Time taken to compute stable deltas is 74.15899109840393 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.272329568862915 seconds
+[FISH] [run_2/idx07 0PA]: cond 1.551e+21 -> 7.897e+08 scaled, min eig(C_hat) = 1.675e-01, inv residual = 2.39e-08 (0.14 x float64 limit), rank 7/7, 79.2 s
+    [DELTA] [run_2/idx07 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 3.80e-06 -> 3.80e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9433575)
+Computing SNR for parameters: (np.float64(7440116.104594291), np.float64(50.000355919411874), np.float64(0.8999991613177097), np.float64(5.189449822669207), 0.0, 1.0, 1.3262278861564767, np.float64(0.2000090837534207), np.float64(0.19997037372385995), 0.8, 0.8, np.float64(0.2997730259031399), 0.5, 0.5, 0.0, False, False, False, True, np.float64(2.127942396626988), 0.0, False, 0.00014285079700772718, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00053305975666
+calculating stable deltas...
+Time taken to compute stable deltas is 83.0818977355957 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.637754201889038 seconds
+[FISH] [run_2/idx07 0PA+PN]: cond 1.360e+22 -> 6.675e+10 scaled, min eig(C_hat) = 1.439e-01, inv residual = 1.06e-06 (0.07 x float64 limit), rank 8/8, 88.5 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx07.json (219.2 s)
+
+=== run_2/idx08 (p0 = 5.274) ===
+[run_2/idx08] snr = 200.000, context in 47.0 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12186961)
+Computing SNR for parameters: (np.float64(8176610.776845024), np.float64(49.9999797412769), np.float64(0.9000004391437525), np.float64(5.273682291869121), 0.0, 1.0, 1.2907634686595577, np.float64(0.20003420767513508), np.float64(0.199899541610874), 0.8, 0.8, np.float64(0.2991641717369197), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.0001569905990495781, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00031423332584
+calculating stable deltas...
+Time taken to compute stable deltas is 85.84778213500977 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.796933174133301 seconds
+[FISH] [run_2/idx08 0PA]: cond 2.114e+21 -> 9.527e+08 scaled, min eig(C_hat) = 1.761e-01, inv residual = 1.98e-08 (0.09 x float64 limit), rank 7/7, 92.0 s
+    [DELTA] [run_2/idx08 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 5.33e-06 -> 5.33e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12186961)
+Computing SNR for parameters: (np.float64(8176594.097771873), np.float64(50.00011536209462), np.float64(0.9000000060549023), np.float64(5.273690142301045), 0.0, 1.0, 1.2907634686595577, np.float64(0.2000223953606148), np.float64(0.19988493904757873), 0.8, 0.8, np.float64(0.2993446774148223), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.8598596182305401), 0.0, False, 0.0001569905990495781, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.9998105459089
+calculating stable deltas...
+Time taken to compute stable deltas is 95.15492939949036 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.189022779464722 seconds
+[FISH] [run_2/idx08 0PA+PN]: cond 1.780e+22 -> 6.954e+10 scaled, min eig(C_hat) = 1.501e-01, inv residual = 1.24e-06 (0.08 x float64 limit), rank 8/8, 101.7 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx08.json (246.6 s)
+
+=== run_2/idx09 (p0 = 5.985) ===
+[run_2/idx09] snr = 200.000, context in 46.5 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9988757)
+Computing SNR for parameters: (np.float64(5714790.893085901), np.float64(49.999933141582524), np.float64(0.9000008513414286), np.float64(5.984588292906901), 0.0, 1.0, 1.5495612690146865, np.float64(0.19992468204090505), np.float64(0.20044768623562947), 0.8, 0.8, np.float64(0.29815498465887086), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00010972349525790837, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00721321941828
+calculating stable deltas...
+Time taken to compute stable deltas is 78.84468626976013 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.4033143520355225 seconds
+[FISH] [run_2/idx09 0PA]: cond 1.080e+21 -> 1.186e+09 scaled, min eig(C_hat) = 1.805e-01, inv residual = 2.58e-08 (0.10 x float64 limit), rank 7/7, 84.1 s
+    [DELTA] [run_2/idx09 0PA+PN] C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 1.25e-06 -> 1.25e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9988757)
+Computing SNR for parameters: (np.float64(5714766.573301315), np.float64(50.00015662523908), np.float64(0.8999999960693431), np.float64(5.984606562046752), 0.0, 1.0, 1.5495612690146865, np.float64(0.19994654592687072), np.float64(0.2003238237454303), 0.8, 0.8, np.float64(0.29817926897865515), 0.5, 0.5, 0.0, False, False, False, True, np.float64(0.8869021515106043), 0.0, False, 0.00010972349525790837, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.0055113957217
+calculating stable deltas...
+Time taken to compute stable deltas is 88.9917356967926 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.8535003662109375 seconds
+[FISH] [run_2/idx09 0PA+PN]: cond 1.043e+22 -> 1.274e+11 scaled, min eig(C_hat) = 1.533e-01, inv residual = 4.61e-06 (0.16 x float64 limit), rank 8/8, 94.7 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx09.json (230.9 s)
+
+=== run_2/idx10 (p0 = 9.318) ===
+[run_2/idx10] snr = 200.000, context in 47.8 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12014002)
+Computing SNR for parameters: (np.float64(2627586.017636956), np.float64(49.995483136280754), np.float64(0.9000183725843421), np.float64(9.317363849412832), 0.0, 1.0, 2.497702732506012, np.float64(0.202215108119678), np.float64(0.20209994154145555), 0.8, 0.8, np.float64(0.2314893572940667), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 5.044107025586668e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.3497964261604
+calculating stable deltas...
+Time taken to compute stable deltas is 89.29349374771118 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.92919659614563 seconds
+[FISH] [run_2/idx10 0PA]: cond 2.160e+21 -> 2.193e+10 scaled, min eig(C_hat) = 1.749e-01, inv residual = 6.13e-07 (0.13 x float64 limit), rank 7/7, 95.6 s
+    [DELTA] [run_2/idx10 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 1.94e-06 -> 1.94e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12014002)
+Computing SNR for parameters: (np.float64(2625195.3051970736), np.float64(50.0320063121639), np.float64(0.8998718882131915), np.float64(9.32323479387265), 0.0, 1.0, 2.497702732506012, np.float64(0.20032277091098127), np.float64(0.19508988943083758), 0.8, 0.8, np.float64(0.26897585588063594), 0.5, 0.5, 0.0, False, False, False, True, np.float64(46.54864043911174), 0.0, False, 5.044107025586668e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.92016153573763
+calculating stable deltas...
+Time taken to compute stable deltas is 100.78099083900452 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.388003826141357 seconds
+[FISH] [run_2/idx10 0PA+PN]: cond 1.653e+22 -> 2.156e+12 scaled, min eig(C_hat) = 1.491e-01, inv residual = 7.05e-05 (0.15 x float64 limit), rank 8/8, 107.5 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx10.json (256.6 s)
+
+=== run_2/idx11 (p0 = 11.139) ===
+[run_2/idx11] snr = 200.000, context in 47.2 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11079259)
+Computing SNR for parameters: (np.float64(1786485.7533619204), np.float64(49.97899551223676), np.float64(0.9000594412740373), np.float64(11.13340519321937), 0.0, 1.0, 2.9045198385659536, np.float64(0.20185656633633), np.float64(0.16427383751641292), 0.8, 0.8, np.float64(0.07759910890873814), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 3.427526092473983e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.41536234048064
+calculating stable deltas...
+Time taken to compute stable deltas is 87.21911835670471 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8611738681793213 seconds
+[FISH] [run_2/idx11 0PA]: cond 1.853e+21 -> 7.853e+10 scaled, min eig(C_hat) = 1.692e-01, inv residual = 1.93e-06 (0.11 x float64 limit), rank 7/7, 93.2 s
+    [DELTA] [run_2/idx11 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 5.92e-06 -> 5.93e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11079259)
+Computing SNR for parameters: (np.float64(1778902.268651048), np.float64(50.138427218843134), np.float64(0.899463472238047), np.float64(11.165921686174364), 0.0, 1.0, 2.9045198385659536, np.float64(0.19662358442956254), np.float64(0.19342135332151322), 0.8, 0.8, np.float64(0.20410572545892533), 0.5, 0.5, 0.0, False, False, False, True, np.float64(111.85052829046184), 0.0, False, 3.427526092473983e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.56965159727827
+calculating stable deltas...
+Time taken to compute stable deltas is 98.5380048751831 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.376993894577026 seconds
+[FISH] [run_2/idx11 0PA+PN]: cond 7.759e+21 -> 8.699e+12 scaled, min eig(C_hat) = 1.442e-01, inv residual = 1.61e-04 (0.08 x float64 limit), rank 8/8, 105.0 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx11.json (251.0 s)
+
+=== run_2/idx12 (p0 = 8.621) ===
+[run_2/idx12] snr = 200.000, context in 47.3 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10314047)
+Computing SNR for parameters: (np.float64(2831068.2233731938), np.float64(49.99771994940496), np.float64(0.9000107672664788), np.float64(8.620680579310832), 0.0, 1.0, 2.2335580477280548, np.float64(0.19850693838614125), np.float64(0.20007686739304467), 0.8, 0.8, np.float64(0.2691607901787851), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 5.435164703393315e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.03600308441085
+calculating stable deltas...
+Time taken to compute stable deltas is 82.60969710350037 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.595836877822876 seconds
+[FISH] [run_2/idx12 0PA]: cond 7.545e+20 -> 1.231e+10 scaled, min eig(C_hat) = 1.675e-01, inv residual = 1.96e-07 (0.07 x float64 limit), rank 7/7, 88.0 s
+    [DELTA] [run_2/idx12 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 1.38e-06 -> 1.38e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10314047)
+Computing SNR for parameters: (np.float64(2829816.53928728), np.float64(50.01611820368102), np.float64(0.8999358163189433), np.float64(8.623331945233122), 0.0, 1.0, 2.2335580477280548, np.float64(0.19979031379082796), np.float64(0.20298995175259493), 0.8, 0.8, np.float64(0.2867398045479533), 0.5, 0.5, 0.0, False, False, False, True, np.float64(27.35500195212518), 0.0, False, 5.435164703393315e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00253372733653
+calculating stable deltas...
+Time taken to compute stable deltas is 93.51857924461365 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.074173450469971 seconds
+[FISH] [run_2/idx12 0PA+PN]: cond 3.285e+22 -> 1.120e+12 scaled, min eig(C_hat) = 1.438e-01, inv residual = 1.41e-05 (0.06 x float64 limit), rank 8/8, 99.4 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx12.json (239.9 s)
+
+=== run_2/idx13 (p0 = 4.653) ===
+[run_2/idx13] snr = 200.000, context in 46.3 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10237018)
+Computing SNR for parameters: (np.float64(9794398.828879653), np.float64(49.99999773619909), np.float64(0.9000002019950288), np.float64(4.6530063032671265), 0.0, 1.0, 0.9639657289570244, np.float64(0.19999545042337438), np.float64(0.2000686532838726), 0.8, 0.8, np.float64(0.299814289286779), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00018805229354445922, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.0000752901768
+calculating stable deltas...
+Time taken to compute stable deltas is 76.64797329902649 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.300950527191162 seconds
+[FISH] [run_2/idx13 0PA]: cond 2.210e+21 -> 4.135e+08 scaled, min eig(C_hat) = 1.879e-01, inv residual = 1.75e-08 (0.19 x float64 limit), rank 7/7, 81.7 s
+    [DELTA] [run_2/idx13 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 1.44e-06 -> 1.44e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10237018)
+Computing SNR for parameters: (np.float64(9794377.170073854), np.float64(50.000172475321946), np.float64(0.899999726024615), np.float64(4.653013941896053), 0.0, 1.0, 0.9639657289570244, np.float64(0.20000411657691436), np.float64(0.20000942974780053), 0.8, 0.8, np.float64(0.29991764559221196), 0.5, 0.5, 0.0, False, False, False, True, np.float64(1.3783740877248807), 0.0, False, 0.00018805229354445922, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.0002634832049
+calculating stable deltas...
+Time taken to compute stable deltas is 85.39296364784241 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.79939866065979 seconds
+[FISH] [run_2/idx13 0PA+PN]: cond 3.475e+22 -> 2.948e+10 scaled, min eig(C_hat) = 1.590e-01, inv residual = 8.95e-07 (0.14 x float64 limit), rank 8/8, 91.0 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx13.json (224.2 s)
+
+=== run_2/idx14 (p0 = 5.580) ===
+[run_2/idx14] snr = 200.000, context in 46.8 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11770278)
+Computing SNR for parameters: (np.float64(7151612.3605063055), np.float64(49.999963613129964), np.float64(0.9000005982079247), np.float64(5.579788484636359), 0.0, 1.0, 1.494876437142764, np.float64(0.20002835325658486), np.float64(0.1997219791398105), 0.8, 0.8, np.float64(0.2986565032574879), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00013731054917168447, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00055112463255
+calculating stable deltas...
+Time taken to compute stable deltas is 83.66808342933655 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.748223304748535 seconds
+[FISH] [run_2/idx14 0PA]: cond 2.619e+21 -> 1.282e+09 scaled, min eig(C_hat) = 1.738e-01, inv residual = 2.84e-08 (0.10 x float64 limit), rank 7/7, 89.6 s
+    [DELTA] [run_2/idx14 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 9.19e-06 -> 9.19e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11770278)
+Computing SNR for parameters: (np.float64(7151529.010739435), np.float64(50.0006644078446), np.float64(0.8999981683825902), np.float64(5.579835577792443), 0.0, 1.0, 1.494876437142764, np.float64(0.199976321447311), np.float64(0.19995494435031996), 0.8, 0.8, np.float64(0.2994963591526715), 0.5, 0.5, 0.0, False, False, False, True, np.float64(3.7442738320125546), 0.0, False, 0.00013731054917168447, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99884554453473
+calculating stable deltas...
+Time taken to compute stable deltas is 93.44332265853882 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.176417350769043 seconds
+[FISH] [run_2/idx14 0PA+PN]: cond 7.880e+21 -> 1.034e+11 scaled, min eig(C_hat) = 1.484e-01, inv residual = 2.69e-06 (0.12 x float64 limit), rank 8/8, 99.8 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx14.json (242.0 s)
+
+=== run_2/idx15 (p0 = 7.534) ===
+[run_2/idx15] snr = 200.000, context in 46.9 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9830660)
+Computing SNR for parameters: (np.float64(3594197.2924624193), np.float64(49.99931964652334), np.float64(0.9000042727591135), np.float64(7.533566744503509), 0.0, 1.0, 1.9312012845996906, np.float64(0.19970154520605068), np.float64(0.2024404902294688), 0.8, 0.8, np.float64(0.2897548542859592), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 6.90065356265132e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.05013118202075
+calculating stable deltas...
+Time taken to compute stable deltas is 78.62925553321838 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.390516757965088 seconds
+[FISH] [run_2/idx15 0PA]: cond 7.228e+20 -> 4.080e+09 scaled, min eig(C_hat) = 1.769e-01, inv residual = 1.37e-07 (0.15 x float64 limit), rank 7/7, 83.9 s
+    [DELTA] [run_2/idx15 0PA+PN] C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 4.89e-06 -> 4.89e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9830660)
+Computing SNR for parameters: (np.float64(3593693.511920401), np.float64(50.00561964270708), np.float64(0.8999785982460736), np.float64(7.5343084014087065), 0.0, 1.0, 1.9312012845996906, np.float64(0.20013539556012366), np.float64(0.20081111162385815), 0.8, 0.8, np.float64(0.29522193020463994), 0.5, 0.5, 0.0, False, False, False, True, np.float64(13.474325364022597), 0.0, False, 6.90065356265132e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.01556294882306
+calculating stable deltas...
+Time taken to compute stable deltas is 88.52217483520508 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8224339485168457 seconds
+[FISH] [run_2/idx15 0PA+PN]: cond 3.065e+21 -> 4.303e+11 scaled, min eig(C_hat) = 1.508e-01, inv residual = 8.35e-06 (0.09 x float64 limit), rank 8/8, 94.2 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx15.json (230.1 s)
+
+=== run_2/idx16 (p0 = 5.192) ===
+[run_2/idx16] snr = 200.000, context in 47.5 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10789993)
+Computing SNR for parameters: (np.float64(7949459.820820318), np.float64(49.99998362326817), np.float64(0.9000003890660476), np.float64(5.1918077258415325), 0.0, 1.0, 1.2775783651005577, np.float64(0.199962313951659), np.float64(0.20001938917761697), 0.8, 0.8, np.float64(0.29942632188443513), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00015262935011653688, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99959757986448
+calculating stable deltas...
+Time taken to compute stable deltas is 78.93324661254883 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5112504959106445 seconds
+[FISH] [run_2/idx16 0PA]: cond 2.187e+21 -> 7.213e+08 scaled, min eig(C_hat) = 1.976e-01, inv residual = 1.79e-08 (0.11 x float64 limit), rank 7/7, 84.5 s
+    [DELTA] [run_2/idx16 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 5.30e-06 -> 5.30e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10789993)
+Computing SNR for parameters: (np.float64(7949413.993579779), np.float64(50.00036295754533), np.float64(0.8999991668868931), np.float64(5.191829598955155), 0.0, 1.0, 1.2775783651005577, np.float64(0.1999967887073544), np.float64(0.20006821774795946), 0.8, 0.8, np.float64(0.2997593469897426), 0.5, 0.5, 0.0, False, False, False, True, np.float64(2.329306430587269), 0.0, False, 0.00015262935011653688, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99975608365924
+calculating stable deltas...
+Time taken to compute stable deltas is 88.57750201225281 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.9216208457946777 seconds
+[FISH] [run_2/idx16 0PA+PN]: cond 2.117e+22 -> 5.560e+10 scaled, min eig(C_hat) = 1.653e-01, inv residual = 7.26e-07 (0.06 x float64 limit), rank 8/8, 94.6 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx16.json (232.1 s)
+
+=== run_2/idx17 (p0 = 7.577) ===
+[run_2/idx17] snr = 200.000, context in 47.0 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10033934)
+Computing SNR for parameters: (np.float64(3591031.0049992856), np.float64(49.99926429892889), np.float64(0.9000045415188758), np.float64(7.576508045980399), 0.0, 1.0, 1.906109923061784, np.float64(0.19952767309766337), np.float64(0.2020028370895199), 0.8, 0.8, np.float64(0.28913967325176515), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 6.894559498658441e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.03570969847627
+calculating stable deltas...
+Time taken to compute stable deltas is 79.76905512809753 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.472604274749756 seconds
+[FISH] [run_2/idx17 0PA]: cond 8.073e+20 -> 4.248e+09 scaled, min eig(C_hat) = 1.774e-01, inv residual = 8.46e-08 (0.09 x float64 limit), rank 7/7, 85.2 s
+    [DELTA] [run_2/idx17 0PA+PN] C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 5.17e-06 -> 5.17e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10033934)
+Computing SNR for parameters: (np.float64(3590493.4530678215), np.float64(50.00596211009754), np.float64(0.8999772222369653), np.float64(7.577304262708729), 0.0, 1.0, 1.906109923061784, np.float64(0.2000802462311258), np.float64(0.20108143719279156), 0.8, 0.8, np.float64(0.2950302567452744), 0.5, 0.5, 0.0, False, False, False, True, np.float64(14.224640891402506), 0.0, False, 6.894559498658441e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.01152513772084
+calculating stable deltas...
+Time taken to compute stable deltas is 89.52376556396484 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.9096364974975586 seconds
+[FISH] [run_2/idx17 0PA+PN]: cond 1.028e+22 -> 4.424e+11 scaled, min eig(C_hat) = 1.510e-01, inv residual = 8.86e-06 (0.09 x float64 limit), rank 8/8, 95.4 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx17.json (232.7 s)
+
+=== run_2/idx18 (p0 = 4.755) ===
+[run_2/idx18] snr = 200.000, context in 47.0 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11391999)
+Computing SNR for parameters: (np.float64(9852604.202496719), np.float64(49.99999637976355), np.float64(0.9000002308852784), np.float64(4.755108647064169), 0.0, 1.0, 1.1063684404912655, np.float64(0.19999000000012182), np.float64(0.19993914146490013), 0.8, 0.8, np.float64(0.29970689732108574), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00018916980997744405, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99995793836402
+calculating stable deltas...
+Time taken to compute stable deltas is 81.31050086021423 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.6214704513549805 seconds
+[FISH] [run_2/idx18 0PA]: cond 3.257e+21 -> 6.358e+08 scaled, min eig(C_hat) = 1.867e-01, inv residual = 1.32e-08 (0.09 x float64 limit), rank 7/7, 87.1 s
+    [DELTA] [run_2/idx18 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 2.55e-06 -> 2.55e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11391999)
+Computing SNR for parameters: (np.float64(9852577.728032202), np.float64(50.000203938301), np.float64(0.8999996530858954), np.float64(4.7551181045315785), 0.0, 1.0, 1.1063684404912655, np.float64(0.19999440991453646), np.float64(0.20002162967822992), 0.8, 0.8, np.float64(0.2998924490903211), 0.5, 0.5, 0.0, False, False, False, True, np.float64(1.64107442593847), 0.0, False, 0.00018916980997744405, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00006556502026
+calculating stable deltas...
+Time taken to compute stable deltas is 90.85977458953857 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.083520889282227 seconds
+[FISH] [run_2/idx18 0PA+PN]: cond 8.629e+22 -> 3.570e+10 scaled, min eig(C_hat) = 1.578e-01, inv residual = 6.54e-07 (0.08 x float64 limit), rank 8/8, 97.1 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx18.json (236.8 s)
+
+=== run_2/idx19 (p0 = 5.949) ===
+[run_2/idx19] snr = 200.000, context in 47.2 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9729546)
+Computing SNR for parameters: (np.float64(5707601.660228465), np.float64(49.99992790957394), np.float64(0.9000008762296797), np.float64(5.94939892098616), 0.0, 1.0, 1.5337345095569805, np.float64(0.1999979667479351), np.float64(0.20049969764139383), 0.8, 0.8, np.float64(0.29839890521731044), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.0001095854406174188, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00797396000976
+calculating stable deltas...
+Time taken to compute stable deltas is 76.89458727836609 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.3392651081085205 seconds
+[FISH] [run_2/idx19 0PA]: cond 1.042e+21 -> 1.197e+09 scaled, min eig(C_hat) = 1.723e-01, inv residual = 3.76e-08 (0.14 x float64 limit), rank 7/7, 82.1 s
+    [DELTA] [run_2/idx19 0PA+PN] C_p: steps 1.000e-03 -> 3.162e-05  (mismatch 1.05e-06 -> 1.05e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 9729546)
+Computing SNR for parameters: (np.float64(5707493.745004691), np.float64(50.00096680816226), np.float64(0.8999970278068178), np.float64(5.949479738949021), 0.0, 1.0, 1.5337345095569805, np.float64(0.20003278029293903), np.float64(0.20004249673732064), 0.8, 0.8, np.float64(0.29925158546413977), 0.5, 0.5, 0.0, False, False, False, True, np.float64(4.231446432464575), 0.0, False, 0.0001095854406174188, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00158782953503
+calculating stable deltas...
+Time taken to compute stable deltas is 86.44659495353699 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.7748048305511475 seconds
+[FISH] [run_2/idx19 0PA+PN]: cond 2.318e+22 -> 1.256e+11 scaled, min eig(C_hat) = 1.475e-01, inv residual = 2.39e-06 (0.09 x float64 limit), rank 8/8, 92.1 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx19.json (226.5 s)
+
+=== run_2/idx20 (p0 = 4.804) ===
+[run_2/idx20] snr = 200.000, context in 46.3 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10412482)
+Computing SNR for parameters: (np.float64(9212006.866760626), np.float64(49.9999949325345), np.float64(0.9000002458702784), np.float64(4.804137548693478), 0.0, 1.0, 1.0338305879583427, np.float64(0.19998774710858627), np.float64(0.20007883414833894), 0.8, 0.8, np.float64(0.2997452627792863), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00017687033964982783, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00002184253188
+calculating stable deltas...
+Time taken to compute stable deltas is 77.46290063858032 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.3784830570220947 seconds
+[FISH] [run_2/idx20 0PA]: cond 2.004e+21 -> 4.563e+08 scaled, min eig(C_hat) = 1.910e-01, inv residual = 6.10e-09 (0.06 x float64 limit), rank 7/7, 82.5 s
+    [DELTA] [run_2/idx20 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 2.13e-06 -> 2.13e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10412482)
+Computing SNR for parameters: (np.float64(9211979.758335294), np.float64(50.000213328592146), np.float64(0.8999996143623037), np.float64(4.80414799313031), 0.0, 1.0, 1.0338305879583427, np.float64(0.20000402066739684), np.float64(0.20002372541975932), 0.8, 0.8, np.float64(0.2998860013750438), 0.5, 0.5, 0.0, False, False, False, True, np.float64(1.6020478861980507), 0.0, False, 0.00017687033964982783, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00026973430238
+calculating stable deltas...
+Time taken to compute stable deltas is 87.03513216972351 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8104257583618164 seconds
+[FISH] [run_2/idx20 0PA+PN]: cond 5.390e+22 -> 3.502e+10 scaled, min eig(C_hat) = 1.611e-01, inv residual = 9.06e-07 (0.12 x float64 limit), rank 8/8, 92.5 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx20.json (226.5 s)
+
+=== run_2/idx21 (p0 = 5.294) ===
+[run_2/idx21] snr = 200.000, context in 46.9 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12201275)
+Computing SNR for parameters: (np.float64(8116686.9402645985), np.float64(49.999978731399686), np.float64(0.9000004499232898), np.float64(5.293831062905749), 0.0, 1.0, 1.2942410100606923, np.float64(0.20003648366507065), np.float64(0.1999044852815815), 0.8, 0.8, np.float64(0.29913505277638247), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00015584005465685822, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.0002698486297
+calculating stable deltas...
+Time taken to compute stable deltas is 85.03491759300232 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.7790493965148926 seconds
+[FISH] [run_2/idx21 0PA]: cond 2.310e+21 -> 9.631e+08 scaled, min eig(C_hat) = 1.757e-01, inv residual = 2.90e-08 (0.14 x float64 limit), rank 7/7, 91.0 s
+    [DELTA] [run_2/idx21 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 5.50e-06 -> 5.50e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12201275)
+Computing SNR for parameters: (np.float64(8116624.115743585), np.float64(50.00047502468929), np.float64(0.8999988181560111), np.float64(5.293860932572658), 0.0, 1.0, 1.2942410100606923, np.float64(0.19999125246618732), np.float64(0.19993056738227138), 0.8, 0.8, np.float64(0.29967132927232715), 0.5, 0.5, 0.0, False, False, False, True, np.float64(3.0823996588806013), 0.0, False, 0.00015584005465685822, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99990212622814
+calculating stable deltas...
+Time taken to compute stable deltas is 95.15777206420898 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.22996711730957 seconds
+[FISH] [run_2/idx21 0PA+PN]: cond 7.083e+22 -> 7.215e+10 scaled, min eig(C_hat) = 1.498e-01, inv residual = 2.58e-06 (0.16 x float64 limit), rank 8/8, 101.5 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx21.json (245.3 s)
+
+=== run_2/idx22 (p0 = 9.010) ===
+[run_2/idx22] snr = 200.000, context in 47.0 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12428131)
+Computing SNR for parameters: (np.float64(2852954.956590319), np.float64(49.99689261097106), np.float64(0.9000140767186152), np.float64(9.008840909211688), 0.0, 1.0, 2.3759907394205095, np.float64(0.20098055011469895), np.float64(0.2084040770815048), 0.8, 0.8, np.float64(0.244256772644918), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 5.4770143387264124e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.25721942166516
+calculating stable deltas...
+Time taken to compute stable deltas is 89.59848690032959 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.923892021179199 seconds
+[FISH] [run_2/idx22 0PA]: cond 1.158e+21 -> 1.880e+10 scaled, min eig(C_hat) = 1.575e-01, inv residual = 5.59e-07 (0.13 x float64 limit), rank 7/7, 95.8 s
+    [DELTA] [run_2/idx22 0PA+PN] C_p: steps 3.162e-04 -> 1.000e-05  (mismatch 1.59e-06 -> 1.59e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 12428131)
+Computing SNR for parameters: (np.float64(2851157.8284905534), np.float64(50.02276060794526), np.float64(0.8999088425719561), np.float64(9.012778716790471), 0.0, 1.0, 2.3759907394205095, np.float64(0.20064515955261195), np.float64(0.19776064710612207), 0.8, 0.8, np.float64(0.2734507491239974), 0.5, 0.5, 0.0, False, False, False, True, np.float64(37.77298575287499), 0.0, False, 5.4770143387264124e-05, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.94885420333597
+calculating stable deltas...
+Time taken to compute stable deltas is 100.821040391922 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.48354434967041 seconds
+[FISH] [run_2/idx22 0PA+PN]: cond 6.073e+21 -> 1.956e+12 scaled, min eig(C_hat) = 1.361e-01, inv residual = 4.45e-05 (0.10 x float64 limit), rank 8/8, 107.6 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx22.json (256.1 s)
+
+=== run_2/idx23 (p0 = 4.921) ===
+[run_2/idx23] snr = 200.000, context in 46.7 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11141494)
+Computing SNR for parameters: (np.float64(9047792.526889289), np.float64(49.99999258754224), np.float64(0.9000002827614846), np.float64(4.9211457316376075), 0.0, 1.0, 1.1693528425084474, np.float64(0.1999798402886872), np.float64(0.1999534343157701), 0.8, 0.8, np.float64(0.2996186008951175), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.0001737173960946619, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99968882658257
+calculating stable deltas...
+Time taken to compute stable deltas is 80.543283700943 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.5294013023376465 seconds
+[FISH] [run_2/idx23 0PA]: cond 2.497e+21 -> 6.419e+08 scaled, min eig(C_hat) = 1.984e-01, inv residual = 8.05e-09 (0.06 x float64 limit), rank 7/7, 86.2 s
+    [DELTA] [run_2/idx23 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 3.43e-06 -> 3.43e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 11141494)
+Computing SNR for parameters: (np.float64(9047759.628679983), np.float64(50.00025491195065), np.float64(0.8999995042294282), np.float64(4.921158908063182), 0.0, 1.0, 1.1693528425084474, np.float64(0.19999445676039462), np.float64(0.20003863089281435), 0.8, 0.8, np.float64(0.2998527290650385), 0.5, 0.5, 0.0, False, False, False, True, np.float64(1.8787813111510157), 0.0, False, 0.0001737173960946619, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 199.99995134078983
+calculating stable deltas...
+Time taken to compute stable deltas is 90.0896520614624 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.9690370559692383 seconds
+[FISH] [run_2/idx23 0PA+PN]: cond 1.486e+23 -> 4.106e+10 scaled, min eig(C_hat) = 1.659e-01, inv residual = 1.39e-06 (0.15 x float64 limit), rank 8/8, 96.2 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx23.json (234.5 s)
+
+=== run_2/idx24 (p0 = 5.266) ===
+[run_2/idx24] snr = 200.000, context in 46.7 s
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10239420)
+Computing SNR for parameters: (np.float64(7518842.72207863), np.float64(49.99997980320112), np.float64(0.9000004252113685), np.float64(5.2656034830607), 0.0, 1.0, 1.2254102538116174, np.float64(0.19997709508638936), np.float64(0.200177632238136), 0.8, 0.8, np.float64(0.2994237445075496), 0.5, 0.5, 0.0, False, False, False, False, 0.0, 0.0, False, 0.00014436148774284627, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00071021302833
+calculating stable deltas...
+Time taken to compute stable deltas is 77.777907371521 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.368149995803833 seconds
+[FISH] [run_2/idx24 0PA]: cond 1.528e+21 -> 6.439e+08 scaled, min eig(C_hat) = 1.850e-01, inv residual = 1.34e-08 (0.09 x float64 limit), rank 7/7, 83.1 s
+    [DELTA] [run_2/idx24 0PA+PN] C_p: steps 3.162e-03 -> 1.000e-04  (mismatch 4.50e-06 -> 4.50e-09, 4 of 45 ladder points in band)
+Body is not plunging, Fisher should be stable.
+waveform shape: (2, 10239420)
+Computing SNR for parameters: (np.float64(7518792.105691536), np.float64(50.00040875644053), np.float64(0.8999990054697639), np.float64(5.2656293341695655), 0.0, 1.0, 1.2254102538116174, np.float64(0.20000932512205724), np.float64(0.2000490043233289), 0.8, 0.8, np.float64(0.29973574443459006), 0.5, 0.5, 0.0, False, False, False, True, np.float64(2.4641383918512583), 0.0, False, 0.00014436148774284627, 8.0, 1e-12, 4.0)
+Waveform Generated. SNR: 200.00036355569816
+calculating stable deltas...
+Time taken to compute stable deltas is 87.04455971717834 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.802111864089966 seconds
+[FISH] [run_2/idx24 0PA+PN]: cond 1.670e+22 -> 6.054e+10 scaled, min eig(C_hat) = 1.567e-01, inv residual = 1.42e-06 (0.11 x float64 limit), rank 8/8, 92.8 s
+[SAVE] /home/svu/e1583490/EMRI_CV_bias/environmental_tests/combined/results/run_2_idx24.json (227.7 s)
+
+[DONE] 25/25 sources in 6274.2 s; failed []
