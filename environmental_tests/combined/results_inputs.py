@@ -46,6 +46,9 @@ RUNS = {
                    ("0PA", 19): "results_lm_e0fixed_redo0pa.json",
                    ("0PA+PN", 22): "results_lm_e0fixed_redopn.json"}),
 }
+# Every source of both runs is injected at this SNR under 2nd-gen TDI (A, E); checked per
+# source in fish_run_*.log, where all 48 read 200.000.
+TARGET_SNR = 200.0
 RUN_LABEL = {"run_1_second_gen": "run_1 (2nd gen)", "run_2": "run_2"}
 
 
@@ -111,6 +114,22 @@ def load_run(run):
 
 def load_sources(runs=tuple(RUNS)):
     return [s for run in runs for s in load_run(run)]
+
+
+def pn_below_0pa(ov_0pa, ov_pn):
+    """Left out of every plot (user, 2026-10-19): PN nests 0PA at C_p = 0, so a PN overlap
+    below the 0PA one is a stalled climb, not a result."""
+    return ov_pn < ov_0pa
+
+
+def kept_in_plots(items, ovs):
+    """`items` without those whose (ov_0PA, ov_PN) = ovs(item) fails pn_below_0pa; reports them."""
+    keep = [it for it in items if not pn_below_0pa(*ovs(it))]
+    dropped = [it for it in items if pn_below_0pa(*ovs(it))]
+    for it in dropped:
+        o0, op = ovs(it)
+        print(f"[DROP] {it['name']}: PN overlap {op:.10f} < 0PA {o0:.10f}")
+    return keep
 
 
 def main():
