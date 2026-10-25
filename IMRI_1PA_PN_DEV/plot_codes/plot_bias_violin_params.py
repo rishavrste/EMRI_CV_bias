@@ -4,7 +4,7 @@ the Fisher distribution of x - x_inj: left half 0PA, N(b_0PA, sigma_0PA^2); righ
 only). b = best fit - injection (phases wrapped), sigma from the Fisher matrix at that best fit
 (fisher_at_best.py) at the chosen SNR. Each half is scaled to the same maximum width and cut at
 +-N_SIGMA sigma; the bar is b.
-    -> plots/bias_1D/snr{SNR}/violin_grid.png                  all parameters
+    -> plots/bias_1D/snr{SNR}/violin_grid.png                  physical parameters (no C_p, C_e)
        plots/bias_1D/snr{SNR}/per_param/violin_{param}.png    one file per parameter
 
 Run:  python plot_bias_violin_params.py [--snr 20]
@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Patch
 
-from bias_data import ALL, load_bias
+from bias_data import ALL, PHYS, load_bias
 from common import A_VALUES, E_VALUES, LABEL, SURFACE, TEXT, TEXT_2, out_file
 
 HALVES = (("0pa", "0PA", "#2a78d6", -1), ("pn", "0PA + PN", "#eb6834", +1))
@@ -81,8 +81,8 @@ def single_figure(pts, xs, name, snr):
 
 
 def grid_figure(pts, xs, snr):
-    fig, axes = plt.subplots(len(ALL), 1, figsize=(13, 3.6 * len(ALL)), facecolor=SURFACE)
-    for ax, name in zip(axes, ALL):
+    fig, axes = plt.subplots(len(PHYS), 1, figsize=(13, 3.6 * len(PHYS)), facecolor=SURFACE)
+    for ax, name in zip(axes, PHYS):
         param_axes(ax, pts, name, snr, xs)
     legend(fig)
     fig.tight_layout(rect=(0, 0, 1, 0.99))
