@@ -1,0 +1,67 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: hybrid
+startup
+[EMRI] T=2.5 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, 0.0, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 20.023660360051643
+calculating stable deltas...
+Time taken to compute stable deltas is 41.42508006095886 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.8619542121887207 seconds
+[pn idx22 a=+0] steps absolute for a, step_a=3.511e-05  overlap=0.05510875572390169 chi2=756.8080146900322 rho_s=20.000005 cond=2.175e+22
+  sigma = m1=2.5037e+03, m2=1.5222e-02, a=3.2360e-03, p0=1.4439e-02, e0=3.8640e-04, qS=1.4591e-02, phiS=1.0591e-02, Phi_phi0=2.1279e-01, Phi_r0=9.5068e-02, C_p=3.2253e+02, C_e=1.0534e+01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, 0.001, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 20.0024126175361
+calculating stable deltas...
+Time taken to compute stable deltas is 39.972135066986084 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.7835381031036377 seconds
+[pn idx22 a=+0.001] steps absolute for a, step_a=3.511e-05  overlap=-0.05441646425551357 chi2=843.635157435001 rho_s=20.000005 cond=3.821e+21
+  sigma = m1=2.5455e+03, m2=1.5391e-02, a=3.2885e-03, p0=1.4679e-02, e0=3.9295e-04, qS=1.4571e-02, phiS=1.0626e-02, Phi_phi0=2.1351e-01, Phi_r0=9.5042e-02, C_p=3.2072e+02, C_e=1.0892e+01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, -0.001, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 20.03202708554978
+calculating stable deltas...
+Time taken to compute stable deltas is 40.133885622024536 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.8323705196380615 seconds
+[pn idx22 a=-0.001] steps absolute for a, step_a=1.233e-05  overlap=-0.0022388491639415632 chi2=803.0762696153711 rho_s=20.000005 cond=7.805e+21
+  sigma = m1=2.4829e+03, m2=1.5237e-02, a=3.2101e-03, p0=1.4319e-02, e0=3.8330e-04, qS=1.4589e-02, phiS=1.0639e-02, Phi_phi0=2.1218e-01, Phi_r0=9.5034e-02, C_p=3.2930e+02, C_e=1.0171e+01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, 0.01, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 19.758713291634514
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 38.91004419326782 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 3.690141201019287 seconds
+[pn idx22 a=+0.01] steps relative for a, step_a=1.874e-09  overlap=-0.014059584496537885 chi2=801.5189383542356 rho_s=20.000005 cond=3.000e+19
+  sigma = m1=4.5150e+01, m2=2.4491e-03, a=4.6865e-05, p0=2.0270e-04, e0=1.4789e-05, qS=2.1770e-02, phiS=1.0241e-02, Phi_phi0=2.0130e-01, Phi_r0=9.5944e-02, C_p=2.1183e+02, C_e=8.2903e+00
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000087.2406860776, 10.000729529124849, -0.01, 11.081046709936707, 0.49998980565127055, 1.0, 7.340330367777554, 1.047152775878454, 0.7852530659090158, 0.6283185307179586, 0.5235987755982988, 0.1014250833068717, 0.2, 0.3004064579563836, 0.95, False, False, False, True, 34.25237661418973, 1.132657188959782, 0.0, 0.0)
+Waveform Generated. SNR: 20.290506493946594
+calculating stable deltas...
+Time taken to compute stable deltas is 40.860647439956665 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 3.89443039894104 seconds
+[pn idx22 a=-0.01] steps relative for a, step_a=-1.233e-07  overlap=0.0015673580859303974 chi2=810.4327663651068 rho_s=20.000005 cond=7.923e+20
+  sigma = m1=9.7187e+02, m2=6.4132e-03, a=1.2638e-03, p0=5.6170e-03, e0=1.4963e-04, qS=1.4408e-02, phiS=1.3076e-02, Phi_phi0=1.9421e-01, Phi_r0=9.6980e-02, C_p=2.0321e+02, C_e=5.6951e+00
+
+sigma(a) / sigma(a=0):
+  a=+0: m1=1.000, m2=1.000, a=1.000, p0=1.000, e0=1.000, qS=1.000, phiS=1.000, Phi_phi0=1.000, Phi_r0=1.000, C_p=1.000, C_e=1.000
+  a=+0.001: m1=1.017, m2=1.011, a=1.016, p0=1.017, e0=1.017, qS=0.999, phiS=1.003, Phi_phi0=1.003, Phi_r0=1.000, C_p=0.994, C_e=1.034
+  a=-0.001: m1=0.992, m2=1.001, a=0.992, p0=0.992, e0=0.992, qS=1.000, phiS=1.004, Phi_phi0=0.997, Phi_r0=1.000, C_p=1.021, C_e=0.966
+  a=+0.01: m1=0.018, m2=0.161, a=0.014, p0=0.014, e0=0.038, qS=1.492, phiS=0.967, Phi_phi0=0.946, Phi_r0=1.009, C_p=0.657, C_e=0.787
+  a=-0.01: m1=0.388, m2=0.421, a=0.391, p0=0.389, e0=0.387, qS=0.987, phiS=1.235, Phi_phi0=0.913, Phi_r0=1.020, C_p=0.630, C_e=0.541
