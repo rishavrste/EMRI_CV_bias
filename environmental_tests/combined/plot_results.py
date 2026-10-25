@@ -51,6 +51,7 @@ MODELS = PO.MODELS                       # (name, colour, marker)
 C_BIAS, C_SIGMA = "#6f42c1", "#2a9d8f"   # bias_sigma_ratio: |bias| ratio, sigma ratio
 
 CREDIBLE = {"": 0.99, "_p90": 0.90}      # filename suffix -> level
+REF_SNRS = (20, 10)                      # extra reference lines on the critical SNR panels
 DEV_PARAMS = {"C_p", "C_e"}
 EXTRINSIC = {"qS", "phiS", "Phi_phi0"}
 BLOCKS = {                               # subfolder -> (parameters excluded, description)
@@ -151,10 +152,10 @@ def scatter_p0(ax, recs, y, colour, marker, label, s=30):
                edgecolors="white", linewidths=0.5, label=label, zorder=3)
 
 
-def models_scatter(ax, recs, value_of, s=30):
+def models_scatter(ax, recs, value_of, s=30, labels=None):
     for model, colour, marker in MODELS:
         scatter_p0(ax, recs, [value_of(r["models"][model]) for r in recs],
-                   colour, marker, model, s=s)
+                   colour, marker, (labels or {}).get(model, model), s=s)
 
 
 def log_axes(ax, xlabel="p0"):
@@ -261,24 +262,23 @@ def critical_snr(model_rec, exclude, p):
 def critical_snr_panel(recs, path, exclude, note, p):
     """Critical SNR against p0, 1-d and n-d.  Below the dashed line the bias is already
     significant at the injected SNR."""
-    k = len(kept(recs[0]["models"]["0PA"], exclude))
     fig, axes = plt.subplots(1, 2, figsize=(13.0, 4.9), sharey=True)
-    for ax, key, title in ((axes[0], "rho_1d", f"1-d: worst single parameter, "
-                                               f"{p:.0%} interval ({threshold_1d(p):.2f} sigma)"),
-                           (axes[1], "rho_nd", f"n-d: {k} parameters, PN marginalized over C_p, "
-                                               f"{p:.0%} region ({threshold_nd(p, k):.2f} sigma)")):
-        models_scatter(ax, recs, lambda m, kk=key: critical_snr(m, exclude, p)[kk])
+    for ax, key, title in ((axes[0], "rho_1d", f"1D: worst single parameter, {p:.0%} credible interval"),
+                           (axes[1], "rho_nd", f"nD: {p:.0%} credible region")):
+        models_scatter(ax, recs, lambda m, kk=key: critical_snr(m, exclude, p)[kk],
+                       labels={"0PA+PN": "0PA with PN deviation"})
         log_axes(ax)
         ax.axhline(RI.TARGET_SNR, color="0.55", lw=1.2, ls="--", zorder=1)
         ax.text(0.99, RI.TARGET_SNR * 1.15, f"injected SNR = {RI.TARGET_SNR:g}", ha="right",
                 va="bottom", fontsize=7.5, color="0.35", transform=ax.get_yaxis_transform())
+        for snr in REF_SNRS:
+            ax.axhline(snr, color="0.55", lw=1.0, ls=":", zorder=1)
+            ax.text(0.01, snr * 1.15, f"SNR = {snr:g}", ha="left", va="bottom", fontsize=7.5,
+                    color="0.35", transform=ax.get_yaxis_transform())
         ax.set_title(title, fontsize=9.5)
+        ax.legend(fontsize=8, frameon=False)
     axes[0].set_ylabel("critical SNR")
-    axes[0].legend(fontsize=8, frameon=False)
-    fig.suptitle(f"Critical SNR at which the systematic bias becomes significant ({p:.0%} CL), "
-                 f"0PA against 0PA+PN\n{note}; below the dashed line the bias is already "
-                 f"significant at SNR {RI.TARGET_SNR:g}", fontsize=10)
-    fig.tight_layout(rect=(0, 0, 1, 0.90))
+    fig.tight_layout()
     save(fig, path)
 
 
