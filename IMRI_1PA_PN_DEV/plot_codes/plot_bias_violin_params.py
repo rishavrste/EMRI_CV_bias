@@ -4,7 +4,8 @@ the Fisher distribution of x - x_inj: left half 0PA, N(b_0PA, sigma_0PA^2); righ
 only). b = best fit - injection (phases wrapped), sigma from the Fisher matrix at that best fit
 (fisher_at_best.py) at the chosen SNR. Each half is scaled to the same maximum width and cut at
 +-N_SIGMA sigma; the bar is b.
-    -> plots/bias_1D/snr{SNR}/violin_grid.png                  physical parameters (no C_p, C_e)
+    -> plots/bias_1D/snr{SNR}/violin_grid_intrinsic.png        m1, m2, a, p0, e0
+       plots/bias_1D/snr{SNR}/violin_grid_extrinsic.png        qS, phiS, Phi_phi0, Phi_r0
        plots/bias_1D/snr{SNR}/per_param/violin_{param}.png    one file per parameter
 
 Run:  python plot_bias_violin_params.py [--snr 20]
@@ -15,10 +16,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Patch
 
-from bias_data import ALL, PHYS, load_bias
+from bias_data import ALL, load_bias
 from common import A_VALUES, E_VALUES, LABEL, SURFACE, TEXT, TEXT_2, out_file
 
-HALVES = (("0pa", "0PA", "#2a78d6", -1), ("pn", "0PA + PN", "#eb6834", +1))
+HALVES = (("0pa", "0PA", "#2a78d6", -1), ("pn", "0PA with PN deviation", "#eb6834", +1))
+GROUPS = {"intrinsic": ("m1", "m2", "a", "p0", "e0"),
+          "extrinsic": ("qS", "phiS", "Phi_phi0", "Phi_r0")}
 N_SIGMA = 4.0           # each half drawn over b +- N_SIGMA sigma
 HALF_WIDTH = 0.42       # maximum half-width of a violin, in units of the point spacing
 GROUP_GAP = 1.0         # extra space between spin groups
@@ -44,32 +47,37 @@ def half_violin(ax, x, b, s, color, side):
     ax.plot([x, x + side * HALF_WIDTH], [b, b], color=color, lw=1.8, solid_capstyle="butt")
 
 
-def param_axes(ax, pts, name, snr, xs):
+def param_axes(ax, pts, name, snr, xs, x_labels=True, title=True):
     for p, x in zip(pts, xs):
         for tag, _, color, side in HALVES:
             if name in p[f"b_{tag}"]:
                 half_violin(ax, x, p[f"b_{tag}"][name], p[f"s_{tag}"][name], color, side)
     ax.axhline(0, color=TEXT_2, lw=0.8, zorder=0)
-    ax.set_xticks(xs, [f"{p['e0']:.1f}" for p in pts], fontsize=7)
-    for g, a in enumerate(A_VALUES):
-        mid = xs[g * len(E_VALUES):(g + 1) * len(E_VALUES)].mean()
-        ax.text(mid, -0.13, f"a = {a:+.1f}" if a else "a = 0", transform=ax.get_xaxis_transform(),
-                ha="center", va="top", fontsize=9, color=TEXT)
+    ax.set_xticks(xs, [f"{p['e0']:.1f}" for p in pts] if x_labels else [], fontsize=10)
     ax.set_xlim(xs[0] - 0.8, xs[-1] + 0.8)
-    ax.set_xlabel("e0", color=TEXT_2, fontsize=8, labelpad=1)
-    ax.set_ylabel(f"{LABEL[name]}_best − {LABEL[name]}_inj", color=TEXT_2)
-    ax.set_title(f"{LABEL[name]}, SNR {snr:g}", color=TEXT, fontsize=12, loc="left")
+    ax.set_ylabel(f"bias$_{{\\mathrm{{{LABEL[name]}}}}}$", color=TEXT, fontsize=16)
+    if title:
+        ax.set_title(LABEL[name], color=TEXT, fontsize=12, loc="left")
     ax.set_facecolor(SURFACE)
     ax.tick_params(colors=TEXT_2)
+    ax.tick_params(axis="y", labelsize=11)
     ax.grid(axis="y", color="#e4e3df", lw=0.6, zorder=0)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
+    if not x_labels:
+        return
+    for g, a in enumerate(A_VALUES):
+        mid = xs[g * len(E_VALUES):(g + 1) * len(E_VALUES)].mean()
+        ax.text(mid, -0.13, f"a = {a:+.1f}" if a else "a = 0", transform=ax.get_xaxis_transform(),
+                ha="center", va="top", fontsize=13, color=TEXT)
+    ax.text(xs[0] - 0.8, -0.035, "e0", transform=ax.get_xaxis_transform(), ha="right",
+            va="top", fontsize=11, color=TEXT_2)
 
 
 def legend(where):
     handles = [Patch(facecolor=c, edgecolor=c, alpha=0.5, label=f"{lab} (left)" if side < 0
                      else f"{lab} (right)") for _, lab, c, side in HALVES]
-    where.legend(handles=handles, loc="upper right", frameon=False, fontsize=9, ncol=2)
+    where.legend(handles=handles, loc="upper right", frameon=False, fontsize=13, ncol=2)
 
 
 def single_figure(pts, xs, name, snr):
@@ -80,12 +88,14 @@ def single_figure(pts, xs, name, snr):
     return fig
 
 
-def grid_figure(pts, xs, snr):
-    fig, axes = plt.subplots(len(PHYS), 1, figsize=(13, 3.6 * len(PHYS)), facecolor=SURFACE)
-    for ax, name in zip(axes, PHYS):
-        param_axes(ax, pts, name, snr, xs)
+def grid_figure(pts, xs, names, snr):
+    """Stacked panels sharing the x axis; e0 ticks and spin labels on the bottom panel only."""
+    fig, axes = plt.subplots(len(names), 1, figsize=(13, 2.5 * len(names) + 0.8),
+                             facecolor=SURFACE, sharex=True)
+    for i, (ax, name) in enumerate(zip(axes, names)):
+        param_axes(ax, pts, name, snr, xs, x_labels=i == len(names) - 1, title=False)
     legend(fig)
-    fig.tight_layout(rect=(0, 0, 1, 0.99))
+    fig.tight_layout(rect=(0, 0, 1, 1 - 0.45 / fig.get_figheight()), h_pad=0.4)
     return fig
 
 
@@ -96,9 +106,12 @@ def main():
     args = ap.parse_args()
     pts, xs = ordered(load_bias(args.snr))
     snr_dir = f"snr{args.snr:g}"
-    out = out_file("bias_1D", snr_dir, "violin_grid.png")
-    grid_figure(pts, xs, args.snr).savefig(out, dpi=130, facecolor=SURFACE)
-    print(f"-> {out}")
+    for group, names in GROUPS.items():
+        out = out_file("bias_1D", snr_dir, f"violin_grid_{group}.png")
+        fig = grid_figure(pts, xs, names, args.snr)
+        fig.savefig(out, dpi=130, facecolor=SURFACE)
+        plt.close(fig)
+        print(f"-> {out}")
     for name in ALL:
         fig = single_figure(pts, xs, name, args.snr)
         out = out_file("bias_1D", snr_dir, "per_param", f"violin_{name}.png")
