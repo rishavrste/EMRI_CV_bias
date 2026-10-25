@@ -14,7 +14,7 @@ from common import out_file, SEQ, SURFACE, TEXT_2, grid, ink_on, style_axes
 from plot_critical_snr import CLS, SNR0, VARIANTS, critical
 from bias_data import load_bias
 
-TEMPLATES = (("0pa", "0PA"), ("pn", "0PA + PN"))
+TEMPLATES = (("0pa", "0PA"), ("pn", "0PA with PN-type deviations"))
 
 
 def panel(ax, values, norm, title):
@@ -36,7 +36,6 @@ def figure(pts, crits, cl, variant):
     cb = fig.colorbar(im, ax=axes, fraction=0.03, pad=0.02)
     cb.set_label("ρ_crit", color=TEXT_2)
     cb.outline.set_visible(False)
-    fig.suptitle("nD critical SNR", x=0.01, ha="left", fontsize=13)
     return fig
 
 
