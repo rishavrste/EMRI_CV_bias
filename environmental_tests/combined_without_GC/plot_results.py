@@ -14,7 +14,7 @@ recomputed.  Same figures and conventions as ../run_1/plot_results.py, except:
 
 Written to plots/ (all seven vacuum parameters) and plots/intrinsic/ (m1, m2, a, p0):
   bias_panels.png            per parameter, |bias| and |bias|/sigma against p0
-  max_bias[_p90].png         per source, worst single-parameter |bias|/sigma
+  max_bias[_p90].png         per source, most biased parameter |bias|/sigma
   nd_bias[_p90].png          per source, n-d bias, marginalized and conditional
   improvement_3panel.png     0PA / PN on mismatch, max |bias|/sigma and n-d bias
   bias_sigma_ratio.png       |bias|_PN / |bias|_0PA and sigma_PN / sigma_0PA per parameter
@@ -217,7 +217,7 @@ def max_bias_panel(recs, path, exclude, note, p):
     log_axes(ax)
     ref_line(ax, ref, f"{p:.0%} credible interval, one parameter ({ref:.2f} sigma)")
     ax.set_ylabel("max |bias| / sigma  over parameters")
-    ax.set_title(f"Worst single-parameter bias per source, 0PA against 0PA+PN\nmax over {note}",
+    ax.set_title(f"Most biased parameter per source, 0PA against 0PA+PN\nmax over {note}",
                  fontsize=10)
     ax.legend(fontsize=8, frameon=False, )
     fig.tight_layout()
@@ -259,25 +259,43 @@ def critical_snr(model_rec, exclude, p):
                 rho_nd=snr0 * threshold_nd(p, k) / D if D > 0 else np.inf)
 
 
+def count_below(recs, model, key, exclude, p):
+    """Sources of one model with critical SNR below each line: injected, then REF_SNRS."""
+    rho = np.array([critical_snr(r["models"][model], exclude, p)[key] for r in recs])
+    return [int(np.sum(rho < snr)) for snr in (RI.TARGET_SNR, *REF_SNRS)]
+
+
+def line_label(text, recs, key, exclude, p, line):
+    """A reference line's text, followed by each model's count of sources below it."""
+    n = {m: count_below(recs, m, key, exclude, p)[line] for m, _, _ in MODELS}
+    return f"{text} (0PA: {n['0PA']}, 0PA+PN_dev: {n['0PA+PN']})"
+
+
 def critical_snr_panel(recs, path, exclude, note, p):
     """Critical SNR against p0, 1-d and n-d.  Below the dashed line the bias is already
-    significant at the injected SNR."""
+    significant at the injected SNR.  Each line's label counts the sources below it; the
+    labels sit on whichever side of the panel has no points at those heights."""
     fig, axes = plt.subplots(1, 2, figsize=(13.0, 4.9), sharey=True)
-    for ax, key, title in ((axes[0], "rho_1d", f"1D: worst single parameter, {p:.0%} credible interval"),
-                           (axes[1], "rho_nd", f"nD: {p:.0%} credible region")):
+    for ax, key, title, x, ha in (
+            (axes[0], "rho_1d", f"1D: most biased parameter, {p:.0%} credible interval", 0.01, "left"),
+            (axes[1], "rho_nd", f"nD: {p:.0%} credible region", 0.99, "right")):
         models_scatter(ax, recs, lambda m, kk=key: critical_snr(m, exclude, p)[kk],
-                       labels={"0PA+PN": "0PA with PN deviation"})
+                       labels={"0PA+PN": "0PA+PN_dev"})
         log_axes(ax)
         ax.axhline(RI.TARGET_SNR, color="0.55", lw=1.2, ls="--", zorder=1)
-        ax.text(0.99, RI.TARGET_SNR * 1.15, f"injected SNR = {RI.TARGET_SNR:g}", ha="right",
-                va="bottom", fontsize=7.5, color="0.35", transform=ax.get_yaxis_transform())
-        for snr in REF_SNRS:
+        ax.text(x, RI.TARGET_SNR * 1.15,
+                line_label(f"injected SNR = {RI.TARGET_SNR:g}", recs, key, exclude, p, 0),
+                ha=ha, va="bottom", fontsize=7, color="0.35",
+                transform=ax.get_yaxis_transform())
+        for i, snr in enumerate(REF_SNRS, start=1):
             ax.axhline(snr, color="0.55", lw=1.0, ls=":", zorder=1)
-            ax.text(0.01, snr * 1.15, f"SNR = {snr:g}", ha="left", va="bottom", fontsize=7.5,
-                    color="0.35", transform=ax.get_yaxis_transform())
+            ax.text(x, snr * 1.15, line_label(f"SNR = {snr:g}", recs, key, exclude, p, i),
+                    ha=ha, va="bottom", fontsize=7, color="0.35",
+                    transform=ax.get_yaxis_transform())
         ax.set_title(title, fontsize=9.5)
-        ax.legend(fontsize=8, frameon=False)
-    axes[0].set_ylabel("critical SNR")
+        ax.legend(fontsize=11, frameon=False)
+        ax.xaxis.label.set_size(13)
+    axes[0].set_ylabel("critical SNR", fontsize=13)
     fig.tight_layout()
     save(fig, path)
 

@@ -11,3 +11,10 @@ Each record also stores `gc.overlap_with_gc`, the overlap of the injection with 
 `plot_results.py`, `plot_overlap.py` are the ../combined scripts, reading results/ here.
 
 Do not switch the SuperKludge_r branch while a job runs: few is an editable install.
+
+Jobs (2026-11-04, all exit 0, 48/48 sources, none failed): 699824 nogc_r1a, 699825 nogc_r1b
+(run_1_second_gen), 699826 nogc_r2a, 699827 nogc_r2b (run_2).
+
+`plot_sky.py`: 2-d marginal (qS, phiS) Fisher contours of every kept source, both models.
+`plot_results.py` here has also moved on from the ../combined copy: critical_snr labels carry
+the counts of sources below each line.

@@ -23,7 +23,7 @@ OUT = os.path.join(HERE, "plots")
 C_0PA, C_PN, C_GAIN = "#1f6feb", "#d1650f", "#6f42c1"   # as run_1/results
 M_0PA, M_PN = "o", "^"
 MODELS = [("0PA", C_0PA, M_0PA), ("0PA+PN", C_PN, M_PN)]
-LABEL_ABOVE = 1e-6           # name only the sources the fit struggled with
+LABEL_ABOVE = 1e-4
 GAIN_LABEL_BELOW = 3.0       # improvement plot: name only the outliers below the main band
 
 
