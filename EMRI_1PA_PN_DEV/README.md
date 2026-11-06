@@ -30,6 +30,7 @@ the PN deviation is fitted; the simple deviation is dropped.
 | `make_results_table.py` | copy-ready table of the full-T fits, grid points, best PN fit over seeds old/row/ramp -> `results/lm_results.md` |
 | `run_cp_ramp.py`, `batch_cp_ramp.sh` | PN re-climb by a C_p ramp at the first rung (PHYS re-fitted at fixed C_p = +-2.5 ... +-40, C_e = 0), then the ladder -> `results/EMRI_pn_rishav_ramp_Tfrac0.9-1/ramp_T2.25_{label}.json` (profile), `lm_*` |
 | `run_lm_T_ladder.py`, `batch_lm_T_ladder.sh` | the ladder -> `results/{case}/lm_T{T}_{label}.json`, `lm_{label}.json` (label `idx4`, `adhoc_A`) |
+| `make_optimized_points.py` | all 25 grid points in one file: full source parameters and the full 0PA and 0PA + PN best fits, from `results/best_fits.json` and the SK_files signal array -> `results/optimized_points.json` |
 | `fisher/best_fits.py` | the full-T best fit per template (0PA seed old; PN the best over old/row/ramp/rampfine) -> `results/best_fits.json` |
 | `fisher/fisher_at_best.py`, `fisher/batch_fisher_at_best.sh` | Fisher at both best fits, SNR 20, T 2.5 yr -> `results/fisher_at_best/{0pa,pn}/fisher_{label}.json` |
 | `fisher/compare_bias.py` | 1D and nD bias tables -> `results/fisher_at_best/bias_comparison_snr{S}.txt` |
