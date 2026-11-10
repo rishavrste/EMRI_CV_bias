@@ -1,0 +1,56 @@
+startup
+[EMRI] T=2.5 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999993.502977361, 9.998641890046633, 0.9000090035032048, 9.08673034893863, 0.10006544114618166, 1.0, 13.7253796777895, 1.0472737944193957, 0.7857120862621122, 0.6283185307179586, 0.5235987755982988, 0.08927401842056025, 0.2, 0.3488814830609143, 0.95, False, False, False, True, -37.02989179148136, 14.38289380441086, 0.0, 0.0)
+Waveform Generated. SNR: 19.997732797157596
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 48.793396949768066 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.6569507122039795 seconds
+deltas {'m1': 12.3283872960889, 'm2': 4.328173387704899e-05, 'a': 3.160104173819648e-05, 'p0': 0.00031905252492235093, 'e0': 1.2336535284790197e-06, 'qS': 0.0005588985253540506, 'phiS': 0.0011942125079198553, 'Phi_phi0': 0.0, 'Phi_r0': 0.0, 'C_p': -1.3001904997713012, 'C_e': 0.17731903730509424, 'n_p': 0.04328761281083057, 'n_e': 0.003511191734215131}
+chi2 0.020733049915066182 scaled eigenvalues [2.48e-11 6.77e-10 9.81e-08 3.83e-06 8.43e-05 1.14e-04 2.29e-03 3.36e-02
+ 1.59e-01 4.89e-01 6.64e-01 1.07e+00 1.06e+01]
+m1        sqrt(G_ii) 7.491e+01  g_i/sqrt(G_ii) +3.600e-05
+m2        sqrt(G_ii) 2.611e+06  g_i/sqrt(G_ii) -3.603e-05
+a         sqrt(G_ii) 1.971e+07  g_i/sqrt(G_ii) +3.600e-05
+p0        sqrt(G_ii) 1.459e+07  g_i/sqrt(G_ii) +3.606e-05
+e0        sqrt(G_ii) 4.145e+06  g_i/sqrt(G_ii) +3.318e-05
+qS        sqrt(G_ii) 1.308e+02  g_i/sqrt(G_ii) +2.849e-05
+phiS      sqrt(G_ii) 2.699e+02  g_i/sqrt(G_ii) -3.402e-05
+Phi_phi0  sqrt(G_ii) 4.145e+01  g_i/sqrt(G_ii) -2.816e-05
+Phi_r0    sqrt(G_ii) 4.562e+00  g_i/sqrt(G_ii) -4.129e-06
+C_p       sqrt(G_ii) 7.172e+01  g_i/sqrt(G_ii) +3.603e-05
+C_e       sqrt(G_ii) 5.377e+00  g_i/sqrt(G_ii) +3.412e-05
+n_p       sqrt(G_ii) 7.751e+02  g_i/sqrt(G_ii) +2.746e-05
+n_e       sqrt(G_ii) 1.788e+01  g_i/sqrt(G_ii) -6.718e-05
+cos(C_p, n_p) 0.9969622159982269 cos(C_e, n_e) -0.9949796562035877
+11 params predicted chi2 drop (GN) 1.50445852685422e-09
+13 params predicted chi2 drop (GN) 0.019976439661037987
+lam 1e-06: pred +6.011e-05 actual +1.837e-06 dn_p +7.149e-04 dn_e -8.300e-02
+lam 1e-05: pred +2.291e-05 actual +1.902e-05 dn_p +3.959e-04 dn_e -2.849e-02
+lam 1e-04: pred +4.866e-06 actual +3.562e-06 dn_p +1.991e-05 dn_e -5.056e-03
+lam 1e-03: pred +8.527e-07 actual +1.768e-07 dn_p -2.159e-06 dn_e -8.043e-04
+lam 1e-02: pred +1.408e-07 actual -5.912e-07 dn_p -6.143e-07 dn_e -1.227e-04
+lam 1e-01: pred +1.967e-08 actual -1.424e-06 dn_p -9.797e-08 dn_e -1.527e-05
+lam 1e+00: pred +3.467e-09 actual -6.504e-07 dn_p -7.954e-09 dn_e -1.790e-06
+lam 1e+01: pred +1.341e-09 actual -6.852e-07 dn_p +1.075e-09 dn_e -2.661e-07
+lam 1e+02: pred +2.921e-10 actual -1.008e-06 dn_p +3.083e-10 dn_e -3.553e-08
+lam 1e+03: pred +3.311e-11 actual -5.649e-07 dn_p +3.493e-11 dn_e -3.735e-09
+lam 1e+04: pred +3.355e-12 actual -2.994e-07 dn_p +3.538e-12 dn_e -3.755e-10
+lam 1e+05: pred +3.360e-13 actual -3.979e-07 dn_p +3.543e-13 dn_e -3.757e-11
+lam 1e+06: pred +3.360e-14 actual -5.646e-07 dn_p +3.543e-14 dn_e -3.757e-12
+n_p -0.050: dchi2 +5.016e+02
+n_p -0.010: dchi2 +5.749e+01
+n_p -0.001: dchi2 +6.012e-01
+n_p +0.001: dchi2 +6.002e-01
+n_p +0.010: dchi2 +5.747e+01
+n_p +0.050: dchi2 +5.362e+02
+n_e -0.050: dchi2 +8.097e-01
+n_e -0.010: dchi2 +3.199e-02
+n_e -0.001: dchi2 +3.063e-04
+n_e +0.001: dchi2 +3.353e-04
+n_e +0.010: dchi2 +3.197e-02
+n_e +0.050: dchi2 +7.861e-01

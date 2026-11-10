@@ -1,0 +1,23 @@
+## hybrid
+ M src/few/trajectory/ode/__pycache__/__init__.cpython-312.pyc
+ M src/few/trajectory/ode/__pycache__/flux.cpython-312.pyc
+startup
+[EMRI] T=0.25 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+1. C != 0, n = 0 vs C = 0: rel diff 7.548e-02
+2. C = 0, n = (0.7, -0.7) vs C = 0: rel diff 0.000e+00
+   C != 0, n_p = 0.5 vs n = 0: rel diff 4.917e-03
+   C != 0, n_e = 0.5 vs n = 0: rel diff 1.129e-03
+waveform shape: (2, 788953)
+Computing SNR for parameters: (1000000.0, 10.0, 0.9, 9.08679788774945, 0.1, 1.0, 13.7253796777895, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1, 0.2, 0.3, 0.95, False, False, False, True, -37.02989179148136, 14.38289380441086, 0.3, 0.3)
+Waveform Generated. SNR: 2.3148546402066055
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 2.621347665786743 seconds
+3. d/dC_p: SEF (step 0.5) vs central FD (step 0.5): rel diff 5.642e-04
+3. d/dC_p: SEF (step 0.5) vs central FD (step 2): rel diff 8.007e-04
+3. d/dn_p: SEF (step 0.01) vs central FD (step 0.01): rel diff 2.918e-03
+3. d/dn_p: SEF (step 0.01) vs central FD (step 0.05): rel diff 1.203e-03
+3. d/dn_e: SEF (step 0.01) vs central FD (step 0.01): rel diff 1.024e-02
+3. d/dn_e: SEF (step 0.01) vs central FD (step 0.05): rel diff 2.010e-02

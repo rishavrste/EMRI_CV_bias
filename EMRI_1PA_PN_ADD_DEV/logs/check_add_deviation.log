@@ -1,0 +1,58 @@
+WARNING: Could not find any nv files on this host!
+/home/svu/e1583490/.bashrc: line 28: module: command not found
+few: /home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+PASS  all six zero, deviation on, identical to deviation off: 0.000e+00 (limit 0e+00)
+PASS  deviation_included False ignores all six: 0.000e+00 (limit 0e+00)
+PASS  rates vs separately written formula (rel. to vacuum rate): 3.067e-16 (limit 1e-13)
+PASS  A = 0: n has no effect: 0.000e+00 (limit 0e+00)
+PASS  C = 0: rate / vacuum - 1 equals A (p/10)^n: 1.656e-16 (limit 1e-12)
+PASS  C_p, A_p, n_p never touch edot; C_e, A_e, n_e never touch pdot: 0.000e+00 (limit 0e+00)
+PASS  x, phases, frequencies, primary unchanged: 0.000e+00 (limit 0e+00)
+PASS  slots 7-10 absent gives A = 0: 0.000e+00 (limit 0e+00)
+PASS  environment scales the 0PA rate only; 1PA added on top unchanged: 0.000e+00 (limit 1e-13)
+PASS  at p = 10 the rates do not depend on n: 0.000e+00 (limit 1e-15)
+PASS  edot vanishes at e = 0 with every deviation on: 0.000e+00 (limit 0e+00)
+-- idx0: a -0.900 e0 0.100 p0 13.0672 C_p 19.455 C_e 3.374
+PASS  A = 0 trajectory identical to the PN model: 0.000e+00 (limit 0e+00)
+      PN model: p 13.0672 -> 9.9294, e -> 0.0738
+      A +1e-06 n +0: dPhi_phi vs PN +1.260e-01 rad, back to p0 3.1e-12
+PASS  A +1e-06 n +0: forward then backward returns to p0: 3.064e-12 (limit 1e-07)
+      A +1e-06 n +4: dPhi_phi vs PN +2.841e-01 rad, back to p0 1.1e-11
+PASS  A +1e-06 n +4: forward then backward returns to p0: 1.150e-11 (limit 1e-07)
+      A +1e-06 n -4: dPhi_phi vs PN +5.873e-02 rad, back to p0 4.2e-12
+PASS  A +1e-06 n -4: forward then backward returns to p0: 4.214e-12 (limit 1e-07)
+      A +1e-05 n +0: dPhi_phi vs PN +1.260e+00 rad, back to p0 4.7e-12
+PASS  A +1e-05 n +0: forward then backward returns to p0: 4.688e-12 (limit 1e-07)
+      A +1e-05 n +4: dPhi_phi vs PN +2.841e+00 rad, back to p0 1.3e-11
+PASS  A +1e-05 n +4: forward then backward returns to p0: 1.290e-11 (limit 1e-07)
+      A +1e-05 n -4: dPhi_phi vs PN +5.873e-01 rad, back to p0 2.7e-12
+PASS  A +1e-05 n -4: forward then backward returns to p0: 2.654e-12 (limit 1e-07)
+      A -1e-05 n +0: dPhi_phi vs PN -1.260e+00 rad, back to p0 2.1e-13
+PASS  A -1e-05 n +0: forward then backward returns to p0: 2.149e-13 (limit 1e-07)
+      A -1e-05 n +4: dPhi_phi vs PN -2.840e+00 rad, back to p0 4.2e-12
+PASS  A -1e-05 n +4: forward then backward returns to p0: 4.151e-12 (limit 1e-07)
+      A -1e-05 n -4: dPhi_phi vs PN -5.873e-01 rad, back to p0 1.2e-11
+PASS  A -1e-05 n -4: forward then backward returns to p0: 1.204e-11 (limit 1e-07)
+-- idx4: a +0.900 e0 0.100 p0 9.0867 C_p -37.030 C_e 14.383
+PASS  A = 0 trajectory identical to the PN model: 0.000e+00 (limit 0e+00)
+      PN model: p 9.0867 -> 3.3364, e -> 0.0197
+      A +1e-06 n +0: dPhi_phi vs PN +1.456e+00 rad, back to p0 6.5e-12
+PASS  A +1e-06 n +0: forward then backward returns to p0: 6.477e-12 (limit 1e-07)
+      A +1e-06 n +4: dPhi_phi vs PN +5.470e-01 rad, back to p0 9.1e-12
+PASS  A +1e-06 n +4: forward then backward returns to p0: 9.139e-12 (limit 1e-07)
+      A +1e-06 n -4: dPhi_phi vs PN +6.385e+00 rad, back to p0 2.1e-11
+PASS  A +1e-06 n -4: forward then backward returns to p0: 2.102e-11 (limit 1e-07)
+      A +1e-05 n +0: dPhi_phi vs PN +1.456e+01 rad, back to p0 1.8e-11
+PASS  A +1e-05 n +0: forward then backward returns to p0: 1.774e-11 (limit 1e-07)
+      A +1e-05 n +4: dPhi_phi vs PN +5.470e+00 rad, back to p0 3.1e-11
+PASS  A +1e-05 n +4: forward then backward returns to p0: 3.080e-11 (limit 1e-07)
+      A +1e-05 n -4: dPhi_phi vs PN +6.391e+01 rad, back to p0 1.9e-11
+PASS  A +1e-05 n -4: forward then backward returns to p0: 1.883e-11 (limit 1e-07)
+      A -1e-05 n +0: dPhi_phi vs PN -1.456e+01 rad, back to p0 7.2e-12
+PASS  A -1e-05 n +0: forward then backward returns to p0: 7.200e-12 (limit 1e-07)
+      A -1e-05 n +4: dPhi_phi vs PN -5.470e+00 rad, back to p0 2.1e-11
+PASS  A -1e-05 n +4: forward then backward returns to p0: 2.059e-11 (limit 1e-07)
+      A -1e-05 n -4: dPhi_phi vs PN -6.378e+01 rad, back to p0 9.5e-12
+PASS  A -1e-05 n -4: forward then backward returns to p0: 9.464e-12 (limit 1e-07)
+
+31 of 31 passed
