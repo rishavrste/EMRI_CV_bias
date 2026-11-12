@@ -1,0 +1,9 @@
+SuperKludge_r branch: PN_v_3
+EMRI idx0 REL5_1S: injection {'m1': 1000000.0, 'm2': 10.0, 'a': -0.9, 'p0': 13.0673756813688, 'e0': 0.1, 'Phi_phi0': 0.1, 'Phi_r0': 0.3, 'chi2': 0.95, 'T': 2.5}
+  seed [-33.9487056879095, 35.127713357837564, -29.63292694086811, -4.402041434772723, 244.60976550034653]
+[at_injection] rms dPhi_phi 0.2886 -> 0.04226  rms dPhi_r 0.0495 -> 0.04221  end (-0.1175, +0.0123) rad  nfev=28  7 s
+    coeffs: +49.2824, -34.497, -28.4124, +12.5638, +215.379
+[free] rms dPhi_phi 0.04226 -> 0.0001027  rms dPhi_r 0.04221 -> 0.0002299  end (-7.791e-05, -0.001346) rad  nfev=27  11 s
+    coeffs: +47.9916, -124.781, -14.0499, -18.5445, -57.2222
+    shift : m1=+82.79, m2=-0.0002565, a=+0.0002586, p0=-0.0009119, e0=+1.72e-05, Phi_phi0=+0.0002565, Phi_r0=+0.0004418
+wrote /nfs/home/svu/e1583490/EMRI_CV_bias/EMRI_v_3/results/phase_fit_EMRI_idx0_REL5_1S.json  (230 trajectories)

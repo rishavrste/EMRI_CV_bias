@@ -1,6 +1,7 @@
 """More general deviations than the SK-trained SVD basis: options 1, 2 and 3 (SuperKludge_r branch PN_v_3).
 
 Every form is linear in its parameters x_k:   X += eta * S_X(p, e) * sum_k x_k g_kX(v),   v = p^-1/2,
+(shifted forms, marked "v0", have g_kX(v, v0) with v0 = p0^-1/2 the start of the template's own track)
 X = pdot, edot, Omega_phi, Omega_r, and S_X is either the leading 1PA shape ("lead") or the template's own 0PA rate
 ("0pa"). The 1PA rate it should absorb is eta * 1PA_X, so the expected x come from one weighted linear solve.
 
@@ -9,6 +10,10 @@ X = pdot, edot, Omega_phi, Omega_r, and S_X is either the leading 1PA shape ("le
     REL5_0   (5) 0pa  : c_X + K v^3                             option 1 as first written (0PA-relative, v^0 and v^3)
     REL5_1   (5) 0pa  : c_X v + K v^4                           option 1, PN-consistent: 1PA/0PA starts at relative v^1
     REL8_1   (8) 0pa  : c_X v + k_X v^4                         option 1, slope per rate
+    REL5_1S  (5) 0pa  : c_X (v - v0) + K v^4                    REL5_1 with the c_X terms zero at the start of the
+                                                                track, v0 = p0^-1/2 of the template itself, so
+                                                                they cannot act as a constant rescaling (mass ratio)
+    REL5_1S2 (5) 0pa  : c_X (v - v0) + K (v^4 - v0^4)            the same with the K term shifted too
     SVDf{f}_{K}  lead : sum_j C_j b_jX(v)                       option 3: basis from SK 1PA cubics whose four PN-order
                                                                 terms are each scaled by an independent U(1-f, 1+f);
                                                                 f = 0 is the check_models SVD basis
@@ -109,13 +114,13 @@ def build_basis(f):
 
 # --- forms ------------------------------------------------------------------------------------
 def unit(k, g):
-    """g(v) in channel k only."""
-    return lambda v: np.array([g(v) if c == k else 0 * v for c in range(4)])
+    """g(v[, v0]) in channel k only."""
+    return lambda v, *v0: np.array([g(v, *v0) if c == k else 0 * v for c in range(4)])
 
 
 def every(g):
-    """g(v) in all four channels."""
-    return lambda v: np.array([g(v)] * 4)
+    """g(v[, v0]) in all four channels."""
+    return lambda v, *v0: np.array([g(v, *v0)] * 4)
 
 
 def cubic(b):
@@ -131,6 +136,9 @@ def make_forms(bases):
         "REL5_0": ("0pa", [unit(k, one) for k in range(4)] + [every(lambda v: v ** 3)]),
         "REL5_1": ("0pa", [unit(k, lambda v: v) for k in range(4)] + [every(lambda v: v ** 4)]),
         "REL8_1": ("0pa", [unit(k, lambda v: v) for k in range(4)] + [unit(k, lambda v: v ** 4) for k in range(4)]),
+        "REL5_1S": ("0pa", [unit(k, lambda v, v0: v - v0) for k in range(4)] + [every(lambda v, v0: v ** 4)], "v0"),
+        "REL5_1S2": ("0pa", [unit(k, lambda v, v0: v - v0) for k in range(4)]
+                     + [every(lambda v, v0: v ** 4 - v0 ** 4)], "v0"),
     }
     for f, beta in bases.items():
         for K in K_SVD:
@@ -138,17 +146,26 @@ def make_forms(bases):
     return forms
 
 
-def design(form, v):
-    """(n_params, 4, n) basis functions g_kX(v)."""
-    return np.array([g(v) for g in form[1]])
+def shifted(form):
+    """True for forms whose basis also takes v0 (the start of the track)."""
+    return len(form) > 2 and form[2] == "v0"
+
+
+def design(form, v, v0=None):
+    """(n_params, 4, n) basis functions g_kX(v) (or g_kX(v, v0) for shifted forms)."""
+    if shifted(form) and v0 is None:
+        raise ValueError("shifted form needs v0")
+    extra = (v0,) if shifted(form) else ()
+    return np.array([g(v, *extra) for g in form[1]])
 
 
 def fit(form, S, v, target):
-    """Expected x: least squares of S_X sum_k x_k g_kX to the 1PA rate, each rate weighted by 1/rms. Returns x, rel."""
+    """Expected x: least squares of S_X sum_k x_k g_kX to the 1PA rate, each rate weighted by 1/rms. Returns x, rel.
+    v runs along the track from its start, so v0 = v[0] for shifted forms."""
     w = 1 / np.sqrt(np.mean(target ** 2, axis=1, keepdims=True))
-    G = design(form, v) * S[None] * w[None]
+    G = design(form, v, v[0]) * S[None] * w[None]
     x = np.linalg.lstsq(G.reshape(G.shape[0], -1).T, (target * w).ravel(), rcond=None)[0]
-    rem = target - S * np.einsum("k,kcn->cn", x, design(form, v))
+    rem = target - S * np.einsum("k,kcn->cn", x, design(form, v, v[0]))
     rel = np.sqrt(np.mean(rem ** 2, axis=1) / np.mean(target ** 2, axis=1))
     return x, rel
 

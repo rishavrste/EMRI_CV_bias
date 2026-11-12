@@ -6,7 +6,8 @@ trajectory at the injection (same as check_models/phase_fit.py):
                         expected coefficients (forms_v3.fit, the 1PA rate fit along the track).
     (ii) free         : coefficients and m1, m2, a, p0, e0, Phi_phi0, Phi_r0 fitted, seeded from (i).
                         The parameter shifts are the bias proxy (phases only, no noise weighting: a ranking).
-Forms: 0PA (no coefficients), B (4), REL5_1 (5). The coefficients travel in the PN_v_3 deviation slots
+Forms: 0PA (no coefficients), B (4), REL5_1 (5), REL5_1S and REL5_1S2 (5, shifted by v0 = p0^-1/2 of the trial
+point, so they move with the fitted p0). The coefficients travel in the PN_v_3 deviation slots
 additional_args[5:10]; slot_flux() replaces flux.py's own deviation by the form's.
     -> results/phase_fit_{grid}_idx{p}_{form}.json (rewritten after each fit)
 Run:  python phase_fit_v3.py --grid EMRI --point 4 --form REL5_1 > logs/phase_fit_EMRI_idx4_REL5_1.log
@@ -20,7 +21,7 @@ from scipy.optimize import least_squares
 
 import forms_v3 as V
 
-FORMS = ("0PA", "B", "REL5_1")
+FORMS = ("0PA", "B", "REL5_1", "REL5_1S", "REL5_1S2")
 PHYS_FREE = ["m1", "m2", "a", "p0", "e0", "Phi_phi0", "Phi_r0"]
 N_T = 400
 T_FRACTION = 0.99                  # compare up to this fraction of the signal's end (keeps clear of the plunge)
@@ -38,6 +39,8 @@ def slot_flux(form):
     kind, n = form[0], len(form[1])
 
     class SlotFlux(SuperKludgeFlux):
+        V0 = None                                             # v0 = p0^-1/2 of the current trial (shifted forms)
+
         def deviation_terms(self, *args):                    # switch off flux.py's own deviation
             return np.zeros(4)
 
@@ -48,7 +51,7 @@ def slot_flux(form):
                 return
             p, e = float(y[0]), float(y[1])
             S = V.lead_shapes(p, e) if kind == "lead" else base
-            g = V.design(form, np.array([p ** -0.5]))[..., 0]                  # (n, 4)
+            g = V.design(form, np.array([p ** -0.5]), SlotFlux.V0)[..., 0]    # (n, 4)
             ydot[list(V.SLOTS)] += self.massratio * S * (self.dev_c[:n] @ g)
 
     SlotFlux.__name__ = "SuperKludgeFlux"     # EMRIInspiral keys its SuperKludge set-up on this name
@@ -64,7 +67,8 @@ class Problem:
         self.inj = V.injection(grid, point)
         self.form = forms.get(form_name)
         self.n_c = 0 if self.form is None else len(self.form[1])
-        self.traj = EMRIInspiral(func=SuperKludgeFlux if self.form is None else slot_flux(self.form))
+        self.flux = SuperKludgeFlux if self.form is None else slot_flux(self.form)
+        self.traj = EMRIInspiral(func=self.flux)
         sig_traj = EMRIInspiral(func=SuperKludgeFlux)
         args = [self.inj["chi2"], 1, 0, 0, 0] + [0.0] * N_SLOTS
         t_end = sig_traj(*self.masses(self.inj), *args, **self.kw(self.inj))[0][-1]
@@ -84,6 +88,7 @@ class Problem:
         self.n_eval += 1
         c = list(coeffs) + [0.0] * (N_SLOTS - len(coeffs))
         args = [self.inj["chi2"], 0, 0, 0, int(self.n_c > 0), *c]
+        self.flux.V0 = theta["p0"] ** -0.5
         try:
             t_end = self.traj(*self.masses(theta), *args, **self.kw(theta))[0][-1]
             if t_end < self.t[-1] * (1 - 1e-9):
