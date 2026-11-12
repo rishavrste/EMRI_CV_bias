@@ -1,0 +1,9 @@
+SuperKludge_r branch: PN_v_3
+EMRI idx7 B: injection {'m1': 1000000.0, 'm2': 10.0, 'a': 0.0, 'p0': 11.097432993590687, 'e0': 0.2, 'Phi_phi0': 0.1, 'Phi_r0': 0.3, 'chi2': 0.95, 'T': 2.5}
+  seed [-8.946052544747516, -0.5814964853650744, 3.200771310954548, 2.3360014894440435]
+[at_injection] rms dPhi_phi 0.2004 -> 0.00382  rms dPhi_r 0.06735 -> 0.01016  end (+0.003542, +0.05245) rad  nfev=23  4 s
+    coeffs: -9.18357, -1.38236, +2.87049, +2.20765
+[free] rms dPhi_phi 0.00382 -> 0.0009528  rms dPhi_r 0.01016 -> 0.000912  end (+0.004379, +0.004711) rad  nfev=20  13 s
+    coeffs: -7.52493, -0.81153, +2.22217, +1.87801
+    shift : m1=+36.97, m2=+1.469e-05, a=+5.9e-05, p0=-0.0002738, e0=-7.686e-06, Phi_phi0=-0.002403, Phi_r0=+0.0006316
+wrote /home/svu/e1583490/EMRI_CV_bias/EMRI_v_3/results/phase_fit_EMRI_idx7_B.json  (205 trajectories)

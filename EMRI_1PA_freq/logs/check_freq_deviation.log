@@ -1,0 +1,18 @@
+[PASS] a=-0.9 p=13.0 e=0.1: dOmega_phi = formula
+[PASS] a=-0.9 p=13.0 e=0.1: dOmega_r = dOmega_phi
+[PASS] a=-0.9 p=13.0 e=0.1: C_e leaves Omega alone, changes edot
+[PASS] a=-0.9 p=13.0 e=0.1: C = 0 is GR
+[PASS] a=0.9 p=9.0 e=0.1: dOmega_phi = formula
+[PASS] a=0.9 p=9.0 e=0.1: dOmega_r = dOmega_phi
+[PASS] a=0.9 p=9.0 e=0.1: C_e leaves Omega alone, changes edot
+[PASS] a=0.9 p=9.0 e=0.1: C = 0 is GR
+[PASS] a=0.5 p=12.0 e=0.3: dOmega_phi = formula
+[PASS] a=0.5 p=12.0 e=0.3: dOmega_r = dOmega_phi
+[PASS] a=0.5 p=12.0 e=0.3: C_e leaves Omega alone, changes edot
+[PASS] a=0.5 p=12.0 e=0.3: C = 0 is GR
+
+physical seed vs exact 1PA frequency shift, units q (1-e^2)^1.5 / p^2
+idx0: C_p=-17.3596 C_e=-0.986155  coded dOmega=4.6499  exact dOmega_phi=4.2541  dOmega_r=3.1675
+idx4: C_p=0.692404 C_e=0.0208581  coded dOmega=-0.1855  exact dOmega_phi=0.3016  dOmega_r=0.2487
+
+12 of 12 checks pass

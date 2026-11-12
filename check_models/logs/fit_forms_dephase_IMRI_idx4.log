@@ -1,0 +1,32 @@
+IMRI idx4 0PA     (0) rate rem max 1.0000  end dPhi_phi  -299.1826  end dPhi_r   -84.5179  rms (22.2272, 12.3614)
+IMRI idx4 B       (4) rate rem max 0.7610  end dPhi_phi  -495.4810  end dPhi_r  -272.9933  rms (60.1407, 41.8804)
+IMRI idx4 J5      (5) rate rem max 0.1660  end dPhi_phi  -116.6762  end dPhi_r   -35.6125  rms (7.6377, 3.5574)
+IMRI idx4 PL6     (6) rate rem max 0.1180  end dPhi_phi  -142.6406  end dPhi_r   -80.4861  rms (17.7688, 12.6051)
+IMRI idx4 SVD_1   (1) rate rem max 0.7089  end dPhi_phi  -260.9989  end dPhi_r  -145.6904  rms (32.1567, 22.6845)
+IMRI idx4 SVD_2   (2) rate rem max 0.2849  end dPhi_phi  -157.2586  end dPhi_r   -90.8265  rms (20.6088, 15.1254)
+IMRI idx4 SVD_3   (3) rate rem max 0.1491  end dPhi_phi   -21.8456  end dPhi_r    -8.5960  rms (1.6156, 1.0980)
+IMRI idx4 SVD_4   (4) rate rem max 0.0225  end dPhi_phi    -9.8623  end dPhi_r    -3.5184  rms (0.6559, 0.3383)
+IMRI idx4 PL      (8) rate rem max 0.1180  end dPhi_phi  -141.9808  end dPhi_r   -80.2263  rms (17.6991, 12.5864)
+IMRI idx4 LIN     (8) rate rem max 0.1653  end dPhi_phi  +270.4832  end dPhi_r  +109.3864  rms (23.5470, 14.3511)
+Traceback (most recent call last):
+  File "/home/svu/e1583490/EMRI_CV_bias/check_models/fit_forms.py", line 250, in <module>
+    main()
+  File "/home/svu/e1583490/EMRI_CV_bias/check_models/fit_forms.py", line 246, in main
+    run_dephase(beta, args.grid, args.point, args.forms)
+  File "/home/svu/e1583490/EMRI_CV_bias/check_models/fit_forms.py", line 222, in run_dephase
+    ph = phases(make_dev_flux(f, x, beta), (0, 0, 0))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svu/e1583490/EMRI_CV_bias/check_models/fit_forms.py", line 209, in phases
+    t_end = traj(*m, *args, **kw)[0][-1]
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/trajectory/base.py", line 141, in __call__
+    out = self.get_inspiral(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/trajectory/inspiral.py", line 287, in get_inspiral
+    out = self.inspiral_generator.run_inspiral(m1, m2, a, y0, args_in, **temp_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/trajectory/integrate.py", line 606, in run_inspiral
+    self.integrate(0.0, y0)
+  File "/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/trajectory/integrate.py", line 288, in integrate
+    raise ValueError("Integration did not converge within max_iter.")
+ValueError: Integration did not converge within max_iter.

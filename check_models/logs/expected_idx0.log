@@ -1,0 +1,17 @@
+SuperKludge_r branch: PN_freq_evol
+
+idx0: expected coefficients (1PA rate fit along the injected 1PA trajectory)
+  PN_freq    C_p=-18.917, C_e=-1.1037
+  A          C_p=-18.917, C_e=-1.1037, C_Om=+3.7739
+  B          C_p=-18.917, C_e=-1.1037, C_Omphi=+4.3961, C_Omr=+3.1517
+  power_law  C_p=-20.599, C_e=-1.2343, C_Omphi=+4.5908, C_Omr=+3.1353, n_p=+0.65984, n_e=+0.85877, n_Omphi=+0.293, n_Omr=-0.034967
+
+idx0: rate remainder rms(1PA - family)/rms(1PA), and dephasing at the injection [rad]
+  family     | pdot  | edot  | Om_phi | Om_r  | rms dPhi_phi | rms dPhi_r | end dPhi_phi | end dPhi_r
+  0PA        | 1.000 | 1.000 |  1.000 | 1.000 |       3.2298 |     1.9368 |      +6.8632 |    +3.3244
+  PN_freq    | 0.051 | 0.067 |  0.154 | 0.608 |       0.4813 |     1.1706 |      -0.8710 |    -2.1635
+  A          | 0.051 | 0.067 |  0.143 | 0.197 |       0.3106 |     0.3789 |      +0.5962 |    -0.6963
+  B          | 0.051 | 0.067 |  0.022 | 0.003 |       0.0707 |     0.0024 |      -0.1097 |    +0.0096
+  power_law  | 0.002 | 0.002 |  0.001 | 0.000 |       0.0014 |     0.0003 |      +0.0018 |    +0.0000
+
+wrote /nfs/home/svu/e1583490/EMRI_CV_bias/check_models/results/expected_idx0.json

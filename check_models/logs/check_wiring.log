@@ -1,0 +1,21 @@
+SuperKludge_r branch: PN_freq_evol
+[PASS] a=-0.9 p=13.0 e=0.1: model 0 = PN_freq formula
+[PASS] a=-0.9 p=13.0 e=0.1: model 1 at C_Om = -(15/56) C_p = model 0
+[PASS] a=-0.9 p=13.0 e=0.1: model 2 at C_Omphi = C_Omr = model 1
+[PASS] a=-0.9 p=13.0 e=0.1: model 3 at n = 0 = model 2
+[PASS] a=-0.9 p=13.0 e=0.1: model 3 = (10/p)^n times each term
+[PASS] a=-0.9 p=13.0 e=0.1: c = 0 is GR for every model
+[PASS] a=+0.9 p=9.0 e=0.1: model 0 = PN_freq formula
+[PASS] a=+0.9 p=9.0 e=0.1: model 1 at C_Om = -(15/56) C_p = model 0
+[PASS] a=+0.9 p=9.0 e=0.1: model 2 at C_Omphi = C_Omr = model 1
+[PASS] a=+0.9 p=9.0 e=0.1: model 3 at n = 0 = model 2
+[PASS] a=+0.9 p=9.0 e=0.1: model 3 = (10/p)^n times each term
+[PASS] a=+0.9 p=9.0 e=0.1: c = 0 is GR for every model
+[PASS] a=+0.5 p=12.0 e=0.3: model 0 = PN_freq formula
+[PASS] a=+0.5 p=12.0 e=0.3: model 1 at C_Om = -(15/56) C_p = model 0
+[PASS] a=+0.5 p=12.0 e=0.3: model 2 at C_Omphi = C_Omr = model 1
+[PASS] a=+0.5 p=12.0 e=0.3: model 3 at n = 0 = model 2
+[PASS] a=+0.5 p=12.0 e=0.3: model 3 = (10/p)^n times each term
+[PASS] a=+0.5 p=12.0 e=0.3: c = 0 is GR for every model
+
+18 of 18 checks pass

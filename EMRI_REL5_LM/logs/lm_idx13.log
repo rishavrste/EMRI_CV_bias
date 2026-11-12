@@ -1,0 +1,389 @@
+/home/svu/e1583490/packages_to_install/SuperKludge_r/src/few/__init__.py
+SuperKludge_r branch: PN_v_3
+startup
+[EMRI] T=2.5 yr dt=10.0 s drop_dc=True use_gpu=True gen={'inspiral_kwargs': None, 'sum_kwargs': {'pad_output': True, 'odd_len': True, 'force_backend': 'cuda12x'}, 'mode_selector_kwargs': None, 'tdi_chan': 'AET'}
+[START full lm T=2.5 seed idx13] O=0.999831020945 chi2=1.351834e-01 rho_s=20.000000
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000000.0, 10.0, 0.5, 9.970668192963045, 0.3, 1.0, 9.7894927237302, 1.0471975511965976, 0.7853981633974483, 0.6283185307179586, 0.5235987755982988, 0.1, 0.2, 0.3, 0.95, False, False, False, True, -1.0140017708246196, 1.72968432107767, -0.2068559668642604, 0.013802858156500702, 62.742496575561084)
+Waveform Generated. SNR: 20.000020311843144
+calculating stable deltas...
+Time taken to compute stable deltas is 51.78466749191284 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.95876407623291 seconds
+    LM full lm T=2.5 seed idx13 it   0 lam=3.3e-07 ov=0.999831020945 chi2=1.351834e-01 rel=9.6e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000000.1904315312, 9.99999899043876, 0.5000018257244783, 9.970670207080246, 0.29999785828775677, 1.0, 9.7894927237302, 1.0472040420432767, 0.7851119321235214, 0.6283185307179586, 0.5235987755982988, 0.10565266827743748, 0.2, 0.29463463960018466, 0.95, False, False, False, True, -0.35158961300649616, 6.387391426637735, -0.6831814354643996, -0.6398035643028557, 67.08895491202723)
+Waveform Generated. SNR: 20.001413730352127
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.621036767959595 seconds
+    LM full lm T=2.5 seed idx13 it   1 lam=3.6e-07 ov=0.999994077826 chi2=4.740073e-03 rel=1.2e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000000.1414995253, 9.9999969442171, 0.5000029515932852, 9.970671074646322, 0.29999676239132284, 1.0, 9.7894927237302, 1.0474615189101246, 0.785185040824219, 0.6283185307179586, 0.5235987755982988, 0.1045374448825541, 0.2, 0.2990458418400636, 0.95, False, False, False, True, 0.12770759501021822, 9.508868715195705, -0.8905155434074992, -0.9562239270869402, 66.3618398285141)
+Waveform Generated. SNR: 19.999575010511656
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.618895769119263 seconds
+    LM full lm T=2.5 seed idx13 it   2 lam=1.2e-07 ov=0.999994761021 chi2=4.191275e-03 rel=3.6e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000000.043166935, 9.99999508636942, 0.5000035124212707, 9.970671324729741, 0.2999965682440864, 1.0, 9.7894927237302, 1.0474616221730493, 0.7852061127335805, 0.6283185307179586, 0.5235987755982988, 0.10412455089160771, 0.2, 0.29995104596110517, 0.95, False, False, False, True, 0.4043809089884511, 10.058777590038053, -0.886225170952765, -1.00014930218821, 64.46601802030764)
+Waveform Generated. SNR: 19.999453079881512
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.504642963409424 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.9578468799591064 seconds
+    LM full lm T=2.5 seed idx13 it   3 lam=4.0e-08 ov=0.999996635602 chi2=2.691744e-03 rel=1.2e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999999.8251556102, 9.99998761900399, 0.5000043294859318, 9.970672077237088, 0.2999965108229202, 1.0, 9.7894927237302, 1.0474480004345743, 0.7852054428138319, 0.6283185307179586, 0.5235987755982988, 0.1032493061255456, 0.2, 0.30073877982114033, 0.95, False, False, False, True, 1.0297733725394782, 10.494250268508168, -0.7838419386302109, -0.9705906831065032, 60.27460082336603)
+Waveform Generated. SNR: 19.999519405408044
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.629517078399658 seconds
+    LM full lm T=2.5 seed idx13 it   4 lam=1.3e-08 ov=0.999997047839 chi2=2.361903e-03 rel=1.8e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999999.3667821165, 9.99996242880185, 0.5000048415502569, 9.970674111687307, 0.29999679959833697, 1.0, 9.7894927237302, 1.0474227388593556, 0.78521523308225, 0.6283185307179586, 0.5235987755982988, 0.10207767662227324, 0.2, 0.3017536083297437, 0.95, False, False, False, True, 2.1662722032486252, 10.910847187158028, -0.5839594261217959, -0.8398646221150875, 55.142061733547585)
+Waveform Generated. SNR: 19.999562599481578
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.645954370498657 seconds
+    LM full lm T=2.5 seed idx13 it   5 lam=4.5e-09 ov=0.999997564751 chi2=1.948348e-03 rel=3.1e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999998.7619946834, 9.99988700827277, 0.500002573235321, 9.970680240433548, 0.29999850105729564, 1.0, 9.7894927237302, 1.0473905442322187, 0.7852492583776969, 0.6283185307179586, 0.5235987755982988, 0.10096454090131363, 0.2, 0.3021705318393097, 0.95, False, False, False, True, 4.283089642775915, 10.604141228894528, -0.0410177138170329, -0.21836275815138406, 53.51645323107161)
+Waveform Generated. SNR: 19.99942768534117
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.66256618499756 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.975491523742676 seconds
+    LM full lm T=2.5 seed idx13 it   6 lam=4.4e-09 ov=0.999998314041 chi2=1.349056e-03 rel=4.0e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999998.602921724, 9.999753520579665, 0.49999606141940556, 9.970693960011353, 0.30000207199054324, 1.0, 9.7894927237302, 1.0473561904310231, 0.7853209998327288, 0.6283185307179586, 0.5235987755982988, 0.10000206330913472, 0.2, 0.3012888144165742, 0.95, False, False, False, True, 7.964366369729518, 9.52954980567771, 1.2659231547045624, 1.3740846261076527, 56.18492594686945)
+Waveform Generated. SNR: 19.998999731664767
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.659841299057007 seconds
+    LM full lm T=2.5 seed idx13 it   7 lam=1.5e-09 ov=0.999998990197 chi2=8.088024e-04 rel=6.7e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.896389661, 9.999656287834792, 0.4999920417957134, 9.970700975813488, 0.3000045860477984, 1.0, 9.7894927237302, 1.0472927719760137, 0.7853410745941467, 0.6283185307179586, 0.5235987755982988, 0.09985783525634861, 0.2, 0.3009890097227702, 0.95, False, False, False, True, 10.082160523069827, 8.265568215935165, 1.8538900481500584, 2.1593863206766617, 58.8503722936019)
+Waveform Generated. SNR: 19.999077436309477
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.658043622970581 seconds
+    LM full lm T=2.5 seed idx13 it   8 lam=1.4e-08 ov=0.999999667340 chi2=2.669665e-04 rel=2.0e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.7763820791, 9.99963183867623, 0.49999092981756305, 9.970703034580776, 0.3000052082323621, 1.0, 9.7894927237302, 1.0472825773226404, 0.7853658121943247, 0.6283185307179586, 0.5235987755982988, 0.09976743409403778, 0.2, 0.30089534677684976, 0.95, False, False, False, True, 10.650749344488212, 8.070927476265156, 2.025005544614673, 2.3833142029377803, 59.66193341443985)
+Waveform Generated. SNR: 19.998956344052594
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.5399067401886 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.949232578277588 seconds
+    LM full lm T=2.5 seed idx13 it   9 lam=4.5e-09 ov=0.999999734338 chi2=2.136074e-04 rel=3.0e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.6467547867, 9.999609860107725, 0.4999899536419837, 9.970704819262396, 0.3000057800564382, 1.0, 9.7894927237302, 1.0472784519327483, 0.785375977839884, 0.6283185307179586, 0.5235987755982988, 0.09969171739438637, 0.2, 0.30076294913605617, 0.95, False, False, False, True, 11.150368291025778, 7.819222773415521, 2.1744557088543406, 2.579518106717572, 60.33934601878598)
+Waveform Generated. SNR: 19.99888726381603
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.6325578689575195 seconds
+    LM full lm T=2.5 seed idx13 it  10 lam=1.5e-09 ov=0.999999815791 chi2=1.485970e-04 rel=4.3e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.407980474, 9.999568080253024, 0.49998810156686296, 9.970708258710912, 0.3000068655538174, 1.0, 9.7894927237302, 1.047262511731326, 0.7853955942862406, 0.6283185307179586, 0.5235987755982988, 0.09953633415944019, 0.2, 0.3005432073659038, 0.95, False, False, False, True, 12.115065561771743, 7.355723537333293, 2.4651081058753608, 2.9581172877731046, 61.55576604306207)
+Waveform Generated. SNR: 19.998797514898087
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.691866159439087 seconds
+    LM full lm T=2.5 seed idx13 it  11 lam=5.0e-10 ov=0.999999895166 chi2=8.530846e-05 rel=4.4e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.1921211019, 9.999523432737789, 0.49998598824448665, 9.970712400167757, 0.30000805566549044, 1.0, 9.7894927237302, 1.0472448389820983, 0.7854166131335568, 0.6283185307179586, 0.5235987755982988, 0.09935686612526405, 0.2, 0.3002865006612054, 0.95, False, False, False, True, 13.191722031971608, 6.870062771833063, 2.8151234637396385, 3.405441998614619, 62.87860027732264)
+Waveform Generated. SNR: 19.998705745186044
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.53226923942566 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.039014101028442 seconds
+    LM full lm T=2.5 seed idx13 it  12 lam=1.7e-10 ov=0.999999941978 chi2=4.808952e-05 rel=1.4e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.2728851924, 9.999507824190076, 0.49998474277145855, 9.970715683715753, 0.3000085857690967, 1.0, 9.7894927237302, 1.0472357554286724, 0.7854270117284748, 0.6283185307179586, 0.5235987755982988, 0.09927579154405271, 0.2, 0.30015984067303864, 0.95, False, False, False, True, 13.75929147512181, 6.748890761174911, 3.0953205332292875, 3.731069522343954, 63.34333579770079)
+Waveform Generated. SNR: 19.998670092903726
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.64925479888916 seconds
+    LM full lm T=2.5 seed idx13 it  13 lam=7.0e-11 ov=0.999999950577 chi2=4.130459e-05 rel=3.2e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999997.9414007361, 9.99952621972985, 0.49998377824610496, 9.970720599766926, 0.3000085069359719, 1.0, 9.7894927237302, 1.0472341183549427, 0.7854288817930392, 0.6283185307179586, 0.5235987755982988, 0.09927912004325516, 0.2, 0.30011949383263664, 0.95, False, False, False, True, 14.01213786811603, 7.1352305732336525, 3.525245918997788, 4.162611281308312, 62.810393309343354)
+Waveform Generated. SNR: 19.99869555230512
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.651283264160156 seconds
+    LM full lm T=2.5 seed idx13 it  14 lam=3.7e-11 ov=0.999999952168 chi2=3.996457e-05 rel=6.5e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (999999.6143445626, 9.999579117854022, 0.49998201495164285, 9.970731042309204, 0.30000804956220445, 1.0, 9.7894927237302, 1.0472334215079593, 0.785428526738266, 0.6283185307179586, 0.5235987755982988, 0.09931696578257015, 0.2, 0.30009674507233336, 0.95, False, False, False, True, 14.392467409209363, 8.188453562387888, 4.466483683940913, 5.086079274940317, 61.197757485774055)
+Waveform Generated. SNR: 19.998780159654324
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.6364541053772 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.9627296924591064 seconds
+    LM full lm T=2.5 seed idx13 it  15 lam=6.6e-11 ov=0.999999955124 chi2=3.738683e-05 rel=4.1e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000001.9869433652, 9.999662521780646, 0.499979381588321, 9.9707472747427, 0.30000729745225535, 1.0, 9.7894927237302, 1.047236020038458, 0.7854257110858884, 0.6283185307179586, 0.5235987755982988, 0.09936968191885813, 0.2, 0.3000849214673034, 0.95, False, False, False, True, 14.844361635907568, 9.753615662841169, 5.845348633490087, 6.429617781532584, 58.80016099457861)
+Waveform Generated. SNR: 19.998905490409697
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.638087272644043 seconds
+    LM full lm T=2.5 seed idx13 it  16 lam=2.2e-10 ov=0.999999954954 chi2=3.723270e-05 rel=9.7e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000002.1226202318, 9.999665442934889, 0.49997913824031703, 9.97074835186709, 0.3000073146160569, 1.0, 9.7894927237302, 1.0472320155096952, 0.7854271446898777, 0.6283185307179586, 0.5235987755982988, 0.09938780102236705, 0.2, 0.3000491949670232, 0.95, False, False, False, True, 14.916673385547384, 9.785140568034777, 5.943914558422569, 6.531026421455188, 58.69738987624296)
+Waveform Generated. SNR: 19.99892462664267
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.640851736068726 seconds
+    LM full lm T=2.5 seed idx13 it  17 lam=7.3e-10 ov=0.999999959416 chi2=3.362166e-05 rel=5.4e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000002.1296748266, 9.99966652386377, 0.49997912420368584, 9.970748527030182, 0.300007300974374, 1.0, 9.7894927237302, 1.0472321521048689, 0.7854269797938962, 0.6283185307179586, 0.5235987755982988, 0.0993844120623402, 0.2, 0.3000540185452321, 0.95, False, False, False, True, 14.910132212474975, 9.795681189557268, 5.952085245484464, 6.537763517839686, 58.66344276060597)
+Waveform Generated. SNR: 19.998925820938826
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.507795095443726 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.999658823013306 seconds
+    LM full lm T=2.5 seed idx13 it  18 lam=2.8e-10 ov=0.999999959640 chi2=3.343986e-05 rel=5.6e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000002.257840033, 9.999670641356683, 0.49997896336334013, 9.970749433438499, 0.30000727120974446, 1.0, 9.7894927237302, 1.0472319952819642, 0.7854270402565102, 0.6283185307179586, 0.5235987755982988, 0.09938772047626458, 0.2, 0.3000486991271971, 0.95, False, False, False, True, 14.944004401700758, 9.874110977555713, 6.030000170808073, 6.6147274744764415, 58.54654625981914)
+Waveform Generated. SNR: 19.998933531448834
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.629396200180054 seconds
+    LM full lm T=2.5 seed idx13 it  19 lam=9.3e-11 ov=0.999999959856 chi2=3.325104e-05 rel=1.5e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000002.5970892914, 9.99968135962268, 0.49997858753353797, 9.970751620507237, 0.30000718307590907, 1.0, 9.7894927237302, 1.0472317874617154, 0.7854270183142277, 0.6283185307179586, 0.5235987755982988, 0.09939492907919051, 0.2, 0.3000415538681553, 0.95, False, False, False, True, 15.025250181082988, 10.085759221446601, 6.224880545294745, 6.806380211628977, 58.22519535999932)
+Waveform Generated. SNR: 19.99894967423104
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.609462738037109 seconds
+    LM full lm T=2.5 seed idx13 it  20 lam=3.1e-11 ov=0.999999960416 chi2=3.276887e-05 rel=4.3e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000003.5544995406, 9.999715685351704, 0.49997746343570904, 9.970758484203172, 0.30000688775046824, 1.0, 9.7894927237302, 1.047231395665035, 0.7854264645679124, 0.6283185307179586, 0.5235987755982988, 0.09942279439615202, 0.2, 0.3000254877306337, 0.95, False, False, False, True, 15.213395830700902, 10.701884694773032, 6.797990841792394, 7.36543175274422, 57.24279889041452)
+Waveform Generated. SNR: 19.99900577259455
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.57370948791504 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.973644256591797 seconds
+    LM full lm T=2.5 seed idx13 it  21 lam=1.0e-11 ov=0.999999962054 chi2=3.134376e-05 rel=1.1e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000006.122216034, 9.99980534068303, 0.49997444942457225, 9.970776629843668, 0.3000061300150754, 1.0, 9.7894927237302, 1.0472305181259416, 0.7854257915741896, 0.6283185307179586, 0.5235987755982988, 0.09948908997987377, 0.2, 0.2999772508135184, 0.95, False, False, False, True, 15.750480623897078, 12.34667225605109, 8.32895459290815, 8.86225485253504, 54.66925642411223)
+Waveform Generated. SNR: 19.99914782604948
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.603891849517822 seconds
+    LM full lm T=2.5 seed idx13 it  22 lam=3.5e-12 ov=0.999999966053 chi2=2.788238e-05 rel=2.4e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000012.3832132127, 9.999992716654436, 0.49996812753286635, 9.97081333554434, 0.30000451871082445, 1.0, 9.7894927237302, 1.0472276136692074, 0.7854236561640888, 0.6283185307179586, 0.5235987755982988, 0.09963934609516481, 0.2, 0.2998650952532432, 0.95, False, False, False, True, 17.232029339702727, 16.213756761627476, 11.757807096849778, 12.237434679272779, 48.90136682307058)
+Waveform Generated. SNR: 19.999455472740646
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.628636598587036 seconds
+    LM full lm T=2.5 seed idx13 it  23 lam=3.5e-12 ov=0.999999973787 chi2=2.126615e-05 rel=1.6e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000023.825311301, 10.000269739379684, 0.4999587259061417, 9.970864603255889, 0.300002048907409, 1.0, 9.7894927237302, 1.0472216801078453, 0.7854213756130438, 0.6283185307179586, 0.5235987755982988, 0.0998853309716941, 0.2, 0.2996919483802571, 0.95, False, False, False, True, 20.291117985009016, 23.038373863429868, 17.377554157069433, 17.821124041069332, 39.528548824728375)
+Waveform Generated. SNR: 19.999917326011854
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Time taken to compute stable deltas is 51.631839752197266 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.982471942901611 seconds
+    LM full lm T=2.5 seed idx13 it  24 lam=3.3e-11 ov=0.999999977611 chi2=1.791783e-05 rel=2.0e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000026.139812289, 10.000296369065005, 0.4999578384969247, 9.970867670646715, 0.3000017565183839, 1.0, 9.7894927237302, 1.0472217608263799, 0.7854196395089945, 0.6283185307179586, 0.5235987755982988, 0.09991276541773052, 0.2, 0.29966791381491714, 0.95, False, False, False, True, 21.05648450639979, 24.29717116645841, 18.21428932310273, 18.67775893890701, 38.13418598810757)
+Waveform Generated. SNR: 19.99996936565329
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.826496839523315 seconds
+    LM full lm T=2.5 seed idx13 it  25 lam=1.1e-11 ov=0.999999982127 chi2=1.429899e-05 rel=1.2e-01
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000027.3470852952, 10.000328405483417, 0.4999568426975832, 9.970873373463583, 0.3000014528387045, 1.0, 9.7894927237302, 1.0472217228677418, 0.7854190877688633, 0.6283185307179586, 0.5235987755982988, 0.09994550889544176, 0.2, 0.2996547394629717, 0.95, False, False, False, True, 21.336833867768373, 25.03841911319747, 18.811526219308668, 19.267402019631025, 37.11267682841307)
+Waveform Generated. SNR: 20.00001881561746
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.653315544128418 seconds
+    LM full lm T=2.5 seed idx13 it  26 lam=1.1e-11 ov=0.999999984228 chi2=1.261773e-05 rel=5.5e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000030.5930696231, 10.000389879789116, 0.49995467512831665, 9.970884050247172, 0.30000089742618724, 1.0, 9.7894927237302, 1.0472187104913244, 0.7854188236371441, 0.6283185307179586, 0.5235987755982988, 0.10000031323511827, 0.2, 0.2996037316851603, 0.95, False, False, False, True, 22.31617735677448, 26.890220112865737, 20.254723694732988, 20.71753278686275, 34.732787206871926)
+Waveform Generated. SNR: 20.00012997351955
+calculating stable deltas...
+Time taken to compute stable deltas is 51.747734785079956 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.96763277053833 seconds
+    LM full lm T=2.5 seed idx13 it  27 lam=1.1e-11 ov=0.999999985116 chi2=1.192445e-05 rel=2.8e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000031.4405839489, 10.000431720629733, 0.4999533676468974, 9.97089262502283, 0.3000005346299948, 1.0, 9.7894927237302, 1.0472191258824588, 0.7854177131140205, 0.6283185307179586, 0.5235987755982988, 0.10003232868081972, 0.2, 0.2995861478570628, 0.95, False, False, False, True, 22.402707195250752, 27.489886909508233, 20.85838289063779, 21.296897135767473, 33.66896260092443)
+Waveform Generated. SNR: 20.000195780209445
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.653498649597168 seconds
+    LM full lm T=2.5 seed idx13 it  28 lam=3.6e-12 ov=0.999999985553 chi2=1.159587e-05 rel=4.9e-02
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000031.9965177351, 10.000469865874509, 0.4999521300454314, 9.970900953668753, 0.30000022467198967, 1.0, 9.7894927237302, 1.0472197585388996, 0.7854167709093681, 0.6283185307179586, 0.5235987755982988, 0.1000556041723456, 0.2, 0.2995782469768163, 0.95, False, False, False, True, 22.409552450917698, 27.92552272465638, 21.366485962164827, 21.779327946204017, 32.78537902493715)
+Waveform Generated. SNR: 20.000253631521666
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.673560380935669 seconds
+    LM full lm T=2.5 seed idx13 it  29 lam=3.6e-11 ov=0.999999986300 chi2=1.102423e-05 rel=9.8e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.5231095069, 10.000486163999597, 0.499951547239638, 9.970904309656728, 0.30000009368066277, 1.0, 9.7894927237302, 1.0472191382336562, 0.7854171065735646, 0.6283185307179586, 0.5235987755982988, 0.10006873094712526, 0.2, 0.2995621364960675, 0.95, False, False, False, True, 22.54041941942996, 28.248615055229156, 21.668481882733687, 22.07682046164696, 32.289896398346194)
+Waveform Generated. SNR: 20.00027937664357
+calculating stable deltas...
+Time taken to compute stable deltas is 51.84953022003174 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 4.985182285308838 seconds
+    LM full lm T=2.5 seed idx13 it  30 lam=6.6e-10 ov=0.999999986452 chi2=1.091652e-05 rel=3.8e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4860817407, 10.000484489655046, 0.49995145477905134, 9.970904401012529, 0.30000014079515547, 1.0, 9.7894927237302, 1.0472185442796689, 0.7854177362517522, 0.6283185307179586, 0.5235987755982988, 0.10009452984470532, 0.2, 0.29953011945631575, 0.95, False, False, False, True, 22.543796433736393, 28.200638331766918, 21.664184481167315, 22.078142976035846, 32.51179745285252)
+Waveform Generated. SNR: 20.000277951939914
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.665038347244263 seconds
+    LM full lm T=2.5 seed idx13 it  31 lam=5.6e-10 ov=0.999999986456 chi2=1.091239e-05 rel=2.7e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.44399128, 10.000484412658631, 0.4999514927280114, 9.970904322351359, 0.3000001352085943, 1.0, 9.7894927237302, 1.0472189846007338, 0.7854177383975741, 0.6283185307179586, 0.5235987755982988, 0.10008969643301367, 0.2, 0.29953600497802885, 0.95, False, False, False, True, 22.52270069008193, 28.183368505127934, 21.646605798096125, 22.058912330486862, 32.50293150085898)
+Waveform Generated. SNR: 20.000273860390852
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.64849591255188 seconds
+    LM full lm T=2.5 seed idx13 it  32 lam=8.7e-07 ov=0.999999986490 chi2=1.088341e-05 rel=3.4e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4444318737, 10.000484383048605, 0.49995148698177555, 9.970904323194484, 0.30000013656825825, 1.0, 9.7894927237302, 1.0472190981141265, 0.7854178290149011, 0.6283185307179586, 0.5235987755982988, 0.10009400042457331, 0.2, 0.2995340988345081, 0.95, False, False, False, True, 22.52127606093279, 28.181603184244715, 21.646344961882573, 22.05906286354353, 32.52430806279837)
+Waveform Generated. SNR: 20.000272737547416
+calculating stable deltas...
+Time taken to compute stable deltas is 51.8514940738678 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 4.994483709335327 seconds
+    LM full lm T=2.5 seed idx13 it  33 lam=2.9e-07 ov=0.999999986494 chi2=1.087974e-05 rel=1.2e-03
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4441252418, 10.000484393725236, 0.4999514891829512, 9.970904322342719, 0.3000001363736485, 1.0, 9.7894927237302, 1.047218950886265, 0.7854177387487749, 0.6283185307179586, 0.5235987755982988, 0.10009209285346303, 0.2, 0.2995328117666896, 0.95, False, False, False, True, 22.521762134880046, 28.181356475369547, 21.64649801944452, 22.05907135062587, 32.514853626966726)
+Waveform Generated. SNR: 20.000274017153963
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.667490005493164 seconds
+    LM full lm T=2.5 seed idx13 it  34 lam=2.9e-07 ov=0.999999986511 chi2=1.086673e-05 rel=4.8e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4435397733, 10.000484422650628, 0.49995149527448124, 9.97090432141724, 0.3000001347932745, 1.0, 9.7894927237302, 1.047218879007509, 0.7854176660085265, 0.6283185307179586, 0.5235987755982988, 0.10008878347910698, 0.2, 0.29953561070350804, 0.95, False, False, False, True, 22.5232010529548, 28.18329464398691, 21.64666532682349, 22.05879797523308, 32.49357074150689)
+Waveform Generated. SNR: 20.00027511282464
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.684002876281738 seconds
+    LM full lm T=2.5 seed idx13 it  35 lam=2.9e-07 ov=0.999999986518 chi2=1.086152e-05 rel=3.6e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4430217126, 10.000484448205471, 0.49995150078223477, 9.970904320653828, 0.3000001332327121, 1.0, 9.7894927237302, 1.0472188141387953, 0.7854176526467053, 0.6283185307179586, 0.5235987755982988, 0.10008528625645396, 0.2, 0.2995388130295574, 0.95, False, False, False, True, 22.524503580710928, 28.185492388912124, 21.64677191712513, 22.058502467079443, 32.47490868010041)
+Waveform Generated. SNR: 20.000275827292167
+calculating stable deltas...
+Time taken to compute stable deltas is 51.98990058898926 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.018441915512085 seconds
+    LM full lm T=2.5 seed idx13 it  36 lam=9.7e-07 ov=0.999999986523 chi2=1.085759e-05 rel=8.7e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4429755767, 10.000484450846793, 0.4999515013598464, 9.970904320600551, 0.30000013302948425, 1.0, 9.7894927237302, 1.0472188604889519, 0.7854176658708495, 0.6283185307179586, 0.5235987755982988, 0.10008502999471024, 0.2, 0.2995391463180089, 0.95, False, False, False, True, 22.52464145933908, 28.185844919754427, 21.646773184392124, 22.05846079030364, 32.47307884275277)
+Waveform Generated. SNR: 20.000274986411807
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.698664665222168 seconds
+    LM full lm T=2.5 seed idx13 it  37 lam=3.2e-02 ov=0.999999986534 chi2=1.084818e-05 rel=6.5e-04
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4429754863, 10.000484450849369, 0.4999515013595157, 9.970904320600074, 0.3000001330291611, 1.0, 9.7894927237302, 1.0472188766832269, 0.7854176647523551, 0.6283185307179586, 0.5235987755982988, 0.10008509459252159, 0.2, 0.2995389457891649, 0.95, False, False, False, True, 22.524641532382184, 28.185848390440565, 21.646773291634496, 22.05846051727392, 32.47307967750215)
+Waveform Generated. SNR: 20.000274923782044
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.695932149887085 seconds
+    LM full lm T=2.5 seed idx13 it  38 lam=1.1e+06 ov=0.999999986543 chi2=1.084116e-05 rel=2.9e-05
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4429754863, 10.000484450849369, 0.4999515013595157, 9.970904320600074, 0.3000001330291611, 1.0, 9.7894927237302, 1.0472188766832018, 0.7854176647523684, 0.6283185307179586, 0.5235987755982988, 0.10008509459259002, 0.2, 0.29953894578924745, 0.95, False, False, False, True, 22.524641532382276, 28.185848390442274, 21.646773291634545, 22.05846051727402, 32.4730796775029)
+Waveform Generated. SNR: 20.000274926175226
+calculating stable deltas...
+Time taken to compute stable deltas is 52.012688398361206 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is not positive semi-definite. Try lowering inspiral error tolerance or increasing the derivative order.
+Time taken to compute FM is 5.0162599086761475 seconds
+    LM full lm T=2.5 seed idx13 it  39 lam=3.3e+07 ov=0.999999986544 chi2=1.084085e-05 rel=4.5e-05
+waveform shape: (2, 7889537)
+Computing SNR for parameters: (1000032.4429754863, 10.000484450849369, 0.4999515013595157, 9.970904320600074, 0.3000001330291611, 1.0, 9.7894927237302, 1.0472188766832022, 0.785417664752368, 0.6283185307179586, 0.5235987755982988, 0.10008509459258647, 0.2, 0.29953894578924556, 0.95, False, False, False, True, 22.524641532382272, 28.1858483904422, 21.646773291634542, 22.058460517274018, 32.473079677502874)
+Waveform Generated. SNR: 20.0002749261711
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 5.67400336265564 seconds
+    LM full lm T=2.5 seed idx13 it  40 lam=1.0e+08 ov=0.999999986544 chi2=1.084037e-05 rel=0.0e+00
+[DONE full lm T=2.5 seed idx13] O 0.999831020945 -> 0.999999986544  chi2 1.351834e-01 -> 1.084037e-05  iters=41 accepted=40 stop=lambda_exhausted  1067.8 s
+theta_final = m1=1000032.4429754863, m2=10.000484450849369, a=0.4999515013595157, p0=9.970904320600074, e0=0.3000001330291611, qS=1.0472188766832022, phiS=0.785417664752368, Phi_phi0=0.10008509459258647, Phi_r0=0.29953894578924556, c_p=22.524641532382272, c_e=28.1858483904422, c_Omphi=21.646773291634542, c_Omr=22.058460517274018, K=32.473079677502874
+bias        = m1=+32.443, m2=+0.000484451, a=-4.84986e-05, p0=+0.000236128, e0=+1.33029e-07, qS=+2.13255e-05, phiS=+1.95014e-05, Phi_phi0=+8.50946e-05, Phi_r0=-0.000461054
+[full idx13] O=0.999999986544 vs 0PA floor 0.999757110817: worked

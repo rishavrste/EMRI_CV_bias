@@ -1,0 +1,12 @@
+wrote /nfs/home/svu/e1583490/EMRI_CV_bias/consistency_check/plots/diff_vs_t.png
+wrote /nfs/home/svu/e1583490/EMRI_CV_bias/consistency_check/plots/diff_vs_p.png
+wrote /nfs/home/svu/e1583490/EMRI_CV_bias/consistency_check/plots/phase_diff_vs_t.png
+
+1PA - model at t = T (same t) and rms[(1PA - model)/(1PA - 0PA injection)] at the same p
+model                    | dPhi_phi(T) | dPhi_r(T) | dp(T)     | de(T)     | pdot frac | edot frac | Om_phi frac | Om_r frac
+0PA injection            |     +6.8824 |   +3.3239 | -1.41e-04 | -6.26e-07 |    1.0000 |    1.0000 |    1.0000 |    1.0000
+0PA fit                  |     +0.0083 |   +0.0063 | +3.95e-04 | +1.33e-05 |   18.6529 |   11.3881 |    4.7535 |    1.1278
+0PA+PN fit               |     +0.0001 |   -0.0010 | +1.58e-04 | -8.69e-06 |    7.6902 |    1.6277 |    1.9398 |    0.4652
+0PA+PN_freq fit          |     -0.0001 |   +0.0001 | +2.41e-04 | -9.39e-06 |   12.0319 |    6.4290 |    3.0176 |    0.7201
+0PA+PN_freq inj, C_LO    |     +1.2600 |   -0.6566 | -3.51e-05 | -2.45e-07 |    0.2557 |    0.3792 |    0.1596 |    0.1644
+0PA+PN_freq inj, C_proj  |     -0.2333 |   -1.7141 | -7.17e-06 | -5.53e-08 |    0.0705 |    0.0936 |    0.0686 |    0.4737

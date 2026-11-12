@@ -1,0 +1,66 @@
+[PASS] a=-0.9 chi2=0.00 e=0.1: C_p       limit -8.399769  expected -8.400000
+[PASS] a=-0.9 chi2=0.00 e=0.1: C_e       limit -0.399982  expected -0.400000
+[PASS] a=-0.9 chi2=0.00 e=0.1: Omega_phi limit +2.250070  expected +2.250000
+[PASS] a=-0.9 chi2=0.00 e=0.1: Omega_r   limit +2.250070  expected +2.250000
+[PASS] a=-0.9 chi2=0.00 e=0.4: C_p       limit -8.399732  expected -8.400000
+[PASS] a=-0.9 chi2=0.00 e=0.4: C_e       limit -0.399980  expected -0.400000
+[PASS] a=-0.9 chi2=0.00 e=0.4: Omega_phi limit +2.250119  expected +2.250000
+[PASS] a=-0.9 chi2=0.00 e=0.4: Omega_r   limit +2.250118  expected +2.250000
+[PASS] a=-0.9 chi2=0.95 e=0.1: C_p       limit -13.719358  expected -13.720000
+[PASS] a=-0.9 chi2=0.95 e=0.1: C_e       limit -0.653292  expected -0.653333
+[PASS] a=-0.9 chi2=0.95 e=0.1: Omega_phi limit +3.674941  expected +3.675000
+[PASS] a=-0.9 chi2=0.95 e=0.1: Omega_r   limit +3.674941  expected +3.675000
+[PASS] a=-0.9 chi2=0.95 e=0.4: C_p       limit -13.719321  expected -13.720000
+[PASS] a=-0.9 chi2=0.95 e=0.4: C_e       limit -0.653290  expected -0.653333
+[PASS] a=-0.9 chi2=0.95 e=0.4: Omega_phi limit +3.674990  expected +3.675000
+[PASS] a=-0.9 chi2=0.95 e=0.4: Omega_r   limit +3.674990  expected +3.675000
+[SKIP] a=+0.0 chi2=0.00 e=0.1: 5a - 3chi2 = 0
+[SKIP] a=+0.0 chi2=0.00 e=0.4: 5a - 3chi2 = 0
+[PASS] a=+0.0 chi2=0.95 e=0.1: C_p       limit -5.320676  expected -5.320000
+[PASS] a=+0.0 chi2=0.95 e=0.1: C_e       limit -0.253366  expected -0.253333
+[PASS] a=+0.0 chi2=0.95 e=0.1: Omega_phi limit +1.425353  expected +1.425000
+[PASS] a=+0.0 chi2=0.95 e=0.1: Omega_r   limit +1.425353  expected +1.425000
+[PASS] a=+0.0 chi2=0.95 e=0.4: C_p       limit -5.320639  expected -5.320000
+[PASS] a=+0.0 chi2=0.95 e=0.4: C_e       limit -0.253364  expected -0.253333
+[PASS] a=+0.0 chi2=0.95 e=0.4: Omega_phi limit +1.425402  expected +1.425000
+[PASS] a=+0.0 chi2=0.95 e=0.4: Omega_r   limit +1.425402  expected +1.425000
+[PASS] a=+0.9 chi2=0.00 e=0.1: C_p       limit +8.400231  expected +8.400000
+[PASS] a=+0.9 chi2=0.00 e=0.1: C_e       limit +0.400018  expected +0.400000
+[PASS] a=+0.9 chi2=0.00 e=0.1: Omega_phi limit -2.249930  expected -2.250000
+[PASS] a=+0.9 chi2=0.00 e=0.1: Omega_r   limit -2.249930  expected -2.250000
+[PASS] a=+0.9 chi2=0.00 e=0.4: C_p       limit +8.400268  expected +8.400000
+[PASS] a=+0.9 chi2=0.00 e=0.4: C_e       limit +0.400020  expected +0.400000
+[PASS] a=+0.9 chi2=0.00 e=0.4: Omega_phi limit -2.249882  expected -2.250000
+[PASS] a=+0.9 chi2=0.00 e=0.4: Omega_r   limit -2.249881  expected -2.250000
+[PASS] a=+0.9 chi2=0.95 e=0.1: C_p       limit +3.079821  expected +3.080000
+[PASS] a=+0.9 chi2=0.95 e=0.1: C_e       limit +0.146662  expected +0.146667
+[PASS] a=+0.9 chi2=0.95 e=0.1: Omega_phi limit -0.824802  expected -0.825000
+[PASS] a=+0.9 chi2=0.95 e=0.1: Omega_r   limit -0.824802  expected -0.825000
+[PASS] a=+0.9 chi2=0.95 e=0.4: C_p       limit +3.079858  expected +3.080000
+[PASS] a=+0.9 chi2=0.95 e=0.4: C_e       limit +0.146664  expected +0.146667
+[PASS] a=+0.9 chi2=0.95 e=0.4: Omega_phi limit -0.824753  expected -0.825000
+[PASS] a=+0.9 chi2=0.95 e=0.4: Omega_r   limit -0.824753  expected -0.825000
+
+40 of 40 leading-order checks pass
+
+idx0: a=-0.9 p0=13.0674 e0=0.1 chi2=0.95  5a-3chi2=-7.3500
+  C^LO       : C_p=-13.72000  C_e=-0.65333  (C_e/C_p = 1/21)
+  C projected: C_p=-17.35965  C_e=-0.98615  (full 1PA at p0, physical_c.py)
+    p     | LO/full pdot | LO/full edot | LO/full Omega_phi | LO/full Omega_r
+   13.067 |       0.7903 |       0.6625 |            0.8639 |          1.1602
+   12.275 |       0.7615 |       0.6307 |            0.8498 |          1.1632
+   11.482 |       0.7296 |       0.5964 |            0.8338 |          1.1657
+   10.689 |       0.6942 |       0.5597 |            0.8154 |          1.1676
+    9.896 |       0.6550 |       0.5205 |            0.7941 |          1.1684
+    9.104 |       0.6119 |       0.4788 |            0.7694 |          1.1675
+
+idx4: a=0.9 p0=9.0868 e0=0.1 chi2=0.95  5a-3chi2=+1.6500
+  C^LO       : C_p=+3.08000  C_e=+0.14667  (C_e/C_p = 1/21)
+  C projected: C_p=+0.69240  C_e=+0.02086  (full 1PA at p0, physical_c.py)
+    p     | LO/full pdot | LO/full edot | LO/full Omega_phi | LO/full Omega_r
+    9.087 |       4.4483 |       7.0316 |           -2.7351 |         -3.3169
+    7.770 |      16.6828 |     -12.9437 |           -1.5221 |         -1.8367
+    6.454 |      -5.3156 |      -2.4121 |           -0.9047 |         -1.0970
+    5.138 |      -1.6775 |      -1.0181 |           -0.5367 |         -0.6579
+    3.821 |      -0.7319 |      -0.4805 |           -0.2991 |         -0.3728
+    2.505 |      -0.3104 |      -0.2081 |           -0.1415 |         -0.1805
